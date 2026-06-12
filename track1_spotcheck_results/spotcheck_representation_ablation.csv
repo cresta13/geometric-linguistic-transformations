@@ -1,0 +1,9 @@
+classifier,accuracy,n_train,n_test,model,representation,random_baseline,n_base
+logreg,0.16666666666666666,600,1200,microsoft/deberta-v3-small,x_only,0.16666666666666666,50
+linear_svc,0.16666666666666666,600,1200,microsoft/deberta-v3-small,x_only,0.16666666666666666,50
+logreg,0.77,600,1200,microsoft/deberta-v3-small,y_only,0.16666666666666666,50
+linear_svc,0.8041666666666667,600,1200,microsoft/deberta-v3-small,y_only,0.16666666666666666,50
+logreg,0.7958333333333333,600,1200,microsoft/deberta-v3-small,delta,0.16666666666666666,50
+linear_svc,0.8708333333333333,600,1200,microsoft/deberta-v3-small,delta,0.16666666666666666,50
+logreg,0.8283333333333334,600,1200,microsoft/deberta-v3-small,concat,0.16666666666666666,50
+linear_svc,0.8225,600,1200,microsoft/deberta-v3-small,concat,0.16666666666666666,50

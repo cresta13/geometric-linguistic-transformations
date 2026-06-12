@@ -1,0 +1,301 @@
+base_id,subject,S,past,base,object,O,context
+0,the student,The student,examined,examine,a beautiful painting,A beautiful painting,before the deadline
+1,the researcher,The researcher,created,create,a beautiful painting,A beautiful painting,at the school
+2,the artist,The artist,measured,measure,the client,The client,after the interview
+3,the analyst,The analyst,found,find,a short story,A short story,after the interview
+4,the designer,The designer,created,create,the system,The system,during the meeting
+5,the analyst,The analyst,solved,solve,the signal,The signal,in the laboratory
+6,the chef,The chef,observed,observe,the patient,The patient,before the deadline
+7,the pilot,The pilot,reported,report,the patient,The patient,before the deadline
+8,the musician,The musician,approved,approve,the experiment,The experiment,during the experiment
+9,the student,The student,created,create,the garden,The garden,during the meeting
+10,the teacher,The teacher,analyzed,analyze,the family,The family,before the presentation
+11,the musician,The musician,found,find,the patient,The patient,after the interview
+12,the student,The student,reported,report,the garden,The garden,before the deadline
+13,the doctor,The doctor,reported,report,the problem,The problem,during the experiment
+14,the chef,The chef,approved,approve,a complex machine,A complex machine,during the experiment
+15,the researcher,The researcher,created,create,the decision,The decision,at the school
+16,the artist,The artist,reported,report,the garden,The garden,at the school
+17,the musician,The musician,tested,test,the data,The data,before the presentation
+18,the researcher,The researcher,wrote,write,the system,The system,before the presentation
+19,the nurse,The nurse,built,build,the data,The data,at the school
+20,the writer,The writer,solved,solve,the garden,The garden,at the school
+21,the doctor,The doctor,studied,study,a black cat,A black cat,after the interview
+22,the scientist,The scientist,designed,design,the data,The data,in the laboratory
+23,the lawyer,The lawyer,helped,help,the system,The system,before the presentation
+24,the teacher,The teacher,studied,study,the family,The family,after the discussion
+25,the musician,The musician,prepared,prepare,the signal,The signal,after the discussion
+26,the artist,The artist,built,build,a short story,A short story,after the interview
+27,the journalist,The journalist,found,find,the signal,The signal,before the deadline
+28,the child,The child,designed,design,the decision,The decision,before the deadline
+29,the manager,The manager,prepared,prepare,the experiment,The experiment,at the school
+30,the musician,The musician,created,create,the document,The document,in the laboratory
+31,the programmer,The programmer,reported,report,the rule,The rule,after the interview
+32,the writer,The writer,improved,improve,a beautiful painting,A beautiful painting,after the interview
+33,the manager,The manager,analyzed,analyze,the document,The document,during the meeting
+34,the researcher,The researcher,solved,solve,the garden,The garden,at the school
+35,the pilot,The pilot,improved,improve,a beautiful painting,A beautiful painting,during the experiment
+36,the writer,The writer,improved,improve,the patient,The patient,during the meeting
+37,the teacher,The teacher,wrote,write,a short story,A short story,after the discussion
+38,the artist,The artist,examined,examine,the document,The document,during the experiment
+39,the musician,The musician,designed,design,a short story,A short story,during the meeting
+40,the doctor,The doctor,observed,observe,the document,The document,before the deadline
+41,the farmer,The farmer,defended,defend,the signal,The signal,during the meeting
+42,the chef,The chef,improved,improve,the patient,The patient,during the experiment
+43,the artist,The artist,solved,solve,a new principle,A new principle,before the presentation
+44,the nurse,The nurse,analyzed,analyze,the patient,The patient,after the discussion
+45,the child,The child,measured,measure,a new principle,A new principle,during the experiment
+46,the student,The student,improved,improve,the family,The family,before the deadline
+47,the nurse,The nurse,solved,solve,the event,The event,after the discussion
+48,the artist,The artist,tested,test,the data,The data,during the meeting
+49,the nurse,The nurse,observed,observe,the rule,The rule,during the meeting
+50,the manager,The manager,discovered,discover,a complex machine,A complex machine,in the laboratory
+51,the artist,The artist,observed,observe,the decision,The decision,during the meeting
+52,the designer,The designer,solved,solve,the problem,The problem,during the meeting
+53,the student,The student,created,create,a black cat,A black cat,during the meeting
+54,the researcher,The researcher,measured,measure,the garden,The garden,after the discussion
+55,the writer,The writer,built,build,the document,The document,before the presentation
+56,the lawyer,The lawyer,prepared,prepare,a black cat,A black cat,before the presentation
+57,the lawyer,The lawyer,created,create,the signal,The signal,after the interview
+58,the nurse,The nurse,discovered,discover,a short story,A short story,during the experiment
+59,the lawyer,The lawyer,observed,observe,the family,The family,during the experiment
+60,the chef,The chef,wrote,write,the experiment,The experiment,during the experiment
+61,the researcher,The researcher,explained,explain,the system,The system,before the presentation
+62,the chef,The chef,solved,solve,the problem,The problem,during the experiment
+63,the researcher,The researcher,helped,help,the patient,The patient,before the deadline
+64,the analyst,The analyst,observed,observe,the system,The system,after the interview
+65,the musician,The musician,explained,explain,a short story,A short story,in the laboratory
+66,the programmer,The programmer,reported,report,a new principle,A new principle,during the experiment
+67,the journalist,The journalist,discovered,discover,the rule,The rule,before the presentation
+68,the journalist,The journalist,wrote,write,the family,The family,at the school
+69,the farmer,The farmer,defended,defend,the decision,The decision,during the experiment
+70,the teacher,The teacher,analyzed,analyze,a short story,A short story,during the experiment
+71,the musician,The musician,tested,test,the event,The event,during the meeting
+72,the journalist,The journalist,tested,test,the family,The family,after the interview
+73,the designer,The designer,wrote,write,the garden,The garden,in the laboratory
+74,the farmer,The farmer,studied,study,the system,The system,during the experiment
+75,the nurse,The nurse,found,find,the data,The data,at the school
+76,the teacher,The teacher,defended,defend,the decision,The decision,after the discussion
+77,the engineer,The engineer,defended,defend,the rule,The rule,after the interview
+78,the teacher,The teacher,examined,examine,the system,The system,after the discussion
+79,the analyst,The analyst,designed,design,the decision,The decision,before the presentation
+80,the artist,The artist,tested,test,the problem,The problem,before the deadline
+81,the artist,The artist,improved,improve,the signal,The signal,before the deadline
+82,the lawyer,The lawyer,observed,observe,the client,The client,in the laboratory
+83,the programmer,The programmer,defended,defend,the garden,The garden,after the interview
+84,the programmer,The programmer,prepared,prepare,the question,The question,in the laboratory
+85,the musician,The musician,wrote,write,a black cat,A black cat,during the meeting
+86,the musician,The musician,solved,solve,a black cat,A black cat,after the interview
+87,the journalist,The journalist,improved,improve,a beautiful painting,A beautiful painting,during the meeting
+88,the programmer,The programmer,improved,improve,the family,The family,during the experiment
+89,the nurse,The nurse,observed,observe,a new principle,A new principle,before the deadline
+90,the scientist,The scientist,explained,explain,the question,The question,in the laboratory
+91,the scientist,The scientist,defended,defend,the event,The event,before the presentation
+92,the student,The student,analyzed,analyze,the client,The client,during the experiment
+93,the doctor,The doctor,tested,test,a beautiful painting,A beautiful painting,after the discussion
+94,the child,The child,measured,measure,the patient,The patient,after the interview
+95,the researcher,The researcher,prepared,prepare,a complex machine,A complex machine,at the school
+96,the farmer,The farmer,tested,test,the rule,The rule,during the meeting
+97,the doctor,The doctor,approved,approve,the family,The family,during the meeting
+98,the designer,The designer,studied,study,the rule,The rule,in the laboratory
+99,the designer,The designer,prepared,prepare,the family,The family,after the interview
+100,the artist,The artist,studied,study,the data,The data,after the discussion
+101,the nurse,The nurse,prepared,prepare,the family,The family,before the deadline
+102,the researcher,The researcher,studied,study,a short story,A short story,before the presentation
+103,the doctor,The doctor,built,build,a beautiful painting,A beautiful painting,during the experiment
+104,the writer,The writer,studied,study,the patient,The patient,before the deadline
+105,the scientist,The scientist,explained,explain,the patient,The patient,during the meeting
+106,the artist,The artist,designed,design,a beautiful painting,A beautiful painting,after the interview
+107,the programmer,The programmer,found,find,the client,The client,during the experiment
+108,the artist,The artist,studied,study,a short story,A short story,after the interview
+109,the chef,The chef,analyzed,analyze,a short story,A short story,after the discussion
+110,the nurse,The nurse,improved,improve,the system,The system,during the experiment
+111,the programmer,The programmer,studied,study,a new principle,A new principle,in the laboratory
+112,the pilot,The pilot,approved,approve,the data,The data,at the school
+113,the lawyer,The lawyer,studied,study,a beautiful painting,A beautiful painting,before the deadline
+114,the child,The child,designed,design,the system,The system,in the laboratory
+115,the chef,The chef,explained,explain,the decision,The decision,during the meeting
+116,the chef,The chef,discovered,discover,the data,The data,at the school
+117,the musician,The musician,improved,improve,the problem,The problem,after the interview
+118,the researcher,The researcher,improved,improve,the garden,The garden,during the meeting
+119,the scientist,The scientist,studied,study,the interface,The interface,after the discussion
+120,the analyst,The analyst,prepared,prepare,the patient,The patient,after the interview
+121,the programmer,The programmer,reported,report,the patient,The patient,before the presentation
+122,the doctor,The doctor,approved,approve,the patient,The patient,before the presentation
+123,the musician,The musician,defended,defend,the system,The system,during the experiment
+124,the programmer,The programmer,analyzed,analyze,the data,The data,during the experiment
+125,the writer,The writer,approved,approve,a black cat,A black cat,before the deadline
+126,the designer,The designer,helped,help,the experiment,The experiment,during the meeting
+127,the programmer,The programmer,tested,test,a beautiful painting,A beautiful painting,during the meeting
+128,the designer,The designer,tested,test,the signal,The signal,after the discussion
+129,the scientist,The scientist,tested,test,the event,The event,after the interview
+130,the child,The child,improved,improve,a new principle,A new principle,before the presentation
+131,the lawyer,The lawyer,solved,solve,the rule,The rule,before the presentation
+132,the pilot,The pilot,discovered,discover,a beautiful painting,A beautiful painting,at the school
+133,the lawyer,The lawyer,designed,design,the family,The family,at the school
+134,the artist,The artist,defended,defend,the interface,The interface,in the laboratory
+135,the doctor,The doctor,found,find,a complex machine,A complex machine,during the experiment
+136,the lawyer,The lawyer,defended,defend,a new principle,A new principle,in the laboratory
+137,the writer,The writer,improved,improve,the data,The data,after the interview
+138,the writer,The writer,helped,help,the patient,The patient,in the laboratory
+139,the nurse,The nurse,explained,explain,a black cat,A black cat,at the school
+140,the researcher,The researcher,reported,report,a black cat,A black cat,before the deadline
+141,the doctor,The doctor,improved,improve,a short story,A short story,after the interview
+142,the manager,The manager,built,build,a beautiful painting,A beautiful painting,at the school
+143,the journalist,The journalist,observed,observe,a complex machine,A complex machine,during the experiment
+144,the child,The child,created,create,the client,The client,in the laboratory
+145,the pilot,The pilot,tested,test,the decision,The decision,at the school
+146,the child,The child,found,find,a beautiful painting,A beautiful painting,after the discussion
+147,the nurse,The nurse,explained,explain,the patient,The patient,before the presentation
+148,the teacher,The teacher,prepared,prepare,the event,The event,at the school
+149,the journalist,The journalist,defended,defend,a complex machine,A complex machine,during the experiment
+150,the artist,The artist,improved,improve,the document,The document,before the deadline
+151,the journalist,The journalist,approved,approve,the problem,The problem,at the school
+152,the analyst,The analyst,studied,study,the garden,The garden,after the interview
+153,the analyst,The analyst,designed,design,the event,The event,after the interview
+154,the designer,The designer,defended,defend,the patient,The patient,after the interview
+155,the designer,The designer,reported,report,a complex machine,A complex machine,after the discussion
+156,the farmer,The farmer,explained,explain,the event,The event,after the discussion
+157,the student,The student,solved,solve,the experiment,The experiment,in the laboratory
+158,the musician,The musician,created,create,a beautiful painting,A beautiful painting,during the meeting
+159,the pilot,The pilot,studied,study,the problem,The problem,before the deadline
+160,the analyst,The analyst,wrote,write,a new principle,A new principle,before the deadline
+161,the manager,The manager,discovered,discover,the document,The document,before the deadline
+162,the engineer,The engineer,created,create,the decision,The decision,during the experiment
+163,the manager,The manager,explained,explain,the data,The data,during the meeting
+164,the manager,The manager,analyzed,analyze,the family,The family,before the deadline
+165,the programmer,The programmer,measured,measure,the system,The system,before the presentation
+166,the teacher,The teacher,found,find,the event,The event,before the presentation
+167,the nurse,The nurse,built,build,a black cat,A black cat,in the laboratory
+168,the teacher,The teacher,created,create,the system,The system,before the presentation
+169,the writer,The writer,discovered,discover,the rule,The rule,after the interview
+170,the analyst,The analyst,built,build,the problem,The problem,before the deadline
+171,the researcher,The researcher,tested,test,a short story,A short story,before the presentation
+172,the scientist,The scientist,explained,explain,the event,The event,before the presentation
+173,the artist,The artist,improved,improve,the document,The document,in the laboratory
+174,the analyst,The analyst,examined,examine,the problem,The problem,after the interview
+175,the manager,The manager,wrote,write,the family,The family,during the meeting
+176,the farmer,The farmer,measured,measure,the decision,The decision,during the meeting
+177,the researcher,The researcher,improved,improve,the patient,The patient,in the laboratory
+178,the pilot,The pilot,discovered,discover,the family,The family,before the presentation
+179,the doctor,The doctor,found,find,the rule,The rule,after the discussion
+180,the scientist,The scientist,explained,explain,the data,The data,before the presentation
+181,the doctor,The doctor,helped,help,the interface,The interface,before the presentation
+182,the analyst,The analyst,discovered,discover,the signal,The signal,before the deadline
+183,the analyst,The analyst,defended,defend,a beautiful painting,A beautiful painting,in the laboratory
+184,the pilot,The pilot,wrote,write,the event,The event,after the discussion
+185,the manager,The manager,improved,improve,the rule,The rule,before the deadline
+186,the chef,The chef,found,find,a beautiful painting,A beautiful painting,in the laboratory
+187,the child,The child,defended,defend,the signal,The signal,after the interview
+188,the lawyer,The lawyer,reported,report,a black cat,A black cat,after the interview
+189,the lawyer,The lawyer,found,find,the patient,The patient,before the presentation
+190,the chef,The chef,measured,measure,the interface,The interface,during the experiment
+191,the student,The student,solved,solve,the question,The question,after the discussion
+192,the journalist,The journalist,wrote,write,the family,The family,after the interview
+193,the pilot,The pilot,reported,report,the data,The data,after the interview
+194,the engineer,The engineer,improved,improve,the event,The event,before the deadline
+195,the teacher,The teacher,improved,improve,a new principle,A new principle,before the deadline
+196,the pilot,The pilot,explained,explain,the patient,The patient,in the laboratory
+197,the writer,The writer,helped,help,the system,The system,during the experiment
+198,the teacher,The teacher,examined,examine,a complex machine,A complex machine,during the meeting
+199,the farmer,The farmer,examined,examine,the signal,The signal,at the school
+200,the chef,The chef,helped,help,the rule,The rule,in the laboratory
+201,the designer,The designer,observed,observe,a new principle,A new principle,during the meeting
+202,the student,The student,explained,explain,a new principle,A new principle,during the experiment
+203,the researcher,The researcher,measured,measure,the question,The question,before the presentation
+204,the journalist,The journalist,wrote,write,the problem,The problem,after the discussion
+205,the engineer,The engineer,prepared,prepare,the problem,The problem,after the discussion
+206,the pilot,The pilot,defended,defend,a complex machine,A complex machine,during the experiment
+207,the nurse,The nurse,created,create,the experiment,The experiment,during the meeting
+208,the programmer,The programmer,created,create,the rule,The rule,before the deadline
+209,the scientist,The scientist,prepared,prepare,the signal,The signal,after the discussion
+210,the student,The student,observed,observe,a short story,A short story,after the interview
+211,the researcher,The researcher,wrote,write,the event,The event,at the school
+212,the programmer,The programmer,observed,observe,the question,The question,during the meeting
+213,the researcher,The researcher,created,create,the patient,The patient,at the school
+214,the lawyer,The lawyer,measured,measure,the experiment,The experiment,after the interview
+215,the analyst,The analyst,prepared,prepare,a complex machine,A complex machine,during the experiment
+216,the analyst,The analyst,helped,help,the patient,The patient,after the interview
+217,the farmer,The farmer,observed,observe,the patient,The patient,in the laboratory
+218,the designer,The designer,improved,improve,a beautiful painting,A beautiful painting,after the interview
+219,the scientist,The scientist,solved,solve,the signal,The signal,at the school
+220,the lawyer,The lawyer,explained,explain,a black cat,A black cat,after the discussion
+221,the writer,The writer,examined,examine,the rule,The rule,after the interview
+222,the doctor,The doctor,explained,explain,the question,The question,after the discussion
+223,the scientist,The scientist,explained,explain,a new principle,A new principle,during the experiment
+224,the writer,The writer,observed,observe,the decision,The decision,in the laboratory
+225,the programmer,The programmer,measured,measure,the interface,The interface,after the interview
+226,the programmer,The programmer,discovered,discover,the interface,The interface,in the laboratory
+227,the farmer,The farmer,studied,study,the garden,The garden,during the meeting
+228,the musician,The musician,measured,measure,a black cat,A black cat,in the laboratory
+229,the farmer,The farmer,tested,test,the question,The question,before the presentation
+230,the farmer,The farmer,built,build,the document,The document,during the experiment
+231,the doctor,The doctor,solved,solve,the experiment,The experiment,before the deadline
+232,the doctor,The doctor,explained,explain,a new principle,A new principle,after the discussion
+233,the writer,The writer,wrote,write,the client,The client,during the meeting
+234,the farmer,The farmer,measured,measure,the data,The data,after the discussion
+235,the scientist,The scientist,helped,help,the interface,The interface,before the deadline
+236,the engineer,The engineer,solved,solve,the garden,The garden,after the discussion
+237,the musician,The musician,approved,approve,the system,The system,during the experiment
+238,the artist,The artist,examined,examine,the problem,The problem,during the experiment
+239,the artist,The artist,explained,explain,the document,The document,during the experiment
+240,the farmer,The farmer,created,create,the document,The document,after the interview
+241,the lawyer,The lawyer,explained,explain,the client,The client,during the meeting
+242,the nurse,The nurse,designed,design,the event,The event,during the experiment
+243,the researcher,The researcher,studied,study,the signal,The signal,after the interview
+244,the engineer,The engineer,designed,design,a beautiful painting,A beautiful painting,before the deadline
+245,the artist,The artist,helped,help,the rule,The rule,in the laboratory
+246,the student,The student,measured,measure,a black cat,A black cat,after the interview
+247,the journalist,The journalist,reported,report,a short story,A short story,at the school
+248,the programmer,The programmer,examined,examine,the interface,The interface,during the meeting
+249,the musician,The musician,analyzed,analyze,the interface,The interface,before the deadline
+250,the analyst,The analyst,studied,study,the event,The event,after the discussion
+251,the designer,The designer,prepared,prepare,a complex machine,A complex machine,after the interview
+252,the lawyer,The lawyer,observed,observe,the event,The event,before the deadline
+253,the lawyer,The lawyer,improved,improve,the decision,The decision,at the school
+254,the musician,The musician,examined,examine,the data,The data,in the laboratory
+255,the researcher,The researcher,discovered,discover,the event,The event,during the experiment
+256,the farmer,The farmer,helped,help,a complex machine,A complex machine,during the experiment
+257,the doctor,The doctor,helped,help,a complex machine,A complex machine,after the discussion
+258,the programmer,The programmer,defended,defend,the problem,The problem,at the school
+259,the manager,The manager,improved,improve,the patient,The patient,during the meeting
+260,the farmer,The farmer,studied,study,the client,The client,during the meeting
+261,the designer,The designer,created,create,a complex machine,A complex machine,during the meeting
+262,the musician,The musician,reported,report,the system,The system,before the deadline
+263,the writer,The writer,helped,help,a short story,A short story,after the discussion
+264,the artist,The artist,studied,study,the patient,The patient,after the interview
+265,the doctor,The doctor,found,find,the event,The event,in the laboratory
+266,the researcher,The researcher,designed,design,the client,The client,in the laboratory
+267,the child,The child,built,build,a new principle,A new principle,after the interview
+268,the teacher,The teacher,measured,measure,the signal,The signal,after the interview
+269,the farmer,The farmer,explained,explain,the rule,The rule,after the interview
+270,the researcher,The researcher,helped,help,a complex machine,A complex machine,at the school
+271,the farmer,The farmer,defended,defend,the data,The data,before the deadline
+272,the artist,The artist,observed,observe,the family,The family,during the experiment
+273,the doctor,The doctor,defended,defend,a beautiful painting,A beautiful painting,during the experiment
+274,the artist,The artist,examined,examine,a black cat,A black cat,during the meeting
+275,the student,The student,analyzed,analyze,the client,The client,in the laboratory
+276,the chef,The chef,tested,test,the system,The system,before the presentation
+277,the nurse,The nurse,observed,observe,the rule,The rule,during the experiment
+278,the writer,The writer,examined,examine,the signal,The signal,in the laboratory
+279,the farmer,The farmer,tested,test,the document,The document,before the deadline
+280,the researcher,The researcher,measured,measure,the question,The question,after the discussion
+281,the designer,The designer,helped,help,the data,The data,in the laboratory
+282,the teacher,The teacher,observed,observe,the family,The family,before the presentation
+283,the teacher,The teacher,examined,examine,the document,The document,before the deadline
+284,the writer,The writer,examined,examine,a complex machine,A complex machine,after the discussion
+285,the engineer,The engineer,wrote,write,the decision,The decision,after the interview
+286,the researcher,The researcher,tested,test,a beautiful painting,A beautiful painting,before the deadline
+287,the nurse,The nurse,defended,defend,the question,The question,after the interview
+288,the designer,The designer,prepared,prepare,the data,The data,after the interview
+289,the chef,The chef,solved,solve,the interface,The interface,during the meeting
+290,the student,The student,found,find,the experiment,The experiment,after the discussion
+291,the nurse,The nurse,explained,explain,the problem,The problem,at the school
+292,the programmer,The programmer,defended,defend,the patient,The patient,after the discussion
+293,the pilot,The pilot,discovered,discover,the problem,The problem,after the interview
+294,the nurse,The nurse,tested,test,the problem,The problem,before the presentation
+295,the teacher,The teacher,approved,approve,a beautiful painting,A beautiful painting,in the laboratory
+296,the child,The child,wrote,write,the problem,The problem,after the discussion
+297,the doctor,The doctor,analyzed,analyze,the client,The client,during the meeting
+298,the analyst,The analyst,analyzed,analyze,the interface,The interface,during the meeting
+299,the engineer,The engineer,created,create,a short story,A short story,before the presentation

@@ -1,0 +1,201 @@
+base_id,subject,subject_cap,verb_past,verb_base,object,object_cap,source
+0,the economist,The economist,explained,explain,a black cat,A black cat,The economist explained a black cat.
+1,the nurse,The nurse,discovered,discover,a complex machine,A complex machine,The nurse discovered a complex machine.
+2,the manager,The manager,reported,report,the event,The event,The manager reported the event.
+3,the farmer,The farmer,described,describe,a black cat,A black cat,The farmer described a black cat.
+4,the musician,The musician,approved,approve,the project,The project,The musician approved the project.
+5,the chef,The chef,accepted,accept,the family,The family,The chef accepted the family.
+6,the student,The student,described,describe,the data,The data,The student described the data.
+7,the scientist,The scientist,prepared,prepare,the theory,The theory,The scientist prepared the theory.
+8,the historian,The historian,prepared,prepare,a black cat,A black cat,The historian prepared a black cat.
+9,the scientist,The scientist,helped,help,the family,The family,The scientist helped the family.
+10,the biologist,The biologist,prepared,prepare,the document,The document,The biologist prepared the document.
+11,the historian,The historian,created,create,the garden,The garden,The historian created the garden.
+12,the editor,The editor,created,create,a beautiful painting,A beautiful painting,The editor created a beautiful painting.
+13,the lawyer,The lawyer,observed,observe,the event,The event,The lawyer observed the event.
+14,the teacher,The teacher,described,describe,the problem,The problem,The teacher described the problem.
+15,the child,The child,created,create,the document,The document,The child created the document.
+16,the engineer,The engineer,prepared,prepare,the decision,The decision,The engineer prepared the decision.
+17,the farmer,The farmer,analyzed,analyze,the client,The client,The farmer analyzed the client.
+18,the economist,The economist,designed,design,the project,The project,The economist designed the project.
+19,the editor,The editor,rejected,reject,the document,The document,The editor rejected the document.
+20,the child,The child,explained,explain,the signal,The signal,The child explained the signal.
+21,the historian,The historian,rejected,reject,the rule,The rule,The historian rejected the rule.
+22,the designer,The designer,accepted,accept,the document,The document,The designer accepted the document.
+23,the child,The child,tested,test,a complex machine,A complex machine,The child tested a complex machine.
+24,the engineer,The engineer,found,find,the garden,The garden,The engineer found the garden.
+25,the nurse,The nurse,described,describe,the project,The project,The nurse described the project.
+26,the engineer,The engineer,accepted,accept,the system,The system,The engineer accepted the system.
+27,the writer,The writer,built,build,the system,The system,The writer built the system.
+28,the analyst,The analyst,helped,help,a beautiful painting,A beautiful painting,The analyst helped a beautiful painting.
+29,the artist,The artist,tested,test,the lesson,The lesson,The artist tested the lesson.
+30,the analyst,The analyst,designed,design,a new principle,A new principle,The analyst designed a new principle.
+31,the child,The child,explained,explain,the interface,The interface,The child explained the interface.
+32,the child,The child,improved,improve,the system,The system,The child improved the system.
+33,the farmer,The farmer,examined,examine,the theory,The theory,The farmer examined the theory.
+34,the doctor,The doctor,improved,improve,a new principle,A new principle,The doctor improved a new principle.
+35,the biologist,The biologist,studied,study,the rule,The rule,The biologist studied the rule.
+36,the farmer,The farmer,created,create,the problem,The problem,The farmer created the problem.
+37,the writer,The writer,created,create,the model,The model,The writer created the model.
+38,the nurse,The nurse,designed,design,the model,The model,The nurse designed the model.
+39,the engineer,The engineer,created,create,a beautiful painting,A beautiful painting,The engineer created a beautiful painting.
+40,the developer,The developer,discovered,discover,the theory,The theory,The developer discovered the theory.
+41,the doctor,The doctor,observed,observe,the interface,The interface,The doctor observed the interface.
+42,the doctor,The doctor,described,describe,the report,The report,The doctor described the report.
+43,the child,The child,analyzed,analyze,the system,The system,The child analyzed the system.
+44,the analyst,The analyst,built,build,a beautiful painting,A beautiful painting,The analyst built a beautiful painting.
+45,the nurse,The nurse,described,describe,a beautiful painting,A beautiful painting,The nurse described a beautiful painting.
+46,the child,The child,observed,observe,the rule,The rule,The child observed the rule.
+47,the farmer,The farmer,accepted,accept,the system,The system,The farmer accepted the system.
+48,the historian,The historian,described,describe,the family,The family,The historian described the family.
+49,the doctor,The doctor,reported,report,the signal,The signal,The doctor reported the signal.
+50,the doctor,The doctor,improved,improve,the question,The question,The doctor improved the question.
+51,the editor,The editor,observed,observe,the theory,The theory,The editor observed the theory.
+52,the scientist,The scientist,rejected,reject,the problem,The problem,The scientist rejected the problem.
+53,the designer,The designer,discovered,discover,the experiment,The experiment,The designer discovered the experiment.
+54,the manager,The manager,found,find,the interface,The interface,The manager found the interface.
+55,the musician,The musician,measured,measure,the data,The data,The musician measured the data.
+56,the chef,The chef,designed,design,the theory,The theory,The chef designed the theory.
+57,the analyst,The analyst,examined,examine,the garden,The garden,The analyst examined the garden.
+58,the writer,The writer,prepared,prepare,the decision,The decision,The writer prepared the decision.
+59,the designer,The designer,analyzed,analyze,a black cat,A black cat,The designer analyzed a black cat.
+60,the editor,The editor,examined,examine,the patient,The patient,The editor examined the patient.
+61,the chef,The chef,wrote,write,the signal,The signal,The chef wrote the signal.
+62,the editor,The editor,examined,examine,a new principle,A new principle,The editor examined a new principle.
+63,the designer,The designer,explained,explain,the document,The document,The designer explained the document.
+64,the artist,The artist,rejected,reject,the decision,The decision,The artist rejected the decision.
+65,the scientist,The scientist,reported,report,the rule,The rule,The scientist reported the rule.
+66,the chef,The chef,tested,test,the model,The model,The chef tested the model.
+67,the engineer,The engineer,confirmed,confirm,the system,The system,The engineer confirmed the system.
+68,the writer,The writer,found,find,a new principle,A new principle,The writer found a new principle.
+69,the developer,The developer,found,find,the lesson,The lesson,The developer found the lesson.
+70,the teacher,The teacher,defended,defend,a short story,A short story,The teacher defended a short story.
+71,the farmer,The farmer,described,describe,the project,The project,The farmer described the project.
+72,the analyst,The analyst,helped,help,the rule,The rule,The analyst helped the rule.
+73,the chef,The chef,measured,measure,the patient,The patient,The chef measured the patient.
+74,the pilot,The pilot,built,build,the document,The document,The pilot built the document.
+75,the writer,The writer,designed,design,the data,The data,The writer designed the data.
+76,the teacher,The teacher,improved,improve,the lesson,The lesson,The teacher improved the lesson.
+77,the biologist,The biologist,built,build,the experiment,The experiment,The biologist built the experiment.
+78,the artist,The artist,described,describe,a black cat,A black cat,The artist described a black cat.
+79,the journalist,The journalist,discovered,discover,the experiment,The experiment,The journalist discovered the experiment.
+80,the lawyer,The lawyer,helped,help,the model,The model,The lawyer helped the model.
+81,the child,The child,studied,study,the lesson,The lesson,The child studied the lesson.
+82,the pilot,The pilot,built,build,the data,The data,The pilot built the data.
+83,the farmer,The farmer,built,build,the document,The document,The farmer built the document.
+84,the biologist,The biologist,created,create,the model,The model,The biologist created the model.
+85,the student,The student,predicted,predict,a beautiful painting,A beautiful painting,The student predicted a beautiful painting.
+86,the researcher,The researcher,designed,design,the report,The report,The researcher designed the report.
+87,the developer,The developer,solved,solve,the report,The report,The developer solved the report.
+88,the editor,The editor,improved,improve,the client,The client,The editor improved the client.
+89,the lawyer,The lawyer,built,build,a black cat,A black cat,The lawyer built a black cat.
+90,the developer,The developer,confirmed,confirm,the family,The family,The developer confirmed the family.
+91,the historian,The historian,found,find,the experiment,The experiment,The historian found the experiment.
+92,the musician,The musician,confirmed,confirm,the signal,The signal,The musician confirmed the signal.
+93,the farmer,The farmer,found,find,the document,The document,The farmer found the document.
+94,the journalist,The journalist,prepared,prepare,the interface,The interface,The journalist prepared the interface.
+95,the analyst,The analyst,rejected,reject,the event,The event,The analyst rejected the event.
+96,the economist,The economist,studied,study,the theory,The theory,The economist studied the theory.
+97,the analyst,The analyst,wrote,write,the document,The document,The analyst wrote the document.
+98,the doctor,The doctor,wrote,write,the decision,The decision,The doctor wrote the decision.
+99,the writer,The writer,examined,examine,the problem,The problem,The writer examined the problem.
+100,the pilot,The pilot,studied,study,the theory,The theory,The pilot studied the theory.
+101,the editor,The editor,designed,design,a new principle,A new principle,The editor designed a new principle.
+102,the historian,The historian,confirmed,confirm,the signal,The signal,The historian confirmed the signal.
+103,the chef,The chef,rejected,reject,the client,The client,The chef rejected the client.
+104,the farmer,The farmer,wrote,write,the interface,The interface,The farmer wrote the interface.
+105,the historian,The historian,defended,defend,the event,The event,The historian defended the event.
+106,the farmer,The farmer,improved,improve,the rule,The rule,The farmer improved the rule.
+107,the nurse,The nurse,built,build,the report,The report,The nurse built the report.
+108,the economist,The economist,analyzed,analyze,the question,The question,The economist analyzed the question.
+109,the scientist,The scientist,reported,report,the theory,The theory,The scientist reported the theory.
+110,the writer,The writer,examined,examine,the interface,The interface,The writer examined the interface.
+111,the analyst,The analyst,discovered,discover,a new principle,A new principle,The analyst discovered a new principle.
+112,the lawyer,The lawyer,tested,test,the problem,The problem,The lawyer tested the problem.
+113,the writer,The writer,studied,study,a short story,A short story,The writer studied a short story.
+114,the researcher,The researcher,described,describe,the signal,The signal,The researcher described the signal.
+115,the farmer,The farmer,examined,examine,a beautiful painting,A beautiful painting,The farmer examined a beautiful painting.
+116,the journalist,The journalist,prepared,prepare,the data,The data,The journalist prepared the data.
+117,the designer,The designer,designed,design,the lesson,The lesson,The designer designed the lesson.
+118,the musician,The musician,described,describe,the report,The report,The musician described the report.
+119,the designer,The designer,measured,measure,the data,The data,The designer measured the data.
+120,the child,The child,analyzed,analyze,the theory,The theory,The child analyzed the theory.
+121,the researcher,The researcher,defended,defend,the data,The data,The researcher defended the data.
+122,the doctor,The doctor,accepted,accept,the decision,The decision,The doctor accepted the decision.
+123,the historian,The historian,tested,test,the family,The family,The historian tested the family.
+124,the programmer,The programmer,approved,approve,the document,The document,The programmer approved the document.
+125,the researcher,The researcher,measured,measure,the report,The report,The researcher measured the report.
+126,the scientist,The scientist,built,build,the system,The system,The scientist built the system.
+127,the chef,The chef,wrote,write,a complex machine,A complex machine,The chef wrote a complex machine.
+128,the analyst,The analyst,improved,improve,the decision,The decision,The analyst improved the decision.
+129,the biologist,The biologist,rejected,reject,the project,The project,The biologist rejected the project.
+130,the pilot,The pilot,improved,improve,the event,The event,The pilot improved the event.
+131,the designer,The designer,explained,explain,the theory,The theory,The designer explained the theory.
+132,the pilot,The pilot,prepared,prepare,the report,The report,The pilot prepared the report.
+133,the musician,The musician,prepared,prepare,the model,The model,The musician prepared the model.
+134,the artist,The artist,analyzed,analyze,the question,The question,The artist analyzed the question.
+135,the historian,The historian,reported,report,the system,The system,The historian reported the system.
+136,the engineer,The engineer,helped,help,the interface,The interface,The engineer helped the interface.
+137,the biologist,The biologist,confirmed,confirm,the interface,The interface,The biologist confirmed the interface.
+138,the farmer,The farmer,improved,improve,the theory,The theory,The farmer improved the theory.
+139,the designer,The designer,rejected,reject,the rule,The rule,The designer rejected the rule.
+140,the designer,The designer,found,find,the document,The document,The designer found the document.
+141,the chef,The chef,helped,help,the patient,The patient,The chef helped the patient.
+142,the developer,The developer,reported,report,the problem,The problem,The developer reported the problem.
+143,the historian,The historian,reported,report,a black cat,A black cat,The historian reported a black cat.
+144,the analyst,The analyst,analyzed,analyze,the family,The family,The analyst analyzed the family.
+145,the programmer,The programmer,predicted,predict,the theory,The theory,The programmer predicted the theory.
+146,the lawyer,The lawyer,found,find,the client,The client,The lawyer found the client.
+147,the doctor,The doctor,accepted,accept,the problem,The problem,The doctor accepted the problem.
+148,the analyst,The analyst,accepted,accept,the data,The data,The analyst accepted the data.
+149,the teacher,The teacher,described,describe,the experiment,The experiment,The teacher described the experiment.
+150,the pilot,The pilot,rejected,reject,the decision,The decision,The pilot rejected the decision.
+151,the engineer,The engineer,measured,measure,the event,The event,The engineer measured the event.
+152,the researcher,The researcher,explained,explain,the garden,The garden,The researcher explained the garden.
+153,the designer,The designer,explained,explain,a complex machine,A complex machine,The designer explained a complex machine.
+154,the developer,The developer,examined,examine,the lesson,The lesson,The developer examined the lesson.
+155,the chef,The chef,solved,solve,the client,The client,The chef solved the client.
+156,the pilot,The pilot,studied,study,the family,The family,The pilot studied the family.
+157,the manager,The manager,approved,approve,the patient,The patient,The manager approved the patient.
+158,the journalist,The journalist,improved,improve,the data,The data,The journalist improved the data.
+159,the lawyer,The lawyer,measured,measure,a complex machine,A complex machine,The lawyer measured a complex machine.
+160,the doctor,The doctor,analyzed,analyze,the project,The project,The doctor analyzed the project.
+161,the editor,The editor,built,build,a short story,A short story,The editor built a short story.
+162,the researcher,The researcher,improved,improve,the system,The system,The researcher improved the system.
+163,the engineer,The engineer,accepted,accept,a black cat,A black cat,The engineer accepted a black cat.
+164,the analyst,The analyst,built,build,the patient,The patient,The analyst built the patient.
+165,the engineer,The engineer,explained,explain,the project,The project,The engineer explained the project.
+166,the artist,The artist,predicted,predict,the model,The model,The artist predicted the model.
+167,the programmer,The programmer,analyzed,analyze,the experiment,The experiment,The programmer analyzed the experiment.
+168,the journalist,The journalist,defended,defend,a new principle,A new principle,The journalist defended a new principle.
+169,the editor,The editor,solved,solve,the lesson,The lesson,The editor solved the lesson.
+170,the historian,The historian,studied,study,the theory,The theory,The historian studied the theory.
+171,the farmer,The farmer,created,create,the client,The client,The farmer created the client.
+172,the writer,The writer,described,describe,a black cat,A black cat,The writer described a black cat.
+173,the musician,The musician,approved,approve,a new principle,A new principle,The musician approved a new principle.
+174,the economist,The economist,described,describe,the client,The client,The economist described the client.
+175,the biologist,The biologist,discovered,discover,the experiment,The experiment,The biologist discovered the experiment.
+176,the journalist,The journalist,improved,improve,the interface,The interface,The journalist improved the interface.
+177,the student,The student,described,describe,the question,The question,The student described the question.
+178,the writer,The writer,improved,improve,the theory,The theory,The writer improved the theory.
+179,the artist,The artist,designed,design,the patient,The patient,The artist designed the patient.
+180,the designer,The designer,accepted,accept,the rule,The rule,The designer accepted the rule.
+181,the nurse,The nurse,described,describe,the signal,The signal,The nurse described the signal.
+182,the nurse,The nurse,found,find,a black cat,A black cat,The nurse found a black cat.
+183,the doctor,The doctor,tested,test,the problem,The problem,The doctor tested the problem.
+184,the programmer,The programmer,explained,explain,the event,The event,The programmer explained the event.
+185,the analyst,The analyst,defended,defend,the experiment,The experiment,The analyst defended the experiment.
+186,the analyst,The analyst,approved,approve,the system,The system,The analyst approved the system.
+187,the biologist,The biologist,tested,test,the decision,The decision,The biologist tested the decision.
+188,the chef,The chef,observed,observe,a short story,A short story,The chef observed a short story.
+189,the doctor,The doctor,reported,report,the theory,The theory,The doctor reported the theory.
+190,the developer,The developer,prepared,prepare,the patient,The patient,The developer prepared the patient.
+191,the nurse,The nurse,rejected,reject,a complex machine,A complex machine,The nurse rejected a complex machine.
+192,the researcher,The researcher,created,create,the theory,The theory,The researcher created the theory.
+193,the editor,The editor,built,build,the interface,The interface,The editor built the interface.
+194,the developer,The developer,explained,explain,a black cat,A black cat,The developer explained a black cat.
+195,the analyst,The analyst,found,find,the garden,The garden,The analyst found the garden.
+196,the doctor,The doctor,predicted,predict,the event,The event,The doctor predicted the event.
+197,the historian,The historian,built,build,the lesson,The lesson,The historian built the lesson.
+198,the economist,The economist,explained,explain,the event,The event,The economist explained the event.
+199,the farmer,The farmer,approved,approve,the signal,The signal,The farmer approved the signal.

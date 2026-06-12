@@ -1,0 +1,201 @@
+base_id,subject,verb_past,verb_base,object,base_sentence
+0,the musician,played,play,the rule,The musician played the rule.
+1,the student,found,find,the problem,The student found the problem.
+2,the musician,played,play,a short story,The musician played a short story.
+3,the programmer,discovered,discover,the meal,The programmer discovered the meal.
+4,the doctor,explained,explain,the aircraft,The doctor explained the aircraft.
+5,the journalist,explained,explain,a complex machine,The journalist explained a complex machine.
+6,the nurse,designed,design,the event,The nurse designed the event.
+7,the musician,grew,grow,the problem,The musician grew the problem.
+8,the engineer,helped,help,a complex machine,The engineer helped a complex machine.
+9,the writer,controlled,control,the aircraft,The writer controlled the aircraft.
+10,the journalist,created,create,a sad melody,The journalist created a sad melody.
+11,the nurse,examined,examine,the event,The nurse examined the event.
+12,the writer,controlled,control,a short story,The writer controlled a short story.
+13,the scientist,discovered,discover,the family,The scientist discovered the family.
+14,the pilot,tested,test,a complex machine,The pilot tested a complex machine.
+15,the analyst,controlled,control,the decision,The analyst controlled the decision.
+16,the writer,designed,design,the rule,The writer designed the rule.
+17,the scientist,defended,defend,the garden,The scientist defended the garden.
+18,the nurse,found,find,a sad melody,The nurse found a sad melody.
+19,the journalist,solved,solve,the decision,The journalist solved the decision.
+20,the musician,approved,approve,the data,The musician approved the data.
+21,the scientist,grew,grow,the interface,The scientist grew the interface.
+22,the programmer,defended,defend,the rule,The programmer defended the rule.
+23,the doctor,defended,defend,a black cat,The doctor defended a black cat.
+24,the researcher,analyzed,analyze,the aircraft,The researcher analyzed the aircraft.
+25,the chef,helped,help,the client,The chef helped the client.
+26,the musician,approved,approve,the family,The musician approved the family.
+27,the lawyer,studied,study,a black cat,The lawyer studied a black cat.
+28,the designer,helped,help,a short story,The designer helped a short story.
+29,the engineer,tested,test,a beautiful painting,The engineer tested a beautiful painting.
+30,the analyst,wrote,write,the aircraft,The analyst wrote the aircraft.
+31,the student,approved,approve,the event,The student approved the event.
+32,the scientist,designed,design,a new principle,The scientist designed a new principle.
+33,the chef,controlled,control,a new principle,The chef controlled a new principle.
+34,the teacher,tested,test,the decision,The teacher tested the decision.
+35,the journalist,solved,solve,the garden,The journalist solved the garden.
+36,the pilot,approved,approve,the family,The pilot approved the family.
+37,the musician,improved,improve,a short story,The musician improved a short story.
+38,the doctor,created,create,a sad melody,The doctor created a sad melody.
+39,the manager,discovered,discover,the problem,The manager discovered the problem.
+40,the scientist,prepared,prepare,a black cat,The scientist prepared a black cat.
+41,the writer,improved,improve,the question,The writer improved the question.
+42,the programmer,designed,design,a sad melody,The programmer designed a sad melody.
+43,the lawyer,wrote,write,the meal,The lawyer wrote the meal.
+44,the researcher,examined,examine,the client,The researcher examined the client.
+45,the teacher,improved,improve,a new principle,The teacher improved a new principle.
+46,the lawyer,approved,approve,the event,The lawyer approved the event.
+47,the nurse,analyzed,analyze,the rule,The nurse analyzed the rule.
+48,the programmer,approved,approve,the data,The programmer approved the data.
+49,the researcher,discovered,discover,the meal,The researcher discovered the meal.
+50,the engineer,controlled,control,the aircraft,The engineer controlled the aircraft.
+51,the engineer,helped,help,the family,The engineer helped the family.
+52,the teacher,studied,study,the aircraft,The teacher studied the aircraft.
+53,the designer,analyzed,analyze,a beautiful painting,The designer analyzed a beautiful painting.
+54,the pilot,designed,design,a sad melody,The pilot designed a sad melody.
+55,the pilot,analyzed,analyze,the meal,The pilot analyzed the meal.
+56,the lawyer,examined,examine,the garden,The lawyer examined the garden.
+57,the lawyer,approved,approve,the family,The lawyer approved the family.
+58,the pilot,examined,examine,a short story,The pilot examined a short story.
+59,the analyst,solved,solve,the event,The analyst solved the event.
+60,the manager,studied,study,the system,The manager studied the system.
+61,the designer,tested,test,a complex machine,The designer tested a complex machine.
+62,the student,analyzed,analyze,a new principle,The student analyzed a new principle.
+63,the writer,explained,explain,the data,The writer explained the data.
+64,the student,discovered,discover,the garden,The student discovered the garden.
+65,the journalist,wrote,write,the data,The journalist wrote the data.
+66,the journalist,reported,report,the family,The journalist reported the family.
+67,the pilot,examined,examine,a new principle,The pilot examined a new principle.
+68,the doctor,controlled,control,the garden,The doctor controlled the garden.
+69,the lawyer,discovered,discover,the system,The lawyer discovered the system.
+70,the engineer,reported,report,a beautiful painting,The engineer reported a beautiful painting.
+71,the writer,reported,report,the data,The writer reported the data.
+72,the researcher,explained,explain,the question,The researcher explained the question.
+73,the nurse,played,play,a new principle,The nurse played a new principle.
+74,the engineer,discovered,discover,the event,The engineer discovered the event.
+75,the analyst,controlled,control,a beautiful painting,The analyst controlled a beautiful painting.
+76,the chef,grew,grow,the meal,The chef grew the meal.
+77,the doctor,studied,study,the garden,The doctor studied the garden.
+78,the engineer,explained,explain,the event,The engineer explained the event.
+79,the teacher,grew,grow,the patient,The teacher grew the patient.
+80,the artist,played,play,a new principle,The artist played a new principle.
+81,the designer,created,create,a new principle,The designer created a new principle.
+82,the doctor,solved,solve,a new principle,The doctor solved a new principle.
+83,the journalist,discovered,discover,the event,The journalist discovered the event.
+84,the pilot,tested,test,a new principle,The pilot tested a new principle.
+85,the child,analyzed,analyze,a short story,The child analyzed a short story.
+86,the lawyer,helped,help,the garden,The lawyer helped the garden.
+87,the manager,improved,improve,a sad melody,The manager improved a sad melody.
+88,the farmer,designed,design,the system,The farmer designed the system.
+89,the programmer,found,find,a beautiful painting,The programmer found a beautiful painting.
+90,the farmer,reported,report,the decision,The farmer reported the decision.
+91,the programmer,tested,test,a complex machine,The programmer tested a complex machine.
+92,the lawyer,approved,approve,the patient,The lawyer approved the patient.
+93,the pilot,reported,report,the system,The pilot reported the system.
+94,the farmer,improved,improve,the system,The farmer improved the system.
+95,the chef,analyzed,analyze,the family,The chef analyzed the family.
+96,the doctor,examined,examine,a sad melody,The doctor examined a sad melody.
+97,the artist,explained,explain,a new principle,The artist explained a new principle.
+98,the musician,prepared,prepare,the meal,The musician prepared the meal.
+99,the farmer,designed,design,the event,The farmer designed the event.
+100,the child,grew,grow,the garden,The child grew the garden.
+101,the researcher,prepared,prepare,the client,The researcher prepared the client.
+102,the designer,grew,grow,the question,The designer grew the question.
+103,the journalist,discovered,discover,the problem,The journalist discovered the problem.
+104,the researcher,reported,report,a new principle,The researcher reported a new principle.
+105,the student,found,find,the data,The student found the data.
+106,the scientist,wrote,write,the data,The scientist wrote the data.
+107,the researcher,explained,explain,the event,The researcher explained the event.
+108,the programmer,explained,explain,the client,The programmer explained the client.
+109,the scientist,reported,report,a complex machine,The scientist reported a complex machine.
+110,the researcher,reported,report,the garden,The researcher reported the garden.
+111,the student,discovered,discover,the decision,The student discovered the decision.
+112,the musician,explained,explain,the data,The musician explained the data.
+113,the scientist,reported,report,the garden,The scientist reported the garden.
+114,the child,tested,test,the system,The child tested the system.
+115,the musician,analyzed,analyze,the interface,The musician analyzed the interface.
+116,the musician,created,create,a beautiful painting,The musician created a beautiful painting.
+117,the teacher,controlled,control,the garden,The teacher controlled the garden.
+118,the pilot,solved,solve,the problem,The pilot solved the problem.
+119,the journalist,solved,solve,the rule,The journalist solved the rule.
+120,the scientist,played,play,a short story,The scientist played a short story.
+121,the designer,analyzed,analyze,the problem,The designer analyzed the problem.
+122,the manager,studied,study,the data,The manager studied the data.
+123,the writer,wrote,write,a complex machine,The writer wrote a complex machine.
+124,the scientist,tested,test,a black cat,The scientist tested a black cat.
+125,the chef,defended,defend,the question,The chef defended the question.
+126,the student,helped,help,the data,The student helped the data.
+127,the teacher,solved,solve,the meal,The teacher solved the meal.
+128,the writer,solved,solve,the rule,The writer solved the rule.
+129,the writer,found,find,the data,The writer found the data.
+130,the chef,studied,study,a short story,The chef studied a short story.
+131,the journalist,analyzed,analyze,the problem,The journalist analyzed the problem.
+132,the nurse,studied,study,the system,The nurse studied the system.
+133,the designer,reported,report,the data,The designer reported the data.
+134,the programmer,grew,grow,the system,The programmer grew the system.
+135,the artist,created,create,a black cat,The artist created a black cat.
+136,the designer,helped,help,a black cat,The designer helped a black cat.
+137,the writer,solved,solve,a short story,The writer solved a short story.
+138,the designer,studied,study,a black cat,The designer studied a black cat.
+139,the student,reported,report,the client,The student reported the client.
+140,the researcher,studied,study,the garden,The researcher studied the garden.
+141,the chef,grew,grow,the problem,The chef grew the problem.
+142,the child,created,create,a black cat,The child created a black cat.
+143,the artist,studied,study,the patient,The artist studied the patient.
+144,the journalist,examined,examine,the meal,The journalist examined the meal.
+145,the journalist,explained,explain,a beautiful painting,The journalist explained a beautiful painting.
+146,the nurse,tested,test,the family,The nurse tested the family.
+147,the designer,prepared,prepare,a short story,The designer prepared a short story.
+148,the doctor,solved,solve,the client,The doctor solved the client.
+149,the nurse,controlled,control,the decision,The nurse controlled the decision.
+150,the journalist,found,find,the family,The journalist found the family.
+151,the engineer,created,create,the rule,The engineer created the rule.
+152,the nurse,explained,explain,the family,The nurse explained the family.
+153,the designer,improved,improve,the problem,The designer improved the problem.
+154,the artist,designed,design,the system,The artist designed the system.
+155,the student,wrote,write,a complex machine,The student wrote a complex machine.
+156,the pilot,solved,solve,the question,The pilot solved the question.
+157,the student,solved,solve,the client,The student solved the client.
+158,the doctor,approved,approve,the interface,The doctor approved the interface.
+159,the child,improved,improve,the problem,The child improved the problem.
+160,the analyst,analyzed,analyze,the family,The analyst analyzed the family.
+161,the doctor,studied,study,a beautiful painting,The doctor studied a beautiful painting.
+162,the designer,discovered,discover,a short story,The designer discovered a short story.
+163,the analyst,prepared,prepare,a short story,The analyst prepared a short story.
+164,the engineer,controlled,control,a new principle,The engineer controlled a new principle.
+165,the farmer,approved,approve,a black cat,The farmer approved a black cat.
+166,the musician,discovered,discover,the system,The musician discovered the system.
+167,the child,helped,help,the client,The child helped the client.
+168,the chef,defended,defend,the client,The chef defended the client.
+169,the pilot,tested,test,the aircraft,The pilot tested the aircraft.
+170,the teacher,discovered,discover,the data,The teacher discovered the data.
+171,the teacher,grew,grow,a new principle,The teacher grew a new principle.
+172,the student,designed,design,the question,The student designed the question.
+173,the doctor,discovered,discover,the rule,The doctor discovered the rule.
+174,the journalist,tested,test,the decision,The journalist tested the decision.
+175,the musician,designed,design,a complex machine,The musician designed a complex machine.
+176,the engineer,helped,help,the meal,The engineer helped the meal.
+177,the child,defended,defend,the garden,The child defended the garden.
+178,the designer,analyzed,analyze,the rule,The designer analyzed the rule.
+179,the writer,designed,design,the problem,The writer designed the problem.
+180,the teacher,analyzed,analyze,the family,The teacher analyzed the family.
+181,the chef,explained,explain,the aircraft,The chef explained the aircraft.
+182,the analyst,controlled,control,the event,The analyst controlled the event.
+183,the journalist,designed,design,the interface,The journalist designed the interface.
+184,the doctor,defended,defend,the question,The doctor defended the question.
+185,the teacher,prepared,prepare,a sad melody,The teacher prepared a sad melody.
+186,the farmer,grew,grow,a sad melody,The farmer grew a sad melody.
+187,the student,improved,improve,a new principle,The student improved a new principle.
+188,the pilot,wrote,write,the patient,The pilot wrote the patient.
+189,the journalist,grew,grow,the aircraft,The journalist grew the aircraft.
+190,the programmer,grew,grow,a short story,The programmer grew a short story.
+191,the researcher,controlled,control,the garden,The researcher controlled the garden.
+192,the scientist,designed,design,the rule,The scientist designed the rule.
+193,the artist,helped,help,the interface,The artist helped the interface.
+194,the engineer,approved,approve,the question,The engineer approved the question.
+195,the chef,grew,grow,the event,The chef grew the event.
+196,the chef,helped,help,the aircraft,The chef helped the aircraft.
+197,the student,wrote,write,the interface,The student wrote the interface.
+198,the farmer,discovered,discover,the system,The farmer discovered the system.
+199,the farmer,tested,test,the meal,The farmer tested the meal.

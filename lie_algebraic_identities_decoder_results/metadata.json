@@ -1,0 +1,19 @@
+{
+  "antisymmetry": "checks whether [A,B] \u2248 -[B,A]",
+  "jacobi_like": "checks alternating sum ABC+BCA+CAB-ACB-CBA-BAC",
+  "jacobi_null": "compares the observed alternating sum with random 3-positive/3-negative sign assignments over the same six composition vectors; lower ratio and lower percentile mean stronger Jacobi-like cancellation",
+  "caution": "A literal nested-commutator Jacobi expansion over the same six embedded composition endpoints cancels by construction, so this script reports a non-tautological alternating third-order cancellation diagnostic instead.",
+  "note": "This is an empirical Lie-style diagnostic, not a formal proof of Lie algebra.",
+  "models": [
+    "gpt2",
+    "distilgpt2"
+  ],
+  "n_jacobi_null": 1000,
+  "n_bootstrap": 2000,
+  "jacobi_triples": [
+    "NQM",
+    "NQT",
+    "NMT",
+    "QMT"
+  ]
+}

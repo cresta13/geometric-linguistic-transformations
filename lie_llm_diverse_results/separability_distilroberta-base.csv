@@ -1,0 +1,2 @@
+model,n_transformations,sampled_pairs,within_class_mean_cosine,between_class_mean_cosine,separation_delta,permutation_p_value,permutation_mean_delta,permutation_std_delta
+distilroberta-base,6000,300000,0.6871371865272522,0.4818047881126404,0.20533239841461182,0.009900990099009901,-0.00013143658638000488,0.0007146605368556296

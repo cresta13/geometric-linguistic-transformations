@@ -1,0 +1,2 @@
+model,accuracy,random_baseline,n_samples,n_classes
+gpt2,0.7121666666666666,0.16666666666666666,6000,6

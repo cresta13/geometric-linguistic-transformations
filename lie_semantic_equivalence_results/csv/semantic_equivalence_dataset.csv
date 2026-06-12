@@ -1,0 +1,801 @@
+template_id,source,pair,label,ab_text,ba_text
+0,The teacher fixed the bug.,N_M_equivalent,equivalent,The teacher allegedly failed to fix the bug.,"Allegedly, the teacher failed to fix the bug."
+0,The teacher fixed the bug.,M_T_equivalent,equivalent,The teacher will allegedly fix the bug tomorrow.,"Allegedly, the teacher will fix the bug tomorrow."
+0,The teacher fixed the bug.,Q_M_equivalent,equivalent,Could the teacher allegedly fix the bug?,"Allegedly, could the teacher fix the bug?"
+0,The teacher fixed the bug.,Q_T_equivalent,equivalent,Will the teacher fix the bug tomorrow?,Could the teacher fix the bug tomorrow?
+0,The teacher fixed the bug.,N_Q_nonequivalent,non_equivalent,Could the teacher fail to fix the bug?,Is it false that the teacher fixed the bug?
+0,The teacher fixed the bug.,N_T_nonequivalent,non_equivalent,The teacher will fail to fix the bug tomorrow.,The teacher failed to have fixed the bug earlier.
+0,The teacher fixed the bug.,M_T_nonequivalent,non_equivalent,The teacher will allegedly fix the bug tomorrow.,The teacher was allegedly going to fix the bug.
+0,The teacher fixed the bug.,Q_M_nonequivalent,non_equivalent,Could the teacher allegedly fix the bug?,Is it alleged that the teacher fixed the bug?
+1,The oracle accepted the explanation.,N_M_equivalent,equivalent,The oracle allegedly failed to accept the explanation.,"Allegedly, the oracle failed to accept the explanation."
+1,The oracle accepted the explanation.,M_T_equivalent,equivalent,The oracle will allegedly accept the explanation tomorrow.,"Allegedly, the oracle will accept the explanation tomorrow."
+1,The oracle accepted the explanation.,Q_M_equivalent,equivalent,Could the oracle allegedly accept the explanation?,"Allegedly, could the oracle accept the explanation?"
+1,The oracle accepted the explanation.,Q_T_equivalent,equivalent,Will the oracle accept the explanation tomorrow?,Could the oracle accept the explanation tomorrow?
+1,The oracle accepted the explanation.,N_Q_nonequivalent,non_equivalent,Could the oracle fail to accept the explanation?,Is it false that the oracle accepted the explanation?
+1,The oracle accepted the explanation.,N_T_nonequivalent,non_equivalent,The oracle will fail to accept the explanation tomorrow.,The oracle failed to have accepted the explanation earlier.
+1,The oracle accepted the explanation.,M_T_nonequivalent,non_equivalent,The oracle will allegedly accept the explanation tomorrow.,The oracle was allegedly going to accept the explanation.
+1,The oracle accepted the explanation.,Q_M_nonequivalent,non_equivalent,Could the oracle allegedly accept the explanation?,Is it alleged that the oracle accepted the explanation?
+2,The robot confirmed the answer.,N_M_equivalent,equivalent,The robot allegedly failed to confirm the answer.,"Allegedly, the robot failed to confirm the answer."
+2,The robot confirmed the answer.,M_T_equivalent,equivalent,The robot will allegedly confirm the answer tomorrow.,"Allegedly, the robot will confirm the answer tomorrow."
+2,The robot confirmed the answer.,Q_M_equivalent,equivalent,Could the robot allegedly confirm the answer?,"Allegedly, could the robot confirm the answer?"
+2,The robot confirmed the answer.,Q_T_equivalent,equivalent,Will the robot confirm the answer tomorrow?,Could the robot confirm the answer tomorrow?
+2,The robot confirmed the answer.,N_Q_nonequivalent,non_equivalent,Could the robot fail to confirm the answer?,Is it false that the robot confirmed the answer?
+2,The robot confirmed the answer.,N_T_nonequivalent,non_equivalent,The robot will fail to confirm the answer tomorrow.,The robot failed to have confirmed the answer earlier.
+2,The robot confirmed the answer.,M_T_nonequivalent,non_equivalent,The robot will allegedly confirm the answer tomorrow.,The robot was allegedly going to confirm the answer.
+2,The robot confirmed the answer.,Q_M_nonequivalent,non_equivalent,Could the robot allegedly confirm the answer?,Is it alleged that the robot confirmed the answer?
+3,The doctor guarded the treasure.,N_M_equivalent,equivalent,The doctor allegedly failed to guard the treasure.,"Allegedly, the doctor failed to guard the treasure."
+3,The doctor guarded the treasure.,M_T_equivalent,equivalent,The doctor will allegedly guard the treasure tomorrow.,"Allegedly, the doctor will guard the treasure tomorrow."
+3,The doctor guarded the treasure.,Q_M_equivalent,equivalent,Could the doctor allegedly guard the treasure?,"Allegedly, could the doctor guard the treasure?"
+3,The doctor guarded the treasure.,Q_T_equivalent,equivalent,Will the doctor guard the treasure tomorrow?,Could the doctor guard the treasure tomorrow?
+3,The doctor guarded the treasure.,N_Q_nonequivalent,non_equivalent,Could the doctor fail to guard the treasure?,Is it false that the doctor guarded the treasure?
+3,The doctor guarded the treasure.,N_T_nonequivalent,non_equivalent,The doctor will fail to guard the treasure tomorrow.,The doctor failed to have guarded the treasure earlier.
+3,The doctor guarded the treasure.,M_T_nonequivalent,non_equivalent,The doctor will allegedly guard the treasure tomorrow.,The doctor was allegedly going to guard the treasure.
+3,The doctor guarded the treasure.,Q_M_nonequivalent,non_equivalent,Could the doctor allegedly guard the treasure?,Is it alleged that the doctor guarded the treasure?
+4,The knight approved the treatment.,N_M_equivalent,equivalent,The knight allegedly failed to approve the treatment.,"Allegedly, the knight failed to approve the treatment."
+4,The knight approved the treatment.,M_T_equivalent,equivalent,The knight will allegedly approve the treatment tomorrow.,"Allegedly, the knight will approve the treatment tomorrow."
+4,The knight approved the treatment.,Q_M_equivalent,equivalent,Could the knight allegedly approve the treatment?,"Allegedly, could the knight approve the treatment?"
+4,The knight approved the treatment.,Q_T_equivalent,equivalent,Will the knight approve the treatment tomorrow?,Could the knight approve the treatment tomorrow?
+4,The knight approved the treatment.,N_Q_nonequivalent,non_equivalent,Could the knight fail to approve the treatment?,Is it false that the knight approved the treatment?
+4,The knight approved the treatment.,N_T_nonequivalent,non_equivalent,The knight will fail to approve the treatment tomorrow.,The knight failed to have approved the treatment earlier.
+4,The knight approved the treatment.,M_T_nonequivalent,non_equivalent,The knight will allegedly approve the treatment tomorrow.,The knight was allegedly going to approve the treatment.
+4,The knight approved the treatment.,Q_M_nonequivalent,non_equivalent,Could the knight allegedly approve the treatment?,Is it alleged that the knight approved the treatment?
+5,The analyst verified the report.,N_M_equivalent,equivalent,The analyst allegedly failed to verify the report.,"Allegedly, the analyst failed to verify the report."
+5,The analyst verified the report.,M_T_equivalent,equivalent,The analyst will allegedly verify the report tomorrow.,"Allegedly, the analyst will verify the report tomorrow."
+5,The analyst verified the report.,Q_M_equivalent,equivalent,Could the analyst allegedly verify the report?,"Allegedly, could the analyst verify the report?"
+5,The analyst verified the report.,Q_T_equivalent,equivalent,Will the analyst verify the report tomorrow?,Could the analyst verify the report tomorrow?
+5,The analyst verified the report.,N_Q_nonequivalent,non_equivalent,Could the analyst fail to verify the report?,Is it false that the analyst verified the report?
+5,The analyst verified the report.,N_T_nonequivalent,non_equivalent,The analyst will fail to verify the report tomorrow.,The analyst failed to have verified the report earlier.
+5,The analyst verified the report.,M_T_nonequivalent,non_equivalent,The analyst will allegedly verify the report tomorrow.,The analyst was allegedly going to verify the report.
+5,The analyst verified the report.,Q_M_nonequivalent,non_equivalent,Could the analyst allegedly verify the report?,Is it alleged that the analyst verified the report?
+6,The queen opened the portal.,N_M_equivalent,equivalent,The queen allegedly failed to open the portal.,"Allegedly, the queen failed to open the portal."
+6,The queen opened the portal.,M_T_equivalent,equivalent,The queen will allegedly open the portal tomorrow.,"Allegedly, the queen will open the portal tomorrow."
+6,The queen opened the portal.,Q_M_equivalent,equivalent,Could the queen allegedly open the portal?,"Allegedly, could the queen open the portal?"
+6,The queen opened the portal.,Q_T_equivalent,equivalent,Will the queen open the portal tomorrow?,Could the queen open the portal tomorrow?
+6,The queen opened the portal.,N_Q_nonequivalent,non_equivalent,Could the queen fail to open the portal?,Is it false that the queen opened the portal?
+6,The queen opened the portal.,N_T_nonequivalent,non_equivalent,The queen will fail to open the portal tomorrow.,The queen failed to have opened the portal earlier.
+6,The queen opened the portal.,M_T_nonequivalent,non_equivalent,The queen will allegedly open the portal tomorrow.,The queen was allegedly going to open the portal.
+6,The queen opened the portal.,Q_M_nonequivalent,non_equivalent,Could the queen allegedly open the portal?,Is it alleged that the queen opened the portal?
+7,The alien confirmed the answer.,N_M_equivalent,equivalent,The alien allegedly failed to confirm the answer.,"Allegedly, the alien failed to confirm the answer."
+7,The alien confirmed the answer.,M_T_equivalent,equivalent,The alien will allegedly confirm the answer tomorrow.,"Allegedly, the alien will confirm the answer tomorrow."
+7,The alien confirmed the answer.,Q_M_equivalent,equivalent,Could the alien allegedly confirm the answer?,"Allegedly, could the alien confirm the answer?"
+7,The alien confirmed the answer.,Q_T_equivalent,equivalent,Will the alien confirm the answer tomorrow?,Could the alien confirm the answer tomorrow?
+7,The alien confirmed the answer.,N_Q_nonequivalent,non_equivalent,Could the alien fail to confirm the answer?,Is it false that the alien confirmed the answer?
+7,The alien confirmed the answer.,N_T_nonequivalent,non_equivalent,The alien will fail to confirm the answer tomorrow.,The alien failed to have confirmed the answer earlier.
+7,The alien confirmed the answer.,M_T_nonequivalent,non_equivalent,The alien will allegedly confirm the answer tomorrow.,The alien was allegedly going to confirm the answer.
+7,The alien confirmed the answer.,Q_M_nonequivalent,non_equivalent,Could the alien allegedly confirm the answer?,Is it alleged that the alien confirmed the answer?
+8,The oracle opened the portal.,N_M_equivalent,equivalent,The oracle allegedly failed to open the portal.,"Allegedly, the oracle failed to open the portal."
+8,The oracle opened the portal.,M_T_equivalent,equivalent,The oracle will allegedly open the portal tomorrow.,"Allegedly, the oracle will open the portal tomorrow."
+8,The oracle opened the portal.,Q_M_equivalent,equivalent,Could the oracle allegedly open the portal?,"Allegedly, could the oracle open the portal?"
+8,The oracle opened the portal.,Q_T_equivalent,equivalent,Will the oracle open the portal tomorrow?,Could the oracle open the portal tomorrow?
+8,The oracle opened the portal.,N_Q_nonequivalent,non_equivalent,Could the oracle fail to open the portal?,Is it false that the oracle opened the portal?
+8,The oracle opened the portal.,N_T_nonequivalent,non_equivalent,The oracle will fail to open the portal tomorrow.,The oracle failed to have opened the portal earlier.
+8,The oracle opened the portal.,M_T_nonequivalent,non_equivalent,The oracle will allegedly open the portal tomorrow.,The oracle was allegedly going to open the portal.
+8,The oracle opened the portal.,Q_M_nonequivalent,non_equivalent,Could the oracle allegedly open the portal?,Is it alleged that the oracle opened the portal?
+9,The programmer verified the report.,N_M_equivalent,equivalent,The programmer allegedly failed to verify the report.,"Allegedly, the programmer failed to verify the report."
+9,The programmer verified the report.,M_T_equivalent,equivalent,The programmer will allegedly verify the report tomorrow.,"Allegedly, the programmer will verify the report tomorrow."
+9,The programmer verified the report.,Q_M_equivalent,equivalent,Could the programmer allegedly verify the report?,"Allegedly, could the programmer verify the report?"
+9,The programmer verified the report.,Q_T_equivalent,equivalent,Will the programmer verify the report tomorrow?,Could the programmer verify the report tomorrow?
+9,The programmer verified the report.,N_Q_nonequivalent,non_equivalent,Could the programmer fail to verify the report?,Is it false that the programmer verified the report?
+9,The programmer verified the report.,N_T_nonequivalent,non_equivalent,The programmer will fail to verify the report tomorrow.,The programmer failed to have verified the report earlier.
+9,The programmer verified the report.,M_T_nonequivalent,non_equivalent,The programmer will allegedly verify the report tomorrow.,The programmer was allegedly going to verify the report.
+9,The programmer verified the report.,Q_M_nonequivalent,non_equivalent,Could the programmer allegedly verify the report?,Is it alleged that the programmer verified the report?
+10,The dragon verified the report.,N_M_equivalent,equivalent,The dragon allegedly failed to verify the report.,"Allegedly, the dragon failed to verify the report."
+10,The dragon verified the report.,M_T_equivalent,equivalent,The dragon will allegedly verify the report tomorrow.,"Allegedly, the dragon will verify the report tomorrow."
+10,The dragon verified the report.,Q_M_equivalent,equivalent,Could the dragon allegedly verify the report?,"Allegedly, could the dragon verify the report?"
+10,The dragon verified the report.,Q_T_equivalent,equivalent,Will the dragon verify the report tomorrow?,Could the dragon verify the report tomorrow?
+10,The dragon verified the report.,N_Q_nonequivalent,non_equivalent,Could the dragon fail to verify the report?,Is it false that the dragon verified the report?
+10,The dragon verified the report.,N_T_nonequivalent,non_equivalent,The dragon will fail to verify the report tomorrow.,The dragon failed to have verified the report earlier.
+10,The dragon verified the report.,M_T_nonequivalent,non_equivalent,The dragon will allegedly verify the report tomorrow.,The dragon was allegedly going to verify the report.
+10,The dragon verified the report.,Q_M_nonequivalent,non_equivalent,Could the dragon allegedly verify the report?,Is it alleged that the dragon verified the report?
+11,The dragon opened the portal.,N_M_equivalent,equivalent,The dragon allegedly failed to open the portal.,"Allegedly, the dragon failed to open the portal."
+11,The dragon opened the portal.,M_T_equivalent,equivalent,The dragon will allegedly open the portal tomorrow.,"Allegedly, the dragon will open the portal tomorrow."
+11,The dragon opened the portal.,Q_M_equivalent,equivalent,Could the dragon allegedly open the portal?,"Allegedly, could the dragon open the portal?"
+11,The dragon opened the portal.,Q_T_equivalent,equivalent,Will the dragon open the portal tomorrow?,Could the dragon open the portal tomorrow?
+11,The dragon opened the portal.,N_Q_nonequivalent,non_equivalent,Could the dragon fail to open the portal?,Is it false that the dragon opened the portal?
+11,The dragon opened the portal.,N_T_nonequivalent,non_equivalent,The dragon will fail to open the portal tomorrow.,The dragon failed to have opened the portal earlier.
+11,The dragon opened the portal.,M_T_nonequivalent,non_equivalent,The dragon will allegedly open the portal tomorrow.,The dragon was allegedly going to open the portal.
+11,The dragon opened the portal.,Q_M_nonequivalent,non_equivalent,Could the dragon allegedly open the portal?,Is it alleged that the dragon opened the portal?
+12,The researcher fixed the bug.,N_M_equivalent,equivalent,The researcher allegedly failed to fix the bug.,"Allegedly, the researcher failed to fix the bug."
+12,The researcher fixed the bug.,M_T_equivalent,equivalent,The researcher will allegedly fix the bug tomorrow.,"Allegedly, the researcher will fix the bug tomorrow."
+12,The researcher fixed the bug.,Q_M_equivalent,equivalent,Could the researcher allegedly fix the bug?,"Allegedly, could the researcher fix the bug?"
+12,The researcher fixed the bug.,Q_T_equivalent,equivalent,Will the researcher fix the bug tomorrow?,Could the researcher fix the bug tomorrow?
+12,The researcher fixed the bug.,N_Q_nonequivalent,non_equivalent,Could the researcher fail to fix the bug?,Is it false that the researcher fixed the bug?
+12,The researcher fixed the bug.,N_T_nonequivalent,non_equivalent,The researcher will fail to fix the bug tomorrow.,The researcher failed to have fixed the bug earlier.
+12,The researcher fixed the bug.,M_T_nonequivalent,non_equivalent,The researcher will allegedly fix the bug tomorrow.,The researcher was allegedly going to fix the bug.
+12,The researcher fixed the bug.,Q_M_nonequivalent,non_equivalent,Could the researcher allegedly fix the bug?,Is it alleged that the researcher fixed the bug?
+13,The teacher supported the theory.,N_M_equivalent,equivalent,The teacher allegedly failed to support the theory.,"Allegedly, the teacher failed to support the theory."
+13,The teacher supported the theory.,M_T_equivalent,equivalent,The teacher will allegedly support the theory tomorrow.,"Allegedly, the teacher will support the theory tomorrow."
+13,The teacher supported the theory.,Q_M_equivalent,equivalent,Could the teacher allegedly support the theory?,"Allegedly, could the teacher support the theory?"
+13,The teacher supported the theory.,Q_T_equivalent,equivalent,Will the teacher support the theory tomorrow?,Could the teacher support the theory tomorrow?
+13,The teacher supported the theory.,N_Q_nonequivalent,non_equivalent,Could the teacher fail to support the theory?,Is it false that the teacher supported the theory?
+13,The teacher supported the theory.,N_T_nonequivalent,non_equivalent,The teacher will fail to support the theory tomorrow.,The teacher failed to have supported the theory earlier.
+13,The teacher supported the theory.,M_T_nonequivalent,non_equivalent,The teacher will allegedly support the theory tomorrow.,The teacher was allegedly going to support the theory.
+13,The teacher supported the theory.,Q_M_nonequivalent,non_equivalent,Could the teacher allegedly support the theory?,Is it alleged that the teacher supported the theory?
+14,The oracle completed the repair.,N_M_equivalent,equivalent,The oracle allegedly failed to complete the repair.,"Allegedly, the oracle failed to complete the repair."
+14,The oracle completed the repair.,M_T_equivalent,equivalent,The oracle will allegedly complete the repair tomorrow.,"Allegedly, the oracle will complete the repair tomorrow."
+14,The oracle completed the repair.,Q_M_equivalent,equivalent,Could the oracle allegedly complete the repair?,"Allegedly, could the oracle complete the repair?"
+14,The oracle completed the repair.,Q_T_equivalent,equivalent,Will the oracle complete the repair tomorrow?,Could the oracle complete the repair tomorrow?
+14,The oracle completed the repair.,N_Q_nonequivalent,non_equivalent,Could the oracle fail to complete the repair?,Is it false that the oracle completed the repair?
+14,The oracle completed the repair.,N_T_nonequivalent,non_equivalent,The oracle will fail to complete the repair tomorrow.,The oracle failed to have completed the repair earlier.
+14,The oracle completed the repair.,M_T_nonequivalent,non_equivalent,The oracle will allegedly complete the repair tomorrow.,The oracle was allegedly going to complete the repair.
+14,The oracle completed the repair.,Q_M_nonequivalent,non_equivalent,Could the oracle allegedly complete the repair?,Is it alleged that the oracle completed the repair?
+15,The scientist guarded the treasure.,N_M_equivalent,equivalent,The scientist allegedly failed to guard the treasure.,"Allegedly, the scientist failed to guard the treasure."
+15,The scientist guarded the treasure.,M_T_equivalent,equivalent,The scientist will allegedly guard the treasure tomorrow.,"Allegedly, the scientist will guard the treasure tomorrow."
+15,The scientist guarded the treasure.,Q_M_equivalent,equivalent,Could the scientist allegedly guard the treasure?,"Allegedly, could the scientist guard the treasure?"
+15,The scientist guarded the treasure.,Q_T_equivalent,equivalent,Will the scientist guard the treasure tomorrow?,Could the scientist guard the treasure tomorrow?
+15,The scientist guarded the treasure.,N_Q_nonequivalent,non_equivalent,Could the scientist fail to guard the treasure?,Is it false that the scientist guarded the treasure?
+15,The scientist guarded the treasure.,N_T_nonequivalent,non_equivalent,The scientist will fail to guard the treasure tomorrow.,The scientist failed to have guarded the treasure earlier.
+15,The scientist guarded the treasure.,M_T_nonequivalent,non_equivalent,The scientist will allegedly guard the treasure tomorrow.,The scientist was allegedly going to guard the treasure.
+15,The scientist guarded the treasure.,Q_M_nonequivalent,non_equivalent,Could the scientist allegedly guard the treasure?,Is it alleged that the scientist guarded the treasure?
+16,The scientist signed the treaty.,N_M_equivalent,equivalent,The scientist allegedly failed to sign the treaty.,"Allegedly, the scientist failed to sign the treaty."
+16,The scientist signed the treaty.,M_T_equivalent,equivalent,The scientist will allegedly sign the treaty tomorrow.,"Allegedly, the scientist will sign the treaty tomorrow."
+16,The scientist signed the treaty.,Q_M_equivalent,equivalent,Could the scientist allegedly sign the treaty?,"Allegedly, could the scientist sign the treaty?"
+16,The scientist signed the treaty.,Q_T_equivalent,equivalent,Will the scientist sign the treaty tomorrow?,Could the scientist sign the treaty tomorrow?
+16,The scientist signed the treaty.,N_Q_nonequivalent,non_equivalent,Could the scientist fail to sign the treaty?,Is it false that the scientist signed the treaty?
+16,The scientist signed the treaty.,N_T_nonequivalent,non_equivalent,The scientist will fail to sign the treaty tomorrow.,The scientist failed to have signed the treaty earlier.
+16,The scientist signed the treaty.,M_T_nonequivalent,non_equivalent,The scientist will allegedly sign the treaty tomorrow.,The scientist was allegedly going to sign the treaty.
+16,The scientist signed the treaty.,Q_M_nonequivalent,non_equivalent,Could the scientist allegedly sign the treaty?,Is it alleged that the scientist signed the treaty?
+17,The alien guarded the treasure.,N_M_equivalent,equivalent,The alien allegedly failed to guard the treasure.,"Allegedly, the alien failed to guard the treasure."
+17,The alien guarded the treasure.,M_T_equivalent,equivalent,The alien will allegedly guard the treasure tomorrow.,"Allegedly, the alien will guard the treasure tomorrow."
+17,The alien guarded the treasure.,Q_M_equivalent,equivalent,Could the alien allegedly guard the treasure?,"Allegedly, could the alien guard the treasure?"
+17,The alien guarded the treasure.,Q_T_equivalent,equivalent,Will the alien guard the treasure tomorrow?,Could the alien guard the treasure tomorrow?
+17,The alien guarded the treasure.,N_Q_nonequivalent,non_equivalent,Could the alien fail to guard the treasure?,Is it false that the alien guarded the treasure?
+17,The alien guarded the treasure.,N_T_nonequivalent,non_equivalent,The alien will fail to guard the treasure tomorrow.,The alien failed to have guarded the treasure earlier.
+17,The alien guarded the treasure.,M_T_nonequivalent,non_equivalent,The alien will allegedly guard the treasure tomorrow.,The alien was allegedly going to guard the treasure.
+17,The alien guarded the treasure.,Q_M_nonequivalent,non_equivalent,Could the alien allegedly guard the treasure?,Is it alleged that the alien guarded the treasure?
+18,The pirate signed the treaty.,N_M_equivalent,equivalent,The pirate allegedly failed to sign the treaty.,"Allegedly, the pirate failed to sign the treaty."
+18,The pirate signed the treaty.,M_T_equivalent,equivalent,The pirate will allegedly sign the treaty tomorrow.,"Allegedly, the pirate will sign the treaty tomorrow."
+18,The pirate signed the treaty.,Q_M_equivalent,equivalent,Could the pirate allegedly sign the treaty?,"Allegedly, could the pirate sign the treaty?"
+18,The pirate signed the treaty.,Q_T_equivalent,equivalent,Will the pirate sign the treaty tomorrow?,Could the pirate sign the treaty tomorrow?
+18,The pirate signed the treaty.,N_Q_nonequivalent,non_equivalent,Could the pirate fail to sign the treaty?,Is it false that the pirate signed the treaty?
+18,The pirate signed the treaty.,N_T_nonequivalent,non_equivalent,The pirate will fail to sign the treaty tomorrow.,The pirate failed to have signed the treaty earlier.
+18,The pirate signed the treaty.,M_T_nonequivalent,non_equivalent,The pirate will allegedly sign the treaty tomorrow.,The pirate was allegedly going to sign the treaty.
+18,The pirate signed the treaty.,Q_M_nonequivalent,non_equivalent,Could the pirate allegedly sign the treaty?,Is it alleged that the pirate signed the treaty?
+19,The queen guarded the treasure.,N_M_equivalent,equivalent,The queen allegedly failed to guard the treasure.,"Allegedly, the queen failed to guard the treasure."
+19,The queen guarded the treasure.,M_T_equivalent,equivalent,The queen will allegedly guard the treasure tomorrow.,"Allegedly, the queen will guard the treasure tomorrow."
+19,The queen guarded the treasure.,Q_M_equivalent,equivalent,Could the queen allegedly guard the treasure?,"Allegedly, could the queen guard the treasure?"
+19,The queen guarded the treasure.,Q_T_equivalent,equivalent,Will the queen guard the treasure tomorrow?,Could the queen guard the treasure tomorrow?
+19,The queen guarded the treasure.,N_Q_nonequivalent,non_equivalent,Could the queen fail to guard the treasure?,Is it false that the queen guarded the treasure?
+19,The queen guarded the treasure.,N_T_nonequivalent,non_equivalent,The queen will fail to guard the treasure tomorrow.,The queen failed to have guarded the treasure earlier.
+19,The queen guarded the treasure.,M_T_nonequivalent,non_equivalent,The queen will allegedly guard the treasure tomorrow.,The queen was allegedly going to guard the treasure.
+19,The queen guarded the treasure.,Q_M_nonequivalent,non_equivalent,Could the queen allegedly guard the treasure?,Is it alleged that the queen guarded the treasure?
+20,The pirate supported the theory.,N_M_equivalent,equivalent,The pirate allegedly failed to support the theory.,"Allegedly, the pirate failed to support the theory."
+20,The pirate supported the theory.,M_T_equivalent,equivalent,The pirate will allegedly support the theory tomorrow.,"Allegedly, the pirate will support the theory tomorrow."
+20,The pirate supported the theory.,Q_M_equivalent,equivalent,Could the pirate allegedly support the theory?,"Allegedly, could the pirate support the theory?"
+20,The pirate supported the theory.,Q_T_equivalent,equivalent,Will the pirate support the theory tomorrow?,Could the pirate support the theory tomorrow?
+20,The pirate supported the theory.,N_Q_nonequivalent,non_equivalent,Could the pirate fail to support the theory?,Is it false that the pirate supported the theory?
+20,The pirate supported the theory.,N_T_nonequivalent,non_equivalent,The pirate will fail to support the theory tomorrow.,The pirate failed to have supported the theory earlier.
+20,The pirate supported the theory.,M_T_nonequivalent,non_equivalent,The pirate will allegedly support the theory tomorrow.,The pirate was allegedly going to support the theory.
+20,The pirate supported the theory.,Q_M_nonequivalent,non_equivalent,Could the pirate allegedly support the theory?,Is it alleged that the pirate supported the theory?
+21,The scientist approved the treatment.,N_M_equivalent,equivalent,The scientist allegedly failed to approve the treatment.,"Allegedly, the scientist failed to approve the treatment."
+21,The scientist approved the treatment.,M_T_equivalent,equivalent,The scientist will allegedly approve the treatment tomorrow.,"Allegedly, the scientist will approve the treatment tomorrow."
+21,The scientist approved the treatment.,Q_M_equivalent,equivalent,Could the scientist allegedly approve the treatment?,"Allegedly, could the scientist approve the treatment?"
+21,The scientist approved the treatment.,Q_T_equivalent,equivalent,Will the scientist approve the treatment tomorrow?,Could the scientist approve the treatment tomorrow?
+21,The scientist approved the treatment.,N_Q_nonequivalent,non_equivalent,Could the scientist fail to approve the treatment?,Is it false that the scientist approved the treatment?
+21,The scientist approved the treatment.,N_T_nonequivalent,non_equivalent,The scientist will fail to approve the treatment tomorrow.,The scientist failed to have approved the treatment earlier.
+21,The scientist approved the treatment.,M_T_nonequivalent,non_equivalent,The scientist will allegedly approve the treatment tomorrow.,The scientist was allegedly going to approve the treatment.
+21,The scientist approved the treatment.,Q_M_nonequivalent,non_equivalent,Could the scientist allegedly approve the treatment?,Is it alleged that the scientist approved the treatment?
+22,The researcher accepted the explanation.,N_M_equivalent,equivalent,The researcher allegedly failed to accept the explanation.,"Allegedly, the researcher failed to accept the explanation."
+22,The researcher accepted the explanation.,M_T_equivalent,equivalent,The researcher will allegedly accept the explanation tomorrow.,"Allegedly, the researcher will accept the explanation tomorrow."
+22,The researcher accepted the explanation.,Q_M_equivalent,equivalent,Could the researcher allegedly accept the explanation?,"Allegedly, could the researcher accept the explanation?"
+22,The researcher accepted the explanation.,Q_T_equivalent,equivalent,Will the researcher accept the explanation tomorrow?,Could the researcher accept the explanation tomorrow?
+22,The researcher accepted the explanation.,N_Q_nonequivalent,non_equivalent,Could the researcher fail to accept the explanation?,Is it false that the researcher accepted the explanation?
+22,The researcher accepted the explanation.,N_T_nonequivalent,non_equivalent,The researcher will fail to accept the explanation tomorrow.,The researcher failed to have accepted the explanation earlier.
+22,The researcher accepted the explanation.,M_T_nonequivalent,non_equivalent,The researcher will allegedly accept the explanation tomorrow.,The researcher was allegedly going to accept the explanation.
+22,The researcher accepted the explanation.,Q_M_nonequivalent,non_equivalent,Could the researcher allegedly accept the explanation?,Is it alleged that the researcher accepted the explanation?
+23,The researcher verified the report.,N_M_equivalent,equivalent,The researcher allegedly failed to verify the report.,"Allegedly, the researcher failed to verify the report."
+23,The researcher verified the report.,M_T_equivalent,equivalent,The researcher will allegedly verify the report tomorrow.,"Allegedly, the researcher will verify the report tomorrow."
+23,The researcher verified the report.,Q_M_equivalent,equivalent,Could the researcher allegedly verify the report?,"Allegedly, could the researcher verify the report?"
+23,The researcher verified the report.,Q_T_equivalent,equivalent,Will the researcher verify the report tomorrow?,Could the researcher verify the report tomorrow?
+23,The researcher verified the report.,N_Q_nonequivalent,non_equivalent,Could the researcher fail to verify the report?,Is it false that the researcher verified the report?
+23,The researcher verified the report.,N_T_nonequivalent,non_equivalent,The researcher will fail to verify the report tomorrow.,The researcher failed to have verified the report earlier.
+23,The researcher verified the report.,M_T_nonequivalent,non_equivalent,The researcher will allegedly verify the report tomorrow.,The researcher was allegedly going to verify the report.
+23,The researcher verified the report.,Q_M_nonequivalent,non_equivalent,Could the researcher allegedly verify the report?,Is it alleged that the researcher verified the report?
+24,The scientist opened the portal.,N_M_equivalent,equivalent,The scientist allegedly failed to open the portal.,"Allegedly, the scientist failed to open the portal."
+24,The scientist opened the portal.,M_T_equivalent,equivalent,The scientist will allegedly open the portal tomorrow.,"Allegedly, the scientist will open the portal tomorrow."
+24,The scientist opened the portal.,Q_M_equivalent,equivalent,Could the scientist allegedly open the portal?,"Allegedly, could the scientist open the portal?"
+24,The scientist opened the portal.,Q_T_equivalent,equivalent,Will the scientist open the portal tomorrow?,Could the scientist open the portal tomorrow?
+24,The scientist opened the portal.,N_Q_nonequivalent,non_equivalent,Could the scientist fail to open the portal?,Is it false that the scientist opened the portal?
+24,The scientist opened the portal.,N_T_nonequivalent,non_equivalent,The scientist will fail to open the portal tomorrow.,The scientist failed to have opened the portal earlier.
+24,The scientist opened the portal.,M_T_nonequivalent,non_equivalent,The scientist will allegedly open the portal tomorrow.,The scientist was allegedly going to open the portal.
+24,The scientist opened the portal.,Q_M_nonequivalent,non_equivalent,Could the scientist allegedly open the portal?,Is it alleged that the scientist opened the portal?
+25,The oracle confirmed the answer.,N_M_equivalent,equivalent,The oracle allegedly failed to confirm the answer.,"Allegedly, the oracle failed to confirm the answer."
+25,The oracle confirmed the answer.,M_T_equivalent,equivalent,The oracle will allegedly confirm the answer tomorrow.,"Allegedly, the oracle will confirm the answer tomorrow."
+25,The oracle confirmed the answer.,Q_M_equivalent,equivalent,Could the oracle allegedly confirm the answer?,"Allegedly, could the oracle confirm the answer?"
+25,The oracle confirmed the answer.,Q_T_equivalent,equivalent,Will the oracle confirm the answer tomorrow?,Could the oracle confirm the answer tomorrow?
+25,The oracle confirmed the answer.,N_Q_nonequivalent,non_equivalent,Could the oracle fail to confirm the answer?,Is it false that the oracle confirmed the answer?
+25,The oracle confirmed the answer.,N_T_nonequivalent,non_equivalent,The oracle will fail to confirm the answer tomorrow.,The oracle failed to have confirmed the answer earlier.
+25,The oracle confirmed the answer.,M_T_nonequivalent,non_equivalent,The oracle will allegedly confirm the answer tomorrow.,The oracle was allegedly going to confirm the answer.
+25,The oracle confirmed the answer.,Q_M_nonequivalent,non_equivalent,Could the oracle allegedly confirm the answer?,Is it alleged that the oracle confirmed the answer?
+26,The pirate accepted the explanation.,N_M_equivalent,equivalent,The pirate allegedly failed to accept the explanation.,"Allegedly, the pirate failed to accept the explanation."
+26,The pirate accepted the explanation.,M_T_equivalent,equivalent,The pirate will allegedly accept the explanation tomorrow.,"Allegedly, the pirate will accept the explanation tomorrow."
+26,The pirate accepted the explanation.,Q_M_equivalent,equivalent,Could the pirate allegedly accept the explanation?,"Allegedly, could the pirate accept the explanation?"
+26,The pirate accepted the explanation.,Q_T_equivalent,equivalent,Will the pirate accept the explanation tomorrow?,Could the pirate accept the explanation tomorrow?
+26,The pirate accepted the explanation.,N_Q_nonequivalent,non_equivalent,Could the pirate fail to accept the explanation?,Is it false that the pirate accepted the explanation?
+26,The pirate accepted the explanation.,N_T_nonequivalent,non_equivalent,The pirate will fail to accept the explanation tomorrow.,The pirate failed to have accepted the explanation earlier.
+26,The pirate accepted the explanation.,M_T_nonequivalent,non_equivalent,The pirate will allegedly accept the explanation tomorrow.,The pirate was allegedly going to accept the explanation.
+26,The pirate accepted the explanation.,Q_M_nonequivalent,non_equivalent,Could the pirate allegedly accept the explanation?,Is it alleged that the pirate accepted the explanation?
+27,The teacher accepted the explanation.,N_M_equivalent,equivalent,The teacher allegedly failed to accept the explanation.,"Allegedly, the teacher failed to accept the explanation."
+27,The teacher accepted the explanation.,M_T_equivalent,equivalent,The teacher will allegedly accept the explanation tomorrow.,"Allegedly, the teacher will accept the explanation tomorrow."
+27,The teacher accepted the explanation.,Q_M_equivalent,equivalent,Could the teacher allegedly accept the explanation?,"Allegedly, could the teacher accept the explanation?"
+27,The teacher accepted the explanation.,Q_T_equivalent,equivalent,Will the teacher accept the explanation tomorrow?,Could the teacher accept the explanation tomorrow?
+27,The teacher accepted the explanation.,N_Q_nonequivalent,non_equivalent,Could the teacher fail to accept the explanation?,Is it false that the teacher accepted the explanation?
+27,The teacher accepted the explanation.,N_T_nonequivalent,non_equivalent,The teacher will fail to accept the explanation tomorrow.,The teacher failed to have accepted the explanation earlier.
+27,The teacher accepted the explanation.,M_T_nonequivalent,non_equivalent,The teacher will allegedly accept the explanation tomorrow.,The teacher was allegedly going to accept the explanation.
+27,The teacher accepted the explanation.,Q_M_nonequivalent,non_equivalent,Could the teacher allegedly accept the explanation?,Is it alleged that the teacher accepted the explanation?
+28,The doctor approved the treatment.,N_M_equivalent,equivalent,The doctor allegedly failed to approve the treatment.,"Allegedly, the doctor failed to approve the treatment."
+28,The doctor approved the treatment.,M_T_equivalent,equivalent,The doctor will allegedly approve the treatment tomorrow.,"Allegedly, the doctor will approve the treatment tomorrow."
+28,The doctor approved the treatment.,Q_M_equivalent,equivalent,Could the doctor allegedly approve the treatment?,"Allegedly, could the doctor approve the treatment?"
+28,The doctor approved the treatment.,Q_T_equivalent,equivalent,Will the doctor approve the treatment tomorrow?,Could the doctor approve the treatment tomorrow?
+28,The doctor approved the treatment.,N_Q_nonequivalent,non_equivalent,Could the doctor fail to approve the treatment?,Is it false that the doctor approved the treatment?
+28,The doctor approved the treatment.,N_T_nonequivalent,non_equivalent,The doctor will fail to approve the treatment tomorrow.,The doctor failed to have approved the treatment earlier.
+28,The doctor approved the treatment.,M_T_nonequivalent,non_equivalent,The doctor will allegedly approve the treatment tomorrow.,The doctor was allegedly going to approve the treatment.
+28,The doctor approved the treatment.,Q_M_nonequivalent,non_equivalent,Could the doctor allegedly approve the treatment?,Is it alleged that the doctor approved the treatment?
+29,The robot fixed the bug.,N_M_equivalent,equivalent,The robot allegedly failed to fix the bug.,"Allegedly, the robot failed to fix the bug."
+29,The robot fixed the bug.,M_T_equivalent,equivalent,The robot will allegedly fix the bug tomorrow.,"Allegedly, the robot will fix the bug tomorrow."
+29,The robot fixed the bug.,Q_M_equivalent,equivalent,Could the robot allegedly fix the bug?,"Allegedly, could the robot fix the bug?"
+29,The robot fixed the bug.,Q_T_equivalent,equivalent,Will the robot fix the bug tomorrow?,Could the robot fix the bug tomorrow?
+29,The robot fixed the bug.,N_Q_nonequivalent,non_equivalent,Could the robot fail to fix the bug?,Is it false that the robot fixed the bug?
+29,The robot fixed the bug.,N_T_nonequivalent,non_equivalent,The robot will fail to fix the bug tomorrow.,The robot failed to have fixed the bug earlier.
+29,The robot fixed the bug.,M_T_nonequivalent,non_equivalent,The robot will allegedly fix the bug tomorrow.,The robot was allegedly going to fix the bug.
+29,The robot fixed the bug.,Q_M_nonequivalent,non_equivalent,Could the robot allegedly fix the bug?,Is it alleged that the robot fixed the bug?
+30,The manager signed the treaty.,N_M_equivalent,equivalent,The manager allegedly failed to sign the treaty.,"Allegedly, the manager failed to sign the treaty."
+30,The manager signed the treaty.,M_T_equivalent,equivalent,The manager will allegedly sign the treaty tomorrow.,"Allegedly, the manager will sign the treaty tomorrow."
+30,The manager signed the treaty.,Q_M_equivalent,equivalent,Could the manager allegedly sign the treaty?,"Allegedly, could the manager sign the treaty?"
+30,The manager signed the treaty.,Q_T_equivalent,equivalent,Will the manager sign the treaty tomorrow?,Could the manager sign the treaty tomorrow?
+30,The manager signed the treaty.,N_Q_nonequivalent,non_equivalent,Could the manager fail to sign the treaty?,Is it false that the manager signed the treaty?
+30,The manager signed the treaty.,N_T_nonequivalent,non_equivalent,The manager will fail to sign the treaty tomorrow.,The manager failed to have signed the treaty earlier.
+30,The manager signed the treaty.,M_T_nonequivalent,non_equivalent,The manager will allegedly sign the treaty tomorrow.,The manager was allegedly going to sign the treaty.
+30,The manager signed the treaty.,Q_M_nonequivalent,non_equivalent,Could the manager allegedly sign the treaty?,Is it alleged that the manager signed the treaty?
+31,The researcher confirmed the answer.,N_M_equivalent,equivalent,The researcher allegedly failed to confirm the answer.,"Allegedly, the researcher failed to confirm the answer."
+31,The researcher confirmed the answer.,M_T_equivalent,equivalent,The researcher will allegedly confirm the answer tomorrow.,"Allegedly, the researcher will confirm the answer tomorrow."
+31,The researcher confirmed the answer.,Q_M_equivalent,equivalent,Could the researcher allegedly confirm the answer?,"Allegedly, could the researcher confirm the answer?"
+31,The researcher confirmed the answer.,Q_T_equivalent,equivalent,Will the researcher confirm the answer tomorrow?,Could the researcher confirm the answer tomorrow?
+31,The researcher confirmed the answer.,N_Q_nonequivalent,non_equivalent,Could the researcher fail to confirm the answer?,Is it false that the researcher confirmed the answer?
+31,The researcher confirmed the answer.,N_T_nonequivalent,non_equivalent,The researcher will fail to confirm the answer tomorrow.,The researcher failed to have confirmed the answer earlier.
+31,The researcher confirmed the answer.,M_T_nonequivalent,non_equivalent,The researcher will allegedly confirm the answer tomorrow.,The researcher was allegedly going to confirm the answer.
+31,The researcher confirmed the answer.,Q_M_nonequivalent,non_equivalent,Could the researcher allegedly confirm the answer?,Is it alleged that the researcher confirmed the answer?
+32,The alien completed the repair.,N_M_equivalent,equivalent,The alien allegedly failed to complete the repair.,"Allegedly, the alien failed to complete the repair."
+32,The alien completed the repair.,M_T_equivalent,equivalent,The alien will allegedly complete the repair tomorrow.,"Allegedly, the alien will complete the repair tomorrow."
+32,The alien completed the repair.,Q_M_equivalent,equivalent,Could the alien allegedly complete the repair?,"Allegedly, could the alien complete the repair?"
+32,The alien completed the repair.,Q_T_equivalent,equivalent,Will the alien complete the repair tomorrow?,Could the alien complete the repair tomorrow?
+32,The alien completed the repair.,N_Q_nonequivalent,non_equivalent,Could the alien fail to complete the repair?,Is it false that the alien completed the repair?
+32,The alien completed the repair.,N_T_nonequivalent,non_equivalent,The alien will fail to complete the repair tomorrow.,The alien failed to have completed the repair earlier.
+32,The alien completed the repair.,M_T_nonequivalent,non_equivalent,The alien will allegedly complete the repair tomorrow.,The alien was allegedly going to complete the repair.
+32,The alien completed the repair.,Q_M_nonequivalent,non_equivalent,Could the alien allegedly complete the repair?,Is it alleged that the alien completed the repair?
+33,The analyst opened the portal.,N_M_equivalent,equivalent,The analyst allegedly failed to open the portal.,"Allegedly, the analyst failed to open the portal."
+33,The analyst opened the portal.,M_T_equivalent,equivalent,The analyst will allegedly open the portal tomorrow.,"Allegedly, the analyst will open the portal tomorrow."
+33,The analyst opened the portal.,Q_M_equivalent,equivalent,Could the analyst allegedly open the portal?,"Allegedly, could the analyst open the portal?"
+33,The analyst opened the portal.,Q_T_equivalent,equivalent,Will the analyst open the portal tomorrow?,Could the analyst open the portal tomorrow?
+33,The analyst opened the portal.,N_Q_nonequivalent,non_equivalent,Could the analyst fail to open the portal?,Is it false that the analyst opened the portal?
+33,The analyst opened the portal.,N_T_nonequivalent,non_equivalent,The analyst will fail to open the portal tomorrow.,The analyst failed to have opened the portal earlier.
+33,The analyst opened the portal.,M_T_nonequivalent,non_equivalent,The analyst will allegedly open the portal tomorrow.,The analyst was allegedly going to open the portal.
+33,The analyst opened the portal.,Q_M_nonequivalent,non_equivalent,Could the analyst allegedly open the portal?,Is it alleged that the analyst opened the portal?
+34,The doctor opened the portal.,N_M_equivalent,equivalent,The doctor allegedly failed to open the portal.,"Allegedly, the doctor failed to open the portal."
+34,The doctor opened the portal.,M_T_equivalent,equivalent,The doctor will allegedly open the portal tomorrow.,"Allegedly, the doctor will open the portal tomorrow."
+34,The doctor opened the portal.,Q_M_equivalent,equivalent,Could the doctor allegedly open the portal?,"Allegedly, could the doctor open the portal?"
+34,The doctor opened the portal.,Q_T_equivalent,equivalent,Will the doctor open the portal tomorrow?,Could the doctor open the portal tomorrow?
+34,The doctor opened the portal.,N_Q_nonequivalent,non_equivalent,Could the doctor fail to open the portal?,Is it false that the doctor opened the portal?
+34,The doctor opened the portal.,N_T_nonequivalent,non_equivalent,The doctor will fail to open the portal tomorrow.,The doctor failed to have opened the portal earlier.
+34,The doctor opened the portal.,M_T_nonequivalent,non_equivalent,The doctor will allegedly open the portal tomorrow.,The doctor was allegedly going to open the portal.
+34,The doctor opened the portal.,Q_M_nonequivalent,non_equivalent,Could the doctor allegedly open the portal?,Is it alleged that the doctor opened the portal?
+35,The pirate fixed the bug.,N_M_equivalent,equivalent,The pirate allegedly failed to fix the bug.,"Allegedly, the pirate failed to fix the bug."
+35,The pirate fixed the bug.,M_T_equivalent,equivalent,The pirate will allegedly fix the bug tomorrow.,"Allegedly, the pirate will fix the bug tomorrow."
+35,The pirate fixed the bug.,Q_M_equivalent,equivalent,Could the pirate allegedly fix the bug?,"Allegedly, could the pirate fix the bug?"
+35,The pirate fixed the bug.,Q_T_equivalent,equivalent,Will the pirate fix the bug tomorrow?,Could the pirate fix the bug tomorrow?
+35,The pirate fixed the bug.,N_Q_nonequivalent,non_equivalent,Could the pirate fail to fix the bug?,Is it false that the pirate fixed the bug?
+35,The pirate fixed the bug.,N_T_nonequivalent,non_equivalent,The pirate will fail to fix the bug tomorrow.,The pirate failed to have fixed the bug earlier.
+35,The pirate fixed the bug.,M_T_nonequivalent,non_equivalent,The pirate will allegedly fix the bug tomorrow.,The pirate was allegedly going to fix the bug.
+35,The pirate fixed the bug.,Q_M_nonequivalent,non_equivalent,Could the pirate allegedly fix the bug?,Is it alleged that the pirate fixed the bug?
+36,The scientist fixed the bug.,N_M_equivalent,equivalent,The scientist allegedly failed to fix the bug.,"Allegedly, the scientist failed to fix the bug."
+36,The scientist fixed the bug.,M_T_equivalent,equivalent,The scientist will allegedly fix the bug tomorrow.,"Allegedly, the scientist will fix the bug tomorrow."
+36,The scientist fixed the bug.,Q_M_equivalent,equivalent,Could the scientist allegedly fix the bug?,"Allegedly, could the scientist fix the bug?"
+36,The scientist fixed the bug.,Q_T_equivalent,equivalent,Will the scientist fix the bug tomorrow?,Could the scientist fix the bug tomorrow?
+36,The scientist fixed the bug.,N_Q_nonequivalent,non_equivalent,Could the scientist fail to fix the bug?,Is it false that the scientist fixed the bug?
+36,The scientist fixed the bug.,N_T_nonequivalent,non_equivalent,The scientist will fail to fix the bug tomorrow.,The scientist failed to have fixed the bug earlier.
+36,The scientist fixed the bug.,M_T_nonequivalent,non_equivalent,The scientist will allegedly fix the bug tomorrow.,The scientist was allegedly going to fix the bug.
+36,The scientist fixed the bug.,Q_M_nonequivalent,non_equivalent,Could the scientist allegedly fix the bug?,Is it alleged that the scientist fixed the bug?
+37,The pirate confirmed the answer.,N_M_equivalent,equivalent,The pirate allegedly failed to confirm the answer.,"Allegedly, the pirate failed to confirm the answer."
+37,The pirate confirmed the answer.,M_T_equivalent,equivalent,The pirate will allegedly confirm the answer tomorrow.,"Allegedly, the pirate will confirm the answer tomorrow."
+37,The pirate confirmed the answer.,Q_M_equivalent,equivalent,Could the pirate allegedly confirm the answer?,"Allegedly, could the pirate confirm the answer?"
+37,The pirate confirmed the answer.,Q_T_equivalent,equivalent,Will the pirate confirm the answer tomorrow?,Could the pirate confirm the answer tomorrow?
+37,The pirate confirmed the answer.,N_Q_nonequivalent,non_equivalent,Could the pirate fail to confirm the answer?,Is it false that the pirate confirmed the answer?
+37,The pirate confirmed the answer.,N_T_nonequivalent,non_equivalent,The pirate will fail to confirm the answer tomorrow.,The pirate failed to have confirmed the answer earlier.
+37,The pirate confirmed the answer.,M_T_nonequivalent,non_equivalent,The pirate will allegedly confirm the answer tomorrow.,The pirate was allegedly going to confirm the answer.
+37,The pirate confirmed the answer.,Q_M_nonequivalent,non_equivalent,Could the pirate allegedly confirm the answer?,Is it alleged that the pirate confirmed the answer?
+38,The scientist confirmed the answer.,N_M_equivalent,equivalent,The scientist allegedly failed to confirm the answer.,"Allegedly, the scientist failed to confirm the answer."
+38,The scientist confirmed the answer.,M_T_equivalent,equivalent,The scientist will allegedly confirm the answer tomorrow.,"Allegedly, the scientist will confirm the answer tomorrow."
+38,The scientist confirmed the answer.,Q_M_equivalent,equivalent,Could the scientist allegedly confirm the answer?,"Allegedly, could the scientist confirm the answer?"
+38,The scientist confirmed the answer.,Q_T_equivalent,equivalent,Will the scientist confirm the answer tomorrow?,Could the scientist confirm the answer tomorrow?
+38,The scientist confirmed the answer.,N_Q_nonequivalent,non_equivalent,Could the scientist fail to confirm the answer?,Is it false that the scientist confirmed the answer?
+38,The scientist confirmed the answer.,N_T_nonequivalent,non_equivalent,The scientist will fail to confirm the answer tomorrow.,The scientist failed to have confirmed the answer earlier.
+38,The scientist confirmed the answer.,M_T_nonequivalent,non_equivalent,The scientist will allegedly confirm the answer tomorrow.,The scientist was allegedly going to confirm the answer.
+38,The scientist confirmed the answer.,Q_M_nonequivalent,non_equivalent,Could the scientist allegedly confirm the answer?,Is it alleged that the scientist confirmed the answer?
+39,The researcher completed the repair.,N_M_equivalent,equivalent,The researcher allegedly failed to complete the repair.,"Allegedly, the researcher failed to complete the repair."
+39,The researcher completed the repair.,M_T_equivalent,equivalent,The researcher will allegedly complete the repair tomorrow.,"Allegedly, the researcher will complete the repair tomorrow."
+39,The researcher completed the repair.,Q_M_equivalent,equivalent,Could the researcher allegedly complete the repair?,"Allegedly, could the researcher complete the repair?"
+39,The researcher completed the repair.,Q_T_equivalent,equivalent,Will the researcher complete the repair tomorrow?,Could the researcher complete the repair tomorrow?
+39,The researcher completed the repair.,N_Q_nonequivalent,non_equivalent,Could the researcher fail to complete the repair?,Is it false that the researcher completed the repair?
+39,The researcher completed the repair.,N_T_nonequivalent,non_equivalent,The researcher will fail to complete the repair tomorrow.,The researcher failed to have completed the repair earlier.
+39,The researcher completed the repair.,M_T_nonequivalent,non_equivalent,The researcher will allegedly complete the repair tomorrow.,The researcher was allegedly going to complete the repair.
+39,The researcher completed the repair.,Q_M_nonequivalent,non_equivalent,Could the researcher allegedly complete the repair?,Is it alleged that the researcher completed the repair?
+40,The manager accepted the explanation.,N_M_equivalent,equivalent,The manager allegedly failed to accept the explanation.,"Allegedly, the manager failed to accept the explanation."
+40,The manager accepted the explanation.,M_T_equivalent,equivalent,The manager will allegedly accept the explanation tomorrow.,"Allegedly, the manager will accept the explanation tomorrow."
+40,The manager accepted the explanation.,Q_M_equivalent,equivalent,Could the manager allegedly accept the explanation?,"Allegedly, could the manager accept the explanation?"
+40,The manager accepted the explanation.,Q_T_equivalent,equivalent,Will the manager accept the explanation tomorrow?,Could the manager accept the explanation tomorrow?
+40,The manager accepted the explanation.,N_Q_nonequivalent,non_equivalent,Could the manager fail to accept the explanation?,Is it false that the manager accepted the explanation?
+40,The manager accepted the explanation.,N_T_nonequivalent,non_equivalent,The manager will fail to accept the explanation tomorrow.,The manager failed to have accepted the explanation earlier.
+40,The manager accepted the explanation.,M_T_nonequivalent,non_equivalent,The manager will allegedly accept the explanation tomorrow.,The manager was allegedly going to accept the explanation.
+40,The manager accepted the explanation.,Q_M_nonequivalent,non_equivalent,Could the manager allegedly accept the explanation?,Is it alleged that the manager accepted the explanation?
+41,The analyst confirmed the answer.,N_M_equivalent,equivalent,The analyst allegedly failed to confirm the answer.,"Allegedly, the analyst failed to confirm the answer."
+41,The analyst confirmed the answer.,M_T_equivalent,equivalent,The analyst will allegedly confirm the answer tomorrow.,"Allegedly, the analyst will confirm the answer tomorrow."
+41,The analyst confirmed the answer.,Q_M_equivalent,equivalent,Could the analyst allegedly confirm the answer?,"Allegedly, could the analyst confirm the answer?"
+41,The analyst confirmed the answer.,Q_T_equivalent,equivalent,Will the analyst confirm the answer tomorrow?,Could the analyst confirm the answer tomorrow?
+41,The analyst confirmed the answer.,N_Q_nonequivalent,non_equivalent,Could the analyst fail to confirm the answer?,Is it false that the analyst confirmed the answer?
+41,The analyst confirmed the answer.,N_T_nonequivalent,non_equivalent,The analyst will fail to confirm the answer tomorrow.,The analyst failed to have confirmed the answer earlier.
+41,The analyst confirmed the answer.,M_T_nonequivalent,non_equivalent,The analyst will allegedly confirm the answer tomorrow.,The analyst was allegedly going to confirm the answer.
+41,The analyst confirmed the answer.,Q_M_nonequivalent,non_equivalent,Could the analyst allegedly confirm the answer?,Is it alleged that the analyst confirmed the answer?
+42,The robot opened the portal.,N_M_equivalent,equivalent,The robot allegedly failed to open the portal.,"Allegedly, the robot failed to open the portal."
+42,The robot opened the portal.,M_T_equivalent,equivalent,The robot will allegedly open the portal tomorrow.,"Allegedly, the robot will open the portal tomorrow."
+42,The robot opened the portal.,Q_M_equivalent,equivalent,Could the robot allegedly open the portal?,"Allegedly, could the robot open the portal?"
+42,The robot opened the portal.,Q_T_equivalent,equivalent,Will the robot open the portal tomorrow?,Could the robot open the portal tomorrow?
+42,The robot opened the portal.,N_Q_nonequivalent,non_equivalent,Could the robot fail to open the portal?,Is it false that the robot opened the portal?
+42,The robot opened the portal.,N_T_nonequivalent,non_equivalent,The robot will fail to open the portal tomorrow.,The robot failed to have opened the portal earlier.
+42,The robot opened the portal.,M_T_nonequivalent,non_equivalent,The robot will allegedly open the portal tomorrow.,The robot was allegedly going to open the portal.
+42,The robot opened the portal.,Q_M_nonequivalent,non_equivalent,Could the robot allegedly open the portal?,Is it alleged that the robot opened the portal?
+43,The knight fixed the bug.,N_M_equivalent,equivalent,The knight allegedly failed to fix the bug.,"Allegedly, the knight failed to fix the bug."
+43,The knight fixed the bug.,M_T_equivalent,equivalent,The knight will allegedly fix the bug tomorrow.,"Allegedly, the knight will fix the bug tomorrow."
+43,The knight fixed the bug.,Q_M_equivalent,equivalent,Could the knight allegedly fix the bug?,"Allegedly, could the knight fix the bug?"
+43,The knight fixed the bug.,Q_T_equivalent,equivalent,Will the knight fix the bug tomorrow?,Could the knight fix the bug tomorrow?
+43,The knight fixed the bug.,N_Q_nonequivalent,non_equivalent,Could the knight fail to fix the bug?,Is it false that the knight fixed the bug?
+43,The knight fixed the bug.,N_T_nonequivalent,non_equivalent,The knight will fail to fix the bug tomorrow.,The knight failed to have fixed the bug earlier.
+43,The knight fixed the bug.,M_T_nonequivalent,non_equivalent,The knight will allegedly fix the bug tomorrow.,The knight was allegedly going to fix the bug.
+43,The knight fixed the bug.,Q_M_nonequivalent,non_equivalent,Could the knight allegedly fix the bug?,Is it alleged that the knight fixed the bug?
+44,The alien verified the report.,N_M_equivalent,equivalent,The alien allegedly failed to verify the report.,"Allegedly, the alien failed to verify the report."
+44,The alien verified the report.,M_T_equivalent,equivalent,The alien will allegedly verify the report tomorrow.,"Allegedly, the alien will verify the report tomorrow."
+44,The alien verified the report.,Q_M_equivalent,equivalent,Could the alien allegedly verify the report?,"Allegedly, could the alien verify the report?"
+44,The alien verified the report.,Q_T_equivalent,equivalent,Will the alien verify the report tomorrow?,Could the alien verify the report tomorrow?
+44,The alien verified the report.,N_Q_nonequivalent,non_equivalent,Could the alien fail to verify the report?,Is it false that the alien verified the report?
+44,The alien verified the report.,N_T_nonequivalent,non_equivalent,The alien will fail to verify the report tomorrow.,The alien failed to have verified the report earlier.
+44,The alien verified the report.,M_T_nonequivalent,non_equivalent,The alien will allegedly verify the report tomorrow.,The alien was allegedly going to verify the report.
+44,The alien verified the report.,Q_M_nonequivalent,non_equivalent,Could the alien allegedly verify the report?,Is it alleged that the alien verified the report?
+45,The engineer confirmed the answer.,N_M_equivalent,equivalent,The engineer allegedly failed to confirm the answer.,"Allegedly, the engineer failed to confirm the answer."
+45,The engineer confirmed the answer.,M_T_equivalent,equivalent,The engineer will allegedly confirm the answer tomorrow.,"Allegedly, the engineer will confirm the answer tomorrow."
+45,The engineer confirmed the answer.,Q_M_equivalent,equivalent,Could the engineer allegedly confirm the answer?,"Allegedly, could the engineer confirm the answer?"
+45,The engineer confirmed the answer.,Q_T_equivalent,equivalent,Will the engineer confirm the answer tomorrow?,Could the engineer confirm the answer tomorrow?
+45,The engineer confirmed the answer.,N_Q_nonequivalent,non_equivalent,Could the engineer fail to confirm the answer?,Is it false that the engineer confirmed the answer?
+45,The engineer confirmed the answer.,N_T_nonequivalent,non_equivalent,The engineer will fail to confirm the answer tomorrow.,The engineer failed to have confirmed the answer earlier.
+45,The engineer confirmed the answer.,M_T_nonequivalent,non_equivalent,The engineer will allegedly confirm the answer tomorrow.,The engineer was allegedly going to confirm the answer.
+45,The engineer confirmed the answer.,Q_M_nonequivalent,non_equivalent,Could the engineer allegedly confirm the answer?,Is it alleged that the engineer confirmed the answer?
+46,The manager opened the portal.,N_M_equivalent,equivalent,The manager allegedly failed to open the portal.,"Allegedly, the manager failed to open the portal."
+46,The manager opened the portal.,M_T_equivalent,equivalent,The manager will allegedly open the portal tomorrow.,"Allegedly, the manager will open the portal tomorrow."
+46,The manager opened the portal.,Q_M_equivalent,equivalent,Could the manager allegedly open the portal?,"Allegedly, could the manager open the portal?"
+46,The manager opened the portal.,Q_T_equivalent,equivalent,Will the manager open the portal tomorrow?,Could the manager open the portal tomorrow?
+46,The manager opened the portal.,N_Q_nonequivalent,non_equivalent,Could the manager fail to open the portal?,Is it false that the manager opened the portal?
+46,The manager opened the portal.,N_T_nonequivalent,non_equivalent,The manager will fail to open the portal tomorrow.,The manager failed to have opened the portal earlier.
+46,The manager opened the portal.,M_T_nonequivalent,non_equivalent,The manager will allegedly open the portal tomorrow.,The manager was allegedly going to open the portal.
+46,The manager opened the portal.,Q_M_nonequivalent,non_equivalent,Could the manager allegedly open the portal?,Is it alleged that the manager opened the portal?
+47,The wizard completed the repair.,N_M_equivalent,equivalent,The wizard allegedly failed to complete the repair.,"Allegedly, the wizard failed to complete the repair."
+47,The wizard completed the repair.,M_T_equivalent,equivalent,The wizard will allegedly complete the repair tomorrow.,"Allegedly, the wizard will complete the repair tomorrow."
+47,The wizard completed the repair.,Q_M_equivalent,equivalent,Could the wizard allegedly complete the repair?,"Allegedly, could the wizard complete the repair?"
+47,The wizard completed the repair.,Q_T_equivalent,equivalent,Will the wizard complete the repair tomorrow?,Could the wizard complete the repair tomorrow?
+47,The wizard completed the repair.,N_Q_nonequivalent,non_equivalent,Could the wizard fail to complete the repair?,Is it false that the wizard completed the repair?
+47,The wizard completed the repair.,N_T_nonequivalent,non_equivalent,The wizard will fail to complete the repair tomorrow.,The wizard failed to have completed the repair earlier.
+47,The wizard completed the repair.,M_T_nonequivalent,non_equivalent,The wizard will allegedly complete the repair tomorrow.,The wizard was allegedly going to complete the repair.
+47,The wizard completed the repair.,Q_M_nonequivalent,non_equivalent,Could the wizard allegedly complete the repair?,Is it alleged that the wizard completed the repair?
+48,The wizard signed the treaty.,N_M_equivalent,equivalent,The wizard allegedly failed to sign the treaty.,"Allegedly, the wizard failed to sign the treaty."
+48,The wizard signed the treaty.,M_T_equivalent,equivalent,The wizard will allegedly sign the treaty tomorrow.,"Allegedly, the wizard will sign the treaty tomorrow."
+48,The wizard signed the treaty.,Q_M_equivalent,equivalent,Could the wizard allegedly sign the treaty?,"Allegedly, could the wizard sign the treaty?"
+48,The wizard signed the treaty.,Q_T_equivalent,equivalent,Will the wizard sign the treaty tomorrow?,Could the wizard sign the treaty tomorrow?
+48,The wizard signed the treaty.,N_Q_nonequivalent,non_equivalent,Could the wizard fail to sign the treaty?,Is it false that the wizard signed the treaty?
+48,The wizard signed the treaty.,N_T_nonequivalent,non_equivalent,The wizard will fail to sign the treaty tomorrow.,The wizard failed to have signed the treaty earlier.
+48,The wizard signed the treaty.,M_T_nonequivalent,non_equivalent,The wizard will allegedly sign the treaty tomorrow.,The wizard was allegedly going to sign the treaty.
+48,The wizard signed the treaty.,Q_M_nonequivalent,non_equivalent,Could the wizard allegedly sign the treaty?,Is it alleged that the wizard signed the treaty?
+49,The scientist accepted the explanation.,N_M_equivalent,equivalent,The scientist allegedly failed to accept the explanation.,"Allegedly, the scientist failed to accept the explanation."
+49,The scientist accepted the explanation.,M_T_equivalent,equivalent,The scientist will allegedly accept the explanation tomorrow.,"Allegedly, the scientist will accept the explanation tomorrow."
+49,The scientist accepted the explanation.,Q_M_equivalent,equivalent,Could the scientist allegedly accept the explanation?,"Allegedly, could the scientist accept the explanation?"
+49,The scientist accepted the explanation.,Q_T_equivalent,equivalent,Will the scientist accept the explanation tomorrow?,Could the scientist accept the explanation tomorrow?
+49,The scientist accepted the explanation.,N_Q_nonequivalent,non_equivalent,Could the scientist fail to accept the explanation?,Is it false that the scientist accepted the explanation?
+49,The scientist accepted the explanation.,N_T_nonequivalent,non_equivalent,The scientist will fail to accept the explanation tomorrow.,The scientist failed to have accepted the explanation earlier.
+49,The scientist accepted the explanation.,M_T_nonequivalent,non_equivalent,The scientist will allegedly accept the explanation tomorrow.,The scientist was allegedly going to accept the explanation.
+49,The scientist accepted the explanation.,Q_M_nonequivalent,non_equivalent,Could the scientist allegedly accept the explanation?,Is it alleged that the scientist accepted the explanation?
+50,The queen fixed the bug.,N_M_equivalent,equivalent,The queen allegedly failed to fix the bug.,"Allegedly, the queen failed to fix the bug."
+50,The queen fixed the bug.,M_T_equivalent,equivalent,The queen will allegedly fix the bug tomorrow.,"Allegedly, the queen will fix the bug tomorrow."
+50,The queen fixed the bug.,Q_M_equivalent,equivalent,Could the queen allegedly fix the bug?,"Allegedly, could the queen fix the bug?"
+50,The queen fixed the bug.,Q_T_equivalent,equivalent,Will the queen fix the bug tomorrow?,Could the queen fix the bug tomorrow?
+50,The queen fixed the bug.,N_Q_nonequivalent,non_equivalent,Could the queen fail to fix the bug?,Is it false that the queen fixed the bug?
+50,The queen fixed the bug.,N_T_nonequivalent,non_equivalent,The queen will fail to fix the bug tomorrow.,The queen failed to have fixed the bug earlier.
+50,The queen fixed the bug.,M_T_nonequivalent,non_equivalent,The queen will allegedly fix the bug tomorrow.,The queen was allegedly going to fix the bug.
+50,The queen fixed the bug.,Q_M_nonequivalent,non_equivalent,Could the queen allegedly fix the bug?,Is it alleged that the queen fixed the bug?
+51,The dragon fixed the bug.,N_M_equivalent,equivalent,The dragon allegedly failed to fix the bug.,"Allegedly, the dragon failed to fix the bug."
+51,The dragon fixed the bug.,M_T_equivalent,equivalent,The dragon will allegedly fix the bug tomorrow.,"Allegedly, the dragon will fix the bug tomorrow."
+51,The dragon fixed the bug.,Q_M_equivalent,equivalent,Could the dragon allegedly fix the bug?,"Allegedly, could the dragon fix the bug?"
+51,The dragon fixed the bug.,Q_T_equivalent,equivalent,Will the dragon fix the bug tomorrow?,Could the dragon fix the bug tomorrow?
+51,The dragon fixed the bug.,N_Q_nonequivalent,non_equivalent,Could the dragon fail to fix the bug?,Is it false that the dragon fixed the bug?
+51,The dragon fixed the bug.,N_T_nonequivalent,non_equivalent,The dragon will fail to fix the bug tomorrow.,The dragon failed to have fixed the bug earlier.
+51,The dragon fixed the bug.,M_T_nonequivalent,non_equivalent,The dragon will allegedly fix the bug tomorrow.,The dragon was allegedly going to fix the bug.
+51,The dragon fixed the bug.,Q_M_nonequivalent,non_equivalent,Could the dragon allegedly fix the bug?,Is it alleged that the dragon fixed the bug?
+52,The teacher guarded the treasure.,N_M_equivalent,equivalent,The teacher allegedly failed to guard the treasure.,"Allegedly, the teacher failed to guard the treasure."
+52,The teacher guarded the treasure.,M_T_equivalent,equivalent,The teacher will allegedly guard the treasure tomorrow.,"Allegedly, the teacher will guard the treasure tomorrow."
+52,The teacher guarded the treasure.,Q_M_equivalent,equivalent,Could the teacher allegedly guard the treasure?,"Allegedly, could the teacher guard the treasure?"
+52,The teacher guarded the treasure.,Q_T_equivalent,equivalent,Will the teacher guard the treasure tomorrow?,Could the teacher guard the treasure tomorrow?
+52,The teacher guarded the treasure.,N_Q_nonequivalent,non_equivalent,Could the teacher fail to guard the treasure?,Is it false that the teacher guarded the treasure?
+52,The teacher guarded the treasure.,N_T_nonequivalent,non_equivalent,The teacher will fail to guard the treasure tomorrow.,The teacher failed to have guarded the treasure earlier.
+52,The teacher guarded the treasure.,M_T_nonequivalent,non_equivalent,The teacher will allegedly guard the treasure tomorrow.,The teacher was allegedly going to guard the treasure.
+52,The teacher guarded the treasure.,Q_M_nonequivalent,non_equivalent,Could the teacher allegedly guard the treasure?,Is it alleged that the teacher guarded the treasure?
+53,The manager supported the theory.,N_M_equivalent,equivalent,The manager allegedly failed to support the theory.,"Allegedly, the manager failed to support the theory."
+53,The manager supported the theory.,M_T_equivalent,equivalent,The manager will allegedly support the theory tomorrow.,"Allegedly, the manager will support the theory tomorrow."
+53,The manager supported the theory.,Q_M_equivalent,equivalent,Could the manager allegedly support the theory?,"Allegedly, could the manager support the theory?"
+53,The manager supported the theory.,Q_T_equivalent,equivalent,Will the manager support the theory tomorrow?,Could the manager support the theory tomorrow?
+53,The manager supported the theory.,N_Q_nonequivalent,non_equivalent,Could the manager fail to support the theory?,Is it false that the manager supported the theory?
+53,The manager supported the theory.,N_T_nonequivalent,non_equivalent,The manager will fail to support the theory tomorrow.,The manager failed to have supported the theory earlier.
+53,The manager supported the theory.,M_T_nonequivalent,non_equivalent,The manager will allegedly support the theory tomorrow.,The manager was allegedly going to support the theory.
+53,The manager supported the theory.,Q_M_nonequivalent,non_equivalent,Could the manager allegedly support the theory?,Is it alleged that the manager supported the theory?
+54,The dragon signed the treaty.,N_M_equivalent,equivalent,The dragon allegedly failed to sign the treaty.,"Allegedly, the dragon failed to sign the treaty."
+54,The dragon signed the treaty.,M_T_equivalent,equivalent,The dragon will allegedly sign the treaty tomorrow.,"Allegedly, the dragon will sign the treaty tomorrow."
+54,The dragon signed the treaty.,Q_M_equivalent,equivalent,Could the dragon allegedly sign the treaty?,"Allegedly, could the dragon sign the treaty?"
+54,The dragon signed the treaty.,Q_T_equivalent,equivalent,Will the dragon sign the treaty tomorrow?,Could the dragon sign the treaty tomorrow?
+54,The dragon signed the treaty.,N_Q_nonequivalent,non_equivalent,Could the dragon fail to sign the treaty?,Is it false that the dragon signed the treaty?
+54,The dragon signed the treaty.,N_T_nonequivalent,non_equivalent,The dragon will fail to sign the treaty tomorrow.,The dragon failed to have signed the treaty earlier.
+54,The dragon signed the treaty.,M_T_nonequivalent,non_equivalent,The dragon will allegedly sign the treaty tomorrow.,The dragon was allegedly going to sign the treaty.
+54,The dragon signed the treaty.,Q_M_nonequivalent,non_equivalent,Could the dragon allegedly sign the treaty?,Is it alleged that the dragon signed the treaty?
+55,The queen approved the treatment.,N_M_equivalent,equivalent,The queen allegedly failed to approve the treatment.,"Allegedly, the queen failed to approve the treatment."
+55,The queen approved the treatment.,M_T_equivalent,equivalent,The queen will allegedly approve the treatment tomorrow.,"Allegedly, the queen will approve the treatment tomorrow."
+55,The queen approved the treatment.,Q_M_equivalent,equivalent,Could the queen allegedly approve the treatment?,"Allegedly, could the queen approve the treatment?"
+55,The queen approved the treatment.,Q_T_equivalent,equivalent,Will the queen approve the treatment tomorrow?,Could the queen approve the treatment tomorrow?
+55,The queen approved the treatment.,N_Q_nonequivalent,non_equivalent,Could the queen fail to approve the treatment?,Is it false that the queen approved the treatment?
+55,The queen approved the treatment.,N_T_nonequivalent,non_equivalent,The queen will fail to approve the treatment tomorrow.,The queen failed to have approved the treatment earlier.
+55,The queen approved the treatment.,M_T_nonequivalent,non_equivalent,The queen will allegedly approve the treatment tomorrow.,The queen was allegedly going to approve the treatment.
+55,The queen approved the treatment.,Q_M_nonequivalent,non_equivalent,Could the queen allegedly approve the treatment?,Is it alleged that the queen approved the treatment?
+56,The robot guarded the treasure.,N_M_equivalent,equivalent,The robot allegedly failed to guard the treasure.,"Allegedly, the robot failed to guard the treasure."
+56,The robot guarded the treasure.,M_T_equivalent,equivalent,The robot will allegedly guard the treasure tomorrow.,"Allegedly, the robot will guard the treasure tomorrow."
+56,The robot guarded the treasure.,Q_M_equivalent,equivalent,Could the robot allegedly guard the treasure?,"Allegedly, could the robot guard the treasure?"
+56,The robot guarded the treasure.,Q_T_equivalent,equivalent,Will the robot guard the treasure tomorrow?,Could the robot guard the treasure tomorrow?
+56,The robot guarded the treasure.,N_Q_nonequivalent,non_equivalent,Could the robot fail to guard the treasure?,Is it false that the robot guarded the treasure?
+56,The robot guarded the treasure.,N_T_nonequivalent,non_equivalent,The robot will fail to guard the treasure tomorrow.,The robot failed to have guarded the treasure earlier.
+56,The robot guarded the treasure.,M_T_nonequivalent,non_equivalent,The robot will allegedly guard the treasure tomorrow.,The robot was allegedly going to guard the treasure.
+56,The robot guarded the treasure.,Q_M_nonequivalent,non_equivalent,Could the robot allegedly guard the treasure?,Is it alleged that the robot guarded the treasure?
+57,The wizard opened the portal.,N_M_equivalent,equivalent,The wizard allegedly failed to open the portal.,"Allegedly, the wizard failed to open the portal."
+57,The wizard opened the portal.,M_T_equivalent,equivalent,The wizard will allegedly open the portal tomorrow.,"Allegedly, the wizard will open the portal tomorrow."
+57,The wizard opened the portal.,Q_M_equivalent,equivalent,Could the wizard allegedly open the portal?,"Allegedly, could the wizard open the portal?"
+57,The wizard opened the portal.,Q_T_equivalent,equivalent,Will the wizard open the portal tomorrow?,Could the wizard open the portal tomorrow?
+57,The wizard opened the portal.,N_Q_nonequivalent,non_equivalent,Could the wizard fail to open the portal?,Is it false that the wizard opened the portal?
+57,The wizard opened the portal.,N_T_nonequivalent,non_equivalent,The wizard will fail to open the portal tomorrow.,The wizard failed to have opened the portal earlier.
+57,The wizard opened the portal.,M_T_nonequivalent,non_equivalent,The wizard will allegedly open the portal tomorrow.,The wizard was allegedly going to open the portal.
+57,The wizard opened the portal.,Q_M_nonequivalent,non_equivalent,Could the wizard allegedly open the portal?,Is it alleged that the wizard opened the portal?
+58,The alien accepted the explanation.,N_M_equivalent,equivalent,The alien allegedly failed to accept the explanation.,"Allegedly, the alien failed to accept the explanation."
+58,The alien accepted the explanation.,M_T_equivalent,equivalent,The alien will allegedly accept the explanation tomorrow.,"Allegedly, the alien will accept the explanation tomorrow."
+58,The alien accepted the explanation.,Q_M_equivalent,equivalent,Could the alien allegedly accept the explanation?,"Allegedly, could the alien accept the explanation?"
+58,The alien accepted the explanation.,Q_T_equivalent,equivalent,Will the alien accept the explanation tomorrow?,Could the alien accept the explanation tomorrow?
+58,The alien accepted the explanation.,N_Q_nonequivalent,non_equivalent,Could the alien fail to accept the explanation?,Is it false that the alien accepted the explanation?
+58,The alien accepted the explanation.,N_T_nonequivalent,non_equivalent,The alien will fail to accept the explanation tomorrow.,The alien failed to have accepted the explanation earlier.
+58,The alien accepted the explanation.,M_T_nonequivalent,non_equivalent,The alien will allegedly accept the explanation tomorrow.,The alien was allegedly going to accept the explanation.
+58,The alien accepted the explanation.,Q_M_nonequivalent,non_equivalent,Could the alien allegedly accept the explanation?,Is it alleged that the alien accepted the explanation?
+59,The engineer approved the treatment.,N_M_equivalent,equivalent,The engineer allegedly failed to approve the treatment.,"Allegedly, the engineer failed to approve the treatment."
+59,The engineer approved the treatment.,M_T_equivalent,equivalent,The engineer will allegedly approve the treatment tomorrow.,"Allegedly, the engineer will approve the treatment tomorrow."
+59,The engineer approved the treatment.,Q_M_equivalent,equivalent,Could the engineer allegedly approve the treatment?,"Allegedly, could the engineer approve the treatment?"
+59,The engineer approved the treatment.,Q_T_equivalent,equivalent,Will the engineer approve the treatment tomorrow?,Could the engineer approve the treatment tomorrow?
+59,The engineer approved the treatment.,N_Q_nonequivalent,non_equivalent,Could the engineer fail to approve the treatment?,Is it false that the engineer approved the treatment?
+59,The engineer approved the treatment.,N_T_nonequivalent,non_equivalent,The engineer will fail to approve the treatment tomorrow.,The engineer failed to have approved the treatment earlier.
+59,The engineer approved the treatment.,M_T_nonequivalent,non_equivalent,The engineer will allegedly approve the treatment tomorrow.,The engineer was allegedly going to approve the treatment.
+59,The engineer approved the treatment.,Q_M_nonequivalent,non_equivalent,Could the engineer allegedly approve the treatment?,Is it alleged that the engineer approved the treatment?
+60,The dragon approved the treatment.,N_M_equivalent,equivalent,The dragon allegedly failed to approve the treatment.,"Allegedly, the dragon failed to approve the treatment."
+60,The dragon approved the treatment.,M_T_equivalent,equivalent,The dragon will allegedly approve the treatment tomorrow.,"Allegedly, the dragon will approve the treatment tomorrow."
+60,The dragon approved the treatment.,Q_M_equivalent,equivalent,Could the dragon allegedly approve the treatment?,"Allegedly, could the dragon approve the treatment?"
+60,The dragon approved the treatment.,Q_T_equivalent,equivalent,Will the dragon approve the treatment tomorrow?,Could the dragon approve the treatment tomorrow?
+60,The dragon approved the treatment.,N_Q_nonequivalent,non_equivalent,Could the dragon fail to approve the treatment?,Is it false that the dragon approved the treatment?
+60,The dragon approved the treatment.,N_T_nonequivalent,non_equivalent,The dragon will fail to approve the treatment tomorrow.,The dragon failed to have approved the treatment earlier.
+60,The dragon approved the treatment.,M_T_nonequivalent,non_equivalent,The dragon will allegedly approve the treatment tomorrow.,The dragon was allegedly going to approve the treatment.
+60,The dragon approved the treatment.,Q_M_nonequivalent,non_equivalent,Could the dragon allegedly approve the treatment?,Is it alleged that the dragon approved the treatment?
+61,The alien signed the treaty.,N_M_equivalent,equivalent,The alien allegedly failed to sign the treaty.,"Allegedly, the alien failed to sign the treaty."
+61,The alien signed the treaty.,M_T_equivalent,equivalent,The alien will allegedly sign the treaty tomorrow.,"Allegedly, the alien will sign the treaty tomorrow."
+61,The alien signed the treaty.,Q_M_equivalent,equivalent,Could the alien allegedly sign the treaty?,"Allegedly, could the alien sign the treaty?"
+61,The alien signed the treaty.,Q_T_equivalent,equivalent,Will the alien sign the treaty tomorrow?,Could the alien sign the treaty tomorrow?
+61,The alien signed the treaty.,N_Q_nonequivalent,non_equivalent,Could the alien fail to sign the treaty?,Is it false that the alien signed the treaty?
+61,The alien signed the treaty.,N_T_nonequivalent,non_equivalent,The alien will fail to sign the treaty tomorrow.,The alien failed to have signed the treaty earlier.
+61,The alien signed the treaty.,M_T_nonequivalent,non_equivalent,The alien will allegedly sign the treaty tomorrow.,The alien was allegedly going to sign the treaty.
+61,The alien signed the treaty.,Q_M_nonequivalent,non_equivalent,Could the alien allegedly sign the treaty?,Is it alleged that the alien signed the treaty?
+62,The teacher opened the portal.,N_M_equivalent,equivalent,The teacher allegedly failed to open the portal.,"Allegedly, the teacher failed to open the portal."
+62,The teacher opened the portal.,M_T_equivalent,equivalent,The teacher will allegedly open the portal tomorrow.,"Allegedly, the teacher will open the portal tomorrow."
+62,The teacher opened the portal.,Q_M_equivalent,equivalent,Could the teacher allegedly open the portal?,"Allegedly, could the teacher open the portal?"
+62,The teacher opened the portal.,Q_T_equivalent,equivalent,Will the teacher open the portal tomorrow?,Could the teacher open the portal tomorrow?
+62,The teacher opened the portal.,N_Q_nonequivalent,non_equivalent,Could the teacher fail to open the portal?,Is it false that the teacher opened the portal?
+62,The teacher opened the portal.,N_T_nonequivalent,non_equivalent,The teacher will fail to open the portal tomorrow.,The teacher failed to have opened the portal earlier.
+62,The teacher opened the portal.,M_T_nonequivalent,non_equivalent,The teacher will allegedly open the portal tomorrow.,The teacher was allegedly going to open the portal.
+62,The teacher opened the portal.,Q_M_nonequivalent,non_equivalent,Could the teacher allegedly open the portal?,Is it alleged that the teacher opened the portal?
+63,The alien fixed the bug.,N_M_equivalent,equivalent,The alien allegedly failed to fix the bug.,"Allegedly, the alien failed to fix the bug."
+63,The alien fixed the bug.,M_T_equivalent,equivalent,The alien will allegedly fix the bug tomorrow.,"Allegedly, the alien will fix the bug tomorrow."
+63,The alien fixed the bug.,Q_M_equivalent,equivalent,Could the alien allegedly fix the bug?,"Allegedly, could the alien fix the bug?"
+63,The alien fixed the bug.,Q_T_equivalent,equivalent,Will the alien fix the bug tomorrow?,Could the alien fix the bug tomorrow?
+63,The alien fixed the bug.,N_Q_nonequivalent,non_equivalent,Could the alien fail to fix the bug?,Is it false that the alien fixed the bug?
+63,The alien fixed the bug.,N_T_nonequivalent,non_equivalent,The alien will fail to fix the bug tomorrow.,The alien failed to have fixed the bug earlier.
+63,The alien fixed the bug.,M_T_nonequivalent,non_equivalent,The alien will allegedly fix the bug tomorrow.,The alien was allegedly going to fix the bug.
+63,The alien fixed the bug.,Q_M_nonequivalent,non_equivalent,Could the alien allegedly fix the bug?,Is it alleged that the alien fixed the bug?
+64,The scientist supported the theory.,N_M_equivalent,equivalent,The scientist allegedly failed to support the theory.,"Allegedly, the scientist failed to support the theory."
+64,The scientist supported the theory.,M_T_equivalent,equivalent,The scientist will allegedly support the theory tomorrow.,"Allegedly, the scientist will support the theory tomorrow."
+64,The scientist supported the theory.,Q_M_equivalent,equivalent,Could the scientist allegedly support the theory?,"Allegedly, could the scientist support the theory?"
+64,The scientist supported the theory.,Q_T_equivalent,equivalent,Will the scientist support the theory tomorrow?,Could the scientist support the theory tomorrow?
+64,The scientist supported the theory.,N_Q_nonequivalent,non_equivalent,Could the scientist fail to support the theory?,Is it false that the scientist supported the theory?
+64,The scientist supported the theory.,N_T_nonequivalent,non_equivalent,The scientist will fail to support the theory tomorrow.,The scientist failed to have supported the theory earlier.
+64,The scientist supported the theory.,M_T_nonequivalent,non_equivalent,The scientist will allegedly support the theory tomorrow.,The scientist was allegedly going to support the theory.
+64,The scientist supported the theory.,Q_M_nonequivalent,non_equivalent,Could the scientist allegedly support the theory?,Is it alleged that the scientist supported the theory?
+65,The pirate completed the repair.,N_M_equivalent,equivalent,The pirate allegedly failed to complete the repair.,"Allegedly, the pirate failed to complete the repair."
+65,The pirate completed the repair.,M_T_equivalent,equivalent,The pirate will allegedly complete the repair tomorrow.,"Allegedly, the pirate will complete the repair tomorrow."
+65,The pirate completed the repair.,Q_M_equivalent,equivalent,Could the pirate allegedly complete the repair?,"Allegedly, could the pirate complete the repair?"
+65,The pirate completed the repair.,Q_T_equivalent,equivalent,Will the pirate complete the repair tomorrow?,Could the pirate complete the repair tomorrow?
+65,The pirate completed the repair.,N_Q_nonequivalent,non_equivalent,Could the pirate fail to complete the repair?,Is it false that the pirate completed the repair?
+65,The pirate completed the repair.,N_T_nonequivalent,non_equivalent,The pirate will fail to complete the repair tomorrow.,The pirate failed to have completed the repair earlier.
+65,The pirate completed the repair.,M_T_nonequivalent,non_equivalent,The pirate will allegedly complete the repair tomorrow.,The pirate was allegedly going to complete the repair.
+65,The pirate completed the repair.,Q_M_nonequivalent,non_equivalent,Could the pirate allegedly complete the repair?,Is it alleged that the pirate completed the repair?
+66,The programmer opened the portal.,N_M_equivalent,equivalent,The programmer allegedly failed to open the portal.,"Allegedly, the programmer failed to open the portal."
+66,The programmer opened the portal.,M_T_equivalent,equivalent,The programmer will allegedly open the portal tomorrow.,"Allegedly, the programmer will open the portal tomorrow."
+66,The programmer opened the portal.,Q_M_equivalent,equivalent,Could the programmer allegedly open the portal?,"Allegedly, could the programmer open the portal?"
+66,The programmer opened the portal.,Q_T_equivalent,equivalent,Will the programmer open the portal tomorrow?,Could the programmer open the portal tomorrow?
+66,The programmer opened the portal.,N_Q_nonequivalent,non_equivalent,Could the programmer fail to open the portal?,Is it false that the programmer opened the portal?
+66,The programmer opened the portal.,N_T_nonequivalent,non_equivalent,The programmer will fail to open the portal tomorrow.,The programmer failed to have opened the portal earlier.
+66,The programmer opened the portal.,M_T_nonequivalent,non_equivalent,The programmer will allegedly open the portal tomorrow.,The programmer was allegedly going to open the portal.
+66,The programmer opened the portal.,Q_M_nonequivalent,non_equivalent,Could the programmer allegedly open the portal?,Is it alleged that the programmer opened the portal?
+67,The knight supported the theory.,N_M_equivalent,equivalent,The knight allegedly failed to support the theory.,"Allegedly, the knight failed to support the theory."
+67,The knight supported the theory.,M_T_equivalent,equivalent,The knight will allegedly support the theory tomorrow.,"Allegedly, the knight will support the theory tomorrow."
+67,The knight supported the theory.,Q_M_equivalent,equivalent,Could the knight allegedly support the theory?,"Allegedly, could the knight support the theory?"
+67,The knight supported the theory.,Q_T_equivalent,equivalent,Will the knight support the theory tomorrow?,Could the knight support the theory tomorrow?
+67,The knight supported the theory.,N_Q_nonequivalent,non_equivalent,Could the knight fail to support the theory?,Is it false that the knight supported the theory?
+67,The knight supported the theory.,N_T_nonequivalent,non_equivalent,The knight will fail to support the theory tomorrow.,The knight failed to have supported the theory earlier.
+67,The knight supported the theory.,M_T_nonequivalent,non_equivalent,The knight will allegedly support the theory tomorrow.,The knight was allegedly going to support the theory.
+67,The knight supported the theory.,Q_M_nonequivalent,non_equivalent,Could the knight allegedly support the theory?,Is it alleged that the knight supported the theory?
+68,The wizard supported the theory.,N_M_equivalent,equivalent,The wizard allegedly failed to support the theory.,"Allegedly, the wizard failed to support the theory."
+68,The wizard supported the theory.,M_T_equivalent,equivalent,The wizard will allegedly support the theory tomorrow.,"Allegedly, the wizard will support the theory tomorrow."
+68,The wizard supported the theory.,Q_M_equivalent,equivalent,Could the wizard allegedly support the theory?,"Allegedly, could the wizard support the theory?"
+68,The wizard supported the theory.,Q_T_equivalent,equivalent,Will the wizard support the theory tomorrow?,Could the wizard support the theory tomorrow?
+68,The wizard supported the theory.,N_Q_nonequivalent,non_equivalent,Could the wizard fail to support the theory?,Is it false that the wizard supported the theory?
+68,The wizard supported the theory.,N_T_nonequivalent,non_equivalent,The wizard will fail to support the theory tomorrow.,The wizard failed to have supported the theory earlier.
+68,The wizard supported the theory.,M_T_nonequivalent,non_equivalent,The wizard will allegedly support the theory tomorrow.,The wizard was allegedly going to support the theory.
+68,The wizard supported the theory.,Q_M_nonequivalent,non_equivalent,Could the wizard allegedly support the theory?,Is it alleged that the wizard supported the theory?
+69,The queen accepted the explanation.,N_M_equivalent,equivalent,The queen allegedly failed to accept the explanation.,"Allegedly, the queen failed to accept the explanation."
+69,The queen accepted the explanation.,M_T_equivalent,equivalent,The queen will allegedly accept the explanation tomorrow.,"Allegedly, the queen will accept the explanation tomorrow."
+69,The queen accepted the explanation.,Q_M_equivalent,equivalent,Could the queen allegedly accept the explanation?,"Allegedly, could the queen accept the explanation?"
+69,The queen accepted the explanation.,Q_T_equivalent,equivalent,Will the queen accept the explanation tomorrow?,Could the queen accept the explanation tomorrow?
+69,The queen accepted the explanation.,N_Q_nonequivalent,non_equivalent,Could the queen fail to accept the explanation?,Is it false that the queen accepted the explanation?
+69,The queen accepted the explanation.,N_T_nonequivalent,non_equivalent,The queen will fail to accept the explanation tomorrow.,The queen failed to have accepted the explanation earlier.
+69,The queen accepted the explanation.,M_T_nonequivalent,non_equivalent,The queen will allegedly accept the explanation tomorrow.,The queen was allegedly going to accept the explanation.
+69,The queen accepted the explanation.,Q_M_nonequivalent,non_equivalent,Could the queen allegedly accept the explanation?,Is it alleged that the queen accepted the explanation?
+70,The dragon confirmed the answer.,N_M_equivalent,equivalent,The dragon allegedly failed to confirm the answer.,"Allegedly, the dragon failed to confirm the answer."
+70,The dragon confirmed the answer.,M_T_equivalent,equivalent,The dragon will allegedly confirm the answer tomorrow.,"Allegedly, the dragon will confirm the answer tomorrow."
+70,The dragon confirmed the answer.,Q_M_equivalent,equivalent,Could the dragon allegedly confirm the answer?,"Allegedly, could the dragon confirm the answer?"
+70,The dragon confirmed the answer.,Q_T_equivalent,equivalent,Will the dragon confirm the answer tomorrow?,Could the dragon confirm the answer tomorrow?
+70,The dragon confirmed the answer.,N_Q_nonequivalent,non_equivalent,Could the dragon fail to confirm the answer?,Is it false that the dragon confirmed the answer?
+70,The dragon confirmed the answer.,N_T_nonequivalent,non_equivalent,The dragon will fail to confirm the answer tomorrow.,The dragon failed to have confirmed the answer earlier.
+70,The dragon confirmed the answer.,M_T_nonequivalent,non_equivalent,The dragon will allegedly confirm the answer tomorrow.,The dragon was allegedly going to confirm the answer.
+70,The dragon confirmed the answer.,Q_M_nonequivalent,non_equivalent,Could the dragon allegedly confirm the answer?,Is it alleged that the dragon confirmed the answer?
+71,The oracle supported the theory.,N_M_equivalent,equivalent,The oracle allegedly failed to support the theory.,"Allegedly, the oracle failed to support the theory."
+71,The oracle supported the theory.,M_T_equivalent,equivalent,The oracle will allegedly support the theory tomorrow.,"Allegedly, the oracle will support the theory tomorrow."
+71,The oracle supported the theory.,Q_M_equivalent,equivalent,Could the oracle allegedly support the theory?,"Allegedly, could the oracle support the theory?"
+71,The oracle supported the theory.,Q_T_equivalent,equivalent,Will the oracle support the theory tomorrow?,Could the oracle support the theory tomorrow?
+71,The oracle supported the theory.,N_Q_nonequivalent,non_equivalent,Could the oracle fail to support the theory?,Is it false that the oracle supported the theory?
+71,The oracle supported the theory.,N_T_nonequivalent,non_equivalent,The oracle will fail to support the theory tomorrow.,The oracle failed to have supported the theory earlier.
+71,The oracle supported the theory.,M_T_nonequivalent,non_equivalent,The oracle will allegedly support the theory tomorrow.,The oracle was allegedly going to support the theory.
+71,The oracle supported the theory.,Q_M_nonequivalent,non_equivalent,Could the oracle allegedly support the theory?,Is it alleged that the oracle supported the theory?
+72,The queen completed the repair.,N_M_equivalent,equivalent,The queen allegedly failed to complete the repair.,"Allegedly, the queen failed to complete the repair."
+72,The queen completed the repair.,M_T_equivalent,equivalent,The queen will allegedly complete the repair tomorrow.,"Allegedly, the queen will complete the repair tomorrow."
+72,The queen completed the repair.,Q_M_equivalent,equivalent,Could the queen allegedly complete the repair?,"Allegedly, could the queen complete the repair?"
+72,The queen completed the repair.,Q_T_equivalent,equivalent,Will the queen complete the repair tomorrow?,Could the queen complete the repair tomorrow?
+72,The queen completed the repair.,N_Q_nonequivalent,non_equivalent,Could the queen fail to complete the repair?,Is it false that the queen completed the repair?
+72,The queen completed the repair.,N_T_nonequivalent,non_equivalent,The queen will fail to complete the repair tomorrow.,The queen failed to have completed the repair earlier.
+72,The queen completed the repair.,M_T_nonequivalent,non_equivalent,The queen will allegedly complete the repair tomorrow.,The queen was allegedly going to complete the repair.
+72,The queen completed the repair.,Q_M_nonequivalent,non_equivalent,Could the queen allegedly complete the repair?,Is it alleged that the queen completed the repair?
+73,The programmer supported the theory.,N_M_equivalent,equivalent,The programmer allegedly failed to support the theory.,"Allegedly, the programmer failed to support the theory."
+73,The programmer supported the theory.,M_T_equivalent,equivalent,The programmer will allegedly support the theory tomorrow.,"Allegedly, the programmer will support the theory tomorrow."
+73,The programmer supported the theory.,Q_M_equivalent,equivalent,Could the programmer allegedly support the theory?,"Allegedly, could the programmer support the theory?"
+73,The programmer supported the theory.,Q_T_equivalent,equivalent,Will the programmer support the theory tomorrow?,Could the programmer support the theory tomorrow?
+73,The programmer supported the theory.,N_Q_nonequivalent,non_equivalent,Could the programmer fail to support the theory?,Is it false that the programmer supported the theory?
+73,The programmer supported the theory.,N_T_nonequivalent,non_equivalent,The programmer will fail to support the theory tomorrow.,The programmer failed to have supported the theory earlier.
+73,The programmer supported the theory.,M_T_nonequivalent,non_equivalent,The programmer will allegedly support the theory tomorrow.,The programmer was allegedly going to support the theory.
+73,The programmer supported the theory.,Q_M_nonequivalent,non_equivalent,Could the programmer allegedly support the theory?,Is it alleged that the programmer supported the theory?
+74,The wizard verified the report.,N_M_equivalent,equivalent,The wizard allegedly failed to verify the report.,"Allegedly, the wizard failed to verify the report."
+74,The wizard verified the report.,M_T_equivalent,equivalent,The wizard will allegedly verify the report tomorrow.,"Allegedly, the wizard will verify the report tomorrow."
+74,The wizard verified the report.,Q_M_equivalent,equivalent,Could the wizard allegedly verify the report?,"Allegedly, could the wizard verify the report?"
+74,The wizard verified the report.,Q_T_equivalent,equivalent,Will the wizard verify the report tomorrow?,Could the wizard verify the report tomorrow?
+74,The wizard verified the report.,N_Q_nonequivalent,non_equivalent,Could the wizard fail to verify the report?,Is it false that the wizard verified the report?
+74,The wizard verified the report.,N_T_nonequivalent,non_equivalent,The wizard will fail to verify the report tomorrow.,The wizard failed to have verified the report earlier.
+74,The wizard verified the report.,M_T_nonequivalent,non_equivalent,The wizard will allegedly verify the report tomorrow.,The wizard was allegedly going to verify the report.
+74,The wizard verified the report.,Q_M_nonequivalent,non_equivalent,Could the wizard allegedly verify the report?,Is it alleged that the wizard verified the report?
+75,The engineer opened the portal.,N_M_equivalent,equivalent,The engineer allegedly failed to open the portal.,"Allegedly, the engineer failed to open the portal."
+75,The engineer opened the portal.,M_T_equivalent,equivalent,The engineer will allegedly open the portal tomorrow.,"Allegedly, the engineer will open the portal tomorrow."
+75,The engineer opened the portal.,Q_M_equivalent,equivalent,Could the engineer allegedly open the portal?,"Allegedly, could the engineer open the portal?"
+75,The engineer opened the portal.,Q_T_equivalent,equivalent,Will the engineer open the portal tomorrow?,Could the engineer open the portal tomorrow?
+75,The engineer opened the portal.,N_Q_nonequivalent,non_equivalent,Could the engineer fail to open the portal?,Is it false that the engineer opened the portal?
+75,The engineer opened the portal.,N_T_nonequivalent,non_equivalent,The engineer will fail to open the portal tomorrow.,The engineer failed to have opened the portal earlier.
+75,The engineer opened the portal.,M_T_nonequivalent,non_equivalent,The engineer will allegedly open the portal tomorrow.,The engineer was allegedly going to open the portal.
+75,The engineer opened the portal.,Q_M_nonequivalent,non_equivalent,Could the engineer allegedly open the portal?,Is it alleged that the engineer opened the portal?
+76,The alien opened the portal.,N_M_equivalent,equivalent,The alien allegedly failed to open the portal.,"Allegedly, the alien failed to open the portal."
+76,The alien opened the portal.,M_T_equivalent,equivalent,The alien will allegedly open the portal tomorrow.,"Allegedly, the alien will open the portal tomorrow."
+76,The alien opened the portal.,Q_M_equivalent,equivalent,Could the alien allegedly open the portal?,"Allegedly, could the alien open the portal?"
+76,The alien opened the portal.,Q_T_equivalent,equivalent,Will the alien open the portal tomorrow?,Could the alien open the portal tomorrow?
+76,The alien opened the portal.,N_Q_nonequivalent,non_equivalent,Could the alien fail to open the portal?,Is it false that the alien opened the portal?
+76,The alien opened the portal.,N_T_nonequivalent,non_equivalent,The alien will fail to open the portal tomorrow.,The alien failed to have opened the portal earlier.
+76,The alien opened the portal.,M_T_nonequivalent,non_equivalent,The alien will allegedly open the portal tomorrow.,The alien was allegedly going to open the portal.
+76,The alien opened the portal.,Q_M_nonequivalent,non_equivalent,Could the alien allegedly open the portal?,Is it alleged that the alien opened the portal?
+77,The manager confirmed the answer.,N_M_equivalent,equivalent,The manager allegedly failed to confirm the answer.,"Allegedly, the manager failed to confirm the answer."
+77,The manager confirmed the answer.,M_T_equivalent,equivalent,The manager will allegedly confirm the answer tomorrow.,"Allegedly, the manager will confirm the answer tomorrow."
+77,The manager confirmed the answer.,Q_M_equivalent,equivalent,Could the manager allegedly confirm the answer?,"Allegedly, could the manager confirm the answer?"
+77,The manager confirmed the answer.,Q_T_equivalent,equivalent,Will the manager confirm the answer tomorrow?,Could the manager confirm the answer tomorrow?
+77,The manager confirmed the answer.,N_Q_nonequivalent,non_equivalent,Could the manager fail to confirm the answer?,Is it false that the manager confirmed the answer?
+77,The manager confirmed the answer.,N_T_nonequivalent,non_equivalent,The manager will fail to confirm the answer tomorrow.,The manager failed to have confirmed the answer earlier.
+77,The manager confirmed the answer.,M_T_nonequivalent,non_equivalent,The manager will allegedly confirm the answer tomorrow.,The manager was allegedly going to confirm the answer.
+77,The manager confirmed the answer.,Q_M_nonequivalent,non_equivalent,Could the manager allegedly confirm the answer?,Is it alleged that the manager confirmed the answer?
+78,The robot signed the treaty.,N_M_equivalent,equivalent,The robot allegedly failed to sign the treaty.,"Allegedly, the robot failed to sign the treaty."
+78,The robot signed the treaty.,M_T_equivalent,equivalent,The robot will allegedly sign the treaty tomorrow.,"Allegedly, the robot will sign the treaty tomorrow."
+78,The robot signed the treaty.,Q_M_equivalent,equivalent,Could the robot allegedly sign the treaty?,"Allegedly, could the robot sign the treaty?"
+78,The robot signed the treaty.,Q_T_equivalent,equivalent,Will the robot sign the treaty tomorrow?,Could the robot sign the treaty tomorrow?
+78,The robot signed the treaty.,N_Q_nonequivalent,non_equivalent,Could the robot fail to sign the treaty?,Is it false that the robot signed the treaty?
+78,The robot signed the treaty.,N_T_nonequivalent,non_equivalent,The robot will fail to sign the treaty tomorrow.,The robot failed to have signed the treaty earlier.
+78,The robot signed the treaty.,M_T_nonequivalent,non_equivalent,The robot will allegedly sign the treaty tomorrow.,The robot was allegedly going to sign the treaty.
+78,The robot signed the treaty.,Q_M_nonequivalent,non_equivalent,Could the robot allegedly sign the treaty?,Is it alleged that the robot signed the treaty?
+79,The manager approved the treatment.,N_M_equivalent,equivalent,The manager allegedly failed to approve the treatment.,"Allegedly, the manager failed to approve the treatment."
+79,The manager approved the treatment.,M_T_equivalent,equivalent,The manager will allegedly approve the treatment tomorrow.,"Allegedly, the manager will approve the treatment tomorrow."
+79,The manager approved the treatment.,Q_M_equivalent,equivalent,Could the manager allegedly approve the treatment?,"Allegedly, could the manager approve the treatment?"
+79,The manager approved the treatment.,Q_T_equivalent,equivalent,Will the manager approve the treatment tomorrow?,Could the manager approve the treatment tomorrow?
+79,The manager approved the treatment.,N_Q_nonequivalent,non_equivalent,Could the manager fail to approve the treatment?,Is it false that the manager approved the treatment?
+79,The manager approved the treatment.,N_T_nonequivalent,non_equivalent,The manager will fail to approve the treatment tomorrow.,The manager failed to have approved the treatment earlier.
+79,The manager approved the treatment.,M_T_nonequivalent,non_equivalent,The manager will allegedly approve the treatment tomorrow.,The manager was allegedly going to approve the treatment.
+79,The manager approved the treatment.,Q_M_nonequivalent,non_equivalent,Could the manager allegedly approve the treatment?,Is it alleged that the manager approved the treatment?
+80,The wizard confirmed the answer.,N_M_equivalent,equivalent,The wizard allegedly failed to confirm the answer.,"Allegedly, the wizard failed to confirm the answer."
+80,The wizard confirmed the answer.,M_T_equivalent,equivalent,The wizard will allegedly confirm the answer tomorrow.,"Allegedly, the wizard will confirm the answer tomorrow."
+80,The wizard confirmed the answer.,Q_M_equivalent,equivalent,Could the wizard allegedly confirm the answer?,"Allegedly, could the wizard confirm the answer?"
+80,The wizard confirmed the answer.,Q_T_equivalent,equivalent,Will the wizard confirm the answer tomorrow?,Could the wizard confirm the answer tomorrow?
+80,The wizard confirmed the answer.,N_Q_nonequivalent,non_equivalent,Could the wizard fail to confirm the answer?,Is it false that the wizard confirmed the answer?
+80,The wizard confirmed the answer.,N_T_nonequivalent,non_equivalent,The wizard will fail to confirm the answer tomorrow.,The wizard failed to have confirmed the answer earlier.
+80,The wizard confirmed the answer.,M_T_nonequivalent,non_equivalent,The wizard will allegedly confirm the answer tomorrow.,The wizard was allegedly going to confirm the answer.
+80,The wizard confirmed the answer.,Q_M_nonequivalent,non_equivalent,Could the wizard allegedly confirm the answer?,Is it alleged that the wizard confirmed the answer?
+81,The teacher completed the repair.,N_M_equivalent,equivalent,The teacher allegedly failed to complete the repair.,"Allegedly, the teacher failed to complete the repair."
+81,The teacher completed the repair.,M_T_equivalent,equivalent,The teacher will allegedly complete the repair tomorrow.,"Allegedly, the teacher will complete the repair tomorrow."
+81,The teacher completed the repair.,Q_M_equivalent,equivalent,Could the teacher allegedly complete the repair?,"Allegedly, could the teacher complete the repair?"
+81,The teacher completed the repair.,Q_T_equivalent,equivalent,Will the teacher complete the repair tomorrow?,Could the teacher complete the repair tomorrow?
+81,The teacher completed the repair.,N_Q_nonequivalent,non_equivalent,Could the teacher fail to complete the repair?,Is it false that the teacher completed the repair?
+81,The teacher completed the repair.,N_T_nonequivalent,non_equivalent,The teacher will fail to complete the repair tomorrow.,The teacher failed to have completed the repair earlier.
+81,The teacher completed the repair.,M_T_nonequivalent,non_equivalent,The teacher will allegedly complete the repair tomorrow.,The teacher was allegedly going to complete the repair.
+81,The teacher completed the repair.,Q_M_nonequivalent,non_equivalent,Could the teacher allegedly complete the repair?,Is it alleged that the teacher completed the repair?
+82,The wizard guarded the treasure.,N_M_equivalent,equivalent,The wizard allegedly failed to guard the treasure.,"Allegedly, the wizard failed to guard the treasure."
+82,The wizard guarded the treasure.,M_T_equivalent,equivalent,The wizard will allegedly guard the treasure tomorrow.,"Allegedly, the wizard will guard the treasure tomorrow."
+82,The wizard guarded the treasure.,Q_M_equivalent,equivalent,Could the wizard allegedly guard the treasure?,"Allegedly, could the wizard guard the treasure?"
+82,The wizard guarded the treasure.,Q_T_equivalent,equivalent,Will the wizard guard the treasure tomorrow?,Could the wizard guard the treasure tomorrow?
+82,The wizard guarded the treasure.,N_Q_nonequivalent,non_equivalent,Could the wizard fail to guard the treasure?,Is it false that the wizard guarded the treasure?
+82,The wizard guarded the treasure.,N_T_nonequivalent,non_equivalent,The wizard will fail to guard the treasure tomorrow.,The wizard failed to have guarded the treasure earlier.
+82,The wizard guarded the treasure.,M_T_nonequivalent,non_equivalent,The wizard will allegedly guard the treasure tomorrow.,The wizard was allegedly going to guard the treasure.
+82,The wizard guarded the treasure.,Q_M_nonequivalent,non_equivalent,Could the wizard allegedly guard the treasure?,Is it alleged that the wizard guarded the treasure?
+83,The researcher signed the treaty.,N_M_equivalent,equivalent,The researcher allegedly failed to sign the treaty.,"Allegedly, the researcher failed to sign the treaty."
+83,The researcher signed the treaty.,M_T_equivalent,equivalent,The researcher will allegedly sign the treaty tomorrow.,"Allegedly, the researcher will sign the treaty tomorrow."
+83,The researcher signed the treaty.,Q_M_equivalent,equivalent,Could the researcher allegedly sign the treaty?,"Allegedly, could the researcher sign the treaty?"
+83,The researcher signed the treaty.,Q_T_equivalent,equivalent,Will the researcher sign the treaty tomorrow?,Could the researcher sign the treaty tomorrow?
+83,The researcher signed the treaty.,N_Q_nonequivalent,non_equivalent,Could the researcher fail to sign the treaty?,Is it false that the researcher signed the treaty?
+83,The researcher signed the treaty.,N_T_nonequivalent,non_equivalent,The researcher will fail to sign the treaty tomorrow.,The researcher failed to have signed the treaty earlier.
+83,The researcher signed the treaty.,M_T_nonequivalent,non_equivalent,The researcher will allegedly sign the treaty tomorrow.,The researcher was allegedly going to sign the treaty.
+83,The researcher signed the treaty.,Q_M_nonequivalent,non_equivalent,Could the researcher allegedly sign the treaty?,Is it alleged that the researcher signed the treaty?
+84,The analyst supported the theory.,N_M_equivalent,equivalent,The analyst allegedly failed to support the theory.,"Allegedly, the analyst failed to support the theory."
+84,The analyst supported the theory.,M_T_equivalent,equivalent,The analyst will allegedly support the theory tomorrow.,"Allegedly, the analyst will support the theory tomorrow."
+84,The analyst supported the theory.,Q_M_equivalent,equivalent,Could the analyst allegedly support the theory?,"Allegedly, could the analyst support the theory?"
+84,The analyst supported the theory.,Q_T_equivalent,equivalent,Will the analyst support the theory tomorrow?,Could the analyst support the theory tomorrow?
+84,The analyst supported the theory.,N_Q_nonequivalent,non_equivalent,Could the analyst fail to support the theory?,Is it false that the analyst supported the theory?
+84,The analyst supported the theory.,N_T_nonequivalent,non_equivalent,The analyst will fail to support the theory tomorrow.,The analyst failed to have supported the theory earlier.
+84,The analyst supported the theory.,M_T_nonequivalent,non_equivalent,The analyst will allegedly support the theory tomorrow.,The analyst was allegedly going to support the theory.
+84,The analyst supported the theory.,Q_M_nonequivalent,non_equivalent,Could the analyst allegedly support the theory?,Is it alleged that the analyst supported the theory?
+85,The dragon accepted the explanation.,N_M_equivalent,equivalent,The dragon allegedly failed to accept the explanation.,"Allegedly, the dragon failed to accept the explanation."
+85,The dragon accepted the explanation.,M_T_equivalent,equivalent,The dragon will allegedly accept the explanation tomorrow.,"Allegedly, the dragon will accept the explanation tomorrow."
+85,The dragon accepted the explanation.,Q_M_equivalent,equivalent,Could the dragon allegedly accept the explanation?,"Allegedly, could the dragon accept the explanation?"
+85,The dragon accepted the explanation.,Q_T_equivalent,equivalent,Will the dragon accept the explanation tomorrow?,Could the dragon accept the explanation tomorrow?
+85,The dragon accepted the explanation.,N_Q_nonequivalent,non_equivalent,Could the dragon fail to accept the explanation?,Is it false that the dragon accepted the explanation?
+85,The dragon accepted the explanation.,N_T_nonequivalent,non_equivalent,The dragon will fail to accept the explanation tomorrow.,The dragon failed to have accepted the explanation earlier.
+85,The dragon accepted the explanation.,M_T_nonequivalent,non_equivalent,The dragon will allegedly accept the explanation tomorrow.,The dragon was allegedly going to accept the explanation.
+85,The dragon accepted the explanation.,Q_M_nonequivalent,non_equivalent,Could the dragon allegedly accept the explanation?,Is it alleged that the dragon accepted the explanation?
+86,The manager completed the repair.,N_M_equivalent,equivalent,The manager allegedly failed to complete the repair.,"Allegedly, the manager failed to complete the repair."
+86,The manager completed the repair.,M_T_equivalent,equivalent,The manager will allegedly complete the repair tomorrow.,"Allegedly, the manager will complete the repair tomorrow."
+86,The manager completed the repair.,Q_M_equivalent,equivalent,Could the manager allegedly complete the repair?,"Allegedly, could the manager complete the repair?"
+86,The manager completed the repair.,Q_T_equivalent,equivalent,Will the manager complete the repair tomorrow?,Could the manager complete the repair tomorrow?
+86,The manager completed the repair.,N_Q_nonequivalent,non_equivalent,Could the manager fail to complete the repair?,Is it false that the manager completed the repair?
+86,The manager completed the repair.,N_T_nonequivalent,non_equivalent,The manager will fail to complete the repair tomorrow.,The manager failed to have completed the repair earlier.
+86,The manager completed the repair.,M_T_nonequivalent,non_equivalent,The manager will allegedly complete the repair tomorrow.,The manager was allegedly going to complete the repair.
+86,The manager completed the repair.,Q_M_nonequivalent,non_equivalent,Could the manager allegedly complete the repair?,Is it alleged that the manager completed the repair?
+87,The pirate guarded the treasure.,N_M_equivalent,equivalent,The pirate allegedly failed to guard the treasure.,"Allegedly, the pirate failed to guard the treasure."
+87,The pirate guarded the treasure.,M_T_equivalent,equivalent,The pirate will allegedly guard the treasure tomorrow.,"Allegedly, the pirate will guard the treasure tomorrow."
+87,The pirate guarded the treasure.,Q_M_equivalent,equivalent,Could the pirate allegedly guard the treasure?,"Allegedly, could the pirate guard the treasure?"
+87,The pirate guarded the treasure.,Q_T_equivalent,equivalent,Will the pirate guard the treasure tomorrow?,Could the pirate guard the treasure tomorrow?
+87,The pirate guarded the treasure.,N_Q_nonequivalent,non_equivalent,Could the pirate fail to guard the treasure?,Is it false that the pirate guarded the treasure?
+87,The pirate guarded the treasure.,N_T_nonequivalent,non_equivalent,The pirate will fail to guard the treasure tomorrow.,The pirate failed to have guarded the treasure earlier.
+87,The pirate guarded the treasure.,M_T_nonequivalent,non_equivalent,The pirate will allegedly guard the treasure tomorrow.,The pirate was allegedly going to guard the treasure.
+87,The pirate guarded the treasure.,Q_M_nonequivalent,non_equivalent,Could the pirate allegedly guard the treasure?,Is it alleged that the pirate guarded the treasure?
+88,The robot completed the repair.,N_M_equivalent,equivalent,The robot allegedly failed to complete the repair.,"Allegedly, the robot failed to complete the repair."
+88,The robot completed the repair.,M_T_equivalent,equivalent,The robot will allegedly complete the repair tomorrow.,"Allegedly, the robot will complete the repair tomorrow."
+88,The robot completed the repair.,Q_M_equivalent,equivalent,Could the robot allegedly complete the repair?,"Allegedly, could the robot complete the repair?"
+88,The robot completed the repair.,Q_T_equivalent,equivalent,Will the robot complete the repair tomorrow?,Could the robot complete the repair tomorrow?
+88,The robot completed the repair.,N_Q_nonequivalent,non_equivalent,Could the robot fail to complete the repair?,Is it false that the robot completed the repair?
+88,The robot completed the repair.,N_T_nonequivalent,non_equivalent,The robot will fail to complete the repair tomorrow.,The robot failed to have completed the repair earlier.
+88,The robot completed the repair.,M_T_nonequivalent,non_equivalent,The robot will allegedly complete the repair tomorrow.,The robot was allegedly going to complete the repair.
+88,The robot completed the repair.,Q_M_nonequivalent,non_equivalent,Could the robot allegedly complete the repair?,Is it alleged that the robot completed the repair?
+89,The teacher verified the report.,N_M_equivalent,equivalent,The teacher allegedly failed to verify the report.,"Allegedly, the teacher failed to verify the report."
+89,The teacher verified the report.,M_T_equivalent,equivalent,The teacher will allegedly verify the report tomorrow.,"Allegedly, the teacher will verify the report tomorrow."
+89,The teacher verified the report.,Q_M_equivalent,equivalent,Could the teacher allegedly verify the report?,"Allegedly, could the teacher verify the report?"
+89,The teacher verified the report.,Q_T_equivalent,equivalent,Will the teacher verify the report tomorrow?,Could the teacher verify the report tomorrow?
+89,The teacher verified the report.,N_Q_nonequivalent,non_equivalent,Could the teacher fail to verify the report?,Is it false that the teacher verified the report?
+89,The teacher verified the report.,N_T_nonequivalent,non_equivalent,The teacher will fail to verify the report tomorrow.,The teacher failed to have verified the report earlier.
+89,The teacher verified the report.,M_T_nonequivalent,non_equivalent,The teacher will allegedly verify the report tomorrow.,The teacher was allegedly going to verify the report.
+89,The teacher verified the report.,Q_M_nonequivalent,non_equivalent,Could the teacher allegedly verify the report?,Is it alleged that the teacher verified the report?
+90,The dragon completed the repair.,N_M_equivalent,equivalent,The dragon allegedly failed to complete the repair.,"Allegedly, the dragon failed to complete the repair."
+90,The dragon completed the repair.,M_T_equivalent,equivalent,The dragon will allegedly complete the repair tomorrow.,"Allegedly, the dragon will complete the repair tomorrow."
+90,The dragon completed the repair.,Q_M_equivalent,equivalent,Could the dragon allegedly complete the repair?,"Allegedly, could the dragon complete the repair?"
+90,The dragon completed the repair.,Q_T_equivalent,equivalent,Will the dragon complete the repair tomorrow?,Could the dragon complete the repair tomorrow?
+90,The dragon completed the repair.,N_Q_nonequivalent,non_equivalent,Could the dragon fail to complete the repair?,Is it false that the dragon completed the repair?
+90,The dragon completed the repair.,N_T_nonequivalent,non_equivalent,The dragon will fail to complete the repair tomorrow.,The dragon failed to have completed the repair earlier.
+90,The dragon completed the repair.,M_T_nonequivalent,non_equivalent,The dragon will allegedly complete the repair tomorrow.,The dragon was allegedly going to complete the repair.
+90,The dragon completed the repair.,Q_M_nonequivalent,non_equivalent,Could the dragon allegedly complete the repair?,Is it alleged that the dragon completed the repair?
+91,The knight confirmed the answer.,N_M_equivalent,equivalent,The knight allegedly failed to confirm the answer.,"Allegedly, the knight failed to confirm the answer."
+91,The knight confirmed the answer.,M_T_equivalent,equivalent,The knight will allegedly confirm the answer tomorrow.,"Allegedly, the knight will confirm the answer tomorrow."
+91,The knight confirmed the answer.,Q_M_equivalent,equivalent,Could the knight allegedly confirm the answer?,"Allegedly, could the knight confirm the answer?"
+91,The knight confirmed the answer.,Q_T_equivalent,equivalent,Will the knight confirm the answer tomorrow?,Could the knight confirm the answer tomorrow?
+91,The knight confirmed the answer.,N_Q_nonequivalent,non_equivalent,Could the knight fail to confirm the answer?,Is it false that the knight confirmed the answer?
+91,The knight confirmed the answer.,N_T_nonequivalent,non_equivalent,The knight will fail to confirm the answer tomorrow.,The knight failed to have confirmed the answer earlier.
+91,The knight confirmed the answer.,M_T_nonequivalent,non_equivalent,The knight will allegedly confirm the answer tomorrow.,The knight was allegedly going to confirm the answer.
+91,The knight confirmed the answer.,Q_M_nonequivalent,non_equivalent,Could the knight allegedly confirm the answer?,Is it alleged that the knight confirmed the answer?
+92,The knight signed the treaty.,N_M_equivalent,equivalent,The knight allegedly failed to sign the treaty.,"Allegedly, the knight failed to sign the treaty."
+92,The knight signed the treaty.,M_T_equivalent,equivalent,The knight will allegedly sign the treaty tomorrow.,"Allegedly, the knight will sign the treaty tomorrow."
+92,The knight signed the treaty.,Q_M_equivalent,equivalent,Could the knight allegedly sign the treaty?,"Allegedly, could the knight sign the treaty?"
+92,The knight signed the treaty.,Q_T_equivalent,equivalent,Will the knight sign the treaty tomorrow?,Could the knight sign the treaty tomorrow?
+92,The knight signed the treaty.,N_Q_nonequivalent,non_equivalent,Could the knight fail to sign the treaty?,Is it false that the knight signed the treaty?
+92,The knight signed the treaty.,N_T_nonequivalent,non_equivalent,The knight will fail to sign the treaty tomorrow.,The knight failed to have signed the treaty earlier.
+92,The knight signed the treaty.,M_T_nonequivalent,non_equivalent,The knight will allegedly sign the treaty tomorrow.,The knight was allegedly going to sign the treaty.
+92,The knight signed the treaty.,Q_M_nonequivalent,non_equivalent,Could the knight allegedly sign the treaty?,Is it alleged that the knight signed the treaty?
+93,The manager fixed the bug.,N_M_equivalent,equivalent,The manager allegedly failed to fix the bug.,"Allegedly, the manager failed to fix the bug."
+93,The manager fixed the bug.,M_T_equivalent,equivalent,The manager will allegedly fix the bug tomorrow.,"Allegedly, the manager will fix the bug tomorrow."
+93,The manager fixed the bug.,Q_M_equivalent,equivalent,Could the manager allegedly fix the bug?,"Allegedly, could the manager fix the bug?"
+93,The manager fixed the bug.,Q_T_equivalent,equivalent,Will the manager fix the bug tomorrow?,Could the manager fix the bug tomorrow?
+93,The manager fixed the bug.,N_Q_nonequivalent,non_equivalent,Could the manager fail to fix the bug?,Is it false that the manager fixed the bug?
+93,The manager fixed the bug.,N_T_nonequivalent,non_equivalent,The manager will fail to fix the bug tomorrow.,The manager failed to have fixed the bug earlier.
+93,The manager fixed the bug.,M_T_nonequivalent,non_equivalent,The manager will allegedly fix the bug tomorrow.,The manager was allegedly going to fix the bug.
+93,The manager fixed the bug.,Q_M_nonequivalent,non_equivalent,Could the manager allegedly fix the bug?,Is it alleged that the manager fixed the bug?
+94,The engineer accepted the explanation.,N_M_equivalent,equivalent,The engineer allegedly failed to accept the explanation.,"Allegedly, the engineer failed to accept the explanation."
+94,The engineer accepted the explanation.,M_T_equivalent,equivalent,The engineer will allegedly accept the explanation tomorrow.,"Allegedly, the engineer will accept the explanation tomorrow."
+94,The engineer accepted the explanation.,Q_M_equivalent,equivalent,Could the engineer allegedly accept the explanation?,"Allegedly, could the engineer accept the explanation?"
+94,The engineer accepted the explanation.,Q_T_equivalent,equivalent,Will the engineer accept the explanation tomorrow?,Could the engineer accept the explanation tomorrow?
+94,The engineer accepted the explanation.,N_Q_nonequivalent,non_equivalent,Could the engineer fail to accept the explanation?,Is it false that the engineer accepted the explanation?
+94,The engineer accepted the explanation.,N_T_nonequivalent,non_equivalent,The engineer will fail to accept the explanation tomorrow.,The engineer failed to have accepted the explanation earlier.
+94,The engineer accepted the explanation.,M_T_nonequivalent,non_equivalent,The engineer will allegedly accept the explanation tomorrow.,The engineer was allegedly going to accept the explanation.
+94,The engineer accepted the explanation.,Q_M_nonequivalent,non_equivalent,Could the engineer allegedly accept the explanation?,Is it alleged that the engineer accepted the explanation?
+95,The robot supported the theory.,N_M_equivalent,equivalent,The robot allegedly failed to support the theory.,"Allegedly, the robot failed to support the theory."
+95,The robot supported the theory.,M_T_equivalent,equivalent,The robot will allegedly support the theory tomorrow.,"Allegedly, the robot will support the theory tomorrow."
+95,The robot supported the theory.,Q_M_equivalent,equivalent,Could the robot allegedly support the theory?,"Allegedly, could the robot support the theory?"
+95,The robot supported the theory.,Q_T_equivalent,equivalent,Will the robot support the theory tomorrow?,Could the robot support the theory tomorrow?
+95,The robot supported the theory.,N_Q_nonequivalent,non_equivalent,Could the robot fail to support the theory?,Is it false that the robot supported the theory?
+95,The robot supported the theory.,N_T_nonequivalent,non_equivalent,The robot will fail to support the theory tomorrow.,The robot failed to have supported the theory earlier.
+95,The robot supported the theory.,M_T_nonequivalent,non_equivalent,The robot will allegedly support the theory tomorrow.,The robot was allegedly going to support the theory.
+95,The robot supported the theory.,Q_M_nonequivalent,non_equivalent,Could the robot allegedly support the theory?,Is it alleged that the robot supported the theory?
+96,The teacher signed the treaty.,N_M_equivalent,equivalent,The teacher allegedly failed to sign the treaty.,"Allegedly, the teacher failed to sign the treaty."
+96,The teacher signed the treaty.,M_T_equivalent,equivalent,The teacher will allegedly sign the treaty tomorrow.,"Allegedly, the teacher will sign the treaty tomorrow."
+96,The teacher signed the treaty.,Q_M_equivalent,equivalent,Could the teacher allegedly sign the treaty?,"Allegedly, could the teacher sign the treaty?"
+96,The teacher signed the treaty.,Q_T_equivalent,equivalent,Will the teacher sign the treaty tomorrow?,Could the teacher sign the treaty tomorrow?
+96,The teacher signed the treaty.,N_Q_nonequivalent,non_equivalent,Could the teacher fail to sign the treaty?,Is it false that the teacher signed the treaty?
+96,The teacher signed the treaty.,N_T_nonequivalent,non_equivalent,The teacher will fail to sign the treaty tomorrow.,The teacher failed to have signed the treaty earlier.
+96,The teacher signed the treaty.,M_T_nonequivalent,non_equivalent,The teacher will allegedly sign the treaty tomorrow.,The teacher was allegedly going to sign the treaty.
+96,The teacher signed the treaty.,Q_M_nonequivalent,non_equivalent,Could the teacher allegedly sign the treaty?,Is it alleged that the teacher signed the treaty?
+97,The analyst approved the treatment.,N_M_equivalent,equivalent,The analyst allegedly failed to approve the treatment.,"Allegedly, the analyst failed to approve the treatment."
+97,The analyst approved the treatment.,M_T_equivalent,equivalent,The analyst will allegedly approve the treatment tomorrow.,"Allegedly, the analyst will approve the treatment tomorrow."
+97,The analyst approved the treatment.,Q_M_equivalent,equivalent,Could the analyst allegedly approve the treatment?,"Allegedly, could the analyst approve the treatment?"
+97,The analyst approved the treatment.,Q_T_equivalent,equivalent,Will the analyst approve the treatment tomorrow?,Could the analyst approve the treatment tomorrow?
+97,The analyst approved the treatment.,N_Q_nonequivalent,non_equivalent,Could the analyst fail to approve the treatment?,Is it false that the analyst approved the treatment?
+97,The analyst approved the treatment.,N_T_nonequivalent,non_equivalent,The analyst will fail to approve the treatment tomorrow.,The analyst failed to have approved the treatment earlier.
+97,The analyst approved the treatment.,M_T_nonequivalent,non_equivalent,The analyst will allegedly approve the treatment tomorrow.,The analyst was allegedly going to approve the treatment.
+97,The analyst approved the treatment.,Q_M_nonequivalent,non_equivalent,Could the analyst allegedly approve the treatment?,Is it alleged that the analyst approved the treatment?
+98,The dragon supported the theory.,N_M_equivalent,equivalent,The dragon allegedly failed to support the theory.,"Allegedly, the dragon failed to support the theory."
+98,The dragon supported the theory.,M_T_equivalent,equivalent,The dragon will allegedly support the theory tomorrow.,"Allegedly, the dragon will support the theory tomorrow."
+98,The dragon supported the theory.,Q_M_equivalent,equivalent,Could the dragon allegedly support the theory?,"Allegedly, could the dragon support the theory?"
+98,The dragon supported the theory.,Q_T_equivalent,equivalent,Will the dragon support the theory tomorrow?,Could the dragon support the theory tomorrow?
+98,The dragon supported the theory.,N_Q_nonequivalent,non_equivalent,Could the dragon fail to support the theory?,Is it false that the dragon supported the theory?
+98,The dragon supported the theory.,N_T_nonequivalent,non_equivalent,The dragon will fail to support the theory tomorrow.,The dragon failed to have supported the theory earlier.
+98,The dragon supported the theory.,M_T_nonequivalent,non_equivalent,The dragon will allegedly support the theory tomorrow.,The dragon was allegedly going to support the theory.
+98,The dragon supported the theory.,Q_M_nonequivalent,non_equivalent,Could the dragon allegedly support the theory?,Is it alleged that the dragon supported the theory?
+99,The researcher supported the theory.,N_M_equivalent,equivalent,The researcher allegedly failed to support the theory.,"Allegedly, the researcher failed to support the theory."
+99,The researcher supported the theory.,M_T_equivalent,equivalent,The researcher will allegedly support the theory tomorrow.,"Allegedly, the researcher will support the theory tomorrow."
+99,The researcher supported the theory.,Q_M_equivalent,equivalent,Could the researcher allegedly support the theory?,"Allegedly, could the researcher support the theory?"
+99,The researcher supported the theory.,Q_T_equivalent,equivalent,Will the researcher support the theory tomorrow?,Could the researcher support the theory tomorrow?
+99,The researcher supported the theory.,N_Q_nonequivalent,non_equivalent,Could the researcher fail to support the theory?,Is it false that the researcher supported the theory?
+99,The researcher supported the theory.,N_T_nonequivalent,non_equivalent,The researcher will fail to support the theory tomorrow.,The researcher failed to have supported the theory earlier.
+99,The researcher supported the theory.,M_T_nonequivalent,non_equivalent,The researcher will allegedly support the theory tomorrow.,The researcher was allegedly going to support the theory.
+99,The researcher supported the theory.,Q_M_nonequivalent,non_equivalent,Could the researcher allegedly support the theory?,Is it alleged that the researcher supported the theory?

@@ -1,0 +1,7 @@
+model,acc,f1,baseline
+bert-base-uncased,0.732,0.7175470262426784,0.2
+roberta-base,0.746,0.7251354634280238,0.2
+distilroberta-base,0.736,0.721816357111846,0.2
+sentence-transformers/all-MiniLM-L6-v2,0.764,0.7556993289377506,0.2
+sentence-transformers/all-mpnet-base-v2,0.752,0.7420568653415152,0.2
+microsoft/deberta-v3-base,0.712,0.6989604890721121,0.2

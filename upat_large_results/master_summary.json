@@ -1,0 +1,19 @@
+{
+  "dataset_size": 1000,
+  "classes": [
+    "modality",
+    "negation",
+    "passive",
+    "question",
+    "tense_shift"
+  ],
+  "models": [
+    "bert-base-uncased",
+    "roberta-base",
+    "distilroberta-base",
+    "sentence-transformers/all-MiniLM-L6-v2",
+    "sentence-transformers/all-mpnet-base-v2",
+    "microsoft/deberta-v3-base"
+  ],
+  "baseline": 0.2
+}

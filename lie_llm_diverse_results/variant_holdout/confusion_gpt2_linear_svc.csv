@@ -1,0 +1,7 @@
+,active_to_passive,certainty_to_uncertainty,formalization,negation,past_to_future,question
+active_to_passive,600,0,0,0,0,0
+certainty_to_uncertainty,0,200,400,0,0,0
+formalization,0,0,600,0,0,0
+negation,0,14,0,586,0,0
+past_to_future,0,0,0,0,600,0
+question,0,0,0,0,0,600

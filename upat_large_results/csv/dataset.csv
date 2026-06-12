@@ -1,0 +1,1001 @@
+source,target,class,split
+The translator confirmed the answer.,The translator rejected the answer.,negation,train
+The translator confirmed the answer.,Could anyone confirm whether the translator confirmed the answer?,question,train
+The translator confirmed the answer.,The translator apparently confirmed the answer.,modality,train
+The translator confirmed the answer.,The translator previously confirmed the answer.,tense_shift,train
+The translator confirmed the answer.,The answer came under the translator's confirmation.,passive,train
+The teacher verified the report.,The teacher declined to verify the report.,negation,train
+The teacher verified the report.,Could the teacher verify the report?,question,train
+The teacher verified the report.,The teacher apparently verified the report.,modality,train
+The teacher verified the report.,The teacher previously verified the report.,tense_shift,train
+The teacher verified the report.,The report was subject to verification by the teacher.,passive,train
+The chemist supported the theory.,The chemist rejected the theory.,negation,train
+The chemist supported the theory.,Did anyone see the chemist support the theory?,question,train
+The chemist supported the theory.,The chemist seemingly supported the theory.,modality,train
+The chemist supported the theory.,The chemist previously supported the theory.,tense_shift,train
+The chemist supported the theory.,The theory gained support through the chemist.,passive,train
+The programmer verified the report.,The programmer failed to verify the report.,negation,train
+The programmer verified the report.,Could anyone confirm whether the programmer verified the report?,question,train
+The programmer verified the report.,It appears that the programmer verified the report.,modality,train
+The programmer verified the report.,The programmer once verified the report.,tense_shift,train
+The programmer verified the report.,The report came under the programmer's verification.,passive,train
+The doctor designed the system.,The doctor refused to design the system.,negation,train
+The doctor designed the system.,Could the doctor design the system?,question,train
+The doctor designed the system.,The doctor reportedly designed the system.,modality,train
+The doctor designed the system.,The doctor once designed the system.,tense_shift,train
+The doctor designed the system.,The system gained design through the doctor.,passive,train
+The scientist reviewed the document.,The scientist refused to review the document.,negation,train
+The scientist reviewed the document.,Was the scientist able to review the document?,question,train
+The scientist reviewed the document.,The scientist reportedly reviewed the document.,modality,train
+The scientist reviewed the document.,The scientist once reviewed the document.,tense_shift,train
+The scientist reviewed the document.,The document gained review through the scientist.,passive,train
+The manager tested the prototype.,The manager failed to test the prototype.,negation,train
+The manager tested the prototype.,Could the manager test the prototype?,question,train
+The manager tested the prototype.,It appears that the manager tested the prototype.,modality,train
+The manager tested the prototype.,The manager used to test the prototype.,tense_shift,train
+The manager tested the prototype.,The prototype was subject to testing by the manager.,passive,train
+The journalist completed the repair.,The journalist failed to complete the repair.,negation,train
+The journalist completed the repair.,Could anyone confirm whether the journalist completed the repair?,question,train
+The journalist completed the repair.,The journalist apparently completed the repair.,modality,train
+The journalist completed the repair.,The journalist had completed the repair earlier.,tense_shift,train
+The journalist completed the repair.,The repair came under the journalist's completion.,passive,train
+The historian designed the system.,The historian rejected the system.,negation,train
+The historian designed the system.,Did anyone see the historian design the system?,question,train
+The historian designed the system.,The historian reportedly designed the system.,modality,train
+The historian designed the system.,The historian once designed the system.,tense_shift,train
+The historian designed the system.,The system gained design through the historian.,passive,train
+The researcher verified the report.,The researcher declined to verify the report.,negation,train
+The researcher verified the report.,Could anyone confirm whether the researcher verified the report?,question,train
+The researcher verified the report.,The researcher seemingly verified the report.,modality,train
+The researcher verified the report.,The researcher used to verify the report.,tense_shift,train
+The researcher verified the report.,The report was subject to verification by the researcher.,passive,train
+The teacher accepted the explanation.,The teacher rejected the explanation.,negation,train
+The teacher accepted the explanation.,Was the teacher able to accept the explanation?,question,train
+The teacher accepted the explanation.,The teacher seemingly accepted the explanation.,modality,train
+The teacher accepted the explanation.,The teacher once accepted the explanation.,tense_shift,train
+The teacher accepted the explanation.,The explanation came under the teacher's acceptance.,passive,train
+The journalist designed the system.,The journalist declined to design the system.,negation,train
+The journalist designed the system.,Could anyone confirm whether the journalist designed the system?,question,train
+The journalist designed the system.,The journalist apparently designed the system.,modality,train
+The journalist designed the system.,The journalist previously designed the system.,tense_shift,train
+The journalist designed the system.,The system received design from the journalist.,passive,train
+The lawyer verified the report.,The lawyer rejected the report.,negation,train
+The lawyer verified the report.,Did anyone see the lawyer verify the report?,question,train
+The lawyer verified the report.,The lawyer apparently verified the report.,modality,train
+The lawyer verified the report.,The lawyer had verified the report earlier.,tense_shift,train
+The lawyer verified the report.,The report came under the lawyer's verification.,passive,train
+The teacher fixed the bug.,The teacher refused to fix the bug.,negation,train
+The teacher fixed the bug.,Could anyone confirm whether the teacher fixed the bug?,question,train
+The teacher fixed the bug.,The teacher apparently fixed the bug.,modality,train
+The teacher fixed the bug.,The teacher once fixed the bug.,tense_shift,train
+The teacher fixed the bug.,The bug was subject to a fix by the teacher.,passive,train
+The historian fixed the bug.,The historian refused to fix the bug.,negation,train
+The historian fixed the bug.,Was the historian able to fix the bug?,question,train
+The historian fixed the bug.,The historian apparently fixed the bug.,modality,train
+The historian fixed the bug.,The historian used to fix the bug.,tense_shift,train
+The historian fixed the bug.,The bug received a fix from the historian.,passive,train
+The developer reviewed the document.,The developer refused to review the document.,negation,train
+The developer reviewed the document.,Could anyone confirm whether the developer reviewed the document?,question,train
+The developer reviewed the document.,It appears that the developer reviewed the document.,modality,train
+The developer reviewed the document.,The developer previously reviewed the document.,tense_shift,train
+The developer reviewed the document.,The document gained review through the developer.,passive,train
+The developer accepted the explanation.,The developer rejected the explanation.,negation,train
+The developer accepted the explanation.,Could anyone confirm whether the developer accepted the explanation?,question,train
+The developer accepted the explanation.,The developer apparently accepted the explanation.,modality,train
+The developer accepted the explanation.,The developer once accepted the explanation.,tense_shift,train
+The developer accepted the explanation.,The explanation came under the developer's acceptance.,passive,train
+The doctor reviewed the document.,The doctor rejected the document.,negation,train
+The doctor reviewed the document.,Was the doctor able to review the document?,question,train
+The doctor reviewed the document.,The doctor apparently reviewed the document.,modality,train
+The doctor reviewed the document.,The doctor once reviewed the document.,tense_shift,train
+The doctor reviewed the document.,The document was subject to review by the doctor.,passive,train
+The mathematician designed the system.,The mathematician declined to design the system.,negation,train
+The mathematician designed the system.,Could anyone confirm whether the mathematician designed the system?,question,train
+The mathematician designed the system.,The mathematician reportedly designed the system.,modality,train
+The mathematician designed the system.,The mathematician used to design the system.,tense_shift,train
+The mathematician designed the system.,The system was subject to design by the mathematician.,passive,train
+The researcher accepted the explanation.,The researcher refused to accept the explanation.,negation,train
+The researcher accepted the explanation.,Was the researcher able to accept the explanation?,question,train
+The researcher accepted the explanation.,It appears that the researcher accepted the explanation.,modality,train
+The researcher accepted the explanation.,The researcher used to accept the explanation.,tense_shift,train
+The researcher accepted the explanation.,The explanation received acceptance from the researcher.,passive,train
+The biologist completed the repair.,The biologist rejected the repair.,negation,train
+The biologist completed the repair.,Was the biologist able to complete the repair?,question,train
+The biologist completed the repair.,The biologist reportedly completed the repair.,modality,train
+The biologist completed the repair.,The biologist once completed the repair.,tense_shift,train
+The biologist completed the repair.,The repair was subject to completion by the biologist.,passive,train
+The consultant tested the prototype.,The consultant refused to test the prototype.,negation,train
+The consultant tested the prototype.,Was the consultant able to test the prototype?,question,train
+The consultant tested the prototype.,It appears that the consultant tested the prototype.,modality,train
+The consultant tested the prototype.,The consultant used to test the prototype.,tense_shift,train
+The consultant tested the prototype.,The prototype came under the consultant's testing.,passive,train
+The translator reviewed the document.,The translator declined to review the document.,negation,train
+The translator reviewed the document.,Did anyone see the translator review the document?,question,train
+The translator reviewed the document.,It appears that the translator reviewed the document.,modality,train
+The translator reviewed the document.,The translator used to review the document.,tense_shift,train
+The translator reviewed the document.,The document came under the translator's review.,passive,train
+The mathematician accepted the explanation.,The mathematician declined to accept the explanation.,negation,train
+The mathematician accepted the explanation.,Could the mathematician accept the explanation?,question,train
+The mathematician accepted the explanation.,The mathematician reportedly accepted the explanation.,modality,train
+The mathematician accepted the explanation.,The mathematician once accepted the explanation.,tense_shift,train
+The mathematician accepted the explanation.,The explanation received acceptance from the mathematician.,passive,train
+The consultant reviewed the document.,The consultant declined to review the document.,negation,train
+The consultant reviewed the document.,Could the consultant review the document?,question,train
+The consultant reviewed the document.,The consultant reportedly reviewed the document.,modality,train
+The consultant reviewed the document.,The consultant previously reviewed the document.,tense_shift,train
+The consultant reviewed the document.,The document received review from the consultant.,passive,train
+The translator approved the treatment.,The translator declined to approve the treatment.,negation,train
+The translator approved the treatment.,Was the translator able to approve the treatment?,question,train
+The translator approved the treatment.,The translator apparently approved the treatment.,modality,train
+The translator approved the treatment.,The translator once approved the treatment.,tense_shift,train
+The translator approved the treatment.,The treatment gained approval through the translator.,passive,train
+The teacher supported the theory.,The teacher declined to support the theory.,negation,train
+The teacher supported the theory.,Could the teacher support the theory?,question,train
+The teacher supported the theory.,The teacher apparently supported the theory.,modality,train
+The teacher supported the theory.,The teacher had supported the theory earlier.,tense_shift,train
+The teacher supported the theory.,The theory came under the teacher's support.,passive,train
+The developer verified the report.,The developer failed to verify the report.,negation,train
+The developer verified the report.,Could the developer verify the report?,question,train
+The developer verified the report.,The developer apparently verified the report.,modality,train
+The developer verified the report.,The developer previously verified the report.,tense_shift,train
+The developer verified the report.,The report received verification from the developer.,passive,train
+The historian reviewed the document.,The historian declined to review the document.,negation,train
+The historian reviewed the document.,Could the historian review the document?,question,train
+The historian reviewed the document.,It appears that the historian reviewed the document.,modality,train
+The historian reviewed the document.,The historian once reviewed the document.,tense_shift,train
+The historian reviewed the document.,The document gained review through the historian.,passive,train
+The editor fixed the bug.,The editor rejected the bug.,negation,train
+The editor fixed the bug.,Did anyone see the editor fix the bug?,question,train
+The editor fixed the bug.,The editor seemingly fixed the bug.,modality,train
+The editor fixed the bug.,The editor had fixed the bug earlier.,tense_shift,train
+The editor fixed the bug.,The bug gained a fix through the editor.,passive,train
+The manager supported the theory.,The manager rejected the theory.,negation,train
+The manager supported the theory.,Did anyone see the manager support the theory?,question,train
+The manager supported the theory.,The manager apparently supported the theory.,modality,train
+The manager supported the theory.,The manager previously supported the theory.,tense_shift,train
+The manager supported the theory.,The theory received support from the manager.,passive,train
+The manager accepted the explanation.,The manager refused to accept the explanation.,negation,train
+The manager accepted the explanation.,Did anyone see the manager accept the explanation?,question,train
+The manager accepted the explanation.,The manager reportedly accepted the explanation.,modality,train
+The manager accepted the explanation.,The manager had accepted the explanation earlier.,tense_shift,train
+The manager accepted the explanation.,The explanation gained acceptance through the manager.,passive,train
+The lawyer fixed the bug.,The lawyer rejected the bug.,negation,train
+The lawyer fixed the bug.,Could the lawyer fix the bug?,question,train
+The lawyer fixed the bug.,It appears that the lawyer fixed the bug.,modality,train
+The lawyer fixed the bug.,The lawyer once fixed the bug.,tense_shift,train
+The lawyer fixed the bug.,The bug was subject to a fix by the lawyer.,passive,train
+The researcher completed the repair.,The researcher failed to complete the repair.,negation,train
+The researcher completed the repair.,Could anyone confirm whether the researcher completed the repair?,question,train
+The researcher completed the repair.,The researcher seemingly completed the repair.,modality,train
+The researcher completed the repair.,The researcher previously completed the repair.,tense_shift,train
+The researcher completed the repair.,The repair was subject to completion by the researcher.,passive,train
+The scientist tested the prototype.,The scientist declined to test the prototype.,negation,train
+The scientist tested the prototype.,Could the scientist test the prototype?,question,train
+The scientist tested the prototype.,The scientist seemingly tested the prototype.,modality,train
+The scientist tested the prototype.,The scientist once tested the prototype.,tense_shift,train
+The scientist tested the prototype.,The prototype gained testing through the scientist.,passive,train
+The designer confirmed the answer.,The designer refused to confirm the answer.,negation,train
+The designer confirmed the answer.,Did anyone see the designer confirm the answer?,question,train
+The designer confirmed the answer.,The designer seemingly confirmed the answer.,modality,train
+The designer confirmed the answer.,The designer had confirmed the answer earlier.,tense_shift,train
+The designer confirmed the answer.,The answer came under the designer's confirmation.,passive,train
+The translator accepted the explanation.,The translator failed to accept the explanation.,negation,train
+The translator accepted the explanation.,Did anyone see the translator accept the explanation?,question,train
+The translator accepted the explanation.,The translator reportedly accepted the explanation.,modality,train
+The translator accepted the explanation.,The translator previously accepted the explanation.,tense_shift,train
+The translator accepted the explanation.,The explanation received acceptance from the translator.,passive,train
+The mathematician approved the treatment.,The mathematician failed to approve the treatment.,negation,train
+The mathematician approved the treatment.,Was the mathematician able to approve the treatment?,question,train
+The mathematician approved the treatment.,The mathematician seemingly approved the treatment.,modality,train
+The mathematician approved the treatment.,The mathematician previously approved the treatment.,tense_shift,train
+The mathematician approved the treatment.,The treatment was subject to approval by the mathematician.,passive,train
+The journalist verified the report.,The journalist rejected the report.,negation,train
+The journalist verified the report.,Did anyone see the journalist verify the report?,question,train
+The journalist verified the report.,The journalist apparently verified the report.,modality,train
+The journalist verified the report.,The journalist previously verified the report.,tense_shift,train
+The journalist verified the report.,The report came under the journalist's verification.,passive,train
+The designer verified the report.,The designer refused to verify the report.,negation,train
+The designer verified the report.,Was the designer able to verify the report?,question,train
+The designer verified the report.,It appears that the designer verified the report.,modality,train
+The designer verified the report.,The designer had verified the report earlier.,tense_shift,train
+The designer verified the report.,The report came under the designer's verification.,passive,train
+The consultant designed the system.,The consultant rejected the system.,negation,train
+The consultant designed the system.,Could anyone confirm whether the consultant designed the system?,question,train
+The consultant designed the system.,The consultant seemingly designed the system.,modality,train
+The consultant designed the system.,The consultant had designed the system earlier.,tense_shift,train
+The consultant designed the system.,The system gained design through the consultant.,passive,train
+The doctor approved the treatment.,The doctor failed to approve the treatment.,negation,train
+The doctor approved the treatment.,Could anyone confirm whether the doctor approved the treatment?,question,train
+The doctor approved the treatment.,It appears that the doctor approved the treatment.,modality,train
+The doctor approved the treatment.,The doctor used to approve the treatment.,tense_shift,train
+The doctor approved the treatment.,The treatment received approval from the doctor.,passive,train
+The scientist approved the treatment.,The scientist rejected the treatment.,negation,train
+The scientist approved the treatment.,Did anyone see the scientist approve the treatment?,question,train
+The scientist approved the treatment.,The scientist apparently approved the treatment.,modality,train
+The scientist approved the treatment.,The scientist previously approved the treatment.,tense_shift,train
+The scientist approved the treatment.,The treatment came under the scientist's approval.,passive,train
+The teacher tested the prototype.,The teacher failed to test the prototype.,negation,train
+The teacher tested the prototype.,Could anyone confirm whether the teacher tested the prototype?,question,train
+The teacher tested the prototype.,The teacher apparently tested the prototype.,modality,train
+The teacher tested the prototype.,The teacher once tested the prototype.,tense_shift,train
+The teacher tested the prototype.,The prototype came under the teacher's testing.,passive,train
+The journalist approved the treatment.,The journalist rejected the treatment.,negation,train
+The journalist approved the treatment.,Did anyone see the journalist approve the treatment?,question,train
+The journalist approved the treatment.,The journalist reportedly approved the treatment.,modality,train
+The journalist approved the treatment.,The journalist once approved the treatment.,tense_shift,train
+The journalist approved the treatment.,The treatment was subject to approval by the journalist.,passive,train
+The analyst reviewed the document.,The analyst refused to review the document.,negation,train
+The analyst reviewed the document.,Could the analyst review the document?,question,train
+The analyst reviewed the document.,The analyst reportedly reviewed the document.,modality,train
+The analyst reviewed the document.,The analyst had reviewed the document earlier.,tense_shift,train
+The analyst reviewed the document.,The document received review from the analyst.,passive,train
+The lawyer completed the repair.,The lawyer refused to complete the repair.,negation,train
+The lawyer completed the repair.,Could anyone confirm whether the lawyer completed the repair?,question,train
+The lawyer completed the repair.,It appears that the lawyer completed the repair.,modality,train
+The lawyer completed the repair.,The lawyer once completed the repair.,tense_shift,train
+The lawyer completed the repair.,The repair gained completion through the lawyer.,passive,train
+The scientist designed the system.,The scientist declined to design the system.,negation,train
+The scientist designed the system.,Was the scientist able to design the system?,question,train
+The scientist designed the system.,The scientist reportedly designed the system.,modality,train
+The scientist designed the system.,The scientist previously designed the system.,tense_shift,train
+The scientist designed the system.,The system gained design through the scientist.,passive,train
+The researcher fixed the bug.,The researcher refused to fix the bug.,negation,train
+The researcher fixed the bug.,Did anyone see the researcher fix the bug?,question,train
+The researcher fixed the bug.,It appears that the researcher fixed the bug.,modality,train
+The researcher fixed the bug.,The researcher had fixed the bug earlier.,tense_shift,train
+The researcher fixed the bug.,The bug came under the researcher's a fix.,passive,train
+The architect fixed the bug.,The architect refused to fix the bug.,negation,train
+The architect fixed the bug.,Could the architect fix the bug?,question,train
+The architect fixed the bug.,The architect apparently fixed the bug.,modality,train
+The architect fixed the bug.,The architect had fixed the bug earlier.,tense_shift,train
+The architect fixed the bug.,The bug came under the architect's a fix.,passive,train
+The architect confirmed the answer.,The architect refused to confirm the answer.,negation,train
+The architect confirmed the answer.,Could the architect confirm the answer?,question,train
+The architect confirmed the answer.,It appears that the architect confirmed the answer.,modality,train
+The architect confirmed the answer.,The architect had confirmed the answer earlier.,tense_shift,train
+The architect confirmed the answer.,The answer received confirmation from the architect.,passive,train
+The designer designed the system.,The designer rejected the system.,negation,train
+The designer designed the system.,Did anyone see the designer design the system?,question,train
+The designer designed the system.,The designer reportedly designed the system.,modality,train
+The designer designed the system.,The designer once designed the system.,tense_shift,train
+The designer designed the system.,The system came under the designer's design.,passive,train
+The architect tested the prototype.,The architect failed to test the prototype.,negation,train
+The architect tested the prototype.,Was the architect able to test the prototype?,question,train
+The architect tested the prototype.,The architect apparently tested the prototype.,modality,train
+The architect tested the prototype.,The architect had tested the prototype earlier.,tense_shift,train
+The architect tested the prototype.,The prototype came under the architect's testing.,passive,train
+The teacher reviewed the document.,The teacher refused to review the document.,negation,train
+The teacher reviewed the document.,Could anyone confirm whether the teacher reviewed the document?,question,train
+The teacher reviewed the document.,It appears that the teacher reviewed the document.,modality,train
+The teacher reviewed the document.,The teacher previously reviewed the document.,tense_shift,train
+The teacher reviewed the document.,The document came under the teacher's review.,passive,train
+The lawyer designed the system.,The lawyer refused to design the system.,negation,train
+The lawyer designed the system.,Could anyone confirm whether the lawyer designed the system?,question,train
+The lawyer designed the system.,It appears that the lawyer designed the system.,modality,train
+The lawyer designed the system.,The lawyer once designed the system.,tense_shift,train
+The lawyer designed the system.,The system received design from the lawyer.,passive,train
+The mathematician fixed the bug.,The mathematician declined to fix the bug.,negation,train
+The mathematician fixed the bug.,Could the mathematician fix the bug?,question,train
+The mathematician fixed the bug.,The mathematician reportedly fixed the bug.,modality,train
+The mathematician fixed the bug.,The mathematician had fixed the bug earlier.,tense_shift,train
+The mathematician fixed the bug.,The bug was subject to a fix by the mathematician.,passive,train
+The consultant accepted the explanation.,The consultant declined to accept the explanation.,negation,train
+The consultant accepted the explanation.,Could anyone confirm whether the consultant accepted the explanation?,question,train
+The consultant accepted the explanation.,The consultant reportedly accepted the explanation.,modality,train
+The consultant accepted the explanation.,The consultant previously accepted the explanation.,tense_shift,train
+The consultant accepted the explanation.,The explanation was subject to acceptance by the consultant.,passive,train
+The designer fixed the bug.,The designer rejected the bug.,negation,train
+The designer fixed the bug.,Could the designer fix the bug?,question,train
+The designer fixed the bug.,The designer apparently fixed the bug.,modality,train
+The designer fixed the bug.,The designer had fixed the bug earlier.,tense_shift,train
+The designer fixed the bug.,The bug gained a fix through the designer.,passive,train
+The scientist confirmed the answer.,The scientist failed to confirm the answer.,negation,train
+The scientist confirmed the answer.,Did anyone see the scientist confirm the answer?,question,train
+The scientist confirmed the answer.,The scientist apparently confirmed the answer.,modality,train
+The scientist confirmed the answer.,The scientist used to confirm the answer.,tense_shift,train
+The scientist confirmed the answer.,The answer was subject to confirmation by the scientist.,passive,train
+The architect verified the report.,The architect declined to verify the report.,negation,train
+The architect verified the report.,Was the architect able to verify the report?,question,train
+The architect verified the report.,The architect seemingly verified the report.,modality,train
+The architect verified the report.,The architect had verified the report earlier.,tense_shift,train
+The architect verified the report.,The report gained verification through the architect.,passive,train
+The doctor confirmed the answer.,The doctor failed to confirm the answer.,negation,train
+The doctor confirmed the answer.,Could the doctor confirm the answer?,question,train
+The doctor confirmed the answer.,The doctor seemingly confirmed the answer.,modality,train
+The doctor confirmed the answer.,The doctor used to confirm the answer.,tense_shift,train
+The doctor confirmed the answer.,The answer was subject to confirmation by the doctor.,passive,train
+The scientist fixed the bug.,The scientist failed to fix the bug.,negation,train
+The scientist fixed the bug.,Could anyone confirm whether the scientist fixed the bug?,question,train
+The scientist fixed the bug.,The scientist reportedly fixed the bug.,modality,train
+The scientist fixed the bug.,The scientist once fixed the bug.,tense_shift,train
+The scientist fixed the bug.,The bug was subject to a fix by the scientist.,passive,train
+The historian approved the treatment.,The historian declined to approve the treatment.,negation,train
+The historian approved the treatment.,Did anyone see the historian approve the treatment?,question,train
+The historian approved the treatment.,It appears that the historian approved the treatment.,modality,train
+The historian approved the treatment.,The historian previously approved the treatment.,tense_shift,train
+The historian approved the treatment.,The treatment came under the historian's approval.,passive,train
+The architect completed the repair.,The architect declined to complete the repair.,negation,train
+The architect completed the repair.,Did anyone see the architect complete the repair?,question,train
+The architect completed the repair.,The architect apparently completed the repair.,modality,train
+The architect completed the repair.,The architect previously completed the repair.,tense_shift,train
+The architect completed the repair.,The repair was subject to completion by the architect.,passive,train
+The analyst designed the system.,The analyst declined to design the system.,negation,train
+The analyst designed the system.,Could the analyst design the system?,question,train
+The analyst designed the system.,It appears that the analyst designed the system.,modality,train
+The analyst designed the system.,The analyst used to design the system.,tense_shift,train
+The analyst designed the system.,The system was subject to design by the analyst.,passive,train
+The lawyer approved the treatment.,The lawyer refused to approve the treatment.,negation,train
+The lawyer approved the treatment.,Did anyone see the lawyer approve the treatment?,question,train
+The lawyer approved the treatment.,The lawyer seemingly approved the treatment.,modality,train
+The lawyer approved the treatment.,The lawyer once approved the treatment.,tense_shift,train
+The lawyer approved the treatment.,The treatment gained approval through the lawyer.,passive,train
+The researcher supported the theory.,The researcher failed to support the theory.,negation,train
+The researcher supported the theory.,Could the researcher support the theory?,question,train
+The researcher supported the theory.,It appears that the researcher supported the theory.,modality,train
+The researcher supported the theory.,The researcher previously supported the theory.,tense_shift,train
+The researcher supported the theory.,The theory was subject to support by the researcher.,passive,train
+The analyst verified the report.,The analyst declined to verify the report.,negation,train
+The analyst verified the report.,Could the analyst verify the report?,question,train
+The analyst verified the report.,The analyst seemingly verified the report.,modality,train
+The analyst verified the report.,The analyst once verified the report.,tense_shift,train
+The analyst verified the report.,The report gained verification through the analyst.,passive,train
+The researcher confirmed the answer.,The researcher rejected the answer.,negation,train
+The researcher confirmed the answer.,Could anyone confirm whether the researcher confirmed the answer?,question,train
+The researcher confirmed the answer.,The researcher seemingly confirmed the answer.,modality,train
+The researcher confirmed the answer.,The researcher used to confirm the answer.,tense_shift,train
+The researcher confirmed the answer.,The answer came under the researcher's confirmation.,passive,train
+The teacher designed the system.,The teacher rejected the system.,negation,train
+The teacher designed the system.,Did anyone see the teacher design the system?,question,train
+The teacher designed the system.,It appears that the teacher designed the system.,modality,train
+The teacher designed the system.,The teacher once designed the system.,tense_shift,train
+The teacher designed the system.,The system came under the teacher's design.,passive,train
+The translator supported the theory.,The translator declined to support the theory.,negation,train
+The translator supported the theory.,Could the translator support the theory?,question,train
+The translator supported the theory.,The translator apparently supported the theory.,modality,train
+The translator supported the theory.,The translator once supported the theory.,tense_shift,train
+The translator supported the theory.,The theory gained support through the translator.,passive,train
+The engineer confirmed the answer.,The engineer rejected the answer.,negation,train
+The engineer confirmed the answer.,Was the engineer able to confirm the answer?,question,train
+The engineer confirmed the answer.,It appears that the engineer confirmed the answer.,modality,train
+The engineer confirmed the answer.,The engineer had confirmed the answer earlier.,tense_shift,train
+The engineer confirmed the answer.,The answer came under the engineer's confirmation.,passive,train
+The chemist confirmed the answer.,The chemist declined to confirm the answer.,negation,train
+The chemist confirmed the answer.,Could the chemist confirm the answer?,question,train
+The chemist confirmed the answer.,The chemist apparently confirmed the answer.,modality,train
+The chemist confirmed the answer.,The chemist used to confirm the answer.,tense_shift,train
+The chemist confirmed the answer.,The answer came under the chemist's confirmation.,passive,train
+The chemist designed the system.,The chemist rejected the system.,negation,train
+The chemist designed the system.,Was the chemist able to design the system?,question,train
+The chemist designed the system.,The chemist reportedly designed the system.,modality,train
+The chemist designed the system.,The chemist previously designed the system.,tense_shift,train
+The chemist designed the system.,The system came under the chemist's design.,passive,train
+The scientist accepted the explanation.,The scientist declined to accept the explanation.,negation,train
+The scientist accepted the explanation.,Could anyone confirm whether the scientist accepted the explanation?,question,train
+The scientist accepted the explanation.,The scientist reportedly accepted the explanation.,modality,train
+The scientist accepted the explanation.,The scientist once accepted the explanation.,tense_shift,train
+The scientist accepted the explanation.,The explanation received acceptance from the scientist.,passive,train
+The developer tested the prototype.,The developer declined to test the prototype.,negation,train
+The developer tested the prototype.,Could anyone confirm whether the developer tested the prototype?,question,train
+The developer tested the prototype.,The developer apparently tested the prototype.,modality,train
+The developer tested the prototype.,The developer used to test the prototype.,tense_shift,train
+The developer tested the prototype.,The prototype received testing from the developer.,passive,train
+The architect designed the system.,The architect declined to design the system.,negation,train
+The architect designed the system.,Was the architect able to design the system?,question,train
+The architect designed the system.,It appears that the architect designed the system.,modality,train
+The architect designed the system.,The architect had designed the system earlier.,tense_shift,train
+The architect designed the system.,The system received design from the architect.,passive,train
+The analyst confirmed the answer.,The analyst declined to confirm the answer.,negation,train
+The analyst confirmed the answer.,Did anyone see the analyst confirm the answer?,question,train
+The analyst confirmed the answer.,The analyst seemingly confirmed the answer.,modality,train
+The analyst confirmed the answer.,The analyst had confirmed the answer earlier.,tense_shift,train
+The analyst confirmed the answer.,The answer received confirmation from the analyst.,passive,train
+The chemist fixed the bug.,The chemist rejected the bug.,negation,train
+The chemist fixed the bug.,Did anyone see the chemist fix the bug?,question,train
+The chemist fixed the bug.,It appears that the chemist fixed the bug.,modality,train
+The chemist fixed the bug.,The chemist once fixed the bug.,tense_shift,train
+The chemist fixed the bug.,The bug came under the chemist's a fix.,passive,train
+The architect accepted the explanation.,The architect declined to accept the explanation.,negation,train
+The architect accepted the explanation.,Could anyone confirm whether the architect accepted the explanation?,question,train
+The architect accepted the explanation.,The architect reportedly accepted the explanation.,modality,train
+The architect accepted the explanation.,The architect once accepted the explanation.,tense_shift,train
+The architect accepted the explanation.,The explanation received acceptance from the architect.,passive,train
+The doctor tested the prototype.,The doctor declined to test the prototype.,negation,train
+The doctor tested the prototype.,Could anyone confirm whether the doctor tested the prototype?,question,train
+The doctor tested the prototype.,The doctor seemingly tested the prototype.,modality,train
+The doctor tested the prototype.,The doctor had tested the prototype earlier.,tense_shift,train
+The doctor tested the prototype.,The prototype gained testing through the doctor.,passive,train
+The mathematician completed the repair.,The mathematician declined to complete the repair.,negation,train
+The mathematician completed the repair.,Was the mathematician able to complete the repair?,question,train
+The mathematician completed the repair.,It appears that the mathematician completed the repair.,modality,train
+The mathematician completed the repair.,The mathematician once completed the repair.,tense_shift,train
+The mathematician completed the repair.,The repair was subject to completion by the mathematician.,passive,train
+The editor supported the theory.,The editor rejected the theory.,negation,train
+The editor supported the theory.,Could anyone confirm whether the editor supported the theory?,question,train
+The editor supported the theory.,The editor reportedly supported the theory.,modality,train
+The editor supported the theory.,The editor had supported the theory earlier.,tense_shift,train
+The editor supported the theory.,The theory came under the editor's support.,passive,train
+The consultant verified the report.,The consultant failed to verify the report.,negation,train
+The consultant verified the report.,Could the consultant verify the report?,question,train
+The consultant verified the report.,The consultant reportedly verified the report.,modality,train
+The consultant verified the report.,The consultant once verified the report.,tense_shift,train
+The consultant verified the report.,The report was subject to verification by the consultant.,passive,train
+The engineer approved the treatment.,The engineer refused to approve the treatment.,negation,train
+The engineer approved the treatment.,Was the engineer able to approve the treatment?,question,train
+The engineer approved the treatment.,The engineer reportedly approved the treatment.,modality,train
+The engineer approved the treatment.,The engineer previously approved the treatment.,tense_shift,train
+The engineer approved the treatment.,The treatment gained approval through the engineer.,passive,train
+The translator tested the prototype.,The translator failed to test the prototype.,negation,train
+The translator tested the prototype.,Could the translator test the prototype?,question,train
+The translator tested the prototype.,It appears that the translator tested the prototype.,modality,train
+The translator tested the prototype.,The translator had tested the prototype earlier.,tense_shift,train
+The translator tested the prototype.,The prototype gained testing through the translator.,passive,train
+The biologist reviewed the document.,The biologist failed to review the document.,negation,train
+The biologist reviewed the document.,Was the biologist able to review the document?,question,train
+The biologist reviewed the document.,The biologist apparently reviewed the document.,modality,train
+The biologist reviewed the document.,The biologist once reviewed the document.,tense_shift,train
+The biologist reviewed the document.,The document gained review through the biologist.,passive,train
+The scientist supported the theory.,The scientist declined to support the theory.,negation,train
+The scientist supported the theory.,Could anyone confirm whether the scientist supported the theory?,question,train
+The scientist supported the theory.,It appears that the scientist supported the theory.,modality,train
+The scientist supported the theory.,The scientist previously supported the theory.,tense_shift,train
+The scientist supported the theory.,The theory came under the scientist's support.,passive,train
+The architect supported the theory.,The architect failed to support the theory.,negation,train
+The architect supported the theory.,Could anyone confirm whether the architect supported the theory?,question,train
+The architect supported the theory.,The architect apparently supported the theory.,modality,train
+The architect supported the theory.,The architect once supported the theory.,tense_shift,train
+The architect supported the theory.,The theory gained support through the architect.,passive,train
+The biologist fixed the bug.,The biologist rejected the bug.,negation,train
+The biologist fixed the bug.,Did anyone see the biologist fix the bug?,question,train
+The biologist fixed the bug.,The biologist reportedly fixed the bug.,modality,train
+The biologist fixed the bug.,The biologist previously fixed the bug.,tense_shift,train
+The biologist fixed the bug.,The bug was subject to a fix by the biologist.,passive,train
+The programmer designed the system.,The programmer refused to design the system.,negation,train
+The programmer designed the system.,Was the programmer able to design the system?,question,train
+The programmer designed the system.,The programmer reportedly designed the system.,modality,train
+The programmer designed the system.,The programmer used to design the system.,tense_shift,train
+The programmer designed the system.,The system received design from the programmer.,passive,train
+The journalist fixed the bug.,The journalist rejected the bug.,negation,train
+The journalist fixed the bug.,Was the journalist able to fix the bug?,question,train
+The journalist fixed the bug.,It appears that the journalist fixed the bug.,modality,train
+The journalist fixed the bug.,The journalist previously fixed the bug.,tense_shift,train
+The journalist fixed the bug.,The bug came under the journalist's a fix.,passive,train
+The mathematician supported the theory.,The mathematician refused to support the theory.,negation,train
+The mathematician supported the theory.,Could the mathematician support the theory?,question,train
+The mathematician supported the theory.,The mathematician reportedly supported the theory.,modality,train
+The mathematician supported the theory.,The mathematician had supported the theory earlier.,tense_shift,train
+The mathematician supported the theory.,The theory gained support through the mathematician.,passive,train
+The biologist approved the treatment.,The biologist rejected the treatment.,negation,train
+The biologist approved the treatment.,Could anyone confirm whether the biologist approved the treatment?,question,train
+The biologist approved the treatment.,The biologist apparently approved the treatment.,modality,train
+The biologist approved the treatment.,The biologist had approved the treatment earlier.,tense_shift,train
+The biologist approved the treatment.,The treatment gained approval through the biologist.,passive,train
+The biologist verified the report.,The biologist failed to verify the report.,negation,train
+The biologist verified the report.,Could anyone confirm whether the biologist verified the report?,question,train
+The biologist verified the report.,The biologist seemingly verified the report.,modality,train
+The biologist verified the report.,The biologist once verified the report.,tense_shift,train
+The biologist verified the report.,The report came under the biologist's verification.,passive,train
+The developer completed the repair.,The developer declined to complete the repair.,negation,train
+The developer completed the repair.,Could the developer complete the repair?,question,train
+The developer completed the repair.,It appears that the developer completed the repair.,modality,train
+The developer completed the repair.,The developer had completed the repair earlier.,tense_shift,train
+The developer completed the repair.,The repair gained completion through the developer.,passive,train
+The historian verified the report.,The historian declined to verify the report.,negation,train
+The historian verified the report.,Was the historian able to verify the report?,question,train
+The historian verified the report.,The historian apparently verified the report.,modality,train
+The historian verified the report.,The historian used to verify the report.,tense_shift,train
+The historian verified the report.,The report received verification from the historian.,passive,train
+The mathematician confirmed the answer.,The mathematician refused to confirm the answer.,negation,train
+The mathematician confirmed the answer.,Did anyone see the mathematician confirm the answer?,question,train
+The mathematician confirmed the answer.,It appears that the mathematician confirmed the answer.,modality,train
+The mathematician confirmed the answer.,The mathematician had confirmed the answer earlier.,tense_shift,train
+The mathematician confirmed the answer.,The answer received confirmation from the mathematician.,passive,train
+The lawyer reviewed the document.,The lawyer declined to review the document.,negation,train
+The lawyer reviewed the document.,Could the lawyer review the document?,question,train
+The lawyer reviewed the document.,The lawyer apparently reviewed the document.,modality,train
+The lawyer reviewed the document.,The lawyer used to review the document.,tense_shift,train
+The lawyer reviewed the document.,The document received review from the lawyer.,passive,train
+The journalist accepted the explanation.,The journalist rejected the explanation.,negation,train
+The journalist accepted the explanation.,Did anyone see the journalist accept the explanation?,question,train
+The journalist accepted the explanation.,It appears that the journalist accepted the explanation.,modality,train
+The journalist accepted the explanation.,The journalist had accepted the explanation earlier.,tense_shift,train
+The journalist accepted the explanation.,The explanation gained acceptance through the journalist.,passive,train
+The oracle built the tower.,The oracle declined to build the tower.,negation,test
+The oracle built the tower.,Someone asked whether the oracle built the tower.,question,test
+The oracle built the tower.,The oracle was rumored to have built the tower.,modality,test
+The oracle built the tower.,The oracle may build the tower later.,tense_shift,test
+The oracle built the tower.,The tower became the oracle's construction.,passive,test
+The pirate repaired the satellite.,The pirate declined to repair the satellite.,negation,test
+The pirate repaired the satellite.,It is unclear whether the pirate repaired the satellite.,question,test
+The pirate repaired the satellite.,The pirate supposedly repaired the satellite.,modality,test
+The pirate repaired the satellite.,The pirate plans to repair the satellite next week.,tense_shift,test
+The pirate repaired the satellite.,The satellite ended up marked by the pirate's repair.,passive,test
+The vampire found the island.,The vampire never managed to find the island.,negation,test
+The vampire found the island.,Someone asked whether the vampire found the island.,question,test
+The vampire found the island.,The vampire was rumored to have found the island.,modality,test
+The vampire found the island.,The vampire is going to find the island soon.,tense_shift,test
+The vampire found the island.,The island became the vampire's discovery.,passive,test
+The mermaid built the tower.,The mermaid failed to build the tower.,negation,test
+The mermaid built the tower.,It is unclear whether the mermaid built the tower.,question,test
+The mermaid built the tower.,"According to witnesses, the mermaid built the tower.",modality,test
+The mermaid built the tower.,The mermaid is going to build the tower soon.,tense_shift,test
+The mermaid built the tower.,The tower became the mermaid's construction.,passive,test
+The spirit built the tower.,The spirit declined to build the tower.,negation,test
+The spirit built the tower.,I wonder whether the spirit built the tower.,question,test
+The spirit built the tower.,"According to witnesses, the spirit built the tower.",modality,test
+The spirit built the tower.,The spirit is going to build the tower soon.,tense_shift,test
+The spirit built the tower.,The tower was left with signs of the spirit's construction.,passive,test
+The oracle repaired the satellite.,The oracle declined to repair the satellite.,negation,test
+The oracle repaired the satellite.,Someone asked whether the oracle repaired the satellite.,question,test
+The oracle repaired the satellite.,The oracle allegedly repaired the satellite.,modality,test
+The oracle repaired the satellite.,The oracle will repair the satellite tomorrow.,tense_shift,test
+The oracle repaired the satellite.,The satellite became the oracle's repair.,passive,test
+The wizard built the tower.,The wizard avoided building the tower.,negation,test
+The wizard built the tower.,Someone asked whether the wizard built the tower.,question,test
+The wizard built the tower.,"According to witnesses, the wizard built the tower.",modality,test
+The wizard built the tower.,The wizard plans to build the tower next week.,tense_shift,test
+The wizard built the tower.,The tower ended up marked by the wizard's construction.,passive,test
+The alien created the artifact.,The alien avoided createing the artifact.,negation,test
+The alien created the artifact.,Nobody knew whether the alien had created the artifact.,question,test
+The alien created the artifact.,The alien was rumored to have created the artifact.,modality,test
+The alien created the artifact.,The alien will create the artifact tomorrow.,tense_shift,test
+The alien created the artifact.,The artifact was left with signs of the alien's creation.,passive,test
+The knight protected the village.,The knight avoided protecting the village.,negation,test
+The knight protected the village.,Someone asked whether the knight protected the village.,question,test
+The knight protected the village.,The knight allegedly protected the village.,modality,test
+The knight protected the village.,The knight plans to protect the village next week.,tense_shift,test
+The knight protected the village.,The village came under the knight's protection.,passive,test
+The druid opened the portal.,The druid never managed to open the portal.,negation,test
+The druid opened the portal.,I wonder whether the druid opened the portal.,question,test
+The druid opened the portal.,The druid allegedly opened the portal.,modality,test
+The druid opened the portal.,The druid will open the portal tomorrow.,tense_shift,test
+The druid opened the portal.,The portal ended up marked by the druid's opening.,passive,test
+The wizard revealed the secret.,The wizard failed to reveal the secret.,negation,test
+The wizard revealed the secret.,Someone asked whether the wizard revealed the secret.,question,test
+The wizard revealed the secret.,The wizard was rumored to have revealed the secret.,modality,test
+The wizard revealed the secret.,The wizard may reveal the secret later.,tense_shift,test
+The wizard revealed the secret.,The secret was left with signs of the wizard's revelation.,passive,test
+The giant opened the portal.,The giant declined to open the portal.,negation,test
+The giant opened the portal.,Someone asked whether the giant opened the portal.,question,test
+The giant opened the portal.,The giant allegedly opened the portal.,modality,test
+The giant opened the portal.,The giant will open the portal tomorrow.,tense_shift,test
+The giant opened the portal.,The portal was left with signs of the giant's opening.,passive,test
+The sorcerer predicted the storm.,The sorcerer declined to predict the storm.,negation,test
+The sorcerer predicted the storm.,Someone asked whether the sorcerer predicted the storm.,question,test
+The sorcerer predicted the storm.,The sorcerer allegedly predicted the storm.,modality,test
+The sorcerer predicted the storm.,The sorcerer plans to predict the storm next week.,tense_shift,test
+The sorcerer predicted the storm.,The storm ended up marked by the sorcerer's prediction.,passive,test
+The alien predicted the storm.,The alien declined to predict the storm.,negation,test
+The alien predicted the storm.,It is unclear whether the alien predicted the storm.,question,test
+The alien predicted the storm.,The alien was rumored to have predicted the storm.,modality,test
+The alien predicted the storm.,The alien is going to predict the storm soon.,tense_shift,test
+The alien predicted the storm.,The storm ended up marked by the alien's prediction.,passive,test
+The giant guarded the treasure.,The giant avoided guarding the treasure.,negation,test
+The giant guarded the treasure.,Nobody knew whether the giant had guarded the treasure.,question,test
+The giant guarded the treasure.,"According to witnesses, the giant guarded the treasure.",modality,test
+The giant guarded the treasure.,The giant plans to guard the treasure next week.,tense_shift,test
+The giant guarded the treasure.,The treasure came under the giant's guardianship.,passive,test
+The robot opened the portal.,The robot avoided opening the portal.,negation,test
+The robot opened the portal.,It is unclear whether the robot opened the portal.,question,test
+The robot opened the portal.,The robot allegedly opened the portal.,modality,test
+The robot opened the portal.,The robot may open the portal later.,tense_shift,test
+The robot opened the portal.,The portal came under the robot's opening.,passive,test
+The griffin opened the portal.,The griffin never managed to open the portal.,negation,test
+The griffin opened the portal.,It is unclear whether the griffin opened the portal.,question,test
+The griffin opened the portal.,The griffin allegedly opened the portal.,modality,test
+The griffin opened the portal.,The griffin may open the portal later.,tense_shift,test
+The griffin opened the portal.,The portal ended up marked by the griffin's opening.,passive,test
+The spirit created the artifact.,The spirit never managed to create the artifact.,negation,test
+The spirit created the artifact.,I wonder whether the spirit created the artifact.,question,test
+The spirit created the artifact.,"According to witnesses, the spirit created the artifact.",modality,test
+The spirit created the artifact.,The spirit plans to create the artifact next week.,tense_shift,test
+The spirit created the artifact.,The artifact ended up marked by the spirit's creation.,passive,test
+The dragon signed the treaty.,The dragon never managed to sign the treaty.,negation,test
+The dragon signed the treaty.,Someone asked whether the dragon signed the treaty.,question,test
+The dragon signed the treaty.,"According to witnesses, the dragon signed the treaty.",modality,test
+The dragon signed the treaty.,The dragon may sign the treaty later.,tense_shift,test
+The dragon signed the treaty.,The treaty came under the dragon's signature.,passive,test
+The phoenix opened the portal.,The phoenix never managed to open the portal.,negation,test
+The phoenix opened the portal.,Someone asked whether the phoenix opened the portal.,question,test
+The phoenix opened the portal.,The phoenix was rumored to have opened the portal.,modality,test
+The phoenix opened the portal.,The phoenix will open the portal tomorrow.,tense_shift,test
+The phoenix opened the portal.,The portal became the phoenix's opening.,passive,test
+The oracle found the island.,The oracle failed to find the island.,negation,test
+The oracle found the island.,I wonder whether the oracle found the island.,question,test
+The oracle found the island.,The oracle was rumored to have found the island.,modality,test
+The oracle found the island.,The oracle is going to find the island soon.,tense_shift,test
+The oracle found the island.,The island came under the oracle's discovery.,passive,test
+The ranger guarded the treasure.,The ranger never managed to guard the treasure.,negation,test
+The ranger guarded the treasure.,I wonder whether the ranger guarded the treasure.,question,test
+The ranger guarded the treasure.,The ranger supposedly guarded the treasure.,modality,test
+The ranger guarded the treasure.,The ranger is going to guard the treasure soon.,tense_shift,test
+The ranger guarded the treasure.,The treasure became the ranger's guardianship.,passive,test
+The sorcerer revealed the secret.,The sorcerer avoided revealing the secret.,negation,test
+The sorcerer revealed the secret.,Nobody knew whether the sorcerer had revealed the secret.,question,test
+The sorcerer revealed the secret.,The sorcerer supposedly revealed the secret.,modality,test
+The sorcerer revealed the secret.,The sorcerer may reveal the secret later.,tense_shift,test
+The sorcerer revealed the secret.,The secret was left with signs of the sorcerer's revelation.,passive,test
+The ranger revealed the secret.,The ranger never managed to reveal the secret.,negation,test
+The ranger revealed the secret.,Nobody knew whether the ranger had revealed the secret.,question,test
+The ranger revealed the secret.,The ranger supposedly revealed the secret.,modality,test
+The ranger revealed the secret.,The ranger is going to reveal the secret soon.,tense_shift,test
+The ranger revealed the secret.,The secret was left with signs of the ranger's revelation.,passive,test
+The druid built the tower.,The druid failed to build the tower.,negation,test
+The druid built the tower.,It is unclear whether the druid built the tower.,question,test
+The druid built the tower.,"According to witnesses, the druid built the tower.",modality,test
+The druid built the tower.,The druid plans to build the tower next week.,tense_shift,test
+The druid built the tower.,The tower was left with signs of the druid's construction.,passive,test
+The phoenix protected the village.,The phoenix never managed to protect the village.,negation,test
+The phoenix protected the village.,I wonder whether the phoenix protected the village.,question,test
+The phoenix protected the village.,The phoenix was rumored to have protected the village.,modality,test
+The phoenix protected the village.,The phoenix may protect the village later.,tense_shift,test
+The phoenix protected the village.,The village came under the phoenix's protection.,passive,test
+The vampire created the artifact.,The vampire never managed to create the artifact.,negation,test
+The vampire created the artifact.,It is unclear whether the vampire created the artifact.,question,test
+The vampire created the artifact.,The vampire was rumored to have created the artifact.,modality,test
+The vampire created the artifact.,The vampire plans to create the artifact next week.,tense_shift,test
+The vampire created the artifact.,The artifact came under the vampire's creation.,passive,test
+The queen repaired the satellite.,The queen declined to repair the satellite.,negation,test
+The queen repaired the satellite.,I wonder whether the queen repaired the satellite.,question,test
+The queen repaired the satellite.,The queen was rumored to have repaired the satellite.,modality,test
+The queen repaired the satellite.,The queen plans to repair the satellite next week.,tense_shift,test
+The queen repaired the satellite.,The satellite ended up marked by the queen's repair.,passive,test
+The pirate opened the portal.,The pirate failed to open the portal.,negation,test
+The pirate opened the portal.,Someone asked whether the pirate opened the portal.,question,test
+The pirate opened the portal.,The pirate was rumored to have opened the portal.,modality,test
+The pirate opened the portal.,The pirate may open the portal later.,tense_shift,test
+The pirate opened the portal.,The portal was left with signs of the pirate's opening.,passive,test
+The vampire opened the portal.,The vampire avoided opening the portal.,negation,test
+The vampire opened the portal.,Nobody knew whether the vampire had opened the portal.,question,test
+The vampire opened the portal.,The vampire supposedly opened the portal.,modality,test
+The vampire opened the portal.,The vampire plans to open the portal next week.,tense_shift,test
+The vampire opened the portal.,The portal came under the vampire's opening.,passive,test
+The mermaid opened the portal.,The mermaid avoided opening the portal.,negation,test
+The mermaid opened the portal.,Someone asked whether the mermaid opened the portal.,question,test
+The mermaid opened the portal.,The mermaid allegedly opened the portal.,modality,test
+The mermaid opened the portal.,The mermaid is going to open the portal soon.,tense_shift,test
+The mermaid opened the portal.,The portal ended up marked by the mermaid's opening.,passive,test
+The titan signed the treaty.,The titan declined to sign the treaty.,negation,test
+The titan signed the treaty.,Nobody knew whether the titan had signed the treaty.,question,test
+The titan signed the treaty.,"According to witnesses, the titan signed the treaty.",modality,test
+The titan signed the treaty.,The titan will sign the treaty tomorrow.,tense_shift,test
+The titan signed the treaty.,The treaty came under the titan's signature.,passive,test
+The goblin repaired the satellite.,The goblin failed to repair the satellite.,negation,test
+The goblin repaired the satellite.,Someone asked whether the goblin repaired the satellite.,question,test
+The goblin repaired the satellite.,The goblin allegedly repaired the satellite.,modality,test
+The goblin repaired the satellite.,The goblin plans to repair the satellite next week.,tense_shift,test
+The goblin repaired the satellite.,The satellite came under the goblin's repair.,passive,test
+The knight created the artifact.,The knight failed to create the artifact.,negation,test
+The knight created the artifact.,Nobody knew whether the knight had created the artifact.,question,test
+The knight created the artifact.,The knight allegedly created the artifact.,modality,test
+The knight created the artifact.,The knight may create the artifact later.,tense_shift,test
+The knight created the artifact.,The artifact was left with signs of the knight's creation.,passive,test
+The dragon opened the portal.,The dragon failed to open the portal.,negation,test
+The dragon opened the portal.,It is unclear whether the dragon opened the portal.,question,test
+The dragon opened the portal.,The dragon allegedly opened the portal.,modality,test
+The dragon opened the portal.,The dragon is going to open the portal soon.,tense_shift,test
+The dragon opened the portal.,The portal became the dragon's opening.,passive,test
+The vampire guarded the treasure.,The vampire declined to guard the treasure.,negation,test
+The vampire guarded the treasure.,I wonder whether the vampire guarded the treasure.,question,test
+The vampire guarded the treasure.,"According to witnesses, the vampire guarded the treasure.",modality,test
+The vampire guarded the treasure.,The vampire will guard the treasure tomorrow.,tense_shift,test
+The vampire guarded the treasure.,The treasure was left with signs of the vampire's guardianship.,passive,test
+The pirate revealed the secret.,The pirate never managed to reveal the secret.,negation,test
+The pirate revealed the secret.,It is unclear whether the pirate revealed the secret.,question,test
+The pirate revealed the secret.,The pirate allegedly revealed the secret.,modality,test
+The pirate revealed the secret.,The pirate may reveal the secret later.,tense_shift,test
+The pirate revealed the secret.,The secret came under the pirate's revelation.,passive,test
+The sorcerer guarded the treasure.,The sorcerer avoided guarding the treasure.,negation,test
+The sorcerer guarded the treasure.,I wonder whether the sorcerer guarded the treasure.,question,test
+The sorcerer guarded the treasure.,"According to witnesses, the sorcerer guarded the treasure.",modality,test
+The sorcerer guarded the treasure.,The sorcerer will guard the treasure tomorrow.,tense_shift,test
+The sorcerer guarded the treasure.,The treasure became the sorcerer's guardianship.,passive,test
+The giant signed the treaty.,The giant never managed to sign the treaty.,negation,test
+The giant signed the treaty.,I wonder whether the giant signed the treaty.,question,test
+The giant signed the treaty.,The giant allegedly signed the treaty.,modality,test
+The giant signed the treaty.,The giant is going to sign the treaty soon.,tense_shift,test
+The giant signed the treaty.,The treaty became the giant's signature.,passive,test
+The giant protected the village.,The giant avoided protecting the village.,negation,test
+The giant protected the village.,I wonder whether the giant protected the village.,question,test
+The giant protected the village.,The giant was rumored to have protected the village.,modality,test
+The giant protected the village.,The giant plans to protect the village next week.,tense_shift,test
+The giant protected the village.,The village ended up marked by the giant's protection.,passive,test
+The goblin created the artifact.,The goblin failed to create the artifact.,negation,test
+The goblin created the artifact.,Someone asked whether the goblin created the artifact.,question,test
+The goblin created the artifact.,The goblin allegedly created the artifact.,modality,test
+The goblin created the artifact.,The goblin may create the artifact later.,tense_shift,test
+The goblin created the artifact.,The artifact ended up marked by the goblin's creation.,passive,test
+The robot created the artifact.,The robot failed to create the artifact.,negation,test
+The robot created the artifact.,It is unclear whether the robot created the artifact.,question,test
+The robot created the artifact.,The robot was rumored to have created the artifact.,modality,test
+The robot created the artifact.,The robot will create the artifact tomorrow.,tense_shift,test
+The robot created the artifact.,The artifact was left with signs of the robot's creation.,passive,test
+The sphinx signed the treaty.,The sphinx declined to sign the treaty.,negation,test
+The sphinx signed the treaty.,I wonder whether the sphinx signed the treaty.,question,test
+The sphinx signed the treaty.,The sphinx allegedly signed the treaty.,modality,test
+The sphinx signed the treaty.,The sphinx is going to sign the treaty soon.,tense_shift,test
+The sphinx signed the treaty.,The treaty ended up marked by the sphinx's signature.,passive,test
+The griffin built the tower.,The griffin never managed to build the tower.,negation,test
+The griffin built the tower.,Someone asked whether the griffin built the tower.,question,test
+The griffin built the tower.,"According to witnesses, the griffin built the tower.",modality,test
+The griffin built the tower.,The griffin is going to build the tower soon.,tense_shift,test
+The griffin built the tower.,The tower became the griffin's construction.,passive,test
+The sphinx predicted the storm.,The sphinx never managed to predict the storm.,negation,test
+The sphinx predicted the storm.,Someone asked whether the sphinx predicted the storm.,question,test
+The sphinx predicted the storm.,"According to witnesses, the sphinx predicted the storm.",modality,test
+The sphinx predicted the storm.,The sphinx is going to predict the storm soon.,tense_shift,test
+The sphinx predicted the storm.,The storm ended up marked by the sphinx's prediction.,passive,test
+The mermaid signed the treaty.,The mermaid avoided signing the treaty.,negation,test
+The mermaid signed the treaty.,Nobody knew whether the mermaid had signed the treaty.,question,test
+The mermaid signed the treaty.,"According to witnesses, the mermaid signed the treaty.",modality,test
+The mermaid signed the treaty.,The mermaid is going to sign the treaty soon.,tense_shift,test
+The mermaid signed the treaty.,The treaty was left with signs of the mermaid's signature.,passive,test
+The ranger opened the portal.,The ranger failed to open the portal.,negation,test
+The ranger opened the portal.,I wonder whether the ranger opened the portal.,question,test
+The ranger opened the portal.,The ranger was rumored to have opened the portal.,modality,test
+The ranger opened the portal.,The ranger plans to open the portal next week.,tense_shift,test
+The ranger opened the portal.,The portal came under the ranger's opening.,passive,test
+The goblin built the tower.,The goblin failed to build the tower.,negation,test
+The goblin built the tower.,It is unclear whether the goblin built the tower.,question,test
+The goblin built the tower.,The goblin supposedly built the tower.,modality,test
+The goblin built the tower.,The goblin may build the tower later.,tense_shift,test
+The goblin built the tower.,The tower ended up marked by the goblin's construction.,passive,test
+The oracle opened the portal.,The oracle declined to open the portal.,negation,test
+The oracle opened the portal.,Someone asked whether the oracle opened the portal.,question,test
+The oracle opened the portal.,The oracle supposedly opened the portal.,modality,test
+The oracle opened the portal.,The oracle plans to open the portal next week.,tense_shift,test
+The oracle opened the portal.,The portal ended up marked by the oracle's opening.,passive,test
+The ranger built the tower.,The ranger never managed to build the tower.,negation,test
+The ranger built the tower.,It is unclear whether the ranger built the tower.,question,test
+The ranger built the tower.,The ranger was rumored to have built the tower.,modality,test
+The ranger built the tower.,The ranger plans to build the tower next week.,tense_shift,test
+The ranger built the tower.,The tower came under the ranger's construction.,passive,test
+The vampire revealed the secret.,The vampire failed to reveal the secret.,negation,test
+The vampire revealed the secret.,It is unclear whether the vampire revealed the secret.,question,test
+The vampire revealed the secret.,"According to witnesses, the vampire revealed the secret.",modality,test
+The vampire revealed the secret.,The vampire plans to reveal the secret next week.,tense_shift,test
+The vampire revealed the secret.,The secret ended up marked by the vampire's revelation.,passive,test
+The griffin signed the treaty.,The griffin avoided signing the treaty.,negation,test
+The griffin signed the treaty.,I wonder whether the griffin signed the treaty.,question,test
+The griffin signed the treaty.,"According to witnesses, the griffin signed the treaty.",modality,test
+The griffin signed the treaty.,The griffin may sign the treaty later.,tense_shift,test
+The griffin signed the treaty.,The treaty was left with signs of the griffin's signature.,passive,test
+The queen revealed the secret.,The queen failed to reveal the secret.,negation,test
+The queen revealed the secret.,It is unclear whether the queen revealed the secret.,question,test
+The queen revealed the secret.,The queen was rumored to have revealed the secret.,modality,test
+The queen revealed the secret.,The queen plans to reveal the secret next week.,tense_shift,test
+The queen revealed the secret.,The secret was left with signs of the queen's revelation.,passive,test
+The wizard predicted the storm.,The wizard failed to predict the storm.,negation,test
+The wizard predicted the storm.,Nobody knew whether the wizard had predicted the storm.,question,test
+The wizard predicted the storm.,The wizard supposedly predicted the storm.,modality,test
+The wizard predicted the storm.,The wizard may predict the storm later.,tense_shift,test
+The wizard predicted the storm.,The storm was left with signs of the wizard's prediction.,passive,test
+The titan opened the portal.,The titan never managed to open the portal.,negation,test
+The titan opened the portal.,Nobody knew whether the titan had opened the portal.,question,test
+The titan opened the portal.,The titan was rumored to have opened the portal.,modality,test
+The titan opened the portal.,The titan is going to open the portal soon.,tense_shift,test
+The titan opened the portal.,The portal was left with signs of the titan's opening.,passive,test
+The sphinx protected the village.,The sphinx declined to protect the village.,negation,test
+The sphinx protected the village.,I wonder whether the sphinx protected the village.,question,test
+The sphinx protected the village.,The sphinx allegedly protected the village.,modality,test
+The sphinx protected the village.,The sphinx plans to protect the village next week.,tense_shift,test
+The sphinx protected the village.,The village was left with signs of the sphinx's protection.,passive,test
+The knight found the island.,The knight avoided finding the island.,negation,test
+The knight found the island.,I wonder whether the knight found the island.,question,test
+The knight found the island.,The knight supposedly found the island.,modality,test
+The knight found the island.,The knight will find the island tomorrow.,tense_shift,test
+The knight found the island.,The island became the knight's discovery.,passive,test
+The goblin guarded the treasure.,The goblin avoided guarding the treasure.,negation,test
+The goblin guarded the treasure.,Someone asked whether the goblin guarded the treasure.,question,test
+The goblin guarded the treasure.,The goblin was rumored to have guarded the treasure.,modality,test
+The goblin guarded the treasure.,The goblin is going to guard the treasure soon.,tense_shift,test
+The goblin guarded the treasure.,The treasure came under the goblin's guardianship.,passive,test
+The robot revealed the secret.,The robot failed to reveal the secret.,negation,test
+The robot revealed the secret.,I wonder whether the robot revealed the secret.,question,test
+The robot revealed the secret.,The robot supposedly revealed the secret.,modality,test
+The robot revealed the secret.,The robot plans to reveal the secret next week.,tense_shift,test
+The robot revealed the secret.,The secret was left with signs of the robot's revelation.,passive,test
+The pirate created the artifact.,The pirate avoided createing the artifact.,negation,test
+The pirate created the artifact.,It is unclear whether the pirate created the artifact.,question,test
+The pirate created the artifact.,The pirate was rumored to have created the artifact.,modality,test
+The pirate created the artifact.,The pirate will create the artifact tomorrow.,tense_shift,test
+The pirate created the artifact.,The artifact was left with signs of the pirate's creation.,passive,test
+The robot found the island.,The robot avoided finding the island.,negation,test
+The robot found the island.,Nobody knew whether the robot had found the island.,question,test
+The robot found the island.,"According to witnesses, the robot found the island.",modality,test
+The robot found the island.,The robot plans to find the island next week.,tense_shift,test
+The robot found the island.,The island was left with signs of the robot's discovery.,passive,test
+The oracle signed the treaty.,The oracle declined to sign the treaty.,negation,test
+The oracle signed the treaty.,Someone asked whether the oracle signed the treaty.,question,test
+The oracle signed the treaty.,The oracle supposedly signed the treaty.,modality,test
+The oracle signed the treaty.,The oracle plans to sign the treaty next week.,tense_shift,test
+The oracle signed the treaty.,The treaty came under the oracle's signature.,passive,test
+The phoenix built the tower.,The phoenix failed to build the tower.,negation,test
+The phoenix built the tower.,Someone asked whether the phoenix built the tower.,question,test
+The phoenix built the tower.,The phoenix was rumored to have built the tower.,modality,test
+The phoenix built the tower.,The phoenix may build the tower later.,tense_shift,test
+The phoenix built the tower.,The tower came under the phoenix's construction.,passive,test
+The phoenix guarded the treasure.,The phoenix declined to guard the treasure.,negation,test
+The phoenix guarded the treasure.,I wonder whether the phoenix guarded the treasure.,question,test
+The phoenix guarded the treasure.,The phoenix supposedly guarded the treasure.,modality,test
+The phoenix guarded the treasure.,The phoenix will guard the treasure tomorrow.,tense_shift,test
+The phoenix guarded the treasure.,The treasure came under the phoenix's guardianship.,passive,test
+The griffin predicted the storm.,The griffin never managed to predict the storm.,negation,test
+The griffin predicted the storm.,Nobody knew whether the griffin had predicted the storm.,question,test
+The griffin predicted the storm.,"According to witnesses, the griffin predicted the storm.",modality,test
+The griffin predicted the storm.,The griffin is going to predict the storm soon.,tense_shift,test
+The griffin predicted the storm.,The storm was left with signs of the griffin's prediction.,passive,test
+The goblin signed the treaty.,The goblin declined to sign the treaty.,negation,test
+The goblin signed the treaty.,Nobody knew whether the goblin had signed the treaty.,question,test
+The goblin signed the treaty.,The goblin supposedly signed the treaty.,modality,test
+The goblin signed the treaty.,The goblin plans to sign the treaty next week.,tense_shift,test
+The goblin signed the treaty.,The treaty ended up marked by the goblin's signature.,passive,test
+The titan guarded the treasure.,The titan avoided guarding the treasure.,negation,test
+The titan guarded the treasure.,It is unclear whether the titan guarded the treasure.,question,test
+The titan guarded the treasure.,The titan supposedly guarded the treasure.,modality,test
+The titan guarded the treasure.,The titan is going to guard the treasure soon.,tense_shift,test
+The titan guarded the treasure.,The treasure became the titan's guardianship.,passive,test
+The titan predicted the storm.,The titan failed to predict the storm.,negation,test
+The titan predicted the storm.,I wonder whether the titan predicted the storm.,question,test
+The titan predicted the storm.,The titan was rumored to have predicted the storm.,modality,test
+The titan predicted the storm.,The titan plans to predict the storm next week.,tense_shift,test
+The titan predicted the storm.,The storm became the titan's prediction.,passive,test
+The phoenix repaired the satellite.,The phoenix failed to repair the satellite.,negation,test
+The phoenix repaired the satellite.,Someone asked whether the phoenix repaired the satellite.,question,test
+The phoenix repaired the satellite.,The phoenix was rumored to have repaired the satellite.,modality,test
+The phoenix repaired the satellite.,The phoenix will repair the satellite tomorrow.,tense_shift,test
+The phoenix repaired the satellite.,The satellite became the phoenix's repair.,passive,test
+The sorcerer created the artifact.,The sorcerer avoided createing the artifact.,negation,test
+The sorcerer created the artifact.,Nobody knew whether the sorcerer had created the artifact.,question,test
+The sorcerer created the artifact.,"According to witnesses, the sorcerer created the artifact.",modality,test
+The sorcerer created the artifact.,The sorcerer is going to create the artifact soon.,tense_shift,test
+The sorcerer created the artifact.,The artifact was left with signs of the sorcerer's creation.,passive,test
+The alien signed the treaty.,The alien never managed to sign the treaty.,negation,test
+The alien signed the treaty.,I wonder whether the alien signed the treaty.,question,test
+The alien signed the treaty.,The alien supposedly signed the treaty.,modality,test
+The alien signed the treaty.,The alien will sign the treaty tomorrow.,tense_shift,test
+The alien signed the treaty.,The treaty came under the alien's signature.,passive,test
+The wizard opened the portal.,The wizard never managed to open the portal.,negation,test
+The wizard opened the portal.,Nobody knew whether the wizard had opened the portal.,question,test
+The wizard opened the portal.,The wizard was rumored to have opened the portal.,modality,test
+The wizard opened the portal.,The wizard may open the portal later.,tense_shift,test
+The wizard opened the portal.,The portal was left with signs of the wizard's opening.,passive,test
+The spirit guarded the treasure.,The spirit declined to guard the treasure.,negation,test
+The spirit guarded the treasure.,I wonder whether the spirit guarded the treasure.,question,test
+The spirit guarded the treasure.,The spirit supposedly guarded the treasure.,modality,test
+The spirit guarded the treasure.,The spirit will guard the treasure tomorrow.,tense_shift,test
+The spirit guarded the treasure.,The treasure became the spirit's guardianship.,passive,test
+The giant predicted the storm.,The giant declined to predict the storm.,negation,test
+The giant predicted the storm.,I wonder whether the giant predicted the storm.,question,test
+The giant predicted the storm.,The giant was rumored to have predicted the storm.,modality,test
+The giant predicted the storm.,The giant plans to predict the storm next week.,tense_shift,test
+The giant predicted the storm.,The storm came under the giant's prediction.,passive,test
+The vampire protected the village.,The vampire avoided protecting the village.,negation,test
+The vampire protected the village.,Nobody knew whether the vampire had protected the village.,question,test
+The vampire protected the village.,The vampire was rumored to have protected the village.,modality,test
+The vampire protected the village.,The vampire may protect the village later.,tense_shift,test
+The vampire protected the village.,The village became the vampire's protection.,passive,test
+The dragon found the island.,The dragon never managed to find the island.,negation,test
+The dragon found the island.,Nobody knew whether the dragon had found the island.,question,test
+The dragon found the island.,The dragon was rumored to have found the island.,modality,test
+The dragon found the island.,The dragon is going to find the island soon.,tense_shift,test
+The dragon found the island.,The island became the dragon's discovery.,passive,test
+The dragon revealed the secret.,The dragon failed to reveal the secret.,negation,test
+The dragon revealed the secret.,I wonder whether the dragon revealed the secret.,question,test
+The dragon revealed the secret.,"According to witnesses, the dragon revealed the secret.",modality,test
+The dragon revealed the secret.,The dragon is going to reveal the secret soon.,tense_shift,test
+The dragon revealed the secret.,The secret ended up marked by the dragon's revelation.,passive,test
+The mermaid created the artifact.,The mermaid declined to create the artifact.,negation,test
+The mermaid created the artifact.,It is unclear whether the mermaid created the artifact.,question,test
+The mermaid created the artifact.,"According to witnesses, the mermaid created the artifact.",modality,test
+The mermaid created the artifact.,The mermaid may create the artifact later.,tense_shift,test
+The mermaid created the artifact.,The artifact was left with signs of the mermaid's creation.,passive,test
+The robot protected the village.,The robot never managed to protect the village.,negation,test
+The robot protected the village.,It is unclear whether the robot protected the village.,question,test
+The robot protected the village.,The robot was rumored to have protected the village.,modality,test
+The robot protected the village.,The robot is going to protect the village soon.,tense_shift,test
+The robot protected the village.,The village became the robot's protection.,passive,test
+The griffin repaired the satellite.,The griffin avoided repairing the satellite.,negation,test
+The griffin repaired the satellite.,Someone asked whether the griffin repaired the satellite.,question,test
+The griffin repaired the satellite.,The griffin supposedly repaired the satellite.,modality,test
+The griffin repaired the satellite.,The griffin may repair the satellite later.,tense_shift,test
+The griffin repaired the satellite.,The satellite ended up marked by the griffin's repair.,passive,test
+The ranger repaired the satellite.,The ranger failed to repair the satellite.,negation,test
+The ranger repaired the satellite.,Someone asked whether the ranger repaired the satellite.,question,test
+The ranger repaired the satellite.,The ranger was rumored to have repaired the satellite.,modality,test
+The ranger repaired the satellite.,The ranger plans to repair the satellite next week.,tense_shift,test
+The ranger repaired the satellite.,The satellite became the ranger's repair.,passive,test
+The phoenix predicted the storm.,The phoenix never managed to predict the storm.,negation,test
+The phoenix predicted the storm.,Someone asked whether the phoenix predicted the storm.,question,test
+The phoenix predicted the storm.,"According to witnesses, the phoenix predicted the storm.",modality,test
+The phoenix predicted the storm.,The phoenix may predict the storm later.,tense_shift,test
+The phoenix predicted the storm.,The storm was left with signs of the phoenix's prediction.,passive,test
+The druid found the island.,The druid never managed to find the island.,negation,test
+The druid found the island.,Nobody knew whether the druid had found the island.,question,test
+The druid found the island.,The druid supposedly found the island.,modality,test
+The druid found the island.,The druid plans to find the island next week.,tense_shift,test
+The druid found the island.,The island ended up marked by the druid's discovery.,passive,test
+The phoenix found the island.,The phoenix declined to find the island.,negation,test
+The phoenix found the island.,Someone asked whether the phoenix found the island.,question,test
+The phoenix found the island.,"According to witnesses, the phoenix found the island.",modality,test
+The phoenix found the island.,The phoenix is going to find the island soon.,tense_shift,test
+The phoenix found the island.,The island came under the phoenix's discovery.,passive,test
+The sorcerer signed the treaty.,The sorcerer failed to sign the treaty.,negation,test
+The sorcerer signed the treaty.,Someone asked whether the sorcerer signed the treaty.,question,test
+The sorcerer signed the treaty.,The sorcerer supposedly signed the treaty.,modality,test
+The sorcerer signed the treaty.,The sorcerer plans to sign the treaty next week.,tense_shift,test
+The sorcerer signed the treaty.,The treaty came under the sorcerer's signature.,passive,test
+The sorcerer repaired the satellite.,The sorcerer failed to repair the satellite.,negation,test
+The sorcerer repaired the satellite.,Someone asked whether the sorcerer repaired the satellite.,question,test
+The sorcerer repaired the satellite.,The sorcerer supposedly repaired the satellite.,modality,test
+The sorcerer repaired the satellite.,The sorcerer is going to repair the satellite soon.,tense_shift,test
+The sorcerer repaired the satellite.,The satellite ended up marked by the sorcerer's repair.,passive,test
+The ranger signed the treaty.,The ranger declined to sign the treaty.,negation,test
+The ranger signed the treaty.,Someone asked whether the ranger signed the treaty.,question,test
+The ranger signed the treaty.,The ranger supposedly signed the treaty.,modality,test
+The ranger signed the treaty.,The ranger is going to sign the treaty soon.,tense_shift,test
+The ranger signed the treaty.,The treaty became the ranger's signature.,passive,test
+The titan found the island.,The titan declined to find the island.,negation,test
+The titan found the island.,Nobody knew whether the titan had found the island.,question,test
+The titan found the island.,The titan allegedly found the island.,modality,test
+The titan found the island.,The titan may find the island later.,tense_shift,test
+The titan found the island.,The island became the titan's discovery.,passive,test
+The sphinx created the artifact.,The sphinx declined to create the artifact.,negation,test
+The sphinx created the artifact.,Nobody knew whether the sphinx had created the artifact.,question,test
+The sphinx created the artifact.,The sphinx allegedly created the artifact.,modality,test
+The sphinx created the artifact.,The sphinx will create the artifact tomorrow.,tense_shift,test
+The sphinx created the artifact.,The artifact ended up marked by the sphinx's creation.,passive,test
+The wizard created the artifact.,The wizard declined to create the artifact.,negation,test
+The wizard created the artifact.,Nobody knew whether the wizard had created the artifact.,question,test
+The wizard created the artifact.,The wizard was rumored to have created the artifact.,modality,test
+The wizard created the artifact.,The wizard is going to create the artifact soon.,tense_shift,test
+The wizard created the artifact.,The artifact ended up marked by the wizard's creation.,passive,test
+The mermaid repaired the satellite.,The mermaid failed to repair the satellite.,negation,test
+The mermaid repaired the satellite.,I wonder whether the mermaid repaired the satellite.,question,test
+The mermaid repaired the satellite.,The mermaid allegedly repaired the satellite.,modality,test
+The mermaid repaired the satellite.,The mermaid may repair the satellite later.,tense_shift,test
+The mermaid repaired the satellite.,The satellite ended up marked by the mermaid's repair.,passive,test
+The druid predicted the storm.,The druid failed to predict the storm.,negation,test
+The druid predicted the storm.,Nobody knew whether the druid had predicted the storm.,question,test
+The druid predicted the storm.,The druid was rumored to have predicted the storm.,modality,test
+The druid predicted the storm.,The druid is going to predict the storm soon.,tense_shift,test
+The druid predicted the storm.,The storm ended up marked by the druid's prediction.,passive,test
+The griffin guarded the treasure.,The griffin failed to guard the treasure.,negation,test
+The griffin guarded the treasure.,I wonder whether the griffin guarded the treasure.,question,test
+The griffin guarded the treasure.,The griffin supposedly guarded the treasure.,modality,test
+The griffin guarded the treasure.,The griffin is going to guard the treasure soon.,tense_shift,test
+The griffin guarded the treasure.,The treasure came under the griffin's guardianship.,passive,test
+The wizard protected the village.,The wizard declined to protect the village.,negation,test
+The wizard protected the village.,Nobody knew whether the wizard had protected the village.,question,test
+The wizard protected the village.,The wizard was rumored to have protected the village.,modality,test
+The wizard protected the village.,The wizard may protect the village later.,tense_shift,test
+The wizard protected the village.,The village became the wizard's protection.,passive,test
+The spirit signed the treaty.,The spirit declined to sign the treaty.,negation,test
+The spirit signed the treaty.,Nobody knew whether the spirit had signed the treaty.,question,test
+The spirit signed the treaty.,The spirit supposedly signed the treaty.,modality,test
+The spirit signed the treaty.,The spirit is going to sign the treaty soon.,tense_shift,test
+The spirit signed the treaty.,The treaty ended up marked by the spirit's signature.,passive,test
+The sorcerer protected the village.,The sorcerer declined to protect the village.,negation,test
+The sorcerer protected the village.,I wonder whether the sorcerer protected the village.,question,test
+The sorcerer protected the village.,"According to witnesses, the sorcerer protected the village.",modality,test
+The sorcerer protected the village.,The sorcerer is going to protect the village soon.,tense_shift,test
+The sorcerer protected the village.,The village was left with signs of the sorcerer's protection.,passive,test
+The sphinx built the tower.,The sphinx avoided building the tower.,negation,test
+The sphinx built the tower.,I wonder whether the sphinx built the tower.,question,test
+The sphinx built the tower.,The sphinx was rumored to have built the tower.,modality,test
+The sphinx built the tower.,The sphinx may build the tower later.,tense_shift,test
+The sphinx built the tower.,The tower came under the sphinx's construction.,passive,test
+The wizard found the island.,The wizard declined to find the island.,negation,test
+The wizard found the island.,Someone asked whether the wizard found the island.,question,test
+The wizard found the island.,The wizard supposedly found the island.,modality,test
+The wizard found the island.,The wizard will find the island tomorrow.,tense_shift,test
+The wizard found the island.,The island was left with signs of the wizard's discovery.,passive,test
+The knight opened the portal.,The knight declined to open the portal.,negation,test
+The knight opened the portal.,It is unclear whether the knight opened the portal.,question,test
+The knight opened the portal.,The knight supposedly opened the portal.,modality,test
+The knight opened the portal.,The knight will open the portal tomorrow.,tense_shift,test
+The knight opened the portal.,The portal ended up marked by the knight's opening.,passive,test
+The sphinx found the island.,The sphinx declined to find the island.,negation,test
+The sphinx found the island.,Nobody knew whether the sphinx had found the island.,question,test
+The sphinx found the island.,The sphinx was rumored to have found the island.,modality,test
+The sphinx found the island.,The sphinx may find the island later.,tense_shift,test
+The sphinx found the island.,The island ended up marked by the sphinx's discovery.,passive,test

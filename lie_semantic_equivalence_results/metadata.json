@@ -1,0 +1,9 @@
+{
+  "goal": "Test whether commutator-like scores distinguish semantically equivalent AB/BA compositions from non-equivalent AB/BA compositions.",
+  "metric": "noncommutativity_score = 1 - cosine(delta_AB, delta_BA)",
+  "models": [
+    "bert-base-uncased",
+    "distilroberta-base",
+    "roberta-base"
+  ]
+}

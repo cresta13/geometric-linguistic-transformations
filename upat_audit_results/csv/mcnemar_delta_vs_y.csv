@@ -1,0 +1,6 @@
+model,compare,delta_acc,y_only_acc,diff,b_delta_correct_y_wrong,c_delta_wrong_y_correct,p_value
+bert-base-uncased,delta_vs_y_only,0.725,0.825,-0.09999999999999998,2,6,0.2890625
+distilroberta-base,delta_vs_y_only,0.725,0.65,0.07499999999999996,4,1,0.375
+roberta-base,delta_vs_y_only,0.675,0.725,-0.04999999999999993,7,9,0.803619384765625
+gpt2,delta_vs_y_only,0.425,0.475,-0.04999999999999999,7,9,0.803619384765625
+distilgpt2,delta_vs_y_only,0.65,0.6,0.050000000000000044,5,3,0.7265625

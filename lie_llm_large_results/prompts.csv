@@ -1,0 +1,1401 @@
+prompt_id,prompt
+0,The musician played the rule.
+1,The student found the problem.
+2,The musician played a short story.
+3,The programmer discovered the meal.
+4,The doctor explained the aircraft.
+5,The journalist explained a complex machine.
+6,The nurse designed the event.
+7,The musician grew the problem.
+8,The engineer helped a complex machine.
+9,The writer controlled the aircraft.
+10,The journalist created a sad melody.
+11,The nurse examined the event.
+12,The writer controlled a short story.
+13,The scientist discovered the family.
+14,The pilot tested a complex machine.
+15,The analyst controlled the decision.
+16,The writer designed the rule.
+17,The scientist defended the garden.
+18,The nurse found a sad melody.
+19,The journalist solved the decision.
+20,The musician approved the data.
+21,The scientist grew the interface.
+22,The programmer defended the rule.
+23,The doctor defended a black cat.
+24,The researcher analyzed the aircraft.
+25,The chef helped the client.
+26,The musician approved the family.
+27,The lawyer studied a black cat.
+28,The designer helped a short story.
+29,The engineer tested a beautiful painting.
+30,The analyst wrote the aircraft.
+31,The student approved the event.
+32,The scientist designed a new principle.
+33,The chef controlled a new principle.
+34,The teacher tested the decision.
+35,The journalist solved the garden.
+36,The pilot approved the family.
+37,The musician improved a short story.
+38,The doctor created a sad melody.
+39,The manager discovered the problem.
+40,The scientist prepared a black cat.
+41,The writer improved the question.
+42,The programmer designed a sad melody.
+43,The lawyer wrote the meal.
+44,The researcher examined the client.
+45,The teacher improved a new principle.
+46,The lawyer approved the event.
+47,The nurse analyzed the rule.
+48,The programmer approved the data.
+49,The researcher discovered the meal.
+50,The engineer controlled the aircraft.
+51,The engineer helped the family.
+52,The teacher studied the aircraft.
+53,The designer analyzed a beautiful painting.
+54,The pilot designed a sad melody.
+55,The pilot analyzed the meal.
+56,The lawyer examined the garden.
+57,The lawyer approved the family.
+58,The pilot examined a short story.
+59,The analyst solved the event.
+60,The manager studied the system.
+61,The designer tested a complex machine.
+62,The student analyzed a new principle.
+63,The writer explained the data.
+64,The student discovered the garden.
+65,The journalist wrote the data.
+66,The journalist reported the family.
+67,The pilot examined a new principle.
+68,The doctor controlled the garden.
+69,The lawyer discovered the system.
+70,The engineer reported a beautiful painting.
+71,The writer reported the data.
+72,The researcher explained the question.
+73,The nurse played a new principle.
+74,The engineer discovered the event.
+75,The analyst controlled a beautiful painting.
+76,The chef grew the meal.
+77,The doctor studied the garden.
+78,The engineer explained the event.
+79,The teacher grew the patient.
+80,The artist played a new principle.
+81,The designer created a new principle.
+82,The doctor solved a new principle.
+83,The journalist discovered the event.
+84,The pilot tested a new principle.
+85,The child analyzed a short story.
+86,The lawyer helped the garden.
+87,The manager improved a sad melody.
+88,The farmer designed the system.
+89,The programmer found a beautiful painting.
+90,The farmer reported the decision.
+91,The programmer tested a complex machine.
+92,The lawyer approved the patient.
+93,The pilot reported the system.
+94,The farmer improved the system.
+95,The chef analyzed the family.
+96,The doctor examined a sad melody.
+97,The artist explained a new principle.
+98,The musician prepared the meal.
+99,The farmer designed the event.
+100,The child grew the garden.
+101,The researcher prepared the client.
+102,The designer grew the question.
+103,The journalist discovered the problem.
+104,The researcher reported a new principle.
+105,The student found the data.
+106,The scientist wrote the data.
+107,The researcher explained the event.
+108,The programmer explained the client.
+109,The scientist reported a complex machine.
+110,The researcher reported the garden.
+111,The student discovered the decision.
+112,The musician explained the data.
+113,The scientist reported the garden.
+114,The child tested the system.
+115,The musician analyzed the interface.
+116,The musician created a beautiful painting.
+117,The teacher controlled the garden.
+118,The pilot solved the problem.
+119,The journalist solved the rule.
+120,The scientist played a short story.
+121,The designer analyzed the problem.
+122,The manager studied the data.
+123,The writer wrote a complex machine.
+124,The scientist tested a black cat.
+125,The chef defended the question.
+126,The student helped the data.
+127,The teacher solved the meal.
+128,The writer solved the rule.
+129,The writer found the data.
+130,The chef studied a short story.
+131,The journalist analyzed the problem.
+132,The nurse studied the system.
+133,The designer reported the data.
+134,The programmer grew the system.
+135,The artist created a black cat.
+136,The designer helped a black cat.
+137,The writer solved a short story.
+138,The designer studied a black cat.
+139,The student reported the client.
+140,The researcher studied the garden.
+141,The chef grew the problem.
+142,The child created a black cat.
+143,The artist studied the patient.
+144,The journalist examined the meal.
+145,The journalist explained a beautiful painting.
+146,The nurse tested the family.
+147,The designer prepared a short story.
+148,The doctor solved the client.
+149,The nurse controlled the decision.
+150,The journalist found the family.
+151,The engineer created the rule.
+152,The nurse explained the family.
+153,The designer improved the problem.
+154,The artist designed the system.
+155,The student wrote a complex machine.
+156,The pilot solved the question.
+157,The student solved the client.
+158,The doctor approved the interface.
+159,The child improved the problem.
+160,The analyst analyzed the family.
+161,The doctor studied a beautiful painting.
+162,The designer discovered a short story.
+163,The analyst prepared a short story.
+164,The engineer controlled a new principle.
+165,The farmer approved a black cat.
+166,The musician discovered the system.
+167,The child helped the client.
+168,The chef defended the client.
+169,The pilot tested the aircraft.
+170,The teacher discovered the data.
+171,The teacher grew a new principle.
+172,The student designed the question.
+173,The doctor discovered the rule.
+174,The journalist tested the decision.
+175,The musician designed a complex machine.
+176,The engineer helped the meal.
+177,The child defended the garden.
+178,The designer analyzed the rule.
+179,The writer designed the problem.
+180,The teacher analyzed the family.
+181,The chef explained the aircraft.
+182,The analyst controlled the event.
+183,The journalist designed the interface.
+184,The doctor defended the question.
+185,The teacher prepared a sad melody.
+186,The farmer grew a sad melody.
+187,The student improved a new principle.
+188,The pilot wrote the patient.
+189,The journalist grew the aircraft.
+190,The programmer grew a short story.
+191,The researcher controlled the garden.
+192,The scientist designed the rule.
+193,The artist helped the interface.
+194,The engineer approved the question.
+195,The chef grew the event.
+196,The chef helped the aircraft.
+197,The student wrote the interface.
+198,The farmer discovered the system.
+199,The farmer tested the meal.
+200,The musician did not play the rule.
+201,Did the musician play the rule?
+202,The musician will play the rule.
+203,The musician may have played the rule.
+204,The rule was played by the musician.
+205,It is true that the musician played the rule.
+206,The student did not find the problem.
+207,Did the student find the problem?
+208,The student will find the problem.
+209,The student may have found the problem.
+210,The problem was found by the student.
+211,It is true that the student found the problem.
+212,The musician did not play a short story.
+213,Did the musician play a short story?
+214,The musician will play a short story.
+215,The musician may have played a short story.
+216,A short story was played by the musician.
+217,It is true that the musician played a short story.
+218,The programmer did not discover the meal.
+219,Did the programmer discover the meal?
+220,The programmer will discover the meal.
+221,The programmer may have discovered the meal.
+222,The meal was discovered by the programmer.
+223,It is true that the programmer discovered the meal.
+224,The doctor did not explain the aircraft.
+225,Did the doctor explain the aircraft?
+226,The doctor will explain the aircraft.
+227,The doctor may have explained the aircraft.
+228,The aircraft was explained by the doctor.
+229,It is true that the doctor explained the aircraft.
+230,The journalist did not explain a complex machine.
+231,Did the journalist explain a complex machine?
+232,The journalist will explain a complex machine.
+233,The journalist may have explained a complex machine.
+234,A complex machine was explained by the journalist.
+235,It is true that the journalist explained a complex machine.
+236,The nurse did not design the event.
+237,Did the nurse design the event?
+238,The nurse will design the event.
+239,The nurse may have designed the event.
+240,The event was designed by the nurse.
+241,It is true that the nurse designed the event.
+242,The musician did not grow the problem.
+243,Did the musician grow the problem?
+244,The musician will grow the problem.
+245,The musician may have grew the problem.
+246,The problem was grew by the musician.
+247,It is true that the musician grew the problem.
+248,The engineer did not help a complex machine.
+249,Did the engineer help a complex machine?
+250,The engineer will help a complex machine.
+251,The engineer may have helped a complex machine.
+252,A complex machine was helped by the engineer.
+253,It is true that the engineer helped a complex machine.
+254,The writer did not control the aircraft.
+255,Did the writer control the aircraft?
+256,The writer will control the aircraft.
+257,The writer may have controlled the aircraft.
+258,The aircraft was controlled by the writer.
+259,It is true that the writer controlled the aircraft.
+260,The journalist did not create a sad melody.
+261,Did the journalist create a sad melody?
+262,The journalist will create a sad melody.
+263,The journalist may have created a sad melody.
+264,A sad melody was created by the journalist.
+265,It is true that the journalist created a sad melody.
+266,The nurse did not examine the event.
+267,Did the nurse examine the event?
+268,The nurse will examine the event.
+269,The nurse may have examined the event.
+270,The event was examined by the nurse.
+271,It is true that the nurse examined the event.
+272,The writer did not control a short story.
+273,Did the writer control a short story?
+274,The writer will control a short story.
+275,The writer may have controlled a short story.
+276,A short story was controlled by the writer.
+277,It is true that the writer controlled a short story.
+278,The scientist did not discover the family.
+279,Did the scientist discover the family?
+280,The scientist will discover the family.
+281,The scientist may have discovered the family.
+282,The family was discovered by the scientist.
+283,It is true that the scientist discovered the family.
+284,The pilot did not test a complex machine.
+285,Did the pilot test a complex machine?
+286,The pilot will test a complex machine.
+287,The pilot may have tested a complex machine.
+288,A complex machine was tested by the pilot.
+289,It is true that the pilot tested a complex machine.
+290,The analyst did not control the decision.
+291,Did the analyst control the decision?
+292,The analyst will control the decision.
+293,The analyst may have controlled the decision.
+294,The decision was controlled by the analyst.
+295,It is true that the analyst controlled the decision.
+296,The writer did not design the rule.
+297,Did the writer design the rule?
+298,The writer will design the rule.
+299,The writer may have designed the rule.
+300,The rule was designed by the writer.
+301,It is true that the writer designed the rule.
+302,The scientist did not defend the garden.
+303,Did the scientist defend the garden?
+304,The scientist will defend the garden.
+305,The scientist may have defended the garden.
+306,The garden was defended by the scientist.
+307,It is true that the scientist defended the garden.
+308,The nurse did not find a sad melody.
+309,Did the nurse find a sad melody?
+310,The nurse will find a sad melody.
+311,The nurse may have found a sad melody.
+312,A sad melody was found by the nurse.
+313,It is true that the nurse found a sad melody.
+314,The journalist did not solve the decision.
+315,Did the journalist solve the decision?
+316,The journalist will solve the decision.
+317,The journalist may have solved the decision.
+318,The decision was solved by the journalist.
+319,It is true that the journalist solved the decision.
+320,The musician did not approve the data.
+321,Did the musician approve the data?
+322,The musician will approve the data.
+323,The musician may have approved the data.
+324,The data was approved by the musician.
+325,It is true that the musician approved the data.
+326,The scientist did not grow the interface.
+327,Did the scientist grow the interface?
+328,The scientist will grow the interface.
+329,The scientist may have grew the interface.
+330,The interface was grew by the scientist.
+331,It is true that the scientist grew the interface.
+332,The programmer did not defend the rule.
+333,Did the programmer defend the rule?
+334,The programmer will defend the rule.
+335,The programmer may have defended the rule.
+336,The rule was defended by the programmer.
+337,It is true that the programmer defended the rule.
+338,The doctor did not defend a black cat.
+339,Did the doctor defend a black cat?
+340,The doctor will defend a black cat.
+341,The doctor may have defended a black cat.
+342,A black cat was defended by the doctor.
+343,It is true that the doctor defended a black cat.
+344,The researcher did not analyze the aircraft.
+345,Did the researcher analyze the aircraft?
+346,The researcher will analyze the aircraft.
+347,The researcher may have analyzed the aircraft.
+348,The aircraft was analyzed by the researcher.
+349,It is true that the researcher analyzed the aircraft.
+350,The chef did not help the client.
+351,Did the chef help the client?
+352,The chef will help the client.
+353,The chef may have helped the client.
+354,The client was helped by the chef.
+355,It is true that the chef helped the client.
+356,The musician did not approve the family.
+357,Did the musician approve the family?
+358,The musician will approve the family.
+359,The musician may have approved the family.
+360,The family was approved by the musician.
+361,It is true that the musician approved the family.
+362,The lawyer did not study a black cat.
+363,Did the lawyer study a black cat?
+364,The lawyer will study a black cat.
+365,The lawyer may have studied a black cat.
+366,A black cat was studied by the lawyer.
+367,It is true that the lawyer studied a black cat.
+368,The designer did not help a short story.
+369,Did the designer help a short story?
+370,The designer will help a short story.
+371,The designer may have helped a short story.
+372,A short story was helped by the designer.
+373,It is true that the designer helped a short story.
+374,The engineer did not test a beautiful painting.
+375,Did the engineer test a beautiful painting?
+376,The engineer will test a beautiful painting.
+377,The engineer may have tested a beautiful painting.
+378,A beautiful painting was tested by the engineer.
+379,It is true that the engineer tested a beautiful painting.
+380,The analyst did not write the aircraft.
+381,Did the analyst write the aircraft?
+382,The analyst will write the aircraft.
+383,The analyst may have wrote the aircraft.
+384,The aircraft was wrote by the analyst.
+385,It is true that the analyst wrote the aircraft.
+386,The student did not approve the event.
+387,Did the student approve the event?
+388,The student will approve the event.
+389,The student may have approved the event.
+390,The event was approved by the student.
+391,It is true that the student approved the event.
+392,The scientist did not design a new principle.
+393,Did the scientist design a new principle?
+394,The scientist will design a new principle.
+395,The scientist may have designed a new principle.
+396,A new principle was designed by the scientist.
+397,It is true that the scientist designed a new principle.
+398,The chef did not control a new principle.
+399,Did the chef control a new principle?
+400,The chef will control a new principle.
+401,The chef may have controlled a new principle.
+402,A new principle was controlled by the chef.
+403,It is true that the chef controlled a new principle.
+404,The teacher did not test the decision.
+405,Did the teacher test the decision?
+406,The teacher will test the decision.
+407,The teacher may have tested the decision.
+408,The decision was tested by the teacher.
+409,It is true that the teacher tested the decision.
+410,The journalist did not solve the garden.
+411,Did the journalist solve the garden?
+412,The journalist will solve the garden.
+413,The journalist may have solved the garden.
+414,The garden was solved by the journalist.
+415,It is true that the journalist solved the garden.
+416,The pilot did not approve the family.
+417,Did the pilot approve the family?
+418,The pilot will approve the family.
+419,The pilot may have approved the family.
+420,The family was approved by the pilot.
+421,It is true that the pilot approved the family.
+422,The musician did not improve a short story.
+423,Did the musician improve a short story?
+424,The musician will improve a short story.
+425,The musician may have improved a short story.
+426,A short story was improved by the musician.
+427,It is true that the musician improved a short story.
+428,The doctor did not create a sad melody.
+429,Did the doctor create a sad melody?
+430,The doctor will create a sad melody.
+431,The doctor may have created a sad melody.
+432,A sad melody was created by the doctor.
+433,It is true that the doctor created a sad melody.
+434,The manager did not discover the problem.
+435,Did the manager discover the problem?
+436,The manager will discover the problem.
+437,The manager may have discovered the problem.
+438,The problem was discovered by the manager.
+439,It is true that the manager discovered the problem.
+440,The scientist did not prepare a black cat.
+441,Did the scientist prepare a black cat?
+442,The scientist will prepare a black cat.
+443,The scientist may have prepared a black cat.
+444,A black cat was prepared by the scientist.
+445,It is true that the scientist prepared a black cat.
+446,The writer did not improve the question.
+447,Did the writer improve the question?
+448,The writer will improve the question.
+449,The writer may have improved the question.
+450,The question was improved by the writer.
+451,It is true that the writer improved the question.
+452,The programmer did not design a sad melody.
+453,Did the programmer design a sad melody?
+454,The programmer will design a sad melody.
+455,The programmer may have designed a sad melody.
+456,A sad melody was designed by the programmer.
+457,It is true that the programmer designed a sad melody.
+458,The lawyer did not write the meal.
+459,Did the lawyer write the meal?
+460,The lawyer will write the meal.
+461,The lawyer may have wrote the meal.
+462,The meal was wrote by the lawyer.
+463,It is true that the lawyer wrote the meal.
+464,The researcher did not examine the client.
+465,Did the researcher examine the client?
+466,The researcher will examine the client.
+467,The researcher may have examined the client.
+468,The client was examined by the researcher.
+469,It is true that the researcher examined the client.
+470,The teacher did not improve a new principle.
+471,Did the teacher improve a new principle?
+472,The teacher will improve a new principle.
+473,The teacher may have improved a new principle.
+474,A new principle was improved by the teacher.
+475,It is true that the teacher improved a new principle.
+476,The lawyer did not approve the event.
+477,Did the lawyer approve the event?
+478,The lawyer will approve the event.
+479,The lawyer may have approved the event.
+480,The event was approved by the lawyer.
+481,It is true that the lawyer approved the event.
+482,The nurse did not analyze the rule.
+483,Did the nurse analyze the rule?
+484,The nurse will analyze the rule.
+485,The nurse may have analyzed the rule.
+486,The rule was analyzed by the nurse.
+487,It is true that the nurse analyzed the rule.
+488,The programmer did not approve the data.
+489,Did the programmer approve the data?
+490,The programmer will approve the data.
+491,The programmer may have approved the data.
+492,The data was approved by the programmer.
+493,It is true that the programmer approved the data.
+494,The researcher did not discover the meal.
+495,Did the researcher discover the meal?
+496,The researcher will discover the meal.
+497,The researcher may have discovered the meal.
+498,The meal was discovered by the researcher.
+499,It is true that the researcher discovered the meal.
+500,The engineer did not control the aircraft.
+501,Did the engineer control the aircraft?
+502,The engineer will control the aircraft.
+503,The engineer may have controlled the aircraft.
+504,The aircraft was controlled by the engineer.
+505,It is true that the engineer controlled the aircraft.
+506,The engineer did not help the family.
+507,Did the engineer help the family?
+508,The engineer will help the family.
+509,The engineer may have helped the family.
+510,The family was helped by the engineer.
+511,It is true that the engineer helped the family.
+512,The teacher did not study the aircraft.
+513,Did the teacher study the aircraft?
+514,The teacher will study the aircraft.
+515,The teacher may have studied the aircraft.
+516,The aircraft was studied by the teacher.
+517,It is true that the teacher studied the aircraft.
+518,The designer did not analyze a beautiful painting.
+519,Did the designer analyze a beautiful painting?
+520,The designer will analyze a beautiful painting.
+521,The designer may have analyzed a beautiful painting.
+522,A beautiful painting was analyzed by the designer.
+523,It is true that the designer analyzed a beautiful painting.
+524,The pilot did not design a sad melody.
+525,Did the pilot design a sad melody?
+526,The pilot will design a sad melody.
+527,The pilot may have designed a sad melody.
+528,A sad melody was designed by the pilot.
+529,It is true that the pilot designed a sad melody.
+530,The pilot did not analyze the meal.
+531,Did the pilot analyze the meal?
+532,The pilot will analyze the meal.
+533,The pilot may have analyzed the meal.
+534,The meal was analyzed by the pilot.
+535,It is true that the pilot analyzed the meal.
+536,The lawyer did not examine the garden.
+537,Did the lawyer examine the garden?
+538,The lawyer will examine the garden.
+539,The lawyer may have examined the garden.
+540,The garden was examined by the lawyer.
+541,It is true that the lawyer examined the garden.
+542,The lawyer did not approve the family.
+543,Did the lawyer approve the family?
+544,The lawyer will approve the family.
+545,The lawyer may have approved the family.
+546,The family was approved by the lawyer.
+547,It is true that the lawyer approved the family.
+548,The pilot did not examine a short story.
+549,Did the pilot examine a short story?
+550,The pilot will examine a short story.
+551,The pilot may have examined a short story.
+552,A short story was examined by the pilot.
+553,It is true that the pilot examined a short story.
+554,The analyst did not solve the event.
+555,Did the analyst solve the event?
+556,The analyst will solve the event.
+557,The analyst may have solved the event.
+558,The event was solved by the analyst.
+559,It is true that the analyst solved the event.
+560,The manager did not study the system.
+561,Did the manager study the system?
+562,The manager will study the system.
+563,The manager may have studied the system.
+564,The system was studied by the manager.
+565,It is true that the manager studied the system.
+566,The designer did not test a complex machine.
+567,Did the designer test a complex machine?
+568,The designer will test a complex machine.
+569,The designer may have tested a complex machine.
+570,A complex machine was tested by the designer.
+571,It is true that the designer tested a complex machine.
+572,The student did not analyze a new principle.
+573,Did the student analyze a new principle?
+574,The student will analyze a new principle.
+575,The student may have analyzed a new principle.
+576,A new principle was analyzed by the student.
+577,It is true that the student analyzed a new principle.
+578,The writer did not explain the data.
+579,Did the writer explain the data?
+580,The writer will explain the data.
+581,The writer may have explained the data.
+582,The data was explained by the writer.
+583,It is true that the writer explained the data.
+584,The student did not discover the garden.
+585,Did the student discover the garden?
+586,The student will discover the garden.
+587,The student may have discovered the garden.
+588,The garden was discovered by the student.
+589,It is true that the student discovered the garden.
+590,The journalist did not write the data.
+591,Did the journalist write the data?
+592,The journalist will write the data.
+593,The journalist may have wrote the data.
+594,The data was wrote by the journalist.
+595,It is true that the journalist wrote the data.
+596,The journalist did not report the family.
+597,Did the journalist report the family?
+598,The journalist will report the family.
+599,The journalist may have reported the family.
+600,The family was reported by the journalist.
+601,It is true that the journalist reported the family.
+602,The pilot did not examine a new principle.
+603,Did the pilot examine a new principle?
+604,The pilot will examine a new principle.
+605,The pilot may have examined a new principle.
+606,A new principle was examined by the pilot.
+607,It is true that the pilot examined a new principle.
+608,The doctor did not control the garden.
+609,Did the doctor control the garden?
+610,The doctor will control the garden.
+611,The doctor may have controlled the garden.
+612,The garden was controlled by the doctor.
+613,It is true that the doctor controlled the garden.
+614,The lawyer did not discover the system.
+615,Did the lawyer discover the system?
+616,The lawyer will discover the system.
+617,The lawyer may have discovered the system.
+618,The system was discovered by the lawyer.
+619,It is true that the lawyer discovered the system.
+620,The engineer did not report a beautiful painting.
+621,Did the engineer report a beautiful painting?
+622,The engineer will report a beautiful painting.
+623,The engineer may have reported a beautiful painting.
+624,A beautiful painting was reported by the engineer.
+625,It is true that the engineer reported a beautiful painting.
+626,The writer did not report the data.
+627,Did the writer report the data?
+628,The writer will report the data.
+629,The writer may have reported the data.
+630,The data was reported by the writer.
+631,It is true that the writer reported the data.
+632,The researcher did not explain the question.
+633,Did the researcher explain the question?
+634,The researcher will explain the question.
+635,The researcher may have explained the question.
+636,The question was explained by the researcher.
+637,It is true that the researcher explained the question.
+638,The nurse did not play a new principle.
+639,Did the nurse play a new principle?
+640,The nurse will play a new principle.
+641,The nurse may have played a new principle.
+642,A new principle was played by the nurse.
+643,It is true that the nurse played a new principle.
+644,The engineer did not discover the event.
+645,Did the engineer discover the event?
+646,The engineer will discover the event.
+647,The engineer may have discovered the event.
+648,The event was discovered by the engineer.
+649,It is true that the engineer discovered the event.
+650,The analyst did not control a beautiful painting.
+651,Did the analyst control a beautiful painting?
+652,The analyst will control a beautiful painting.
+653,The analyst may have controlled a beautiful painting.
+654,A beautiful painting was controlled by the analyst.
+655,It is true that the analyst controlled a beautiful painting.
+656,The chef did not grow the meal.
+657,Did the chef grow the meal?
+658,The chef will grow the meal.
+659,The chef may have grew the meal.
+660,The meal was grew by the chef.
+661,It is true that the chef grew the meal.
+662,The doctor did not study the garden.
+663,Did the doctor study the garden?
+664,The doctor will study the garden.
+665,The doctor may have studied the garden.
+666,The garden was studied by the doctor.
+667,It is true that the doctor studied the garden.
+668,The engineer did not explain the event.
+669,Did the engineer explain the event?
+670,The engineer will explain the event.
+671,The engineer may have explained the event.
+672,The event was explained by the engineer.
+673,It is true that the engineer explained the event.
+674,The teacher did not grow the patient.
+675,Did the teacher grow the patient?
+676,The teacher will grow the patient.
+677,The teacher may have grew the patient.
+678,The patient was grew by the teacher.
+679,It is true that the teacher grew the patient.
+680,The artist did not play a new principle.
+681,Did the artist play a new principle?
+682,The artist will play a new principle.
+683,The artist may have played a new principle.
+684,A new principle was played by the artist.
+685,It is true that the artist played a new principle.
+686,The designer did not create a new principle.
+687,Did the designer create a new principle?
+688,The designer will create a new principle.
+689,The designer may have created a new principle.
+690,A new principle was created by the designer.
+691,It is true that the designer created a new principle.
+692,The doctor did not solve a new principle.
+693,Did the doctor solve a new principle?
+694,The doctor will solve a new principle.
+695,The doctor may have solved a new principle.
+696,A new principle was solved by the doctor.
+697,It is true that the doctor solved a new principle.
+698,The journalist did not discover the event.
+699,Did the journalist discover the event?
+700,The journalist will discover the event.
+701,The journalist may have discovered the event.
+702,The event was discovered by the journalist.
+703,It is true that the journalist discovered the event.
+704,The pilot did not test a new principle.
+705,Did the pilot test a new principle?
+706,The pilot will test a new principle.
+707,The pilot may have tested a new principle.
+708,A new principle was tested by the pilot.
+709,It is true that the pilot tested a new principle.
+710,The child did not analyze a short story.
+711,Did the child analyze a short story?
+712,The child will analyze a short story.
+713,The child may have analyzed a short story.
+714,A short story was analyzed by the child.
+715,It is true that the child analyzed a short story.
+716,The lawyer did not help the garden.
+717,Did the lawyer help the garden?
+718,The lawyer will help the garden.
+719,The lawyer may have helped the garden.
+720,The garden was helped by the lawyer.
+721,It is true that the lawyer helped the garden.
+722,The manager did not improve a sad melody.
+723,Did the manager improve a sad melody?
+724,The manager will improve a sad melody.
+725,The manager may have improved a sad melody.
+726,A sad melody was improved by the manager.
+727,It is true that the manager improved a sad melody.
+728,The farmer did not design the system.
+729,Did the farmer design the system?
+730,The farmer will design the system.
+731,The farmer may have designed the system.
+732,The system was designed by the farmer.
+733,It is true that the farmer designed the system.
+734,The programmer did not find a beautiful painting.
+735,Did the programmer find a beautiful painting?
+736,The programmer will find a beautiful painting.
+737,The programmer may have found a beautiful painting.
+738,A beautiful painting was found by the programmer.
+739,It is true that the programmer found a beautiful painting.
+740,The farmer did not report the decision.
+741,Did the farmer report the decision?
+742,The farmer will report the decision.
+743,The farmer may have reported the decision.
+744,The decision was reported by the farmer.
+745,It is true that the farmer reported the decision.
+746,The programmer did not test a complex machine.
+747,Did the programmer test a complex machine?
+748,The programmer will test a complex machine.
+749,The programmer may have tested a complex machine.
+750,A complex machine was tested by the programmer.
+751,It is true that the programmer tested a complex machine.
+752,The lawyer did not approve the patient.
+753,Did the lawyer approve the patient?
+754,The lawyer will approve the patient.
+755,The lawyer may have approved the patient.
+756,The patient was approved by the lawyer.
+757,It is true that the lawyer approved the patient.
+758,The pilot did not report the system.
+759,Did the pilot report the system?
+760,The pilot will report the system.
+761,The pilot may have reported the system.
+762,The system was reported by the pilot.
+763,It is true that the pilot reported the system.
+764,The farmer did not improve the system.
+765,Did the farmer improve the system?
+766,The farmer will improve the system.
+767,The farmer may have improved the system.
+768,The system was improved by the farmer.
+769,It is true that the farmer improved the system.
+770,The chef did not analyze the family.
+771,Did the chef analyze the family?
+772,The chef will analyze the family.
+773,The chef may have analyzed the family.
+774,The family was analyzed by the chef.
+775,It is true that the chef analyzed the family.
+776,The doctor did not examine a sad melody.
+777,Did the doctor examine a sad melody?
+778,The doctor will examine a sad melody.
+779,The doctor may have examined a sad melody.
+780,A sad melody was examined by the doctor.
+781,It is true that the doctor examined a sad melody.
+782,The artist did not explain a new principle.
+783,Did the artist explain a new principle?
+784,The artist will explain a new principle.
+785,The artist may have explained a new principle.
+786,A new principle was explained by the artist.
+787,It is true that the artist explained a new principle.
+788,The musician did not prepare the meal.
+789,Did the musician prepare the meal?
+790,The musician will prepare the meal.
+791,The musician may have prepared the meal.
+792,The meal was prepared by the musician.
+793,It is true that the musician prepared the meal.
+794,The farmer did not design the event.
+795,Did the farmer design the event?
+796,The farmer will design the event.
+797,The farmer may have designed the event.
+798,The event was designed by the farmer.
+799,It is true that the farmer designed the event.
+800,The child did not grow the garden.
+801,Did the child grow the garden?
+802,The child will grow the garden.
+803,The child may have grew the garden.
+804,The garden was grew by the child.
+805,It is true that the child grew the garden.
+806,The researcher did not prepare the client.
+807,Did the researcher prepare the client?
+808,The researcher will prepare the client.
+809,The researcher may have prepared the client.
+810,The client was prepared by the researcher.
+811,It is true that the researcher prepared the client.
+812,The designer did not grow the question.
+813,Did the designer grow the question?
+814,The designer will grow the question.
+815,The designer may have grew the question.
+816,The question was grew by the designer.
+817,It is true that the designer grew the question.
+818,The journalist did not discover the problem.
+819,Did the journalist discover the problem?
+820,The journalist will discover the problem.
+821,The journalist may have discovered the problem.
+822,The problem was discovered by the journalist.
+823,It is true that the journalist discovered the problem.
+824,The researcher did not report a new principle.
+825,Did the researcher report a new principle?
+826,The researcher will report a new principle.
+827,The researcher may have reported a new principle.
+828,A new principle was reported by the researcher.
+829,It is true that the researcher reported a new principle.
+830,The student did not find the data.
+831,Did the student find the data?
+832,The student will find the data.
+833,The student may have found the data.
+834,The data was found by the student.
+835,It is true that the student found the data.
+836,The scientist did not write the data.
+837,Did the scientist write the data?
+838,The scientist will write the data.
+839,The scientist may have wrote the data.
+840,The data was wrote by the scientist.
+841,It is true that the scientist wrote the data.
+842,The researcher did not explain the event.
+843,Did the researcher explain the event?
+844,The researcher will explain the event.
+845,The researcher may have explained the event.
+846,The event was explained by the researcher.
+847,It is true that the researcher explained the event.
+848,The programmer did not explain the client.
+849,Did the programmer explain the client?
+850,The programmer will explain the client.
+851,The programmer may have explained the client.
+852,The client was explained by the programmer.
+853,It is true that the programmer explained the client.
+854,The scientist did not report a complex machine.
+855,Did the scientist report a complex machine?
+856,The scientist will report a complex machine.
+857,The scientist may have reported a complex machine.
+858,A complex machine was reported by the scientist.
+859,It is true that the scientist reported a complex machine.
+860,The researcher did not report the garden.
+861,Did the researcher report the garden?
+862,The researcher will report the garden.
+863,The researcher may have reported the garden.
+864,The garden was reported by the researcher.
+865,It is true that the researcher reported the garden.
+866,The student did not discover the decision.
+867,Did the student discover the decision?
+868,The student will discover the decision.
+869,The student may have discovered the decision.
+870,The decision was discovered by the student.
+871,It is true that the student discovered the decision.
+872,The musician did not explain the data.
+873,Did the musician explain the data?
+874,The musician will explain the data.
+875,The musician may have explained the data.
+876,The data was explained by the musician.
+877,It is true that the musician explained the data.
+878,The scientist did not report the garden.
+879,Did the scientist report the garden?
+880,The scientist will report the garden.
+881,The scientist may have reported the garden.
+882,The garden was reported by the scientist.
+883,It is true that the scientist reported the garden.
+884,The child did not test the system.
+885,Did the child test the system?
+886,The child will test the system.
+887,The child may have tested the system.
+888,The system was tested by the child.
+889,It is true that the child tested the system.
+890,The musician did not analyze the interface.
+891,Did the musician analyze the interface?
+892,The musician will analyze the interface.
+893,The musician may have analyzed the interface.
+894,The interface was analyzed by the musician.
+895,It is true that the musician analyzed the interface.
+896,The musician did not create a beautiful painting.
+897,Did the musician create a beautiful painting?
+898,The musician will create a beautiful painting.
+899,The musician may have created a beautiful painting.
+900,A beautiful painting was created by the musician.
+901,It is true that the musician created a beautiful painting.
+902,The teacher did not control the garden.
+903,Did the teacher control the garden?
+904,The teacher will control the garden.
+905,The teacher may have controlled the garden.
+906,The garden was controlled by the teacher.
+907,It is true that the teacher controlled the garden.
+908,The pilot did not solve the problem.
+909,Did the pilot solve the problem?
+910,The pilot will solve the problem.
+911,The pilot may have solved the problem.
+912,The problem was solved by the pilot.
+913,It is true that the pilot solved the problem.
+914,The journalist did not solve the rule.
+915,Did the journalist solve the rule?
+916,The journalist will solve the rule.
+917,The journalist may have solved the rule.
+918,The rule was solved by the journalist.
+919,It is true that the journalist solved the rule.
+920,The scientist did not play a short story.
+921,Did the scientist play a short story?
+922,The scientist will play a short story.
+923,The scientist may have played a short story.
+924,A short story was played by the scientist.
+925,It is true that the scientist played a short story.
+926,The designer did not analyze the problem.
+927,Did the designer analyze the problem?
+928,The designer will analyze the problem.
+929,The designer may have analyzed the problem.
+930,The problem was analyzed by the designer.
+931,It is true that the designer analyzed the problem.
+932,The manager did not study the data.
+933,Did the manager study the data?
+934,The manager will study the data.
+935,The manager may have studied the data.
+936,The data was studied by the manager.
+937,It is true that the manager studied the data.
+938,The writer did not write a complex machine.
+939,Did the writer write a complex machine?
+940,The writer will write a complex machine.
+941,The writer may have wrote a complex machine.
+942,A complex machine was wrote by the writer.
+943,It is true that the writer wrote a complex machine.
+944,The scientist did not test a black cat.
+945,Did the scientist test a black cat?
+946,The scientist will test a black cat.
+947,The scientist may have tested a black cat.
+948,A black cat was tested by the scientist.
+949,It is true that the scientist tested a black cat.
+950,The chef did not defend the question.
+951,Did the chef defend the question?
+952,The chef will defend the question.
+953,The chef may have defended the question.
+954,The question was defended by the chef.
+955,It is true that the chef defended the question.
+956,The student did not help the data.
+957,Did the student help the data?
+958,The student will help the data.
+959,The student may have helped the data.
+960,The data was helped by the student.
+961,It is true that the student helped the data.
+962,The teacher did not solve the meal.
+963,Did the teacher solve the meal?
+964,The teacher will solve the meal.
+965,The teacher may have solved the meal.
+966,The meal was solved by the teacher.
+967,It is true that the teacher solved the meal.
+968,The writer did not solve the rule.
+969,Did the writer solve the rule?
+970,The writer will solve the rule.
+971,The writer may have solved the rule.
+972,The rule was solved by the writer.
+973,It is true that the writer solved the rule.
+974,The writer did not find the data.
+975,Did the writer find the data?
+976,The writer will find the data.
+977,The writer may have found the data.
+978,The data was found by the writer.
+979,It is true that the writer found the data.
+980,The chef did not study a short story.
+981,Did the chef study a short story?
+982,The chef will study a short story.
+983,The chef may have studied a short story.
+984,A short story was studied by the chef.
+985,It is true that the chef studied a short story.
+986,The journalist did not analyze the problem.
+987,Did the journalist analyze the problem?
+988,The journalist will analyze the problem.
+989,The journalist may have analyzed the problem.
+990,The problem was analyzed by the journalist.
+991,It is true that the journalist analyzed the problem.
+992,The nurse did not study the system.
+993,Did the nurse study the system?
+994,The nurse will study the system.
+995,The nurse may have studied the system.
+996,The system was studied by the nurse.
+997,It is true that the nurse studied the system.
+998,The designer did not report the data.
+999,Did the designer report the data?
+1000,The designer will report the data.
+1001,The designer may have reported the data.
+1002,The data was reported by the designer.
+1003,It is true that the designer reported the data.
+1004,The programmer did not grow the system.
+1005,Did the programmer grow the system?
+1006,The programmer will grow the system.
+1007,The programmer may have grew the system.
+1008,The system was grew by the programmer.
+1009,It is true that the programmer grew the system.
+1010,The artist did not create a black cat.
+1011,Did the artist create a black cat?
+1012,The artist will create a black cat.
+1013,The artist may have created a black cat.
+1014,A black cat was created by the artist.
+1015,It is true that the artist created a black cat.
+1016,The designer did not help a black cat.
+1017,Did the designer help a black cat?
+1018,The designer will help a black cat.
+1019,The designer may have helped a black cat.
+1020,A black cat was helped by the designer.
+1021,It is true that the designer helped a black cat.
+1022,The writer did not solve a short story.
+1023,Did the writer solve a short story?
+1024,The writer will solve a short story.
+1025,The writer may have solved a short story.
+1026,A short story was solved by the writer.
+1027,It is true that the writer solved a short story.
+1028,The designer did not study a black cat.
+1029,Did the designer study a black cat?
+1030,The designer will study a black cat.
+1031,The designer may have studied a black cat.
+1032,A black cat was studied by the designer.
+1033,It is true that the designer studied a black cat.
+1034,The student did not report the client.
+1035,Did the student report the client?
+1036,The student will report the client.
+1037,The student may have reported the client.
+1038,The client was reported by the student.
+1039,It is true that the student reported the client.
+1040,The researcher did not study the garden.
+1041,Did the researcher study the garden?
+1042,The researcher will study the garden.
+1043,The researcher may have studied the garden.
+1044,The garden was studied by the researcher.
+1045,It is true that the researcher studied the garden.
+1046,The chef did not grow the problem.
+1047,Did the chef grow the problem?
+1048,The chef will grow the problem.
+1049,The chef may have grew the problem.
+1050,The problem was grew by the chef.
+1051,It is true that the chef grew the problem.
+1052,The child did not create a black cat.
+1053,Did the child create a black cat?
+1054,The child will create a black cat.
+1055,The child may have created a black cat.
+1056,A black cat was created by the child.
+1057,It is true that the child created a black cat.
+1058,The artist did not study the patient.
+1059,Did the artist study the patient?
+1060,The artist will study the patient.
+1061,The artist may have studied the patient.
+1062,The patient was studied by the artist.
+1063,It is true that the artist studied the patient.
+1064,The journalist did not examine the meal.
+1065,Did the journalist examine the meal?
+1066,The journalist will examine the meal.
+1067,The journalist may have examined the meal.
+1068,The meal was examined by the journalist.
+1069,It is true that the journalist examined the meal.
+1070,The journalist did not explain a beautiful painting.
+1071,Did the journalist explain a beautiful painting?
+1072,The journalist will explain a beautiful painting.
+1073,The journalist may have explained a beautiful painting.
+1074,A beautiful painting was explained by the journalist.
+1075,It is true that the journalist explained a beautiful painting.
+1076,The nurse did not test the family.
+1077,Did the nurse test the family?
+1078,The nurse will test the family.
+1079,The nurse may have tested the family.
+1080,The family was tested by the nurse.
+1081,It is true that the nurse tested the family.
+1082,The designer did not prepare a short story.
+1083,Did the designer prepare a short story?
+1084,The designer will prepare a short story.
+1085,The designer may have prepared a short story.
+1086,A short story was prepared by the designer.
+1087,It is true that the designer prepared a short story.
+1088,The doctor did not solve the client.
+1089,Did the doctor solve the client?
+1090,The doctor will solve the client.
+1091,The doctor may have solved the client.
+1092,The client was solved by the doctor.
+1093,It is true that the doctor solved the client.
+1094,The nurse did not control the decision.
+1095,Did the nurse control the decision?
+1096,The nurse will control the decision.
+1097,The nurse may have controlled the decision.
+1098,The decision was controlled by the nurse.
+1099,It is true that the nurse controlled the decision.
+1100,The journalist did not find the family.
+1101,Did the journalist find the family?
+1102,The journalist will find the family.
+1103,The journalist may have found the family.
+1104,The family was found by the journalist.
+1105,It is true that the journalist found the family.
+1106,The engineer did not create the rule.
+1107,Did the engineer create the rule?
+1108,The engineer will create the rule.
+1109,The engineer may have created the rule.
+1110,The rule was created by the engineer.
+1111,It is true that the engineer created the rule.
+1112,The nurse did not explain the family.
+1113,Did the nurse explain the family?
+1114,The nurse will explain the family.
+1115,The nurse may have explained the family.
+1116,The family was explained by the nurse.
+1117,It is true that the nurse explained the family.
+1118,The designer did not improve the problem.
+1119,Did the designer improve the problem?
+1120,The designer will improve the problem.
+1121,The designer may have improved the problem.
+1122,The problem was improved by the designer.
+1123,It is true that the designer improved the problem.
+1124,The artist did not design the system.
+1125,Did the artist design the system?
+1126,The artist will design the system.
+1127,The artist may have designed the system.
+1128,The system was designed by the artist.
+1129,It is true that the artist designed the system.
+1130,The student did not write a complex machine.
+1131,Did the student write a complex machine?
+1132,The student will write a complex machine.
+1133,The student may have wrote a complex machine.
+1134,A complex machine was wrote by the student.
+1135,It is true that the student wrote a complex machine.
+1136,The pilot did not solve the question.
+1137,Did the pilot solve the question?
+1138,The pilot will solve the question.
+1139,The pilot may have solved the question.
+1140,The question was solved by the pilot.
+1141,It is true that the pilot solved the question.
+1142,The student did not solve the client.
+1143,Did the student solve the client?
+1144,The student will solve the client.
+1145,The student may have solved the client.
+1146,The client was solved by the student.
+1147,It is true that the student solved the client.
+1148,The doctor did not approve the interface.
+1149,Did the doctor approve the interface?
+1150,The doctor will approve the interface.
+1151,The doctor may have approved the interface.
+1152,The interface was approved by the doctor.
+1153,It is true that the doctor approved the interface.
+1154,The child did not improve the problem.
+1155,Did the child improve the problem?
+1156,The child will improve the problem.
+1157,The child may have improved the problem.
+1158,The problem was improved by the child.
+1159,It is true that the child improved the problem.
+1160,The analyst did not analyze the family.
+1161,Did the analyst analyze the family?
+1162,The analyst will analyze the family.
+1163,The analyst may have analyzed the family.
+1164,The family was analyzed by the analyst.
+1165,It is true that the analyst analyzed the family.
+1166,The doctor did not study a beautiful painting.
+1167,Did the doctor study a beautiful painting?
+1168,The doctor will study a beautiful painting.
+1169,The doctor may have studied a beautiful painting.
+1170,A beautiful painting was studied by the doctor.
+1171,It is true that the doctor studied a beautiful painting.
+1172,The designer did not discover a short story.
+1173,Did the designer discover a short story?
+1174,The designer will discover a short story.
+1175,The designer may have discovered a short story.
+1176,A short story was discovered by the designer.
+1177,It is true that the designer discovered a short story.
+1178,The analyst did not prepare a short story.
+1179,Did the analyst prepare a short story?
+1180,The analyst will prepare a short story.
+1181,The analyst may have prepared a short story.
+1182,A short story was prepared by the analyst.
+1183,It is true that the analyst prepared a short story.
+1184,The engineer did not control a new principle.
+1185,Did the engineer control a new principle?
+1186,The engineer will control a new principle.
+1187,The engineer may have controlled a new principle.
+1188,A new principle was controlled by the engineer.
+1189,It is true that the engineer controlled a new principle.
+1190,The farmer did not approve a black cat.
+1191,Did the farmer approve a black cat?
+1192,The farmer will approve a black cat.
+1193,The farmer may have approved a black cat.
+1194,A black cat was approved by the farmer.
+1195,It is true that the farmer approved a black cat.
+1196,The musician did not discover the system.
+1197,Did the musician discover the system?
+1198,The musician will discover the system.
+1199,The musician may have discovered the system.
+1200,The system was discovered by the musician.
+1201,It is true that the musician discovered the system.
+1202,The child did not help the client.
+1203,Did the child help the client?
+1204,The child will help the client.
+1205,The child may have helped the client.
+1206,The client was helped by the child.
+1207,It is true that the child helped the client.
+1208,The chef did not defend the client.
+1209,Did the chef defend the client?
+1210,The chef will defend the client.
+1211,The chef may have defended the client.
+1212,The client was defended by the chef.
+1213,It is true that the chef defended the client.
+1214,The pilot did not test the aircraft.
+1215,Did the pilot test the aircraft?
+1216,The pilot will test the aircraft.
+1217,The pilot may have tested the aircraft.
+1218,The aircraft was tested by the pilot.
+1219,It is true that the pilot tested the aircraft.
+1220,The teacher did not discover the data.
+1221,Did the teacher discover the data?
+1222,The teacher will discover the data.
+1223,The teacher may have discovered the data.
+1224,The data was discovered by the teacher.
+1225,It is true that the teacher discovered the data.
+1226,The teacher did not grow a new principle.
+1227,Did the teacher grow a new principle?
+1228,The teacher will grow a new principle.
+1229,The teacher may have grew a new principle.
+1230,A new principle was grew by the teacher.
+1231,It is true that the teacher grew a new principle.
+1232,The student did not design the question.
+1233,Did the student design the question?
+1234,The student will design the question.
+1235,The student may have designed the question.
+1236,The question was designed by the student.
+1237,It is true that the student designed the question.
+1238,The doctor did not discover the rule.
+1239,Did the doctor discover the rule?
+1240,The doctor will discover the rule.
+1241,The doctor may have discovered the rule.
+1242,The rule was discovered by the doctor.
+1243,It is true that the doctor discovered the rule.
+1244,The journalist did not test the decision.
+1245,Did the journalist test the decision?
+1246,The journalist will test the decision.
+1247,The journalist may have tested the decision.
+1248,The decision was tested by the journalist.
+1249,It is true that the journalist tested the decision.
+1250,The musician did not design a complex machine.
+1251,Did the musician design a complex machine?
+1252,The musician will design a complex machine.
+1253,The musician may have designed a complex machine.
+1254,A complex machine was designed by the musician.
+1255,It is true that the musician designed a complex machine.
+1256,The engineer did not help the meal.
+1257,Did the engineer help the meal?
+1258,The engineer will help the meal.
+1259,The engineer may have helped the meal.
+1260,The meal was helped by the engineer.
+1261,It is true that the engineer helped the meal.
+1262,The child did not defend the garden.
+1263,Did the child defend the garden?
+1264,The child will defend the garden.
+1265,The child may have defended the garden.
+1266,The garden was defended by the child.
+1267,It is true that the child defended the garden.
+1268,The designer did not analyze the rule.
+1269,Did the designer analyze the rule?
+1270,The designer will analyze the rule.
+1271,The designer may have analyzed the rule.
+1272,The rule was analyzed by the designer.
+1273,It is true that the designer analyzed the rule.
+1274,The writer did not design the problem.
+1275,Did the writer design the problem?
+1276,The writer will design the problem.
+1277,The writer may have designed the problem.
+1278,The problem was designed by the writer.
+1279,It is true that the writer designed the problem.
+1280,The teacher did not analyze the family.
+1281,Did the teacher analyze the family?
+1282,The teacher will analyze the family.
+1283,The teacher may have analyzed the family.
+1284,The family was analyzed by the teacher.
+1285,It is true that the teacher analyzed the family.
+1286,The chef did not explain the aircraft.
+1287,Did the chef explain the aircraft?
+1288,The chef will explain the aircraft.
+1289,The chef may have explained the aircraft.
+1290,The aircraft was explained by the chef.
+1291,It is true that the chef explained the aircraft.
+1292,The analyst did not control the event.
+1293,Did the analyst control the event?
+1294,The analyst will control the event.
+1295,The analyst may have controlled the event.
+1296,The event was controlled by the analyst.
+1297,It is true that the analyst controlled the event.
+1298,The journalist did not design the interface.
+1299,Did the journalist design the interface?
+1300,The journalist will design the interface.
+1301,The journalist may have designed the interface.
+1302,The interface was designed by the journalist.
+1303,It is true that the journalist designed the interface.
+1304,The doctor did not defend the question.
+1305,Did the doctor defend the question?
+1306,The doctor will defend the question.
+1307,The doctor may have defended the question.
+1308,The question was defended by the doctor.
+1309,It is true that the doctor defended the question.
+1310,The teacher did not prepare a sad melody.
+1311,Did the teacher prepare a sad melody?
+1312,The teacher will prepare a sad melody.
+1313,The teacher may have prepared a sad melody.
+1314,A sad melody was prepared by the teacher.
+1315,It is true that the teacher prepared a sad melody.
+1316,The farmer did not grow a sad melody.
+1317,Did the farmer grow a sad melody?
+1318,The farmer will grow a sad melody.
+1319,The farmer may have grew a sad melody.
+1320,A sad melody was grew by the farmer.
+1321,It is true that the farmer grew a sad melody.
+1322,The student did not improve a new principle.
+1323,Did the student improve a new principle?
+1324,The student will improve a new principle.
+1325,The student may have improved a new principle.
+1326,A new principle was improved by the student.
+1327,It is true that the student improved a new principle.
+1328,The pilot did not write the patient.
+1329,Did the pilot write the patient?
+1330,The pilot will write the patient.
+1331,The pilot may have wrote the patient.
+1332,The patient was wrote by the pilot.
+1333,It is true that the pilot wrote the patient.
+1334,The journalist did not grow the aircraft.
+1335,Did the journalist grow the aircraft?
+1336,The journalist will grow the aircraft.
+1337,The journalist may have grew the aircraft.
+1338,The aircraft was grew by the journalist.
+1339,It is true that the journalist grew the aircraft.
+1340,The programmer did not grow a short story.
+1341,Did the programmer grow a short story?
+1342,The programmer will grow a short story.
+1343,The programmer may have grew a short story.
+1344,A short story was grew by the programmer.
+1345,It is true that the programmer grew a short story.
+1346,The researcher did not control the garden.
+1347,Did the researcher control the garden?
+1348,The researcher will control the garden.
+1349,The researcher may have controlled the garden.
+1350,The garden was controlled by the researcher.
+1351,It is true that the researcher controlled the garden.
+1352,The scientist did not design the rule.
+1353,Did the scientist design the rule?
+1354,The scientist will design the rule.
+1355,The scientist may have designed the rule.
+1356,The rule was designed by the scientist.
+1357,It is true that the scientist designed the rule.
+1358,The artist did not help the interface.
+1359,Did the artist help the interface?
+1360,The artist will help the interface.
+1361,The artist may have helped the interface.
+1362,The interface was helped by the artist.
+1363,It is true that the artist helped the interface.
+1364,The engineer did not approve the question.
+1365,Did the engineer approve the question?
+1366,The engineer will approve the question.
+1367,The engineer may have approved the question.
+1368,The question was approved by the engineer.
+1369,It is true that the engineer approved the question.
+1370,The chef did not grow the event.
+1371,Did the chef grow the event?
+1372,The chef will grow the event.
+1373,The chef may have grew the event.
+1374,The event was grew by the chef.
+1375,It is true that the chef grew the event.
+1376,The chef did not help the aircraft.
+1377,Did the chef help the aircraft?
+1378,The chef will help the aircraft.
+1379,The chef may have helped the aircraft.
+1380,The aircraft was helped by the chef.
+1381,It is true that the chef helped the aircraft.
+1382,The student did not write the interface.
+1383,Did the student write the interface?
+1384,The student will write the interface.
+1385,The student may have wrote the interface.
+1386,The interface was wrote by the student.
+1387,It is true that the student wrote the interface.
+1388,The farmer did not discover the system.
+1389,Did the farmer discover the system?
+1390,The farmer will discover the system.
+1391,The farmer may have discovered the system.
+1392,The system was discovered by the farmer.
+1393,It is true that the farmer discovered the system.
+1394,The farmer did not test the meal.
+1395,Did the farmer test the meal?
+1396,The farmer will test the meal.
+1397,The farmer may have tested the meal.
+1398,The meal was tested by the farmer.
+1399,It is true that the farmer tested the meal.

@@ -1,0 +1,49 @@
+class,pair_id,source,target,source_idx,target_idx
+negation,negation_0,The scientist discovered a new principle.,The scientist did not discover a new principle.,0,1
+negation,negation_1,A child found a black cat.,A child did not find a black cat.,2,3
+negation,negation_2,The engineer solved the problem.,The engineer did not solve the problem.,4,5
+negation,negation_3,The teacher explained the rule.,The teacher did not explain the rule.,6,7
+negation,negation_4,The system detected an error.,The system did not detect an error.,8,9
+negation,negation_5,The artist created a painting.,The artist did not create a painting.,10,11
+negation,negation_6,The student understood the lesson.,The student did not understand the lesson.,12,13
+negation,negation_7,The company released a product.,The company did not release a product.,14,15
+question,question_0,The scientist discovered a new principle.,Did the scientist discover a new principle?,0,16
+question,question_1,A child found a black cat.,Did a child find a black cat?,2,17
+question,question_2,The engineer solved the problem.,Did the engineer solve the problem?,4,18
+question,question_3,The teacher explained the rule.,Did the teacher explain the rule?,6,19
+question,question_4,The system detected an error.,Did the system detect an error?,8,20
+question,question_5,The artist created a painting.,Did the artist create a painting?,10,21
+question,question_6,The student understood the lesson.,Did the student understand the lesson?,12,22
+question,question_7,The company released a product.,Did the company release a product?,14,23
+past_to_future,past_to_future_0,The scientist discovered a new principle.,The scientist will discover a new principle.,0,24
+past_to_future,past_to_future_1,A child found a black cat.,A child will find a black cat.,2,25
+past_to_future,past_to_future_2,The engineer solved the problem.,The engineer will solve the problem.,4,26
+past_to_future,past_to_future_3,The teacher explained the rule.,The teacher will explain the rule.,6,27
+past_to_future,past_to_future_4,The system detected an error.,The system will detect an error.,8,28
+past_to_future,past_to_future_5,The artist created a painting.,The artist will create a painting.,10,29
+past_to_future,past_to_future_6,The student understood the lesson.,The student will understand the lesson.,12,30
+past_to_future,past_to_future_7,The company released a product.,The company will release a product.,14,31
+certainty_to_uncertainty,certainty_to_uncertainty_0,The theory is correct.,The theory may be correct.,32,33
+certainty_to_uncertainty,certainty_to_uncertainty_1,The answer is obvious.,The answer may be obvious.,34,35
+certainty_to_uncertainty,certainty_to_uncertainty_2,The result is reliable.,The result may be reliable.,36,37
+certainty_to_uncertainty,certainty_to_uncertainty_3,The experiment is successful.,The experiment may be successful.,38,39
+certainty_to_uncertainty,certainty_to_uncertainty_4,The solution is complete.,The solution may be complete.,40,41
+certainty_to_uncertainty,certainty_to_uncertainty_5,The prediction is accurate.,The prediction may be accurate.,42,43
+certainty_to_uncertainty,certainty_to_uncertainty_6,The explanation is valid.,The explanation may be valid.,44,45
+certainty_to_uncertainty,certainty_to_uncertainty_7,The signal is meaningful.,The signal may be meaningful.,46,47
+active_to_passive,active_to_passive_0,The scientist discovered a new principle.,A new principle was discovered by the scientist.,0,48
+active_to_passive,active_to_passive_1,A child found a black cat.,A black cat was found by a child.,2,49
+active_to_passive,active_to_passive_2,The engineer solved the problem.,The problem was solved by the engineer.,4,50
+active_to_passive,active_to_passive_3,The teacher explained the rule.,The rule was explained by the teacher.,6,51
+active_to_passive,active_to_passive_4,The system detected an error.,An error was detected by the system.,8,52
+active_to_passive,active_to_passive_5,The artist created a painting.,A painting was created by the artist.,10,53
+active_to_passive,active_to_passive_6,The student understood the lesson.,The lesson was understood by the student.,12,54
+active_to_passive,active_to_passive_7,The company released a product.,A product was released by the company.,14,55
+formalization,formalization_0,I don't know the answer.,I do not know the answer.,56,57
+formalization,formalization_1,We can't solve this problem.,We cannot solve this problem.,58,59
+formalization,formalization_2,They won't accept the result.,They will not accept the result.,60,61
+formalization,formalization_3,She isn't ready for the exam.,She is not ready for the exam.,62,63
+formalization,formalization_4,He doesn't understand the rule.,He does not understand the rule.,64,65
+formalization,formalization_5,It wasn't a simple decision.,It was not a simple decision.,66,67
+formalization,formalization_6,You shouldn't ignore the signal.,You should not ignore the signal.,68,69
+formalization,formalization_7,The system couldn't process the request.,The system could not process the request.,70,71

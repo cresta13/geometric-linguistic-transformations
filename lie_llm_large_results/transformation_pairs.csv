@@ -1,0 +1,1201 @@
+base_id,class,source,target,source_idx,target_idx
+0,negation,The musician played the rule.,The musician did not play the rule.,0,200
+0,question,The musician played the rule.,Did the musician play the rule?,0,201
+0,past_to_future,The musician played the rule.,The musician will play the rule.,0,202
+0,certainty_to_uncertainty,The musician played the rule.,The musician may have played the rule.,0,203
+0,active_to_passive,The musician played the rule.,The rule was played by the musician.,0,204
+0,formalization,The musician played the rule.,It is true that the musician played the rule.,0,205
+1,negation,The student found the problem.,The student did not find the problem.,1,206
+1,question,The student found the problem.,Did the student find the problem?,1,207
+1,past_to_future,The student found the problem.,The student will find the problem.,1,208
+1,certainty_to_uncertainty,The student found the problem.,The student may have found the problem.,1,209
+1,active_to_passive,The student found the problem.,The problem was found by the student.,1,210
+1,formalization,The student found the problem.,It is true that the student found the problem.,1,211
+2,negation,The musician played a short story.,The musician did not play a short story.,2,212
+2,question,The musician played a short story.,Did the musician play a short story?,2,213
+2,past_to_future,The musician played a short story.,The musician will play a short story.,2,214
+2,certainty_to_uncertainty,The musician played a short story.,The musician may have played a short story.,2,215
+2,active_to_passive,The musician played a short story.,A short story was played by the musician.,2,216
+2,formalization,The musician played a short story.,It is true that the musician played a short story.,2,217
+3,negation,The programmer discovered the meal.,The programmer did not discover the meal.,3,218
+3,question,The programmer discovered the meal.,Did the programmer discover the meal?,3,219
+3,past_to_future,The programmer discovered the meal.,The programmer will discover the meal.,3,220
+3,certainty_to_uncertainty,The programmer discovered the meal.,The programmer may have discovered the meal.,3,221
+3,active_to_passive,The programmer discovered the meal.,The meal was discovered by the programmer.,3,222
+3,formalization,The programmer discovered the meal.,It is true that the programmer discovered the meal.,3,223
+4,negation,The doctor explained the aircraft.,The doctor did not explain the aircraft.,4,224
+4,question,The doctor explained the aircraft.,Did the doctor explain the aircraft?,4,225
+4,past_to_future,The doctor explained the aircraft.,The doctor will explain the aircraft.,4,226
+4,certainty_to_uncertainty,The doctor explained the aircraft.,The doctor may have explained the aircraft.,4,227
+4,active_to_passive,The doctor explained the aircraft.,The aircraft was explained by the doctor.,4,228
+4,formalization,The doctor explained the aircraft.,It is true that the doctor explained the aircraft.,4,229
+5,negation,The journalist explained a complex machine.,The journalist did not explain a complex machine.,5,230
+5,question,The journalist explained a complex machine.,Did the journalist explain a complex machine?,5,231
+5,past_to_future,The journalist explained a complex machine.,The journalist will explain a complex machine.,5,232
+5,certainty_to_uncertainty,The journalist explained a complex machine.,The journalist may have explained a complex machine.,5,233
+5,active_to_passive,The journalist explained a complex machine.,A complex machine was explained by the journalist.,5,234
+5,formalization,The journalist explained a complex machine.,It is true that the journalist explained a complex machine.,5,235
+6,negation,The nurse designed the event.,The nurse did not design the event.,6,236
+6,question,The nurse designed the event.,Did the nurse design the event?,6,237
+6,past_to_future,The nurse designed the event.,The nurse will design the event.,6,238
+6,certainty_to_uncertainty,The nurse designed the event.,The nurse may have designed the event.,6,239
+6,active_to_passive,The nurse designed the event.,The event was designed by the nurse.,6,240
+6,formalization,The nurse designed the event.,It is true that the nurse designed the event.,6,241
+7,negation,The musician grew the problem.,The musician did not grow the problem.,7,242
+7,question,The musician grew the problem.,Did the musician grow the problem?,7,243
+7,past_to_future,The musician grew the problem.,The musician will grow the problem.,7,244
+7,certainty_to_uncertainty,The musician grew the problem.,The musician may have grew the problem.,7,245
+7,active_to_passive,The musician grew the problem.,The problem was grew by the musician.,7,246
+7,formalization,The musician grew the problem.,It is true that the musician grew the problem.,7,247
+8,negation,The engineer helped a complex machine.,The engineer did not help a complex machine.,8,248
+8,question,The engineer helped a complex machine.,Did the engineer help a complex machine?,8,249
+8,past_to_future,The engineer helped a complex machine.,The engineer will help a complex machine.,8,250
+8,certainty_to_uncertainty,The engineer helped a complex machine.,The engineer may have helped a complex machine.,8,251
+8,active_to_passive,The engineer helped a complex machine.,A complex machine was helped by the engineer.,8,252
+8,formalization,The engineer helped a complex machine.,It is true that the engineer helped a complex machine.,8,253
+9,negation,The writer controlled the aircraft.,The writer did not control the aircraft.,9,254
+9,question,The writer controlled the aircraft.,Did the writer control the aircraft?,9,255
+9,past_to_future,The writer controlled the aircraft.,The writer will control the aircraft.,9,256
+9,certainty_to_uncertainty,The writer controlled the aircraft.,The writer may have controlled the aircraft.,9,257
+9,active_to_passive,The writer controlled the aircraft.,The aircraft was controlled by the writer.,9,258
+9,formalization,The writer controlled the aircraft.,It is true that the writer controlled the aircraft.,9,259
+10,negation,The journalist created a sad melody.,The journalist did not create a sad melody.,10,260
+10,question,The journalist created a sad melody.,Did the journalist create a sad melody?,10,261
+10,past_to_future,The journalist created a sad melody.,The journalist will create a sad melody.,10,262
+10,certainty_to_uncertainty,The journalist created a sad melody.,The journalist may have created a sad melody.,10,263
+10,active_to_passive,The journalist created a sad melody.,A sad melody was created by the journalist.,10,264
+10,formalization,The journalist created a sad melody.,It is true that the journalist created a sad melody.,10,265
+11,negation,The nurse examined the event.,The nurse did not examine the event.,11,266
+11,question,The nurse examined the event.,Did the nurse examine the event?,11,267
+11,past_to_future,The nurse examined the event.,The nurse will examine the event.,11,268
+11,certainty_to_uncertainty,The nurse examined the event.,The nurse may have examined the event.,11,269
+11,active_to_passive,The nurse examined the event.,The event was examined by the nurse.,11,270
+11,formalization,The nurse examined the event.,It is true that the nurse examined the event.,11,271
+12,negation,The writer controlled a short story.,The writer did not control a short story.,12,272
+12,question,The writer controlled a short story.,Did the writer control a short story?,12,273
+12,past_to_future,The writer controlled a short story.,The writer will control a short story.,12,274
+12,certainty_to_uncertainty,The writer controlled a short story.,The writer may have controlled a short story.,12,275
+12,active_to_passive,The writer controlled a short story.,A short story was controlled by the writer.,12,276
+12,formalization,The writer controlled a short story.,It is true that the writer controlled a short story.,12,277
+13,negation,The scientist discovered the family.,The scientist did not discover the family.,13,278
+13,question,The scientist discovered the family.,Did the scientist discover the family?,13,279
+13,past_to_future,The scientist discovered the family.,The scientist will discover the family.,13,280
+13,certainty_to_uncertainty,The scientist discovered the family.,The scientist may have discovered the family.,13,281
+13,active_to_passive,The scientist discovered the family.,The family was discovered by the scientist.,13,282
+13,formalization,The scientist discovered the family.,It is true that the scientist discovered the family.,13,283
+14,negation,The pilot tested a complex machine.,The pilot did not test a complex machine.,14,284
+14,question,The pilot tested a complex machine.,Did the pilot test a complex machine?,14,285
+14,past_to_future,The pilot tested a complex machine.,The pilot will test a complex machine.,14,286
+14,certainty_to_uncertainty,The pilot tested a complex machine.,The pilot may have tested a complex machine.,14,287
+14,active_to_passive,The pilot tested a complex machine.,A complex machine was tested by the pilot.,14,288
+14,formalization,The pilot tested a complex machine.,It is true that the pilot tested a complex machine.,14,289
+15,negation,The analyst controlled the decision.,The analyst did not control the decision.,15,290
+15,question,The analyst controlled the decision.,Did the analyst control the decision?,15,291
+15,past_to_future,The analyst controlled the decision.,The analyst will control the decision.,15,292
+15,certainty_to_uncertainty,The analyst controlled the decision.,The analyst may have controlled the decision.,15,293
+15,active_to_passive,The analyst controlled the decision.,The decision was controlled by the analyst.,15,294
+15,formalization,The analyst controlled the decision.,It is true that the analyst controlled the decision.,15,295
+16,negation,The writer designed the rule.,The writer did not design the rule.,16,296
+16,question,The writer designed the rule.,Did the writer design the rule?,16,297
+16,past_to_future,The writer designed the rule.,The writer will design the rule.,16,298
+16,certainty_to_uncertainty,The writer designed the rule.,The writer may have designed the rule.,16,299
+16,active_to_passive,The writer designed the rule.,The rule was designed by the writer.,16,300
+16,formalization,The writer designed the rule.,It is true that the writer designed the rule.,16,301
+17,negation,The scientist defended the garden.,The scientist did not defend the garden.,17,302
+17,question,The scientist defended the garden.,Did the scientist defend the garden?,17,303
+17,past_to_future,The scientist defended the garden.,The scientist will defend the garden.,17,304
+17,certainty_to_uncertainty,The scientist defended the garden.,The scientist may have defended the garden.,17,305
+17,active_to_passive,The scientist defended the garden.,The garden was defended by the scientist.,17,306
+17,formalization,The scientist defended the garden.,It is true that the scientist defended the garden.,17,307
+18,negation,The nurse found a sad melody.,The nurse did not find a sad melody.,18,308
+18,question,The nurse found a sad melody.,Did the nurse find a sad melody?,18,309
+18,past_to_future,The nurse found a sad melody.,The nurse will find a sad melody.,18,310
+18,certainty_to_uncertainty,The nurse found a sad melody.,The nurse may have found a sad melody.,18,311
+18,active_to_passive,The nurse found a sad melody.,A sad melody was found by the nurse.,18,312
+18,formalization,The nurse found a sad melody.,It is true that the nurse found a sad melody.,18,313
+19,negation,The journalist solved the decision.,The journalist did not solve the decision.,19,314
+19,question,The journalist solved the decision.,Did the journalist solve the decision?,19,315
+19,past_to_future,The journalist solved the decision.,The journalist will solve the decision.,19,316
+19,certainty_to_uncertainty,The journalist solved the decision.,The journalist may have solved the decision.,19,317
+19,active_to_passive,The journalist solved the decision.,The decision was solved by the journalist.,19,318
+19,formalization,The journalist solved the decision.,It is true that the journalist solved the decision.,19,319
+20,negation,The musician approved the data.,The musician did not approve the data.,20,320
+20,question,The musician approved the data.,Did the musician approve the data?,20,321
+20,past_to_future,The musician approved the data.,The musician will approve the data.,20,322
+20,certainty_to_uncertainty,The musician approved the data.,The musician may have approved the data.,20,323
+20,active_to_passive,The musician approved the data.,The data was approved by the musician.,20,324
+20,formalization,The musician approved the data.,It is true that the musician approved the data.,20,325
+21,negation,The scientist grew the interface.,The scientist did not grow the interface.,21,326
+21,question,The scientist grew the interface.,Did the scientist grow the interface?,21,327
+21,past_to_future,The scientist grew the interface.,The scientist will grow the interface.,21,328
+21,certainty_to_uncertainty,The scientist grew the interface.,The scientist may have grew the interface.,21,329
+21,active_to_passive,The scientist grew the interface.,The interface was grew by the scientist.,21,330
+21,formalization,The scientist grew the interface.,It is true that the scientist grew the interface.,21,331
+22,negation,The programmer defended the rule.,The programmer did not defend the rule.,22,332
+22,question,The programmer defended the rule.,Did the programmer defend the rule?,22,333
+22,past_to_future,The programmer defended the rule.,The programmer will defend the rule.,22,334
+22,certainty_to_uncertainty,The programmer defended the rule.,The programmer may have defended the rule.,22,335
+22,active_to_passive,The programmer defended the rule.,The rule was defended by the programmer.,22,336
+22,formalization,The programmer defended the rule.,It is true that the programmer defended the rule.,22,337
+23,negation,The doctor defended a black cat.,The doctor did not defend a black cat.,23,338
+23,question,The doctor defended a black cat.,Did the doctor defend a black cat?,23,339
+23,past_to_future,The doctor defended a black cat.,The doctor will defend a black cat.,23,340
+23,certainty_to_uncertainty,The doctor defended a black cat.,The doctor may have defended a black cat.,23,341
+23,active_to_passive,The doctor defended a black cat.,A black cat was defended by the doctor.,23,342
+23,formalization,The doctor defended a black cat.,It is true that the doctor defended a black cat.,23,343
+24,negation,The researcher analyzed the aircraft.,The researcher did not analyze the aircraft.,24,344
+24,question,The researcher analyzed the aircraft.,Did the researcher analyze the aircraft?,24,345
+24,past_to_future,The researcher analyzed the aircraft.,The researcher will analyze the aircraft.,24,346
+24,certainty_to_uncertainty,The researcher analyzed the aircraft.,The researcher may have analyzed the aircraft.,24,347
+24,active_to_passive,The researcher analyzed the aircraft.,The aircraft was analyzed by the researcher.,24,348
+24,formalization,The researcher analyzed the aircraft.,It is true that the researcher analyzed the aircraft.,24,349
+25,negation,The chef helped the client.,The chef did not help the client.,25,350
+25,question,The chef helped the client.,Did the chef help the client?,25,351
+25,past_to_future,The chef helped the client.,The chef will help the client.,25,352
+25,certainty_to_uncertainty,The chef helped the client.,The chef may have helped the client.,25,353
+25,active_to_passive,The chef helped the client.,The client was helped by the chef.,25,354
+25,formalization,The chef helped the client.,It is true that the chef helped the client.,25,355
+26,negation,The musician approved the family.,The musician did not approve the family.,26,356
+26,question,The musician approved the family.,Did the musician approve the family?,26,357
+26,past_to_future,The musician approved the family.,The musician will approve the family.,26,358
+26,certainty_to_uncertainty,The musician approved the family.,The musician may have approved the family.,26,359
+26,active_to_passive,The musician approved the family.,The family was approved by the musician.,26,360
+26,formalization,The musician approved the family.,It is true that the musician approved the family.,26,361
+27,negation,The lawyer studied a black cat.,The lawyer did not study a black cat.,27,362
+27,question,The lawyer studied a black cat.,Did the lawyer study a black cat?,27,363
+27,past_to_future,The lawyer studied a black cat.,The lawyer will study a black cat.,27,364
+27,certainty_to_uncertainty,The lawyer studied a black cat.,The lawyer may have studied a black cat.,27,365
+27,active_to_passive,The lawyer studied a black cat.,A black cat was studied by the lawyer.,27,366
+27,formalization,The lawyer studied a black cat.,It is true that the lawyer studied a black cat.,27,367
+28,negation,The designer helped a short story.,The designer did not help a short story.,28,368
+28,question,The designer helped a short story.,Did the designer help a short story?,28,369
+28,past_to_future,The designer helped a short story.,The designer will help a short story.,28,370
+28,certainty_to_uncertainty,The designer helped a short story.,The designer may have helped a short story.,28,371
+28,active_to_passive,The designer helped a short story.,A short story was helped by the designer.,28,372
+28,formalization,The designer helped a short story.,It is true that the designer helped a short story.,28,373
+29,negation,The engineer tested a beautiful painting.,The engineer did not test a beautiful painting.,29,374
+29,question,The engineer tested a beautiful painting.,Did the engineer test a beautiful painting?,29,375
+29,past_to_future,The engineer tested a beautiful painting.,The engineer will test a beautiful painting.,29,376
+29,certainty_to_uncertainty,The engineer tested a beautiful painting.,The engineer may have tested a beautiful painting.,29,377
+29,active_to_passive,The engineer tested a beautiful painting.,A beautiful painting was tested by the engineer.,29,378
+29,formalization,The engineer tested a beautiful painting.,It is true that the engineer tested a beautiful painting.,29,379
+30,negation,The analyst wrote the aircraft.,The analyst did not write the aircraft.,30,380
+30,question,The analyst wrote the aircraft.,Did the analyst write the aircraft?,30,381
+30,past_to_future,The analyst wrote the aircraft.,The analyst will write the aircraft.,30,382
+30,certainty_to_uncertainty,The analyst wrote the aircraft.,The analyst may have wrote the aircraft.,30,383
+30,active_to_passive,The analyst wrote the aircraft.,The aircraft was wrote by the analyst.,30,384
+30,formalization,The analyst wrote the aircraft.,It is true that the analyst wrote the aircraft.,30,385
+31,negation,The student approved the event.,The student did not approve the event.,31,386
+31,question,The student approved the event.,Did the student approve the event?,31,387
+31,past_to_future,The student approved the event.,The student will approve the event.,31,388
+31,certainty_to_uncertainty,The student approved the event.,The student may have approved the event.,31,389
+31,active_to_passive,The student approved the event.,The event was approved by the student.,31,390
+31,formalization,The student approved the event.,It is true that the student approved the event.,31,391
+32,negation,The scientist designed a new principle.,The scientist did not design a new principle.,32,392
+32,question,The scientist designed a new principle.,Did the scientist design a new principle?,32,393
+32,past_to_future,The scientist designed a new principle.,The scientist will design a new principle.,32,394
+32,certainty_to_uncertainty,The scientist designed a new principle.,The scientist may have designed a new principle.,32,395
+32,active_to_passive,The scientist designed a new principle.,A new principle was designed by the scientist.,32,396
+32,formalization,The scientist designed a new principle.,It is true that the scientist designed a new principle.,32,397
+33,negation,The chef controlled a new principle.,The chef did not control a new principle.,33,398
+33,question,The chef controlled a new principle.,Did the chef control a new principle?,33,399
+33,past_to_future,The chef controlled a new principle.,The chef will control a new principle.,33,400
+33,certainty_to_uncertainty,The chef controlled a new principle.,The chef may have controlled a new principle.,33,401
+33,active_to_passive,The chef controlled a new principle.,A new principle was controlled by the chef.,33,402
+33,formalization,The chef controlled a new principle.,It is true that the chef controlled a new principle.,33,403
+34,negation,The teacher tested the decision.,The teacher did not test the decision.,34,404
+34,question,The teacher tested the decision.,Did the teacher test the decision?,34,405
+34,past_to_future,The teacher tested the decision.,The teacher will test the decision.,34,406
+34,certainty_to_uncertainty,The teacher tested the decision.,The teacher may have tested the decision.,34,407
+34,active_to_passive,The teacher tested the decision.,The decision was tested by the teacher.,34,408
+34,formalization,The teacher tested the decision.,It is true that the teacher tested the decision.,34,409
+35,negation,The journalist solved the garden.,The journalist did not solve the garden.,35,410
+35,question,The journalist solved the garden.,Did the journalist solve the garden?,35,411
+35,past_to_future,The journalist solved the garden.,The journalist will solve the garden.,35,412
+35,certainty_to_uncertainty,The journalist solved the garden.,The journalist may have solved the garden.,35,413
+35,active_to_passive,The journalist solved the garden.,The garden was solved by the journalist.,35,414
+35,formalization,The journalist solved the garden.,It is true that the journalist solved the garden.,35,415
+36,negation,The pilot approved the family.,The pilot did not approve the family.,36,416
+36,question,The pilot approved the family.,Did the pilot approve the family?,36,417
+36,past_to_future,The pilot approved the family.,The pilot will approve the family.,36,418
+36,certainty_to_uncertainty,The pilot approved the family.,The pilot may have approved the family.,36,419
+36,active_to_passive,The pilot approved the family.,The family was approved by the pilot.,36,420
+36,formalization,The pilot approved the family.,It is true that the pilot approved the family.,36,421
+37,negation,The musician improved a short story.,The musician did not improve a short story.,37,422
+37,question,The musician improved a short story.,Did the musician improve a short story?,37,423
+37,past_to_future,The musician improved a short story.,The musician will improve a short story.,37,424
+37,certainty_to_uncertainty,The musician improved a short story.,The musician may have improved a short story.,37,425
+37,active_to_passive,The musician improved a short story.,A short story was improved by the musician.,37,426
+37,formalization,The musician improved a short story.,It is true that the musician improved a short story.,37,427
+38,negation,The doctor created a sad melody.,The doctor did not create a sad melody.,38,428
+38,question,The doctor created a sad melody.,Did the doctor create a sad melody?,38,429
+38,past_to_future,The doctor created a sad melody.,The doctor will create a sad melody.,38,430
+38,certainty_to_uncertainty,The doctor created a sad melody.,The doctor may have created a sad melody.,38,431
+38,active_to_passive,The doctor created a sad melody.,A sad melody was created by the doctor.,38,432
+38,formalization,The doctor created a sad melody.,It is true that the doctor created a sad melody.,38,433
+39,negation,The manager discovered the problem.,The manager did not discover the problem.,39,434
+39,question,The manager discovered the problem.,Did the manager discover the problem?,39,435
+39,past_to_future,The manager discovered the problem.,The manager will discover the problem.,39,436
+39,certainty_to_uncertainty,The manager discovered the problem.,The manager may have discovered the problem.,39,437
+39,active_to_passive,The manager discovered the problem.,The problem was discovered by the manager.,39,438
+39,formalization,The manager discovered the problem.,It is true that the manager discovered the problem.,39,439
+40,negation,The scientist prepared a black cat.,The scientist did not prepare a black cat.,40,440
+40,question,The scientist prepared a black cat.,Did the scientist prepare a black cat?,40,441
+40,past_to_future,The scientist prepared a black cat.,The scientist will prepare a black cat.,40,442
+40,certainty_to_uncertainty,The scientist prepared a black cat.,The scientist may have prepared a black cat.,40,443
+40,active_to_passive,The scientist prepared a black cat.,A black cat was prepared by the scientist.,40,444
+40,formalization,The scientist prepared a black cat.,It is true that the scientist prepared a black cat.,40,445
+41,negation,The writer improved the question.,The writer did not improve the question.,41,446
+41,question,The writer improved the question.,Did the writer improve the question?,41,447
+41,past_to_future,The writer improved the question.,The writer will improve the question.,41,448
+41,certainty_to_uncertainty,The writer improved the question.,The writer may have improved the question.,41,449
+41,active_to_passive,The writer improved the question.,The question was improved by the writer.,41,450
+41,formalization,The writer improved the question.,It is true that the writer improved the question.,41,451
+42,negation,The programmer designed a sad melody.,The programmer did not design a sad melody.,42,452
+42,question,The programmer designed a sad melody.,Did the programmer design a sad melody?,42,453
+42,past_to_future,The programmer designed a sad melody.,The programmer will design a sad melody.,42,454
+42,certainty_to_uncertainty,The programmer designed a sad melody.,The programmer may have designed a sad melody.,42,455
+42,active_to_passive,The programmer designed a sad melody.,A sad melody was designed by the programmer.,42,456
+42,formalization,The programmer designed a sad melody.,It is true that the programmer designed a sad melody.,42,457
+43,negation,The lawyer wrote the meal.,The lawyer did not write the meal.,43,458
+43,question,The lawyer wrote the meal.,Did the lawyer write the meal?,43,459
+43,past_to_future,The lawyer wrote the meal.,The lawyer will write the meal.,43,460
+43,certainty_to_uncertainty,The lawyer wrote the meal.,The lawyer may have wrote the meal.,43,461
+43,active_to_passive,The lawyer wrote the meal.,The meal was wrote by the lawyer.,43,462
+43,formalization,The lawyer wrote the meal.,It is true that the lawyer wrote the meal.,43,463
+44,negation,The researcher examined the client.,The researcher did not examine the client.,44,464
+44,question,The researcher examined the client.,Did the researcher examine the client?,44,465
+44,past_to_future,The researcher examined the client.,The researcher will examine the client.,44,466
+44,certainty_to_uncertainty,The researcher examined the client.,The researcher may have examined the client.,44,467
+44,active_to_passive,The researcher examined the client.,The client was examined by the researcher.,44,468
+44,formalization,The researcher examined the client.,It is true that the researcher examined the client.,44,469
+45,negation,The teacher improved a new principle.,The teacher did not improve a new principle.,45,470
+45,question,The teacher improved a new principle.,Did the teacher improve a new principle?,45,471
+45,past_to_future,The teacher improved a new principle.,The teacher will improve a new principle.,45,472
+45,certainty_to_uncertainty,The teacher improved a new principle.,The teacher may have improved a new principle.,45,473
+45,active_to_passive,The teacher improved a new principle.,A new principle was improved by the teacher.,45,474
+45,formalization,The teacher improved a new principle.,It is true that the teacher improved a new principle.,45,475
+46,negation,The lawyer approved the event.,The lawyer did not approve the event.,46,476
+46,question,The lawyer approved the event.,Did the lawyer approve the event?,46,477
+46,past_to_future,The lawyer approved the event.,The lawyer will approve the event.,46,478
+46,certainty_to_uncertainty,The lawyer approved the event.,The lawyer may have approved the event.,46,479
+46,active_to_passive,The lawyer approved the event.,The event was approved by the lawyer.,46,480
+46,formalization,The lawyer approved the event.,It is true that the lawyer approved the event.,46,481
+47,negation,The nurse analyzed the rule.,The nurse did not analyze the rule.,47,482
+47,question,The nurse analyzed the rule.,Did the nurse analyze the rule?,47,483
+47,past_to_future,The nurse analyzed the rule.,The nurse will analyze the rule.,47,484
+47,certainty_to_uncertainty,The nurse analyzed the rule.,The nurse may have analyzed the rule.,47,485
+47,active_to_passive,The nurse analyzed the rule.,The rule was analyzed by the nurse.,47,486
+47,formalization,The nurse analyzed the rule.,It is true that the nurse analyzed the rule.,47,487
+48,negation,The programmer approved the data.,The programmer did not approve the data.,48,488
+48,question,The programmer approved the data.,Did the programmer approve the data?,48,489
+48,past_to_future,The programmer approved the data.,The programmer will approve the data.,48,490
+48,certainty_to_uncertainty,The programmer approved the data.,The programmer may have approved the data.,48,491
+48,active_to_passive,The programmer approved the data.,The data was approved by the programmer.,48,492
+48,formalization,The programmer approved the data.,It is true that the programmer approved the data.,48,493
+49,negation,The researcher discovered the meal.,The researcher did not discover the meal.,49,494
+49,question,The researcher discovered the meal.,Did the researcher discover the meal?,49,495
+49,past_to_future,The researcher discovered the meal.,The researcher will discover the meal.,49,496
+49,certainty_to_uncertainty,The researcher discovered the meal.,The researcher may have discovered the meal.,49,497
+49,active_to_passive,The researcher discovered the meal.,The meal was discovered by the researcher.,49,498
+49,formalization,The researcher discovered the meal.,It is true that the researcher discovered the meal.,49,499
+50,negation,The engineer controlled the aircraft.,The engineer did not control the aircraft.,50,500
+50,question,The engineer controlled the aircraft.,Did the engineer control the aircraft?,50,501
+50,past_to_future,The engineer controlled the aircraft.,The engineer will control the aircraft.,50,502
+50,certainty_to_uncertainty,The engineer controlled the aircraft.,The engineer may have controlled the aircraft.,50,503
+50,active_to_passive,The engineer controlled the aircraft.,The aircraft was controlled by the engineer.,50,504
+50,formalization,The engineer controlled the aircraft.,It is true that the engineer controlled the aircraft.,50,505
+51,negation,The engineer helped the family.,The engineer did not help the family.,51,506
+51,question,The engineer helped the family.,Did the engineer help the family?,51,507
+51,past_to_future,The engineer helped the family.,The engineer will help the family.,51,508
+51,certainty_to_uncertainty,The engineer helped the family.,The engineer may have helped the family.,51,509
+51,active_to_passive,The engineer helped the family.,The family was helped by the engineer.,51,510
+51,formalization,The engineer helped the family.,It is true that the engineer helped the family.,51,511
+52,negation,The teacher studied the aircraft.,The teacher did not study the aircraft.,52,512
+52,question,The teacher studied the aircraft.,Did the teacher study the aircraft?,52,513
+52,past_to_future,The teacher studied the aircraft.,The teacher will study the aircraft.,52,514
+52,certainty_to_uncertainty,The teacher studied the aircraft.,The teacher may have studied the aircraft.,52,515
+52,active_to_passive,The teacher studied the aircraft.,The aircraft was studied by the teacher.,52,516
+52,formalization,The teacher studied the aircraft.,It is true that the teacher studied the aircraft.,52,517
+53,negation,The designer analyzed a beautiful painting.,The designer did not analyze a beautiful painting.,53,518
+53,question,The designer analyzed a beautiful painting.,Did the designer analyze a beautiful painting?,53,519
+53,past_to_future,The designer analyzed a beautiful painting.,The designer will analyze a beautiful painting.,53,520
+53,certainty_to_uncertainty,The designer analyzed a beautiful painting.,The designer may have analyzed a beautiful painting.,53,521
+53,active_to_passive,The designer analyzed a beautiful painting.,A beautiful painting was analyzed by the designer.,53,522
+53,formalization,The designer analyzed a beautiful painting.,It is true that the designer analyzed a beautiful painting.,53,523
+54,negation,The pilot designed a sad melody.,The pilot did not design a sad melody.,54,524
+54,question,The pilot designed a sad melody.,Did the pilot design a sad melody?,54,525
+54,past_to_future,The pilot designed a sad melody.,The pilot will design a sad melody.,54,526
+54,certainty_to_uncertainty,The pilot designed a sad melody.,The pilot may have designed a sad melody.,54,527
+54,active_to_passive,The pilot designed a sad melody.,A sad melody was designed by the pilot.,54,528
+54,formalization,The pilot designed a sad melody.,It is true that the pilot designed a sad melody.,54,529
+55,negation,The pilot analyzed the meal.,The pilot did not analyze the meal.,55,530
+55,question,The pilot analyzed the meal.,Did the pilot analyze the meal?,55,531
+55,past_to_future,The pilot analyzed the meal.,The pilot will analyze the meal.,55,532
+55,certainty_to_uncertainty,The pilot analyzed the meal.,The pilot may have analyzed the meal.,55,533
+55,active_to_passive,The pilot analyzed the meal.,The meal was analyzed by the pilot.,55,534
+55,formalization,The pilot analyzed the meal.,It is true that the pilot analyzed the meal.,55,535
+56,negation,The lawyer examined the garden.,The lawyer did not examine the garden.,56,536
+56,question,The lawyer examined the garden.,Did the lawyer examine the garden?,56,537
+56,past_to_future,The lawyer examined the garden.,The lawyer will examine the garden.,56,538
+56,certainty_to_uncertainty,The lawyer examined the garden.,The lawyer may have examined the garden.,56,539
+56,active_to_passive,The lawyer examined the garden.,The garden was examined by the lawyer.,56,540
+56,formalization,The lawyer examined the garden.,It is true that the lawyer examined the garden.,56,541
+57,negation,The lawyer approved the family.,The lawyer did not approve the family.,57,542
+57,question,The lawyer approved the family.,Did the lawyer approve the family?,57,543
+57,past_to_future,The lawyer approved the family.,The lawyer will approve the family.,57,544
+57,certainty_to_uncertainty,The lawyer approved the family.,The lawyer may have approved the family.,57,545
+57,active_to_passive,The lawyer approved the family.,The family was approved by the lawyer.,57,546
+57,formalization,The lawyer approved the family.,It is true that the lawyer approved the family.,57,547
+58,negation,The pilot examined a short story.,The pilot did not examine a short story.,58,548
+58,question,The pilot examined a short story.,Did the pilot examine a short story?,58,549
+58,past_to_future,The pilot examined a short story.,The pilot will examine a short story.,58,550
+58,certainty_to_uncertainty,The pilot examined a short story.,The pilot may have examined a short story.,58,551
+58,active_to_passive,The pilot examined a short story.,A short story was examined by the pilot.,58,552
+58,formalization,The pilot examined a short story.,It is true that the pilot examined a short story.,58,553
+59,negation,The analyst solved the event.,The analyst did not solve the event.,59,554
+59,question,The analyst solved the event.,Did the analyst solve the event?,59,555
+59,past_to_future,The analyst solved the event.,The analyst will solve the event.,59,556
+59,certainty_to_uncertainty,The analyst solved the event.,The analyst may have solved the event.,59,557
+59,active_to_passive,The analyst solved the event.,The event was solved by the analyst.,59,558
+59,formalization,The analyst solved the event.,It is true that the analyst solved the event.,59,559
+60,negation,The manager studied the system.,The manager did not study the system.,60,560
+60,question,The manager studied the system.,Did the manager study the system?,60,561
+60,past_to_future,The manager studied the system.,The manager will study the system.,60,562
+60,certainty_to_uncertainty,The manager studied the system.,The manager may have studied the system.,60,563
+60,active_to_passive,The manager studied the system.,The system was studied by the manager.,60,564
+60,formalization,The manager studied the system.,It is true that the manager studied the system.,60,565
+61,negation,The designer tested a complex machine.,The designer did not test a complex machine.,61,566
+61,question,The designer tested a complex machine.,Did the designer test a complex machine?,61,567
+61,past_to_future,The designer tested a complex machine.,The designer will test a complex machine.,61,568
+61,certainty_to_uncertainty,The designer tested a complex machine.,The designer may have tested a complex machine.,61,569
+61,active_to_passive,The designer tested a complex machine.,A complex machine was tested by the designer.,61,570
+61,formalization,The designer tested a complex machine.,It is true that the designer tested a complex machine.,61,571
+62,negation,The student analyzed a new principle.,The student did not analyze a new principle.,62,572
+62,question,The student analyzed a new principle.,Did the student analyze a new principle?,62,573
+62,past_to_future,The student analyzed a new principle.,The student will analyze a new principle.,62,574
+62,certainty_to_uncertainty,The student analyzed a new principle.,The student may have analyzed a new principle.,62,575
+62,active_to_passive,The student analyzed a new principle.,A new principle was analyzed by the student.,62,576
+62,formalization,The student analyzed a new principle.,It is true that the student analyzed a new principle.,62,577
+63,negation,The writer explained the data.,The writer did not explain the data.,63,578
+63,question,The writer explained the data.,Did the writer explain the data?,63,579
+63,past_to_future,The writer explained the data.,The writer will explain the data.,63,580
+63,certainty_to_uncertainty,The writer explained the data.,The writer may have explained the data.,63,581
+63,active_to_passive,The writer explained the data.,The data was explained by the writer.,63,582
+63,formalization,The writer explained the data.,It is true that the writer explained the data.,63,583
+64,negation,The student discovered the garden.,The student did not discover the garden.,64,584
+64,question,The student discovered the garden.,Did the student discover the garden?,64,585
+64,past_to_future,The student discovered the garden.,The student will discover the garden.,64,586
+64,certainty_to_uncertainty,The student discovered the garden.,The student may have discovered the garden.,64,587
+64,active_to_passive,The student discovered the garden.,The garden was discovered by the student.,64,588
+64,formalization,The student discovered the garden.,It is true that the student discovered the garden.,64,589
+65,negation,The journalist wrote the data.,The journalist did not write the data.,65,590
+65,question,The journalist wrote the data.,Did the journalist write the data?,65,591
+65,past_to_future,The journalist wrote the data.,The journalist will write the data.,65,592
+65,certainty_to_uncertainty,The journalist wrote the data.,The journalist may have wrote the data.,65,593
+65,active_to_passive,The journalist wrote the data.,The data was wrote by the journalist.,65,594
+65,formalization,The journalist wrote the data.,It is true that the journalist wrote the data.,65,595
+66,negation,The journalist reported the family.,The journalist did not report the family.,66,596
+66,question,The journalist reported the family.,Did the journalist report the family?,66,597
+66,past_to_future,The journalist reported the family.,The journalist will report the family.,66,598
+66,certainty_to_uncertainty,The journalist reported the family.,The journalist may have reported the family.,66,599
+66,active_to_passive,The journalist reported the family.,The family was reported by the journalist.,66,600
+66,formalization,The journalist reported the family.,It is true that the journalist reported the family.,66,601
+67,negation,The pilot examined a new principle.,The pilot did not examine a new principle.,67,602
+67,question,The pilot examined a new principle.,Did the pilot examine a new principle?,67,603
+67,past_to_future,The pilot examined a new principle.,The pilot will examine a new principle.,67,604
+67,certainty_to_uncertainty,The pilot examined a new principle.,The pilot may have examined a new principle.,67,605
+67,active_to_passive,The pilot examined a new principle.,A new principle was examined by the pilot.,67,606
+67,formalization,The pilot examined a new principle.,It is true that the pilot examined a new principle.,67,607
+68,negation,The doctor controlled the garden.,The doctor did not control the garden.,68,608
+68,question,The doctor controlled the garden.,Did the doctor control the garden?,68,609
+68,past_to_future,The doctor controlled the garden.,The doctor will control the garden.,68,610
+68,certainty_to_uncertainty,The doctor controlled the garden.,The doctor may have controlled the garden.,68,611
+68,active_to_passive,The doctor controlled the garden.,The garden was controlled by the doctor.,68,612
+68,formalization,The doctor controlled the garden.,It is true that the doctor controlled the garden.,68,613
+69,negation,The lawyer discovered the system.,The lawyer did not discover the system.,69,614
+69,question,The lawyer discovered the system.,Did the lawyer discover the system?,69,615
+69,past_to_future,The lawyer discovered the system.,The lawyer will discover the system.,69,616
+69,certainty_to_uncertainty,The lawyer discovered the system.,The lawyer may have discovered the system.,69,617
+69,active_to_passive,The lawyer discovered the system.,The system was discovered by the lawyer.,69,618
+69,formalization,The lawyer discovered the system.,It is true that the lawyer discovered the system.,69,619
+70,negation,The engineer reported a beautiful painting.,The engineer did not report a beautiful painting.,70,620
+70,question,The engineer reported a beautiful painting.,Did the engineer report a beautiful painting?,70,621
+70,past_to_future,The engineer reported a beautiful painting.,The engineer will report a beautiful painting.,70,622
+70,certainty_to_uncertainty,The engineer reported a beautiful painting.,The engineer may have reported a beautiful painting.,70,623
+70,active_to_passive,The engineer reported a beautiful painting.,A beautiful painting was reported by the engineer.,70,624
+70,formalization,The engineer reported a beautiful painting.,It is true that the engineer reported a beautiful painting.,70,625
+71,negation,The writer reported the data.,The writer did not report the data.,71,626
+71,question,The writer reported the data.,Did the writer report the data?,71,627
+71,past_to_future,The writer reported the data.,The writer will report the data.,71,628
+71,certainty_to_uncertainty,The writer reported the data.,The writer may have reported the data.,71,629
+71,active_to_passive,The writer reported the data.,The data was reported by the writer.,71,630
+71,formalization,The writer reported the data.,It is true that the writer reported the data.,71,631
+72,negation,The researcher explained the question.,The researcher did not explain the question.,72,632
+72,question,The researcher explained the question.,Did the researcher explain the question?,72,633
+72,past_to_future,The researcher explained the question.,The researcher will explain the question.,72,634
+72,certainty_to_uncertainty,The researcher explained the question.,The researcher may have explained the question.,72,635
+72,active_to_passive,The researcher explained the question.,The question was explained by the researcher.,72,636
+72,formalization,The researcher explained the question.,It is true that the researcher explained the question.,72,637
+73,negation,The nurse played a new principle.,The nurse did not play a new principle.,73,638
+73,question,The nurse played a new principle.,Did the nurse play a new principle?,73,639
+73,past_to_future,The nurse played a new principle.,The nurse will play a new principle.,73,640
+73,certainty_to_uncertainty,The nurse played a new principle.,The nurse may have played a new principle.,73,641
+73,active_to_passive,The nurse played a new principle.,A new principle was played by the nurse.,73,642
+73,formalization,The nurse played a new principle.,It is true that the nurse played a new principle.,73,643
+74,negation,The engineer discovered the event.,The engineer did not discover the event.,74,644
+74,question,The engineer discovered the event.,Did the engineer discover the event?,74,645
+74,past_to_future,The engineer discovered the event.,The engineer will discover the event.,74,646
+74,certainty_to_uncertainty,The engineer discovered the event.,The engineer may have discovered the event.,74,647
+74,active_to_passive,The engineer discovered the event.,The event was discovered by the engineer.,74,648
+74,formalization,The engineer discovered the event.,It is true that the engineer discovered the event.,74,649
+75,negation,The analyst controlled a beautiful painting.,The analyst did not control a beautiful painting.,75,650
+75,question,The analyst controlled a beautiful painting.,Did the analyst control a beautiful painting?,75,651
+75,past_to_future,The analyst controlled a beautiful painting.,The analyst will control a beautiful painting.,75,652
+75,certainty_to_uncertainty,The analyst controlled a beautiful painting.,The analyst may have controlled a beautiful painting.,75,653
+75,active_to_passive,The analyst controlled a beautiful painting.,A beautiful painting was controlled by the analyst.,75,654
+75,formalization,The analyst controlled a beautiful painting.,It is true that the analyst controlled a beautiful painting.,75,655
+76,negation,The chef grew the meal.,The chef did not grow the meal.,76,656
+76,question,The chef grew the meal.,Did the chef grow the meal?,76,657
+76,past_to_future,The chef grew the meal.,The chef will grow the meal.,76,658
+76,certainty_to_uncertainty,The chef grew the meal.,The chef may have grew the meal.,76,659
+76,active_to_passive,The chef grew the meal.,The meal was grew by the chef.,76,660
+76,formalization,The chef grew the meal.,It is true that the chef grew the meal.,76,661
+77,negation,The doctor studied the garden.,The doctor did not study the garden.,77,662
+77,question,The doctor studied the garden.,Did the doctor study the garden?,77,663
+77,past_to_future,The doctor studied the garden.,The doctor will study the garden.,77,664
+77,certainty_to_uncertainty,The doctor studied the garden.,The doctor may have studied the garden.,77,665
+77,active_to_passive,The doctor studied the garden.,The garden was studied by the doctor.,77,666
+77,formalization,The doctor studied the garden.,It is true that the doctor studied the garden.,77,667
+78,negation,The engineer explained the event.,The engineer did not explain the event.,78,668
+78,question,The engineer explained the event.,Did the engineer explain the event?,78,669
+78,past_to_future,The engineer explained the event.,The engineer will explain the event.,78,670
+78,certainty_to_uncertainty,The engineer explained the event.,The engineer may have explained the event.,78,671
+78,active_to_passive,The engineer explained the event.,The event was explained by the engineer.,78,672
+78,formalization,The engineer explained the event.,It is true that the engineer explained the event.,78,673
+79,negation,The teacher grew the patient.,The teacher did not grow the patient.,79,674
+79,question,The teacher grew the patient.,Did the teacher grow the patient?,79,675
+79,past_to_future,The teacher grew the patient.,The teacher will grow the patient.,79,676
+79,certainty_to_uncertainty,The teacher grew the patient.,The teacher may have grew the patient.,79,677
+79,active_to_passive,The teacher grew the patient.,The patient was grew by the teacher.,79,678
+79,formalization,The teacher grew the patient.,It is true that the teacher grew the patient.,79,679
+80,negation,The artist played a new principle.,The artist did not play a new principle.,80,680
+80,question,The artist played a new principle.,Did the artist play a new principle?,80,681
+80,past_to_future,The artist played a new principle.,The artist will play a new principle.,80,682
+80,certainty_to_uncertainty,The artist played a new principle.,The artist may have played a new principle.,80,683
+80,active_to_passive,The artist played a new principle.,A new principle was played by the artist.,80,684
+80,formalization,The artist played a new principle.,It is true that the artist played a new principle.,80,685
+81,negation,The designer created a new principle.,The designer did not create a new principle.,81,686
+81,question,The designer created a new principle.,Did the designer create a new principle?,81,687
+81,past_to_future,The designer created a new principle.,The designer will create a new principle.,81,688
+81,certainty_to_uncertainty,The designer created a new principle.,The designer may have created a new principle.,81,689
+81,active_to_passive,The designer created a new principle.,A new principle was created by the designer.,81,690
+81,formalization,The designer created a new principle.,It is true that the designer created a new principle.,81,691
+82,negation,The doctor solved a new principle.,The doctor did not solve a new principle.,82,692
+82,question,The doctor solved a new principle.,Did the doctor solve a new principle?,82,693
+82,past_to_future,The doctor solved a new principle.,The doctor will solve a new principle.,82,694
+82,certainty_to_uncertainty,The doctor solved a new principle.,The doctor may have solved a new principle.,82,695
+82,active_to_passive,The doctor solved a new principle.,A new principle was solved by the doctor.,82,696
+82,formalization,The doctor solved a new principle.,It is true that the doctor solved a new principle.,82,697
+83,negation,The journalist discovered the event.,The journalist did not discover the event.,83,698
+83,question,The journalist discovered the event.,Did the journalist discover the event?,83,699
+83,past_to_future,The journalist discovered the event.,The journalist will discover the event.,83,700
+83,certainty_to_uncertainty,The journalist discovered the event.,The journalist may have discovered the event.,83,701
+83,active_to_passive,The journalist discovered the event.,The event was discovered by the journalist.,83,702
+83,formalization,The journalist discovered the event.,It is true that the journalist discovered the event.,83,703
+84,negation,The pilot tested a new principle.,The pilot did not test a new principle.,84,704
+84,question,The pilot tested a new principle.,Did the pilot test a new principle?,84,705
+84,past_to_future,The pilot tested a new principle.,The pilot will test a new principle.,84,706
+84,certainty_to_uncertainty,The pilot tested a new principle.,The pilot may have tested a new principle.,84,707
+84,active_to_passive,The pilot tested a new principle.,A new principle was tested by the pilot.,84,708
+84,formalization,The pilot tested a new principle.,It is true that the pilot tested a new principle.,84,709
+85,negation,The child analyzed a short story.,The child did not analyze a short story.,85,710
+85,question,The child analyzed a short story.,Did the child analyze a short story?,85,711
+85,past_to_future,The child analyzed a short story.,The child will analyze a short story.,85,712
+85,certainty_to_uncertainty,The child analyzed a short story.,The child may have analyzed a short story.,85,713
+85,active_to_passive,The child analyzed a short story.,A short story was analyzed by the child.,85,714
+85,formalization,The child analyzed a short story.,It is true that the child analyzed a short story.,85,715
+86,negation,The lawyer helped the garden.,The lawyer did not help the garden.,86,716
+86,question,The lawyer helped the garden.,Did the lawyer help the garden?,86,717
+86,past_to_future,The lawyer helped the garden.,The lawyer will help the garden.,86,718
+86,certainty_to_uncertainty,The lawyer helped the garden.,The lawyer may have helped the garden.,86,719
+86,active_to_passive,The lawyer helped the garden.,The garden was helped by the lawyer.,86,720
+86,formalization,The lawyer helped the garden.,It is true that the lawyer helped the garden.,86,721
+87,negation,The manager improved a sad melody.,The manager did not improve a sad melody.,87,722
+87,question,The manager improved a sad melody.,Did the manager improve a sad melody?,87,723
+87,past_to_future,The manager improved a sad melody.,The manager will improve a sad melody.,87,724
+87,certainty_to_uncertainty,The manager improved a sad melody.,The manager may have improved a sad melody.,87,725
+87,active_to_passive,The manager improved a sad melody.,A sad melody was improved by the manager.,87,726
+87,formalization,The manager improved a sad melody.,It is true that the manager improved a sad melody.,87,727
+88,negation,The farmer designed the system.,The farmer did not design the system.,88,728
+88,question,The farmer designed the system.,Did the farmer design the system?,88,729
+88,past_to_future,The farmer designed the system.,The farmer will design the system.,88,730
+88,certainty_to_uncertainty,The farmer designed the system.,The farmer may have designed the system.,88,731
+88,active_to_passive,The farmer designed the system.,The system was designed by the farmer.,88,732
+88,formalization,The farmer designed the system.,It is true that the farmer designed the system.,88,733
+89,negation,The programmer found a beautiful painting.,The programmer did not find a beautiful painting.,89,734
+89,question,The programmer found a beautiful painting.,Did the programmer find a beautiful painting?,89,735
+89,past_to_future,The programmer found a beautiful painting.,The programmer will find a beautiful painting.,89,736
+89,certainty_to_uncertainty,The programmer found a beautiful painting.,The programmer may have found a beautiful painting.,89,737
+89,active_to_passive,The programmer found a beautiful painting.,A beautiful painting was found by the programmer.,89,738
+89,formalization,The programmer found a beautiful painting.,It is true that the programmer found a beautiful painting.,89,739
+90,negation,The farmer reported the decision.,The farmer did not report the decision.,90,740
+90,question,The farmer reported the decision.,Did the farmer report the decision?,90,741
+90,past_to_future,The farmer reported the decision.,The farmer will report the decision.,90,742
+90,certainty_to_uncertainty,The farmer reported the decision.,The farmer may have reported the decision.,90,743
+90,active_to_passive,The farmer reported the decision.,The decision was reported by the farmer.,90,744
+90,formalization,The farmer reported the decision.,It is true that the farmer reported the decision.,90,745
+91,negation,The programmer tested a complex machine.,The programmer did not test a complex machine.,91,746
+91,question,The programmer tested a complex machine.,Did the programmer test a complex machine?,91,747
+91,past_to_future,The programmer tested a complex machine.,The programmer will test a complex machine.,91,748
+91,certainty_to_uncertainty,The programmer tested a complex machine.,The programmer may have tested a complex machine.,91,749
+91,active_to_passive,The programmer tested a complex machine.,A complex machine was tested by the programmer.,91,750
+91,formalization,The programmer tested a complex machine.,It is true that the programmer tested a complex machine.,91,751
+92,negation,The lawyer approved the patient.,The lawyer did not approve the patient.,92,752
+92,question,The lawyer approved the patient.,Did the lawyer approve the patient?,92,753
+92,past_to_future,The lawyer approved the patient.,The lawyer will approve the patient.,92,754
+92,certainty_to_uncertainty,The lawyer approved the patient.,The lawyer may have approved the patient.,92,755
+92,active_to_passive,The lawyer approved the patient.,The patient was approved by the lawyer.,92,756
+92,formalization,The lawyer approved the patient.,It is true that the lawyer approved the patient.,92,757
+93,negation,The pilot reported the system.,The pilot did not report the system.,93,758
+93,question,The pilot reported the system.,Did the pilot report the system?,93,759
+93,past_to_future,The pilot reported the system.,The pilot will report the system.,93,760
+93,certainty_to_uncertainty,The pilot reported the system.,The pilot may have reported the system.,93,761
+93,active_to_passive,The pilot reported the system.,The system was reported by the pilot.,93,762
+93,formalization,The pilot reported the system.,It is true that the pilot reported the system.,93,763
+94,negation,The farmer improved the system.,The farmer did not improve the system.,94,764
+94,question,The farmer improved the system.,Did the farmer improve the system?,94,765
+94,past_to_future,The farmer improved the system.,The farmer will improve the system.,94,766
+94,certainty_to_uncertainty,The farmer improved the system.,The farmer may have improved the system.,94,767
+94,active_to_passive,The farmer improved the system.,The system was improved by the farmer.,94,768
+94,formalization,The farmer improved the system.,It is true that the farmer improved the system.,94,769
+95,negation,The chef analyzed the family.,The chef did not analyze the family.,95,770
+95,question,The chef analyzed the family.,Did the chef analyze the family?,95,771
+95,past_to_future,The chef analyzed the family.,The chef will analyze the family.,95,772
+95,certainty_to_uncertainty,The chef analyzed the family.,The chef may have analyzed the family.,95,773
+95,active_to_passive,The chef analyzed the family.,The family was analyzed by the chef.,95,774
+95,formalization,The chef analyzed the family.,It is true that the chef analyzed the family.,95,775
+96,negation,The doctor examined a sad melody.,The doctor did not examine a sad melody.,96,776
+96,question,The doctor examined a sad melody.,Did the doctor examine a sad melody?,96,777
+96,past_to_future,The doctor examined a sad melody.,The doctor will examine a sad melody.,96,778
+96,certainty_to_uncertainty,The doctor examined a sad melody.,The doctor may have examined a sad melody.,96,779
+96,active_to_passive,The doctor examined a sad melody.,A sad melody was examined by the doctor.,96,780
+96,formalization,The doctor examined a sad melody.,It is true that the doctor examined a sad melody.,96,781
+97,negation,The artist explained a new principle.,The artist did not explain a new principle.,97,782
+97,question,The artist explained a new principle.,Did the artist explain a new principle?,97,783
+97,past_to_future,The artist explained a new principle.,The artist will explain a new principle.,97,784
+97,certainty_to_uncertainty,The artist explained a new principle.,The artist may have explained a new principle.,97,785
+97,active_to_passive,The artist explained a new principle.,A new principle was explained by the artist.,97,786
+97,formalization,The artist explained a new principle.,It is true that the artist explained a new principle.,97,787
+98,negation,The musician prepared the meal.,The musician did not prepare the meal.,98,788
+98,question,The musician prepared the meal.,Did the musician prepare the meal?,98,789
+98,past_to_future,The musician prepared the meal.,The musician will prepare the meal.,98,790
+98,certainty_to_uncertainty,The musician prepared the meal.,The musician may have prepared the meal.,98,791
+98,active_to_passive,The musician prepared the meal.,The meal was prepared by the musician.,98,792
+98,formalization,The musician prepared the meal.,It is true that the musician prepared the meal.,98,793
+99,negation,The farmer designed the event.,The farmer did not design the event.,99,794
+99,question,The farmer designed the event.,Did the farmer design the event?,99,795
+99,past_to_future,The farmer designed the event.,The farmer will design the event.,99,796
+99,certainty_to_uncertainty,The farmer designed the event.,The farmer may have designed the event.,99,797
+99,active_to_passive,The farmer designed the event.,The event was designed by the farmer.,99,798
+99,formalization,The farmer designed the event.,It is true that the farmer designed the event.,99,799
+100,negation,The child grew the garden.,The child did not grow the garden.,100,800
+100,question,The child grew the garden.,Did the child grow the garden?,100,801
+100,past_to_future,The child grew the garden.,The child will grow the garden.,100,802
+100,certainty_to_uncertainty,The child grew the garden.,The child may have grew the garden.,100,803
+100,active_to_passive,The child grew the garden.,The garden was grew by the child.,100,804
+100,formalization,The child grew the garden.,It is true that the child grew the garden.,100,805
+101,negation,The researcher prepared the client.,The researcher did not prepare the client.,101,806
+101,question,The researcher prepared the client.,Did the researcher prepare the client?,101,807
+101,past_to_future,The researcher prepared the client.,The researcher will prepare the client.,101,808
+101,certainty_to_uncertainty,The researcher prepared the client.,The researcher may have prepared the client.,101,809
+101,active_to_passive,The researcher prepared the client.,The client was prepared by the researcher.,101,810
+101,formalization,The researcher prepared the client.,It is true that the researcher prepared the client.,101,811
+102,negation,The designer grew the question.,The designer did not grow the question.,102,812
+102,question,The designer grew the question.,Did the designer grow the question?,102,813
+102,past_to_future,The designer grew the question.,The designer will grow the question.,102,814
+102,certainty_to_uncertainty,The designer grew the question.,The designer may have grew the question.,102,815
+102,active_to_passive,The designer grew the question.,The question was grew by the designer.,102,816
+102,formalization,The designer grew the question.,It is true that the designer grew the question.,102,817
+103,negation,The journalist discovered the problem.,The journalist did not discover the problem.,103,818
+103,question,The journalist discovered the problem.,Did the journalist discover the problem?,103,819
+103,past_to_future,The journalist discovered the problem.,The journalist will discover the problem.,103,820
+103,certainty_to_uncertainty,The journalist discovered the problem.,The journalist may have discovered the problem.,103,821
+103,active_to_passive,The journalist discovered the problem.,The problem was discovered by the journalist.,103,822
+103,formalization,The journalist discovered the problem.,It is true that the journalist discovered the problem.,103,823
+104,negation,The researcher reported a new principle.,The researcher did not report a new principle.,104,824
+104,question,The researcher reported a new principle.,Did the researcher report a new principle?,104,825
+104,past_to_future,The researcher reported a new principle.,The researcher will report a new principle.,104,826
+104,certainty_to_uncertainty,The researcher reported a new principle.,The researcher may have reported a new principle.,104,827
+104,active_to_passive,The researcher reported a new principle.,A new principle was reported by the researcher.,104,828
+104,formalization,The researcher reported a new principle.,It is true that the researcher reported a new principle.,104,829
+105,negation,The student found the data.,The student did not find the data.,105,830
+105,question,The student found the data.,Did the student find the data?,105,831
+105,past_to_future,The student found the data.,The student will find the data.,105,832
+105,certainty_to_uncertainty,The student found the data.,The student may have found the data.,105,833
+105,active_to_passive,The student found the data.,The data was found by the student.,105,834
+105,formalization,The student found the data.,It is true that the student found the data.,105,835
+106,negation,The scientist wrote the data.,The scientist did not write the data.,106,836
+106,question,The scientist wrote the data.,Did the scientist write the data?,106,837
+106,past_to_future,The scientist wrote the data.,The scientist will write the data.,106,838
+106,certainty_to_uncertainty,The scientist wrote the data.,The scientist may have wrote the data.,106,839
+106,active_to_passive,The scientist wrote the data.,The data was wrote by the scientist.,106,840
+106,formalization,The scientist wrote the data.,It is true that the scientist wrote the data.,106,841
+107,negation,The researcher explained the event.,The researcher did not explain the event.,107,842
+107,question,The researcher explained the event.,Did the researcher explain the event?,107,843
+107,past_to_future,The researcher explained the event.,The researcher will explain the event.,107,844
+107,certainty_to_uncertainty,The researcher explained the event.,The researcher may have explained the event.,107,845
+107,active_to_passive,The researcher explained the event.,The event was explained by the researcher.,107,846
+107,formalization,The researcher explained the event.,It is true that the researcher explained the event.,107,847
+108,negation,The programmer explained the client.,The programmer did not explain the client.,108,848
+108,question,The programmer explained the client.,Did the programmer explain the client?,108,849
+108,past_to_future,The programmer explained the client.,The programmer will explain the client.,108,850
+108,certainty_to_uncertainty,The programmer explained the client.,The programmer may have explained the client.,108,851
+108,active_to_passive,The programmer explained the client.,The client was explained by the programmer.,108,852
+108,formalization,The programmer explained the client.,It is true that the programmer explained the client.,108,853
+109,negation,The scientist reported a complex machine.,The scientist did not report a complex machine.,109,854
+109,question,The scientist reported a complex machine.,Did the scientist report a complex machine?,109,855
+109,past_to_future,The scientist reported a complex machine.,The scientist will report a complex machine.,109,856
+109,certainty_to_uncertainty,The scientist reported a complex machine.,The scientist may have reported a complex machine.,109,857
+109,active_to_passive,The scientist reported a complex machine.,A complex machine was reported by the scientist.,109,858
+109,formalization,The scientist reported a complex machine.,It is true that the scientist reported a complex machine.,109,859
+110,negation,The researcher reported the garden.,The researcher did not report the garden.,110,860
+110,question,The researcher reported the garden.,Did the researcher report the garden?,110,861
+110,past_to_future,The researcher reported the garden.,The researcher will report the garden.,110,862
+110,certainty_to_uncertainty,The researcher reported the garden.,The researcher may have reported the garden.,110,863
+110,active_to_passive,The researcher reported the garden.,The garden was reported by the researcher.,110,864
+110,formalization,The researcher reported the garden.,It is true that the researcher reported the garden.,110,865
+111,negation,The student discovered the decision.,The student did not discover the decision.,111,866
+111,question,The student discovered the decision.,Did the student discover the decision?,111,867
+111,past_to_future,The student discovered the decision.,The student will discover the decision.,111,868
+111,certainty_to_uncertainty,The student discovered the decision.,The student may have discovered the decision.,111,869
+111,active_to_passive,The student discovered the decision.,The decision was discovered by the student.,111,870
+111,formalization,The student discovered the decision.,It is true that the student discovered the decision.,111,871
+112,negation,The musician explained the data.,The musician did not explain the data.,112,872
+112,question,The musician explained the data.,Did the musician explain the data?,112,873
+112,past_to_future,The musician explained the data.,The musician will explain the data.,112,874
+112,certainty_to_uncertainty,The musician explained the data.,The musician may have explained the data.,112,875
+112,active_to_passive,The musician explained the data.,The data was explained by the musician.,112,876
+112,formalization,The musician explained the data.,It is true that the musician explained the data.,112,877
+113,negation,The scientist reported the garden.,The scientist did not report the garden.,113,878
+113,question,The scientist reported the garden.,Did the scientist report the garden?,113,879
+113,past_to_future,The scientist reported the garden.,The scientist will report the garden.,113,880
+113,certainty_to_uncertainty,The scientist reported the garden.,The scientist may have reported the garden.,113,881
+113,active_to_passive,The scientist reported the garden.,The garden was reported by the scientist.,113,882
+113,formalization,The scientist reported the garden.,It is true that the scientist reported the garden.,113,883
+114,negation,The child tested the system.,The child did not test the system.,114,884
+114,question,The child tested the system.,Did the child test the system?,114,885
+114,past_to_future,The child tested the system.,The child will test the system.,114,886
+114,certainty_to_uncertainty,The child tested the system.,The child may have tested the system.,114,887
+114,active_to_passive,The child tested the system.,The system was tested by the child.,114,888
+114,formalization,The child tested the system.,It is true that the child tested the system.,114,889
+115,negation,The musician analyzed the interface.,The musician did not analyze the interface.,115,890
+115,question,The musician analyzed the interface.,Did the musician analyze the interface?,115,891
+115,past_to_future,The musician analyzed the interface.,The musician will analyze the interface.,115,892
+115,certainty_to_uncertainty,The musician analyzed the interface.,The musician may have analyzed the interface.,115,893
+115,active_to_passive,The musician analyzed the interface.,The interface was analyzed by the musician.,115,894
+115,formalization,The musician analyzed the interface.,It is true that the musician analyzed the interface.,115,895
+116,negation,The musician created a beautiful painting.,The musician did not create a beautiful painting.,116,896
+116,question,The musician created a beautiful painting.,Did the musician create a beautiful painting?,116,897
+116,past_to_future,The musician created a beautiful painting.,The musician will create a beautiful painting.,116,898
+116,certainty_to_uncertainty,The musician created a beautiful painting.,The musician may have created a beautiful painting.,116,899
+116,active_to_passive,The musician created a beautiful painting.,A beautiful painting was created by the musician.,116,900
+116,formalization,The musician created a beautiful painting.,It is true that the musician created a beautiful painting.,116,901
+117,negation,The teacher controlled the garden.,The teacher did not control the garden.,117,902
+117,question,The teacher controlled the garden.,Did the teacher control the garden?,117,903
+117,past_to_future,The teacher controlled the garden.,The teacher will control the garden.,117,904
+117,certainty_to_uncertainty,The teacher controlled the garden.,The teacher may have controlled the garden.,117,905
+117,active_to_passive,The teacher controlled the garden.,The garden was controlled by the teacher.,117,906
+117,formalization,The teacher controlled the garden.,It is true that the teacher controlled the garden.,117,907
+118,negation,The pilot solved the problem.,The pilot did not solve the problem.,118,908
+118,question,The pilot solved the problem.,Did the pilot solve the problem?,118,909
+118,past_to_future,The pilot solved the problem.,The pilot will solve the problem.,118,910
+118,certainty_to_uncertainty,The pilot solved the problem.,The pilot may have solved the problem.,118,911
+118,active_to_passive,The pilot solved the problem.,The problem was solved by the pilot.,118,912
+118,formalization,The pilot solved the problem.,It is true that the pilot solved the problem.,118,913
+119,negation,The journalist solved the rule.,The journalist did not solve the rule.,119,914
+119,question,The journalist solved the rule.,Did the journalist solve the rule?,119,915
+119,past_to_future,The journalist solved the rule.,The journalist will solve the rule.,119,916
+119,certainty_to_uncertainty,The journalist solved the rule.,The journalist may have solved the rule.,119,917
+119,active_to_passive,The journalist solved the rule.,The rule was solved by the journalist.,119,918
+119,formalization,The journalist solved the rule.,It is true that the journalist solved the rule.,119,919
+120,negation,The scientist played a short story.,The scientist did not play a short story.,120,920
+120,question,The scientist played a short story.,Did the scientist play a short story?,120,921
+120,past_to_future,The scientist played a short story.,The scientist will play a short story.,120,922
+120,certainty_to_uncertainty,The scientist played a short story.,The scientist may have played a short story.,120,923
+120,active_to_passive,The scientist played a short story.,A short story was played by the scientist.,120,924
+120,formalization,The scientist played a short story.,It is true that the scientist played a short story.,120,925
+121,negation,The designer analyzed the problem.,The designer did not analyze the problem.,121,926
+121,question,The designer analyzed the problem.,Did the designer analyze the problem?,121,927
+121,past_to_future,The designer analyzed the problem.,The designer will analyze the problem.,121,928
+121,certainty_to_uncertainty,The designer analyzed the problem.,The designer may have analyzed the problem.,121,929
+121,active_to_passive,The designer analyzed the problem.,The problem was analyzed by the designer.,121,930
+121,formalization,The designer analyzed the problem.,It is true that the designer analyzed the problem.,121,931
+122,negation,The manager studied the data.,The manager did not study the data.,122,932
+122,question,The manager studied the data.,Did the manager study the data?,122,933
+122,past_to_future,The manager studied the data.,The manager will study the data.,122,934
+122,certainty_to_uncertainty,The manager studied the data.,The manager may have studied the data.,122,935
+122,active_to_passive,The manager studied the data.,The data was studied by the manager.,122,936
+122,formalization,The manager studied the data.,It is true that the manager studied the data.,122,937
+123,negation,The writer wrote a complex machine.,The writer did not write a complex machine.,123,938
+123,question,The writer wrote a complex machine.,Did the writer write a complex machine?,123,939
+123,past_to_future,The writer wrote a complex machine.,The writer will write a complex machine.,123,940
+123,certainty_to_uncertainty,The writer wrote a complex machine.,The writer may have wrote a complex machine.,123,941
+123,active_to_passive,The writer wrote a complex machine.,A complex machine was wrote by the writer.,123,942
+123,formalization,The writer wrote a complex machine.,It is true that the writer wrote a complex machine.,123,943
+124,negation,The scientist tested a black cat.,The scientist did not test a black cat.,124,944
+124,question,The scientist tested a black cat.,Did the scientist test a black cat?,124,945
+124,past_to_future,The scientist tested a black cat.,The scientist will test a black cat.,124,946
+124,certainty_to_uncertainty,The scientist tested a black cat.,The scientist may have tested a black cat.,124,947
+124,active_to_passive,The scientist tested a black cat.,A black cat was tested by the scientist.,124,948
+124,formalization,The scientist tested a black cat.,It is true that the scientist tested a black cat.,124,949
+125,negation,The chef defended the question.,The chef did not defend the question.,125,950
+125,question,The chef defended the question.,Did the chef defend the question?,125,951
+125,past_to_future,The chef defended the question.,The chef will defend the question.,125,952
+125,certainty_to_uncertainty,The chef defended the question.,The chef may have defended the question.,125,953
+125,active_to_passive,The chef defended the question.,The question was defended by the chef.,125,954
+125,formalization,The chef defended the question.,It is true that the chef defended the question.,125,955
+126,negation,The student helped the data.,The student did not help the data.,126,956
+126,question,The student helped the data.,Did the student help the data?,126,957
+126,past_to_future,The student helped the data.,The student will help the data.,126,958
+126,certainty_to_uncertainty,The student helped the data.,The student may have helped the data.,126,959
+126,active_to_passive,The student helped the data.,The data was helped by the student.,126,960
+126,formalization,The student helped the data.,It is true that the student helped the data.,126,961
+127,negation,The teacher solved the meal.,The teacher did not solve the meal.,127,962
+127,question,The teacher solved the meal.,Did the teacher solve the meal?,127,963
+127,past_to_future,The teacher solved the meal.,The teacher will solve the meal.,127,964
+127,certainty_to_uncertainty,The teacher solved the meal.,The teacher may have solved the meal.,127,965
+127,active_to_passive,The teacher solved the meal.,The meal was solved by the teacher.,127,966
+127,formalization,The teacher solved the meal.,It is true that the teacher solved the meal.,127,967
+128,negation,The writer solved the rule.,The writer did not solve the rule.,128,968
+128,question,The writer solved the rule.,Did the writer solve the rule?,128,969
+128,past_to_future,The writer solved the rule.,The writer will solve the rule.,128,970
+128,certainty_to_uncertainty,The writer solved the rule.,The writer may have solved the rule.,128,971
+128,active_to_passive,The writer solved the rule.,The rule was solved by the writer.,128,972
+128,formalization,The writer solved the rule.,It is true that the writer solved the rule.,128,973
+129,negation,The writer found the data.,The writer did not find the data.,129,974
+129,question,The writer found the data.,Did the writer find the data?,129,975
+129,past_to_future,The writer found the data.,The writer will find the data.,129,976
+129,certainty_to_uncertainty,The writer found the data.,The writer may have found the data.,129,977
+129,active_to_passive,The writer found the data.,The data was found by the writer.,129,978
+129,formalization,The writer found the data.,It is true that the writer found the data.,129,979
+130,negation,The chef studied a short story.,The chef did not study a short story.,130,980
+130,question,The chef studied a short story.,Did the chef study a short story?,130,981
+130,past_to_future,The chef studied a short story.,The chef will study a short story.,130,982
+130,certainty_to_uncertainty,The chef studied a short story.,The chef may have studied a short story.,130,983
+130,active_to_passive,The chef studied a short story.,A short story was studied by the chef.,130,984
+130,formalization,The chef studied a short story.,It is true that the chef studied a short story.,130,985
+131,negation,The journalist analyzed the problem.,The journalist did not analyze the problem.,131,986
+131,question,The journalist analyzed the problem.,Did the journalist analyze the problem?,131,987
+131,past_to_future,The journalist analyzed the problem.,The journalist will analyze the problem.,131,988
+131,certainty_to_uncertainty,The journalist analyzed the problem.,The journalist may have analyzed the problem.,131,989
+131,active_to_passive,The journalist analyzed the problem.,The problem was analyzed by the journalist.,131,990
+131,formalization,The journalist analyzed the problem.,It is true that the journalist analyzed the problem.,131,991
+132,negation,The nurse studied the system.,The nurse did not study the system.,132,992
+132,question,The nurse studied the system.,Did the nurse study the system?,132,993
+132,past_to_future,The nurse studied the system.,The nurse will study the system.,132,994
+132,certainty_to_uncertainty,The nurse studied the system.,The nurse may have studied the system.,132,995
+132,active_to_passive,The nurse studied the system.,The system was studied by the nurse.,132,996
+132,formalization,The nurse studied the system.,It is true that the nurse studied the system.,132,997
+133,negation,The designer reported the data.,The designer did not report the data.,133,998
+133,question,The designer reported the data.,Did the designer report the data?,133,999
+133,past_to_future,The designer reported the data.,The designer will report the data.,133,1000
+133,certainty_to_uncertainty,The designer reported the data.,The designer may have reported the data.,133,1001
+133,active_to_passive,The designer reported the data.,The data was reported by the designer.,133,1002
+133,formalization,The designer reported the data.,It is true that the designer reported the data.,133,1003
+134,negation,The programmer grew the system.,The programmer did not grow the system.,134,1004
+134,question,The programmer grew the system.,Did the programmer grow the system?,134,1005
+134,past_to_future,The programmer grew the system.,The programmer will grow the system.,134,1006
+134,certainty_to_uncertainty,The programmer grew the system.,The programmer may have grew the system.,134,1007
+134,active_to_passive,The programmer grew the system.,The system was grew by the programmer.,134,1008
+134,formalization,The programmer grew the system.,It is true that the programmer grew the system.,134,1009
+135,negation,The artist created a black cat.,The artist did not create a black cat.,135,1010
+135,question,The artist created a black cat.,Did the artist create a black cat?,135,1011
+135,past_to_future,The artist created a black cat.,The artist will create a black cat.,135,1012
+135,certainty_to_uncertainty,The artist created a black cat.,The artist may have created a black cat.,135,1013
+135,active_to_passive,The artist created a black cat.,A black cat was created by the artist.,135,1014
+135,formalization,The artist created a black cat.,It is true that the artist created a black cat.,135,1015
+136,negation,The designer helped a black cat.,The designer did not help a black cat.,136,1016
+136,question,The designer helped a black cat.,Did the designer help a black cat?,136,1017
+136,past_to_future,The designer helped a black cat.,The designer will help a black cat.,136,1018
+136,certainty_to_uncertainty,The designer helped a black cat.,The designer may have helped a black cat.,136,1019
+136,active_to_passive,The designer helped a black cat.,A black cat was helped by the designer.,136,1020
+136,formalization,The designer helped a black cat.,It is true that the designer helped a black cat.,136,1021
+137,negation,The writer solved a short story.,The writer did not solve a short story.,137,1022
+137,question,The writer solved a short story.,Did the writer solve a short story?,137,1023
+137,past_to_future,The writer solved a short story.,The writer will solve a short story.,137,1024
+137,certainty_to_uncertainty,The writer solved a short story.,The writer may have solved a short story.,137,1025
+137,active_to_passive,The writer solved a short story.,A short story was solved by the writer.,137,1026
+137,formalization,The writer solved a short story.,It is true that the writer solved a short story.,137,1027
+138,negation,The designer studied a black cat.,The designer did not study a black cat.,138,1028
+138,question,The designer studied a black cat.,Did the designer study a black cat?,138,1029
+138,past_to_future,The designer studied a black cat.,The designer will study a black cat.,138,1030
+138,certainty_to_uncertainty,The designer studied a black cat.,The designer may have studied a black cat.,138,1031
+138,active_to_passive,The designer studied a black cat.,A black cat was studied by the designer.,138,1032
+138,formalization,The designer studied a black cat.,It is true that the designer studied a black cat.,138,1033
+139,negation,The student reported the client.,The student did not report the client.,139,1034
+139,question,The student reported the client.,Did the student report the client?,139,1035
+139,past_to_future,The student reported the client.,The student will report the client.,139,1036
+139,certainty_to_uncertainty,The student reported the client.,The student may have reported the client.,139,1037
+139,active_to_passive,The student reported the client.,The client was reported by the student.,139,1038
+139,formalization,The student reported the client.,It is true that the student reported the client.,139,1039
+140,negation,The researcher studied the garden.,The researcher did not study the garden.,140,1040
+140,question,The researcher studied the garden.,Did the researcher study the garden?,140,1041
+140,past_to_future,The researcher studied the garden.,The researcher will study the garden.,140,1042
+140,certainty_to_uncertainty,The researcher studied the garden.,The researcher may have studied the garden.,140,1043
+140,active_to_passive,The researcher studied the garden.,The garden was studied by the researcher.,140,1044
+140,formalization,The researcher studied the garden.,It is true that the researcher studied the garden.,140,1045
+141,negation,The chef grew the problem.,The chef did not grow the problem.,141,1046
+141,question,The chef grew the problem.,Did the chef grow the problem?,141,1047
+141,past_to_future,The chef grew the problem.,The chef will grow the problem.,141,1048
+141,certainty_to_uncertainty,The chef grew the problem.,The chef may have grew the problem.,141,1049
+141,active_to_passive,The chef grew the problem.,The problem was grew by the chef.,141,1050
+141,formalization,The chef grew the problem.,It is true that the chef grew the problem.,141,1051
+142,negation,The child created a black cat.,The child did not create a black cat.,142,1052
+142,question,The child created a black cat.,Did the child create a black cat?,142,1053
+142,past_to_future,The child created a black cat.,The child will create a black cat.,142,1054
+142,certainty_to_uncertainty,The child created a black cat.,The child may have created a black cat.,142,1055
+142,active_to_passive,The child created a black cat.,A black cat was created by the child.,142,1056
+142,formalization,The child created a black cat.,It is true that the child created a black cat.,142,1057
+143,negation,The artist studied the patient.,The artist did not study the patient.,143,1058
+143,question,The artist studied the patient.,Did the artist study the patient?,143,1059
+143,past_to_future,The artist studied the patient.,The artist will study the patient.,143,1060
+143,certainty_to_uncertainty,The artist studied the patient.,The artist may have studied the patient.,143,1061
+143,active_to_passive,The artist studied the patient.,The patient was studied by the artist.,143,1062
+143,formalization,The artist studied the patient.,It is true that the artist studied the patient.,143,1063
+144,negation,The journalist examined the meal.,The journalist did not examine the meal.,144,1064
+144,question,The journalist examined the meal.,Did the journalist examine the meal?,144,1065
+144,past_to_future,The journalist examined the meal.,The journalist will examine the meal.,144,1066
+144,certainty_to_uncertainty,The journalist examined the meal.,The journalist may have examined the meal.,144,1067
+144,active_to_passive,The journalist examined the meal.,The meal was examined by the journalist.,144,1068
+144,formalization,The journalist examined the meal.,It is true that the journalist examined the meal.,144,1069
+145,negation,The journalist explained a beautiful painting.,The journalist did not explain a beautiful painting.,145,1070
+145,question,The journalist explained a beautiful painting.,Did the journalist explain a beautiful painting?,145,1071
+145,past_to_future,The journalist explained a beautiful painting.,The journalist will explain a beautiful painting.,145,1072
+145,certainty_to_uncertainty,The journalist explained a beautiful painting.,The journalist may have explained a beautiful painting.,145,1073
+145,active_to_passive,The journalist explained a beautiful painting.,A beautiful painting was explained by the journalist.,145,1074
+145,formalization,The journalist explained a beautiful painting.,It is true that the journalist explained a beautiful painting.,145,1075
+146,negation,The nurse tested the family.,The nurse did not test the family.,146,1076
+146,question,The nurse tested the family.,Did the nurse test the family?,146,1077
+146,past_to_future,The nurse tested the family.,The nurse will test the family.,146,1078
+146,certainty_to_uncertainty,The nurse tested the family.,The nurse may have tested the family.,146,1079
+146,active_to_passive,The nurse tested the family.,The family was tested by the nurse.,146,1080
+146,formalization,The nurse tested the family.,It is true that the nurse tested the family.,146,1081
+147,negation,The designer prepared a short story.,The designer did not prepare a short story.,147,1082
+147,question,The designer prepared a short story.,Did the designer prepare a short story?,147,1083
+147,past_to_future,The designer prepared a short story.,The designer will prepare a short story.,147,1084
+147,certainty_to_uncertainty,The designer prepared a short story.,The designer may have prepared a short story.,147,1085
+147,active_to_passive,The designer prepared a short story.,A short story was prepared by the designer.,147,1086
+147,formalization,The designer prepared a short story.,It is true that the designer prepared a short story.,147,1087
+148,negation,The doctor solved the client.,The doctor did not solve the client.,148,1088
+148,question,The doctor solved the client.,Did the doctor solve the client?,148,1089
+148,past_to_future,The doctor solved the client.,The doctor will solve the client.,148,1090
+148,certainty_to_uncertainty,The doctor solved the client.,The doctor may have solved the client.,148,1091
+148,active_to_passive,The doctor solved the client.,The client was solved by the doctor.,148,1092
+148,formalization,The doctor solved the client.,It is true that the doctor solved the client.,148,1093
+149,negation,The nurse controlled the decision.,The nurse did not control the decision.,149,1094
+149,question,The nurse controlled the decision.,Did the nurse control the decision?,149,1095
+149,past_to_future,The nurse controlled the decision.,The nurse will control the decision.,149,1096
+149,certainty_to_uncertainty,The nurse controlled the decision.,The nurse may have controlled the decision.,149,1097
+149,active_to_passive,The nurse controlled the decision.,The decision was controlled by the nurse.,149,1098
+149,formalization,The nurse controlled the decision.,It is true that the nurse controlled the decision.,149,1099
+150,negation,The journalist found the family.,The journalist did not find the family.,150,1100
+150,question,The journalist found the family.,Did the journalist find the family?,150,1101
+150,past_to_future,The journalist found the family.,The journalist will find the family.,150,1102
+150,certainty_to_uncertainty,The journalist found the family.,The journalist may have found the family.,150,1103
+150,active_to_passive,The journalist found the family.,The family was found by the journalist.,150,1104
+150,formalization,The journalist found the family.,It is true that the journalist found the family.,150,1105
+151,negation,The engineer created the rule.,The engineer did not create the rule.,151,1106
+151,question,The engineer created the rule.,Did the engineer create the rule?,151,1107
+151,past_to_future,The engineer created the rule.,The engineer will create the rule.,151,1108
+151,certainty_to_uncertainty,The engineer created the rule.,The engineer may have created the rule.,151,1109
+151,active_to_passive,The engineer created the rule.,The rule was created by the engineer.,151,1110
+151,formalization,The engineer created the rule.,It is true that the engineer created the rule.,151,1111
+152,negation,The nurse explained the family.,The nurse did not explain the family.,152,1112
+152,question,The nurse explained the family.,Did the nurse explain the family?,152,1113
+152,past_to_future,The nurse explained the family.,The nurse will explain the family.,152,1114
+152,certainty_to_uncertainty,The nurse explained the family.,The nurse may have explained the family.,152,1115
+152,active_to_passive,The nurse explained the family.,The family was explained by the nurse.,152,1116
+152,formalization,The nurse explained the family.,It is true that the nurse explained the family.,152,1117
+153,negation,The designer improved the problem.,The designer did not improve the problem.,153,1118
+153,question,The designer improved the problem.,Did the designer improve the problem?,153,1119
+153,past_to_future,The designer improved the problem.,The designer will improve the problem.,153,1120
+153,certainty_to_uncertainty,The designer improved the problem.,The designer may have improved the problem.,153,1121
+153,active_to_passive,The designer improved the problem.,The problem was improved by the designer.,153,1122
+153,formalization,The designer improved the problem.,It is true that the designer improved the problem.,153,1123
+154,negation,The artist designed the system.,The artist did not design the system.,154,1124
+154,question,The artist designed the system.,Did the artist design the system?,154,1125
+154,past_to_future,The artist designed the system.,The artist will design the system.,154,1126
+154,certainty_to_uncertainty,The artist designed the system.,The artist may have designed the system.,154,1127
+154,active_to_passive,The artist designed the system.,The system was designed by the artist.,154,1128
+154,formalization,The artist designed the system.,It is true that the artist designed the system.,154,1129
+155,negation,The student wrote a complex machine.,The student did not write a complex machine.,155,1130
+155,question,The student wrote a complex machine.,Did the student write a complex machine?,155,1131
+155,past_to_future,The student wrote a complex machine.,The student will write a complex machine.,155,1132
+155,certainty_to_uncertainty,The student wrote a complex machine.,The student may have wrote a complex machine.,155,1133
+155,active_to_passive,The student wrote a complex machine.,A complex machine was wrote by the student.,155,1134
+155,formalization,The student wrote a complex machine.,It is true that the student wrote a complex machine.,155,1135
+156,negation,The pilot solved the question.,The pilot did not solve the question.,156,1136
+156,question,The pilot solved the question.,Did the pilot solve the question?,156,1137
+156,past_to_future,The pilot solved the question.,The pilot will solve the question.,156,1138
+156,certainty_to_uncertainty,The pilot solved the question.,The pilot may have solved the question.,156,1139
+156,active_to_passive,The pilot solved the question.,The question was solved by the pilot.,156,1140
+156,formalization,The pilot solved the question.,It is true that the pilot solved the question.,156,1141
+157,negation,The student solved the client.,The student did not solve the client.,157,1142
+157,question,The student solved the client.,Did the student solve the client?,157,1143
+157,past_to_future,The student solved the client.,The student will solve the client.,157,1144
+157,certainty_to_uncertainty,The student solved the client.,The student may have solved the client.,157,1145
+157,active_to_passive,The student solved the client.,The client was solved by the student.,157,1146
+157,formalization,The student solved the client.,It is true that the student solved the client.,157,1147
+158,negation,The doctor approved the interface.,The doctor did not approve the interface.,158,1148
+158,question,The doctor approved the interface.,Did the doctor approve the interface?,158,1149
+158,past_to_future,The doctor approved the interface.,The doctor will approve the interface.,158,1150
+158,certainty_to_uncertainty,The doctor approved the interface.,The doctor may have approved the interface.,158,1151
+158,active_to_passive,The doctor approved the interface.,The interface was approved by the doctor.,158,1152
+158,formalization,The doctor approved the interface.,It is true that the doctor approved the interface.,158,1153
+159,negation,The child improved the problem.,The child did not improve the problem.,159,1154
+159,question,The child improved the problem.,Did the child improve the problem?,159,1155
+159,past_to_future,The child improved the problem.,The child will improve the problem.,159,1156
+159,certainty_to_uncertainty,The child improved the problem.,The child may have improved the problem.,159,1157
+159,active_to_passive,The child improved the problem.,The problem was improved by the child.,159,1158
+159,formalization,The child improved the problem.,It is true that the child improved the problem.,159,1159
+160,negation,The analyst analyzed the family.,The analyst did not analyze the family.,160,1160
+160,question,The analyst analyzed the family.,Did the analyst analyze the family?,160,1161
+160,past_to_future,The analyst analyzed the family.,The analyst will analyze the family.,160,1162
+160,certainty_to_uncertainty,The analyst analyzed the family.,The analyst may have analyzed the family.,160,1163
+160,active_to_passive,The analyst analyzed the family.,The family was analyzed by the analyst.,160,1164
+160,formalization,The analyst analyzed the family.,It is true that the analyst analyzed the family.,160,1165
+161,negation,The doctor studied a beautiful painting.,The doctor did not study a beautiful painting.,161,1166
+161,question,The doctor studied a beautiful painting.,Did the doctor study a beautiful painting?,161,1167
+161,past_to_future,The doctor studied a beautiful painting.,The doctor will study a beautiful painting.,161,1168
+161,certainty_to_uncertainty,The doctor studied a beautiful painting.,The doctor may have studied a beautiful painting.,161,1169
+161,active_to_passive,The doctor studied a beautiful painting.,A beautiful painting was studied by the doctor.,161,1170
+161,formalization,The doctor studied a beautiful painting.,It is true that the doctor studied a beautiful painting.,161,1171
+162,negation,The designer discovered a short story.,The designer did not discover a short story.,162,1172
+162,question,The designer discovered a short story.,Did the designer discover a short story?,162,1173
+162,past_to_future,The designer discovered a short story.,The designer will discover a short story.,162,1174
+162,certainty_to_uncertainty,The designer discovered a short story.,The designer may have discovered a short story.,162,1175
+162,active_to_passive,The designer discovered a short story.,A short story was discovered by the designer.,162,1176
+162,formalization,The designer discovered a short story.,It is true that the designer discovered a short story.,162,1177
+163,negation,The analyst prepared a short story.,The analyst did not prepare a short story.,163,1178
+163,question,The analyst prepared a short story.,Did the analyst prepare a short story?,163,1179
+163,past_to_future,The analyst prepared a short story.,The analyst will prepare a short story.,163,1180
+163,certainty_to_uncertainty,The analyst prepared a short story.,The analyst may have prepared a short story.,163,1181
+163,active_to_passive,The analyst prepared a short story.,A short story was prepared by the analyst.,163,1182
+163,formalization,The analyst prepared a short story.,It is true that the analyst prepared a short story.,163,1183
+164,negation,The engineer controlled a new principle.,The engineer did not control a new principle.,164,1184
+164,question,The engineer controlled a new principle.,Did the engineer control a new principle?,164,1185
+164,past_to_future,The engineer controlled a new principle.,The engineer will control a new principle.,164,1186
+164,certainty_to_uncertainty,The engineer controlled a new principle.,The engineer may have controlled a new principle.,164,1187
+164,active_to_passive,The engineer controlled a new principle.,A new principle was controlled by the engineer.,164,1188
+164,formalization,The engineer controlled a new principle.,It is true that the engineer controlled a new principle.,164,1189
+165,negation,The farmer approved a black cat.,The farmer did not approve a black cat.,165,1190
+165,question,The farmer approved a black cat.,Did the farmer approve a black cat?,165,1191
+165,past_to_future,The farmer approved a black cat.,The farmer will approve a black cat.,165,1192
+165,certainty_to_uncertainty,The farmer approved a black cat.,The farmer may have approved a black cat.,165,1193
+165,active_to_passive,The farmer approved a black cat.,A black cat was approved by the farmer.,165,1194
+165,formalization,The farmer approved a black cat.,It is true that the farmer approved a black cat.,165,1195
+166,negation,The musician discovered the system.,The musician did not discover the system.,166,1196
+166,question,The musician discovered the system.,Did the musician discover the system?,166,1197
+166,past_to_future,The musician discovered the system.,The musician will discover the system.,166,1198
+166,certainty_to_uncertainty,The musician discovered the system.,The musician may have discovered the system.,166,1199
+166,active_to_passive,The musician discovered the system.,The system was discovered by the musician.,166,1200
+166,formalization,The musician discovered the system.,It is true that the musician discovered the system.,166,1201
+167,negation,The child helped the client.,The child did not help the client.,167,1202
+167,question,The child helped the client.,Did the child help the client?,167,1203
+167,past_to_future,The child helped the client.,The child will help the client.,167,1204
+167,certainty_to_uncertainty,The child helped the client.,The child may have helped the client.,167,1205
+167,active_to_passive,The child helped the client.,The client was helped by the child.,167,1206
+167,formalization,The child helped the client.,It is true that the child helped the client.,167,1207
+168,negation,The chef defended the client.,The chef did not defend the client.,168,1208
+168,question,The chef defended the client.,Did the chef defend the client?,168,1209
+168,past_to_future,The chef defended the client.,The chef will defend the client.,168,1210
+168,certainty_to_uncertainty,The chef defended the client.,The chef may have defended the client.,168,1211
+168,active_to_passive,The chef defended the client.,The client was defended by the chef.,168,1212
+168,formalization,The chef defended the client.,It is true that the chef defended the client.,168,1213
+169,negation,The pilot tested the aircraft.,The pilot did not test the aircraft.,169,1214
+169,question,The pilot tested the aircraft.,Did the pilot test the aircraft?,169,1215
+169,past_to_future,The pilot tested the aircraft.,The pilot will test the aircraft.,169,1216
+169,certainty_to_uncertainty,The pilot tested the aircraft.,The pilot may have tested the aircraft.,169,1217
+169,active_to_passive,The pilot tested the aircraft.,The aircraft was tested by the pilot.,169,1218
+169,formalization,The pilot tested the aircraft.,It is true that the pilot tested the aircraft.,169,1219
+170,negation,The teacher discovered the data.,The teacher did not discover the data.,170,1220
+170,question,The teacher discovered the data.,Did the teacher discover the data?,170,1221
+170,past_to_future,The teacher discovered the data.,The teacher will discover the data.,170,1222
+170,certainty_to_uncertainty,The teacher discovered the data.,The teacher may have discovered the data.,170,1223
+170,active_to_passive,The teacher discovered the data.,The data was discovered by the teacher.,170,1224
+170,formalization,The teacher discovered the data.,It is true that the teacher discovered the data.,170,1225
+171,negation,The teacher grew a new principle.,The teacher did not grow a new principle.,171,1226
+171,question,The teacher grew a new principle.,Did the teacher grow a new principle?,171,1227
+171,past_to_future,The teacher grew a new principle.,The teacher will grow a new principle.,171,1228
+171,certainty_to_uncertainty,The teacher grew a new principle.,The teacher may have grew a new principle.,171,1229
+171,active_to_passive,The teacher grew a new principle.,A new principle was grew by the teacher.,171,1230
+171,formalization,The teacher grew a new principle.,It is true that the teacher grew a new principle.,171,1231
+172,negation,The student designed the question.,The student did not design the question.,172,1232
+172,question,The student designed the question.,Did the student design the question?,172,1233
+172,past_to_future,The student designed the question.,The student will design the question.,172,1234
+172,certainty_to_uncertainty,The student designed the question.,The student may have designed the question.,172,1235
+172,active_to_passive,The student designed the question.,The question was designed by the student.,172,1236
+172,formalization,The student designed the question.,It is true that the student designed the question.,172,1237
+173,negation,The doctor discovered the rule.,The doctor did not discover the rule.,173,1238
+173,question,The doctor discovered the rule.,Did the doctor discover the rule?,173,1239
+173,past_to_future,The doctor discovered the rule.,The doctor will discover the rule.,173,1240
+173,certainty_to_uncertainty,The doctor discovered the rule.,The doctor may have discovered the rule.,173,1241
+173,active_to_passive,The doctor discovered the rule.,The rule was discovered by the doctor.,173,1242
+173,formalization,The doctor discovered the rule.,It is true that the doctor discovered the rule.,173,1243
+174,negation,The journalist tested the decision.,The journalist did not test the decision.,174,1244
+174,question,The journalist tested the decision.,Did the journalist test the decision?,174,1245
+174,past_to_future,The journalist tested the decision.,The journalist will test the decision.,174,1246
+174,certainty_to_uncertainty,The journalist tested the decision.,The journalist may have tested the decision.,174,1247
+174,active_to_passive,The journalist tested the decision.,The decision was tested by the journalist.,174,1248
+174,formalization,The journalist tested the decision.,It is true that the journalist tested the decision.,174,1249
+175,negation,The musician designed a complex machine.,The musician did not design a complex machine.,175,1250
+175,question,The musician designed a complex machine.,Did the musician design a complex machine?,175,1251
+175,past_to_future,The musician designed a complex machine.,The musician will design a complex machine.,175,1252
+175,certainty_to_uncertainty,The musician designed a complex machine.,The musician may have designed a complex machine.,175,1253
+175,active_to_passive,The musician designed a complex machine.,A complex machine was designed by the musician.,175,1254
+175,formalization,The musician designed a complex machine.,It is true that the musician designed a complex machine.,175,1255
+176,negation,The engineer helped the meal.,The engineer did not help the meal.,176,1256
+176,question,The engineer helped the meal.,Did the engineer help the meal?,176,1257
+176,past_to_future,The engineer helped the meal.,The engineer will help the meal.,176,1258
+176,certainty_to_uncertainty,The engineer helped the meal.,The engineer may have helped the meal.,176,1259
+176,active_to_passive,The engineer helped the meal.,The meal was helped by the engineer.,176,1260
+176,formalization,The engineer helped the meal.,It is true that the engineer helped the meal.,176,1261
+177,negation,The child defended the garden.,The child did not defend the garden.,177,1262
+177,question,The child defended the garden.,Did the child defend the garden?,177,1263
+177,past_to_future,The child defended the garden.,The child will defend the garden.,177,1264
+177,certainty_to_uncertainty,The child defended the garden.,The child may have defended the garden.,177,1265
+177,active_to_passive,The child defended the garden.,The garden was defended by the child.,177,1266
+177,formalization,The child defended the garden.,It is true that the child defended the garden.,177,1267
+178,negation,The designer analyzed the rule.,The designer did not analyze the rule.,178,1268
+178,question,The designer analyzed the rule.,Did the designer analyze the rule?,178,1269
+178,past_to_future,The designer analyzed the rule.,The designer will analyze the rule.,178,1270
+178,certainty_to_uncertainty,The designer analyzed the rule.,The designer may have analyzed the rule.,178,1271
+178,active_to_passive,The designer analyzed the rule.,The rule was analyzed by the designer.,178,1272
+178,formalization,The designer analyzed the rule.,It is true that the designer analyzed the rule.,178,1273
+179,negation,The writer designed the problem.,The writer did not design the problem.,179,1274
+179,question,The writer designed the problem.,Did the writer design the problem?,179,1275
+179,past_to_future,The writer designed the problem.,The writer will design the problem.,179,1276
+179,certainty_to_uncertainty,The writer designed the problem.,The writer may have designed the problem.,179,1277
+179,active_to_passive,The writer designed the problem.,The problem was designed by the writer.,179,1278
+179,formalization,The writer designed the problem.,It is true that the writer designed the problem.,179,1279
+180,negation,The teacher analyzed the family.,The teacher did not analyze the family.,180,1280
+180,question,The teacher analyzed the family.,Did the teacher analyze the family?,180,1281
+180,past_to_future,The teacher analyzed the family.,The teacher will analyze the family.,180,1282
+180,certainty_to_uncertainty,The teacher analyzed the family.,The teacher may have analyzed the family.,180,1283
+180,active_to_passive,The teacher analyzed the family.,The family was analyzed by the teacher.,180,1284
+180,formalization,The teacher analyzed the family.,It is true that the teacher analyzed the family.,180,1285
+181,negation,The chef explained the aircraft.,The chef did not explain the aircraft.,181,1286
+181,question,The chef explained the aircraft.,Did the chef explain the aircraft?,181,1287
+181,past_to_future,The chef explained the aircraft.,The chef will explain the aircraft.,181,1288
+181,certainty_to_uncertainty,The chef explained the aircraft.,The chef may have explained the aircraft.,181,1289
+181,active_to_passive,The chef explained the aircraft.,The aircraft was explained by the chef.,181,1290
+181,formalization,The chef explained the aircraft.,It is true that the chef explained the aircraft.,181,1291
+182,negation,The analyst controlled the event.,The analyst did not control the event.,182,1292
+182,question,The analyst controlled the event.,Did the analyst control the event?,182,1293
+182,past_to_future,The analyst controlled the event.,The analyst will control the event.,182,1294
+182,certainty_to_uncertainty,The analyst controlled the event.,The analyst may have controlled the event.,182,1295
+182,active_to_passive,The analyst controlled the event.,The event was controlled by the analyst.,182,1296
+182,formalization,The analyst controlled the event.,It is true that the analyst controlled the event.,182,1297
+183,negation,The journalist designed the interface.,The journalist did not design the interface.,183,1298
+183,question,The journalist designed the interface.,Did the journalist design the interface?,183,1299
+183,past_to_future,The journalist designed the interface.,The journalist will design the interface.,183,1300
+183,certainty_to_uncertainty,The journalist designed the interface.,The journalist may have designed the interface.,183,1301
+183,active_to_passive,The journalist designed the interface.,The interface was designed by the journalist.,183,1302
+183,formalization,The journalist designed the interface.,It is true that the journalist designed the interface.,183,1303
+184,negation,The doctor defended the question.,The doctor did not defend the question.,184,1304
+184,question,The doctor defended the question.,Did the doctor defend the question?,184,1305
+184,past_to_future,The doctor defended the question.,The doctor will defend the question.,184,1306
+184,certainty_to_uncertainty,The doctor defended the question.,The doctor may have defended the question.,184,1307
+184,active_to_passive,The doctor defended the question.,The question was defended by the doctor.,184,1308
+184,formalization,The doctor defended the question.,It is true that the doctor defended the question.,184,1309
+185,negation,The teacher prepared a sad melody.,The teacher did not prepare a sad melody.,185,1310
+185,question,The teacher prepared a sad melody.,Did the teacher prepare a sad melody?,185,1311
+185,past_to_future,The teacher prepared a sad melody.,The teacher will prepare a sad melody.,185,1312
+185,certainty_to_uncertainty,The teacher prepared a sad melody.,The teacher may have prepared a sad melody.,185,1313
+185,active_to_passive,The teacher prepared a sad melody.,A sad melody was prepared by the teacher.,185,1314
+185,formalization,The teacher prepared a sad melody.,It is true that the teacher prepared a sad melody.,185,1315
+186,negation,The farmer grew a sad melody.,The farmer did not grow a sad melody.,186,1316
+186,question,The farmer grew a sad melody.,Did the farmer grow a sad melody?,186,1317
+186,past_to_future,The farmer grew a sad melody.,The farmer will grow a sad melody.,186,1318
+186,certainty_to_uncertainty,The farmer grew a sad melody.,The farmer may have grew a sad melody.,186,1319
+186,active_to_passive,The farmer grew a sad melody.,A sad melody was grew by the farmer.,186,1320
+186,formalization,The farmer grew a sad melody.,It is true that the farmer grew a sad melody.,186,1321
+187,negation,The student improved a new principle.,The student did not improve a new principle.,187,1322
+187,question,The student improved a new principle.,Did the student improve a new principle?,187,1323
+187,past_to_future,The student improved a new principle.,The student will improve a new principle.,187,1324
+187,certainty_to_uncertainty,The student improved a new principle.,The student may have improved a new principle.,187,1325
+187,active_to_passive,The student improved a new principle.,A new principle was improved by the student.,187,1326
+187,formalization,The student improved a new principle.,It is true that the student improved a new principle.,187,1327
+188,negation,The pilot wrote the patient.,The pilot did not write the patient.,188,1328
+188,question,The pilot wrote the patient.,Did the pilot write the patient?,188,1329
+188,past_to_future,The pilot wrote the patient.,The pilot will write the patient.,188,1330
+188,certainty_to_uncertainty,The pilot wrote the patient.,The pilot may have wrote the patient.,188,1331
+188,active_to_passive,The pilot wrote the patient.,The patient was wrote by the pilot.,188,1332
+188,formalization,The pilot wrote the patient.,It is true that the pilot wrote the patient.,188,1333
+189,negation,The journalist grew the aircraft.,The journalist did not grow the aircraft.,189,1334
+189,question,The journalist grew the aircraft.,Did the journalist grow the aircraft?,189,1335
+189,past_to_future,The journalist grew the aircraft.,The journalist will grow the aircraft.,189,1336
+189,certainty_to_uncertainty,The journalist grew the aircraft.,The journalist may have grew the aircraft.,189,1337
+189,active_to_passive,The journalist grew the aircraft.,The aircraft was grew by the journalist.,189,1338
+189,formalization,The journalist grew the aircraft.,It is true that the journalist grew the aircraft.,189,1339
+190,negation,The programmer grew a short story.,The programmer did not grow a short story.,190,1340
+190,question,The programmer grew a short story.,Did the programmer grow a short story?,190,1341
+190,past_to_future,The programmer grew a short story.,The programmer will grow a short story.,190,1342
+190,certainty_to_uncertainty,The programmer grew a short story.,The programmer may have grew a short story.,190,1343
+190,active_to_passive,The programmer grew a short story.,A short story was grew by the programmer.,190,1344
+190,formalization,The programmer grew a short story.,It is true that the programmer grew a short story.,190,1345
+191,negation,The researcher controlled the garden.,The researcher did not control the garden.,191,1346
+191,question,The researcher controlled the garden.,Did the researcher control the garden?,191,1347
+191,past_to_future,The researcher controlled the garden.,The researcher will control the garden.,191,1348
+191,certainty_to_uncertainty,The researcher controlled the garden.,The researcher may have controlled the garden.,191,1349
+191,active_to_passive,The researcher controlled the garden.,The garden was controlled by the researcher.,191,1350
+191,formalization,The researcher controlled the garden.,It is true that the researcher controlled the garden.,191,1351
+192,negation,The scientist designed the rule.,The scientist did not design the rule.,192,1352
+192,question,The scientist designed the rule.,Did the scientist design the rule?,192,1353
+192,past_to_future,The scientist designed the rule.,The scientist will design the rule.,192,1354
+192,certainty_to_uncertainty,The scientist designed the rule.,The scientist may have designed the rule.,192,1355
+192,active_to_passive,The scientist designed the rule.,The rule was designed by the scientist.,192,1356
+192,formalization,The scientist designed the rule.,It is true that the scientist designed the rule.,192,1357
+193,negation,The artist helped the interface.,The artist did not help the interface.,193,1358
+193,question,The artist helped the interface.,Did the artist help the interface?,193,1359
+193,past_to_future,The artist helped the interface.,The artist will help the interface.,193,1360
+193,certainty_to_uncertainty,The artist helped the interface.,The artist may have helped the interface.,193,1361
+193,active_to_passive,The artist helped the interface.,The interface was helped by the artist.,193,1362
+193,formalization,The artist helped the interface.,It is true that the artist helped the interface.,193,1363
+194,negation,The engineer approved the question.,The engineer did not approve the question.,194,1364
+194,question,The engineer approved the question.,Did the engineer approve the question?,194,1365
+194,past_to_future,The engineer approved the question.,The engineer will approve the question.,194,1366
+194,certainty_to_uncertainty,The engineer approved the question.,The engineer may have approved the question.,194,1367
+194,active_to_passive,The engineer approved the question.,The question was approved by the engineer.,194,1368
+194,formalization,The engineer approved the question.,It is true that the engineer approved the question.,194,1369
+195,negation,The chef grew the event.,The chef did not grow the event.,195,1370
+195,question,The chef grew the event.,Did the chef grow the event?,195,1371
+195,past_to_future,The chef grew the event.,The chef will grow the event.,195,1372
+195,certainty_to_uncertainty,The chef grew the event.,The chef may have grew the event.,195,1373
+195,active_to_passive,The chef grew the event.,The event was grew by the chef.,195,1374
+195,formalization,The chef grew the event.,It is true that the chef grew the event.,195,1375
+196,negation,The chef helped the aircraft.,The chef did not help the aircraft.,196,1376
+196,question,The chef helped the aircraft.,Did the chef help the aircraft?,196,1377
+196,past_to_future,The chef helped the aircraft.,The chef will help the aircraft.,196,1378
+196,certainty_to_uncertainty,The chef helped the aircraft.,The chef may have helped the aircraft.,196,1379
+196,active_to_passive,The chef helped the aircraft.,The aircraft was helped by the chef.,196,1380
+196,formalization,The chef helped the aircraft.,It is true that the chef helped the aircraft.,196,1381
+197,negation,The student wrote the interface.,The student did not write the interface.,197,1382
+197,question,The student wrote the interface.,Did the student write the interface?,197,1383
+197,past_to_future,The student wrote the interface.,The student will write the interface.,197,1384
+197,certainty_to_uncertainty,The student wrote the interface.,The student may have wrote the interface.,197,1385
+197,active_to_passive,The student wrote the interface.,The interface was wrote by the student.,197,1386
+197,formalization,The student wrote the interface.,It is true that the student wrote the interface.,197,1387
+198,negation,The farmer discovered the system.,The farmer did not discover the system.,198,1388
+198,question,The farmer discovered the system.,Did the farmer discover the system?,198,1389
+198,past_to_future,The farmer discovered the system.,The farmer will discover the system.,198,1390
+198,certainty_to_uncertainty,The farmer discovered the system.,The farmer may have discovered the system.,198,1391
+198,active_to_passive,The farmer discovered the system.,The system was discovered by the farmer.,198,1392
+198,formalization,The farmer discovered the system.,It is true that the farmer discovered the system.,198,1393
+199,negation,The farmer tested the meal.,The farmer did not test the meal.,199,1394
+199,question,The farmer tested the meal.,Did the farmer test the meal?,199,1395
+199,past_to_future,The farmer tested the meal.,The farmer will test the meal.,199,1396
+199,certainty_to_uncertainty,The farmer tested the meal.,The farmer may have tested the meal.,199,1397
+199,active_to_passive,The farmer tested the meal.,The meal was tested by the farmer.,199,1398
+199,formalization,The farmer tested the meal.,It is true that the farmer tested the meal.,199,1399

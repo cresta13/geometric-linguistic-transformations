@@ -1,0 +1,5 @@
+triple,rows,unique_sources,unique_endpoint_texts,rows_with_duplicate_endpoints
+NMT,100,100,600,0
+NQM,100,100,600,0
+NQT,100,100,600,0
+QMT,100,100,600,0

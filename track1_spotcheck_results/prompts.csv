@@ -1,0 +1,2101 @@
+prompt_id,prompt
+0,The student found the system.
+1,The student found the system after the discussion.
+2,The scientist explained a black cat.
+3,The scientist explained a black cat before the deadline.
+4,The writer prepared the decision.
+5,The writer prepared the decision after the discussion.
+6,The scientist created the patient.
+7,The scientist created the patient after the discussion.
+8,The programmer studied the patient.
+9,The programmer studied the patient before the presentation.
+10,The scientist prepared the rule.
+11,The scientist prepared the rule in the laboratory.
+12,The programmer tested a black cat.
+13,The programmer tested a black cat before the presentation.
+14,The doctor examined a complex machine.
+15,The doctor examined a complex machine before the deadline.
+16,The programmer prepared a beautiful painting.
+17,The programmer prepared a beautiful painting in the laboratory.
+18,The programmer reported the patient.
+19,The programmer reported the patient at the school.
+20,The doctor studied a black cat.
+21,The doctor studied a black cat after the discussion.
+22,The teacher examined a complex machine.
+23,The teacher examined a complex machine before the deadline.
+24,The manager observed the system.
+25,The manager observed the system during the experiment.
+26,The teacher found a black cat.
+27,The teacher found a black cat after the interview.
+28,The artist solved the rule.
+29,The artist solved the rule during the meeting.
+30,The programmer helped the decision.
+31,The programmer helped the decision during the experiment.
+32,The teacher tested a beautiful painting.
+33,The teacher tested a beautiful painting during the experiment.
+34,The manager improved a short story.
+35,The manager improved a short story before the deadline.
+36,The artist created a short story.
+37,The artist created a short story during the meeting.
+38,The student created the decision.
+39,The student created the decision after the interview.
+40,The scientist prepared a complex machine.
+41,The scientist prepared a complex machine during the meeting.
+42,The child defended the problem.
+43,The child defended the problem after the discussion.
+44,The programmer prepared a black cat.
+45,The programmer prepared a black cat after the discussion.
+46,The child designed a black cat.
+47,The child designed a black cat during the meeting.
+48,The engineer defended a new principle.
+49,The engineer defended a new principle before the deadline.
+50,The scientist defended a beautiful painting.
+51,The scientist defended a beautiful painting before the deadline.
+52,The engineer analyzed the rule.
+53,The engineer analyzed the rule after the discussion.
+54,The manager prepared the rule.
+55,The manager prepared the rule before the presentation.
+56,The doctor helped the problem.
+57,The doctor helped the problem before the deadline.
+58,The student built a black cat.
+59,The student built a black cat after the interview.
+60,The programmer approved the system.
+61,The programmer approved the system in the laboratory.
+62,The student explained a short story.
+63,The student explained a short story after the interview.
+64,The writer approved the rule.
+65,The writer approved the rule after the interview.
+66,The programmer tested the decision.
+67,The programmer tested the decision in the laboratory.
+68,The doctor reported the decision.
+69,The doctor reported the decision during the meeting.
+70,The programmer wrote the system.
+71,The programmer wrote the system before the deadline.
+72,The student observed the system.
+73,The student observed the system in the laboratory.
+74,The scientist studied a new principle.
+75,The scientist studied a new principle before the presentation.
+76,The manager reported a complex machine.
+77,The manager reported a complex machine after the interview.
+78,The scientist designed the decision.
+79,The scientist designed the decision in the laboratory.
+80,The child helped the system.
+81,The child helped the system before the deadline.
+82,The programmer examined a black cat.
+83,The programmer examined a black cat after the discussion.
+84,The writer helped the problem.
+85,The writer helped the problem in the laboratory.
+86,The programmer analyzed the system.
+87,The programmer analyzed the system after the interview.
+88,The programmer measured the problem.
+89,The programmer measured the problem before the deadline.
+90,The engineer analyzed a new principle.
+91,The engineer analyzed a new principle during the experiment.
+92,The doctor wrote a beautiful painting.
+93,The doctor wrote a beautiful painting before the presentation.
+94,The manager approved the system.
+95,The manager approved the system after the discussion.
+96,The doctor analyzed the patient.
+97,The doctor analyzed the patient in the laboratory.
+98,The scientist wrote a new principle.
+99,The scientist wrote a new principle after the interview.
+100,The person who explained the question was the pilot.
+101,"After the pilot explained the question, the situation changed."
+102,The report said that the pilot explained the question.
+103,"If the pilot explained the question, the result mattered."
+104,The person who approved the question was the designer.
+105,"After the designer approved the question, the situation changed."
+106,The report said that the designer approved the question.
+107,"If the designer approved the question, the result mattered."
+108,The person who helped the family was the lawyer.
+109,"After the lawyer helped the family, the situation changed."
+110,The report said that the lawyer helped the family.
+111,"If the lawyer helped the family, the result mattered."
+112,The person who tested the data was the pilot.
+113,"After the pilot tested the data, the situation changed."
+114,The report said that the pilot tested the data.
+115,"If the pilot tested the data, the result mattered."
+116,The person who measured the data was the lawyer.
+117,"After the lawyer measured the data, the situation changed."
+118,The report said that the lawyer measured the data.
+119,"If the lawyer measured the data, the result mattered."
+120,The person who measured the client was the analyst.
+121,"After the analyst measured the client, the situation changed."
+122,The report said that the analyst measured the client.
+123,"If the analyst measured the client, the result mattered."
+124,The person who solved the family was the analyst.
+125,"After the analyst solved the family, the situation changed."
+126,The report said that the analyst solved the family.
+127,"If the analyst solved the family, the result mattered."
+128,The person who built the signal was the musician.
+129,"After the musician built the signal, the situation changed."
+130,The report said that the musician built the signal.
+131,"If the musician built the signal, the result mattered."
+132,The person who reported the family was the chef.
+133,"After the chef reported the family, the situation changed."
+134,The report said that the chef reported the family.
+135,"If the chef reported the family, the result mattered."
+136,The person who discovered the client was the analyst.
+137,"After the analyst discovered the client, the situation changed."
+138,The report said that the analyst discovered the client.
+139,"If the analyst discovered the client, the result mattered."
+140,The person who discovered the document was the nurse.
+141,"After the nurse discovered the document, the situation changed."
+142,The report said that the nurse discovered the document.
+143,"If the nurse discovered the document, the result mattered."
+144,The person who found the event was the researcher.
+145,"After the researcher found the event, the situation changed."
+146,The report said that the researcher found the event.
+147,"If the researcher found the event, the result mattered."
+148,The person who reported the garden was the chef.
+149,"After the chef reported the garden, the situation changed."
+150,The report said that the chef reported the garden.
+151,"If the chef reported the garden, the result mattered."
+152,The person who examined the experiment was the analyst.
+153,"After the analyst examined the experiment, the situation changed."
+154,The report said that the analyst examined the experiment.
+155,"If the analyst examined the experiment, the result mattered."
+156,The person who helped the event was the musician.
+157,"After the musician helped the event, the situation changed."
+158,The report said that the musician helped the event.
+159,"If the musician helped the event, the result mattered."
+160,The person who examined the garden was the farmer.
+161,"After the farmer examined the garden, the situation changed."
+162,The report said that the farmer examined the garden.
+163,"If the farmer examined the garden, the result mattered."
+164,The person who observed the garden was the researcher.
+165,"After the researcher observed the garden, the situation changed."
+166,The report said that the researcher observed the garden.
+167,"If the researcher observed the garden, the result mattered."
+168,The person who prepared the data was the researcher.
+169,"After the researcher prepared the data, the situation changed."
+170,The report said that the researcher prepared the data.
+171,"If the researcher prepared the data, the result mattered."
+172,The person who solved the family was the farmer.
+173,"After the farmer solved the family, the situation changed."
+174,The report said that the farmer solved the family.
+175,"If the farmer solved the family, the result mattered."
+176,The person who found the interface was the lawyer.
+177,"After the lawyer found the interface, the situation changed."
+178,The report said that the lawyer found the interface.
+179,"If the lawyer found the interface, the result mattered."
+180,The person who approved the signal was the musician.
+181,"After the musician approved the signal, the situation changed."
+182,The report said that the musician approved the signal.
+183,"If the musician approved the signal, the result mattered."
+184,The person who reported the document was the designer.
+185,"After the designer reported the document, the situation changed."
+186,The report said that the designer reported the document.
+187,"If the designer reported the document, the result mattered."
+188,The person who solved the garden was the farmer.
+189,"After the farmer solved the garden, the situation changed."
+190,The report said that the farmer solved the garden.
+191,"If the farmer solved the garden, the result mattered."
+192,The person who reported the experiment was the journalist.
+193,"After the journalist reported the experiment, the situation changed."
+194,The report said that the journalist reported the experiment.
+195,"If the journalist reported the experiment, the result mattered."
+196,The person who observed the client was the pilot.
+197,"After the pilot observed the client, the situation changed."
+198,The report said that the pilot observed the client.
+199,"If the pilot observed the client, the result mattered."
+200,The person who created the data was the journalist.
+201,"After the journalist created the data, the situation changed."
+202,The report said that the journalist created the data.
+203,"If the journalist created the data, the result mattered."
+204,The person who found the signal was the chef.
+205,"After the chef found the signal, the situation changed."
+206,The report said that the chef found the signal.
+207,"If the chef found the signal, the result mattered."
+208,The person who defended the signal was the farmer.
+209,"After the farmer defended the signal, the situation changed."
+210,The report said that the farmer defended the signal.
+211,"If the farmer defended the signal, the result mattered."
+212,The person who solved the document was the journalist.
+213,"After the journalist solved the document, the situation changed."
+214,The report said that the journalist solved the document.
+215,"If the journalist solved the document, the result mattered."
+216,The person who built the question was the designer.
+217,"After the designer built the question, the situation changed."
+218,The report said that the designer built the question.
+219,"If the designer built the question, the result mattered."
+220,The person who reported the data was the nurse.
+221,"After the nurse reported the data, the situation changed."
+222,The report said that the nurse reported the data.
+223,"If the nurse reported the data, the result mattered."
+224,The person who discovered the document was the lawyer.
+225,"After the lawyer discovered the document, the situation changed."
+226,The report said that the lawyer discovered the document.
+227,"If the lawyer discovered the document, the result mattered."
+228,The person who measured the garden was the analyst.
+229,"After the analyst measured the garden, the situation changed."
+230,The report said that the analyst measured the garden.
+231,"If the analyst measured the garden, the result mattered."
+232,The person who discovered the family was the analyst.
+233,"After the analyst discovered the family, the situation changed."
+234,The report said that the analyst discovered the family.
+235,"If the analyst discovered the family, the result mattered."
+236,The person who helped the family was the farmer.
+237,"After the farmer helped the family, the situation changed."
+238,The report said that the farmer helped the family.
+239,"If the farmer helped the family, the result mattered."
+240,The person who built the question was the analyst.
+241,"After the analyst built the question, the situation changed."
+242,The report said that the analyst built the question.
+243,"If the analyst built the question, the result mattered."
+244,The person who built the client was the lawyer.
+245,"After the lawyer built the client, the situation changed."
+246,The report said that the lawyer built the client.
+247,"If the lawyer built the client, the result mattered."
+248,The person who prepared the question was the pilot.
+249,"After the pilot prepared the question, the situation changed."
+250,The report said that the pilot prepared the question.
+251,"If the pilot prepared the question, the result mattered."
+252,The person who examined the document was the journalist.
+253,"After the journalist examined the document, the situation changed."
+254,The report said that the journalist examined the document.
+255,"If the journalist examined the document, the result mattered."
+256,The person who wrote the family was the designer.
+257,"After the designer wrote the family, the situation changed."
+258,The report said that the designer wrote the family.
+259,"If the designer wrote the family, the result mattered."
+260,The person who built the signal was the analyst.
+261,"After the analyst built the signal, the situation changed."
+262,The report said that the analyst built the signal.
+263,"If the analyst built the signal, the result mattered."
+264,The person who explained the garden was the analyst.
+265,"After the analyst explained the garden, the situation changed."
+266,The report said that the analyst explained the garden.
+267,"If the analyst explained the garden, the result mattered."
+268,The person who measured the event was the analyst.
+269,"After the analyst measured the event, the situation changed."
+270,The report said that the analyst measured the event.
+271,"If the analyst measured the event, the result mattered."
+272,The person who found the signal was the farmer.
+273,"After the farmer found the signal, the situation changed."
+274,The report said that the farmer found the signal.
+275,"If the farmer found the signal, the result mattered."
+276,The person who tested the event was the farmer.
+277,"After the farmer tested the event, the situation changed."
+278,The report said that the farmer tested the event.
+279,"If the farmer tested the event, the result mattered."
+280,The person who discovered the interface was the pilot.
+281,"After the pilot discovered the interface, the situation changed."
+282,The report said that the pilot discovered the interface.
+283,"If the pilot discovered the interface, the result mattered."
+284,The person who measured the document was the designer.
+285,"After the designer measured the document, the situation changed."
+286,The report said that the designer measured the document.
+287,"If the designer measured the document, the result mattered."
+288,The person who helped the document was the researcher.
+289,"After the researcher helped the document, the situation changed."
+290,The report said that the researcher helped the document.
+291,"If the researcher helped the document, the result mattered."
+292,The person who measured the document was the journalist.
+293,"After the journalist measured the document, the situation changed."
+294,The report said that the journalist measured the document.
+295,"If the journalist measured the document, the result mattered."
+296,The person who found the signal was the analyst.
+297,"After the analyst found the signal, the situation changed."
+298,The report said that the analyst found the signal.
+299,"If the analyst found the signal, the result mattered."
+300,The student never found the system.
+301,Could the student have found the system?
+302,The student will find the system.
+303,The student might have found the system.
+304,The system had been found by the student.
+305,It is true that the student found the system.
+306,The student never found the system after the discussion.
+307,Did the student find the system after the discussion?
+308,The student is going to find the system after the discussion.
+309,The student may have found the system after the discussion.
+310,The system had been found by the student after the discussion.
+311,The fact is that the student found the system after the discussion.
+312,The scientist did not explain a black cat.
+313,Could the scientist have explained a black cat?
+314,The scientist will explain a black cat.
+315,The scientist may have explained a black cat.
+316,A black cat had been explained by the scientist.
+317,It is true that the scientist explained a black cat.
+318,The scientist never explained a black cat before the deadline.
+319,Could the scientist have explained a black cat before the deadline?
+320,The scientist is going to explain a black cat before the deadline.
+321,The scientist might have explained a black cat before the deadline.
+322,A black cat was explained by the scientist before the deadline.
+323,It is true that the scientist explained a black cat before the deadline.
+324,The writer did not prepare the decision.
+325,Did the writer prepare the decision?
+326,The writer is going to prepare the decision.
+327,The writer may have prepared the decision.
+328,The decision was prepared by the writer.
+329,The fact is that the writer prepared the decision.
+330,The writer never prepared the decision after the discussion.
+331,Could the writer have prepared the decision after the discussion?
+332,The writer is going to prepare the decision after the discussion.
+333,The writer might have prepared the decision after the discussion.
+334,The decision had been prepared by the writer after the discussion.
+335,It is true that the writer prepared the decision after the discussion.
+336,The scientist never created the patient.
+337,Could the scientist have created the patient?
+338,The scientist is going to create the patient.
+339,The scientist might have created the patient.
+340,The patient had been created by the scientist.
+341,It is true that the scientist created the patient.
+342,The scientist never created the patient after the discussion.
+343,Could the scientist have created the patient after the discussion?
+344,The scientist will create the patient after the discussion.
+345,The scientist may have created the patient after the discussion.
+346,The patient had been created by the scientist after the discussion.
+347,The fact is that the scientist created the patient after the discussion.
+348,The programmer never studied the patient.
+349,Did the programmer study the patient?
+350,The programmer will study the patient.
+351,The programmer might have studied the patient.
+352,The patient had been studied by the programmer.
+353,It is true that the programmer studied the patient.
+354,The programmer did not study the patient before the presentation.
+355,Could the programmer have studied the patient before the presentation?
+356,The programmer is going to study the patient before the presentation.
+357,The programmer might have studied the patient before the presentation.
+358,The patient had been studied by the programmer before the presentation.
+359,The fact is that the programmer studied the patient before the presentation.
+360,The scientist never prepared the rule.
+361,Did the scientist prepare the rule?
+362,The scientist will prepare the rule.
+363,The scientist may have prepared the rule.
+364,The rule had been prepared by the scientist.
+365,The fact is that the scientist prepared the rule.
+366,The scientist never prepared the rule in the laboratory.
+367,Did the scientist prepare the rule in the laboratory?
+368,The scientist is going to prepare the rule in the laboratory.
+369,The scientist might have prepared the rule in the laboratory.
+370,The rule was prepared by the scientist in the laboratory.
+371,The fact is that the scientist prepared the rule in the laboratory.
+372,The programmer did not test a black cat.
+373,Could the programmer have tested a black cat?
+374,The programmer will test a black cat.
+375,The programmer may have tested a black cat.
+376,A black cat had been tested by the programmer.
+377,It is true that the programmer tested a black cat.
+378,The programmer did not test a black cat before the presentation.
+379,Did the programmer test a black cat before the presentation?
+380,The programmer is going to test a black cat before the presentation.
+381,The programmer may have tested a black cat before the presentation.
+382,A black cat was tested by the programmer before the presentation.
+383,The fact is that the programmer tested a black cat before the presentation.
+384,The doctor never examined a complex machine.
+385,Could the doctor have examined a complex machine?
+386,The doctor will examine a complex machine.
+387,The doctor might have examined a complex machine.
+388,A complex machine had been examined by the doctor.
+389,The fact is that the doctor examined a complex machine.
+390,The doctor never examined a complex machine before the deadline.
+391,Did the doctor examine a complex machine before the deadline?
+392,The doctor is going to examine a complex machine before the deadline.
+393,The doctor might have examined a complex machine before the deadline.
+394,A complex machine was examined by the doctor before the deadline.
+395,The fact is that the doctor examined a complex machine before the deadline.
+396,The programmer never prepared a beautiful painting.
+397,Could the programmer have prepared a beautiful painting?
+398,The programmer is going to prepare a beautiful painting.
+399,The programmer might have prepared a beautiful painting.
+400,A beautiful painting was prepared by the programmer.
+401,It is true that the programmer prepared a beautiful painting.
+402,The programmer never prepared a beautiful painting in the laboratory.
+403,Could the programmer have prepared a beautiful painting in the laboratory?
+404,The programmer will prepare a beautiful painting in the laboratory.
+405,The programmer might have prepared a beautiful painting in the laboratory.
+406,A beautiful painting had been prepared by the programmer in the laboratory.
+407,It is true that the programmer prepared a beautiful painting in the laboratory.
+408,The programmer did not report the patient.
+409,Could the programmer have reported the patient?
+410,The programmer is going to report the patient.
+411,The programmer might have reported the patient.
+412,The patient had been reported by the programmer.
+413,It is true that the programmer reported the patient.
+414,The programmer did not report the patient at the school.
+415,Did the programmer report the patient at the school?
+416,The programmer will report the patient at the school.
+417,The programmer may have reported the patient at the school.
+418,The patient had been reported by the programmer at the school.
+419,It is true that the programmer reported the patient at the school.
+420,The doctor never studied a black cat.
+421,Did the doctor study a black cat?
+422,The doctor will study a black cat.
+423,The doctor might have studied a black cat.
+424,A black cat was studied by the doctor.
+425,The fact is that the doctor studied a black cat.
+426,The doctor did not study a black cat after the discussion.
+427,Could the doctor have studied a black cat after the discussion?
+428,The doctor will study a black cat after the discussion.
+429,The doctor may have studied a black cat after the discussion.
+430,A black cat had been studied by the doctor after the discussion.
+431,The fact is that the doctor studied a black cat after the discussion.
+432,The teacher did not examine a complex machine.
+433,Did the teacher examine a complex machine?
+434,The teacher is going to examine a complex machine.
+435,The teacher may have examined a complex machine.
+436,A complex machine had been examined by the teacher.
+437,It is true that the teacher examined a complex machine.
+438,The teacher never examined a complex machine before the deadline.
+439,Did the teacher examine a complex machine before the deadline?
+440,The teacher will examine a complex machine before the deadline.
+441,The teacher may have examined a complex machine before the deadline.
+442,A complex machine had been examined by the teacher before the deadline.
+443,The fact is that the teacher examined a complex machine before the deadline.
+444,The manager did not observe the system.
+445,Could the manager have observed the system?
+446,The manager will observe the system.
+447,The manager may have observed the system.
+448,The system had been observed by the manager.
+449,It is true that the manager observed the system.
+450,The manager never observed the system during the experiment.
+451,Did the manager observe the system during the experiment?
+452,The manager will observe the system during the experiment.
+453,The manager might have observed the system during the experiment.
+454,The system was observed by the manager during the experiment.
+455,It is true that the manager observed the system during the experiment.
+456,The teacher did not find a black cat.
+457,Could the teacher have found a black cat?
+458,The teacher is going to find a black cat.
+459,The teacher might have found a black cat.
+460,A black cat was found by the teacher.
+461,The fact is that the teacher found a black cat.
+462,The teacher never found a black cat after the interview.
+463,Did the teacher find a black cat after the interview?
+464,The teacher will find a black cat after the interview.
+465,The teacher might have found a black cat after the interview.
+466,A black cat had been found by the teacher after the interview.
+467,It is true that the teacher found a black cat after the interview.
+468,The artist never solved the rule.
+469,Could the artist have solved the rule?
+470,The artist will solve the rule.
+471,The artist might have solved the rule.
+472,The rule had been solved by the artist.
+473,The fact is that the artist solved the rule.
+474,The artist never solved the rule during the meeting.
+475,Did the artist solve the rule during the meeting?
+476,The artist will solve the rule during the meeting.
+477,The artist may have solved the rule during the meeting.
+478,The rule had been solved by the artist during the meeting.
+479,It is true that the artist solved the rule during the meeting.
+480,The programmer did not help the decision.
+481,Could the programmer have helped the decision?
+482,The programmer is going to help the decision.
+483,The programmer might have helped the decision.
+484,The decision was helped by the programmer.
+485,It is true that the programmer helped the decision.
+486,The programmer never helped the decision during the experiment.
+487,Did the programmer help the decision during the experiment?
+488,The programmer is going to help the decision during the experiment.
+489,The programmer may have helped the decision during the experiment.
+490,The decision had been helped by the programmer during the experiment.
+491,It is true that the programmer helped the decision during the experiment.
+492,The teacher never tested a beautiful painting.
+493,Could the teacher have tested a beautiful painting?
+494,The teacher will test a beautiful painting.
+495,The teacher might have tested a beautiful painting.
+496,A beautiful painting had been tested by the teacher.
+497,The fact is that the teacher tested a beautiful painting.
+498,The teacher never tested a beautiful painting during the experiment.
+499,Could the teacher have tested a beautiful painting during the experiment?
+500,The teacher is going to test a beautiful painting during the experiment.
+501,The teacher might have tested a beautiful painting during the experiment.
+502,A beautiful painting had been tested by the teacher during the experiment.
+503,It is true that the teacher tested a beautiful painting during the experiment.
+504,The manager did not improve a short story.
+505,Did the manager improve a short story?
+506,The manager is going to improve a short story.
+507,The manager may have improved a short story.
+508,A short story was improved by the manager.
+509,The fact is that the manager improved a short story.
+510,The manager never improved a short story before the deadline.
+511,Could the manager have improved a short story before the deadline?
+512,The manager is going to improve a short story before the deadline.
+513,The manager may have improved a short story before the deadline.
+514,A short story had been improved by the manager before the deadline.
+515,The fact is that the manager improved a short story before the deadline.
+516,The artist never created a short story.
+517,Could the artist have created a short story?
+518,The artist will create a short story.
+519,The artist may have created a short story.
+520,A short story was created by the artist.
+521,The fact is that the artist created a short story.
+522,The artist never created a short story during the meeting.
+523,Could the artist have created a short story during the meeting?
+524,The artist will create a short story during the meeting.
+525,The artist may have created a short story during the meeting.
+526,A short story was created by the artist during the meeting.
+527,The fact is that the artist created a short story during the meeting.
+528,The student did not create the decision.
+529,Did the student create the decision?
+530,The student is going to create the decision.
+531,The student might have created the decision.
+532,The decision had been created by the student.
+533,The fact is that the student created the decision.
+534,The student did not create the decision after the interview.
+535,Could the student have created the decision after the interview?
+536,The student will create the decision after the interview.
+537,The student might have created the decision after the interview.
+538,The decision had been created by the student after the interview.
+539,The fact is that the student created the decision after the interview.
+540,The scientist never prepared a complex machine.
+541,Did the scientist prepare a complex machine?
+542,The scientist is going to prepare a complex machine.
+543,The scientist may have prepared a complex machine.
+544,A complex machine had been prepared by the scientist.
+545,The fact is that the scientist prepared a complex machine.
+546,The scientist did not prepare a complex machine during the meeting.
+547,Did the scientist prepare a complex machine during the meeting?
+548,The scientist is going to prepare a complex machine during the meeting.
+549,The scientist may have prepared a complex machine during the meeting.
+550,A complex machine had been prepared by the scientist during the meeting.
+551,It is true that the scientist prepared a complex machine during the meeting.
+552,The child did not defend the problem.
+553,Did the child defend the problem?
+554,The child is going to defend the problem.
+555,The child may have defended the problem.
+556,The problem was defended by the child.
+557,The fact is that the child defended the problem.
+558,The child never defended the problem after the discussion.
+559,Could the child have defended the problem after the discussion?
+560,The child will defend the problem after the discussion.
+561,The child may have defended the problem after the discussion.
+562,The problem was defended by the child after the discussion.
+563,The fact is that the child defended the problem after the discussion.
+564,The programmer did not prepare a black cat.
+565,Could the programmer have prepared a black cat?
+566,The programmer will prepare a black cat.
+567,The programmer might have prepared a black cat.
+568,A black cat was prepared by the programmer.
+569,The fact is that the programmer prepared a black cat.
+570,The programmer did not prepare a black cat after the discussion.
+571,Did the programmer prepare a black cat after the discussion?
+572,The programmer is going to prepare a black cat after the discussion.
+573,The programmer may have prepared a black cat after the discussion.
+574,A black cat was prepared by the programmer after the discussion.
+575,The fact is that the programmer prepared a black cat after the discussion.
+576,The child did not design a black cat.
+577,Did the child design a black cat?
+578,The child will design a black cat.
+579,The child might have designed a black cat.
+580,A black cat was designed by the child.
+581,It is true that the child designed a black cat.
+582,The child never designed a black cat during the meeting.
+583,Could the child have designed a black cat during the meeting?
+584,The child will design a black cat during the meeting.
+585,The child may have designed a black cat during the meeting.
+586,A black cat was designed by the child during the meeting.
+587,It is true that the child designed a black cat during the meeting.
+588,The engineer never defended a new principle.
+589,Did the engineer defend a new principle?
+590,The engineer will defend a new principle.
+591,The engineer may have defended a new principle.
+592,A new principle was defended by the engineer.
+593,The fact is that the engineer defended a new principle.
+594,The engineer never defended a new principle before the deadline.
+595,Did the engineer defend a new principle before the deadline?
+596,The engineer will defend a new principle before the deadline.
+597,The engineer might have defended a new principle before the deadline.
+598,A new principle was defended by the engineer before the deadline.
+599,It is true that the engineer defended a new principle before the deadline.
+600,The scientist never defended a beautiful painting.
+601,Did the scientist defend a beautiful painting?
+602,The scientist is going to defend a beautiful painting.
+603,The scientist may have defended a beautiful painting.
+604,A beautiful painting had been defended by the scientist.
+605,It is true that the scientist defended a beautiful painting.
+606,The scientist did not defend a beautiful painting before the deadline.
+607,Did the scientist defend a beautiful painting before the deadline?
+608,The scientist is going to defend a beautiful painting before the deadline.
+609,The scientist might have defended a beautiful painting before the deadline.
+610,A beautiful painting was defended by the scientist before the deadline.
+611,The fact is that the scientist defended a beautiful painting before the deadline.
+612,The engineer did not analyze the rule.
+613,Could the engineer have analyzed the rule?
+614,The engineer will analyze the rule.
+615,The engineer might have analyzed the rule.
+616,The rule was analyzed by the engineer.
+617,The fact is that the engineer analyzed the rule.
+618,The engineer never analyzed the rule after the discussion.
+619,Could the engineer have analyzed the rule after the discussion?
+620,The engineer is going to analyze the rule after the discussion.
+621,The engineer may have analyzed the rule after the discussion.
+622,The rule had been analyzed by the engineer after the discussion.
+623,The fact is that the engineer analyzed the rule after the discussion.
+624,The manager never prepared the rule.
+625,Could the manager have prepared the rule?
+626,The manager is going to prepare the rule.
+627,The manager may have prepared the rule.
+628,The rule had been prepared by the manager.
+629,The fact is that the manager prepared the rule.
+630,The manager never prepared the rule before the presentation.
+631,Could the manager have prepared the rule before the presentation?
+632,The manager will prepare the rule before the presentation.
+633,The manager may have prepared the rule before the presentation.
+634,The rule had been prepared by the manager before the presentation.
+635,It is true that the manager prepared the rule before the presentation.
+636,The doctor never helped the problem.
+637,Could the doctor have helped the problem?
+638,The doctor is going to help the problem.
+639,The doctor may have helped the problem.
+640,The problem was helped by the doctor.
+641,It is true that the doctor helped the problem.
+642,The doctor never helped the problem before the deadline.
+643,Could the doctor have helped the problem before the deadline?
+644,The doctor will help the problem before the deadline.
+645,The doctor might have helped the problem before the deadline.
+646,The problem had been helped by the doctor before the deadline.
+647,It is true that the doctor helped the problem before the deadline.
+648,The student did not build a black cat.
+649,Did the student build a black cat?
+650,The student will build a black cat.
+651,The student may have built a black cat.
+652,A black cat had been built by the student.
+653,The fact is that the student built a black cat.
+654,The student never built a black cat after the interview.
+655,Could the student have built a black cat after the interview?
+656,The student will build a black cat after the interview.
+657,The student might have built a black cat after the interview.
+658,A black cat was built by the student after the interview.
+659,It is true that the student built a black cat after the interview.
+660,The programmer never approved the system.
+661,Did the programmer approve the system?
+662,The programmer will approve the system.
+663,The programmer might have approved the system.
+664,The system was approved by the programmer.
+665,It is true that the programmer approved the system.
+666,The programmer did not approve the system in the laboratory.
+667,Could the programmer have approved the system in the laboratory?
+668,The programmer is going to approve the system in the laboratory.
+669,The programmer might have approved the system in the laboratory.
+670,The system had been approved by the programmer in the laboratory.
+671,It is true that the programmer approved the system in the laboratory.
+672,The student never explained a short story.
+673,Could the student have explained a short story?
+674,The student is going to explain a short story.
+675,The student might have explained a short story.
+676,A short story was explained by the student.
+677,The fact is that the student explained a short story.
+678,The student never explained a short story after the interview.
+679,Could the student have explained a short story after the interview?
+680,The student is going to explain a short story after the interview.
+681,The student might have explained a short story after the interview.
+682,A short story had been explained by the student after the interview.
+683,The fact is that the student explained a short story after the interview.
+684,The writer never approved the rule.
+685,Could the writer have approved the rule?
+686,The writer will approve the rule.
+687,The writer might have approved the rule.
+688,The rule was approved by the writer.
+689,The fact is that the writer approved the rule.
+690,The writer never approved the rule after the interview.
+691,Did the writer approve the rule after the interview?
+692,The writer is going to approve the rule after the interview.
+693,The writer might have approved the rule after the interview.
+694,The rule was approved by the writer after the interview.
+695,It is true that the writer approved the rule after the interview.
+696,The programmer did not test the decision.
+697,Could the programmer have tested the decision?
+698,The programmer is going to test the decision.
+699,The programmer might have tested the decision.
+700,The decision was tested by the programmer.
+701,The fact is that the programmer tested the decision.
+702,The programmer never tested the decision in the laboratory.
+703,Could the programmer have tested the decision in the laboratory?
+704,The programmer is going to test the decision in the laboratory.
+705,The programmer may have tested the decision in the laboratory.
+706,The decision was tested by the programmer in the laboratory.
+707,The fact is that the programmer tested the decision in the laboratory.
+708,The doctor never reported the decision.
+709,Did the doctor report the decision?
+710,The doctor will report the decision.
+711,The doctor may have reported the decision.
+712,The decision was reported by the doctor.
+713,The fact is that the doctor reported the decision.
+714,The doctor never reported the decision during the meeting.
+715,Could the doctor have reported the decision during the meeting?
+716,The doctor will report the decision during the meeting.
+717,The doctor might have reported the decision during the meeting.
+718,The decision had been reported by the doctor during the meeting.
+719,It is true that the doctor reported the decision during the meeting.
+720,The programmer never wrote the system.
+721,Could the programmer have wrote the system?
+722,The programmer will write the system.
+723,The programmer may have wrote the system.
+724,The system was wrote by the programmer.
+725,The fact is that the programmer wrote the system.
+726,The programmer never wrote the system before the deadline.
+727,Could the programmer have wrote the system before the deadline?
+728,The programmer is going to write the system before the deadline.
+729,The programmer might have wrote the system before the deadline.
+730,The system was wrote by the programmer before the deadline.
+731,The fact is that the programmer wrote the system before the deadline.
+732,The student did not observe the system.
+733,Did the student observe the system?
+734,The student is going to observe the system.
+735,The student might have observed the system.
+736,The system was observed by the student.
+737,It is true that the student observed the system.
+738,The student never observed the system in the laboratory.
+739,Did the student observe the system in the laboratory?
+740,The student will observe the system in the laboratory.
+741,The student might have observed the system in the laboratory.
+742,The system was observed by the student in the laboratory.
+743,The fact is that the student observed the system in the laboratory.
+744,The scientist never studied a new principle.
+745,Could the scientist have studied a new principle?
+746,The scientist will study a new principle.
+747,The scientist may have studied a new principle.
+748,A new principle was studied by the scientist.
+749,The fact is that the scientist studied a new principle.
+750,The scientist never studied a new principle before the presentation.
+751,Could the scientist have studied a new principle before the presentation?
+752,The scientist will study a new principle before the presentation.
+753,The scientist may have studied a new principle before the presentation.
+754,A new principle had been studied by the scientist before the presentation.
+755,The fact is that the scientist studied a new principle before the presentation.
+756,The manager did not report a complex machine.
+757,Could the manager have reported a complex machine?
+758,The manager is going to report a complex machine.
+759,The manager might have reported a complex machine.
+760,A complex machine was reported by the manager.
+761,The fact is that the manager reported a complex machine.
+762,The manager never reported a complex machine after the interview.
+763,Did the manager report a complex machine after the interview?
+764,The manager will report a complex machine after the interview.
+765,The manager may have reported a complex machine after the interview.
+766,A complex machine had been reported by the manager after the interview.
+767,The fact is that the manager reported a complex machine after the interview.
+768,The scientist never designed the decision.
+769,Could the scientist have designed the decision?
+770,The scientist will design the decision.
+771,The scientist may have designed the decision.
+772,The decision had been designed by the scientist.
+773,It is true that the scientist designed the decision.
+774,The scientist never designed the decision in the laboratory.
+775,Did the scientist design the decision in the laboratory?
+776,The scientist is going to design the decision in the laboratory.
+777,The scientist might have designed the decision in the laboratory.
+778,The decision had been designed by the scientist in the laboratory.
+779,The fact is that the scientist designed the decision in the laboratory.
+780,The child did not help the system.
+781,Did the child help the system?
+782,The child will help the system.
+783,The child may have helped the system.
+784,The system was helped by the child.
+785,It is true that the child helped the system.
+786,The child never helped the system before the deadline.
+787,Did the child help the system before the deadline?
+788,The child will help the system before the deadline.
+789,The child might have helped the system before the deadline.
+790,The system had been helped by the child before the deadline.
+791,The fact is that the child helped the system before the deadline.
+792,The programmer never examined a black cat.
+793,Did the programmer examine a black cat?
+794,The programmer is going to examine a black cat.
+795,The programmer may have examined a black cat.
+796,A black cat was examined by the programmer.
+797,The fact is that the programmer examined a black cat.
+798,The programmer never examined a black cat after the discussion.
+799,Could the programmer have examined a black cat after the discussion?
+800,The programmer will examine a black cat after the discussion.
+801,The programmer might have examined a black cat after the discussion.
+802,A black cat had been examined by the programmer after the discussion.
+803,It is true that the programmer examined a black cat after the discussion.
+804,The writer never helped the problem.
+805,Did the writer help the problem?
+806,The writer will help the problem.
+807,The writer may have helped the problem.
+808,The problem had been helped by the writer.
+809,The fact is that the writer helped the problem.
+810,The writer did not help the problem in the laboratory.
+811,Could the writer have helped the problem in the laboratory?
+812,The writer will help the problem in the laboratory.
+813,The writer might have helped the problem in the laboratory.
+814,The problem had been helped by the writer in the laboratory.
+815,It is true that the writer helped the problem in the laboratory.
+816,The programmer never analyzed the system.
+817,Did the programmer analyze the system?
+818,The programmer will analyze the system.
+819,The programmer may have analyzed the system.
+820,The system was analyzed by the programmer.
+821,The fact is that the programmer analyzed the system.
+822,The programmer did not analyze the system after the interview.
+823,Did the programmer analyze the system after the interview?
+824,The programmer will analyze the system after the interview.
+825,The programmer may have analyzed the system after the interview.
+826,The system was analyzed by the programmer after the interview.
+827,The fact is that the programmer analyzed the system after the interview.
+828,The programmer did not measure the problem.
+829,Could the programmer have measured the problem?
+830,The programmer is going to measure the problem.
+831,The programmer may have measured the problem.
+832,The problem was measured by the programmer.
+833,It is true that the programmer measured the problem.
+834,The programmer never measured the problem before the deadline.
+835,Did the programmer measure the problem before the deadline?
+836,The programmer is going to measure the problem before the deadline.
+837,The programmer might have measured the problem before the deadline.
+838,The problem was measured by the programmer before the deadline.
+839,It is true that the programmer measured the problem before the deadline.
+840,The engineer never analyzed a new principle.
+841,Did the engineer analyze a new principle?
+842,The engineer will analyze a new principle.
+843,The engineer might have analyzed a new principle.
+844,A new principle was analyzed by the engineer.
+845,The fact is that the engineer analyzed a new principle.
+846,The engineer did not analyze a new principle during the experiment.
+847,Could the engineer have analyzed a new principle during the experiment?
+848,The engineer will analyze a new principle during the experiment.
+849,The engineer might have analyzed a new principle during the experiment.
+850,A new principle was analyzed by the engineer during the experiment.
+851,The fact is that the engineer analyzed a new principle during the experiment.
+852,The doctor never wrote a beautiful painting.
+853,Could the doctor have wrote a beautiful painting?
+854,The doctor will write a beautiful painting.
+855,The doctor may have wrote a beautiful painting.
+856,A beautiful painting had been wrote by the doctor.
+857,It is true that the doctor wrote a beautiful painting.
+858,The doctor did not write a beautiful painting before the presentation.
+859,Did the doctor write a beautiful painting before the presentation?
+860,The doctor will write a beautiful painting before the presentation.
+861,The doctor may have wrote a beautiful painting before the presentation.
+862,A beautiful painting was wrote by the doctor before the presentation.
+863,It is true that the doctor wrote a beautiful painting before the presentation.
+864,The manager never approved the system.
+865,Could the manager have approved the system?
+866,The manager is going to approve the system.
+867,The manager might have approved the system.
+868,The system was approved by the manager.
+869,It is true that the manager approved the system.
+870,The manager did not approve the system after the discussion.
+871,Could the manager have approved the system after the discussion?
+872,The manager is going to approve the system after the discussion.
+873,The manager might have approved the system after the discussion.
+874,The system was approved by the manager after the discussion.
+875,The fact is that the manager approved the system after the discussion.
+876,The doctor did not analyze the patient.
+877,Did the doctor analyze the patient?
+878,The doctor is going to analyze the patient.
+879,The doctor might have analyzed the patient.
+880,The patient had been analyzed by the doctor.
+881,It is true that the doctor analyzed the patient.
+882,The doctor never analyzed the patient in the laboratory.
+883,Could the doctor have analyzed the patient in the laboratory?
+884,The doctor is going to analyze the patient in the laboratory.
+885,The doctor may have analyzed the patient in the laboratory.
+886,The patient had been analyzed by the doctor in the laboratory.
+887,The fact is that the doctor analyzed the patient in the laboratory.
+888,The scientist did not write a new principle.
+889,Did the scientist write a new principle?
+890,The scientist is going to write a new principle.
+891,The scientist might have wrote a new principle.
+892,A new principle was wrote by the scientist.
+893,The fact is that the scientist wrote a new principle.
+894,The scientist never wrote a new principle after the interview.
+895,Did the scientist write a new principle after the interview?
+896,The scientist will write a new principle after the interview.
+897,The scientist may have wrote a new principle after the interview.
+898,A new principle was wrote by the scientist after the interview.
+899,It is true that the scientist wrote a new principle after the interview.
+900,The person who could not explain the question was the pilot.
+901,Can we confirm that the person who explained the question was the pilot?
+902,The person who is likely to explain the question is the pilot.
+903,There is a chance that the person who explained the question was the pilot.
+904,The person by whom the question was eventually explained was the pilot.
+905,It can be formally said that the person who explained the question was the pilot.
+906,"After the pilot was unable to explain the question, the situation changed."
+907,Can we confirm that the situation changed after the pilot explained the question?
+908,"After the pilot plans to explain the question, the situation will change."
+909,"After the pilot probably explained the question, the situation changed."
+910,"After the question got explained by the pilot, the situation changed."
+911,"The statement that after the pilot explained the question, the situation changed is true."
+912,The report said that the pilot failed to explain the question.
+913,Is there evidence that the report said the pilot explained the question?
+914,The report said that the pilot is expected to explain the question.
+915,The report said that the pilot probably explained the question.
+916,The report said that the question was eventually explained by the pilot.
+917,The statement that the report said the pilot explained the question is true.
+918,"If the pilot could not explain the question, the result mattered."
+919,Was it true that the result mattered if the pilot explained the question?
+920,"If the pilot is expected to explain the question, the result will matter."
+921,"If it is possible that the pilot explained the question, the result mattered."
+922,"If the question was successfully explained by the pilot, the result mattered."
+923,"One can state that if the pilot explained the question, the result mattered."
+924,The person who was unable to approve the question was the designer.
+925,Can we confirm that the person who approved the question was the designer?
+926,The person who plans to approve the question is the designer.
+927,The person who probably approved the question was the designer.
+928,The person by whom the question was eventually approved was the designer.
+929,One can state that the person who approved the question was the designer.
+930,"After the designer could not approve the question, the situation changed."
+931,Is there evidence that the situation changed after the designer approved the question?
+932,"After the designer is likely to approve the question, the situation will change."
+933,"After the designer probably approved the question, the situation changed."
+934,"After the question was eventually approved by the designer, the situation changed."
+935,"One can state that after the designer approved the question, the situation changed."
+936,The report said that the designer could not approve the question.
+937,Is there evidence that the report said the designer approved the question?
+938,The report said that the designer is expected to approve the question.
+939,The report said it is possible that the designer approved the question.
+940,The report said that the question was eventually approved by the designer.
+941,The statement that the report said the designer approved the question is true.
+942,"If the designer could not approve the question, the result mattered."
+943,Was it true that the result mattered if the designer approved the question?
+944,"If the designer is likely to approve the question, the result will matter."
+945,"If there is a chance that the designer approved the question, the result mattered."
+946,"If the question got approved by the designer, the result mattered."
+947,"The statement that if the designer approved the question, the result mattered is true."
+948,The person who was unable to help the family was the lawyer.
+949,Was it true that the person who helped the family was the lawyer?
+950,The person who plans to help the family is the lawyer.
+951,It is possible that the person who helped the family was the lawyer.
+952,The person by whom the family was successfully helped was the lawyer.
+953,It can be formally said that the person who helped the family was the lawyer.
+954,"After the lawyer could not help the family, the situation changed."
+955,Can we confirm that the situation changed after the lawyer helped the family?
+956,"After the lawyer is likely to help the family, the situation will change."
+957,"There is a chance that after the lawyer helped the family, the situation changed."
+958,"After the family was successfully helped by the lawyer, the situation changed."
+959,"The statement that after the lawyer helped the family, the situation changed is true."
+960,The report said that the lawyer could not help the family.
+961,Can we confirm that the report said the lawyer helped the family?
+962,The report said that the lawyer plans to help the family.
+963,The report said it is possible that the lawyer helped the family.
+964,The report said that the family was eventually helped by the lawyer.
+965,It can be formally said that the report said the lawyer helped the family.
+966,"If the lawyer failed to help the family, the result mattered."
+967,Was it true that the result mattered if the lawyer helped the family?
+968,"If the lawyer plans to help the family, the result will matter."
+969,"If it is possible that the lawyer helped the family, the result mattered."
+970,"If the family was successfully helped by the lawyer, the result mattered."
+971,"The statement that if the lawyer helped the family, the result mattered is true."
+972,The person who was unable to test the data was the pilot.
+973,Was it true that the person who tested the data was the pilot?
+974,The person who plans to test the data is the pilot.
+975,It is possible that the person who tested the data was the pilot.
+976,The person by whom the data was eventually tested was the pilot.
+977,It can be formally said that the person who tested the data was the pilot.
+978,"After the pilot was unable to test the data, the situation changed."
+979,Is there evidence that the situation changed after the pilot tested the data?
+980,"After the pilot plans to test the data, the situation will change."
+981,"After the pilot probably tested the data, the situation changed."
+982,"After the data was eventually tested by the pilot, the situation changed."
+983,"It can be formally said that after the pilot tested the data, the situation changed."
+984,The report said that the pilot failed to test the data.
+985,Can we confirm that the report said the pilot tested the data?
+986,The report said that the pilot is expected to test the data.
+987,The report said that the pilot probably tested the data.
+988,The report said that the data got tested by the pilot.
+989,It can be formally said that the report said the pilot tested the data.
+990,"If the pilot was unable to test the data, the result mattered."
+991,Can we confirm that the result mattered if the pilot tested the data?
+992,"If the pilot is likely to test the data, the result will matter."
+993,"If it is possible that the pilot tested the data, the result mattered."
+994,"If the data got tested by the pilot, the result mattered."
+995,"It can be formally said that if the pilot tested the data, the result mattered."
+996,The person who was unable to measure the data was the lawyer.
+997,Can we confirm that the person who measured the data was the lawyer?
+998,The person who is likely to measure the data is the lawyer.
+999,It is possible that the person who measured the data was the lawyer.
+1000,The person by whom the data got measured was the lawyer.
+1001,It can be formally said that the person who measured the data was the lawyer.
+1002,"After the lawyer was unable to measure the data, the situation changed."
+1003,Is there evidence that the situation changed after the lawyer measured the data?
+1004,"After the lawyer is likely to measure the data, the situation will change."
+1005,"There is a chance that after the lawyer measured the data, the situation changed."
+1006,"After the data got measured by the lawyer, the situation changed."
+1007,"One can state that after the lawyer measured the data, the situation changed."
+1008,The report said that the lawyer was unable to measure the data.
+1009,Was it true that the report said the lawyer measured the data?
+1010,The report said that the lawyer plans to measure the data.
+1011,The report said it is possible that the lawyer measured the data.
+1012,The report said that the data was successfully measured by the lawyer.
+1013,The statement that the report said the lawyer measured the data is true.
+1014,"If the lawyer could not measure the data, the result mattered."
+1015,Is there evidence that the result mattered if the lawyer measured the data?
+1016,"If the lawyer is expected to measure the data, the result will matter."
+1017,"If there is a chance that the lawyer measured the data, the result mattered."
+1018,"If the data got measured by the lawyer, the result mattered."
+1019,"The statement that if the lawyer measured the data, the result mattered is true."
+1020,The person who failed to measure the client was the analyst.
+1021,Was it true that the person who measured the client was the analyst?
+1022,The person who is likely to measure the client is the analyst.
+1023,It is possible that the person who measured the client was the analyst.
+1024,The person by whom the client was successfully measured was the analyst.
+1025,The statement that the person who measured the client was the analyst is true.
+1026,"After the analyst was unable to measure the client, the situation changed."
+1027,Was it true that the situation changed after the analyst measured the client?
+1028,"After the analyst plans to measure the client, the situation will change."
+1029,"It is possible that after the analyst measured the client, the situation changed."
+1030,"After the client was eventually measured by the analyst, the situation changed."
+1031,"The statement that after the analyst measured the client, the situation changed is true."
+1032,The report said that the analyst was unable to measure the client.
+1033,Can we confirm that the report said the analyst measured the client?
+1034,The report said that the analyst is likely to measure the client.
+1035,The report said there is a chance that the analyst measured the client.
+1036,The report said that the client was successfully measured by the analyst.
+1037,It can be formally said that the report said the analyst measured the client.
+1038,"If the analyst failed to measure the client, the result mattered."
+1039,Can we confirm that the result mattered if the analyst measured the client?
+1040,"If the analyst is expected to measure the client, the result will matter."
+1041,"If the analyst probably measured the client, the result mattered."
+1042,"If the client was successfully measured by the analyst, the result mattered."
+1043,"The statement that if the analyst measured the client, the result mattered is true."
+1044,The person who failed to solve the family was the analyst.
+1045,Is there evidence that the person who solved the family was the analyst?
+1046,The person who plans to solve the family is the analyst.
+1047,It is possible that the person who solved the family was the analyst.
+1048,The person by whom the family was successfully solved was the analyst.
+1049,One can state that the person who solved the family was the analyst.
+1050,"After the analyst failed to solve the family, the situation changed."
+1051,Can we confirm that the situation changed after the analyst solved the family?
+1052,"After the analyst plans to solve the family, the situation will change."
+1053,"It is possible that after the analyst solved the family, the situation changed."
+1054,"After the family got solved by the analyst, the situation changed."
+1055,"It can be formally said that after the analyst solved the family, the situation changed."
+1056,The report said that the analyst failed to solve the family.
+1057,Can we confirm that the report said the analyst solved the family?
+1058,The report said that the analyst plans to solve the family.
+1059,The report said it is possible that the analyst solved the family.
+1060,The report said that the family was successfully solved by the analyst.
+1061,One can state that the report said the analyst solved the family.
+1062,"If the analyst could not solve the family, the result mattered."
+1063,Can we confirm that the result mattered if the analyst solved the family?
+1064,"If the analyst is likely to solve the family, the result will matter."
+1065,"If it is possible that the analyst solved the family, the result mattered."
+1066,"If the family was successfully solved by the analyst, the result mattered."
+1067,"The statement that if the analyst solved the family, the result mattered is true."
+1068,The person who failed to build the signal was the musician.
+1069,Can we confirm that the person who built the signal was the musician?
+1070,The person who plans to build the signal is the musician.
+1071,There is a chance that the person who built the signal was the musician.
+1072,The person by whom the signal was successfully built was the musician.
+1073,It can be formally said that the person who built the signal was the musician.
+1074,"After the musician was unable to build the signal, the situation changed."
+1075,Was it true that the situation changed after the musician built the signal?
+1076,"After the musician is expected to build the signal, the situation will change."
+1077,"There is a chance that after the musician built the signal, the situation changed."
+1078,"After the signal got built by the musician, the situation changed."
+1079,"It can be formally said that after the musician built the signal, the situation changed."
+1080,The report said that the musician could not build the signal.
+1081,Can we confirm that the report said the musician built the signal?
+1082,The report said that the musician is expected to build the signal.
+1083,The report said it is possible that the musician built the signal.
+1084,The report said that the signal was successfully built by the musician.
+1085,One can state that the report said the musician built the signal.
+1086,"If the musician was unable to build the signal, the result mattered."
+1087,Can we confirm that the result mattered if the musician built the signal?
+1088,"If the musician is expected to build the signal, the result will matter."
+1089,"If it is possible that the musician built the signal, the result mattered."
+1090,"If the signal got built by the musician, the result mattered."
+1091,"One can state that if the musician built the signal, the result mattered."
+1092,The person who could not report the family was the chef.
+1093,Is there evidence that the person who reported the family was the chef?
+1094,The person who plans to report the family is the chef.
+1095,There is a chance that the person who reported the family was the chef.
+1096,The person by whom the family was eventually reported was the chef.
+1097,The statement that the person who reported the family was the chef is true.
+1098,"After the chef was unable to report the family, the situation changed."
+1099,Can we confirm that the situation changed after the chef reported the family?
+1100,"After the chef is expected to report the family, the situation will change."
+1101,"It is possible that after the chef reported the family, the situation changed."
+1102,"After the family got reported by the chef, the situation changed."
+1103,"It can be formally said that after the chef reported the family, the situation changed."
+1104,The report said that the chef could not report the family.
+1105,Was it true that the report said the chef reported the family?
+1106,The report said that the chef is expected to report the family.
+1107,The report said that the chef probably reported the family.
+1108,The report said that the family was successfully reported by the chef.
+1109,One can state that the report said the chef reported the family.
+1110,"If the chef failed to report the family, the result mattered."
+1111,Can we confirm that the result mattered if the chef reported the family?
+1112,"If the chef is expected to report the family, the result will matter."
+1113,"If it is possible that the chef reported the family, the result mattered."
+1114,"If the family was eventually reported by the chef, the result mattered."
+1115,"It can be formally said that if the chef reported the family, the result mattered."
+1116,The person who was unable to discover the client was the analyst.
+1117,Is there evidence that the person who discovered the client was the analyst?
+1118,The person who plans to discover the client is the analyst.
+1119,The person who probably discovered the client was the analyst.
+1120,The person by whom the client was eventually discovered was the analyst.
+1121,One can state that the person who discovered the client was the analyst.
+1122,"After the analyst was unable to discover the client, the situation changed."
+1123,Is there evidence that the situation changed after the analyst discovered the client?
+1124,"After the analyst is expected to discover the client, the situation will change."
+1125,"There is a chance that after the analyst discovered the client, the situation changed."
+1126,"After the client was successfully discovered by the analyst, the situation changed."
+1127,"One can state that after the analyst discovered the client, the situation changed."
+1128,The report said that the analyst could not discover the client.
+1129,Is there evidence that the report said the analyst discovered the client?
+1130,The report said that the analyst is expected to discover the client.
+1131,The report said it is possible that the analyst discovered the client.
+1132,The report said that the client was successfully discovered by the analyst.
+1133,One can state that the report said the analyst discovered the client.
+1134,"If the analyst was unable to discover the client, the result mattered."
+1135,Can we confirm that the result mattered if the analyst discovered the client?
+1136,"If the analyst plans to discover the client, the result will matter."
+1137,"If it is possible that the analyst discovered the client, the result mattered."
+1138,"If the client got discovered by the analyst, the result mattered."
+1139,"It can be formally said that if the analyst discovered the client, the result mattered."
+1140,The person who could not discover the document was the nurse.
+1141,Is there evidence that the person who discovered the document was the nurse?
+1142,The person who plans to discover the document is the nurse.
+1143,It is possible that the person who discovered the document was the nurse.
+1144,The person by whom the document was successfully discovered was the nurse.
+1145,It can be formally said that the person who discovered the document was the nurse.
+1146,"After the nurse could not discover the document, the situation changed."
+1147,Is there evidence that the situation changed after the nurse discovered the document?
+1148,"After the nurse is likely to discover the document, the situation will change."
+1149,"It is possible that after the nurse discovered the document, the situation changed."
+1150,"After the document was successfully discovered by the nurse, the situation changed."
+1151,"One can state that after the nurse discovered the document, the situation changed."
+1152,The report said that the nurse failed to discover the document.
+1153,Can we confirm that the report said the nurse discovered the document?
+1154,The report said that the nurse is expected to discover the document.
+1155,The report said it is possible that the nurse discovered the document.
+1156,The report said that the document got discovered by the nurse.
+1157,One can state that the report said the nurse discovered the document.
+1158,"If the nurse could not discover the document, the result mattered."
+1159,Is there evidence that the result mattered if the nurse discovered the document?
+1160,"If the nurse plans to discover the document, the result will matter."
+1161,"If it is possible that the nurse discovered the document, the result mattered."
+1162,"If the document was successfully discovered by the nurse, the result mattered."
+1163,"The statement that if the nurse discovered the document, the result mattered is true."
+1164,The person who was unable to find the event was the researcher.
+1165,Is there evidence that the person who found the event was the researcher?
+1166,The person who is expected to find the event is the researcher.
+1167,It is possible that the person who found the event was the researcher.
+1168,The person by whom the event got found was the researcher.
+1169,It can be formally said that the person who found the event was the researcher.
+1170,"After the researcher failed to find the event, the situation changed."
+1171,Was it true that the situation changed after the researcher found the event?
+1172,"After the researcher plans to find the event, the situation will change."
+1173,"It is possible that after the researcher found the event, the situation changed."
+1174,"After the event got found by the researcher, the situation changed."
+1175,"The statement that after the researcher found the event, the situation changed is true."
+1176,The report said that the researcher failed to find the event.
+1177,Was it true that the report said the researcher found the event?
+1178,The report said that the researcher is expected to find the event.
+1179,The report said it is possible that the researcher found the event.
+1180,The report said that the event was successfully found by the researcher.
+1181,The statement that the report said the researcher found the event is true.
+1182,"If the researcher failed to find the event, the result mattered."
+1183,Can we confirm that the result mattered if the researcher found the event?
+1184,"If the researcher plans to find the event, the result will matter."
+1185,"If there is a chance that the researcher found the event, the result mattered."
+1186,"If the event got found by the researcher, the result mattered."
+1187,"The statement that if the researcher found the event, the result mattered is true."
+1188,The person who failed to report the garden was the chef.
+1189,Is there evidence that the person who reported the garden was the chef?
+1190,The person who is expected to report the garden is the chef.
+1191,The person who probably reported the garden was the chef.
+1192,The person by whom the garden got reported was the chef.
+1193,One can state that the person who reported the garden was the chef.
+1194,"After the chef could not report the garden, the situation changed."
+1195,Was it true that the situation changed after the chef reported the garden?
+1196,"After the chef plans to report the garden, the situation will change."
+1197,"There is a chance that after the chef reported the garden, the situation changed."
+1198,"After the garden was successfully reported by the chef, the situation changed."
+1199,"One can state that after the chef reported the garden, the situation changed."
+1200,The report said that the chef was unable to report the garden.
+1201,Is there evidence that the report said the chef reported the garden?
+1202,The report said that the chef is expected to report the garden.
+1203,The report said there is a chance that the chef reported the garden.
+1204,The report said that the garden was successfully reported by the chef.
+1205,The statement that the report said the chef reported the garden is true.
+1206,"If the chef could not report the garden, the result mattered."
+1207,Was it true that the result mattered if the chef reported the garden?
+1208,"If the chef is likely to report the garden, the result will matter."
+1209,"If the chef probably reported the garden, the result mattered."
+1210,"If the garden was successfully reported by the chef, the result mattered."
+1211,"One can state that if the chef reported the garden, the result mattered."
+1212,The person who could not examine the experiment was the analyst.
+1213,Was it true that the person who examined the experiment was the analyst?
+1214,The person who is likely to examine the experiment is the analyst.
+1215,There is a chance that the person who examined the experiment was the analyst.
+1216,The person by whom the experiment was eventually examined was the analyst.
+1217,It can be formally said that the person who examined the experiment was the analyst.
+1218,"After the analyst failed to examine the experiment, the situation changed."
+1219,Was it true that the situation changed after the analyst examined the experiment?
+1220,"After the analyst is likely to examine the experiment, the situation will change."
+1221,"After the analyst probably examined the experiment, the situation changed."
+1222,"After the experiment was eventually examined by the analyst, the situation changed."
+1223,"One can state that after the analyst examined the experiment, the situation changed."
+1224,The report said that the analyst failed to examine the experiment.
+1225,Is there evidence that the report said the analyst examined the experiment?
+1226,The report said that the analyst is likely to examine the experiment.
+1227,The report said there is a chance that the analyst examined the experiment.
+1228,The report said that the experiment was eventually examined by the analyst.
+1229,One can state that the report said the analyst examined the experiment.
+1230,"If the analyst failed to examine the experiment, the result mattered."
+1231,Was it true that the result mattered if the analyst examined the experiment?
+1232,"If the analyst is expected to examine the experiment, the result will matter."
+1233,"If it is possible that the analyst examined the experiment, the result mattered."
+1234,"If the experiment was successfully examined by the analyst, the result mattered."
+1235,"The statement that if the analyst examined the experiment, the result mattered is true."
+1236,The person who could not help the event was the musician.
+1237,Can we confirm that the person who helped the event was the musician?
+1238,The person who is likely to help the event is the musician.
+1239,The person who probably helped the event was the musician.
+1240,The person by whom the event got helped was the musician.
+1241,It can be formally said that the person who helped the event was the musician.
+1242,"After the musician was unable to help the event, the situation changed."
+1243,Can we confirm that the situation changed after the musician helped the event?
+1244,"After the musician is likely to help the event, the situation will change."
+1245,"There is a chance that after the musician helped the event, the situation changed."
+1246,"After the event was eventually helped by the musician, the situation changed."
+1247,"It can be formally said that after the musician helped the event, the situation changed."
+1248,The report said that the musician failed to help the event.
+1249,Can we confirm that the report said the musician helped the event?
+1250,The report said that the musician is expected to help the event.
+1251,The report said that the musician probably helped the event.
+1252,The report said that the event got helped by the musician.
+1253,The statement that the report said the musician helped the event is true.
+1254,"If the musician was unable to help the event, the result mattered."
+1255,Can we confirm that the result mattered if the musician helped the event?
+1256,"If the musician is expected to help the event, the result will matter."
+1257,"If the musician probably helped the event, the result mattered."
+1258,"If the event was eventually helped by the musician, the result mattered."
+1259,"The statement that if the musician helped the event, the result mattered is true."
+1260,The person who failed to examine the garden was the farmer.
+1261,Is there evidence that the person who examined the garden was the farmer?
+1262,The person who plans to examine the garden is the farmer.
+1263,There is a chance that the person who examined the garden was the farmer.
+1264,The person by whom the garden was successfully examined was the farmer.
+1265,It can be formally said that the person who examined the garden was the farmer.
+1266,"After the farmer was unable to examine the garden, the situation changed."
+1267,Was it true that the situation changed after the farmer examined the garden?
+1268,"After the farmer is likely to examine the garden, the situation will change."
+1269,"There is a chance that after the farmer examined the garden, the situation changed."
+1270,"After the garden got examined by the farmer, the situation changed."
+1271,"It can be formally said that after the farmer examined the garden, the situation changed."
+1272,The report said that the farmer failed to examine the garden.
+1273,Was it true that the report said the farmer examined the garden?
+1274,The report said that the farmer is likely to examine the garden.
+1275,The report said that the farmer probably examined the garden.
+1276,The report said that the garden was successfully examined by the farmer.
+1277,One can state that the report said the farmer examined the garden.
+1278,"If the farmer failed to examine the garden, the result mattered."
+1279,Is there evidence that the result mattered if the farmer examined the garden?
+1280,"If the farmer plans to examine the garden, the result will matter."
+1281,"If it is possible that the farmer examined the garden, the result mattered."
+1282,"If the garden was eventually examined by the farmer, the result mattered."
+1283,"One can state that if the farmer examined the garden, the result mattered."
+1284,The person who could not observe the garden was the researcher.
+1285,Was it true that the person who observed the garden was the researcher?
+1286,The person who is likely to observe the garden is the researcher.
+1287,There is a chance that the person who observed the garden was the researcher.
+1288,The person by whom the garden was eventually observed was the researcher.
+1289,One can state that the person who observed the garden was the researcher.
+1290,"After the researcher was unable to observe the garden, the situation changed."
+1291,Was it true that the situation changed after the researcher observed the garden?
+1292,"After the researcher is expected to observe the garden, the situation will change."
+1293,"After the researcher probably observed the garden, the situation changed."
+1294,"After the garden was eventually observed by the researcher, the situation changed."
+1295,"One can state that after the researcher observed the garden, the situation changed."
+1296,The report said that the researcher failed to observe the garden.
+1297,Is there evidence that the report said the researcher observed the garden?
+1298,The report said that the researcher is expected to observe the garden.
+1299,The report said it is possible that the researcher observed the garden.
+1300,The report said that the garden was eventually observed by the researcher.
+1301,One can state that the report said the researcher observed the garden.
+1302,"If the researcher was unable to observe the garden, the result mattered."
+1303,Can we confirm that the result mattered if the researcher observed the garden?
+1304,"If the researcher plans to observe the garden, the result will matter."
+1305,"If the researcher probably observed the garden, the result mattered."
+1306,"If the garden was eventually observed by the researcher, the result mattered."
+1307,"It can be formally said that if the researcher observed the garden, the result mattered."
+1308,The person who failed to prepare the data was the researcher.
+1309,Can we confirm that the person who prepared the data was the researcher?
+1310,The person who plans to prepare the data is the researcher.
+1311,There is a chance that the person who prepared the data was the researcher.
+1312,The person by whom the data was eventually prepared was the researcher.
+1313,It can be formally said that the person who prepared the data was the researcher.
+1314,"After the researcher failed to prepare the data, the situation changed."
+1315,Can we confirm that the situation changed after the researcher prepared the data?
+1316,"After the researcher is expected to prepare the data, the situation will change."
+1317,"It is possible that after the researcher prepared the data, the situation changed."
+1318,"After the data got prepared by the researcher, the situation changed."
+1319,"One can state that after the researcher prepared the data, the situation changed."
+1320,The report said that the researcher could not prepare the data.
+1321,Can we confirm that the report said the researcher prepared the data?
+1322,The report said that the researcher is expected to prepare the data.
+1323,The report said that the researcher probably prepared the data.
+1324,The report said that the data was successfully prepared by the researcher.
+1325,The statement that the report said the researcher prepared the data is true.
+1326,"If the researcher failed to prepare the data, the result mattered."
+1327,Is there evidence that the result mattered if the researcher prepared the data?
+1328,"If the researcher is expected to prepare the data, the result will matter."
+1329,"If there is a chance that the researcher prepared the data, the result mattered."
+1330,"If the data was eventually prepared by the researcher, the result mattered."
+1331,"The statement that if the researcher prepared the data, the result mattered is true."
+1332,The person who could not solve the family was the farmer.
+1333,Can we confirm that the person who solved the family was the farmer?
+1334,The person who plans to solve the family is the farmer.
+1335,The person who probably solved the family was the farmer.
+1336,The person by whom the family was successfully solved was the farmer.
+1337,It can be formally said that the person who solved the family was the farmer.
+1338,"After the farmer failed to solve the family, the situation changed."
+1339,Can we confirm that the situation changed after the farmer solved the family?
+1340,"After the farmer is expected to solve the family, the situation will change."
+1341,"It is possible that after the farmer solved the family, the situation changed."
+1342,"After the family was successfully solved by the farmer, the situation changed."
+1343,"One can state that after the farmer solved the family, the situation changed."
+1344,The report said that the farmer could not solve the family.
+1345,Can we confirm that the report said the farmer solved the family?
+1346,The report said that the farmer is expected to solve the family.
+1347,The report said it is possible that the farmer solved the family.
+1348,The report said that the family got solved by the farmer.
+1349,One can state that the report said the farmer solved the family.
+1350,"If the farmer could not solve the family, the result mattered."
+1351,Is there evidence that the result mattered if the farmer solved the family?
+1352,"If the farmer is likely to solve the family, the result will matter."
+1353,"If there is a chance that the farmer solved the family, the result mattered."
+1354,"If the family got solved by the farmer, the result mattered."
+1355,"The statement that if the farmer solved the family, the result mattered is true."
+1356,The person who could not find the interface was the lawyer.
+1357,Was it true that the person who found the interface was the lawyer?
+1358,The person who plans to find the interface is the lawyer.
+1359,It is possible that the person who found the interface was the lawyer.
+1360,The person by whom the interface got found was the lawyer.
+1361,The statement that the person who found the interface was the lawyer is true.
+1362,"After the lawyer could not find the interface, the situation changed."
+1363,Is there evidence that the situation changed after the lawyer found the interface?
+1364,"After the lawyer is expected to find the interface, the situation will change."
+1365,"It is possible that after the lawyer found the interface, the situation changed."
+1366,"After the interface was successfully found by the lawyer, the situation changed."
+1367,"It can be formally said that after the lawyer found the interface, the situation changed."
+1368,The report said that the lawyer was unable to find the interface.
+1369,Was it true that the report said the lawyer found the interface?
+1370,The report said that the lawyer plans to find the interface.
+1371,The report said that the lawyer probably found the interface.
+1372,The report said that the interface was eventually found by the lawyer.
+1373,It can be formally said that the report said the lawyer found the interface.
+1374,"If the lawyer was unable to find the interface, the result mattered."
+1375,Was it true that the result mattered if the lawyer found the interface?
+1376,"If the lawyer is expected to find the interface, the result will matter."
+1377,"If it is possible that the lawyer found the interface, the result mattered."
+1378,"If the interface was successfully found by the lawyer, the result mattered."
+1379,"The statement that if the lawyer found the interface, the result mattered is true."
+1380,The person who could not approve the signal was the musician.
+1381,Can we confirm that the person who approved the signal was the musician?
+1382,The person who is expected to approve the signal is the musician.
+1383,There is a chance that the person who approved the signal was the musician.
+1384,The person by whom the signal was eventually approved was the musician.
+1385,The statement that the person who approved the signal was the musician is true.
+1386,"After the musician failed to approve the signal, the situation changed."
+1387,Was it true that the situation changed after the musician approved the signal?
+1388,"After the musician is likely to approve the signal, the situation will change."
+1389,"There is a chance that after the musician approved the signal, the situation changed."
+1390,"After the signal was successfully approved by the musician, the situation changed."
+1391,"The statement that after the musician approved the signal, the situation changed is true."
+1392,The report said that the musician failed to approve the signal.
+1393,Can we confirm that the report said the musician approved the signal?
+1394,The report said that the musician is expected to approve the signal.
+1395,The report said that the musician probably approved the signal.
+1396,The report said that the signal got approved by the musician.
+1397,One can state that the report said the musician approved the signal.
+1398,"If the musician failed to approve the signal, the result mattered."
+1399,Is there evidence that the result mattered if the musician approved the signal?
+1400,"If the musician is likely to approve the signal, the result will matter."
+1401,"If the musician probably approved the signal, the result mattered."
+1402,"If the signal got approved by the musician, the result mattered."
+1403,"It can be formally said that if the musician approved the signal, the result mattered."
+1404,The person who was unable to report the document was the designer.
+1405,Is there evidence that the person who reported the document was the designer?
+1406,The person who plans to report the document is the designer.
+1407,There is a chance that the person who reported the document was the designer.
+1408,The person by whom the document was successfully reported was the designer.
+1409,It can be formally said that the person who reported the document was the designer.
+1410,"After the designer failed to report the document, the situation changed."
+1411,Can we confirm that the situation changed after the designer reported the document?
+1412,"After the designer is likely to report the document, the situation will change."
+1413,"It is possible that after the designer reported the document, the situation changed."
+1414,"After the document was successfully reported by the designer, the situation changed."
+1415,"One can state that after the designer reported the document, the situation changed."
+1416,The report said that the designer failed to report the document.
+1417,Can we confirm that the report said the designer reported the document?
+1418,The report said that the designer is expected to report the document.
+1419,The report said there is a chance that the designer reported the document.
+1420,The report said that the document was successfully reported by the designer.
+1421,It can be formally said that the report said the designer reported the document.
+1422,"If the designer failed to report the document, the result mattered."
+1423,Is there evidence that the result mattered if the designer reported the document?
+1424,"If the designer is likely to report the document, the result will matter."
+1425,"If there is a chance that the designer reported the document, the result mattered."
+1426,"If the document was eventually reported by the designer, the result mattered."
+1427,"It can be formally said that if the designer reported the document, the result mattered."
+1428,The person who was unable to solve the garden was the farmer.
+1429,Can we confirm that the person who solved the garden was the farmer?
+1430,The person who plans to solve the garden is the farmer.
+1431,There is a chance that the person who solved the garden was the farmer.
+1432,The person by whom the garden was successfully solved was the farmer.
+1433,It can be formally said that the person who solved the garden was the farmer.
+1434,"After the farmer could not solve the garden, the situation changed."
+1435,Can we confirm that the situation changed after the farmer solved the garden?
+1436,"After the farmer plans to solve the garden, the situation will change."
+1437,"There is a chance that after the farmer solved the garden, the situation changed."
+1438,"After the garden was eventually solved by the farmer, the situation changed."
+1439,"It can be formally said that after the farmer solved the garden, the situation changed."
+1440,The report said that the farmer failed to solve the garden.
+1441,Is there evidence that the report said the farmer solved the garden?
+1442,The report said that the farmer is likely to solve the garden.
+1443,The report said that the farmer probably solved the garden.
+1444,The report said that the garden was successfully solved by the farmer.
+1445,The statement that the report said the farmer solved the garden is true.
+1446,"If the farmer was unable to solve the garden, the result mattered."
+1447,Is there evidence that the result mattered if the farmer solved the garden?
+1448,"If the farmer is expected to solve the garden, the result will matter."
+1449,"If there is a chance that the farmer solved the garden, the result mattered."
+1450,"If the garden was successfully solved by the farmer, the result mattered."
+1451,"The statement that if the farmer solved the garden, the result mattered is true."
+1452,The person who failed to report the experiment was the journalist.
+1453,Can we confirm that the person who reported the experiment was the journalist?
+1454,The person who is expected to report the experiment is the journalist.
+1455,There is a chance that the person who reported the experiment was the journalist.
+1456,The person by whom the experiment was eventually reported was the journalist.
+1457,One can state that the person who reported the experiment was the journalist.
+1458,"After the journalist could not report the experiment, the situation changed."
+1459,Can we confirm that the situation changed after the journalist reported the experiment?
+1460,"After the journalist is likely to report the experiment, the situation will change."
+1461,"There is a chance that after the journalist reported the experiment, the situation changed."
+1462,"After the experiment was eventually reported by the journalist, the situation changed."
+1463,"It can be formally said that after the journalist reported the experiment, the situation changed."
+1464,The report said that the journalist failed to report the experiment.
+1465,Is there evidence that the report said the journalist reported the experiment?
+1466,The report said that the journalist plans to report the experiment.
+1467,The report said it is possible that the journalist reported the experiment.
+1468,The report said that the experiment was successfully reported by the journalist.
+1469,One can state that the report said the journalist reported the experiment.
+1470,"If the journalist was unable to report the experiment, the result mattered."
+1471,Can we confirm that the result mattered if the journalist reported the experiment?
+1472,"If the journalist plans to report the experiment, the result will matter."
+1473,"If there is a chance that the journalist reported the experiment, the result mattered."
+1474,"If the experiment got reported by the journalist, the result mattered."
+1475,"The statement that if the journalist reported the experiment, the result mattered is true."
+1476,The person who failed to observe the client was the pilot.
+1477,Was it true that the person who observed the client was the pilot?
+1478,The person who is likely to observe the client is the pilot.
+1479,The person who probably observed the client was the pilot.
+1480,The person by whom the client got observed was the pilot.
+1481,The statement that the person who observed the client was the pilot is true.
+1482,"After the pilot was unable to observe the client, the situation changed."
+1483,Was it true that the situation changed after the pilot observed the client?
+1484,"After the pilot is expected to observe the client, the situation will change."
+1485,"There is a chance that after the pilot observed the client, the situation changed."
+1486,"After the client was eventually observed by the pilot, the situation changed."
+1487,"It can be formally said that after the pilot observed the client, the situation changed."
+1488,The report said that the pilot failed to observe the client.
+1489,Is there evidence that the report said the pilot observed the client?
+1490,The report said that the pilot is expected to observe the client.
+1491,The report said that the pilot probably observed the client.
+1492,The report said that the client got observed by the pilot.
+1493,It can be formally said that the report said the pilot observed the client.
+1494,"If the pilot was unable to observe the client, the result mattered."
+1495,Was it true that the result mattered if the pilot observed the client?
+1496,"If the pilot is likely to observe the client, the result will matter."
+1497,"If it is possible that the pilot observed the client, the result mattered."
+1498,"If the client got observed by the pilot, the result mattered."
+1499,"One can state that if the pilot observed the client, the result mattered."
+1500,The person who failed to create the data was the journalist.
+1501,Can we confirm that the person who created the data was the journalist?
+1502,The person who is likely to create the data is the journalist.
+1503,There is a chance that the person who created the data was the journalist.
+1504,The person by whom the data was eventually created was the journalist.
+1505,The statement that the person who created the data was the journalist is true.
+1506,"After the journalist could not create the data, the situation changed."
+1507,Was it true that the situation changed after the journalist created the data?
+1508,"After the journalist plans to create the data, the situation will change."
+1509,"After the journalist probably created the data, the situation changed."
+1510,"After the data got created by the journalist, the situation changed."
+1511,"It can be formally said that after the journalist created the data, the situation changed."
+1512,The report said that the journalist was unable to create the data.
+1513,Can we confirm that the report said the journalist created the data?
+1514,The report said that the journalist plans to create the data.
+1515,The report said that the journalist probably created the data.
+1516,The report said that the data was successfully created by the journalist.
+1517,One can state that the report said the journalist created the data.
+1518,"If the journalist was unable to create the data, the result mattered."
+1519,Is there evidence that the result mattered if the journalist created the data?
+1520,"If the journalist plans to create the data, the result will matter."
+1521,"If there is a chance that the journalist created the data, the result mattered."
+1522,"If the data was eventually created by the journalist, the result mattered."
+1523,"The statement that if the journalist created the data, the result mattered is true."
+1524,The person who failed to find the signal was the chef.
+1525,Can we confirm that the person who found the signal was the chef?
+1526,The person who is expected to find the signal is the chef.
+1527,It is possible that the person who found the signal was the chef.
+1528,The person by whom the signal got found was the chef.
+1529,The statement that the person who found the signal was the chef is true.
+1530,"After the chef could not find the signal, the situation changed."
+1531,Was it true that the situation changed after the chef found the signal?
+1532,"After the chef is expected to find the signal, the situation will change."
+1533,"It is possible that after the chef found the signal, the situation changed."
+1534,"After the signal was successfully found by the chef, the situation changed."
+1535,"It can be formally said that after the chef found the signal, the situation changed."
+1536,The report said that the chef could not find the signal.
+1537,Was it true that the report said the chef found the signal?
+1538,The report said that the chef is expected to find the signal.
+1539,The report said it is possible that the chef found the signal.
+1540,The report said that the signal got found by the chef.
+1541,It can be formally said that the report said the chef found the signal.
+1542,"If the chef could not find the signal, the result mattered."
+1543,Was it true that the result mattered if the chef found the signal?
+1544,"If the chef is expected to find the signal, the result will matter."
+1545,"If the chef probably found the signal, the result mattered."
+1546,"If the signal got found by the chef, the result mattered."
+1547,"The statement that if the chef found the signal, the result mattered is true."
+1548,The person who could not defend the signal was the farmer.
+1549,Was it true that the person who defended the signal was the farmer?
+1550,The person who is likely to defend the signal is the farmer.
+1551,There is a chance that the person who defended the signal was the farmer.
+1552,The person by whom the signal got defended was the farmer.
+1553,The statement that the person who defended the signal was the farmer is true.
+1554,"After the farmer was unable to defend the signal, the situation changed."
+1555,Can we confirm that the situation changed after the farmer defended the signal?
+1556,"After the farmer is likely to defend the signal, the situation will change."
+1557,"After the farmer probably defended the signal, the situation changed."
+1558,"After the signal was successfully defended by the farmer, the situation changed."
+1559,"One can state that after the farmer defended the signal, the situation changed."
+1560,The report said that the farmer was unable to defend the signal.
+1561,Is there evidence that the report said the farmer defended the signal?
+1562,The report said that the farmer is likely to defend the signal.
+1563,The report said that the farmer probably defended the signal.
+1564,The report said that the signal got defended by the farmer.
+1565,The statement that the report said the farmer defended the signal is true.
+1566,"If the farmer failed to defend the signal, the result mattered."
+1567,Was it true that the result mattered if the farmer defended the signal?
+1568,"If the farmer is likely to defend the signal, the result will matter."
+1569,"If it is possible that the farmer defended the signal, the result mattered."
+1570,"If the signal got defended by the farmer, the result mattered."
+1571,"One can state that if the farmer defended the signal, the result mattered."
+1572,The person who failed to solve the document was the journalist.
+1573,Is there evidence that the person who solved the document was the journalist?
+1574,The person who is expected to solve the document is the journalist.
+1575,It is possible that the person who solved the document was the journalist.
+1576,The person by whom the document got solved was the journalist.
+1577,The statement that the person who solved the document was the journalist is true.
+1578,"After the journalist could not solve the document, the situation changed."
+1579,Was it true that the situation changed after the journalist solved the document?
+1580,"After the journalist is likely to solve the document, the situation will change."
+1581,"After the journalist probably solved the document, the situation changed."
+1582,"After the document was successfully solved by the journalist, the situation changed."
+1583,"One can state that after the journalist solved the document, the situation changed."
+1584,The report said that the journalist was unable to solve the document.
+1585,Can we confirm that the report said the journalist solved the document?
+1586,The report said that the journalist plans to solve the document.
+1587,The report said it is possible that the journalist solved the document.
+1588,The report said that the document got solved by the journalist.
+1589,One can state that the report said the journalist solved the document.
+1590,"If the journalist was unable to solve the document, the result mattered."
+1591,Can we confirm that the result mattered if the journalist solved the document?
+1592,"If the journalist plans to solve the document, the result will matter."
+1593,"If the journalist probably solved the document, the result mattered."
+1594,"If the document was successfully solved by the journalist, the result mattered."
+1595,"One can state that if the journalist solved the document, the result mattered."
+1596,The person who could not build the question was the designer.
+1597,Is there evidence that the person who built the question was the designer?
+1598,The person who plans to build the question is the designer.
+1599,The person who probably built the question was the designer.
+1600,The person by whom the question was eventually built was the designer.
+1601,It can be formally said that the person who built the question was the designer.
+1602,"After the designer was unable to build the question, the situation changed."
+1603,Was it true that the situation changed after the designer built the question?
+1604,"After the designer plans to build the question, the situation will change."
+1605,"After the designer probably built the question, the situation changed."
+1606,"After the question got built by the designer, the situation changed."
+1607,"The statement that after the designer built the question, the situation changed is true."
+1608,The report said that the designer failed to build the question.
+1609,Can we confirm that the report said the designer built the question?
+1610,The report said that the designer is expected to build the question.
+1611,The report said there is a chance that the designer built the question.
+1612,The report said that the question was eventually built by the designer.
+1613,The statement that the report said the designer built the question is true.
+1614,"If the designer was unable to build the question, the result mattered."
+1615,Was it true that the result mattered if the designer built the question?
+1616,"If the designer is likely to build the question, the result will matter."
+1617,"If there is a chance that the designer built the question, the result mattered."
+1618,"If the question was eventually built by the designer, the result mattered."
+1619,"One can state that if the designer built the question, the result mattered."
+1620,The person who failed to report the data was the nurse.
+1621,Was it true that the person who reported the data was the nurse?
+1622,The person who is likely to report the data is the nurse.
+1623,There is a chance that the person who reported the data was the nurse.
+1624,The person by whom the data was successfully reported was the nurse.
+1625,The statement that the person who reported the data was the nurse is true.
+1626,"After the nurse could not report the data, the situation changed."
+1627,Is there evidence that the situation changed after the nurse reported the data?
+1628,"After the nurse is expected to report the data, the situation will change."
+1629,"It is possible that after the nurse reported the data, the situation changed."
+1630,"After the data got reported by the nurse, the situation changed."
+1631,"It can be formally said that after the nurse reported the data, the situation changed."
+1632,The report said that the nurse could not report the data.
+1633,Can we confirm that the report said the nurse reported the data?
+1634,The report said that the nurse is expected to report the data.
+1635,The report said that the nurse probably reported the data.
+1636,The report said that the data got reported by the nurse.
+1637,It can be formally said that the report said the nurse reported the data.
+1638,"If the nurse failed to report the data, the result mattered."
+1639,Was it true that the result mattered if the nurse reported the data?
+1640,"If the nurse is expected to report the data, the result will matter."
+1641,"If it is possible that the nurse reported the data, the result mattered."
+1642,"If the data got reported by the nurse, the result mattered."
+1643,"It can be formally said that if the nurse reported the data, the result mattered."
+1644,The person who was unable to discover the document was the lawyer.
+1645,Can we confirm that the person who discovered the document was the lawyer?
+1646,The person who is expected to discover the document is the lawyer.
+1647,There is a chance that the person who discovered the document was the lawyer.
+1648,The person by whom the document was successfully discovered was the lawyer.
+1649,The statement that the person who discovered the document was the lawyer is true.
+1650,"After the lawyer could not discover the document, the situation changed."
+1651,Was it true that the situation changed after the lawyer discovered the document?
+1652,"After the lawyer plans to discover the document, the situation will change."
+1653,"After the lawyer probably discovered the document, the situation changed."
+1654,"After the document got discovered by the lawyer, the situation changed."
+1655,"The statement that after the lawyer discovered the document, the situation changed is true."
+1656,The report said that the lawyer failed to discover the document.
+1657,Is there evidence that the report said the lawyer discovered the document?
+1658,The report said that the lawyer plans to discover the document.
+1659,The report said that the lawyer probably discovered the document.
+1660,The report said that the document was eventually discovered by the lawyer.
+1661,The statement that the report said the lawyer discovered the document is true.
+1662,"If the lawyer could not discover the document, the result mattered."
+1663,Was it true that the result mattered if the lawyer discovered the document?
+1664,"If the lawyer plans to discover the document, the result will matter."
+1665,"If it is possible that the lawyer discovered the document, the result mattered."
+1666,"If the document was successfully discovered by the lawyer, the result mattered."
+1667,"It can be formally said that if the lawyer discovered the document, the result mattered."
+1668,The person who could not measure the garden was the analyst.
+1669,Is there evidence that the person who measured the garden was the analyst?
+1670,The person who is expected to measure the garden is the analyst.
+1671,There is a chance that the person who measured the garden was the analyst.
+1672,The person by whom the garden got measured was the analyst.
+1673,It can be formally said that the person who measured the garden was the analyst.
+1674,"After the analyst failed to measure the garden, the situation changed."
+1675,Is there evidence that the situation changed after the analyst measured the garden?
+1676,"After the analyst is likely to measure the garden, the situation will change."
+1677,"There is a chance that after the analyst measured the garden, the situation changed."
+1678,"After the garden was successfully measured by the analyst, the situation changed."
+1679,"The statement that after the analyst measured the garden, the situation changed is true."
+1680,The report said that the analyst was unable to measure the garden.
+1681,Is there evidence that the report said the analyst measured the garden?
+1682,The report said that the analyst plans to measure the garden.
+1683,The report said it is possible that the analyst measured the garden.
+1684,The report said that the garden was successfully measured by the analyst.
+1685,One can state that the report said the analyst measured the garden.
+1686,"If the analyst could not measure the garden, the result mattered."
+1687,Was it true that the result mattered if the analyst measured the garden?
+1688,"If the analyst plans to measure the garden, the result will matter."
+1689,"If it is possible that the analyst measured the garden, the result mattered."
+1690,"If the garden was successfully measured by the analyst, the result mattered."
+1691,"The statement that if the analyst measured the garden, the result mattered is true."
+1692,The person who could not discover the family was the analyst.
+1693,Is there evidence that the person who discovered the family was the analyst?
+1694,The person who is likely to discover the family is the analyst.
+1695,There is a chance that the person who discovered the family was the analyst.
+1696,The person by whom the family was successfully discovered was the analyst.
+1697,It can be formally said that the person who discovered the family was the analyst.
+1698,"After the analyst was unable to discover the family, the situation changed."
+1699,Was it true that the situation changed after the analyst discovered the family?
+1700,"After the analyst is expected to discover the family, the situation will change."
+1701,"It is possible that after the analyst discovered the family, the situation changed."
+1702,"After the family got discovered by the analyst, the situation changed."
+1703,"The statement that after the analyst discovered the family, the situation changed is true."
+1704,The report said that the analyst could not discover the family.
+1705,Is there evidence that the report said the analyst discovered the family?
+1706,The report said that the analyst is expected to discover the family.
+1707,The report said there is a chance that the analyst discovered the family.
+1708,The report said that the family was eventually discovered by the analyst.
+1709,It can be formally said that the report said the analyst discovered the family.
+1710,"If the analyst was unable to discover the family, the result mattered."
+1711,Can we confirm that the result mattered if the analyst discovered the family?
+1712,"If the analyst is likely to discover the family, the result will matter."
+1713,"If it is possible that the analyst discovered the family, the result mattered."
+1714,"If the family was successfully discovered by the analyst, the result mattered."
+1715,"It can be formally said that if the analyst discovered the family, the result mattered."
+1716,The person who could not help the family was the farmer.
+1717,Can we confirm that the person who helped the family was the farmer?
+1718,The person who is expected to help the family is the farmer.
+1719,It is possible that the person who helped the family was the farmer.
+1720,The person by whom the family was eventually helped was the farmer.
+1721,One can state that the person who helped the family was the farmer.
+1722,"After the farmer failed to help the family, the situation changed."
+1723,Can we confirm that the situation changed after the farmer helped the family?
+1724,"After the farmer plans to help the family, the situation will change."
+1725,"It is possible that after the farmer helped the family, the situation changed."
+1726,"After the family was successfully helped by the farmer, the situation changed."
+1727,"The statement that after the farmer helped the family, the situation changed is true."
+1728,The report said that the farmer could not help the family.
+1729,Was it true that the report said the farmer helped the family?
+1730,The report said that the farmer plans to help the family.
+1731,The report said that the farmer probably helped the family.
+1732,The report said that the family was eventually helped by the farmer.
+1733,One can state that the report said the farmer helped the family.
+1734,"If the farmer was unable to help the family, the result mattered."
+1735,Was it true that the result mattered if the farmer helped the family?
+1736,"If the farmer is expected to help the family, the result will matter."
+1737,"If there is a chance that the farmer helped the family, the result mattered."
+1738,"If the family got helped by the farmer, the result mattered."
+1739,"One can state that if the farmer helped the family, the result mattered."
+1740,The person who was unable to build the question was the analyst.
+1741,Was it true that the person who built the question was the analyst?
+1742,The person who is likely to build the question is the analyst.
+1743,There is a chance that the person who built the question was the analyst.
+1744,The person by whom the question was eventually built was the analyst.
+1745,It can be formally said that the person who built the question was the analyst.
+1746,"After the analyst failed to build the question, the situation changed."
+1747,Is there evidence that the situation changed after the analyst built the question?
+1748,"After the analyst plans to build the question, the situation will change."
+1749,"After the analyst probably built the question, the situation changed."
+1750,"After the question was successfully built by the analyst, the situation changed."
+1751,"It can be formally said that after the analyst built the question, the situation changed."
+1752,The report said that the analyst was unable to build the question.
+1753,Can we confirm that the report said the analyst built the question?
+1754,The report said that the analyst plans to build the question.
+1755,The report said that the analyst probably built the question.
+1756,The report said that the question was eventually built by the analyst.
+1757,The statement that the report said the analyst built the question is true.
+1758,"If the analyst failed to build the question, the result mattered."
+1759,Was it true that the result mattered if the analyst built the question?
+1760,"If the analyst is expected to build the question, the result will matter."
+1761,"If it is possible that the analyst built the question, the result mattered."
+1762,"If the question was successfully built by the analyst, the result mattered."
+1763,"One can state that if the analyst built the question, the result mattered."
+1764,The person who was unable to build the client was the lawyer.
+1765,Is there evidence that the person who built the client was the lawyer?
+1766,The person who plans to build the client is the lawyer.
+1767,There is a chance that the person who built the client was the lawyer.
+1768,The person by whom the client got built was the lawyer.
+1769,It can be formally said that the person who built the client was the lawyer.
+1770,"After the lawyer could not build the client, the situation changed."
+1771,Is there evidence that the situation changed after the lawyer built the client?
+1772,"After the lawyer is likely to build the client, the situation will change."
+1773,"It is possible that after the lawyer built the client, the situation changed."
+1774,"After the client was successfully built by the lawyer, the situation changed."
+1775,"It can be formally said that after the lawyer built the client, the situation changed."
+1776,The report said that the lawyer could not build the client.
+1777,Was it true that the report said the lawyer built the client?
+1778,The report said that the lawyer is expected to build the client.
+1779,The report said that the lawyer probably built the client.
+1780,The report said that the client was successfully built by the lawyer.
+1781,It can be formally said that the report said the lawyer built the client.
+1782,"If the lawyer was unable to build the client, the result mattered."
+1783,Can we confirm that the result mattered if the lawyer built the client?
+1784,"If the lawyer plans to build the client, the result will matter."
+1785,"If it is possible that the lawyer built the client, the result mattered."
+1786,"If the client was eventually built by the lawyer, the result mattered."
+1787,"It can be formally said that if the lawyer built the client, the result mattered."
+1788,The person who failed to prepare the question was the pilot.
+1789,Can we confirm that the person who prepared the question was the pilot?
+1790,The person who is expected to prepare the question is the pilot.
+1791,It is possible that the person who prepared the question was the pilot.
+1792,The person by whom the question was eventually prepared was the pilot.
+1793,The statement that the person who prepared the question was the pilot is true.
+1794,"After the pilot could not prepare the question, the situation changed."
+1795,Was it true that the situation changed after the pilot prepared the question?
+1796,"After the pilot is expected to prepare the question, the situation will change."
+1797,"There is a chance that after the pilot prepared the question, the situation changed."
+1798,"After the question got prepared by the pilot, the situation changed."
+1799,"It can be formally said that after the pilot prepared the question, the situation changed."
+1800,The report said that the pilot was unable to prepare the question.
+1801,Was it true that the report said the pilot prepared the question?
+1802,The report said that the pilot is expected to prepare the question.
+1803,The report said it is possible that the pilot prepared the question.
+1804,The report said that the question was successfully prepared by the pilot.
+1805,The statement that the report said the pilot prepared the question is true.
+1806,"If the pilot was unable to prepare the question, the result mattered."
+1807,Can we confirm that the result mattered if the pilot prepared the question?
+1808,"If the pilot plans to prepare the question, the result will matter."
+1809,"If it is possible that the pilot prepared the question, the result mattered."
+1810,"If the question got prepared by the pilot, the result mattered."
+1811,"The statement that if the pilot prepared the question, the result mattered is true."
+1812,The person who was unable to examine the document was the journalist.
+1813,Was it true that the person who examined the document was the journalist?
+1814,The person who is likely to examine the document is the journalist.
+1815,There is a chance that the person who examined the document was the journalist.
+1816,The person by whom the document was successfully examined was the journalist.
+1817,The statement that the person who examined the document was the journalist is true.
+1818,"After the journalist was unable to examine the document, the situation changed."
+1819,Was it true that the situation changed after the journalist examined the document?
+1820,"After the journalist is expected to examine the document, the situation will change."
+1821,"It is possible that after the journalist examined the document, the situation changed."
+1822,"After the document got examined by the journalist, the situation changed."
+1823,"One can state that after the journalist examined the document, the situation changed."
+1824,The report said that the journalist failed to examine the document.
+1825,Was it true that the report said the journalist examined the document?
+1826,The report said that the journalist is likely to examine the document.
+1827,The report said it is possible that the journalist examined the document.
+1828,The report said that the document got examined by the journalist.
+1829,It can be formally said that the report said the journalist examined the document.
+1830,"If the journalist failed to examine the document, the result mattered."
+1831,Can we confirm that the result mattered if the journalist examined the document?
+1832,"If the journalist is likely to examine the document, the result will matter."
+1833,"If there is a chance that the journalist examined the document, the result mattered."
+1834,"If the document was eventually examined by the journalist, the result mattered."
+1835,"The statement that if the journalist examined the document, the result mattered is true."
+1836,The person who could not write the family was the designer.
+1837,Is there evidence that the person who wrote the family was the designer?
+1838,The person who is likely to write the family is the designer.
+1839,There is a chance that the person who wrote the family was the designer.
+1840,The person by whom the family got wrote was the designer.
+1841,The statement that the person who wrote the family was the designer is true.
+1842,"After the designer was unable to write the family, the situation changed."
+1843,Was it true that the situation changed after the designer wrote the family?
+1844,"After the designer plans to write the family, the situation will change."
+1845,"It is possible that after the designer wrote the family, the situation changed."
+1846,"After the family got wrote by the designer, the situation changed."
+1847,"It can be formally said that after the designer wrote the family, the situation changed."
+1848,The report said that the designer failed to write the family.
+1849,Was it true that the report said the designer wrote the family?
+1850,The report said that the designer is likely to write the family.
+1851,The report said there is a chance that the designer wrote the family.
+1852,The report said that the family was successfully wrote by the designer.
+1853,One can state that the report said the designer wrote the family.
+1854,"If the designer failed to write the family, the result mattered."
+1855,Is there evidence that the result mattered if the designer wrote the family?
+1856,"If the designer plans to write the family, the result will matter."
+1857,"If there is a chance that the designer wrote the family, the result mattered."
+1858,"If the family got wrote by the designer, the result mattered."
+1859,"One can state that if the designer wrote the family, the result mattered."
+1860,The person who could not build the signal was the analyst.
+1861,Was it true that the person who built the signal was the analyst?
+1862,The person who is likely to build the signal is the analyst.
+1863,It is possible that the person who built the signal was the analyst.
+1864,The person by whom the signal was eventually built was the analyst.
+1865,One can state that the person who built the signal was the analyst.
+1866,"After the analyst could not build the signal, the situation changed."
+1867,Can we confirm that the situation changed after the analyst built the signal?
+1868,"After the analyst is expected to build the signal, the situation will change."
+1869,"After the analyst probably built the signal, the situation changed."
+1870,"After the signal was eventually built by the analyst, the situation changed."
+1871,"One can state that after the analyst built the signal, the situation changed."
+1872,The report said that the analyst was unable to build the signal.
+1873,Can we confirm that the report said the analyst built the signal?
+1874,The report said that the analyst is likely to build the signal.
+1875,The report said there is a chance that the analyst built the signal.
+1876,The report said that the signal was eventually built by the analyst.
+1877,One can state that the report said the analyst built the signal.
+1878,"If the analyst failed to build the signal, the result mattered."
+1879,Was it true that the result mattered if the analyst built the signal?
+1880,"If the analyst is likely to build the signal, the result will matter."
+1881,"If it is possible that the analyst built the signal, the result mattered."
+1882,"If the signal was successfully built by the analyst, the result mattered."
+1883,"One can state that if the analyst built the signal, the result mattered."
+1884,The person who could not explain the garden was the analyst.
+1885,Was it true that the person who explained the garden was the analyst?
+1886,The person who is likely to explain the garden is the analyst.
+1887,The person who probably explained the garden was the analyst.
+1888,The person by whom the garden was eventually explained was the analyst.
+1889,It can be formally said that the person who explained the garden was the analyst.
+1890,"After the analyst failed to explain the garden, the situation changed."
+1891,Is there evidence that the situation changed after the analyst explained the garden?
+1892,"After the analyst plans to explain the garden, the situation will change."
+1893,"It is possible that after the analyst explained the garden, the situation changed."
+1894,"After the garden got explained by the analyst, the situation changed."
+1895,"It can be formally said that after the analyst explained the garden, the situation changed."
+1896,The report said that the analyst failed to explain the garden.
+1897,Is there evidence that the report said the analyst explained the garden?
+1898,The report said that the analyst is expected to explain the garden.
+1899,The report said it is possible that the analyst explained the garden.
+1900,The report said that the garden got explained by the analyst.
+1901,The statement that the report said the analyst explained the garden is true.
+1902,"If the analyst was unable to explain the garden, the result mattered."
+1903,Is there evidence that the result mattered if the analyst explained the garden?
+1904,"If the analyst is expected to explain the garden, the result will matter."
+1905,"If there is a chance that the analyst explained the garden, the result mattered."
+1906,"If the garden was eventually explained by the analyst, the result mattered."
+1907,"It can be formally said that if the analyst explained the garden, the result mattered."
+1908,The person who was unable to measure the event was the analyst.
+1909,Is there evidence that the person who measured the event was the analyst?
+1910,The person who plans to measure the event is the analyst.
+1911,It is possible that the person who measured the event was the analyst.
+1912,The person by whom the event was successfully measured was the analyst.
+1913,The statement that the person who measured the event was the analyst is true.
+1914,"After the analyst could not measure the event, the situation changed."
+1915,Can we confirm that the situation changed after the analyst measured the event?
+1916,"After the analyst plans to measure the event, the situation will change."
+1917,"After the analyst probably measured the event, the situation changed."
+1918,"After the event was successfully measured by the analyst, the situation changed."
+1919,"It can be formally said that after the analyst measured the event, the situation changed."
+1920,The report said that the analyst failed to measure the event.
+1921,Was it true that the report said the analyst measured the event?
+1922,The report said that the analyst plans to measure the event.
+1923,The report said there is a chance that the analyst measured the event.
+1924,The report said that the event got measured by the analyst.
+1925,The statement that the report said the analyst measured the event is true.
+1926,"If the analyst could not measure the event, the result mattered."
+1927,Was it true that the result mattered if the analyst measured the event?
+1928,"If the analyst plans to measure the event, the result will matter."
+1929,"If there is a chance that the analyst measured the event, the result mattered."
+1930,"If the event got measured by the analyst, the result mattered."
+1931,"It can be formally said that if the analyst measured the event, the result mattered."
+1932,The person who was unable to find the signal was the farmer.
+1933,Was it true that the person who found the signal was the farmer?
+1934,The person who plans to find the signal is the farmer.
+1935,There is a chance that the person who found the signal was the farmer.
+1936,The person by whom the signal was successfully found was the farmer.
+1937,It can be formally said that the person who found the signal was the farmer.
+1938,"After the farmer was unable to find the signal, the situation changed."
+1939,Can we confirm that the situation changed after the farmer found the signal?
+1940,"After the farmer is likely to find the signal, the situation will change."
+1941,"There is a chance that after the farmer found the signal, the situation changed."
+1942,"After the signal got found by the farmer, the situation changed."
+1943,"The statement that after the farmer found the signal, the situation changed is true."
+1944,The report said that the farmer could not find the signal.
+1945,Was it true that the report said the farmer found the signal?
+1946,The report said that the farmer plans to find the signal.
+1947,The report said there is a chance that the farmer found the signal.
+1948,The report said that the signal was eventually found by the farmer.
+1949,One can state that the report said the farmer found the signal.
+1950,"If the farmer failed to find the signal, the result mattered."
+1951,Can we confirm that the result mattered if the farmer found the signal?
+1952,"If the farmer is likely to find the signal, the result will matter."
+1953,"If it is possible that the farmer found the signal, the result mattered."
+1954,"If the signal got found by the farmer, the result mattered."
+1955,"The statement that if the farmer found the signal, the result mattered is true."
+1956,The person who could not test the event was the farmer.
+1957,Can we confirm that the person who tested the event was the farmer?
+1958,The person who is expected to test the event is the farmer.
+1959,It is possible that the person who tested the event was the farmer.
+1960,The person by whom the event was successfully tested was the farmer.
+1961,One can state that the person who tested the event was the farmer.
+1962,"After the farmer could not test the event, the situation changed."
+1963,Can we confirm that the situation changed after the farmer tested the event?
+1964,"After the farmer plans to test the event, the situation will change."
+1965,"After the farmer probably tested the event, the situation changed."
+1966,"After the event was successfully tested by the farmer, the situation changed."
+1967,"One can state that after the farmer tested the event, the situation changed."
+1968,The report said that the farmer was unable to test the event.
+1969,Was it true that the report said the farmer tested the event?
+1970,The report said that the farmer is expected to test the event.
+1971,The report said that the farmer probably tested the event.
+1972,The report said that the event got tested by the farmer.
+1973,One can state that the report said the farmer tested the event.
+1974,"If the farmer failed to test the event, the result mattered."
+1975,Was it true that the result mattered if the farmer tested the event?
+1976,"If the farmer is expected to test the event, the result will matter."
+1977,"If there is a chance that the farmer tested the event, the result mattered."
+1978,"If the event got tested by the farmer, the result mattered."
+1979,"The statement that if the farmer tested the event, the result mattered is true."
+1980,The person who could not discover the interface was the pilot.
+1981,Is there evidence that the person who discovered the interface was the pilot?
+1982,The person who is likely to discover the interface is the pilot.
+1983,It is possible that the person who discovered the interface was the pilot.
+1984,The person by whom the interface was successfully discovered was the pilot.
+1985,The statement that the person who discovered the interface was the pilot is true.
+1986,"After the pilot was unable to discover the interface, the situation changed."
+1987,Can we confirm that the situation changed after the pilot discovered the interface?
+1988,"After the pilot plans to discover the interface, the situation will change."
+1989,"It is possible that after the pilot discovered the interface, the situation changed."
+1990,"After the interface was successfully discovered by the pilot, the situation changed."
+1991,"One can state that after the pilot discovered the interface, the situation changed."
+1992,The report said that the pilot failed to discover the interface.
+1993,Can we confirm that the report said the pilot discovered the interface?
+1994,The report said that the pilot is likely to discover the interface.
+1995,The report said that the pilot probably discovered the interface.
+1996,The report said that the interface was eventually discovered by the pilot.
+1997,One can state that the report said the pilot discovered the interface.
+1998,"If the pilot failed to discover the interface, the result mattered."
+1999,Can we confirm that the result mattered if the pilot discovered the interface?
+2000,"If the pilot is expected to discover the interface, the result will matter."
+2001,"If the pilot probably discovered the interface, the result mattered."
+2002,"If the interface was eventually discovered by the pilot, the result mattered."
+2003,"One can state that if the pilot discovered the interface, the result mattered."
+2004,The person who failed to measure the document was the designer.
+2005,Is there evidence that the person who measured the document was the designer?
+2006,The person who is likely to measure the document is the designer.
+2007,The person who probably measured the document was the designer.
+2008,The person by whom the document got measured was the designer.
+2009,It can be formally said that the person who measured the document was the designer.
+2010,"After the designer failed to measure the document, the situation changed."
+2011,Is there evidence that the situation changed after the designer measured the document?
+2012,"After the designer plans to measure the document, the situation will change."
+2013,"It is possible that after the designer measured the document, the situation changed."
+2014,"After the document got measured by the designer, the situation changed."
+2015,"It can be formally said that after the designer measured the document, the situation changed."
+2016,The report said that the designer was unable to measure the document.
+2017,Was it true that the report said the designer measured the document?
+2018,The report said that the designer plans to measure the document.
+2019,The report said that the designer probably measured the document.
+2020,The report said that the document got measured by the designer.
+2021,The statement that the report said the designer measured the document is true.
+2022,"If the designer was unable to measure the document, the result mattered."
+2023,Can we confirm that the result mattered if the designer measured the document?
+2024,"If the designer is likely to measure the document, the result will matter."
+2025,"If the designer probably measured the document, the result mattered."
+2026,"If the document was successfully measured by the designer, the result mattered."
+2027,"The statement that if the designer measured the document, the result mattered is true."
+2028,The person who failed to help the document was the researcher.
+2029,Is there evidence that the person who helped the document was the researcher?
+2030,The person who is likely to help the document is the researcher.
+2031,There is a chance that the person who helped the document was the researcher.
+2032,The person by whom the document was eventually helped was the researcher.
+2033,The statement that the person who helped the document was the researcher is true.
+2034,"After the researcher could not help the document, the situation changed."
+2035,Is there evidence that the situation changed after the researcher helped the document?
+2036,"After the researcher is likely to help the document, the situation will change."
+2037,"There is a chance that after the researcher helped the document, the situation changed."
+2038,"After the document got helped by the researcher, the situation changed."
+2039,"The statement that after the researcher helped the document, the situation changed is true."
+2040,The report said that the researcher failed to help the document.
+2041,Is there evidence that the report said the researcher helped the document?
+2042,The report said that the researcher is likely to help the document.
+2043,The report said that the researcher probably helped the document.
+2044,The report said that the document was successfully helped by the researcher.
+2045,It can be formally said that the report said the researcher helped the document.
+2046,"If the researcher could not help the document, the result mattered."
+2047,Is there evidence that the result mattered if the researcher helped the document?
+2048,"If the researcher is likely to help the document, the result will matter."
+2049,"If there is a chance that the researcher helped the document, the result mattered."
+2050,"If the document got helped by the researcher, the result mattered."
+2051,"The statement that if the researcher helped the document, the result mattered is true."
+2052,The person who could not measure the document was the journalist.
+2053,Can we confirm that the person who measured the document was the journalist?
+2054,The person who plans to measure the document is the journalist.
+2055,There is a chance that the person who measured the document was the journalist.
+2056,The person by whom the document was successfully measured was the journalist.
+2057,The statement that the person who measured the document was the journalist is true.
+2058,"After the journalist failed to measure the document, the situation changed."
+2059,Is there evidence that the situation changed after the journalist measured the document?
+2060,"After the journalist is expected to measure the document, the situation will change."
+2061,"It is possible that after the journalist measured the document, the situation changed."
+2062,"After the document got measured by the journalist, the situation changed."
+2063,"It can be formally said that after the journalist measured the document, the situation changed."
+2064,The report said that the journalist could not measure the document.
+2065,Is there evidence that the report said the journalist measured the document?
+2066,The report said that the journalist plans to measure the document.
+2067,The report said there is a chance that the journalist measured the document.
+2068,The report said that the document was successfully measured by the journalist.
+2069,It can be formally said that the report said the journalist measured the document.
+2070,"If the journalist failed to measure the document, the result mattered."
+2071,Was it true that the result mattered if the journalist measured the document?
+2072,"If the journalist is expected to measure the document, the result will matter."
+2073,"If there is a chance that the journalist measured the document, the result mattered."
+2074,"If the document was successfully measured by the journalist, the result mattered."
+2075,"The statement that if the journalist measured the document, the result mattered is true."
+2076,The person who was unable to find the signal was the analyst.
+2077,Can we confirm that the person who found the signal was the analyst?
+2078,The person who plans to find the signal is the analyst.
+2079,It is possible that the person who found the signal was the analyst.
+2080,The person by whom the signal was eventually found was the analyst.
+2081,It can be formally said that the person who found the signal was the analyst.
+2082,"After the analyst could not find the signal, the situation changed."
+2083,Is there evidence that the situation changed after the analyst found the signal?
+2084,"After the analyst is likely to find the signal, the situation will change."
+2085,"It is possible that after the analyst found the signal, the situation changed."
+2086,"After the signal got found by the analyst, the situation changed."
+2087,"One can state that after the analyst found the signal, the situation changed."
+2088,The report said that the analyst could not find the signal.
+2089,Was it true that the report said the analyst found the signal?
+2090,The report said that the analyst plans to find the signal.
+2091,The report said that the analyst probably found the signal.
+2092,The report said that the signal got found by the analyst.
+2093,One can state that the report said the analyst found the signal.
+2094,"If the analyst could not find the signal, the result mattered."
+2095,Can we confirm that the result mattered if the analyst found the signal?
+2096,"If the analyst plans to find the signal, the result will matter."
+2097,"If it is possible that the analyst found the signal, the result mattered."
+2098,"If the signal got found by the analyst, the result mattered."
+2099,"It can be formally said that if the analyst found the signal, the result mattered."

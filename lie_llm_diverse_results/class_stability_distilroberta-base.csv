@@ -1,0 +1,7 @@
+model,class,n,mean_cosine_to_centroid,std_cosine_to_centroid
+distilroberta-base,active_to_passive,1000,0.8334391117095947,0.10833724588155746
+distilroberta-base,certainty_to_uncertainty,1000,0.7789157032966614,0.08368396759033203
+distilroberta-base,formalization,1000,0.8718546032905579,0.030955683439970016
+distilroberta-base,negation,1000,0.79460608959198,0.10400640219449997
+distilroberta-base,past_to_future,1000,0.8138018846511841,0.07366576790809631
+distilroberta-base,question,1000,0.8747437000274658,0.02871895395219326

@@ -1,0 +1,81 @@
+source,target,class,split
+The scientist accepted the explanation.,The scientist rejected the explanation.,negation,train
+The scientist accepted the explanation.,Could the scientist accept the explanation?,question,train
+The scientist accepted the explanation.,The scientist apparently accepted the explanation.,modality,train
+The scientist accepted the explanation.,The scientist used to accept the explanation.,tense_shift,train
+The scientist accepted the explanation.,The explanation received acceptance from the scientist.,passive,train
+The engineer completed the repair.,The engineer failed to complete the repair.,negation,train
+The engineer completed the repair.,Could the engineer complete the repair?,question,train
+The engineer completed the repair.,The engineer reportedly completed the repair.,modality,train
+The engineer completed the repair.,The engineer had completed the repair earlier.,tense_shift,train
+The engineer completed the repair.,The repair received completion by the engineer.,passive,train
+The teacher confirmed the answer.,The teacher denied the answer.,negation,train
+The teacher confirmed the answer.,Could the teacher confirm the answer?,question,train
+The teacher confirmed the answer.,The teacher apparently confirmed the answer.,modality,train
+The teacher confirmed the answer.,The teacher had confirmed the answer earlier.,tense_shift,train
+The teacher confirmed the answer.,The answer received confirmation from the teacher.,passive,train
+The doctor approved the treatment.,The doctor refused to approve the treatment.,negation,train
+The doctor approved the treatment.,Could the doctor approve the treatment?,question,train
+The doctor approved the treatment.,The doctor reportedly approved the treatment.,modality,train
+The doctor approved the treatment.,The doctor used to approve the treatment.,tense_shift,train
+The doctor approved the treatment.,The treatment received approval from the doctor.,passive,train
+The programmer fixed the bug.,The programmer failed to fix the bug.,negation,train
+The programmer fixed the bug.,Could the programmer fix the bug?,question,train
+The programmer fixed the bug.,The programmer apparently fixed the bug.,modality,train
+The programmer fixed the bug.,The programmer had fixed the bug earlier.,tense_shift,train
+The programmer fixed the bug.,The bug received a fix from the programmer.,passive,train
+The researcher supported the theory.,The researcher rejected the theory.,negation,train
+The researcher supported the theory.,Could the researcher support the theory?,question,train
+The researcher supported the theory.,The researcher reportedly supported the theory.,modality,train
+The researcher supported the theory.,The researcher used to support the theory.,tense_shift,train
+The researcher supported the theory.,The theory received support from the researcher.,passive,train
+The analyst verified the report.,The analyst failed to verify the report.,negation,train
+The analyst verified the report.,Could the analyst verify the report?,question,train
+The analyst verified the report.,The analyst apparently verified the report.,modality,train
+The analyst verified the report.,The analyst had verified the report earlier.,tense_shift,train
+The analyst verified the report.,The report received verification from the analyst.,passive,train
+The manager approved the plan.,The manager declined to approve the plan.,negation,train
+The manager approved the plan.,Could the manager approve the plan?,question,train
+The manager approved the plan.,The manager reportedly approved the plan.,modality,train
+The manager approved the plan.,The manager used to approve the plan.,tense_shift,train
+The manager approved the plan.,The plan received approval from the manager.,passive,train
+The dragon guarded the treasure.,The dragon avoided guarding the treasure.,negation,test
+The dragon guarded the treasure.,I wonder whether the dragon guarded the treasure.,question,test
+The dragon guarded the treasure.,The dragon allegedly guarded the treasure.,modality,test
+The dragon guarded the treasure.,The dragon will guard the treasure tomorrow.,tense_shift,test
+The dragon guarded the treasure.,The treasure came under the dragon's guard.,passive,test
+The wizard opened the portal.,The wizard avoided opening the portal.,negation,test
+The wizard opened the portal.,I wonder whether the wizard opened the portal.,question,test
+The wizard opened the portal.,The wizard allegedly opened the portal.,modality,test
+The wizard opened the portal.,The wizard will open the portal tomorrow.,tense_shift,test
+The wizard opened the portal.,The portal came open through the wizard's action.,passive,test
+The queen signed the treaty.,The queen declined to sign the treaty.,negation,test
+The queen signed the treaty.,I wonder whether the queen signed the treaty.,question,test
+The queen signed the treaty.,The queen allegedly signed the treaty.,modality,test
+The queen signed the treaty.,The queen will sign the treaty tomorrow.,tense_shift,test
+The queen signed the treaty.,The treaty gained the queen's signature.,passive,test
+The robot repaired the satellite.,The robot avoided repairing the satellite.,negation,test
+The robot repaired the satellite.,I wonder whether the robot repaired the satellite.,question,test
+The robot repaired the satellite.,The robot allegedly repaired the satellite.,modality,test
+The robot repaired the satellite.,The robot will repair the satellite tomorrow.,tense_shift,test
+The robot repaired the satellite.,The satellite came back repaired through the robot.,passive,test
+The pirate found the island.,The pirate failed to find the island.,negation,test
+The pirate found the island.,I wonder whether the pirate found the island.,question,test
+The pirate found the island.,The pirate allegedly found the island.,modality,test
+The pirate found the island.,The pirate will find the island tomorrow.,tense_shift,test
+The pirate found the island.,The island became the pirate's discovery.,passive,test
+The oracle predicted the storm.,The oracle refused to predict the storm.,negation,test
+The oracle predicted the storm.,I wonder whether the oracle predicted the storm.,question,test
+The oracle predicted the storm.,The oracle allegedly predicted the storm.,modality,test
+The oracle predicted the storm.,The oracle will predict the storm tomorrow.,tense_shift,test
+The oracle predicted the storm.,The storm became the oracle's prediction.,passive,test
+The alien built the tower.,The alien avoided building the tower.,negation,test
+The alien built the tower.,I wonder whether the alien built the tower.,question,test
+The alien built the tower.,The alien allegedly built the tower.,modality,test
+The alien built the tower.,The alien will build the tower tomorrow.,tense_shift,test
+The alien built the tower.,The tower became the alien's construction.,passive,test
+The knight protected the village.,The knight failed to protect the village.,negation,test
+The knight protected the village.,I wonder whether the knight protected the village.,question,test
+The knight protected the village.,The knight allegedly protected the village.,modality,test
+The knight protected the village.,The knight will protect the village tomorrow.,tense_shift,test
+The knight protected the village.,The village came under the knight's protection.,passive,test

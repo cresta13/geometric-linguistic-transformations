@@ -1,0 +1,7 @@
+model,class,n,mean_cosine_to_centroid,std_cosine_to_centroid
+bert-base-uncased,active_to_passive,1000,0.5464166402816772,0.10757390409708023
+bert-base-uncased,certainty_to_uncertainty,1000,0.6557191014289856,0.08942022919654846
+bert-base-uncased,formalization,1000,0.6752274632453918,0.06396617740392685
+bert-base-uncased,negation,1000,0.5550833940505981,0.12724736332893372
+bert-base-uncased,past_to_future,1000,0.5956259369850159,0.07868414372205734
+bert-base-uncased,question,1000,0.7295361161231995,0.06796202063560486

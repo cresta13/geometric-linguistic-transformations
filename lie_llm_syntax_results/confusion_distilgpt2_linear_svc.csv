@@ -1,0 +1,7 @@
+,formalization,future,negation,passive,question,uncertainty
+formalization,800,0,0,0,0,0
+future,0,800,0,0,0,0
+negation,0,0,800,0,0,0
+passive,0,0,0,800,0,0
+question,0,0,0,0,800,0
+uncertainty,0,0,0,0,0,800

@@ -1,0 +1,2 @@
+model,n_transformations,sampled_pairs,within_class_mean_cosine,between_class_mean_cosine,separation_delta,permutation_p_value,permutation_mean_delta,permutation_std_delta
+bert-base-uncased,6000,300000,0.39739570021629333,0.18331590294837952,0.21407979726791382,0.009900990099009901,-1.616358757019043e-05,0.0007072469004949112

@@ -1,0 +1,2 @@
+model,n_transformations,sampled_pairs,within_class_mean_cosine,between_class_mean_cosine,separation_delta,permutation_p_value,permutation_mean_delta,permutation_std_delta
+gpt2,6000,300000,0.8118144869804382,0.7485525608062744,0.06326192617416382,0.009900990099009901,-0.00016667664051055908,0.0016525555224480618

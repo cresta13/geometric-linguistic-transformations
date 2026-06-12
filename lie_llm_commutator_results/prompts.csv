@@ -1,0 +1,73 @@
+prompt_id,prompt
+0,The scientist discovered a new principle.
+1,The scientist did not discover a new principle.
+2,A child found a black cat.
+3,A child did not find a black cat.
+4,The engineer solved the problem.
+5,The engineer did not solve the problem.
+6,The teacher explained the rule.
+7,The teacher did not explain the rule.
+8,The system detected an error.
+9,The system did not detect an error.
+10,The artist created a painting.
+11,The artist did not create a painting.
+12,The student understood the lesson.
+13,The student did not understand the lesson.
+14,The company released a product.
+15,The company did not release a product.
+16,Did the scientist discover a new principle?
+17,Did a child find a black cat?
+18,Did the engineer solve the problem?
+19,Did the teacher explain the rule?
+20,Did the system detect an error?
+21,Did the artist create a painting?
+22,Did the student understand the lesson?
+23,Did the company release a product?
+24,The scientist will discover a new principle.
+25,A child will find a black cat.
+26,The engineer will solve the problem.
+27,The teacher will explain the rule.
+28,The system will detect an error.
+29,The artist will create a painting.
+30,The student will understand the lesson.
+31,The company will release a product.
+32,The theory is correct.
+33,The theory may be correct.
+34,The answer is obvious.
+35,The answer may be obvious.
+36,The result is reliable.
+37,The result may be reliable.
+38,The experiment is successful.
+39,The experiment may be successful.
+40,The solution is complete.
+41,The solution may be complete.
+42,The prediction is accurate.
+43,The prediction may be accurate.
+44,The explanation is valid.
+45,The explanation may be valid.
+46,The signal is meaningful.
+47,The signal may be meaningful.
+48,A new principle was discovered by the scientist.
+49,A black cat was found by a child.
+50,The problem was solved by the engineer.
+51,The rule was explained by the teacher.
+52,An error was detected by the system.
+53,A painting was created by the artist.
+54,The lesson was understood by the student.
+55,A product was released by the company.
+56,I don't know the answer.
+57,I do not know the answer.
+58,We can't solve this problem.
+59,We cannot solve this problem.
+60,They won't accept the result.
+61,They will not accept the result.
+62,She isn't ready for the exam.
+63,She is not ready for the exam.
+64,He doesn't understand the rule.
+65,He does not understand the rule.
+66,It wasn't a simple decision.
+67,It was not a simple decision.
+68,You shouldn't ignore the signal.
+69,You should not ignore the signal.
+70,The system couldn't process the request.
+71,The system could not process the request.

@@ -1,0 +1,2 @@
+model,n_transformations,sampled_pairs,within_class_mean_cosine,between_class_mean_cosine,separation_delta,permutation_p_value,permutation_mean_delta,permutation_std_delta
+roberta-base,6000,300000,0.6062982082366943,0.41095736622810364,0.1953408420085907,0.009900990099009901,4.08366322517395e-05,0.0007205512848957413

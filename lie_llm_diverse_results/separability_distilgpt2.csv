@@ -1,0 +1,2 @@
+model,n_transformations,sampled_pairs,within_class_mean_cosine,between_class_mean_cosine,separation_delta,permutation_p_value,permutation_mean_delta,permutation_std_delta
+distilgpt2,6000,300000,0.6850876808166504,0.512795627117157,0.1722920536994934,0.009900990099009901,8.897006511688233e-05,0.0014549430264084384

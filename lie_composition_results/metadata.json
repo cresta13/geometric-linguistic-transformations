@@ -1,0 +1,14 @@
+{
+  "models": [
+    "bert-base-uncased",
+    "distilroberta-base",
+    "roberta-base"
+  ],
+  "pca_dim": 64,
+  "metrics": {
+    "commutator_norm": "||delta_AB - delta_BA||",
+    "relative_commutator_norm": "||delta_AB - delta_BA|| / mean(||delta_AB||, ||delta_BA||)",
+    "cosine_ab_ba": "cosine(delta_AB, delta_BA)",
+    "noncommutativity_score": "1 - cosine(delta_AB, delta_BA)"
+  }
+}
