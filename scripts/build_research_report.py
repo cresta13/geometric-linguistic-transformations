@@ -7,7 +7,7 @@ import pandas as pd
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "reports" / "2026-06-12_reviewer_revised_report.pdf"
+OUT = ROOT / "reports" / "2026-06-13_reviewer_revised_report.pdf"
 
 
 plt.rcParams["font.family"] = "DejaVu Sans"
@@ -144,6 +144,8 @@ def main():
     syntax_ablation = pd.read_csv(ROOT / "syntax_representation_ablation_results" / "syntax_representation_ablation_pivot.csv")
     layerwise = pd.read_csv(ROOT / "layerwise_pooling_ablation_results" / "layerwise_pooling_ablation_top20.csv")
     spotcheck = pd.read_csv(ROOT / "track1_spotcheck_results" / "spotcheck_representation_ablation_pivot.csv")
+    large_spotcheck_path = ROOT / "track1_spotcheck_large_results" / "spotcheck_representation_ablation_pivot.csv"
+    large_spotcheck = pd.read_csv(large_spotcheck_path) if large_spotcheck_path.exists() else pd.DataFrame()
     decoder_jacobi = pd.read_csv(ROOT / "lie_algebraic_identities_decoder_results" / "csv" / "jacobi_summary.csv")
 
     with PdfPages(OUT) as pdf:
@@ -158,7 +160,7 @@ def main():
                 ),
                 (
                     "Track 1 fixed result",
-                    "Delta vectors add reproducible information beyond target-only endpoints in the multiseed full-semantic setting. The syntax=1.0 result has now been directly ablated: y_only also reaches 1.0, so the syntax split is interpreted as endpoint/surface leakage rather than as geometry.",
+                    "Delta vectors add reproducible information beyond target-only endpoints in the multiseed full-semantic setting. The syntax=1.0 result has now been directly ablated: y_only also reaches 1.0, so the syntax split is interpreted as endpoint/surface leakage rather than as geometry. New BERT-large and DeBERTa-v3-base spot-checks both rank delta best under Linear SVC and logistic regression.",
                 ),
                 (
                     "Track 2 fixed result",
@@ -175,6 +177,8 @@ def main():
         add_table_page(pdf, "Syntax representation ablation: y_only solves the split", format_float_columns(syntax_ablation), max_rows=12)
         add_table_page(pdf, "Layerwise/pooling syntax sanity check: top rows", format_float_columns(layerwise), max_rows=20)
         add_table_page(pdf, "DeBERTa-v3-small modern spot-check", format_float_columns(spotcheck), max_rows=5)
+        if not large_spotcheck.empty:
+            add_table_page(pdf, "BERT-large and DeBERTa-v3-base spot-checks", format_float_columns(large_spotcheck), max_rows=8)
         add_table_page(pdf, "Third-order signed permutation summary with bootstrap CI", format_float_columns(jacobi), max_rows=20)
         add_table_page(pdf, "Decoder signed permutation replication", format_float_columns(decoder_jacobi), max_rows=10)
         add_table_page(pdf, "Antisymmetry sanity check", format_float_columns(antisym), max_rows=30)
@@ -196,6 +200,8 @@ def main():
             ("Original PCA class geometry", ROOT / "paper" / "figures" / "pca_all_classes_bert-base-uncased.png"),
             ("Syntax representation ablation", ROOT / "paper" / "figures" / "syntax_representation_ablation.png"),
             ("DeBERTa-v3-small spot-check", ROOT / "paper" / "figures" / "spotcheck_deberta_v3_small.png"),
+            ("Large/modern spot-check: Linear SVC", ROOT / "paper" / "figures" / "spotcheck_large_linear_svc.png"),
+            ("Large/modern spot-check: logistic regression", ROOT / "paper" / "figures" / "spotcheck_large_logreg.png"),
             ("Decoder signed permutation replication", ROOT / "paper" / "figures" / "decoder_signed_permutation_ratio.png"),
         ]
 
@@ -211,6 +217,7 @@ def main():
                 "A literal nested-commutator Jacobi expression over the same six endpoint vectors cancels algebraically. The reported third-order diagnostic is the non-tautological signed permutation composition sum ABC+BCA+CAB-ACB-CBA-BAC.",
                 "Duplicate endpoint templates were detected and removed before finalizing today's result. The final dataset has 400 Jacobi rows and zero duplicate endpoint sets.",
                 "New Track 1 result: syntax y_only=1.0 confirms target/surface leakage for the syntax split. New Track 1 spot-check: DeBERTa-v3-small supports delta superiority for Linear SVC but not for logistic regression. New Track 2 result: GPT-2 and DistilGPT-2 both keep QMT below permutation null, while negation triples remain mixed.",
+                "2026-06-13 update: after cache cleanup, BERT-large and DeBERTa-v3-base were both run successfully. Delta is best for both Linear SVC and logistic regression on both models.",
                 "Remaining blockers: representation-ablation tables for every non-syntax holdout split, full-semantic pooling ablation, grammar-generated templates, endpoint-only controls for Track 2, focused negation analysis, and prior-work positioning.",
             ],
         )

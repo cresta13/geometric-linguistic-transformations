@@ -9,7 +9,7 @@ Current convention:
 
 Current verification packet:
 
-- [2026-06-12_reviewer_revised_report.pdf](2026-06-12_reviewer_revised_report.pdf)
+- [2026-06-13_reviewer_revised_report.pdf](2026-06-13_reviewer_revised_report.pdf)
 
 Build command:
 

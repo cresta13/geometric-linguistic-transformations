@@ -1,0 +1,17 @@
+classifier,accuracy,n_train,n_test,model,representation,random_baseline,n_base
+logreg,0.16666666666666666,600,1200,bert-large-uncased,x_only,0.16666666666666666,50
+linear_svc,0.16666666666666666,600,1200,bert-large-uncased,x_only,0.16666666666666666,50
+logreg,0.75,600,1200,bert-large-uncased,y_only,0.16666666666666666,50
+linear_svc,0.8375,600,1200,bert-large-uncased,y_only,0.16666666666666666,50
+logreg,0.8541666666666666,600,1200,bert-large-uncased,delta,0.16666666666666666,50
+linear_svc,0.9025,600,1200,bert-large-uncased,delta,0.16666666666666666,50
+logreg,0.76,600,1200,bert-large-uncased,concat,0.16666666666666666,50
+linear_svc,0.8508333333333333,600,1200,bert-large-uncased,concat,0.16666666666666666,50
+logreg,0.16666666666666666,600,1200,microsoft/deberta-v3-base,x_only,0.16666666666666666,50
+linear_svc,0.16666666666666666,600,1200,microsoft/deberta-v3-base,x_only,0.16666666666666666,50
+logreg,0.7258333333333333,600,1200,microsoft/deberta-v3-base,y_only,0.16666666666666666,50
+linear_svc,0.7466666666666667,600,1200,microsoft/deberta-v3-base,y_only,0.16666666666666666,50
+logreg,0.7516666666666667,600,1200,microsoft/deberta-v3-base,delta,0.16666666666666666,50
+linear_svc,0.8116666666666666,600,1200,microsoft/deberta-v3-base,delta,0.16666666666666666,50
+logreg,0.6941666666666667,600,1200,microsoft/deberta-v3-base,concat,0.16666666666666666,50
+linear_svc,0.7758333333333334,600,1200,microsoft/deberta-v3-base,concat,0.16666666666666666,50

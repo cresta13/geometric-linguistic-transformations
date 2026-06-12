@@ -22,7 +22,11 @@ Current evidence:
 - Syntax holdouts reach `1.0` accuracy across tested models, but the new representation ablation shows `y_only=1.0` as well. This is now interpreted as endpoint/surface leakage, not as deep generalization.
 - Full semantic holdouts remain above chance, with accuracies around `0.82-0.89`.
 - Entity and variant holdouts remain strong, especially for BERT-family models.
-- A DeBERTa-v3-small spot-check supports the main delta advantage for Linear SVC (`delta=0.871`, `y_only=0.804`, `concat=0.823`), while logistic regression remains mixed (`concat=0.828`, `delta=0.796`).
+- Modern/larger spot-checks now support the main delta advantage:
+  - BERT-large Linear SVC: `delta=0.903`, `concat=0.851`, `y_only=0.838`
+  - BERT-large logistic regression: `delta=0.854`, `concat=0.760`, `y_only=0.750`
+  - DeBERTa-v3-base Linear SVC: `delta=0.812`, `concat=0.776`, `y_only=0.747`
+  - DeBERTa-v3-base logistic regression: `delta=0.752`, `concat=0.694`, `y_only=0.726`
 
 Scientific status:
 
@@ -138,7 +142,7 @@ Negative results remain part of the research record.
    - McNemar tests are reported in the text
    - multiseed standard deviations are reported
    - at least one prior-work baseline or comparison is written up, such as task vectors or function vectors
-   - at least one model outside the original five is included as a spot-check
+   - at least one model outside the original five is included as a spot-check; currently satisfied by BERT-large and DeBERTa-v3-base
 2. Keep Track 2 as a diagnostics paper until grammar-generated templates and endpoint-only controls succeed.
 3. If Track 2 survives those controls, write it as a separate paper rather than merging it into Track 1.
 4. If Track 2 weakens under controls, keep it as a negative/diagnostic section in a broader research note.

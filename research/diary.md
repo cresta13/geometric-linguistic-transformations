@@ -135,3 +135,33 @@ Interpretation:
 - Track 2 draft now includes decoder replication and treats negation as a result.
 - `research_program.md` now orders the work correctly: finish Track 1 integration, handle syntax leakage, analyze negation, then expand grammar/templates/operators.
 - The dated PDF packet was regenerated for external verification.
+
+## 2026-06-13: Cache cleanup and stronger Track 1 model spot-checks
+
+Question:
+
+Can the Track 1 delta advantage survive on stronger models after freeing enough local disk space?
+
+Cache cleanup:
+
+- Removed old Hugging Face model caches for the original small models and sentence-transformer experiments.
+- Removed stale review zip archives from `dist`.
+- Kept the committed CSV/PDF/figure evidence intact.
+
+Models run:
+
+- `bert-large-uncased`
+- `microsoft/deberta-v3-base`
+
+Result:
+
+| Model | Classifier | x_only | y_only | concat | delta |
+|---|---|---:|---:|---:|---:|
+| BERT-large | Linear SVC | `0.167` | `0.838` | `0.851` | `0.903` |
+| BERT-large | Logistic regression | `0.167` | `0.750` | `0.760` | `0.854` |
+| DeBERTa-v3-base | Linear SVC | `0.167` | `0.747` | `0.776` | `0.812` |
+| DeBERTa-v3-base | Logistic regression | `0.167` | `0.726` | `0.694` | `0.752` |
+
+Interpretation:
+
+This is the strongest Track 1 spot-check so far. Unlike the earlier DeBERTa-v3-small result, both larger/modern models show `delta` as the best representation under both tested classifiers. This does not replace a full multiseed run, but it removes the immediate objection that the effect only appears in the original small/older model set.

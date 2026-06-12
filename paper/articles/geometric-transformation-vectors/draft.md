@@ -30,6 +30,7 @@ Main result files:
 - Syntax representation ablation: [syntax_representation_ablation_pivot.csv](../../../syntax_representation_ablation_results/syntax_representation_ablation_pivot.csv)
 - Layerwise/pooling syntax ablation: [layerwise_pooling_ablation_top20.csv](../../../layerwise_pooling_ablation_results/layerwise_pooling_ablation_top20.csv)
 - DeBERTa-v3-small spot-check: [spotcheck_representation_ablation_pivot.csv](../../../track1_spotcheck_results/spotcheck_representation_ablation_pivot.csv)
+- Large/modern spot-check: [spotcheck_representation_ablation_pivot.csv](../../../track1_spotcheck_large_results/spotcheck_representation_ablation_pivot.csv)
 - Diverse separability: [ALL_separability.csv](../../../lie_llm_diverse_results/ALL_separability.csv)
 
 ## 1. Motivation
@@ -188,9 +189,9 @@ Top rows include:
 
 This strengthens the reinterpretation: for the syntax split, the signal is available from token/form information before deep contextual composition is needed. It does not invalidate the full-semantic delta result, but it removes syntax holdout from the headline evidence.
 
-## 9. Modern-Model Spot-Check
+## 9. Modern and Larger Model Spot-Checks
 
-A `bert-large-uncased` run was attempted but blocked by local disk space during model download. As a compact modern-architecture substitute, we ran `microsoft/deberta-v3-small`.
+The first compact modern-architecture substitute was `microsoft/deberta-v3-small`.
 
 ![DeBERTa-v3-small spot-check](../../figures/spotcheck_deberta_v3_small.png)
 
@@ -202,6 +203,25 @@ A `bert-large-uncased` run was attempted but blocked by local disk space during 
 | Logistic regression | `0.167` | `0.770` | `0.828` | `0.796` |
 
 The Linear SVC result supports the main Track 1 claim on a model outside the original five: `delta` exceeds both `y_only` and `concat`. Logistic regression is mixed, with `concat` above `delta`, so the spot-check should be reported as supportive but not definitive.
+
+After cleaning local caches, two stronger spot-checks were run: `bert-large-uncased` and `microsoft/deberta-v3-base`.
+
+![Large spot-check Linear SVC](../../figures/spotcheck_large_linear_svc.png)
+
+**Figure 8.** Larger/modern model spot-check with Linear SVC.
+
+![Large spot-check logistic regression](../../figures/spotcheck_large_logreg.png)
+
+**Figure 9.** Larger/modern model spot-check with logistic regression.
+
+| Model | Classifier | x_only | y_only | concat | delta |
+|---|---|---:|---:|---:|---:|
+| BERT-large | Linear SVC | `0.167` | `0.838` | `0.851` | `0.903` |
+| BERT-large | Logistic regression | `0.167` | `0.750` | `0.760` | `0.854` |
+| DeBERTa-v3-base | Linear SVC | `0.167` | `0.747` | `0.776` | `0.812` |
+| DeBERTa-v3-base | Logistic regression | `0.167` | `0.726` | `0.694` | `0.752` |
+
+These two spot-checks are stronger than the initial DeBERTa-v3-small run: `delta` is the best representation for both classifiers on both models. This does not replace full multiseed evaluation, but it removes the previous large-model blocker for the draft-level Track 1 claim.
 
 ## 10. Claim Supported by Current Evidence
 
@@ -219,7 +239,7 @@ The revised paper should center the first claim.
 
 - `syntax=1.0` is now confirmed to be target/surface-cue dominated in the current split.
 - `y_only` is high, so target-side leakage is substantial.
-- The current model set is small and old by 2026 standards.
+- The current core model set is small and old by 2026 standards, but draft-level spot-checks now include BERT-large and DeBERTa-v3-base.
 - Mean pooling is not fully justified for the main full-semantic experiments against `[CLS]` and last-token alternatives.
 - There is no full error analysis of confusion matrices yet.
 - Related work positioning is currently incomplete.
@@ -230,7 +250,7 @@ The revised paper should center the first claim.
 2. Add full-semantic pooling ablation:
    - encoder `[CLS]` vs mean pooling
    - decoder last-token vs mean pooling
-3. Re-run the large-model spot-check when disk space allows, preferably `bert-large` plus one modern encoder or decoder family.
+3. Convert the large/modern spot-check into a multiseed run if Track 1 becomes the submission priority.
 4. Add confidence intervals for `delta - y_only` and `delta - concat`.
 5. Add confusion-matrix error analysis:
    - which transformations are confused?

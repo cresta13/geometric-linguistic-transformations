@@ -14,6 +14,7 @@ This file tracks the concrete changes required after the external review.
 - Ran syntax representation ablation: `y_only=1.0` confirms syntax endpoint leakage.
 - Ran a BERT syntax layerwise/pooling sanity check: layer `0` already reaches `1.0`, so syntax is not a last-layer geometry result.
 - Ran a DeBERTa-v3-small spot-check: Linear SVC supports `delta > concat > y_only`, while logistic regression remains mixed.
+- Ran larger/modern spot-checks on `bert-large-uncased` and `microsoft/deberta-v3-base`; `delta` is best for both Linear SVC and logistic regression on both models.
 
 ### Must still be run
 
@@ -21,7 +22,7 @@ This file tracks the concrete changes required after the external review.
 2. Full-semantic pooling ablation:
    - BERT/RoBERTa `[CLS]` vs mean pooling
    - GPT-2/DistilGPT-2 last-token vs mean pooling
-3. Larger-model spot-check when disk space allows, especially `bert-large-uncased`.
+3. Convert large/modern spot-checks into multiseed runs if Track 1 is promoted to submission.
 4. Error analysis over confusion matrices.
 5. Proper related-work table and bibliography.
 
@@ -48,5 +49,5 @@ This file tracks the concrete changes required after the external review.
 ## Global blockers
 
 - Related work positioning is incomplete.
-- Current model set still needs a larger-model run for a strong 2026 submission.
+- Current model set now has draft-level larger/modern spot-checks, but not multiseed larger-model confirmation.
 - Mean pooling needs empirical justification for the full-semantic and composition experiments.

@@ -43,6 +43,23 @@ def plot_spotcheck():
     savefig("spotcheck_deberta_v3_small.png")
 
 
+def plot_large_spotcheck():
+    path = ROOT / "track1_spotcheck_large_results" / "spotcheck_representation_ablation_pivot.csv"
+    if not path.exists():
+        return
+    df = pd.read_csv(path)
+    for classifier in sorted(df["classifier"].unique()):
+        sub = df[df["classifier"] == classifier].set_index("model")[["x_only", "y_only", "concat", "delta"]]
+        ax = sub.plot(kind="bar", figsize=(8.4, 4.8), color=["#8a8f98", "#d95f02", "#7570b3", "#1b9e77"])
+        ax.set_title(f"Large/modern model spot-check ({classifier})")
+        ax.set_ylabel("Accuracy")
+        ax.set_xlabel("")
+        ax.set_ylim(0, 1.0)
+        ax.axhline(1 / 6, color="#444444", linestyle="--", linewidth=1, label="chance")
+        ax.legend(loc="lower right", ncol=2)
+        savefig(f"spotcheck_large_{classifier}.png")
+
+
 def plot_decoder_signed_permutation():
     df = pd.read_csv(ROOT / "lie_algebraic_identities_decoder_results" / "csv" / "jacobi_summary.csv")
     pivot = df.pivot(index="triple", columns="model", values="mean_jacobi_to_null_mean_ratio").sort_index()
@@ -63,6 +80,7 @@ def plot_decoder_signed_permutation():
 def main():
     plot_syntax_ablation()
     plot_spotcheck()
+    plot_large_spotcheck()
     plot_decoder_signed_permutation()
 
 
