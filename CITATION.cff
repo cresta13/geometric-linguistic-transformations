@@ -1,8 +1,33 @@
-cff-version: 1.2.0
-title: Geometric Linguistic Transformations in Transformer Latent Spaces
-message: If you use this work, please cite it.
+cff-version: "1.2.0"
+message: "If you use this software or research artifacts, please cite them using the metadata below."
+title: "Geometric Linguistic Transformations in Transformer Latent Spaces"
+version: "2026.06.13"
+date-released: "2026-06-13"
 authors:
   - family-names: Simakova
     given-names: Anna
-repository-code: https://github.com/cresta13/geometric-linguistic-transformations
-license: MIT
+repository-code: "https://github.com/cresta13/geometric-linguistic-transformations"
+repository-artifact: "https://github.com/cresta13/geometric-linguistic-transformations"
+url: "https://github.com/cresta13/geometric-linguistic-transformations"
+license: "MIT"
+abstract: >-
+  Research code, result tables, figures, and draft papers for experiments on
+  linguistic transformation geometry in transformer embedding spaces, including
+  endpoint controls, hard-holdout boundary analyses, signed permutation
+  diagnostics, and cross-model transformation-transfer roadmaps.
+keywords:
+  - transformer
+  - representation geometry
+  - linguistic transformations
+  - embedding spaces
+  - delta vectors
+  - natural language processing
+preferred-citation:
+  type: generic
+  title: "Geometric Linguistic Transformations in Transformer Latent Spaces"
+  authors:
+    - family-names: Simakova
+      given-names: Anna
+  year: 2026
+  repository-code: "https://github.com/cresta13/geometric-linguistic-transformations"
+  url: "https://github.com/cresta13/geometric-linguistic-transformations"
