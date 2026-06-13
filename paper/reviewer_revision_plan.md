@@ -44,24 +44,25 @@ The UPAT-large Procrustes results suggest that transformation geometry may trans
 - Random-pairing null: target anchor correspondences are shuffled before Procrustes fitting.
 - Random-label null: correct alignment is retained, but source training labels are shuffled.
 - Observed aligned F1 remains above both null baselines in every tested non-identity direction. This supports the cross-model transfer hypothesis, but the run is still a pilot because `N=30` limits empirical p-values to `0.0323`.
+- Scaled the Procrustes null audit to `N=1000` repeats for every non-identity cross-model direction.
+- Added a random-orthogonal control: matched centering and dimensionality are preserved, but the learned Procrustes map is replaced by a random orthogonal matrix.
+- Observed aligned F1 remains above random-label, random-pairing, and random-orthogonal null baselines in every direction. No null repeat reaches observed aligned F1, so all empirical p-values are at the `N=1000` resolution floor: `0.000999`.
 
 ### Future submission work
 
-1. Scale Procrustes null baselines:
-   - at least 1000 repeats for final p-values
-   - report null confidence intervals and effect sizes
-2. Add stricter Procrustes controls:
-   - random-label alignment with shuffled labels before fitting
-   - random-pairing alignment with mismatched examples across models
-   - random orthogonal transforms with matched dimensionality
-3. Reverse-direction transfer:
+1. Add alignment-size curves with held-out evaluation:
+   - 25, 50, 100, 250, 500, 1000 alignment examples
+   - report confidence intervals
+   - ensure alignment anchors are separated from the classifier train/test examples where feasible
+2. Reverse-direction transfer:
    - small to large model
    - large to small model
    - sentence encoder to masked LM and back
-4. Alignment-size curve with held-out evaluation:
-   - 25, 50, 100, 250, 500, 1000 alignment examples
-   - report confidence intervals
-5. Optional architecture expansion:
+3. Report the completed null audit in the draft:
+   - null mean/std/max
+   - empirical p-value resolution
+   - effect sizes versus each null
+4. Optional architecture expansion:
    - Llama/Mistral-style embedding spaces if local resources allow
    - otherwise stronger sentence encoders as a lower-cost proxy
 

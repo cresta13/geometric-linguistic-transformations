@@ -12,7 +12,7 @@ The strongest long-term story is broader than either current draft:
 
 > Transformers may encode linguistic operators as geometric objects in a low-dimensional, partially universal transformation subspace, and this subspace may be transferable across architectures and languages.
 
-Current results are not enough to claim this yet. The Procrustes transfer numbers are promising, but they remain exploratory until null baselines are added. The roadmap below treats cross-model and cross-lingual transfer as the next central hypothesis, not as a finished conclusion.
+Current results are not enough to claim this as a complete theory yet. The Procrustes transfer numbers now survive large random-label, random-pairing, and random-orthogonal null controls, but they still need alignment-size and held-out-anchor tests before becoming a submission-grade universality claim. The roadmap below treats cross-model and cross-lingual transfer as the next central hypothesis, not as a finished conclusion.
 
 ## Track 1: Geometric transformation vectors
 
@@ -101,19 +101,22 @@ Promising exploratory evidence:
 - BERT to `all-mpnet-base-v2`: raw F1 around `0.15`, aligned F1 around `0.857`.
 - BERT to `all-MiniLM-L6-v2`: raw F1 around `0.17`, aligned F1 around `0.754`.
 - UPAT-large cross-model results show large aligned-transfer gains across several architectures.
-- A first pilot null audit (`N=30` random-pairing and random-label repeats per direction) found that every non-identity cross-model direction stayed above both null baselines. Mean observed aligned F1 was about `0.685`, while random-label null mean F1 was about `0.170` and random-pairing null mean F1 was about `0.141`. Because `N=30` gives minimum empirical p-value `1/31 = 0.0323`, this is a promising pilot rather than a final significance claim.
+- A scaled null audit (`N=1000` repeats per direction and null type) found that every non-identity cross-model direction stayed above random-label, random-pairing, and random-orthogonal null baselines.
+- Mean observed aligned F1 was `0.684651`.
+- Mean null F1 was `0.173017` for random-label, `0.148036` for random-pairing, and `0.112103` for random-orthogonal.
+- No null repeat reached observed aligned F1 in any of the `30 x 3` direction/null tests, so all empirical p-values are at the `N=1000` resolution floor: `1/(1000+1)=0.000999`.
 
 Current status:
 
-This could become the strongest paper if it survives larger null controls. The first random-pairing/random-label pilot is encouraging, but the result is not yet promoted because Procrustes has many degrees of freedom and needs larger null runs plus alignment-size and reverse-direction controls.
+This is now a serious candidate for the strongest paper. The result has survived the first large null-audit gate, but it is not yet submission-grade because Procrustes has many degrees of freedom and must be tested under alignment-size curves, held-out alignment anchors, and reverse-direction analysis.
 
 Required gates before promotion:
 
-1. Scale random-label and random-pairing Procrustes null baselines beyond the current `N=30` pilot.
-2. Alignment-size curve with held-out evaluation.
-3. At least 1000 shuffle/permutation runs for precise p-values.
-4. Reverse-direction transfer tests, e.g. small model to large model and large model to small model.
-5. Stronger architectures if feasible, such as Llama/Mistral-class embedding spaces or high-quality sentence encoders.
+1. Alignment-size curve with held-out evaluation anchors.
+2. Reverse-direction transfer summary by model family, e.g. small model to large model and large model to small model.
+3. Separate alignment-anchor examples from classifier train/test examples wherever feasible.
+4. Stronger architectures if feasible, such as Llama/Mistral-class embedding spaces or high-quality sentence encoders.
+5. Package the result as a standalone Track 3 draft only after the alignment-size curve survives.
 
 ## Track 4: Transformation vectors as editors
 
@@ -211,15 +214,16 @@ Negative results remain part of the research record.
 
 1. Close methodology blockers required for any submission:
    - remove antisymmetry from the evidence narrative; already done in the draft, keep it that way
-   - add Procrustes null baselines
+   - keep Procrustes null baselines in the evidence packet; `N=1000` random-label/random-pairing/random-orthogonal controls are now complete
    - increase shuffle/permutation controls to at least 1000, ideally 5000 for final numbers
    - add commutator norm null baselines
 2. Resolve UPAT:
    - either expand UPAT and match train sizes against the main dataset
    - or keep it explicitly as a hard negative control and narrow Track 1 claims
-3. Add null baselines for exploratory UPAT alignment:
-   - random-label or random-pairing Procrustes null
-   - at least 1000 shuffle permutations instead of 100
+3. Extend UPAT alignment controls beyond the completed `N=1000` null audit:
+   - alignment-size curve
+   - held-out alignment anchors
+   - direction-family summary
 4. Test cross-model transformation transfer as the likely central future paper:
    - reverse-direction transfer
    - alignment-size curve

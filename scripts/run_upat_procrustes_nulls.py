@@ -1,3 +1,4 @@
+import argparse
 import os
 import sys
 from pathlib import Path
@@ -5,6 +6,7 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+from scipy.linalg import svd
 from sklearn.metrics import accuracy_score, f1_score
 from sklearn.preprocessing import normalize
 
@@ -21,7 +23,26 @@ N_NULL = int(os.getenv("UPAT_PROCRUSTES_NULL_REPEATS", "30"))
 SEED = int(os.getenv("UPAT_PROCRUSTES_NULL_SEED", "1729"))
 
 
-def evaluate_transfer(audit, train_model, test_model, *, pairing="matched", shuffle_labels=False, seed=0):
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description="Run UPAT cross-model Procrustes null controls."
+    )
+    parser.add_argument(
+        "--n-null",
+        type=int,
+        default=N_NULL,
+        help="Number of null repeats per source-target direction and null type.",
+    )
+    parser.add_argument(
+        "--seed",
+        type=int,
+        default=SEED,
+        help="Base random seed for null controls.",
+    )
+    return parser.parse_args()
+
+
+def make_direction_context(audit, train_model, test_model):
     source_sp = audit.spaces[train_model]
     target_sp = audit.spaces[test_model]
 
@@ -29,19 +50,59 @@ def evaluate_transfer(audit, train_model, test_model, *, pairing="matched", shuf
     source_idx = np.array([source_sp["idx"][text] for text in common_texts])
     target_idx = np.array([target_sp["idx"][text] for text in common_texts])
 
+    min_dim = min(source_sp["raw"].shape[1], target_sp["raw"].shape[1])
+    source_anchor = source_sp["raw"][source_idx, :min_dim]
+    target_anchor = target_sp["raw"][target_idx, :min_dim]
+    source_all = source_sp["raw"][:, :min_dim]
+    target_all = target_sp["raw"][:, :min_dim]
+
+    source_mean = source_anchor.mean(axis=0, keepdims=True)
+    target_mean = target_anchor.mean(axis=0, keepdims=True)
+
+    source_anchor_c = source_anchor - source_mean
+    target_anchor_c = target_anchor - target_mean
+    source_all_c = source_all - source_mean
+    target_all_c = target_all - target_mean
+
+    return {
+        "source_anchor_c": source_anchor_c,
+        "target_anchor_c": target_anchor_c,
+        "source_all_c": source_all_c,
+        "target_all_c": target_all_c,
+    }
+
+
+def apply_fast_procrustes(context, target_order=None):
+    target_anchor_c = context["target_anchor_c"]
+    if target_order is not None:
+        target_anchor_c = target_anchor_c[target_order]
+
+    u, _, vt = svd(context["source_anchor_c"].T @ target_anchor_c, full_matrices=False, check_finite=False)
+    r = u @ vt
+    return context["source_all_c"] @ r, context["target_all_c"]
+
+
+def apply_fast_random_orthogonal(context, seed):
+    rng = np.random.default_rng(seed)
+    dim = context["source_all_c"].shape[1]
+    q, _ = np.linalg.qr(rng.normal(size=(dim, dim)))
+    return context["source_all_c"] @ q, context["target_all_c"]
+
+
+def evaluate_transfer(audit, train_model, test_model, context, *, pairing="matched", shuffle_labels=False, random_orthogonal=False, seed=0):
     rng = np.random.default_rng(seed)
 
     if pairing == "random_pairing":
-        target_idx = rng.permutation(target_idx)
+        target_order = rng.permutation(len(context["target_anchor_c"]))
     elif pairing != "matched":
         raise ValueError(f"Unknown pairing mode: {pairing}")
+    else:
+        target_order = None
 
-    source_aligned, target_aligned = audit.align_source_to_target(
-        source_anchor=source_sp["raw"][source_idx],
-        target_anchor=target_sp["raw"][target_idx],
-        source_all=source_sp["raw"],
-        target_all=target_sp["raw"],
-    )
+    if random_orthogonal:
+        source_aligned, target_aligned = apply_fast_random_orthogonal(context, seed=seed)
+    else:
+        source_aligned, target_aligned = apply_fast_procrustes(context, target_order=target_order)
 
     source_deltas = normalize(audit.make_raw_deltas(train_model, source_aligned))
     target_deltas = normalize(audit.make_raw_deltas(test_model, target_aligned))
@@ -75,8 +136,9 @@ def run_nulls(audit):
             continue
 
         print(f"\nNulls: {train_model} -> {test_model}", flush=True)
+        context = make_direction_context(audit, train_model, test_model)
 
-        for null_type in ["random_pairing", "random_labels"]:
+        for null_type in ["random_pairing", "random_labels", "random_orthogonal"]:
             f1_values = []
             acc_values = []
 
@@ -87,6 +149,7 @@ def run_nulls(audit):
                         audit,
                         train_model,
                         test_model,
+                        context,
                         pairing="random_pairing",
                         shuffle_labels=False,
                         seed=seed,
@@ -96,8 +159,10 @@ def run_nulls(audit):
                         audit,
                         train_model,
                         test_model,
+                        context,
                         pairing="matched",
-                        shuffle_labels=True,
+                        shuffle_labels=null_type == "random_labels",
+                        random_orthogonal=null_type == "random_orthogonal",
                         seed=seed,
                     )
 
@@ -114,6 +179,9 @@ def run_nulls(audit):
                     "observed_raw_f1": obs.raw_f1,
                     "observed_gain_f1": obs.gain_f1,
                 })
+
+                if (repeat + 1) % 100 == 0 or repeat + 1 == N_NULL:
+                    print(f"  {null_type}: {repeat + 1}/{N_NULL}", flush=True)
 
             f1_arr = np.array(f1_values)
             acc_arr = np.array(acc_values)
@@ -133,11 +201,16 @@ def run_nulls(audit):
                 "observed_minus_null_mean_f1": obs.aligned_f1 - f1_arr.mean(),
             })
 
+        pd.DataFrame(rows).to_csv(CSV_DIR / "procrustes_null_raw.partial.csv", index=False)
+        pd.DataFrame(summary_rows).to_csv(CSV_DIR / "procrustes_null_summary.partial.csv", index=False)
+
     raw_df = pd.DataFrame(rows)
     summary_df = pd.DataFrame(summary_rows)
 
     raw_df.to_csv(CSV_DIR / "procrustes_null_raw.csv", index=False)
     summary_df.to_csv(CSV_DIR / "procrustes_null_summary.csv", index=False)
+    (CSV_DIR / "procrustes_null_raw.partial.csv").unlink(missing_ok=True)
+    (CSV_DIR / "procrustes_null_summary.partial.csv").unlink(missing_ok=True)
     return raw_df, summary_df
 
 
@@ -165,6 +238,12 @@ def plot_summary(summary_df):
 
 
 def main():
+    global N_NULL, SEED
+    args = parse_args()
+    N_NULL = args.n_null
+    SEED = args.seed
+    print(f"Procrustes null repeats: {N_NULL}; seed: {SEED}", flush=True)
+
     audit = UPATAudit()
     audit.build_dataset()
     audit.extract_all_spaces()

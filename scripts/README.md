@@ -29,7 +29,7 @@ All runnable research scripts live in this directory.
 - `upat_dataset.py`: UPAT dataset construction.
 - `upat_audit_results.py`: original UPAT audit.
 - `run_upat_large.py`: larger UPAT/cross-model audit.
-- `run_upat_procrustes_nulls.py`: random-pairing and random-label null baselines for UPAT cross-model Procrustes transfer.
+- `run_upat_procrustes_nulls.py`: random-pairing, random-label, and random-orthogonal null baselines for UPAT cross-model Procrustes transfer. Use `--n-null 1000` for the current full audit.
 
 ## Reports
 

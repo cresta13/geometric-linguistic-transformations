@@ -29,7 +29,8 @@ Important subdirectories:
 - `lie_semantic_equivalence_results/`
 - `upat_audit_results/`
 - `upat_large_results/`
-  - `csv/procrustes_null_summary.csv`: pilot null baselines for cross-model Procrustes transfer.
-  - `figures/10_procrustes_null_random_pairing.png` and `figures/10_procrustes_null_random_labels.png`: observed aligned F1 versus null baselines.
+  - `csv/procrustes_null_raw.csv`: `N=1000` raw null repeats for cross-model Procrustes transfer (`30` directions x `3` nulls x `1000` repeats).
+  - `csv/procrustes_null_summary.csv`: `N=1000` random-label, random-pairing, and random-orthogonal null summaries.
+  - `figures/10_procrustes_null_random_pairing.png`, `figures/10_procrustes_null_random_labels.png`, and `figures/10_procrustes_null_random_orthogonal.png`: observed aligned F1 versus null baselines.
 
 The paper drafts link directly to the relevant CSVs and figures in these folders.

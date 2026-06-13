@@ -326,3 +326,48 @@ Result:
 Interpretation:
 
 This is the first real support for promoting Track 3. The large Procrustes gains do not appear to be explained by shuffled labels or mismatched anchor pairings in this pilot. The next step is to scale the nulls to at least `N=1000`, add random-orthogonal controls, and test alignment-size/reverse-direction behavior before making a paper-level universality claim.
+
+## 2026-06-14: UPAT-large Procrustes nulls scaled to N=1000
+
+We scaled the UPAT-large cross-model Procrustes null audit from the `N=30` pilot to `N=1000` repeats and added a random-orthogonal control.
+
+Updated script:
+
+- `scripts/run_upat_procrustes_nulls.py`
+
+Updated outputs:
+
+- `results/experiments/upat_large_results/csv/procrustes_null_raw.csv`
+- `results/experiments/upat_large_results/csv/procrustes_null_summary.csv`
+- `results/experiments/upat_large_results/figures/10_procrustes_null_random_pairing.png`
+- `results/experiments/upat_large_results/figures/10_procrustes_null_random_labels.png`
+- `results/experiments/upat_large_results/figures/10_procrustes_null_random_orthogonal.png`
+
+Design:
+
+- Evaluate all `30` non-identity cross-model directions among the six UPAT-large models.
+- Use `1000` repeats per direction and null type.
+- Test three null controls:
+  - random-pairing: shuffle target anchor correspondences before Procrustes fitting
+  - random-label: keep matched anchors but shuffle source training labels
+  - random-orthogonal: keep matched centering/dimensionality but replace the learned Procrustes map with a random orthogonal transform
+
+Result:
+
+- Raw null rows: `90,000` (`30` directions x `3` nulls x `1000` repeats).
+- Summary rows: `90`.
+- Mean observed aligned F1 across non-identity directions: `0.684651`.
+- Mean null F1:
+  - random-label: `0.173017`
+  - random-pairing: `0.148036`
+  - random-orthogonal: `0.112103`
+- Mean observed-minus-null F1 gap:
+  - random-label: `0.511633`
+  - random-pairing: `0.536615`
+  - random-orthogonal: `0.572548`
+- No null repeat reached or exceeded the observed aligned F1 in any tested direction.
+- Therefore all empirical p-values are at the `N=1000` resolution floor: `1/(1000+1)=0.000999`.
+
+Interpretation:
+
+This substantially strengthens Track 3. The UPAT-large Procrustes transfer effect is not explained by shuffled labels, mismatched anchor correspondences, or arbitrary orthogonal rotations. The remaining question is no longer whether the original alignment result trivially survives basic nulls; it does. The next risk is methodological: Procrustes may still exploit many anchor examples, so the next required experiment is an alignment-size curve with held-out anchor/evaluation separation.

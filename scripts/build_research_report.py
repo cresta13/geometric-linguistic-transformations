@@ -176,7 +176,7 @@ def main():
                 ),
                 (
                     "Main conclusion",
-                    "The evidence supports a local QMT signed-permutation cancellation effect across tested encoder models, while negation-heavy triples expose the boundary of the phenomenon. A new UPAT-large Procrustes null pilot supports cross-model transfer surviving random-label and random-pairing controls, but it remains a pilot because N=30 caps empirical p-values at 0.0323.",
+                    "The evidence supports a local QMT signed-permutation cancellation effect across tested encoder models, while negation-heavy triples expose the boundary of the phenomenon. The UPAT-large cross-model Procrustes transfer result now survives N=1000 random-label, random-pairing, and random-orthogonal null controls across all 30 non-identity directions. No null repeat reaches observed aligned F1, so empirical p-values sit at the N=1000 resolution floor of 0.000999. The next Track 3 risk is alignment-size and held-out-anchor validity, not the basic null controls.",
                 ),
             ],
         )
@@ -190,7 +190,7 @@ def main():
         add_table_page(pdf, "UPAT hard-holdout representation ablation", format_float_columns(upat_ablation), max_rows=25)
         add_table_page(pdf, "UPAT delta vs y_only McNemar tests", format_float_columns(upat_mcnemar), max_rows=10)
         if not procrustes_null.empty:
-            add_table_page(pdf, "UPAT-large Procrustes null pilot", format_float_columns(procrustes_null), max_rows=30)
+            add_table_page(pdf, "UPAT-large Procrustes N=1000 null controls", format_float_columns(procrustes_null), max_rows=30)
         add_table_page(pdf, "Full-semantic pooling ablation", format_float_columns(pooling), max_rows=25)
         add_table_page(pdf, "Confusion analysis: negation vs non-negation recall", format_float_columns(confusion_neg), max_rows=25)
         add_table_page(pdf, "Third-order signed permutation summary with bootstrap CI", format_float_columns(jacobi), max_rows=20)
@@ -219,6 +219,7 @@ def main():
             ("UPAT hard-holdout ablation", ROOT / "paper" / "figures" / "upat_representation_ablation.png"),
             ("UPAT-large Procrustes random-pairing null", EXP / "upat_large_results" / "figures" / "10_procrustes_null_random_pairing.png"),
             ("UPAT-large Procrustes random-label null", EXP / "upat_large_results" / "figures" / "10_procrustes_null_random_labels.png"),
+            ("UPAT-large Procrustes random-orthogonal null", EXP / "upat_large_results" / "figures" / "10_procrustes_null_random_orthogonal.png"),
             ("Full-semantic pooling ablation: Linear SVC", ROOT / "paper" / "figures" / "full_semantic_pooling_linear_svc.png"),
             ("Full-semantic pooling ablation: logistic regression", ROOT / "paper" / "figures" / "full_semantic_pooling_logreg.png"),
             ("Confusion analysis: negation recall Linear SVC", ROOT / "paper" / "figures" / "confusion_negation_linear_svc.png"),
@@ -241,7 +242,8 @@ def main():
                 "New Track 1 result: syntax y_only=1.0 confirms target/surface leakage for the syntax split. New Track 1 spot-check: DeBERTa-v3-small supports delta superiority for Linear SVC but not for logistic regression. New Track 2 result: GPT-2 and DistilGPT-2 both keep QMT below permutation null, while negation triples remain mixed.",
                 "2026-06-13 update: after cache cleanup, BERT-large and DeBERTa-v3-base were both run successfully. Delta is best for both Linear SVC and logistic regression on both models.",
                 "Second 2026-06-13 update: UPAT is now explicitly reported as a hard-holdout boundary condition. Full-semantic pooling ablation, confusion/negation analysis, decoder pairwise composition, and signed-permutation multiple-testing correction are included.",
-                "Remaining blockers: resolve or expand UPAT, representation-ablation tables for every non-syntax holdout split, grammar-generated templates, endpoint-only controls for Track 2, composition layer/pooling ablations, and final bibliography formatting.",
+                "2026-06-14 update: UPAT-large Procrustes null controls are scaled to N=1000 and now include random-label, random-pairing, and random-orthogonal baselines. The observed aligned F1 exceeds every null repeat across all non-identity directions.",
+                "Remaining blockers: alignment-size and held-out-anchor controls for Track 3, resolve or expand UPAT hard-holdout, representation-ablation tables for every non-syntax holdout split, grammar-generated templates, endpoint-only controls for Track 2, composition layer/pooling ablations, and final bibliography formatting.",
             ],
         )
 
@@ -268,6 +270,7 @@ def main():
         add_code_listing(pdf, ROOT / "scripts" / "run_layerwise_pooling_ablation.py", "Code listing: run_layerwise_pooling_ablation.py")
         add_code_listing(pdf, ROOT / "scripts" / "run_track1_spotcheck.py", "Code listing: run_track1_spotcheck.py")
         add_code_listing(pdf, ROOT / "scripts" / "run_full_semantic_pooling_ablation.py", "Code listing: run_full_semantic_pooling_ablation.py")
+        add_code_listing(pdf, ROOT / "scripts" / "run_upat_procrustes_nulls.py", "Code listing: run_upat_procrustes_nulls.py")
         add_code_listing(pdf, ROOT / "scripts" / "analyze_confusion_negation.py", "Code listing: analyze_confusion_negation.py")
         add_code_listing(pdf, ROOT / "scripts" / "build_signed_permutation_multiple_testing.py", "Code listing: build_signed_permutation_multiple_testing.py")
 
