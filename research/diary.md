@@ -417,3 +417,39 @@ Result:
 Interpretation:
 
 This is an important positive result. The cross-model transfer effect is not merely an artifact of aligning on the same endpoint strings used by the classifier train/test task. Independent held-out anchor sentences recover most of the full-anchor alignment effect. The remaining Track 3 risk is now more specific: we need confidence intervals, anchor-domain diversity checks, and perhaps stronger architecture coverage, but the held-out-anchor critique itself is no longer the main blocker.
+
+## 2026-06-14: RISE positioning correction
+
+We reviewed Freenor and Alvarez, **"Mapping Semantic & Syntactic Relationships with Geometric Rotation"** (ICLR 2026), the RISE paper.
+
+This is the closest and strongest neighboring work. It already studies discourse-level semantic-syntactic transformations as geometric operations in sentence embeddings, with a spherical/Riemannian rotor method, seven languages, three multilingual embedding models, cross-language transfer, cross-model transfer, MDV and Procrustes baselines, and random-prototype controls.
+
+Immediate consequence:
+
+We must not claim novelty for the broad statement that linguistic transformations have cross-model or cross-lingual geometric structure. RISE already occupies that space more strongly.
+
+Updated positioning:
+
+- Track 1 becomes an endpoint-controlled delta diagnostic paper:
+  - `delta` versus `x_only`, `y_only`, and `concat`
+  - multiseed ablations
+  - McNemar tests
+  - explicit endpoint leakage and hard-holdout failures
+- Track 2 becomes the clearest distinct paper:
+  - RISE emphasizes reusable one-step transformations and commutative tangent-space behavior
+  - our Track 2 asks where ordered transformations are noncommutative or locally composition-sensitive
+- Track 3 becomes a RISE-aware stress-test paper:
+  - `N=1000` null-controlled Procrustes transfer
+  - held-out anchor alignment-size controls
+  - required next step: MDV/RISE-style prototype comparison on UPAT
+
+New required experiment:
+
+Implement an UPAT comparison between:
+
+- direct delta classifier transfer
+- mean difference vector / prototype prediction
+- spherical or tangent-space prototype prediction if feasible
+- Procrustes-aligned classifier transfer
+
+The goal is not to beat RISE by assertion. The goal is to show exactly what our simpler controls diagnose, where they agree with RISE-style geometry, and where ordered composition diagnostics reveal different structure.

@@ -184,7 +184,7 @@ def main():
                 ),
                 (
                     "Main conclusion",
-                    "The evidence supports a local QMT signed-permutation cancellation effect across tested encoder models, while negation-heavy triples expose the boundary of the phenomenon. The UPAT-large cross-model Procrustes transfer result now survives N=1000 random-label, random-pairing, and random-orthogonal null controls across all 30 non-identity directions. The new held-out alignment-size curve uses 1200 auxiliary anchor texts disjoint from classifier train/test texts and recovers most of the full-anchor effect: mean F1 reaches 0.661928 at 1000 held-out anchors versus 0.684651 with full-anchor Procrustes and 0.241524 raw.",
+                    "The evidence supports a local QMT signed-permutation cancellation effect across tested encoder models, while negation-heavy triples expose the boundary of the phenomenon. RISE (Freenor and Alvarez, ICLR 2026) is now treated as the closest prior work for spherical/geodesic semantic-syntactic transformations across languages and embedding models. Our Track 3 result is therefore framed as a stress test: UPAT-large cross-model Procrustes transfer survives N=1000 random-label, random-pairing, random-orthogonal, and held-out-anchor controls, but it still needs an explicit RISE/MDV comparison before becoming a main-paper claim.",
                 ),
             ],
         )
@@ -267,7 +267,8 @@ def main():
                 "Second 2026-06-13 update: UPAT is now explicitly reported as a hard-holdout boundary condition. Full-semantic pooling ablation, confusion/negation analysis, decoder pairwise composition, and signed-permutation multiple-testing correction are included.",
                 "2026-06-14 update: UPAT-large Procrustes null controls are scaled to N=1000 and now include random-label, random-pairing, and random-orthogonal baselines. The observed aligned F1 exceeds every null repeat across all non-identity directions.",
                 "Second 2026-06-14 update: held-out alignment-size controls are now added. Procrustes maps fitted on auxiliary anchor texts disjoint from classifier train/test texts recover most of the full-anchor transfer effect.",
-                "Remaining blockers: confidence intervals and anchor-domain diversity for Track 3, resolve or expand UPAT hard-holdout, representation-ablation tables for every non-syntax holdout split, grammar-generated templates, endpoint-only controls for Track 2, composition layer/pooling ablations, and final bibliography formatting.",
+                "Third 2026-06-14 update: RISE is now the central related-work anchor. Track 3 is reframed as RISE-aware stress testing rather than first-discovery cross-model geometry. A RISE/MDV-style UPAT comparison is now a required gate.",
+                "Remaining blockers: RISE/MDV comparison, confidence intervals and anchor-domain diversity for Track 3, resolve or expand UPAT hard-holdout, representation-ablation tables for every non-syntax holdout split, grammar-generated templates, endpoint-only controls for Track 2, composition layer/pooling ablations, and final bibliography formatting.",
             ],
         )
 
@@ -287,6 +288,15 @@ def main():
                 "Updated Research Roadmap",
                 [roadmap_path.read_text(encoding="utf-8")],
                 fontsize=7.5,
+            )
+
+        related_work_path = ROOT / "paper" / "related_work_positioning.md"
+        if related_work_path.exists():
+            add_text_page(
+                pdf,
+                "RISE Related-Work Positioning",
+                [related_work_path.read_text(encoding="utf-8")],
+                fontsize=8,
             )
 
         add_code_listing(pdf, ROOT / "scripts" / "run_lie_algebraic_identities.py", "Code listing: run_lie_algebraic_identities.py")

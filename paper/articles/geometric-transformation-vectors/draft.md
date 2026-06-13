@@ -67,7 +67,7 @@ Negation probing is directly relevant because negation is both an easy surface m
 
 Working references:
 
-- Freenor and Alvarez 2025, "Steering Embedding Models with Geometric Rotation: Mapping Semantic Relationships Across Languages and Models" (`arXiv:2510.09790`).
+- Freenor and Alvarez 2026, "Mapping Semantic & Syntactic Relationships with Geometric Rotation" (RISE).
 - Ilharco et al. 2023, "Editing Models with Task Arithmetic".
 - Todd et al. 2024, "Function Vectors in Large Language Models".
 - Park, Choe, and Veitch 2023/2024, "The Linear Representation Hypothesis and the Geometry of Large Language Models".
@@ -77,7 +77,9 @@ Working references:
 
 Closest-work distinction:
 
-RISE is the closest neighbor because it also treats discourse-level semantic-syntactic transformations as geometric structure in embedding space. The methodological distinction is that RISE estimates rotational operations on the unit hypersphere and emphasizes cross-lingual/cross-model transfer, while this track tests direct sentence-pair displacement vectors with endpoint-only and concat baselines. The practical contribution here is therefore not "we discovered geometric transformations before RISE"; it is a conservative ablation package showing when simple delta vectors add information beyond endpoints, when they fail, and which artifacts must be controlled before stronger claims.
+RISE is the closest and strongest neighbor because it already treats discourse-level semantic-syntactic transformations as geometric structure in sentence-embedding space, using spherical/Riemannian rotor operations and evaluating across languages and embedding models. This draft must therefore not claim novelty for the broad idea that linguistic transformations have cross-model geometric structure. The methodological distinction is narrower: RISE predicts transformed embeddings with rotor/prototype operations, while this track tests direct sentence-pair displacement vectors with endpoint-only, source-only, concat, multiseed, and McNemar controls. The practical contribution here is therefore not "we discovered geometric transformations before RISE"; it is a conservative ablation package showing when simple delta vectors add information beyond endpoints, when they fail, and which artifacts must be controlled before stronger claims.
+
+The necessary future comparison is explicit: run a RISE/MDV-style prototype-prediction baseline on the same UPAT pairs and compare it against direct delta classification and Procrustes-aligned classifier transfer. Without that comparison, this track should be framed as a controlled diagnostic study rather than as a main cross-model geometry paper.
 
 Compared with the Linear Representation Hypothesis literature, this draft is not a formal theory of linear representation. It is an empirical stress test of whether a simple linear object, `embedding(y) - embedding(x)`, survives endpoint leakage controls in controlled linguistic transformations.
 

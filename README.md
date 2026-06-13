@@ -11,7 +11,7 @@ This is an active research repository, not a submission-ready paper. The current
 - UPAT hard-holdout results are reported as a boundary condition where `y_only` can beat `delta`.
 - Lie-style antisymmetry is not evidence; it is a tautological implementation check.
 - Third-order signed permutation coherence is framed as a diagnostic, not as a formal Lie algebra or Jacobi identity.
-- Procrustes/cross-model transfer is a promising future direction, but needs null baselines before being promoted.
+- Procrustes/cross-model transfer now survives `N=1000` null controls and held-out anchor alignment-size controls, but it still needs RISE/MDV comparison and anchor-domain robustness before being promoted as a main claim.
 
 ## Positioning
 
@@ -19,7 +19,7 @@ This repository should be cited as a software/research-artifact snapshot, not as
 
 Closest related work:
 
-- Freenor and Alvarez 2025, RISE: geometric rotations for discourse-level semantic-syntactic transformations across languages and embedding models. This repository instead uses direct endpoint/delta representations and classifier/ablation diagnostics, and it reports endpoint leakage and hard-holdout failures explicitly.
+- Freenor and Alvarez 2026, RISE: geometric rotations for discourse-level semantic-syntactic transformations across languages and embedding models. This is the closest neighboring work and is stronger than this repository on cross-lingual/cross-model scope. This repository instead uses direct endpoint/delta representations, classifier/ablation diagnostics, null-controlled Procrustes transfer stress tests, and ordered-composition diagnostics; it also reports endpoint leakage and hard-holdout failures explicitly.
 - Park, Choe, and Veitch 2023/2024: formal Linear Representation Hypothesis framing for linear directions and representation geometry in LLMs. This repository is empirical and diagnostic rather than a formal LRH theory paper.
 - De Raedt et al. 2021: geometric cross-lingual linguistic transformations with pretrained autoencoders. This repository studies paired-sentence displacement vectors and composition diagnostics in transformer embedding spaces, not cross-lingual autoencoder transfer.
 
@@ -27,6 +27,7 @@ Closest related work:
 
 - `paper/`
   - `research_program.md`: current research roadmap.
+  - `related_work_positioning.md`: RISE/LRH positioning note and claim-boundary checklist.
   - `reviewer_revision_plan.md`: reviewer-driven backlog and status.
   - `reviewer_response_round3.md`: latest reviewer-response note.
   - `articles/`: separate draft paper candidates.

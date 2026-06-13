@@ -12,7 +12,11 @@ The strongest long-term story is broader than either current draft:
 
 > Transformers may encode linguistic operators as geometric objects in a low-dimensional, partially universal transformation subspace, and this subspace may be transferable across architectures and languages.
 
-Current results are not enough to claim this as a complete theory yet. The Procrustes transfer numbers now survive large random-label, random-pairing, random-orthogonal, and held-out-anchor alignment controls, but they still need confidence intervals, anchor-domain diversity checks, and broader architecture coverage before becoming a submission-grade universality claim. The roadmap below treats cross-model and cross-lingual transfer as the next central hypothesis, not as a finished conclusion.
+Current results are not enough to claim this as a complete theory yet. The Procrustes transfer numbers now survive large random-label, random-pairing, random-orthogonal, and held-out-anchor alignment controls, but RISE already provides a stronger published neighboring result for spherical/geodesic semantic-syntactic transformations across languages and embedding models. The roadmap below therefore treats cross-model transfer as a stress-test and comparison track, not as an unqualified novelty claim.
+
+Closest prior-work anchor:
+
+- Freenor and Alvarez 2026, RISE, already demonstrates rotor-based discourse-level semantic-syntactic transformation geometry across languages and embedding models. Our work must be positioned as endpoint-controlled delta diagnostics, Procrustes/null stress testing, and ordered-composition diagnostics rather than as the first evidence for geometric linguistic transformations.
 
 ## Track 1: Geometric transformation vectors
 
@@ -90,7 +94,7 @@ Hand-written templates may induce or suppress cancellation. GPT-2/DistilGPT-2 no
 
 Working title:
 
-**Universal Transformation Subspaces Across Transformer Architectures**
+**Stress-Testing Cross-Model Transformation Transfer in Transformer Embedding Spaces**
 
 Central hypothesis:
 
@@ -111,15 +115,19 @@ Promising exploratory evidence:
 
 Current status:
 
-This is now a serious candidate for the strongest paper. The result has survived the large null-audit gate and the first held-out-anchor gate, but it is not yet submission-grade because Procrustes transfer still needs confidence intervals, anchor-domain robustness, and broader architecture coverage.
+This is now a serious candidate for a complementary paper, but not as a "first universal geometry" claim. RISE is stronger on cross-lingual/cross-model geometric transformation modeling. Our distinct angle is stress testing: null-controlled Procrustes transfer, held-out anchors, endpoint controls, and comparison against simpler delta/MDV/RISE-style baselines.
 
 Required gates before promotion:
 
 1. Add bootstrap confidence intervals and direction-family summaries for the held-out alignment curve.
 2. Stress-test anchor-domain diversity, e.g. anchors from a different template family or natural paraphrase pool.
-3. Reverse-direction transfer summary by model family, e.g. small model to large model and large model to small model.
-4. Stronger architectures if feasible, such as Llama/Mistral-class embedding spaces or high-quality sentence encoders.
-5. Package the result as a standalone Track 3 draft after the confidence-interval and anchor-domain checks.
+3. Add a RISE/MDV-style prototype prediction baseline on UPAT:
+   - target-embedding prediction similarity
+   - classifier transfer using predicted/transformed embeddings if feasible
+   - direct comparison against delta and Procrustes-aligned classifier transfer
+4. Reverse-direction transfer summary by model family, e.g. small model to large model and large model to small model.
+5. Stronger architectures if feasible, such as Llama/Mistral-class embedding spaces or high-quality sentence encoders.
+6. Package the result as a standalone Track 3 draft only after the RISE/MDV comparison and confidence-interval checks.
 
 ## Track 4: Transformation vectors as editors
 
@@ -227,10 +235,11 @@ Negative results remain part of the research record.
    - bootstrap confidence intervals
    - direction-family summary
    - anchor-domain diversity check
-4. Test cross-model transformation transfer as the likely central future paper:
+4. Test cross-model transformation transfer as a RISE-aware stress-test paper:
    - reverse-direction transfer
    - alignment-size curve
    - random-label/null alignment controls
+   - RISE/MDV-style prototype baseline
 5. Treat the syntax holdout as resolved for the current draft: `y_only=1.0` and layer-0 `1.0` mean the `syntax=1.0` result is a target/surface artifact unless a future redesigned split proves otherwise.
 6. Convert large/modern Track 1 spot-checks into multiseed runs if Track 1 is promoted to submission.
 7. Build a grammar-driven template generator for `N,Q,M,T` that produces many paraphrases without duplicate endpoints.
@@ -271,7 +280,7 @@ Negative results remain part of the research record.
    - at least one model outside the original five is included as a spot-check; currently satisfied by BERT-large and DeBERTa-v3-base
    - UPAT hard-holdout is either resolved experimentally or explicitly reported as a negative boundary condition
 2. Keep Track 2 as a diagnostics paper until grammar-generated templates and endpoint-only controls succeed.
-3. Promote Track 3 to the main paper only if Procrustes transfer survives null baselines. If it does, the main narrative becomes cross-architecture universal transformation subspaces.
+3. Promote Track 3 only if it becomes clearly complementary to RISE: null-controlled Procrustes transfer plus held-out anchors plus an explicit RISE/MDV comparison. The main narrative should be stress-testing cross-model transfer, not claiming first discovery of universal transformation geometry.
 4. If steering works, write Track 4 as an intervention/controllable-generation paper.
 5. If cross-lingual transfer works, it becomes the strongest version of the universality claim.
 6. If Track 2 survives grammar-generated controls, write it as a separate diagnostics paper rather than merging it into Track 1.

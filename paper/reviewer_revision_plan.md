@@ -36,7 +36,7 @@ This file tracks completed reviewer-driven changes and future work needed before
 
 ### Why this may become the main paper
 
-The UPAT-large Procrustes results suggest that transformation geometry may transfer across architectures after low-dimensional alignment. This is currently the most ambitious and potentially strongest narrative, but only if null controls rule out overfitting.
+The UPAT-large Procrustes results suggest that transformation geometry may transfer across architectures after low-dimensional alignment. However, RISE (Freenor and Alvarez, ICLR 2026) is now the closest and strongest neighboring paper for cross-lingual/cross-model semantic-syntactic geometry. Track 3 can only become a main paper if it is framed as a stress-test and comparison study rather than as the first broad geometry result.
 
 ### Newly addressed
 
@@ -65,12 +65,16 @@ The UPAT-large Procrustes results suggest that transformation geometry may trans
    - anchors from a different template family
    - paraphrased anchor pools
    - natural sentence anchors if available
-4. Report the completed null and held-out alignment audits in the draft:
+4. Add a RISE/MDV comparison on UPAT:
+   - implement a mean-difference-vector prototype baseline
+   - implement a spherical/tangent-space prototype variant if feasible
+   - compare target-embedding prediction similarity and downstream classifier transfer
+5. Report the completed null and held-out alignment audits in the draft:
    - null mean/std/max
    - empirical p-value resolution
    - effect sizes versus each null
    - held-out alignment-size curve
-5. Optional architecture expansion:
+6. Optional architecture expansion:
    - Llama/Mistral-style embedding spaces if local resources allow
    - otherwise stronger sentence encoders as a lower-cost proxy
 
@@ -143,11 +147,11 @@ Measure whether transformations live in low-dimensional subspaces.
 
 ## Future submission priorities
 
-- Related work positioning is started, including RISE, LRH, and cross-lingual transformation work, but final citation formatting and a comparison table remain future submission work.
+- Related work positioning is now explicitly RISE-aware, but final citation formatting and a comparison table remain future submission work.
 - Current model set now has draft-level larger/modern spot-checks, but not multiseed larger-model confirmation.
 - Mean pooling needs empirical justification for the full-semantic and composition experiments.
 - The central narrative should be selected before submission. Current candidates are:
   - Track 1: endpoint-controlled transformation vectors
-  - Track 3: cross-model universal transformation subspaces
+  - Track 3: RISE-aware cross-model transfer stress tests
   - Track 4: transformation vectors as causal editors
   - Track 5: cross-lingual transformation geometry
