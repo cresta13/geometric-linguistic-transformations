@@ -13,6 +13,16 @@ This is an active research repository, not a submission-ready paper. The current
 - Third-order signed permutation coherence is framed as a diagnostic, not as a formal Lie algebra or Jacobi identity.
 - Procrustes/cross-model transfer is a promising future direction, but needs null baselines before being promoted.
 
+## Positioning
+
+This repository should be cited as a software/research-artifact snapshot, not as a peer-reviewed publication.
+
+Closest related work:
+
+- Freenor and Alvarez 2025, RISE: geometric rotations for discourse-level semantic-syntactic transformations across languages and embedding models. This repository instead uses direct endpoint/delta representations and classifier/ablation diagnostics, and it reports endpoint leakage and hard-holdout failures explicitly.
+- Park, Choe, and Veitch 2023/2024: formal Linear Representation Hypothesis framing for linear directions and representation geometry in LLMs. This repository is empirical and diagnostic rather than a formal LRH theory paper.
+- De Raedt et al. 2021: geometric cross-lingual linguistic transformations with pretrained autoencoders. This repository studies paired-sentence displacement vectors and composition diagnostics in transformer embedding spaces, not cross-lingual autoencoder transfer.
+
 ## Repository Map
 
 - `paper/`
@@ -56,6 +66,8 @@ Run scripts from the repository root, for example:
 ```powershell
 .\.venv\Scripts\python.exe scripts\build_research_report.py
 ```
+
+The reproducibility path is: run or inspect scripts in `scripts/`, compare generated outputs against CSVs and figures in `results/` and `results/experiments/`, then rebuild the reviewer packet with `scripts/build_research_report.py`.
 
 Large intermediate vector caches (`*.npy`), local virtual environments, IDE files, `.env`, and review zip archives are intentionally excluded from git.
 

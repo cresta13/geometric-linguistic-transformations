@@ -48,10 +48,19 @@ Negation literature is also central. Prior negation probes show that pretrained 
 
 Working references:
 
+- Freenor and Alvarez 2025, "Steering Embedding Models with Geometric Rotation: Mapping Semantic Relationships Across Languages and Models" (`arXiv:2510.09790`).
 - Ilharco et al. 2023, "Editing Models with Task Arithmetic".
 - Todd et al. 2024, "Function Vectors in Large Language Models".
+- Park, Choe, and Veitch 2023/2024, "The Linear Representation Hypothesis and the Geometry of Large Language Models".
+- De Raedt et al. 2021, "A Simple Geometric Method for Cross-Lingual Linguistic Transformations with Pre-trained Autoencoders".
 - Kassner and Schuetze 2020, "Negated and Misprimed Probes for Pretrained Language Models".
 - Huang et al. 2024, "RAVEL: Evaluating Interpretability Methods on Disentangling Language Model Representations".
+
+Closest-work distinction:
+
+RISE is the closest methodological neighbor, but this track asks a different question. RISE estimates rotations that map semantic-syntactic transformations across languages and models. This draft does not propose a steering method. It asks whether ordered transformation endpoints show local composition structure, especially via pairwise noncommutativity and third-order signed-permutation cancellation. The strongest current result is deliberately narrow: `QMT` is coherent under this diagnostic, while negation-containing triples are unstable.
+
+Compared with LRH work, the signed-permutation diagnostic should not be read as a formal proof of a linear representation theorem. Compared with De Raedt et al. 2021, this is not a multilingual autoencoder property-transfer method; it is a controlled transformer-embedding diagnostic over ordered English sentence transformations.
 
 ## 3. Operations and Models
 

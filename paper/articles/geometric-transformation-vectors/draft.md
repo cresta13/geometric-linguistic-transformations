@@ -67,10 +67,21 @@ Negation probing is directly relevant because negation is both an easy surface m
 
 Working references:
 
+- Freenor and Alvarez 2025, "Steering Embedding Models with Geometric Rotation: Mapping Semantic Relationships Across Languages and Models" (`arXiv:2510.09790`).
 - Ilharco et al. 2023, "Editing Models with Task Arithmetic".
 - Todd et al. 2024, "Function Vectors in Large Language Models".
+- Park, Choe, and Veitch 2023/2024, "The Linear Representation Hypothesis and the Geometry of Large Language Models".
+- De Raedt et al. 2021, "A Simple Geometric Method for Cross-Lingual Linguistic Transformations with Pre-trained Autoencoders".
 - Huang et al. 2024, "RAVEL: Evaluating Interpretability Methods on Disentangling Language Model Representations".
 - Kassner and Schuetze 2020, "Negated and Misprimed Probes for Pretrained Language Models".
+
+Closest-work distinction:
+
+RISE is the closest neighbor because it also treats discourse-level semantic-syntactic transformations as geometric structure in embedding space. The methodological distinction is that RISE estimates rotational operations on the unit hypersphere and emphasizes cross-lingual/cross-model transfer, while this track tests direct sentence-pair displacement vectors with endpoint-only and concat baselines. The practical contribution here is therefore not "we discovered geometric transformations before RISE"; it is a conservative ablation package showing when simple delta vectors add information beyond endpoints, when they fail, and which artifacts must be controlled before stronger claims.
+
+Compared with the Linear Representation Hypothesis literature, this draft is not a formal theory of linear representation. It is an empirical stress test of whether a simple linear object, `embedding(y) - embedding(x)`, survives endpoint leakage controls in controlled linguistic transformations.
+
+Compared with De Raedt et al. 2021, this work does not train an autoencoder mapping for cross-lingual property transfer. It probes pretrained transformer embedding spaces with paired English sentence transformations and reports classifier/geometry diagnostics rather than generation or transfer accuracy.
 
 ## 3. Experimental Setup
 

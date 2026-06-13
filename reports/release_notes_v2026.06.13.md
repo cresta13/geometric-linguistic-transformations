@@ -2,6 +2,8 @@
 
 This release freezes the current research artifact for external review and DOI archiving.
 
+It should be archived on Zenodo as **Software** / reproducibility package, not as a peer-reviewed publication. The draft papers are included as research notes inside the software artifact.
+
 ## Scope
 
 - Research code lives in `scripts/`.
@@ -42,6 +44,19 @@ Key entry points:
 - Composition results: `results/experiments/lie_composition_results/`
 - Signed-permutation results: `results/experiments/lie_algebraic_identities_results/`
 - Semantic-equivalence control: `results/experiments/lie_semantic_equivalence_results/`
+
+## Closest Related Work
+
+- Freenor and Alvarez 2025, RISE (`arXiv:2510.09790`) studies discourse-level semantic-syntactic transformations as rotations on the unit hypersphere across languages and embedding models. This release is narrower: it archives endpoint/delta ablations, leakage checks, and signed-permutation diagnostics rather than a rotational steering method.
+- Park, Choe, and Veitch 2023/2024 formalize versions of the Linear Representation Hypothesis for LLM representation geometry. This release is an empirical probe package, not a formal theory of linear representation.
+- De Raedt et al. 2021 study cross-lingual linguistic transformations with pretrained autoencoders. This release focuses on transformer sentence-pair displacement vectors and controlled composition diagnostics rather than multilingual autoencoder transfer.
+
+## What Is Not Claimed
+
+- This is not a claim that delta vectors are pure linguistic operators.
+- This is not a claim that the syntax holdout demonstrates deep generalization.
+- This is not a claim that transformer embeddings form a Lie algebra.
+- This is not a peer-reviewed paper release.
 
 ## Reproducibility
 

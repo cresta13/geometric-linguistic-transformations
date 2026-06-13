@@ -1,5 +1,5 @@
 {
-  "title": "Geometric Linguistic Transformations in Transformer Latent Spaces",
+  "title": "Geometric Linguistic Transformations in Transformer Latent Spaces: Research Artifact and Reproducibility Package",
   "version": "2026.06.13",
   "upload_type": "software",
   "access_right": "open",
@@ -11,7 +11,7 @@
       "type": "ProjectMember"
     }
   ],
-  "description": "Research code, result tables, figures, and draft papers for experiments on linguistic transformation geometry in transformer embedding spaces. This release preserves the current evidence package for endpoint controls, multiseed ablations, hard-holdout boundary analyses, signed-permutation diagnostics, semantic-equivalence controls, and cross-model transfer roadmaps. The repository is an active research artifact, not a peer-reviewed publication.",
+  "description": "Archival software and research-artifact snapshot for preliminary empirical experiments on linguistic transformation geometry in transformer embedding spaces. This release preserves code, result tables, figures, draft research notes, and reviewer-facing reports for endpoint controls, multiseed ablations, hard-holdout boundary analyses, signed-permutation diagnostics, semantic-equivalence controls, and cross-model transfer roadmaps. It is a reproducibility package and citable research snapshot, not a peer-reviewed publication or a claim of a complete linguistic-operator theory.",
   "keywords": [
     "transformer",
     "representation geometry",
