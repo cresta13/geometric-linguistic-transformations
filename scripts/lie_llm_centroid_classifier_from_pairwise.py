@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-RESULTS_DIR = os.getenv("LIE_RESULTS_DIR", "lie_llm_large_results")
+RESULTS_DIR = os.getenv("LIE_RESULTS_DIR", "results/experiments/lie_llm_large_results")
 OUT_DIR = os.path.join(RESULTS_DIR, "centroid_classifier_from_pairwise")
 os.makedirs(OUT_DIR, exist_ok=True)
 

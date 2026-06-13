@@ -19,7 +19,7 @@ MODELS = os.getenv(
 ).split(",")
 
 HF_TOKEN = os.getenv("HF_TOKEN") or os.getenv("HUGGINGFACE_API_KEY")
-OUT_DIR = "lie_llm_commutator_results"
+OUT_DIR = "results/experiments/lie_llm_commutator_results"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 PCA_DIM = int(os.getenv("LIE_PCA_DIM", "64"))

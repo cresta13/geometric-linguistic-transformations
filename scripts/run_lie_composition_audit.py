@@ -20,7 +20,7 @@ warnings.filterwarnings("ignore")
 
 class LieCompositionAudit:
     def __init__(self):
-        self.out_dir = Path(os.getenv("LIE_COMPOSITION_OUT_DIR", "lie_composition_results"))
+        self.out_dir = Path(os.getenv("LIE_COMPOSITION_OUT_DIR", "results/experiments/lie_composition_results"))
         self.csv_dir = self.out_dir / "csv"
         self.fig_dir = self.out_dir / "figures"
 

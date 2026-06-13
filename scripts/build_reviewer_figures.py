@@ -5,6 +5,7 @@ import pandas as pd
 
 
 ROOT = Path(__file__).resolve().parents[1]
+EXP = ROOT / "results" / "experiments"
 FIG_DIR = ROOT / "paper" / "figures"
 FIG_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -18,7 +19,7 @@ def savefig(name):
 
 
 def plot_syntax_ablation():
-    df = pd.read_csv(ROOT / "syntax_representation_ablation_results" / "syntax_representation_ablation_pivot.csv")
+    df = pd.read_csv(EXP / "syntax_representation_ablation_results" / "syntax_representation_ablation_pivot.csv")
     df = df[df["classifier"] == "linear_svc"].set_index("model")[["x_only", "y_only", "concat", "delta"]]
     ax = df.plot(kind="bar", figsize=(9, 4.8), color=["#8a8f98", "#d95f02", "#7570b3", "#1b9e77"])
     ax.set_title("Syntax holdout representation ablation")
@@ -31,7 +32,7 @@ def plot_syntax_ablation():
 
 
 def plot_spotcheck():
-    df = pd.read_csv(ROOT / "track1_spotcheck_results" / "spotcheck_representation_ablation_pivot.csv")
+    df = pd.read_csv(EXP / "track1_spotcheck_results" / "spotcheck_representation_ablation_pivot.csv")
     df = df.set_index("classifier")[["x_only", "y_only", "concat", "delta"]]
     ax = df.plot(kind="bar", figsize=(7, 4.5), color=["#8a8f98", "#d95f02", "#7570b3", "#1b9e77"])
     ax.set_title("DeBERTa-v3-small representation spot-check")
@@ -44,7 +45,7 @@ def plot_spotcheck():
 
 
 def plot_large_spotcheck():
-    path = ROOT / "track1_spotcheck_large_results" / "spotcheck_representation_ablation_pivot.csv"
+    path = EXP / "track1_spotcheck_large_results" / "spotcheck_representation_ablation_pivot.csv"
     if not path.exists():
         return
     df = pd.read_csv(path)
@@ -61,7 +62,7 @@ def plot_large_spotcheck():
 
 
 def plot_decoder_signed_permutation():
-    df = pd.read_csv(ROOT / "lie_algebraic_identities_decoder_results" / "csv" / "jacobi_summary.csv")
+    df = pd.read_csv(EXP / "lie_algebraic_identities_decoder_results" / "csv" / "jacobi_summary.csv")
     pivot = df.pivot(index="triple", columns="model", values="mean_jacobi_to_null_mean_ratio").sort_index()
     fig, ax = plt.subplots(figsize=(6.8, 4.4))
     im = ax.imshow(pivot.values, cmap="RdYlGn_r", vmin=0.5, vmax=1.5, aspect="auto")
@@ -78,7 +79,7 @@ def plot_decoder_signed_permutation():
 
 
 def plot_upat_ablation():
-    path = ROOT / "upat_audit_results" / "csv" / "ablation.csv"
+    path = EXP / "upat_audit_results" / "csv" / "ablation.csv"
     if not path.exists():
         return
     df = pd.read_csv(path)
@@ -95,7 +96,7 @@ def plot_upat_ablation():
 
 
 def plot_pooling_ablation():
-    path = ROOT / "full_semantic_pooling_ablation_results" / "full_semantic_pooling_ablation_pivot.csv"
+    path = EXP / "full_semantic_pooling_ablation_results" / "full_semantic_pooling_ablation_pivot.csv"
     if not path.exists():
         return
     df = pd.read_csv(path)

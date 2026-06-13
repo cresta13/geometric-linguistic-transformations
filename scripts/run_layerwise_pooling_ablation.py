@@ -16,7 +16,7 @@ from transformers import AutoModel, AutoTokenizer
 import lie_llm_syntax_holdout_experiment as syntax
 
 
-OUT_DIR = Path(os.getenv("LAYERWISE_OUT_DIR", "layerwise_pooling_ablation_results"))
+OUT_DIR = Path(os.getenv("LAYERWISE_OUT_DIR", "results/experiments/layerwise_pooling_ablation_results"))
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 MODEL_NAME = os.getenv("LAYERWISE_MODEL", "bert-base-uncased")

@@ -18,7 +18,7 @@ warnings.filterwarnings("ignore")
 
 class LieSemanticEquivalenceControl:
     def __init__(self):
-        self.out_dir = Path("lie_semantic_equivalence_results")
+        self.out_dir = Path("results/experiments/lie_semantic_equivalence_results")
         self.csv_dir = self.out_dir / "csv"
         self.fig_dir = self.out_dir / "figures"
 

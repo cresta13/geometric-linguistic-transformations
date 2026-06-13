@@ -16,9 +16,19 @@ except ImportError:
 
 load_dotenv()
 
-DIVERSE_DIR = os.getenv("LIE_DIVERSE_DIR", "lie_llm_diverse_results")
-FULL_DIR = os.getenv("LIE_FULL_DIR", "lie_llm_full_semantic_holdout_results")
-SYNTAX_DIR = os.getenv("LIE_SYNTAX_DIR", "lie_llm_syntax_results")
+def experiment_dir(env_name, default):
+    value = os.getenv(env_name, default)
+    if os.path.exists(value):
+        return value
+    migrated = os.path.join("results", "experiments", os.path.basename(value))
+    if os.path.exists(migrated):
+        return migrated
+    return value
+
+
+DIVERSE_DIR = experiment_dir("LIE_DIVERSE_DIR", "results/experiments/lie_llm_diverse_results")
+FULL_DIR = experiment_dir("LIE_FULL_DIR", "results/experiments/lie_llm_full_semantic_holdout_results")
+SYNTAX_DIR = experiment_dir("LIE_SYNTAX_DIR", "results/experiments/lie_llm_syntax_results")
 
 OUT_DIR = os.getenv("LIE_FIGURES_DIR", "paper/figures")
 os.makedirs(OUT_DIR, exist_ok=True)

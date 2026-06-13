@@ -17,7 +17,7 @@ MODELS = [m.strip() for m in os.getenv(
     "roberta-base,distilroberta-base,bert-base-uncased,gpt2,distilgpt2"
 ).split(",") if m.strip()]
 
-OUT_DIR = "lie_llm_diverse_results"
+OUT_DIR = "results/experiments/lie_llm_diverse_results"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 N_BASE = int(os.getenv("LIE_N_BASE", "1000"))

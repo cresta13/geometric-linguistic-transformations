@@ -13,7 +13,7 @@ from sklearn.svm import LinearSVC
 import lie_llm_full_semantic_holdout_experiment as full
 
 
-OUT_DIR = Path(os.getenv("SPOTCHECK_OUT_DIR", "track1_spotcheck_results"))
+OUT_DIR = Path(os.getenv("SPOTCHECK_OUT_DIR", "results/experiments/track1_spotcheck_results"))
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 MODELS = [m.strip() for m in os.getenv("SPOTCHECK_MODELS", "bert-large-uncased").split(",") if m.strip()]

@@ -8,23 +8,23 @@ If linguistic transformations are recoverable as displacement vectors, the next 
 
 Main scripts:
 
-- Composition audit: [run_lie_composition_audit.py](../../../run_lie_composition_audit.py)
-- Semantic equivalence control: [run_lie_semantic_equivalence_control.py](../../../run_lie_semantic_equivalence_control.py)
-- Algebraic-identity audit / signed permutation diagnostic: [run_lie_algebraic_identities.py](../../../run_lie_algebraic_identities.py)
-- Composition dataset helper: [lie_composition_dataset.py](../../../lie_composition_dataset.py)
+- Composition audit: [run_lie_composition_audit.py](../../../scripts/run_lie_composition_audit.py)
+- Semantic equivalence control: [run_lie_semantic_equivalence_control.py](../../../scripts/run_lie_semantic_equivalence_control.py)
+- Algebraic-identity audit / signed permutation diagnostic: [run_lie_algebraic_identities.py](../../../scripts/run_lie_algebraic_identities.py)
+- Composition dataset helper: [lie_composition_dataset.py](../../../scripts/lie_composition_dataset.py)
 
 Main result files:
 
-- Composition summary: [lie_composition_summary.csv](../../../lie_composition_results/csv/lie_composition_summary.csv)
-- Decoder composition summary: [lie_composition_summary.csv](../../../lie_composition_decoder_results/csv/lie_composition_summary.csv)
-- Semantic equivalence summary: [semantic_equivalence_summary.csv](../../../lie_semantic_equivalence_results/csv/semantic_equivalence_summary.csv)
-- Semantic statistical tests: [semantic_equivalence_tests.csv](../../../lie_semantic_equivalence_results/csv/semantic_equivalence_tests.csv)
-- Semantic effect sizes: [reviewer_semantic_effect_sizes.csv](../../../lie_semantic_equivalence_results/csv/reviewer_semantic_effect_sizes.csv)
-- Signed permutation summary: [jacobi_summary.csv](../../../lie_algebraic_identities_results/csv/jacobi_summary.csv)
-- Signed permutation raw rows: [jacobi_raw_all_models.csv](../../../lie_algebraic_identities_results/csv/jacobi_raw_all_models.csv)
-- Multiple-testing correction: [signed_permutation_multiple_testing.csv](../../../lie_algebraic_identities_results/csv/signed_permutation_multiple_testing.csv)
-- Dataset audit: [reviewer_dataset_audit.csv](../../../lie_algebraic_identities_results/csv/reviewer_dataset_audit.csv)
-- Decoder signed permutation summary: [jacobi_summary.csv](../../../lie_algebraic_identities_decoder_results/csv/jacobi_summary.csv)
+- Composition summary: [lie_composition_summary.csv](../../../results/experiments/lie_composition_results/csv/lie_composition_summary.csv)
+- Decoder composition summary: [lie_composition_summary.csv](../../../results/experiments/lie_composition_decoder_results/csv/lie_composition_summary.csv)
+- Semantic equivalence summary: [semantic_equivalence_summary.csv](../../../results/experiments/lie_semantic_equivalence_results/csv/semantic_equivalence_summary.csv)
+- Semantic statistical tests: [semantic_equivalence_tests.csv](../../../results/experiments/lie_semantic_equivalence_results/csv/semantic_equivalence_tests.csv)
+- Semantic effect sizes: [reviewer_semantic_effect_sizes.csv](../../../results/experiments/lie_semantic_equivalence_results/csv/reviewer_semantic_effect_sizes.csv)
+- Signed permutation summary: [jacobi_summary.csv](../../../results/experiments/lie_algebraic_identities_results/csv/jacobi_summary.csv)
+- Signed permutation raw rows: [jacobi_raw_all_models.csv](../../../results/experiments/lie_algebraic_identities_results/csv/jacobi_raw_all_models.csv)
+- Multiple-testing correction: [signed_permutation_multiple_testing.csv](../../../results/experiments/lie_algebraic_identities_results/csv/signed_permutation_multiple_testing.csv)
+- Dataset audit: [reviewer_dataset_audit.csv](../../../results/experiments/lie_algebraic_identities_results/csv/reviewer_dataset_audit.csv)
+- Decoder signed permutation summary: [jacobi_summary.csv](../../../results/experiments/lie_algebraic_identities_decoder_results/csv/jacobi_summary.csv)
 
 Daily verification packet:
 
@@ -83,11 +83,11 @@ The decoder replication supports the local `QMT` result, but negation-containing
 
 The first test compares ordered compositions `AB` and `BA`.
 
-![Composition noncommutativity heatmap](../../../lie_composition_results/figures/01_noncommutativity_heatmap.png)
+![Composition noncommutativity heatmap](../../../results/experiments/lie_composition_results/figures/01_noncommutativity_heatmap.png)
 
 **Figure 1.** Noncommutativity heatmap for ordered operation pairs.
 
-![Relative commutator norm heatmap](../../../lie_composition_results/figures/02_relative_commutator_norm_heatmap.png)
+![Relative commutator norm heatmap](../../../results/experiments/lie_composition_results/figures/02_relative_commutator_norm_heatmap.png)
 
 **Figure 2.** Relative commutator norm across operation pairs and models.
 
@@ -97,7 +97,7 @@ Order matters, especially for transformations involving tense. This is necessary
 
 Decoder composition has now been added, so decoder models are no longer present only in the favorable third-order diagnostic.
 
-![Decoder composition noncommutativity heatmap](../../../lie_composition_decoder_results/figures/01_noncommutativity_heatmap.png)
+![Decoder composition noncommutativity heatmap](../../../results/experiments/lie_composition_decoder_results/figures/01_noncommutativity_heatmap.png)
 
 **Figure 3.** Decoder-model pairwise noncommutativity heatmap.
 
@@ -117,7 +117,7 @@ Decoder pairwise composition is weaker for GPT-2 than for DistilGPT-2 under this
 
 The semantic equivalence control compares pairs intended to preserve meaning against pairs where order should change meaning.
 
-![Semantic equivalence control](../../../lie_semantic_equivalence_results/figures/01_equivalent_vs_nonequivalent.png)
+![Semantic equivalence control](../../../results/experiments/lie_semantic_equivalence_results/figures/01_equivalent_vs_nonequivalent.png)
 
 **Figure 4.** Equivalent pairs have lower mean noncommutativity, but distributions are broad.
 
@@ -191,11 +191,11 @@ Dataset audit:
 | `NQT` | 100 | 100 | 600 | 0 |
 | `QMT` | 100 | 100 | 600 | 0 |
 
-![Signed permutation relative norm heatmap](../../../lie_algebraic_identities_results/figures/03_jacobi_relative_norm_heatmap.png)
+![Signed permutation relative norm heatmap](../../../results/experiments/lie_algebraic_identities_results/figures/03_jacobi_relative_norm_heatmap.png)
 
 **Figure 5.** Relative norm of the third-order signed permutation sum.
 
-![Signed permutation versus null](../../../lie_algebraic_identities_results/figures/04_jacobi_vs_permutation_null_heatmap.png)
+![Signed permutation versus null](../../../results/experiments/lie_algebraic_identities_results/figures/04_jacobi_vs_permutation_null_heatmap.png)
 
 **Figure 6.** Ratio of observed signed permutation norm to permutation-null mean. Values below `1.0` indicate stronger-than-null cancellation.
 

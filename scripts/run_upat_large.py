@@ -25,7 +25,7 @@ warnings.filterwarnings("ignore")
 
 class UPATAudit:
     def __init__(self):
-        self.out_dir = Path("upat_large_results")
+        self.out_dir = Path("results/experiments/upat_large_results")
         self.csv_dir = self.out_dir / "csv"
         self.fig_dir = self.out_dir / "figures"
 

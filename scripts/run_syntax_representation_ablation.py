@@ -14,7 +14,7 @@ from sklearn.svm import LinearSVC
 import lie_llm_syntax_holdout_experiment as syntax
 
 
-OUT_DIR = Path(os.getenv("SYNTAX_ABLATION_OUT_DIR", "syntax_representation_ablation_results"))
+OUT_DIR = Path(os.getenv("SYNTAX_ABLATION_OUT_DIR", "results/experiments/syntax_representation_ablation_results"))
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 MODELS = [m.strip() for m in os.getenv(

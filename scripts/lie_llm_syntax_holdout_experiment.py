@@ -17,7 +17,7 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 
 load_dotenv()
 
-OUT_DIR = "lie_llm_syntax_results"
+OUT_DIR = "results/experiments/lie_llm_syntax_results"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 MODELS = [m.strip() for m in os.getenv(

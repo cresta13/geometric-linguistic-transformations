@@ -1,0 +1,39 @@
+# Scripts Index
+
+All runnable research scripts live in this directory.
+
+## Track 1
+
+- `lie_llm_full_semantic_holdout_experiment.py`: full-semantic holdout.
+- `lie_llm_syntax_holdout_experiment.py`: syntax holdout.
+- `lie_llm_diverse_dataset_experiment.py`: diverse transformation dataset.
+- `lie_llm_entity_holdout_experiment.py`: entity holdout.
+- `lie_llm_variant_holdout_experiment.py`: variant holdout.
+- `lie_llm_y_only_ablation_multiseed.py`: multiseed endpoint/delta ablation.
+- `run_syntax_representation_ablation.py`: syntax x/y/concat/delta ablation.
+- `run_layerwise_pooling_ablation.py`: syntax layerwise/pooling ablation.
+- `run_full_semantic_pooling_ablation.py`: full-semantic pooling ablation.
+- `run_track1_spotcheck.py`: modern/larger model spot-checks.
+- `make_paper_figures.py`: curated Track 1 figures.
+
+## Track 2
+
+- `lie_composition_dataset.py`: composition dataset utilities.
+- `run_lie_composition_audit.py`: pairwise composition/noncommutativity audit.
+- `run_lie_algebraic_identities.py`: signed-permutation diagnostic.
+- `run_lie_semantic_equivalence_control.py`: semantic-equivalence control.
+- `build_signed_permutation_multiple_testing.py`: table-level multiple-testing correction.
+
+## UPAT / Cross-Model
+
+- `upat_dataset.py`: UPAT dataset construction.
+- `upat_audit_results.py`: original UPAT audit.
+- `run_upat_large.py`: larger UPAT/cross-model audit.
+
+## Reports
+
+- `build_reviewer_figures.py`: reviewer-response figures.
+- `build_research_report.py`: dated PDF report.
+- `analyze_confusion_negation.py`: confusion/negation summary tables.
+
+Run scripts from the repository root so relative output paths resolve into `results/` and `results/experiments/`.

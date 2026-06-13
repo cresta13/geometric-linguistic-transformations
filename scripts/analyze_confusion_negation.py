@@ -4,6 +4,7 @@ import pandas as pd
 
 
 ROOT = Path(__file__).resolve().parents[1]
+EXP = ROOT / "results" / "experiments"
 OUT = ROOT / "results"
 OUT.mkdir(exist_ok=True)
 
@@ -62,7 +63,7 @@ def load_confusion(path):
 
 
 def main():
-    paths = sorted((ROOT / "lie_llm_full_semantic_holdout_results").glob("confusion_*.csv"))
+    paths = sorted((EXP / "lie_llm_full_semantic_holdout_results").glob("confusion_*.csv"))
     all_rows = []
     all_errors = []
 

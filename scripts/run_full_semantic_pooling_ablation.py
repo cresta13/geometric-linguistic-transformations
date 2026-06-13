@@ -16,7 +16,7 @@ from transformers import AutoModel, AutoTokenizer
 import lie_llm_full_semantic_holdout_experiment as full
 
 
-OUT_DIR = Path(os.getenv("POOLING_OUT_DIR", "full_semantic_pooling_ablation_results"))
+OUT_DIR = Path(os.getenv("POOLING_OUT_DIR", "results/experiments/full_semantic_pooling_ablation_results"))
 MODELS = [m.strip() for m in os.getenv("POOLING_MODELS", "bert-base-uncased,roberta-base,gpt2").split(",") if m.strip()]
 N_BASE = int(os.getenv("POOLING_N_BASE", "150"))
 BATCH_SIZE = int(os.getenv("POOLING_BATCH_SIZE", "32"))

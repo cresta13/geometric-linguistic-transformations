@@ -18,7 +18,7 @@ warnings.filterwarnings("ignore")
 
 class LieAlgebraicIdentitiesAudit:
     def __init__(self):
-        self.out_dir = Path(os.getenv("LIE_ALGEBRA_OUT_DIR", "lie_algebraic_identities_results"))
+        self.out_dir = Path(os.getenv("LIE_ALGEBRA_OUT_DIR", "results/experiments/lie_algebraic_identities_results"))
         self.csv_dir = self.out_dir / "csv"
         self.fig_dir = self.out_dir / "figures"
         self.csv_dir.mkdir(parents=True, exist_ok=True)

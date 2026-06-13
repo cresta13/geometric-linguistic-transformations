@@ -8,18 +8,18 @@ Transformer embedding spaces encode relations between paired sentences, but the 
 
 Main scripts:
 
-- Figure generation: [make_paper_figures.py](../../../make_paper_figures.py)
-- Full semantic holdout: [lie_llm_full_semantic_holdout_experiment.py](../../../lie_llm_full_semantic_holdout_experiment.py)
-- Syntax holdout: [lie_llm_syntax_holdout_experiment.py](../../../lie_llm_syntax_holdout_experiment.py)
-- Syntax representation ablation: [run_syntax_representation_ablation.py](../../../run_syntax_representation_ablation.py)
-- Layerwise/pooling syntax ablation: [run_layerwise_pooling_ablation.py](../../../run_layerwise_pooling_ablation.py)
-- Modern-model spot-check: [run_track1_spotcheck.py](../../../run_track1_spotcheck.py)
-- Full-semantic pooling ablation: [run_full_semantic_pooling_ablation.py](../../../run_full_semantic_pooling_ablation.py)
+- Figure generation: [make_paper_figures.py](../../../scripts/make_paper_figures.py)
+- Full semantic holdout: [lie_llm_full_semantic_holdout_experiment.py](../../../scripts/lie_llm_full_semantic_holdout_experiment.py)
+- Syntax holdout: [lie_llm_syntax_holdout_experiment.py](../../../scripts/lie_llm_syntax_holdout_experiment.py)
+- Syntax representation ablation: [run_syntax_representation_ablation.py](../../../scripts/run_syntax_representation_ablation.py)
+- Layerwise/pooling syntax ablation: [run_layerwise_pooling_ablation.py](../../../scripts/run_layerwise_pooling_ablation.py)
+- Modern-model spot-check: [run_track1_spotcheck.py](../../../scripts/run_track1_spotcheck.py)
+- Full-semantic pooling ablation: [run_full_semantic_pooling_ablation.py](../../../scripts/run_full_semantic_pooling_ablation.py)
 - Confusion/negation analysis: [analyze_confusion_negation.py](../../../scripts/analyze_confusion_negation.py)
-- Diverse dataset experiment: [lie_llm_diverse_dataset_experiment.py](../../../lie_llm_diverse_dataset_experiment.py)
-- Entity holdout: [lie_llm_entity_holdout_experiment.py](../../../lie_llm_entity_holdout_experiment.py)
-- Variant holdout: [lie_llm_variant_holdout_experiment.py](../../../lie_llm_variant_holdout_experiment.py)
-- Multiseed ablation: [lie_llm_y_only_ablation_multiseed.py](../../../lie_llm_y_only_ablation_multiseed.py)
+- Diverse dataset experiment: [lie_llm_diverse_dataset_experiment.py](../../../scripts/lie_llm_diverse_dataset_experiment.py)
+- Entity holdout: [lie_llm_entity_holdout_experiment.py](../../../scripts/lie_llm_entity_holdout_experiment.py)
+- Variant holdout: [lie_llm_variant_holdout_experiment.py](../../../scripts/lie_llm_variant_holdout_experiment.py)
+- Multiseed ablation: [lie_llm_y_only_ablation_multiseed.py](../../../scripts/lie_llm_y_only_ablation_multiseed.py)
 
 Main result files:
 
@@ -27,17 +27,17 @@ Main result files:
 - Multiseed ablation summary: [ablation_multiseed_aggregated.csv](../../../results/ablation_multiseed_aggregated.csv)
 - Reviewer ablation table: [reviewer_ablation_table.csv](../../../results/reviewer_ablation_table.csv)
 - McNemar tests: [ablation_multiseed_mcnemar.csv](../../../results/ablation_multiseed_mcnemar.csv)
-- Full semantic results: [full_semantic_holdout_summary.csv](../../../lie_llm_full_semantic_holdout_results/full_semantic_holdout_summary.csv)
-- Syntax holdout results: [syntax_holdout_summary.csv](../../../lie_llm_syntax_results/syntax_holdout_summary.csv)
-- Syntax representation ablation: [syntax_representation_ablation_pivot.csv](../../../syntax_representation_ablation_results/syntax_representation_ablation_pivot.csv)
-- Layerwise/pooling syntax ablation: [layerwise_pooling_ablation_top20.csv](../../../layerwise_pooling_ablation_results/layerwise_pooling_ablation_top20.csv)
-- DeBERTa-v3-small spot-check: [spotcheck_representation_ablation_pivot.csv](../../../track1_spotcheck_results/spotcheck_representation_ablation_pivot.csv)
-- Large/modern spot-check: [spotcheck_representation_ablation_pivot.csv](../../../track1_spotcheck_large_results/spotcheck_representation_ablation_pivot.csv)
-- UPAT hard-holdout ablation: [ablation.csv](../../../upat_audit_results/csv/ablation.csv)
-- UPAT McNemar tests: [mcnemar_delta_vs_y.csv](../../../upat_audit_results/csv/mcnemar_delta_vs_y.csv)
-- Full-semantic pooling ablation: [full_semantic_pooling_ablation_pivot.csv](../../../full_semantic_pooling_ablation_results/full_semantic_pooling_ablation_pivot.csv)
+- Full semantic results: [full_semantic_holdout_summary.csv](../../../results/experiments/lie_llm_full_semantic_holdout_results/full_semantic_holdout_summary.csv)
+- Syntax holdout results: [syntax_holdout_summary.csv](../../../results/experiments/lie_llm_syntax_results/syntax_holdout_summary.csv)
+- Syntax representation ablation: [syntax_representation_ablation_pivot.csv](../../../results/experiments/syntax_representation_ablation_results/syntax_representation_ablation_pivot.csv)
+- Layerwise/pooling syntax ablation: [layerwise_pooling_ablation_top20.csv](../../../results/experiments/layerwise_pooling_ablation_results/layerwise_pooling_ablation_top20.csv)
+- DeBERTa-v3-small spot-check: [spotcheck_representation_ablation_pivot.csv](../../../results/experiments/track1_spotcheck_results/spotcheck_representation_ablation_pivot.csv)
+- Large/modern spot-check: [spotcheck_representation_ablation_pivot.csv](../../../results/experiments/track1_spotcheck_large_results/spotcheck_representation_ablation_pivot.csv)
+- UPAT hard-holdout ablation: [ablation.csv](../../../results/experiments/upat_audit_results/csv/ablation.csv)
+- UPAT McNemar tests: [mcnemar_delta_vs_y.csv](../../../results/experiments/upat_audit_results/csv/mcnemar_delta_vs_y.csv)
+- Full-semantic pooling ablation: [full_semantic_pooling_ablation_pivot.csv](../../../results/experiments/full_semantic_pooling_ablation_results/full_semantic_pooling_ablation_pivot.csv)
 - Confusion negation summary: [confusion_negation_summary.csv](../../../results/confusion_negation_summary.csv)
-- Diverse separability: [ALL_separability.csv](../../../lie_llm_diverse_results/ALL_separability.csv)
+- Diverse separability: [ALL_separability.csv](../../../results/experiments/lie_llm_diverse_results/ALL_separability.csv)
 
 ## 1. Motivation
 
@@ -91,7 +91,7 @@ Mean pooling is not yet justified. For encoder models, `[CLS]` pooling is a natu
 
 ## 4. Holdout Results Are Evidence, But Not All Equally Strong
 
-The current holdout comparison is generated by [make_paper_figures.py](../../../make_paper_figures.py).
+The current holdout comparison is generated by [make_paper_figures.py](../../../scripts/make_paper_figures.py).
 
 ![Accuracy across holdout settings](../../figures/holdout_accuracy_comparison.png)
 

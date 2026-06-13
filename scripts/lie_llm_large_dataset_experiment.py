@@ -17,7 +17,7 @@ MODELS = os.getenv(
 ).split(",")
 
 HF_TOKEN = os.getenv("HF_TOKEN") or os.getenv("HUGGINGFACE_API_KEY")
-OUT_DIR = "lie_llm_large_results"
+OUT_DIR = "results/experiments/lie_llm_large_results"
 os.makedirs(OUT_DIR, exist_ok=True)
 
 N_BASE = int(os.getenv("LIE_N_BASE", "200"))

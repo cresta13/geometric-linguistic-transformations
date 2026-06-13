@@ -27,13 +27,10 @@ This is an active research repository, not a submission-ready paper. The current
 - `reports/`
   - dated PDF packets for external review.
 - `results/`
-  - aggregated Track 1 ablation, McNemar, and confusion-analysis tables.
-- `lie_*_results/`, `upat_*_results/`, `track1_*_results/`
-  - experiment-specific CSVs, figures, and metadata.
-- `run_*.py`, `lie_*.py`, `upat_*.py`
-  - experiment scripts.
+  - aggregate Track 1 ablation, McNemar, and confusion-analysis tables.
+  - `results/experiments/`: experiment-specific CSVs, figures, and metadata.
 - `scripts/`
-  - report/figure builders and post-hoc analysis scripts.
+  - all experiment scripts, report builders, figure builders, and post-hoc analysis scripts.
 
 ## Important Artifacts
 
@@ -45,6 +42,12 @@ This is an active research repository, not a submission-ready paper. The current
 ## Reproducibility Notes
 
 The scripts require Python packages such as `torch`, `transformers`, `scikit-learn`, `pandas`, `numpy`, and `matplotlib`.
+
+Run scripts from the repository root, for example:
+
+```powershell
+.\.venv\Scripts\python.exe scripts\build_research_report.py
+```
 
 Large intermediate vector caches (`*.npy`), local virtual environments, IDE files, `.env`, and review zip archives are intentionally excluded from git.
 

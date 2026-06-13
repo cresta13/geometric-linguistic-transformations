@@ -13,7 +13,7 @@ from sklearn.decomposition import PCA
 
 load_dotenv()
 
-RESULTS_DIR = os.getenv("LIE_RESULTS_DIR", "lie_llm_large_results")
+RESULTS_DIR = os.getenv("LIE_RESULTS_DIR", "results/experiments/lie_llm_large_results")
 MODEL_NAME = os.getenv("LIE_CLASSIFIER_MODEL", "roberta-base")
 PCA_DIM = int(os.getenv("LIE_CLASSIFIER_PCA_DIM", "128"))
 N_SPLITS = int(os.getenv("LIE_CLASSIFIER_CV", "5"))

@@ -7,6 +7,7 @@ import pandas as pd
 
 
 ROOT = Path(__file__).resolve().parents[1]
+EXP = ROOT / "results" / "experiments"
 OUT = ROOT / "reports" / "2026-06-13_reviewer_revised_report.pdf"
 
 
@@ -120,7 +121,7 @@ def format_float_columns(df):
 def main():
     OUT.parent.mkdir(parents=True, exist_ok=True)
 
-    jacobi = pd.read_csv(ROOT / "lie_algebraic_identities_results" / "csv" / "jacobi_summary.csv")
+    jacobi = pd.read_csv(EXP / "lie_algebraic_identities_results" / "csv" / "jacobi_summary.csv")
     jacobi = jacobi[
         [
             "model",
@@ -136,22 +137,22 @@ def main():
         ]
     ]
 
-    semantic = pd.read_csv(ROOT / "lie_semantic_equivalence_results" / "csv" / "semantic_equivalence_summary.csv")
-    semantic_effects = pd.read_csv(ROOT / "lie_semantic_equivalence_results" / "csv" / "reviewer_semantic_effect_sizes.csv")
-    composition = pd.read_csv(ROOT / "lie_composition_results" / "csv" / "lie_composition_summary.csv")
+    semantic = pd.read_csv(EXP / "lie_semantic_equivalence_results" / "csv" / "semantic_equivalence_summary.csv")
+    semantic_effects = pd.read_csv(EXP / "lie_semantic_equivalence_results" / "csv" / "reviewer_semantic_effect_sizes.csv")
+    composition = pd.read_csv(EXP / "lie_composition_results" / "csv" / "lie_composition_summary.csv")
     ablation = pd.read_csv(ROOT / "results" / "reviewer_ablation_table.csv")
-    syntax_ablation = pd.read_csv(ROOT / "syntax_representation_ablation_results" / "syntax_representation_ablation_pivot.csv")
-    layerwise = pd.read_csv(ROOT / "layerwise_pooling_ablation_results" / "layerwise_pooling_ablation_top20.csv")
-    spotcheck = pd.read_csv(ROOT / "track1_spotcheck_results" / "spotcheck_representation_ablation_pivot.csv")
-    large_spotcheck_path = ROOT / "track1_spotcheck_large_results" / "spotcheck_representation_ablation_pivot.csv"
+    syntax_ablation = pd.read_csv(EXP / "syntax_representation_ablation_results" / "syntax_representation_ablation_pivot.csv")
+    layerwise = pd.read_csv(EXP / "layerwise_pooling_ablation_results" / "layerwise_pooling_ablation_top20.csv")
+    spotcheck = pd.read_csv(EXP / "track1_spotcheck_results" / "spotcheck_representation_ablation_pivot.csv")
+    large_spotcheck_path = EXP / "track1_spotcheck_large_results" / "spotcheck_representation_ablation_pivot.csv"
     large_spotcheck = pd.read_csv(large_spotcheck_path) if large_spotcheck_path.exists() else pd.DataFrame()
-    upat_ablation = pd.read_csv(ROOT / "upat_audit_results" / "csv" / "ablation.csv")
-    upat_mcnemar = pd.read_csv(ROOT / "upat_audit_results" / "csv" / "mcnemar_delta_vs_y.csv")
-    pooling = pd.read_csv(ROOT / "full_semantic_pooling_ablation_results" / "full_semantic_pooling_ablation_pivot.csv")
+    upat_ablation = pd.read_csv(EXP / "upat_audit_results" / "csv" / "ablation.csv")
+    upat_mcnemar = pd.read_csv(EXP / "upat_audit_results" / "csv" / "mcnemar_delta_vs_y.csv")
+    pooling = pd.read_csv(EXP / "full_semantic_pooling_ablation_results" / "full_semantic_pooling_ablation_pivot.csv")
     confusion_neg = pd.read_csv(ROOT / "results" / "confusion_negation_summary.csv")
-    decoder_jacobi = pd.read_csv(ROOT / "lie_algebraic_identities_decoder_results" / "csv" / "jacobi_summary.csv")
-    decoder_composition = pd.read_csv(ROOT / "lie_composition_decoder_results" / "csv" / "lie_composition_summary.csv")
-    multiple_testing = pd.read_csv(ROOT / "lie_algebraic_identities_results" / "csv" / "signed_permutation_multiple_testing.csv")
+    decoder_jacobi = pd.read_csv(EXP / "lie_algebraic_identities_decoder_results" / "csv" / "jacobi_summary.csv")
+    decoder_composition = pd.read_csv(EXP / "lie_composition_decoder_results" / "csv" / "lie_composition_summary.csv")
+    multiple_testing = pd.read_csv(EXP / "lie_algebraic_identities_results" / "csv" / "signed_permutation_multiple_testing.csv")
 
     with PdfPages(OUT) as pdf:
         add_text_page(
@@ -202,10 +203,10 @@ def main():
         )
 
         figures = [
-            ("Signed permutation relative norm", ROOT / "lie_algebraic_identities_results" / "figures" / "03_jacobi_relative_norm_heatmap.png"),
-            ("Signed permutation norm versus permutation-null", ROOT / "lie_algebraic_identities_results" / "figures" / "04_jacobi_vs_permutation_null_heatmap.png"),
-            ("Semantic equivalent vs non-equivalent control", ROOT / "lie_semantic_equivalence_results" / "figures" / "01_equivalent_vs_nonequivalent.png"),
-            ("Composition noncommutativity heatmap", ROOT / "lie_composition_results" / "figures" / "01_noncommutativity_heatmap.png"),
+            ("Signed permutation relative norm", EXP / "lie_algebraic_identities_results" / "figures" / "03_jacobi_relative_norm_heatmap.png"),
+            ("Signed permutation norm versus permutation-null", EXP / "lie_algebraic_identities_results" / "figures" / "04_jacobi_vs_permutation_null_heatmap.png"),
+            ("Semantic equivalent vs non-equivalent control", EXP / "lie_semantic_equivalence_results" / "figures" / "01_equivalent_vs_nonequivalent.png"),
+            ("Composition noncommutativity heatmap", EXP / "lie_composition_results" / "figures" / "01_noncommutativity_heatmap.png"),
             ("Original holdout accuracy comparison", ROOT / "paper" / "figures" / "holdout_accuracy_comparison.png"),
             ("Original PCA class geometry", ROOT / "paper" / "figures" / "pca_all_classes_bert-base-uncased.png"),
             ("Syntax representation ablation", ROOT / "paper" / "figures" / "syntax_representation_ablation.png"),
@@ -218,7 +219,7 @@ def main():
             ("Confusion analysis: negation recall Linear SVC", ROOT / "paper" / "figures" / "confusion_negation_linear_svc.png"),
             ("Confusion analysis: negation recall logistic regression", ROOT / "paper" / "figures" / "confusion_negation_logreg.png"),
             ("Decoder signed permutation replication", ROOT / "paper" / "figures" / "decoder_signed_permutation_ratio.png"),
-            ("Decoder pairwise composition", ROOT / "lie_composition_decoder_results" / "figures" / "01_noncommutativity_heatmap.png"),
+            ("Decoder pairwise composition", EXP / "lie_composition_decoder_results" / "figures" / "01_noncommutativity_heatmap.png"),
         ]
 
         for title, path in figures:
@@ -257,11 +258,11 @@ def main():
                 fontsize=7.5,
             )
 
-        add_code_listing(pdf, ROOT / "run_lie_algebraic_identities.py", "Code listing: run_lie_algebraic_identities.py")
-        add_code_listing(pdf, ROOT / "run_syntax_representation_ablation.py", "Code listing: run_syntax_representation_ablation.py")
-        add_code_listing(pdf, ROOT / "run_layerwise_pooling_ablation.py", "Code listing: run_layerwise_pooling_ablation.py")
-        add_code_listing(pdf, ROOT / "run_track1_spotcheck.py", "Code listing: run_track1_spotcheck.py")
-        add_code_listing(pdf, ROOT / "run_full_semantic_pooling_ablation.py", "Code listing: run_full_semantic_pooling_ablation.py")
+        add_code_listing(pdf, ROOT / "scripts" / "run_lie_algebraic_identities.py", "Code listing: run_lie_algebraic_identities.py")
+        add_code_listing(pdf, ROOT / "scripts" / "run_syntax_representation_ablation.py", "Code listing: run_syntax_representation_ablation.py")
+        add_code_listing(pdf, ROOT / "scripts" / "run_layerwise_pooling_ablation.py", "Code listing: run_layerwise_pooling_ablation.py")
+        add_code_listing(pdf, ROOT / "scripts" / "run_track1_spotcheck.py", "Code listing: run_track1_spotcheck.py")
+        add_code_listing(pdf, ROOT / "scripts" / "run_full_semantic_pooling_ablation.py", "Code listing: run_full_semantic_pooling_ablation.py")
         add_code_listing(pdf, ROOT / "scripts" / "analyze_confusion_negation.py", "Code listing: analyze_confusion_negation.py")
         add_code_listing(pdf, ROOT / "scripts" / "build_signed_permutation_multiple_testing.py", "Code listing: build_signed_permutation_multiple_testing.py")
 

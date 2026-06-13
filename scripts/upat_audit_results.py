@@ -24,7 +24,7 @@ from scipy.stats import binomtest
 # CONFIG
 # ----------------------------
 
-OUT_DIR = "upat_audit_results"
+OUT_DIR = "results/experiments/upat_audit_results"
 os.makedirs(OUT_DIR, exist_ok=True)
 os.makedirs(f"{OUT_DIR}/figures", exist_ok=True)
 os.makedirs(f"{OUT_DIR}/csv", exist_ok=True)

@@ -5,7 +5,8 @@ import pandas as pd
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "lie_algebraic_identities_results" / "csv"
+EXP = ROOT / "results" / "experiments"
+OUT = EXP / "lie_algebraic_identities_results" / "csv"
 
 
 def benjamini_hochberg(p_values):
@@ -34,8 +35,8 @@ def bootstrap_p_less_than_one(values, n_boot=20000, seed=42):
 
 def main():
     files = [
-        ROOT / "lie_algebraic_identities_results" / "csv" / "jacobi_raw_all_models.csv",
-        ROOT / "lie_algebraic_identities_decoder_results" / "csv" / "jacobi_raw_all_models.csv",
+        EXP / "lie_algebraic_identities_results" / "csv" / "jacobi_raw_all_models.csv",
+        EXP / "lie_algebraic_identities_decoder_results" / "csv" / "jacobi_raw_all_models.csv",
     ]
     raw = pd.concat([pd.read_csv(path) for path in files if path.exists()], ignore_index=True)
 
