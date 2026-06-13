@@ -47,22 +47,30 @@ The UPAT-large Procrustes results suggest that transformation geometry may trans
 - Scaled the Procrustes null audit to `N=1000` repeats for every non-identity cross-model direction.
 - Added a random-orthogonal control: matched centering and dimensionality are preserved, but the learned Procrustes map is replaced by a random orthogonal matrix.
 - Observed aligned F1 remains above random-label, random-pairing, and random-orthogonal null baselines in every direction. No null repeat reaches observed aligned F1, so all empirical p-values are at the `N=1000` resolution floor: `0.000999`.
+- Added a held-out alignment-size curve using `1200` auxiliary anchor texts disjoint from the classifier train/test texts.
+- Held-out anchor mean F1 increases from `0.452046` at `25` anchors to `0.661928` at `1000` anchors, compared with raw cross-model mean F1 `0.241524` and full-anchor Procrustes mean F1 `0.684651`.
+- At `1000` held-out anchors, every direction remains above its raw cross-model baseline.
 
 ### Future submission work
 
-1. Add alignment-size curves with held-out evaluation:
-   - 25, 50, 100, 250, 500, 1000 alignment examples
-   - report confidence intervals
-   - ensure alignment anchors are separated from the classifier train/test examples where feasible
+1. Add confidence intervals and direction-family summaries for the held-out alignment curve:
+   - bootstrap over directions
+   - summarize encoder-to-encoder, encoder-to-sentence-encoder, and sentence-encoder-to-encoder families
+   - report whether any direction-family remains weak
 2. Reverse-direction transfer:
    - small to large model
    - large to small model
    - sentence encoder to masked LM and back
-3. Report the completed null audit in the draft:
+3. Stress-test anchor-domain diversity:
+   - anchors from a different template family
+   - paraphrased anchor pools
+   - natural sentence anchors if available
+4. Report the completed null and held-out alignment audits in the draft:
    - null mean/std/max
    - empirical p-value resolution
    - effect sizes versus each null
-4. Optional architecture expansion:
+   - held-out alignment-size curve
+5. Optional architecture expansion:
    - Llama/Mistral-style embedding spaces if local resources allow
    - otherwise stronger sentence encoders as a lower-cost proxy
 

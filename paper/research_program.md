@@ -12,7 +12,7 @@ The strongest long-term story is broader than either current draft:
 
 > Transformers may encode linguistic operators as geometric objects in a low-dimensional, partially universal transformation subspace, and this subspace may be transferable across architectures and languages.
 
-Current results are not enough to claim this as a complete theory yet. The Procrustes transfer numbers now survive large random-label, random-pairing, and random-orthogonal null controls, but they still need alignment-size and held-out-anchor tests before becoming a submission-grade universality claim. The roadmap below treats cross-model and cross-lingual transfer as the next central hypothesis, not as a finished conclusion.
+Current results are not enough to claim this as a complete theory yet. The Procrustes transfer numbers now survive large random-label, random-pairing, random-orthogonal, and held-out-anchor alignment controls, but they still need confidence intervals, anchor-domain diversity checks, and broader architecture coverage before becoming a submission-grade universality claim. The roadmap below treats cross-model and cross-lingual transfer as the next central hypothesis, not as a finished conclusion.
 
 ## Track 1: Geometric transformation vectors
 
@@ -105,18 +105,21 @@ Promising exploratory evidence:
 - Mean observed aligned F1 was `0.684651`.
 - Mean null F1 was `0.173017` for random-label, `0.148036` for random-pairing, and `0.112103` for random-orthogonal.
 - No null repeat reached observed aligned F1 in any of the `30 x 3` direction/null tests, so all empirical p-values are at the `N=1000` resolution floor: `1/(1000+1)=0.000999`.
+- A held-out alignment-size curve now fits Procrustes maps on `1200` auxiliary anchor texts that are disjoint from the classifier train/test texts.
+- Held-out anchor mean F1 rises from `0.452046` at `25` anchors to `0.661928` at `1000` anchors, compared with raw cross-model mean F1 `0.241524` and full-anchor Procrustes mean F1 `0.684651`.
+- At `1000` held-out anchors, no direction falls below its raw cross-model baseline.
 
 Current status:
 
-This is now a serious candidate for the strongest paper. The result has survived the first large null-audit gate, but it is not yet submission-grade because Procrustes has many degrees of freedom and must be tested under alignment-size curves, held-out alignment anchors, and reverse-direction analysis.
+This is now a serious candidate for the strongest paper. The result has survived the large null-audit gate and the first held-out-anchor gate, but it is not yet submission-grade because Procrustes transfer still needs confidence intervals, anchor-domain robustness, and broader architecture coverage.
 
 Required gates before promotion:
 
-1. Alignment-size curve with held-out evaluation anchors.
-2. Reverse-direction transfer summary by model family, e.g. small model to large model and large model to small model.
-3. Separate alignment-anchor examples from classifier train/test examples wherever feasible.
+1. Add bootstrap confidence intervals and direction-family summaries for the held-out alignment curve.
+2. Stress-test anchor-domain diversity, e.g. anchors from a different template family or natural paraphrase pool.
+3. Reverse-direction transfer summary by model family, e.g. small model to large model and large model to small model.
 4. Stronger architectures if feasible, such as Llama/Mistral-class embedding spaces or high-quality sentence encoders.
-5. Package the result as a standalone Track 3 draft only after the alignment-size curve survives.
+5. Package the result as a standalone Track 3 draft after the confidence-interval and anchor-domain checks.
 
 ## Track 4: Transformation vectors as editors
 
@@ -220,10 +223,10 @@ Negative results remain part of the research record.
 2. Resolve UPAT:
    - either expand UPAT and match train sizes against the main dataset
    - or keep it explicitly as a hard negative control and narrow Track 1 claims
-3. Extend UPAT alignment controls beyond the completed `N=1000` null audit:
-   - alignment-size curve
-   - held-out alignment anchors
+3. Extend UPAT alignment controls beyond the completed `N=1000` null audit and held-out alignment curve:
+   - bootstrap confidence intervals
    - direction-family summary
+   - anchor-domain diversity check
 4. Test cross-model transformation transfer as the likely central future paper:
    - reverse-direction transfer
    - alignment-size curve

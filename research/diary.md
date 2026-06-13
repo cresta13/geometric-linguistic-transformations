@@ -371,3 +371,49 @@ Result:
 Interpretation:
 
 This substantially strengthens Track 3. The UPAT-large Procrustes transfer effect is not explained by shuffled labels, mismatched anchor correspondences, or arbitrary orthogonal rotations. The remaining question is no longer whether the original alignment result trivially survives basic nulls; it does. The next risk is methodological: Procrustes may still exploit many anchor examples, so the next required experiment is an alignment-size curve with held-out anchor/evaluation separation.
+
+## 2026-06-14: Held-out alignment-size curve
+
+We tested the next reviewer-facing risk for Track 3: does cross-model Procrustes transfer still work when the alignment map is fitted on independent held-out anchor sentences rather than on the classifier train/test endpoints?
+
+New script:
+
+- `scripts/run_upat_alignment_size_heldout.py`
+
+New outputs:
+
+- `results/experiments/upat_large_results/csv/heldout_alignment_anchor_texts.csv`
+- `results/experiments/upat_large_results/csv/heldout_alignment_curve_raw.csv`
+- `results/experiments/upat_large_results/csv/heldout_alignment_curve_summary.csv`
+- `results/experiments/upat_large_results/csv/heldout_alignment_curve_by_direction.csv`
+- `results/experiments/upat_large_results/figures/11_heldout_alignment_size_curve.png`
+- `results/experiments/upat_large_results/figures/11_heldout_alignment_by_direction.png`
+
+Design:
+
+- Generate `1200` auxiliary synthetic anchor texts from UPAT templates with separate seeds.
+- Filter out all texts used in the main classifier train/test dataset.
+- Fit Procrustes maps on held-out anchor text pairs only.
+- Evaluate all `30` non-identity cross-model directions.
+- Use alignment sizes `25, 50, 100, 250, 500, 1000`.
+- Use `10` repeats per direction and alignment size.
+
+Result:
+
+- Raw rows: `1800` (`30` directions x `6` sizes x `10` repeats).
+- Mean raw cross-model F1: `0.241524`.
+- Mean original full-anchor Procrustes F1: `0.684651`.
+- Held-out anchor mean F1 by alignment size:
+  - `25`: `0.452046`
+  - `50`: `0.573243`
+  - `100`: `0.629405`
+  - `250`: `0.653685`
+  - `500`: `0.659098`
+  - `1000`: `0.661928`
+- At `1000` held-out anchors, the mean gap to full-anchor Procrustes is `-0.022722`.
+- At `1000` held-out anchors, the mean gain over raw cross-model transfer is `+0.420404`.
+- No direction at `1000` held-out anchors falls below its raw cross-model baseline.
+
+Interpretation:
+
+This is an important positive result. The cross-model transfer effect is not merely an artifact of aligning on the same endpoint strings used by the classifier train/test task. Independent held-out anchor sentences recover most of the full-anchor alignment effect. The remaining Track 3 risk is now more specific: we need confidence intervals, anchor-domain diversity checks, and perhaps stronger architecture coverage, but the held-out-anchor critique itself is no longer the main blocker.

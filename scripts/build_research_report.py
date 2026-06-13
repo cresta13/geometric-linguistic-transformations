@@ -150,6 +150,14 @@ def main():
     upat_mcnemar = pd.read_csv(EXP / "upat_audit_results" / "csv" / "mcnemar_delta_vs_y.csv")
     procrustes_null_path = EXP / "upat_large_results" / "csv" / "procrustes_null_summary.csv"
     procrustes_null = pd.read_csv(procrustes_null_path) if procrustes_null_path.exists() else pd.DataFrame()
+    heldout_alignment_path = EXP / "upat_large_results" / "csv" / "heldout_alignment_curve_summary.csv"
+    heldout_alignment = pd.read_csv(heldout_alignment_path) if heldout_alignment_path.exists() else pd.DataFrame()
+    heldout_alignment_by_direction_path = EXP / "upat_large_results" / "csv" / "heldout_alignment_curve_by_direction.csv"
+    heldout_alignment_by_direction = (
+        pd.read_csv(heldout_alignment_by_direction_path)
+        if heldout_alignment_by_direction_path.exists()
+        else pd.DataFrame()
+    )
     pooling = pd.read_csv(EXP / "full_semantic_pooling_ablation_results" / "full_semantic_pooling_ablation_pivot.csv")
     confusion_neg = pd.read_csv(ROOT / "results" / "confusion_negation_summary.csv")
     decoder_jacobi = pd.read_csv(EXP / "lie_algebraic_identities_decoder_results" / "csv" / "jacobi_summary.csv")
@@ -176,7 +184,7 @@ def main():
                 ),
                 (
                     "Main conclusion",
-                    "The evidence supports a local QMT signed-permutation cancellation effect across tested encoder models, while negation-heavy triples expose the boundary of the phenomenon. The UPAT-large cross-model Procrustes transfer result now survives N=1000 random-label, random-pairing, and random-orthogonal null controls across all 30 non-identity directions. No null repeat reaches observed aligned F1, so empirical p-values sit at the N=1000 resolution floor of 0.000999. The next Track 3 risk is alignment-size and held-out-anchor validity, not the basic null controls.",
+                    "The evidence supports a local QMT signed-permutation cancellation effect across tested encoder models, while negation-heavy triples expose the boundary of the phenomenon. The UPAT-large cross-model Procrustes transfer result now survives N=1000 random-label, random-pairing, and random-orthogonal null controls across all 30 non-identity directions. The new held-out alignment-size curve uses 1200 auxiliary anchor texts disjoint from classifier train/test texts and recovers most of the full-anchor effect: mean F1 reaches 0.661928 at 1000 held-out anchors versus 0.684651 with full-anchor Procrustes and 0.241524 raw.",
                 ),
             ],
         )
@@ -191,6 +199,19 @@ def main():
         add_table_page(pdf, "UPAT delta vs y_only McNemar tests", format_float_columns(upat_mcnemar), max_rows=10)
         if not procrustes_null.empty:
             add_table_page(pdf, "UPAT-large Procrustes N=1000 null controls", format_float_columns(procrustes_null), max_rows=30)
+        if not heldout_alignment.empty:
+            add_table_page(pdf, "UPAT-large held-out alignment-size curve", format_float_columns(heldout_alignment), max_rows=10)
+        if not heldout_alignment_by_direction.empty:
+            largest_size = heldout_alignment_by_direction["alignment_size"].max()
+            largest = heldout_alignment_by_direction[
+                heldout_alignment_by_direction["alignment_size"] == largest_size
+            ].sort_values("mean_gap_to_full_anchor")
+            add_table_page(
+                pdf,
+                "UPAT-large held-out alignment by direction: largest anchor size",
+                format_float_columns(largest),
+                max_rows=30,
+            )
         add_table_page(pdf, "Full-semantic pooling ablation", format_float_columns(pooling), max_rows=25)
         add_table_page(pdf, "Confusion analysis: negation vs non-negation recall", format_float_columns(confusion_neg), max_rows=25)
         add_table_page(pdf, "Third-order signed permutation summary with bootstrap CI", format_float_columns(jacobi), max_rows=20)
@@ -220,6 +241,8 @@ def main():
             ("UPAT-large Procrustes random-pairing null", EXP / "upat_large_results" / "figures" / "10_procrustes_null_random_pairing.png"),
             ("UPAT-large Procrustes random-label null", EXP / "upat_large_results" / "figures" / "10_procrustes_null_random_labels.png"),
             ("UPAT-large Procrustes random-orthogonal null", EXP / "upat_large_results" / "figures" / "10_procrustes_null_random_orthogonal.png"),
+            ("UPAT-large held-out alignment-size curve", EXP / "upat_large_results" / "figures" / "11_heldout_alignment_size_curve.png"),
+            ("UPAT-large held-out alignment by direction", EXP / "upat_large_results" / "figures" / "11_heldout_alignment_by_direction.png"),
             ("Full-semantic pooling ablation: Linear SVC", ROOT / "paper" / "figures" / "full_semantic_pooling_linear_svc.png"),
             ("Full-semantic pooling ablation: logistic regression", ROOT / "paper" / "figures" / "full_semantic_pooling_logreg.png"),
             ("Confusion analysis: negation recall Linear SVC", ROOT / "paper" / "figures" / "confusion_negation_linear_svc.png"),
@@ -243,7 +266,8 @@ def main():
                 "2026-06-13 update: after cache cleanup, BERT-large and DeBERTa-v3-base were both run successfully. Delta is best for both Linear SVC and logistic regression on both models.",
                 "Second 2026-06-13 update: UPAT is now explicitly reported as a hard-holdout boundary condition. Full-semantic pooling ablation, confusion/negation analysis, decoder pairwise composition, and signed-permutation multiple-testing correction are included.",
                 "2026-06-14 update: UPAT-large Procrustes null controls are scaled to N=1000 and now include random-label, random-pairing, and random-orthogonal baselines. The observed aligned F1 exceeds every null repeat across all non-identity directions.",
-                "Remaining blockers: alignment-size and held-out-anchor controls for Track 3, resolve or expand UPAT hard-holdout, representation-ablation tables for every non-syntax holdout split, grammar-generated templates, endpoint-only controls for Track 2, composition layer/pooling ablations, and final bibliography formatting.",
+                "Second 2026-06-14 update: held-out alignment-size controls are now added. Procrustes maps fitted on auxiliary anchor texts disjoint from classifier train/test texts recover most of the full-anchor transfer effect.",
+                "Remaining blockers: confidence intervals and anchor-domain diversity for Track 3, resolve or expand UPAT hard-holdout, representation-ablation tables for every non-syntax holdout split, grammar-generated templates, endpoint-only controls for Track 2, composition layer/pooling ablations, and final bibliography formatting.",
             ],
         )
 
@@ -271,6 +295,7 @@ def main():
         add_code_listing(pdf, ROOT / "scripts" / "run_track1_spotcheck.py", "Code listing: run_track1_spotcheck.py")
         add_code_listing(pdf, ROOT / "scripts" / "run_full_semantic_pooling_ablation.py", "Code listing: run_full_semantic_pooling_ablation.py")
         add_code_listing(pdf, ROOT / "scripts" / "run_upat_procrustes_nulls.py", "Code listing: run_upat_procrustes_nulls.py")
+        add_code_listing(pdf, ROOT / "scripts" / "run_upat_alignment_size_heldout.py", "Code listing: run_upat_alignment_size_heldout.py")
         add_code_listing(pdf, ROOT / "scripts" / "analyze_confusion_negation.py", "Code listing: analyze_confusion_negation.py")
         add_code_listing(pdf, ROOT / "scripts" / "build_signed_permutation_multiple_testing.py", "Code listing: build_signed_permutation_multiple_testing.py")
 

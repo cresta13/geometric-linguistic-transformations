@@ -32,5 +32,8 @@ Important subdirectories:
   - `csv/procrustes_null_raw.csv`: `N=1000` raw null repeats for cross-model Procrustes transfer (`30` directions x `3` nulls x `1000` repeats).
   - `csv/procrustes_null_summary.csv`: `N=1000` random-label, random-pairing, and random-orthogonal null summaries.
   - `figures/10_procrustes_null_random_pairing.png`, `figures/10_procrustes_null_random_labels.png`, and `figures/10_procrustes_null_random_orthogonal.png`: observed aligned F1 versus null baselines.
+  - `csv/heldout_alignment_anchor_texts.csv`: auxiliary anchor texts disjoint from the classifier train/test texts.
+  - `csv/heldout_alignment_curve_raw.csv`, `csv/heldout_alignment_curve_summary.csv`, and `csv/heldout_alignment_curve_by_direction.csv`: held-out anchor alignment-size curve across all non-identity cross-model directions.
+  - `figures/11_heldout_alignment_size_curve.png` and `figures/11_heldout_alignment_by_direction.png`: held-out alignment-size and by-direction summaries.
 
 The paper drafts link directly to the relevant CSVs and figures in these folders.
