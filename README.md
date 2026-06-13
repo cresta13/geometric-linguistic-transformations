@@ -56,6 +56,9 @@ The repository includes `CITATION.cff` for GitHub's citation widget and
 `.zenodo.json` for Zenodo/GitHub release archiving. The intended archival
 snapshot is `v2026.06.13`.
 
+Zenodo DOI: [10.5281/zenodo.20680414](https://doi.org/10.5281/zenodo.20680414)
+Zenodo record: https://zenodo.org/records/20680414
+
 ## Reproducibility Notes
 
 The scripts require Python packages such as `torch`, `transformers`, `scikit-learn`, `pandas`, `numpy`, and `matplotlib`.

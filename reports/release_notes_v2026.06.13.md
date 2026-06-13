@@ -2,6 +2,9 @@
 
 This release freezes the current research artifact for external review and DOI archiving.
 
+Zenodo DOI: [10.5281/zenodo.20680414](https://doi.org/10.5281/zenodo.20680414)
+Zenodo record: https://zenodo.org/records/20680414
+
 It should be archived on Zenodo as **Software** / reproducibility package, not as a peer-reviewed publication. The draft papers are included as research notes inside the software artifact.
 
 ## Scope
