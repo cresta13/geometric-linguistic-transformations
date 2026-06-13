@@ -72,15 +72,23 @@ Current distinct value:
 - held-out alignment-size curve using auxiliary anchor texts disjoint from classifier train/test texts
 - explicit reporting of raw, full-anchor, and held-out-anchor transfer gaps
 
-Required next step:
+Now addressed as a first-pass comparison:
 
-Track 3 should add a RISE-inspired comparison:
+Track 3 now includes a first-pass RISE-inspired comparison on UPAT:
 
 - MDV/prototype prediction baseline on UPAT
 - spherical normalization / tangent-space variant if feasible
 - comparison of classifier-transfer F1 versus target-embedding prediction similarity
 
-Without this comparison, Track 3 can be a useful stress-test package, but not a main novelty paper against RISE.
+Current interpretation:
+
+- Prototype methods answer a target-embedding prediction question.
+- Procrustes delta-classifier transfer answers a class-discriminative transfer question.
+- Within-model prototype target cosine is high.
+- Cross-model prototype prediction is harder and model-pair dependent.
+- The simplified `rise_style` baseline improves nearest-target label retrieval over MDV in the current UPAT setup, but it is not a full reproduction of RISE.
+
+Track 3 remains a useful stress-test package, but it still should not be promoted as a main novelty paper against RISE until confidence intervals, anchor-domain robustness, and a more faithful RISE implementation are added.
 
 ## Recommended Framing
 
@@ -93,5 +101,5 @@ Use this framing in future drafts:
 1. Add RISE to every related-work section as the closest prior work.
 2. Stop using "universal transformation subspaces" as an unqualified Track 3 title.
 3. Rename Track 3 working title toward "stress-testing cross-model transformation transfer".
-4. Add a RISE/MDV comparison experiment before promoting Track 3.
+4. Extend the first RISE/MDV comparison with confidence intervals and, if feasible, a more faithful RISE implementation before promoting Track 3.
 5. Emphasize Track 2 composition/order diagnostics as the most distinct paper-level contribution.

@@ -453,3 +453,63 @@ Implement an UPAT comparison between:
 - Procrustes-aligned classifier transfer
 
 The goal is not to beat RISE by assertion. The goal is to show exactly what our simpler controls diagnose, where they agree with RISE-style geometry, and where ordered composition diagnostics reveal different structure.
+
+## 2026-06-14: UPAT RISE-aware prototype comparison
+
+We implemented the first RISE-aware comparison on UPAT.
+
+New script:
+
+- `scripts/run_upat_rise_aware_comparison.py`
+
+New outputs:
+
+- `results/experiments/upat_large_results/csv/rise_aware_comparison_raw.csv`
+- `results/experiments/upat_large_results/csv/rise_aware_comparison_summary.csv`
+- `results/experiments/upat_large_results/figures/12_rise_aware_target_cosine.png`
+- `results/experiments/upat_large_results/figures/12_rise_aware_retrieval_f1.png`
+
+Design:
+
+- Compare three class-conditioned prototype methods:
+  - `mdv_raw`: mean raw difference vector per transformation class
+  - `mdv_unit`: mean unit-sphere difference vector per transformation class
+  - `rise_style`: spherical log/exp prototype with Householder canonicalization to a shared reference direction
+- Evaluate within-model and cross-model/full-anchor settings.
+- Report target-embedding prediction metrics:
+  - mean target cosine
+  - nearest-target top-1 retrieval
+  - nearest-target class accuracy/F1
+- Also report the delta-classifier transfer F1 from the aligned delta pipeline for comparison.
+
+Result:
+
+Within-model:
+
+- Prototype methods predict target embeddings very well by cosine:
+  - `mdv_raw`: `0.922426`
+  - `mdv_unit`: `0.921752`
+  - `rise_style`: `0.923008`
+- `rise_style` is slightly best on nearest-target label F1: `0.477279`.
+
+Cross-model/full-anchor:
+
+- Target cosine:
+  - `mdv_raw`: `0.576897`
+  - `mdv_unit`: `0.613559`
+  - `rise_style`: `0.578347`
+- Nearest-target label F1:
+  - `mdv_raw`: `0.411362`
+  - `mdv_unit`: `0.407674`
+  - `rise_style`: `0.445518`
+- Delta-classifier transfer F1 in the same aligned spaces remains `0.684651` on average.
+
+Interpretation:
+
+The prototype methods and the delta-classifier transfer answer different questions. MDV/RISE-style prototypes directly test whether a class-conditioned operation can predict the target embedding. Delta-classifier transfer tests whether the transformation class remains discriminable across model spaces. The first RISE-aware result says:
+
+- one-step prototype geometry is strong within each model
+- cross-model target prediction is much harder and model-pair dependent
+- RISE-style spherical canonicalization improves nearest-target class retrieval over MDV in this UPAT setup, but not enough to match delta-classifier transfer F1
+
+This is a useful positioning result, not a claim that our simplified RISE-style implementation matches the full RISE method.

@@ -158,6 +158,8 @@ def main():
         if heldout_alignment_by_direction_path.exists()
         else pd.DataFrame()
     )
+    rise_aware_path = EXP / "upat_large_results" / "csv" / "rise_aware_comparison_summary.csv"
+    rise_aware = pd.read_csv(rise_aware_path) if rise_aware_path.exists() else pd.DataFrame()
     pooling = pd.read_csv(EXP / "full_semantic_pooling_ablation_results" / "full_semantic_pooling_ablation_pivot.csv")
     confusion_neg = pd.read_csv(ROOT / "results" / "confusion_negation_summary.csv")
     decoder_jacobi = pd.read_csv(EXP / "lie_algebraic_identities_decoder_results" / "csv" / "jacobi_summary.csv")
@@ -184,7 +186,7 @@ def main():
                 ),
                 (
                     "Main conclusion",
-                    "The evidence supports a local QMT signed-permutation cancellation effect across tested encoder models, while negation-heavy triples expose the boundary of the phenomenon. RISE (Freenor and Alvarez, ICLR 2026) is now treated as the closest prior work for spherical/geodesic semantic-syntactic transformations across languages and embedding models. Our Track 3 result is therefore framed as a stress test: UPAT-large cross-model Procrustes transfer survives N=1000 random-label, random-pairing, random-orthogonal, and held-out-anchor controls, but it still needs an explicit RISE/MDV comparison before becoming a main-paper claim.",
+                    "The evidence supports a local QMT signed-permutation cancellation effect across tested encoder models, while negation-heavy triples expose the boundary of the phenomenon. RISE (Freenor and Alvarez, ICLR 2026) is now treated as the closest prior work for spherical/geodesic semantic-syntactic transformations across languages and embedding models. Our Track 3 result is therefore framed as a stress test: UPAT-large cross-model Procrustes transfer survives N=1000 random-label, random-pairing, random-orthogonal, and held-out-anchor controls. The first RISE-aware comparison shows strong within-model prototype target prediction, harder cross-model target prediction, and higher aligned delta-classifier transfer on its own class-discrimination metric.",
                 ),
             ],
         )
@@ -212,6 +214,8 @@ def main():
                 format_float_columns(largest),
                 max_rows=30,
             )
+        if not rise_aware.empty:
+            add_table_page(pdf, "UPAT RISE-aware prototype comparison", format_float_columns(rise_aware), max_rows=10)
         add_table_page(pdf, "Full-semantic pooling ablation", format_float_columns(pooling), max_rows=25)
         add_table_page(pdf, "Confusion analysis: negation vs non-negation recall", format_float_columns(confusion_neg), max_rows=25)
         add_table_page(pdf, "Third-order signed permutation summary with bootstrap CI", format_float_columns(jacobi), max_rows=20)
@@ -243,6 +247,8 @@ def main():
             ("UPAT-large Procrustes random-orthogonal null", EXP / "upat_large_results" / "figures" / "10_procrustes_null_random_orthogonal.png"),
             ("UPAT-large held-out alignment-size curve", EXP / "upat_large_results" / "figures" / "11_heldout_alignment_size_curve.png"),
             ("UPAT-large held-out alignment by direction", EXP / "upat_large_results" / "figures" / "11_heldout_alignment_by_direction.png"),
+            ("UPAT RISE-aware target prediction cosine", EXP / "upat_large_results" / "figures" / "12_rise_aware_target_cosine.png"),
+            ("UPAT RISE-aware nearest-target class retrieval", EXP / "upat_large_results" / "figures" / "12_rise_aware_retrieval_f1.png"),
             ("Full-semantic pooling ablation: Linear SVC", ROOT / "paper" / "figures" / "full_semantic_pooling_linear_svc.png"),
             ("Full-semantic pooling ablation: logistic regression", ROOT / "paper" / "figures" / "full_semantic_pooling_logreg.png"),
             ("Confusion analysis: negation recall Linear SVC", ROOT / "paper" / "figures" / "confusion_negation_linear_svc.png"),
@@ -268,7 +274,8 @@ def main():
                 "2026-06-14 update: UPAT-large Procrustes null controls are scaled to N=1000 and now include random-label, random-pairing, and random-orthogonal baselines. The observed aligned F1 exceeds every null repeat across all non-identity directions.",
                 "Second 2026-06-14 update: held-out alignment-size controls are now added. Procrustes maps fitted on auxiliary anchor texts disjoint from classifier train/test texts recover most of the full-anchor transfer effect.",
                 "Third 2026-06-14 update: RISE is now the central related-work anchor. Track 3 is reframed as RISE-aware stress testing rather than first-discovery cross-model geometry. A RISE/MDV-style UPAT comparison is now a required gate.",
-                "Remaining blockers: RISE/MDV comparison, confidence intervals and anchor-domain diversity for Track 3, resolve or expand UPAT hard-holdout, representation-ablation tables for every non-syntax holdout split, grammar-generated templates, endpoint-only controls for Track 2, composition layer/pooling ablations, and final bibliography formatting.",
+                "Fourth 2026-06-14 update: first-pass RISE-aware UPAT comparison is now added. MDV and simplified RISE-style prototype methods predict targets well within-model, but cross-model target prediction remains harder than aligned delta-classifier transfer on the class-discrimination metric.",
+                "Remaining blockers: confidence intervals and anchor-domain diversity for Track 3, stronger/faithful RISE comparison if feasible, resolve or expand UPAT hard-holdout, representation-ablation tables for every non-syntax holdout split, grammar-generated templates, endpoint-only controls for Track 2, composition layer/pooling ablations, and final bibliography formatting.",
             ],
         )
 
@@ -306,6 +313,7 @@ def main():
         add_code_listing(pdf, ROOT / "scripts" / "run_full_semantic_pooling_ablation.py", "Code listing: run_full_semantic_pooling_ablation.py")
         add_code_listing(pdf, ROOT / "scripts" / "run_upat_procrustes_nulls.py", "Code listing: run_upat_procrustes_nulls.py")
         add_code_listing(pdf, ROOT / "scripts" / "run_upat_alignment_size_heldout.py", "Code listing: run_upat_alignment_size_heldout.py")
+        add_code_listing(pdf, ROOT / "scripts" / "run_upat_rise_aware_comparison.py", "Code listing: run_upat_rise_aware_comparison.py")
         add_code_listing(pdf, ROOT / "scripts" / "analyze_confusion_negation.py", "Code listing: analyze_confusion_negation.py")
         add_code_listing(pdf, ROOT / "scripts" / "build_signed_permutation_multiple_testing.py", "Code listing: build_signed_permutation_multiple_testing.py")
 

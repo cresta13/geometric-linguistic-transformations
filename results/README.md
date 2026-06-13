@@ -35,5 +35,7 @@ Important subdirectories:
   - `csv/heldout_alignment_anchor_texts.csv`: auxiliary anchor texts disjoint from the classifier train/test texts.
   - `csv/heldout_alignment_curve_raw.csv`, `csv/heldout_alignment_curve_summary.csv`, and `csv/heldout_alignment_curve_by_direction.csv`: held-out anchor alignment-size curve across all non-identity cross-model directions.
   - `figures/11_heldout_alignment_size_curve.png` and `figures/11_heldout_alignment_by_direction.png`: held-out alignment-size and by-direction summaries.
+  - `csv/rise_aware_comparison_raw.csv` and `csv/rise_aware_comparison_summary.csv`: first-pass MDV/RISE-style prototype comparison on UPAT.
+  - `figures/12_rise_aware_target_cosine.png` and `figures/12_rise_aware_retrieval_f1.png`: target-prediction and nearest-target class-retrieval summaries.
 
 The paper drafts link directly to the relevant CSVs and figures in these folders.

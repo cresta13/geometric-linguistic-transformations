@@ -50,6 +50,11 @@ The UPAT-large Procrustes results suggest that transformation geometry may trans
 - Added a held-out alignment-size curve using `1200` auxiliary anchor texts disjoint from the classifier train/test texts.
 - Held-out anchor mean F1 increases from `0.452046` at `25` anchors to `0.661928` at `1000` anchors, compared with raw cross-model mean F1 `0.241524` and full-anchor Procrustes mean F1 `0.684651`.
 - At `1000` held-out anchors, every direction remains above its raw cross-model baseline.
+- Added a first-pass RISE-aware comparison on UPAT:
+  - `mdv_raw`, `mdv_unit`, and simplified spherical `rise_style` prototype baselines
+  - within-model target cosine is high (`rise_style=0.923008`)
+  - cross-model target prediction is harder (`rise_style` mean cosine `0.578347`, nearest-target label F1 `0.445518`)
+  - aligned delta-classifier transfer remains higher on its own metric (`0.684651` mean F1)
 
 ### Future submission work
 
@@ -65,10 +70,10 @@ The UPAT-large Procrustes results suggest that transformation geometry may trans
    - anchors from a different template family
    - paraphrased anchor pools
    - natural sentence anchors if available
-4. Add a RISE/MDV comparison on UPAT:
-   - implement a mean-difference-vector prototype baseline
-   - implement a spherical/tangent-space prototype variant if feasible
-   - compare target-embedding prediction similarity and downstream classifier transfer
+4. Strengthen the first-pass RISE/MDV comparison:
+   - add confidence intervals
+   - compare against the published RISE implementation if feasible
+   - state clearly that target-embedding prediction and class-discriminative transfer are different metrics
 5. Report the completed null and held-out alignment audits in the draft:
    - null mean/std/max
    - empirical p-value resolution

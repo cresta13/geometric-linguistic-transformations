@@ -112,6 +112,7 @@ Promising exploratory evidence:
 - A held-out alignment-size curve now fits Procrustes maps on `1200` auxiliary anchor texts that are disjoint from the classifier train/test texts.
 - Held-out anchor mean F1 rises from `0.452046` at `25` anchors to `0.661928` at `1000` anchors, compared with raw cross-model mean F1 `0.241524` and full-anchor Procrustes mean F1 `0.684651`.
 - At `1000` held-out anchors, no direction falls below its raw cross-model baseline.
+- A first RISE-aware UPAT comparison now evaluates `mdv_raw`, `mdv_unit`, and a simplified spherical `rise_style` prototype baseline. Within-model target prediction cosine is high (`rise_style=0.923008`), while cross-model target prediction is harder (`rise_style` mean cosine `0.578347`, nearest-target label F1 `0.445518`) than delta-classifier transfer in aligned spaces (`0.684651` mean F1).
 
 Current status:
 
@@ -119,12 +120,12 @@ This is now a serious candidate for a complementary paper, but not as a "first u
 
 Required gates before promotion:
 
-1. Add bootstrap confidence intervals and direction-family summaries for the held-out alignment curve.
+1. Add bootstrap confidence intervals and direction-family summaries for the held-out alignment and RISE-aware comparison curves.
 2. Stress-test anchor-domain diversity, e.g. anchors from a different template family or natural paraphrase pool.
-3. Add a RISE/MDV-style prototype prediction baseline on UPAT:
-   - target-embedding prediction similarity
-   - classifier transfer using predicted/transformed embeddings if feasible
-   - direct comparison against delta and Procrustes-aligned classifier transfer
+3. Improve the RISE-aware comparison:
+   - verify the simplified `rise_style` baseline against the published RISE implementation if feasible
+   - add confidence intervals
+   - clarify target-prediction versus class-discrimination metrics
 4. Reverse-direction transfer summary by model family, e.g. small model to large model and large model to small model.
 5. Stronger architectures if feasible, such as Llama/Mistral-class embedding spaces or high-quality sentence encoders.
 6. Package the result as a standalone Track 3 draft only after the RISE/MDV comparison and confidence-interval checks.

@@ -31,6 +31,7 @@ All runnable research scripts live in this directory.
 - `run_upat_large.py`: larger UPAT/cross-model audit.
 - `run_upat_procrustes_nulls.py`: random-pairing, random-label, and random-orthogonal null baselines for UPAT cross-model Procrustes transfer. Use `--n-null 1000` for the current full audit.
 - `run_upat_alignment_size_heldout.py`: held-out anchor alignment-size curve for UPAT cross-model Procrustes transfer. The current full run uses `--sizes 25,50,100,250,500,1000 --repeats 10 --anchor-target-count 1200`.
+- `run_upat_rise_aware_comparison.py`: first-pass MDV and simplified RISE-style prototype comparison for UPAT target-embedding prediction versus delta-classifier transfer.
 
 ## Reports
 
