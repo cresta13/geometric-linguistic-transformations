@@ -1,6 +1,7 @@
 cff-version: "1.2.0"
 message: "If you use this software or research artifacts, please cite them using the metadata below."
 title: "Geometric Linguistic Transformations in Transformer Latent Spaces"
+type: software
 version: "2026.06.13"
 date-released: "2026-06-13"
 authors:
@@ -22,12 +23,3 @@ keywords:
   - embedding spaces
   - delta vectors
   - natural language processing
-preferred-citation:
-  type: generic
-  title: "Geometric Linguistic Transformations in Transformer Latent Spaces"
-  authors:
-    - family-names: Simakova
-      given-names: Anna
-  year: 2026
-  repository-code: "https://github.com/cresta13/geometric-linguistic-transformations"
-  url: "https://github.com/cresta13/geometric-linguistic-transformations"
