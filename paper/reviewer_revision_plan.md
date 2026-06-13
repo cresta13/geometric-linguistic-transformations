@@ -32,6 +32,72 @@ This file tracks the concrete changes required after the external review.
 5. Convert large/modern spot-checks into multiseed runs if Track 1 is promoted to submission.
 6. Proper related-work table and bibliography in final citation format.
 
+## Track 3: Cross-Model Transformation Transfer
+
+### Why this may become the main paper
+
+The UPAT-large Procrustes results suggest that transformation geometry may transfer across architectures after low-dimensional alignment. This is currently the most ambitious and potentially strongest narrative, but only if null controls rule out overfitting.
+
+### Must still be run
+
+1. Random-label Procrustes null:
+   - shuffle transformation labels before fitting the alignment
+   - measure aligned-transfer F1 gain under the null
+2. Random-pairing Procrustes null:
+   - align mismatched examples across models
+   - measure how much gain is possible without true correspondence
+3. Reverse-direction transfer:
+   - small to large model
+   - large to small model
+   - sentence encoder to masked LM and back
+4. Alignment-size curve with held-out evaluation:
+   - 25, 50, 100, 250, 500, 1000 alignment examples
+   - report confidence intervals
+5. Optional architecture expansion:
+   - Llama/Mistral-style embedding spaces if local resources allow
+   - otherwise stronger sentence encoders as a lower-cost proxy
+
+## Track 4: Transformation Vectors as Editors
+
+### Goal
+
+Move from descriptive geometry to causal intervention.
+
+### Minimal experiment
+
+1. Use GPT-2.
+2. Compute centroid deltas for one transformation, probably negation or question formation.
+3. Inject the centroid into the residual stream during generation.
+4. Compare against random-vector, norm-matched, and wrong-class controls.
+5. Score generated text with transformation classifiers and manual examples.
+
+## Track 5: Cross-Lingual Transformation Geometry
+
+### Goal
+
+Test whether transformation geometry is language-invariant rather than English-template-specific.
+
+### Minimal experiment
+
+1. Use mBERT or XLM-R.
+2. Build matched transformation pairs in English and at least one non-English language.
+3. Compare within-language delta separability.
+4. Align transformation spaces across languages.
+5. Test classifier or centroid transfer across languages.
+
+## Track 6: Effective Dimensionality
+
+### Goal
+
+Measure whether transformations live in low-dimensional subspaces.
+
+### Minimal measurements
+
+1. PCA spectrum per transformation class.
+2. Participation ratio of delta singular values.
+3. Accuracy versus retained PCA dimensions.
+4. Capacity curves per transformation class.
+
 ## Track 2: Signed Permutation Coherence
 
 ### Already addressed in the draft
@@ -64,3 +130,8 @@ This file tracks the concrete changes required after the external review.
 - Related work positioning is started, but citation formatting and comparison table remain incomplete.
 - Current model set now has draft-level larger/modern spot-checks, but not multiseed larger-model confirmation.
 - Mean pooling needs empirical justification for the full-semantic and composition experiments.
+- The central narrative should be selected before submission. Current candidates are:
+  - Track 1: endpoint-controlled transformation vectors
+  - Track 3: cross-model universal transformation subspaces
+  - Track 4: transformation vectors as causal editors
+  - Track 5: cross-lingual transformation geometry

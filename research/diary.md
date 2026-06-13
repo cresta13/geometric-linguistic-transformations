@@ -251,3 +251,42 @@ UPAT Procrustes alignment and 100-permutation shuffle controls are now marked ex
 Current status:
 
 The research record is more honest and more useful, but still not main-track submission-ready. The next actual experiments should prioritize Procrustes null baselines, 1000+ shuffles, commutator norm nulls, and grammar-generated Lie templates.
+
+## 2026-06-13: Strategic roadmap update
+
+The current project has too many interesting experiments to submit as one coherent story. The strongest emerging narrative is:
+
+> Transformers may encode linguistic operators as geometric objects in a low-dimensional, partially universal transformation subspace, transferable across architectures and possibly languages.
+
+This changes the research priority.
+
+### Candidate central tracks
+
+1. Cross-model transformation transfer.
+   - Current Procrustes results are large enough to be exciting.
+   - They are not yet trustworthy enough to headline because they need random-label and random-pairing null baselines.
+2. Transformation vectors as editors.
+   - If GPT-2 residual-stream injection can induce negation or question formation, the project moves from probing to causal intervention.
+3. Cross-lingual transformation geometry.
+   - If mBERT/XLM-R aligns English and non-English transformation deltas, this directly addresses the English-template artifact concern.
+4. Effective dimensionality.
+   - Participation ratio and PCA retention curves can tell us whether transformations are single directions, low-dimensional subspaces, or broad regions.
+
+### Practical roadmap
+
+Month 1:
+
+- close methodology holes: Procrustes nulls, 1000+ shuffles, commutator norm nulls
+- keep antisymmetry out of the evidence narrative
+
+Month 2:
+
+- run the GPT-2 steering-vector experiment
+
+Month 3:
+
+- run the cross-lingual mBERT/XLM-R transfer experiment
+
+Month 4-5:
+
+- write around the strongest surviving central story, likely ACL 2027 or ICLR 2027 rather than a rushed 2026 submission

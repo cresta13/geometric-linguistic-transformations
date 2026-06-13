@@ -248,6 +248,15 @@ def main():
                 fontsize=8,
             )
 
+        roadmap_path = ROOT / "paper" / "research_program.md"
+        if roadmap_path.exists():
+            add_text_page(
+                pdf,
+                "Updated Research Roadmap",
+                [roadmap_path.read_text(encoding="utf-8")],
+                fontsize=7.5,
+            )
+
         add_code_listing(pdf, ROOT / "run_lie_algebraic_identities.py", "Code listing: run_lie_algebraic_identities.py")
         add_code_listing(pdf, ROOT / "run_syntax_representation_ablation.py", "Code listing: run_syntax_representation_ablation.py")
         add_code_listing(pdf, ROOT / "run_layerwise_pooling_ablation.py", "Code listing: run_layerwise_pooling_ablation.py")

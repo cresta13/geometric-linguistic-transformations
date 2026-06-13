@@ -6,6 +6,14 @@ Can linguistic transformations be represented not only as separable classes in t
 
 The project currently has two paper tracks.
 
+## Strategic narrative
+
+The strongest long-term story is broader than either current draft:
+
+> Transformers may encode linguistic operators as geometric objects in a low-dimensional, partially universal transformation subspace, and this subspace may be transferable across architectures and languages.
+
+Current results are not enough to claim this yet. The Procrustes transfer numbers are promising, but they remain exploratory until null baselines are added. The roadmap below treats cross-model and cross-lingual transfer as the next central hypothesis, not as a finished conclusion.
+
 ## Track 1: Geometric transformation vectors
 
 Working title:
@@ -78,6 +86,99 @@ Main risk:
 
 Hand-written templates may induce or suppress cancellation. GPT-2/DistilGPT-2 now support `QMT` below-null cancellation, but negation behaves inconsistently across architectures. The current Lie-style templates still contain stable lexical markers, so the next experiments need grammar-driven templates, endpoint-only controls, commutator null baselines, and a focused negation analysis before expanding the operator set.
 
+## Track 3: Cross-model transformation transfer
+
+Working title:
+
+**Universal Transformation Subspaces Across Transformer Architectures**
+
+Central hypothesis:
+
+Transformation geometry may be partially model-independent after low-dimensional alignment. A classifier trained on transformation deltas in one model may transfer to another model after Procrustes alignment.
+
+Promising exploratory evidence:
+
+- BERT to `all-mpnet-base-v2`: raw F1 around `0.15`, aligned F1 around `0.857`.
+- BERT to `all-MiniLM-L6-v2`: raw F1 around `0.17`, aligned F1 around `0.754`.
+- UPAT-large cross-model results show large aligned-transfer gains across several architectures.
+
+Current status:
+
+This could become the strongest paper if it survives null controls. It is not yet promoted because Procrustes has many degrees of freedom and can overfit small alignment sets.
+
+Required gates before promotion:
+
+1. Random-label or random-pairing Procrustes null baseline.
+2. Alignment-size curve with held-out evaluation.
+3. At least 1000 shuffle/permutation runs for precise p-values.
+4. Reverse-direction transfer tests, e.g. small model to large model and large model to small model.
+5. Stronger architectures if feasible, such as Llama/Mistral-class embedding spaces or high-quality sentence encoders.
+
+## Track 4: Transformation vectors as editors
+
+Working title:
+
+**From Transformation Geometry to Controllable Linguistic Editing**
+
+Central hypothesis:
+
+If transformation directions are real, they should not only classify transformations; they should also steer generation or hidden states toward those transformations.
+
+Minimal experiment:
+
+1. Use GPT-2 as the first testbed.
+2. Compute a centroid delta for a transformation such as negation or question formation.
+3. Inject the vector into the residual stream during generation.
+4. Measure whether outputs systematically acquire the target transformation.
+5. Compare against random-vector, norm-matched, and wrong-class controls.
+
+Scientific payoff:
+
+This would move the project from descriptive geometry to causal intervention. A positive result would connect the work to representation steering and controllable generation.
+
+## Track 5: Cross-lingual transformation geometry
+
+Working title:
+
+**Language-Invariant Geometry of Linguistic Transformations**
+
+Central hypothesis:
+
+If transformation geometry is universal rather than English-template-specific, aligned multilingual models should show comparable transformation subspaces across languages.
+
+Minimal experiment:
+
+1. Use mBERT or XLM-R.
+2. Build parallel transformation pairs in English and one or more non-English languages.
+3. Compare delta geometry within each language.
+4. Align language-specific transformation spaces with Procrustes.
+5. Test whether classifiers or centroids transfer across languages.
+
+Scientific payoff:
+
+This is the cleanest answer to the criticism that the current effects may be English grammar or template artifacts.
+
+## Track 6: Dimensionality of transformation manifolds
+
+Working title:
+
+**Effective Dimensionality of Linguistic Transformation Subspaces**
+
+Central hypothesis:
+
+Each transformation may occupy a low-dimensional subspace rather than a single direction or the full embedding space.
+
+Measurements:
+
+- PCA spectra of per-class delta matrices.
+- Participation ratio of singular values.
+- Classification accuracy as a function of retained dimensions.
+- Sample-complexity curves for learning each transformation.
+
+Scientific payoff:
+
+This would quantify the complexity of each linguistic operator and explain why capacity curves keep improving with more examples.
+
 ## Iterative logic
 
 The research direction is:
@@ -107,36 +208,50 @@ Negative results remain part of the research record.
 
 ### Short term
 
-1. Resolve UPAT:
+1. Close methodology blockers required for any submission:
+   - remove antisymmetry from the evidence narrative; already done in the draft, keep it that way
+   - add Procrustes null baselines
+   - increase shuffle/permutation controls to at least 1000, ideally 5000 for final numbers
+   - add commutator norm null baselines
+2. Resolve UPAT:
    - either expand UPAT and match train sizes against the main dataset
    - or keep it explicitly as a hard negative control and narrow Track 1 claims
-2. Add null baselines for exploratory UPAT alignment:
+3. Add null baselines for exploratory UPAT alignment:
    - random-label or random-pairing Procrustes null
    - at least 1000 shuffle permutations instead of 100
-3. Treat the syntax holdout as resolved for the current draft: `y_only=1.0` and layer-0 `1.0` mean the `syntax=1.0` result is a target/surface artifact unless a future redesigned split proves otherwise.
-4. Convert large/modern Track 1 spot-checks into multiseed runs if Track 1 is promoted to submission.
-5. Build a grammar-driven template generator for `N,Q,M,T` that produces many paraphrases without duplicate endpoints.
-6. Add automated dataset validation:
+4. Test cross-model transformation transfer as the likely central future paper:
+   - reverse-direction transfer
+   - alignment-size curve
+   - random-label/null alignment controls
+5. Treat the syntax holdout as resolved for the current draft: `y_only=1.0` and layer-0 `1.0` mean the `syntax=1.0` result is a target/surface artifact unless a future redesigned split proves otherwise.
+6. Convert large/modern Track 1 spot-checks into multiseed runs if Track 1 is promoted to submission.
+7. Build a grammar-driven template generator for `N,Q,M,T` that produces many paraphrases without duplicate endpoints.
+8. Add automated dataset validation:
    - no duplicate endpoint strings within a composition tuple
    - balanced subjects/actions
    - controlled lexical overlap
-7. Add commutator null baselines for `||[A,B]||` using random or label-shuffled operations with matched norms.
-8. Re-run composition and signed-permutation diagnostics on generated templates.
-9. Add target-only and endpoint-only baselines for the Lie-style paper.
-10. Regenerate a dated PDF packet after every major run.
+9. Add commutator null baselines for `||[A,B]||` using random or label-shuffled operations with matched norms.
+10. Re-run composition and signed-permutation diagnostics on generated templates.
+11. Add target-only and endpoint-only baselines for the Lie-style paper.
+12. Regenerate a dated PDF packet after every major run.
 
 ### Medium term
 
-1. Run layerwise and pooling ablations before expanding the operator set. If final-layer mean pooling is not the best representation, the expanded operator experiments should use the validated representation instead.
-2. Add more linguistic operators:
+1. Run the GPT-2 steering-vector experiment for one transformation, starting with negation or question formation.
+2. Run the cross-lingual mBERT/XLM-R transformation-transfer experiment.
+3. Measure effective dimensionality of transformation subspaces:
+   - participation ratio
+   - PCA retention curves
+   - accuracy versus retained dimensions
+4. Run layerwise and pooling ablations before expanding the operator set. If final-layer mean pooling is not the best representation, the expanded operator experiments should use the validated representation instead.
+5. Add more linguistic operators:
    - passive voice
    - modality strength
    - evidentiality
    - aspect
    - conditionality
    - quantifier changes
-3. Add paraphrase robustness with semantically equivalent endpoint variants.
-4. Keep cross-model alignment as a separate future-methodology direction, not as a blocker for the current two papers. A scoped version would compare raw spaces to Procrustes-aligned spaces only after each single-model claim is stable.
+6. Add paraphrase robustness with semantically equivalent endpoint variants.
 
 ### Paper milestones
 
@@ -148,5 +263,8 @@ Negative results remain part of the research record.
    - at least one model outside the original five is included as a spot-check; currently satisfied by BERT-large and DeBERTa-v3-base
    - UPAT hard-holdout is either resolved experimentally or explicitly reported as a negative boundary condition
 2. Keep Track 2 as a diagnostics paper until grammar-generated templates and endpoint-only controls succeed.
-3. If Track 2 survives those controls, write it as a separate paper rather than merging it into Track 1.
-4. If Track 2 weakens under controls, keep it as a negative/diagnostic section in a broader research note.
+3. Promote Track 3 to the main paper only if Procrustes transfer survives null baselines. If it does, the main narrative becomes cross-architecture universal transformation subspaces.
+4. If steering works, write Track 4 as an intervention/controllable-generation paper.
+5. If cross-lingual transfer works, it becomes the strongest version of the universality claim.
+6. If Track 2 survives grammar-generated controls, write it as a separate diagnostics paper rather than merging it into Track 1.
+7. If Track 2 weakens under controls, keep it as a negative/diagnostic section in a broader research note.
