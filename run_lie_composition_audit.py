@@ -1,4 +1,5 @@
 import gc
+import os
 import json
 import warnings
 from pathlib import Path
@@ -19,7 +20,7 @@ warnings.filterwarnings("ignore")
 
 class LieCompositionAudit:
     def __init__(self):
-        self.out_dir = Path("lie_composition_results")
+        self.out_dir = Path(os.getenv("LIE_COMPOSITION_OUT_DIR", "lie_composition_results"))
         self.csv_dir = self.out_dir / "csv"
         self.fig_dir = self.out_dir / "figures"
 
@@ -31,9 +32,12 @@ class LieCompositionAudit:
         self.pca_dim = 64
 
         self.models = [
-            "bert-base-uncased",
-            "distilroberta-base",
-            "roberta-base",
+            m.strip()
+            for m in os.getenv(
+                "LIE_COMPOSITION_MODELS",
+                "bert-base-uncased,distilroberta-base,roberta-base",
+            ).split(",")
+            if m.strip()
         ]
 
     def log(self, msg: str):

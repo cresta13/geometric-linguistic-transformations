@@ -16,12 +16,14 @@ Main scripts:
 Main result files:
 
 - Composition summary: [lie_composition_summary.csv](../../../lie_composition_results/csv/lie_composition_summary.csv)
+- Decoder composition summary: [lie_composition_summary.csv](../../../lie_composition_decoder_results/csv/lie_composition_summary.csv)
 - Semantic equivalence summary: [semantic_equivalence_summary.csv](../../../lie_semantic_equivalence_results/csv/semantic_equivalence_summary.csv)
 - Semantic statistical tests: [semantic_equivalence_tests.csv](../../../lie_semantic_equivalence_results/csv/semantic_equivalence_tests.csv)
 - Semantic effect sizes: [reviewer_semantic_effect_sizes.csv](../../../lie_semantic_equivalence_results/csv/reviewer_semantic_effect_sizes.csv)
 - Antisymmetry summary: [antisymmetry_summary.csv](../../../lie_algebraic_identities_results/csv/antisymmetry_summary.csv)
 - Signed permutation summary: [jacobi_summary.csv](../../../lie_algebraic_identities_results/csv/jacobi_summary.csv)
 - Signed permutation raw rows: [jacobi_raw_all_models.csv](../../../lie_algebraic_identities_results/csv/jacobi_raw_all_models.csv)
+- Multiple-testing correction: [signed_permutation_multiple_testing.csv](../../../lie_algebraic_identities_results/csv/signed_permutation_multiple_testing.csv)
 - Dataset audit: [reviewer_dataset_audit.csv](../../../lie_algebraic_identities_results/csv/reviewer_dataset_audit.csv)
 - Decoder signed permutation summary: [jacobi_summary.csv](../../../lie_algebraic_identities_decoder_results/csv/jacobi_summary.csv)
 
@@ -39,15 +41,18 @@ The answer is currently partial. Pairwise composition shows order effects. Third
 
 ## 2. Related Work Positioning
 
-This track needs to be positioned against:
+This track is related to task arithmetic and function-vector work, but it asks a different question. Task arithmetic composes vectors in model weight space after fine-tuning; function vectors identify activation directions that can causally induce in-context functions. Here the objects are not weight updates or causal activation interventions, but ordered sentence-composition endpoints in embedding space.
 
-- task arithmetic
-- function vectors
-- representation steering
-- analogy and relation-vector probing
-- prior work on negation failures in transformer representations
+The closest conceptual overlap is relation-vector probing and representation steering: we also ask whether semantic or linguistic transformations produce reusable directions. The difference is that this paper tests ordered composition explicitly (`AB` versus `BA`) and then tests a null-controlled signed third-order endpoint sum.
 
-The distinguishing feature is not merely vector arithmetic, but explicit testing of ordered linguistic composition endpoints and null-controlled signed permutation cancellation. A complete bibliography remains required before submission.
+Negation literature is also central. Prior negation probes show that pretrained language models can fail to robustly distinguish negated from non-negated factual prompts. In our setting, Track 1 shows that negation can be easy as a one-step surface-labeled class, while Track 2 shows that negation is unstable inside ordered third-order composition. That distinction is one of the main reasons to keep the two paper tracks separate.
+
+Working references:
+
+- Ilharco et al. 2023, "Editing Models with Task Arithmetic".
+- Todd et al. 2024, "Function Vectors in Large Language Models".
+- Kassner and Schuetze 2020, "Negated and Misprimed Probes for Pretrained Language Models".
+- Huang et al. 2024, "RAVEL: Evaluating Interpretability Methods on Disentangling Language Model Representations".
 
 ## 3. Operations and Models
 
@@ -91,13 +96,31 @@ Observation:
 
 Order matters, especially for transformations involving tense. This is necessary but not sufficient evidence for operator structure, because template wording alone could create order-sensitive embeddings.
 
+Decoder composition has now been added, so decoder models are no longer present only in the favorable third-order diagnostic.
+
+![Decoder composition noncommutativity heatmap](../../../lie_composition_decoder_results/figures/01_noncommutativity_heatmap.png)
+
+**Figure 3.** Decoder-model pairwise noncommutativity heatmap.
+
+Key decoder rows:
+
+| Model | Pair | Mean noncommutativity |
+|---|---|---:|
+| DistilGPT-2 | `NT_vs_TN` | `0.295` |
+| DistilGPT-2 | `MT_vs_TM` | `0.289` |
+| DistilGPT-2 | `QM_vs_MQ` | `0.196` |
+| GPT-2 | `QM_vs_MQ` | `0.111` |
+| GPT-2 | `NQ_vs_QN` | `0.066` |
+
+Decoder pairwise composition is weaker for GPT-2 than for DistilGPT-2 under this mean-pooled PCA diagnostic, but it is not absent. This asymmetry should be reported rather than hidden.
+
 ## 5. Semantic Equivalence Control
 
 The semantic equivalence control compares pairs intended to preserve meaning against pairs where order should change meaning.
 
 ![Semantic equivalence control](../../../lie_semantic_equivalence_results/figures/01_equivalent_vs_nonequivalent.png)
 
-**Figure 3.** Equivalent pairs have lower mean noncommutativity, but distributions are broad.
+**Figure 4.** Equivalent pairs have lower mean noncommutativity, but distributions are broad.
 
 Summary and tests:
 
@@ -123,7 +146,7 @@ The result is essentially perfect, but this follows from the implementation. We 
 
 ![Antisymmetry cosine heatmap](../../../lie_algebraic_identities_results/figures/01_antisymmetry_cosine_heatmap.png)
 
-**Figure 4.** Antisymmetry sanity check.
+**Figure 5.** Antisymmetry sanity check.
 
 ## 7. Third-Order Signed Permutation Coherence
 
@@ -168,19 +191,19 @@ Dataset audit:
 
 ![Signed permutation relative norm heatmap](../../../lie_algebraic_identities_results/figures/03_jacobi_relative_norm_heatmap.png)
 
-**Figure 5.** Relative norm of the third-order signed permutation sum.
+**Figure 6.** Relative norm of the third-order signed permutation sum.
 
 ![Signed permutation versus null](../../../lie_algebraic_identities_results/figures/04_jacobi_vs_permutation_null_heatmap.png)
 
-**Figure 6.** Ratio of observed signed permutation norm to permutation-null mean. Values below `1.0` indicate stronger-than-null cancellation.
+**Figure 7.** Ratio of observed signed permutation norm to permutation-null mean. Values below `1.0` indicate stronger-than-null cancellation.
 
 ![Decoder signed permutation ratio](../../figures/decoder_signed_permutation_ratio.png)
 
-**Figure 7.** Decoder-model replication for the signed permutation ratio to permutation-null mean.
+**Figure 8.** Decoder-model replication for the signed permutation ratio to permutation-null mean.
 
 ## 8. Main Third-Order Result
 
-The robust below-null result is `QMT`.
+The most robust cross-architecture below-null result is `QMT`.
 
 | Model | Triple | Ratio to null | 95% CI |
 |---|---|---:|---:|
@@ -202,9 +225,26 @@ Negative or mixed cases:
 | GPT-2 | `NQM` | `1.195` | worse than null |
 | DistilGPT-2 | `NQT` | `1.420` | worse than null |
 
-The central claim is now narrower:
+Multiple-testing correction:
 
-> `QMT` shows stable third-order signed permutation cancellation stronger than null across tested encoder models and the two decoder spot-checks.
+We applied a row-bootstrap test of whether the mean signed-permutation ratio is below `1.0`, followed by Bonferroni and Benjamini-Hochberg correction over all `4 triples x 5 models = 20` model/triple tests.
+
+| Triple | Models passing Bonferroni below-null | Interpretation |
+|---|---:|---|
+| `QMT` | `5/5` | only fully cross-architecture stable below-null triple |
+| `NQM` | `3/5` | below-null in BERT, RoBERTa, DistilGPT-2; fails in DistilRoBERTa and GPT-2 |
+| `NMT` | `2/5` | below-null in BERT and DistilGPT-2; worse than null in several models |
+| `NQT` | `1/5` | below-null only in GPT-2; worse than null elsewhere |
+
+Therefore, the central claim is now narrower:
+
+> `QMT` is the only tested triple with stable third-order signed permutation cancellation stronger than null across all five tested models after table-level multiple-testing correction.
+
+Working hypothesis for why `QMT` is coherent:
+
+`Q`, `M`, and `T` are all clause-level operators that modify illocution, epistemic status, or temporal anchoring while preserving the same event frame. Their endpoints can remain relatively aligned around one proposition. Negation (`N`) changes truth-conditional polarity and often introduces lexical/scope markers that interact with syntax more sharply. This makes `N` easy to detect as a one-step surface-labeled transformation, but less stable as a component in ordered composition.
+
+This is still a hypothesis, not a proven linguistic theory. It gives a pre-registered direction for the next template-generator experiment: if QMT coherence is real, it should survive grammar-generated paraphrases where question, modality, and tense vary without introducing negation.
 
 ## 9. Negation Is a Result, Not Just a Limitation
 
@@ -230,7 +270,8 @@ Evidence layers:
 1. Pairwise composition gives noncommutativity.
 2. Semantic controls show a statistically significant distribution shift.
 3. Signed permutation coherence identifies one robust local third-order effect.
-4. Negation triples mostly fail, which constrains the theory.
+4. Multiple-testing correction shows that QMT is the only below-null triple passing across all five models.
+5. Negation triples are model-dependent, which constrains the theory.
 
 Not proven:
 

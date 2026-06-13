@@ -1,0 +1,481 @@
+template_id,source,op_a,op_b,pair,ab_text,ba_text
+0,The teacher fixed the bug.,N,Q,NQ_vs_QN,Could the teacher fail to fix the bug?,Is it false that the teacher fixed the bug?
+0,The teacher fixed the bug.,N,M,NM_vs_MN,The teacher allegedly failed to fix the bug.,The teacher failed to allegedly fix the bug.
+0,The teacher fixed the bug.,N,T,NT_vs_TN,The teacher will fail to fix the bug tomorrow.,The teacher failed to have fixed the bug earlier.
+0,The teacher fixed the bug.,Q,M,QM_vs_MQ,Could the teacher allegedly fix the bug?,Is it alleged that the teacher fixed the bug?
+0,The teacher fixed the bug.,Q,T,QT_vs_TQ,Could the teacher fix the bug tomorrow?,Will the teacher fix the bug tomorrow?
+0,The teacher fixed the bug.,M,T,MT_vs_TM,The teacher will allegedly fix the bug tomorrow.,The teacher was allegedly going to fix the bug.
+1,The robot accepted the explanation.,N,Q,NQ_vs_QN,Could the robot fail to accept the explanation?,Is it false that the robot accepted the explanation?
+1,The robot accepted the explanation.,N,M,NM_vs_MN,The robot allegedly failed to accept the explanation.,The robot failed to allegedly accept the explanation.
+1,The robot accepted the explanation.,N,T,NT_vs_TN,The robot will fail to accept the explanation tomorrow.,The robot failed to have accepted the explanation earlier.
+1,The robot accepted the explanation.,Q,M,QM_vs_MQ,Could the robot allegedly accept the explanation?,Is it alleged that the robot accepted the explanation?
+1,The robot accepted the explanation.,Q,T,QT_vs_TQ,Could the robot accept the explanation tomorrow?,Will the robot accept the explanation tomorrow?
+1,The robot accepted the explanation.,M,T,MT_vs_TM,The robot will allegedly accept the explanation tomorrow.,The robot was allegedly going to accept the explanation.
+2,The dragon confirmed the answer.,N,Q,NQ_vs_QN,Could the dragon fail to confirm the answer?,Is it false that the dragon confirmed the answer?
+2,The dragon confirmed the answer.,N,M,NM_vs_MN,The dragon allegedly failed to confirm the answer.,The dragon failed to allegedly confirm the answer.
+2,The dragon confirmed the answer.,N,T,NT_vs_TN,The dragon will fail to confirm the answer tomorrow.,The dragon failed to have confirmed the answer earlier.
+2,The dragon confirmed the answer.,Q,M,QM_vs_MQ,Could the dragon allegedly confirm the answer?,Is it alleged that the dragon confirmed the answer?
+2,The dragon confirmed the answer.,Q,T,QT_vs_TQ,Could the dragon confirm the answer tomorrow?,Will the dragon confirm the answer tomorrow?
+2,The dragon confirmed the answer.,M,T,MT_vs_TM,The dragon will allegedly confirm the answer tomorrow.,The dragon was allegedly going to confirm the answer.
+3,The doctor guarded the treasure.,N,Q,NQ_vs_QN,Could the doctor fail to guard the treasure?,Is it false that the doctor guarded the treasure?
+3,The doctor guarded the treasure.,N,M,NM_vs_MN,The doctor allegedly failed to guard the treasure.,The doctor failed to allegedly guard the treasure.
+3,The doctor guarded the treasure.,N,T,NT_vs_TN,The doctor will fail to guard the treasure tomorrow.,The doctor failed to have guarded the treasure earlier.
+3,The doctor guarded the treasure.,Q,M,QM_vs_MQ,Could the doctor allegedly guard the treasure?,Is it alleged that the doctor guarded the treasure?
+3,The doctor guarded the treasure.,Q,T,QT_vs_TQ,Could the doctor guard the treasure tomorrow?,Will the doctor guard the treasure tomorrow?
+3,The doctor guarded the treasure.,M,T,MT_vs_TM,The doctor will allegedly guard the treasure tomorrow.,The doctor was allegedly going to guard the treasure.
+4,The pirate approved the treatment.,N,Q,NQ_vs_QN,Could the pirate fail to approve the treatment?,Is it false that the pirate approved the treatment?
+4,The pirate approved the treatment.,N,M,NM_vs_MN,The pirate allegedly failed to approve the treatment.,The pirate failed to allegedly approve the treatment.
+4,The pirate approved the treatment.,N,T,NT_vs_TN,The pirate will fail to approve the treatment tomorrow.,The pirate failed to have approved the treatment earlier.
+4,The pirate approved the treatment.,Q,M,QM_vs_MQ,Could the pirate allegedly approve the treatment?,Is it alleged that the pirate approved the treatment?
+4,The pirate approved the treatment.,Q,T,QT_vs_TQ,Could the pirate approve the treatment tomorrow?,Will the pirate approve the treatment tomorrow?
+4,The pirate approved the treatment.,M,T,MT_vs_TM,The pirate will allegedly approve the treatment tomorrow.,The pirate was allegedly going to approve the treatment.
+5,The analyst verified the report.,N,Q,NQ_vs_QN,Could the analyst fail to verify the report?,Is it false that the analyst verified the report?
+5,The analyst verified the report.,N,M,NM_vs_MN,The analyst allegedly failed to verify the report.,The analyst failed to allegedly verify the report.
+5,The analyst verified the report.,N,T,NT_vs_TN,The analyst will fail to verify the report tomorrow.,The analyst failed to have verified the report earlier.
+5,The analyst verified the report.,Q,M,QM_vs_MQ,Could the analyst allegedly verify the report?,Is it alleged that the analyst verified the report?
+5,The analyst verified the report.,Q,T,QT_vs_TQ,Could the analyst verify the report tomorrow?,Will the analyst verify the report tomorrow?
+5,The analyst verified the report.,M,T,MT_vs_TM,The analyst will allegedly verify the report tomorrow.,The analyst was allegedly going to verify the report.
+6,The wizard opened the portal.,N,Q,NQ_vs_QN,Could the wizard fail to open the portal?,Is it false that the wizard opened the portal?
+6,The wizard opened the portal.,N,M,NM_vs_MN,The wizard allegedly failed to open the portal.,The wizard failed to allegedly open the portal.
+6,The wizard opened the portal.,N,T,NT_vs_TN,The wizard will fail to open the portal tomorrow.,The wizard failed to have opened the portal earlier.
+6,The wizard opened the portal.,Q,M,QM_vs_MQ,Could the wizard allegedly open the portal?,Is it alleged that the wizard opened the portal?
+6,The wizard opened the portal.,Q,T,QT_vs_TQ,Could the wizard open the portal tomorrow?,Will the wizard open the portal tomorrow?
+6,The wizard opened the portal.,M,T,MT_vs_TM,The wizard will allegedly open the portal tomorrow.,The wizard was allegedly going to open the portal.
+7,The oracle confirmed the answer.,N,Q,NQ_vs_QN,Could the oracle fail to confirm the answer?,Is it false that the oracle confirmed the answer?
+7,The oracle confirmed the answer.,N,M,NM_vs_MN,The oracle allegedly failed to confirm the answer.,The oracle failed to allegedly confirm the answer.
+7,The oracle confirmed the answer.,N,T,NT_vs_TN,The oracle will fail to confirm the answer tomorrow.,The oracle failed to have confirmed the answer earlier.
+7,The oracle confirmed the answer.,Q,M,QM_vs_MQ,Could the oracle allegedly confirm the answer?,Is it alleged that the oracle confirmed the answer?
+7,The oracle confirmed the answer.,Q,T,QT_vs_TQ,Could the oracle confirm the answer tomorrow?,Will the oracle confirm the answer tomorrow?
+7,The oracle confirmed the answer.,M,T,MT_vs_TM,The oracle will allegedly confirm the answer tomorrow.,The oracle was allegedly going to confirm the answer.
+8,The robot opened the portal.,N,Q,NQ_vs_QN,Could the robot fail to open the portal?,Is it false that the robot opened the portal?
+8,The robot opened the portal.,N,M,NM_vs_MN,The robot allegedly failed to open the portal.,The robot failed to allegedly open the portal.
+8,The robot opened the portal.,N,T,NT_vs_TN,The robot will fail to open the portal tomorrow.,The robot failed to have opened the portal earlier.
+8,The robot opened the portal.,Q,M,QM_vs_MQ,Could the robot allegedly open the portal?,Is it alleged that the robot opened the portal?
+8,The robot opened the portal.,Q,T,QT_vs_TQ,Could the robot open the portal tomorrow?,Will the robot open the portal tomorrow?
+8,The robot opened the portal.,M,T,MT_vs_TM,The robot will allegedly open the portal tomorrow.,The robot was allegedly going to open the portal.
+9,The programmer verified the report.,N,Q,NQ_vs_QN,Could the programmer fail to verify the report?,Is it false that the programmer verified the report?
+9,The programmer verified the report.,N,M,NM_vs_MN,The programmer allegedly failed to verify the report.,The programmer failed to allegedly verify the report.
+9,The programmer verified the report.,N,T,NT_vs_TN,The programmer will fail to verify the report tomorrow.,The programmer failed to have verified the report earlier.
+9,The programmer verified the report.,Q,M,QM_vs_MQ,Could the programmer allegedly verify the report?,Is it alleged that the programmer verified the report?
+9,The programmer verified the report.,Q,T,QT_vs_TQ,Could the programmer verify the report tomorrow?,Will the programmer verify the report tomorrow?
+9,The programmer verified the report.,M,T,MT_vs_TM,The programmer will allegedly verify the report tomorrow.,The programmer was allegedly going to verify the report.
+10,The designer verified the report.,N,Q,NQ_vs_QN,Could the designer fail to verify the report?,Is it false that the designer verified the report?
+10,The designer verified the report.,N,M,NM_vs_MN,The designer allegedly failed to verify the report.,The designer failed to allegedly verify the report.
+10,The designer verified the report.,N,T,NT_vs_TN,The designer will fail to verify the report tomorrow.,The designer failed to have verified the report earlier.
+10,The designer verified the report.,Q,M,QM_vs_MQ,Could the designer allegedly verify the report?,Is it alleged that the designer verified the report?
+10,The designer verified the report.,Q,T,QT_vs_TQ,Could the designer verify the report tomorrow?,Will the designer verify the report tomorrow?
+10,The designer verified the report.,M,T,MT_vs_TM,The designer will allegedly verify the report tomorrow.,The designer was allegedly going to verify the report.
+11,The designer opened the portal.,N,Q,NQ_vs_QN,Could the designer fail to open the portal?,Is it false that the designer opened the portal?
+11,The designer opened the portal.,N,M,NM_vs_MN,The designer allegedly failed to open the portal.,The designer failed to allegedly open the portal.
+11,The designer opened the portal.,N,T,NT_vs_TN,The designer will fail to open the portal tomorrow.,The designer failed to have opened the portal earlier.
+11,The designer opened the portal.,Q,M,QM_vs_MQ,Could the designer allegedly open the portal?,Is it alleged that the designer opened the portal?
+11,The designer opened the portal.,Q,T,QT_vs_TQ,Could the designer open the portal tomorrow?,Will the designer open the portal tomorrow?
+11,The designer opened the portal.,M,T,MT_vs_TM,The designer will allegedly open the portal tomorrow.,The designer was allegedly going to open the portal.
+12,The researcher fixed the bug.,N,Q,NQ_vs_QN,Could the researcher fail to fix the bug?,Is it false that the researcher fixed the bug?
+12,The researcher fixed the bug.,N,M,NM_vs_MN,The researcher allegedly failed to fix the bug.,The researcher failed to allegedly fix the bug.
+12,The researcher fixed the bug.,N,T,NT_vs_TN,The researcher will fail to fix the bug tomorrow.,The researcher failed to have fixed the bug earlier.
+12,The researcher fixed the bug.,Q,M,QM_vs_MQ,Could the researcher allegedly fix the bug?,Is it alleged that the researcher fixed the bug?
+12,The researcher fixed the bug.,Q,T,QT_vs_TQ,Could the researcher fix the bug tomorrow?,Will the researcher fix the bug tomorrow?
+12,The researcher fixed the bug.,M,T,MT_vs_TM,The researcher will allegedly fix the bug tomorrow.,The researcher was allegedly going to fix the bug.
+13,The teacher supported the theory.,N,Q,NQ_vs_QN,Could the teacher fail to support the theory?,Is it false that the teacher supported the theory?
+13,The teacher supported the theory.,N,M,NM_vs_MN,The teacher allegedly failed to support the theory.,The teacher failed to allegedly support the theory.
+13,The teacher supported the theory.,N,T,NT_vs_TN,The teacher will fail to support the theory tomorrow.,The teacher failed to have supported the theory earlier.
+13,The teacher supported the theory.,Q,M,QM_vs_MQ,Could the teacher allegedly support the theory?,Is it alleged that the teacher supported the theory?
+13,The teacher supported the theory.,Q,T,QT_vs_TQ,Could the teacher support the theory tomorrow?,Will the teacher support the theory tomorrow?
+13,The teacher supported the theory.,M,T,MT_vs_TM,The teacher will allegedly support the theory tomorrow.,The teacher was allegedly going to support the theory.
+14,The robot completed the repair.,N,Q,NQ_vs_QN,Could the robot fail to complete the repair?,Is it false that the robot completed the repair?
+14,The robot completed the repair.,N,M,NM_vs_MN,The robot allegedly failed to complete the repair.,The robot failed to allegedly complete the repair.
+14,The robot completed the repair.,N,T,NT_vs_TN,The robot will fail to complete the repair tomorrow.,The robot failed to have completed the repair earlier.
+14,The robot completed the repair.,Q,M,QM_vs_MQ,Could the robot allegedly complete the repair?,Is it alleged that the robot completed the repair?
+14,The robot completed the repair.,Q,T,QT_vs_TQ,Could the robot complete the repair tomorrow?,Will the robot complete the repair tomorrow?
+14,The robot completed the repair.,M,T,MT_vs_TM,The robot will allegedly complete the repair tomorrow.,The robot was allegedly going to complete the repair.
+15,The scientist guarded the treasure.,N,Q,NQ_vs_QN,Could the scientist fail to guard the treasure?,Is it false that the scientist guarded the treasure?
+15,The scientist guarded the treasure.,N,M,NM_vs_MN,The scientist allegedly failed to guard the treasure.,The scientist failed to allegedly guard the treasure.
+15,The scientist guarded the treasure.,N,T,NT_vs_TN,The scientist will fail to guard the treasure tomorrow.,The scientist failed to have guarded the treasure earlier.
+15,The scientist guarded the treasure.,Q,M,QM_vs_MQ,Could the scientist allegedly guard the treasure?,Is it alleged that the scientist guarded the treasure?
+15,The scientist guarded the treasure.,Q,T,QT_vs_TQ,Could the scientist guard the treasure tomorrow?,Will the scientist guard the treasure tomorrow?
+15,The scientist guarded the treasure.,M,T,MT_vs_TM,The scientist will allegedly guard the treasure tomorrow.,The scientist was allegedly going to guard the treasure.
+16,The scientist signed the treaty.,N,Q,NQ_vs_QN,Could the scientist fail to sign the treaty?,Is it false that the scientist signed the treaty?
+16,The scientist signed the treaty.,N,M,NM_vs_MN,The scientist allegedly failed to sign the treaty.,The scientist failed to allegedly sign the treaty.
+16,The scientist signed the treaty.,N,T,NT_vs_TN,The scientist will fail to sign the treaty tomorrow.,The scientist failed to have signed the treaty earlier.
+16,The scientist signed the treaty.,Q,M,QM_vs_MQ,Could the scientist allegedly sign the treaty?,Is it alleged that the scientist signed the treaty?
+16,The scientist signed the treaty.,Q,T,QT_vs_TQ,Could the scientist sign the treaty tomorrow?,Will the scientist sign the treaty tomorrow?
+16,The scientist signed the treaty.,M,T,MT_vs_TM,The scientist will allegedly sign the treaty tomorrow.,The scientist was allegedly going to sign the treaty.
+17,The oracle guarded the treasure.,N,Q,NQ_vs_QN,Could the oracle fail to guard the treasure?,Is it false that the oracle guarded the treasure?
+17,The oracle guarded the treasure.,N,M,NM_vs_MN,The oracle allegedly failed to guard the treasure.,The oracle failed to allegedly guard the treasure.
+17,The oracle guarded the treasure.,N,T,NT_vs_TN,The oracle will fail to guard the treasure tomorrow.,The oracle failed to have guarded the treasure earlier.
+17,The oracle guarded the treasure.,Q,M,QM_vs_MQ,Could the oracle allegedly guard the treasure?,Is it alleged that the oracle guarded the treasure?
+17,The oracle guarded the treasure.,Q,T,QT_vs_TQ,Could the oracle guard the treasure tomorrow?,Will the oracle guard the treasure tomorrow?
+17,The oracle guarded the treasure.,M,T,MT_vs_TM,The oracle will allegedly guard the treasure tomorrow.,The oracle was allegedly going to guard the treasure.
+18,The queen signed the treaty.,N,Q,NQ_vs_QN,Could the queen fail to sign the treaty?,Is it false that the queen signed the treaty?
+18,The queen signed the treaty.,N,M,NM_vs_MN,The queen allegedly failed to sign the treaty.,The queen failed to allegedly sign the treaty.
+18,The queen signed the treaty.,N,T,NT_vs_TN,The queen will fail to sign the treaty tomorrow.,The queen failed to have signed the treaty earlier.
+18,The queen signed the treaty.,Q,M,QM_vs_MQ,Could the queen allegedly sign the treaty?,Is it alleged that the queen signed the treaty?
+18,The queen signed the treaty.,Q,T,QT_vs_TQ,Could the queen sign the treaty tomorrow?,Will the queen sign the treaty tomorrow?
+18,The queen signed the treaty.,M,T,MT_vs_TM,The queen will allegedly sign the treaty tomorrow.,The queen was allegedly going to sign the treaty.
+19,The wizard guarded the treasure.,N,Q,NQ_vs_QN,Could the wizard fail to guard the treasure?,Is it false that the wizard guarded the treasure?
+19,The wizard guarded the treasure.,N,M,NM_vs_MN,The wizard allegedly failed to guard the treasure.,The wizard failed to allegedly guard the treasure.
+19,The wizard guarded the treasure.,N,T,NT_vs_TN,The wizard will fail to guard the treasure tomorrow.,The wizard failed to have guarded the treasure earlier.
+19,The wizard guarded the treasure.,Q,M,QM_vs_MQ,Could the wizard allegedly guard the treasure?,Is it alleged that the wizard guarded the treasure?
+19,The wizard guarded the treasure.,Q,T,QT_vs_TQ,Could the wizard guard the treasure tomorrow?,Will the wizard guard the treasure tomorrow?
+19,The wizard guarded the treasure.,M,T,MT_vs_TM,The wizard will allegedly guard the treasure tomorrow.,The wizard was allegedly going to guard the treasure.
+20,The queen supported the theory.,N,Q,NQ_vs_QN,Could the queen fail to support the theory?,Is it false that the queen supported the theory?
+20,The queen supported the theory.,N,M,NM_vs_MN,The queen allegedly failed to support the theory.,The queen failed to allegedly support the theory.
+20,The queen supported the theory.,N,T,NT_vs_TN,The queen will fail to support the theory tomorrow.,The queen failed to have supported the theory earlier.
+20,The queen supported the theory.,Q,M,QM_vs_MQ,Could the queen allegedly support the theory?,Is it alleged that the queen supported the theory?
+20,The queen supported the theory.,Q,T,QT_vs_TQ,Could the queen support the theory tomorrow?,Will the queen support the theory tomorrow?
+20,The queen supported the theory.,M,T,MT_vs_TM,The queen will allegedly support the theory tomorrow.,The queen was allegedly going to support the theory.
+21,The scientist approved the treatment.,N,Q,NQ_vs_QN,Could the scientist fail to approve the treatment?,Is it false that the scientist approved the treatment?
+21,The scientist approved the treatment.,N,M,NM_vs_MN,The scientist allegedly failed to approve the treatment.,The scientist failed to allegedly approve the treatment.
+21,The scientist approved the treatment.,N,T,NT_vs_TN,The scientist will fail to approve the treatment tomorrow.,The scientist failed to have approved the treatment earlier.
+21,The scientist approved the treatment.,Q,M,QM_vs_MQ,Could the scientist allegedly approve the treatment?,Is it alleged that the scientist approved the treatment?
+21,The scientist approved the treatment.,Q,T,QT_vs_TQ,Could the scientist approve the treatment tomorrow?,Will the scientist approve the treatment tomorrow?
+21,The scientist approved the treatment.,M,T,MT_vs_TM,The scientist will allegedly approve the treatment tomorrow.,The scientist was allegedly going to approve the treatment.
+22,The researcher accepted the explanation.,N,Q,NQ_vs_QN,Could the researcher fail to accept the explanation?,Is it false that the researcher accepted the explanation?
+22,The researcher accepted the explanation.,N,M,NM_vs_MN,The researcher allegedly failed to accept the explanation.,The researcher failed to allegedly accept the explanation.
+22,The researcher accepted the explanation.,N,T,NT_vs_TN,The researcher will fail to accept the explanation tomorrow.,The researcher failed to have accepted the explanation earlier.
+22,The researcher accepted the explanation.,Q,M,QM_vs_MQ,Could the researcher allegedly accept the explanation?,Is it alleged that the researcher accepted the explanation?
+22,The researcher accepted the explanation.,Q,T,QT_vs_TQ,Could the researcher accept the explanation tomorrow?,Will the researcher accept the explanation tomorrow?
+22,The researcher accepted the explanation.,M,T,MT_vs_TM,The researcher will allegedly accept the explanation tomorrow.,The researcher was allegedly going to accept the explanation.
+23,The researcher verified the report.,N,Q,NQ_vs_QN,Could the researcher fail to verify the report?,Is it false that the researcher verified the report?
+23,The researcher verified the report.,N,M,NM_vs_MN,The researcher allegedly failed to verify the report.,The researcher failed to allegedly verify the report.
+23,The researcher verified the report.,N,T,NT_vs_TN,The researcher will fail to verify the report tomorrow.,The researcher failed to have verified the report earlier.
+23,The researcher verified the report.,Q,M,QM_vs_MQ,Could the researcher allegedly verify the report?,Is it alleged that the researcher verified the report?
+23,The researcher verified the report.,Q,T,QT_vs_TQ,Could the researcher verify the report tomorrow?,Will the researcher verify the report tomorrow?
+23,The researcher verified the report.,M,T,MT_vs_TM,The researcher will allegedly verify the report tomorrow.,The researcher was allegedly going to verify the report.
+24,The scientist opened the portal.,N,Q,NQ_vs_QN,Could the scientist fail to open the portal?,Is it false that the scientist opened the portal?
+24,The scientist opened the portal.,N,M,NM_vs_MN,The scientist allegedly failed to open the portal.,The scientist failed to allegedly open the portal.
+24,The scientist opened the portal.,N,T,NT_vs_TN,The scientist will fail to open the portal tomorrow.,The scientist failed to have opened the portal earlier.
+24,The scientist opened the portal.,Q,M,QM_vs_MQ,Could the scientist allegedly open the portal?,Is it alleged that the scientist opened the portal?
+24,The scientist opened the portal.,Q,T,QT_vs_TQ,Could the scientist open the portal tomorrow?,Will the scientist open the portal tomorrow?
+24,The scientist opened the portal.,M,T,MT_vs_TM,The scientist will allegedly open the portal tomorrow.,The scientist was allegedly going to open the portal.
+25,The robot confirmed the answer.,N,Q,NQ_vs_QN,Could the robot fail to confirm the answer?,Is it false that the robot confirmed the answer?
+25,The robot confirmed the answer.,N,M,NM_vs_MN,The robot allegedly failed to confirm the answer.,The robot failed to allegedly confirm the answer.
+25,The robot confirmed the answer.,N,T,NT_vs_TN,The robot will fail to confirm the answer tomorrow.,The robot failed to have confirmed the answer earlier.
+25,The robot confirmed the answer.,Q,M,QM_vs_MQ,Could the robot allegedly confirm the answer?,Is it alleged that the robot confirmed the answer?
+25,The robot confirmed the answer.,Q,T,QT_vs_TQ,Could the robot confirm the answer tomorrow?,Will the robot confirm the answer tomorrow?
+25,The robot confirmed the answer.,M,T,MT_vs_TM,The robot will allegedly confirm the answer tomorrow.,The robot was allegedly going to confirm the answer.
+26,The queen accepted the explanation.,N,Q,NQ_vs_QN,Could the queen fail to accept the explanation?,Is it false that the queen accepted the explanation?
+26,The queen accepted the explanation.,N,M,NM_vs_MN,The queen allegedly failed to accept the explanation.,The queen failed to allegedly accept the explanation.
+26,The queen accepted the explanation.,N,T,NT_vs_TN,The queen will fail to accept the explanation tomorrow.,The queen failed to have accepted the explanation earlier.
+26,The queen accepted the explanation.,Q,M,QM_vs_MQ,Could the queen allegedly accept the explanation?,Is it alleged that the queen accepted the explanation?
+26,The queen accepted the explanation.,Q,T,QT_vs_TQ,Could the queen accept the explanation tomorrow?,Will the queen accept the explanation tomorrow?
+26,The queen accepted the explanation.,M,T,MT_vs_TM,The queen will allegedly accept the explanation tomorrow.,The queen was allegedly going to accept the explanation.
+27,The teacher accepted the explanation.,N,Q,NQ_vs_QN,Could the teacher fail to accept the explanation?,Is it false that the teacher accepted the explanation?
+27,The teacher accepted the explanation.,N,M,NM_vs_MN,The teacher allegedly failed to accept the explanation.,The teacher failed to allegedly accept the explanation.
+27,The teacher accepted the explanation.,N,T,NT_vs_TN,The teacher will fail to accept the explanation tomorrow.,The teacher failed to have accepted the explanation earlier.
+27,The teacher accepted the explanation.,Q,M,QM_vs_MQ,Could the teacher allegedly accept the explanation?,Is it alleged that the teacher accepted the explanation?
+27,The teacher accepted the explanation.,Q,T,QT_vs_TQ,Could the teacher accept the explanation tomorrow?,Will the teacher accept the explanation tomorrow?
+27,The teacher accepted the explanation.,M,T,MT_vs_TM,The teacher will allegedly accept the explanation tomorrow.,The teacher was allegedly going to accept the explanation.
+28,The doctor approved the treatment.,N,Q,NQ_vs_QN,Could the doctor fail to approve the treatment?,Is it false that the doctor approved the treatment?
+28,The doctor approved the treatment.,N,M,NM_vs_MN,The doctor allegedly failed to approve the treatment.,The doctor failed to allegedly approve the treatment.
+28,The doctor approved the treatment.,N,T,NT_vs_TN,The doctor will fail to approve the treatment tomorrow.,The doctor failed to have approved the treatment earlier.
+28,The doctor approved the treatment.,Q,M,QM_vs_MQ,Could the doctor allegedly approve the treatment?,Is it alleged that the doctor approved the treatment?
+28,The doctor approved the treatment.,Q,T,QT_vs_TQ,Could the doctor approve the treatment tomorrow?,Will the doctor approve the treatment tomorrow?
+28,The doctor approved the treatment.,M,T,MT_vs_TM,The doctor will allegedly approve the treatment tomorrow.,The doctor was allegedly going to approve the treatment.
+29,The dragon fixed the bug.,N,Q,NQ_vs_QN,Could the dragon fail to fix the bug?,Is it false that the dragon fixed the bug?
+29,The dragon fixed the bug.,N,M,NM_vs_MN,The dragon allegedly failed to fix the bug.,The dragon failed to allegedly fix the bug.
+29,The dragon fixed the bug.,N,T,NT_vs_TN,The dragon will fail to fix the bug tomorrow.,The dragon failed to have fixed the bug earlier.
+29,The dragon fixed the bug.,Q,M,QM_vs_MQ,Could the dragon allegedly fix the bug?,Is it alleged that the dragon fixed the bug?
+29,The dragon fixed the bug.,Q,T,QT_vs_TQ,Could the dragon fix the bug tomorrow?,Will the dragon fix the bug tomorrow?
+29,The dragon fixed the bug.,M,T,MT_vs_TM,The dragon will allegedly fix the bug tomorrow.,The dragon was allegedly going to fix the bug.
+30,The manager signed the treaty.,N,Q,NQ_vs_QN,Could the manager fail to sign the treaty?,Is it false that the manager signed the treaty?
+30,The manager signed the treaty.,N,M,NM_vs_MN,The manager allegedly failed to sign the treaty.,The manager failed to allegedly sign the treaty.
+30,The manager signed the treaty.,N,T,NT_vs_TN,The manager will fail to sign the treaty tomorrow.,The manager failed to have signed the treaty earlier.
+30,The manager signed the treaty.,Q,M,QM_vs_MQ,Could the manager allegedly sign the treaty?,Is it alleged that the manager signed the treaty?
+30,The manager signed the treaty.,Q,T,QT_vs_TQ,Could the manager sign the treaty tomorrow?,Will the manager sign the treaty tomorrow?
+30,The manager signed the treaty.,M,T,MT_vs_TM,The manager will allegedly sign the treaty tomorrow.,The manager was allegedly going to sign the treaty.
+31,The researcher confirmed the answer.,N,Q,NQ_vs_QN,Could the researcher fail to confirm the answer?,Is it false that the researcher confirmed the answer?
+31,The researcher confirmed the answer.,N,M,NM_vs_MN,The researcher allegedly failed to confirm the answer.,The researcher failed to allegedly confirm the answer.
+31,The researcher confirmed the answer.,N,T,NT_vs_TN,The researcher will fail to confirm the answer tomorrow.,The researcher failed to have confirmed the answer earlier.
+31,The researcher confirmed the answer.,Q,M,QM_vs_MQ,Could the researcher allegedly confirm the answer?,Is it alleged that the researcher confirmed the answer?
+31,The researcher confirmed the answer.,Q,T,QT_vs_TQ,Could the researcher confirm the answer tomorrow?,Will the researcher confirm the answer tomorrow?
+31,The researcher confirmed the answer.,M,T,MT_vs_TM,The researcher will allegedly confirm the answer tomorrow.,The researcher was allegedly going to confirm the answer.
+32,The oracle completed the repair.,N,Q,NQ_vs_QN,Could the oracle fail to complete the repair?,Is it false that the oracle completed the repair?
+32,The oracle completed the repair.,N,M,NM_vs_MN,The oracle allegedly failed to complete the repair.,The oracle failed to allegedly complete the repair.
+32,The oracle completed the repair.,N,T,NT_vs_TN,The oracle will fail to complete the repair tomorrow.,The oracle failed to have completed the repair earlier.
+32,The oracle completed the repair.,Q,M,QM_vs_MQ,Could the oracle allegedly complete the repair?,Is it alleged that the oracle completed the repair?
+32,The oracle completed the repair.,Q,T,QT_vs_TQ,Could the oracle complete the repair tomorrow?,Will the oracle complete the repair tomorrow?
+32,The oracle completed the repair.,M,T,MT_vs_TM,The oracle will allegedly complete the repair tomorrow.,The oracle was allegedly going to complete the repair.
+33,The analyst opened the portal.,N,Q,NQ_vs_QN,Could the analyst fail to open the portal?,Is it false that the analyst opened the portal?
+33,The analyst opened the portal.,N,M,NM_vs_MN,The analyst allegedly failed to open the portal.,The analyst failed to allegedly open the portal.
+33,The analyst opened the portal.,N,T,NT_vs_TN,The analyst will fail to open the portal tomorrow.,The analyst failed to have opened the portal earlier.
+33,The analyst opened the portal.,Q,M,QM_vs_MQ,Could the analyst allegedly open the portal?,Is it alleged that the analyst opened the portal?
+33,The analyst opened the portal.,Q,T,QT_vs_TQ,Could the analyst open the portal tomorrow?,Will the analyst open the portal tomorrow?
+33,The analyst opened the portal.,M,T,MT_vs_TM,The analyst will allegedly open the portal tomorrow.,The analyst was allegedly going to open the portal.
+34,The doctor opened the portal.,N,Q,NQ_vs_QN,Could the doctor fail to open the portal?,Is it false that the doctor opened the portal?
+34,The doctor opened the portal.,N,M,NM_vs_MN,The doctor allegedly failed to open the portal.,The doctor failed to allegedly open the portal.
+34,The doctor opened the portal.,N,T,NT_vs_TN,The doctor will fail to open the portal tomorrow.,The doctor failed to have opened the portal earlier.
+34,The doctor opened the portal.,Q,M,QM_vs_MQ,Could the doctor allegedly open the portal?,Is it alleged that the doctor opened the portal?
+34,The doctor opened the portal.,Q,T,QT_vs_TQ,Could the doctor open the portal tomorrow?,Will the doctor open the portal tomorrow?
+34,The doctor opened the portal.,M,T,MT_vs_TM,The doctor will allegedly open the portal tomorrow.,The doctor was allegedly going to open the portal.
+35,The queen fixed the bug.,N,Q,NQ_vs_QN,Could the queen fail to fix the bug?,Is it false that the queen fixed the bug?
+35,The queen fixed the bug.,N,M,NM_vs_MN,The queen allegedly failed to fix the bug.,The queen failed to allegedly fix the bug.
+35,The queen fixed the bug.,N,T,NT_vs_TN,The queen will fail to fix the bug tomorrow.,The queen failed to have fixed the bug earlier.
+35,The queen fixed the bug.,Q,M,QM_vs_MQ,Could the queen allegedly fix the bug?,Is it alleged that the queen fixed the bug?
+35,The queen fixed the bug.,Q,T,QT_vs_TQ,Could the queen fix the bug tomorrow?,Will the queen fix the bug tomorrow?
+35,The queen fixed the bug.,M,T,MT_vs_TM,The queen will allegedly fix the bug tomorrow.,The queen was allegedly going to fix the bug.
+36,The scientist fixed the bug.,N,Q,NQ_vs_QN,Could the scientist fail to fix the bug?,Is it false that the scientist fixed the bug?
+36,The scientist fixed the bug.,N,M,NM_vs_MN,The scientist allegedly failed to fix the bug.,The scientist failed to allegedly fix the bug.
+36,The scientist fixed the bug.,N,T,NT_vs_TN,The scientist will fail to fix the bug tomorrow.,The scientist failed to have fixed the bug earlier.
+36,The scientist fixed the bug.,Q,M,QM_vs_MQ,Could the scientist allegedly fix the bug?,Is it alleged that the scientist fixed the bug?
+36,The scientist fixed the bug.,Q,T,QT_vs_TQ,Could the scientist fix the bug tomorrow?,Will the scientist fix the bug tomorrow?
+36,The scientist fixed the bug.,M,T,MT_vs_TM,The scientist will allegedly fix the bug tomorrow.,The scientist was allegedly going to fix the bug.
+37,The queen confirmed the answer.,N,Q,NQ_vs_QN,Could the queen fail to confirm the answer?,Is it false that the queen confirmed the answer?
+37,The queen confirmed the answer.,N,M,NM_vs_MN,The queen allegedly failed to confirm the answer.,The queen failed to allegedly confirm the answer.
+37,The queen confirmed the answer.,N,T,NT_vs_TN,The queen will fail to confirm the answer tomorrow.,The queen failed to have confirmed the answer earlier.
+37,The queen confirmed the answer.,Q,M,QM_vs_MQ,Could the queen allegedly confirm the answer?,Is it alleged that the queen confirmed the answer?
+37,The queen confirmed the answer.,Q,T,QT_vs_TQ,Could the queen confirm the answer tomorrow?,Will the queen confirm the answer tomorrow?
+37,The queen confirmed the answer.,M,T,MT_vs_TM,The queen will allegedly confirm the answer tomorrow.,The queen was allegedly going to confirm the answer.
+38,The scientist confirmed the answer.,N,Q,NQ_vs_QN,Could the scientist fail to confirm the answer?,Is it false that the scientist confirmed the answer?
+38,The scientist confirmed the answer.,N,M,NM_vs_MN,The scientist allegedly failed to confirm the answer.,The scientist failed to allegedly confirm the answer.
+38,The scientist confirmed the answer.,N,T,NT_vs_TN,The scientist will fail to confirm the answer tomorrow.,The scientist failed to have confirmed the answer earlier.
+38,The scientist confirmed the answer.,Q,M,QM_vs_MQ,Could the scientist allegedly confirm the answer?,Is it alleged that the scientist confirmed the answer?
+38,The scientist confirmed the answer.,Q,T,QT_vs_TQ,Could the scientist confirm the answer tomorrow?,Will the scientist confirm the answer tomorrow?
+38,The scientist confirmed the answer.,M,T,MT_vs_TM,The scientist will allegedly confirm the answer tomorrow.,The scientist was allegedly going to confirm the answer.
+39,The researcher completed the repair.,N,Q,NQ_vs_QN,Could the researcher fail to complete the repair?,Is it false that the researcher completed the repair?
+39,The researcher completed the repair.,N,M,NM_vs_MN,The researcher allegedly failed to complete the repair.,The researcher failed to allegedly complete the repair.
+39,The researcher completed the repair.,N,T,NT_vs_TN,The researcher will fail to complete the repair tomorrow.,The researcher failed to have completed the repair earlier.
+39,The researcher completed the repair.,Q,M,QM_vs_MQ,Could the researcher allegedly complete the repair?,Is it alleged that the researcher completed the repair?
+39,The researcher completed the repair.,Q,T,QT_vs_TQ,Could the researcher complete the repair tomorrow?,Will the researcher complete the repair tomorrow?
+39,The researcher completed the repair.,M,T,MT_vs_TM,The researcher will allegedly complete the repair tomorrow.,The researcher was allegedly going to complete the repair.
+40,The manager accepted the explanation.,N,Q,NQ_vs_QN,Could the manager fail to accept the explanation?,Is it false that the manager accepted the explanation?
+40,The manager accepted the explanation.,N,M,NM_vs_MN,The manager allegedly failed to accept the explanation.,The manager failed to allegedly accept the explanation.
+40,The manager accepted the explanation.,N,T,NT_vs_TN,The manager will fail to accept the explanation tomorrow.,The manager failed to have accepted the explanation earlier.
+40,The manager accepted the explanation.,Q,M,QM_vs_MQ,Could the manager allegedly accept the explanation?,Is it alleged that the manager accepted the explanation?
+40,The manager accepted the explanation.,Q,T,QT_vs_TQ,Could the manager accept the explanation tomorrow?,Will the manager accept the explanation tomorrow?
+40,The manager accepted the explanation.,M,T,MT_vs_TM,The manager will allegedly accept the explanation tomorrow.,The manager was allegedly going to accept the explanation.
+41,The analyst confirmed the answer.,N,Q,NQ_vs_QN,Could the analyst fail to confirm the answer?,Is it false that the analyst confirmed the answer?
+41,The analyst confirmed the answer.,N,M,NM_vs_MN,The analyst allegedly failed to confirm the answer.,The analyst failed to allegedly confirm the answer.
+41,The analyst confirmed the answer.,N,T,NT_vs_TN,The analyst will fail to confirm the answer tomorrow.,The analyst failed to have confirmed the answer earlier.
+41,The analyst confirmed the answer.,Q,M,QM_vs_MQ,Could the analyst allegedly confirm the answer?,Is it alleged that the analyst confirmed the answer?
+41,The analyst confirmed the answer.,Q,T,QT_vs_TQ,Could the analyst confirm the answer tomorrow?,Will the analyst confirm the answer tomorrow?
+41,The analyst confirmed the answer.,M,T,MT_vs_TM,The analyst will allegedly confirm the answer tomorrow.,The analyst was allegedly going to confirm the answer.
+42,The dragon opened the portal.,N,Q,NQ_vs_QN,Could the dragon fail to open the portal?,Is it false that the dragon opened the portal?
+42,The dragon opened the portal.,N,M,NM_vs_MN,The dragon allegedly failed to open the portal.,The dragon failed to allegedly open the portal.
+42,The dragon opened the portal.,N,T,NT_vs_TN,The dragon will fail to open the portal tomorrow.,The dragon failed to have opened the portal earlier.
+42,The dragon opened the portal.,Q,M,QM_vs_MQ,Could the dragon allegedly open the portal?,Is it alleged that the dragon opened the portal?
+42,The dragon opened the portal.,Q,T,QT_vs_TQ,Could the dragon open the portal tomorrow?,Will the dragon open the portal tomorrow?
+42,The dragon opened the portal.,M,T,MT_vs_TM,The dragon will allegedly open the portal tomorrow.,The dragon was allegedly going to open the portal.
+43,The pirate fixed the bug.,N,Q,NQ_vs_QN,Could the pirate fail to fix the bug?,Is it false that the pirate fixed the bug?
+43,The pirate fixed the bug.,N,M,NM_vs_MN,The pirate allegedly failed to fix the bug.,The pirate failed to allegedly fix the bug.
+43,The pirate fixed the bug.,N,T,NT_vs_TN,The pirate will fail to fix the bug tomorrow.,The pirate failed to have fixed the bug earlier.
+43,The pirate fixed the bug.,Q,M,QM_vs_MQ,Could the pirate allegedly fix the bug?,Is it alleged that the pirate fixed the bug?
+43,The pirate fixed the bug.,Q,T,QT_vs_TQ,Could the pirate fix the bug tomorrow?,Will the pirate fix the bug tomorrow?
+43,The pirate fixed the bug.,M,T,MT_vs_TM,The pirate will allegedly fix the bug tomorrow.,The pirate was allegedly going to fix the bug.
+44,The oracle verified the report.,N,Q,NQ_vs_QN,Could the oracle fail to verify the report?,Is it false that the oracle verified the report?
+44,The oracle verified the report.,N,M,NM_vs_MN,The oracle allegedly failed to verify the report.,The oracle failed to allegedly verify the report.
+44,The oracle verified the report.,N,T,NT_vs_TN,The oracle will fail to verify the report tomorrow.,The oracle failed to have verified the report earlier.
+44,The oracle verified the report.,Q,M,QM_vs_MQ,Could the oracle allegedly verify the report?,Is it alleged that the oracle verified the report?
+44,The oracle verified the report.,Q,T,QT_vs_TQ,Could the oracle verify the report tomorrow?,Will the oracle verify the report tomorrow?
+44,The oracle verified the report.,M,T,MT_vs_TM,The oracle will allegedly verify the report tomorrow.,The oracle was allegedly going to verify the report.
+45,The engineer confirmed the answer.,N,Q,NQ_vs_QN,Could the engineer fail to confirm the answer?,Is it false that the engineer confirmed the answer?
+45,The engineer confirmed the answer.,N,M,NM_vs_MN,The engineer allegedly failed to confirm the answer.,The engineer failed to allegedly confirm the answer.
+45,The engineer confirmed the answer.,N,T,NT_vs_TN,The engineer will fail to confirm the answer tomorrow.,The engineer failed to have confirmed the answer earlier.
+45,The engineer confirmed the answer.,Q,M,QM_vs_MQ,Could the engineer allegedly confirm the answer?,Is it alleged that the engineer confirmed the answer?
+45,The engineer confirmed the answer.,Q,T,QT_vs_TQ,Could the engineer confirm the answer tomorrow?,Will the engineer confirm the answer tomorrow?
+45,The engineer confirmed the answer.,M,T,MT_vs_TM,The engineer will allegedly confirm the answer tomorrow.,The engineer was allegedly going to confirm the answer.
+46,The manager opened the portal.,N,Q,NQ_vs_QN,Could the manager fail to open the portal?,Is it false that the manager opened the portal?
+46,The manager opened the portal.,N,M,NM_vs_MN,The manager allegedly failed to open the portal.,The manager failed to allegedly open the portal.
+46,The manager opened the portal.,N,T,NT_vs_TN,The manager will fail to open the portal tomorrow.,The manager failed to have opened the portal earlier.
+46,The manager opened the portal.,Q,M,QM_vs_MQ,Could the manager allegedly open the portal?,Is it alleged that the manager opened the portal?
+46,The manager opened the portal.,Q,T,QT_vs_TQ,Could the manager open the portal tomorrow?,Will the manager open the portal tomorrow?
+46,The manager opened the portal.,M,T,MT_vs_TM,The manager will allegedly open the portal tomorrow.,The manager was allegedly going to open the portal.
+47,The architect completed the repair.,N,Q,NQ_vs_QN,Could the architect fail to complete the repair?,Is it false that the architect completed the repair?
+47,The architect completed the repair.,N,M,NM_vs_MN,The architect allegedly failed to complete the repair.,The architect failed to allegedly complete the repair.
+47,The architect completed the repair.,N,T,NT_vs_TN,The architect will fail to complete the repair tomorrow.,The architect failed to have completed the repair earlier.
+47,The architect completed the repair.,Q,M,QM_vs_MQ,Could the architect allegedly complete the repair?,Is it alleged that the architect completed the repair?
+47,The architect completed the repair.,Q,T,QT_vs_TQ,Could the architect complete the repair tomorrow?,Will the architect complete the repair tomorrow?
+47,The architect completed the repair.,M,T,MT_vs_TM,The architect will allegedly complete the repair tomorrow.,The architect was allegedly going to complete the repair.
+48,The architect signed the treaty.,N,Q,NQ_vs_QN,Could the architect fail to sign the treaty?,Is it false that the architect signed the treaty?
+48,The architect signed the treaty.,N,M,NM_vs_MN,The architect allegedly failed to sign the treaty.,The architect failed to allegedly sign the treaty.
+48,The architect signed the treaty.,N,T,NT_vs_TN,The architect will fail to sign the treaty tomorrow.,The architect failed to have signed the treaty earlier.
+48,The architect signed the treaty.,Q,M,QM_vs_MQ,Could the architect allegedly sign the treaty?,Is it alleged that the architect signed the treaty?
+48,The architect signed the treaty.,Q,T,QT_vs_TQ,Could the architect sign the treaty tomorrow?,Will the architect sign the treaty tomorrow?
+48,The architect signed the treaty.,M,T,MT_vs_TM,The architect will allegedly sign the treaty tomorrow.,The architect was allegedly going to sign the treaty.
+49,The scientist accepted the explanation.,N,Q,NQ_vs_QN,Could the scientist fail to accept the explanation?,Is it false that the scientist accepted the explanation?
+49,The scientist accepted the explanation.,N,M,NM_vs_MN,The scientist allegedly failed to accept the explanation.,The scientist failed to allegedly accept the explanation.
+49,The scientist accepted the explanation.,N,T,NT_vs_TN,The scientist will fail to accept the explanation tomorrow.,The scientist failed to have accepted the explanation earlier.
+49,The scientist accepted the explanation.,Q,M,QM_vs_MQ,Could the scientist allegedly accept the explanation?,Is it alleged that the scientist accepted the explanation?
+49,The scientist accepted the explanation.,Q,T,QT_vs_TQ,Could the scientist accept the explanation tomorrow?,Will the scientist accept the explanation tomorrow?
+49,The scientist accepted the explanation.,M,T,MT_vs_TM,The scientist will allegedly accept the explanation tomorrow.,The scientist was allegedly going to accept the explanation.
+50,The wizard fixed the bug.,N,Q,NQ_vs_QN,Could the wizard fail to fix the bug?,Is it false that the wizard fixed the bug?
+50,The wizard fixed the bug.,N,M,NM_vs_MN,The wizard allegedly failed to fix the bug.,The wizard failed to allegedly fix the bug.
+50,The wizard fixed the bug.,N,T,NT_vs_TN,The wizard will fail to fix the bug tomorrow.,The wizard failed to have fixed the bug earlier.
+50,The wizard fixed the bug.,Q,M,QM_vs_MQ,Could the wizard allegedly fix the bug?,Is it alleged that the wizard fixed the bug?
+50,The wizard fixed the bug.,Q,T,QT_vs_TQ,Could the wizard fix the bug tomorrow?,Will the wizard fix the bug tomorrow?
+50,The wizard fixed the bug.,M,T,MT_vs_TM,The wizard will allegedly fix the bug tomorrow.,The wizard was allegedly going to fix the bug.
+51,The designer fixed the bug.,N,Q,NQ_vs_QN,Could the designer fail to fix the bug?,Is it false that the designer fixed the bug?
+51,The designer fixed the bug.,N,M,NM_vs_MN,The designer allegedly failed to fix the bug.,The designer failed to allegedly fix the bug.
+51,The designer fixed the bug.,N,T,NT_vs_TN,The designer will fail to fix the bug tomorrow.,The designer failed to have fixed the bug earlier.
+51,The designer fixed the bug.,Q,M,QM_vs_MQ,Could the designer allegedly fix the bug?,Is it alleged that the designer fixed the bug?
+51,The designer fixed the bug.,Q,T,QT_vs_TQ,Could the designer fix the bug tomorrow?,Will the designer fix the bug tomorrow?
+51,The designer fixed the bug.,M,T,MT_vs_TM,The designer will allegedly fix the bug tomorrow.,The designer was allegedly going to fix the bug.
+52,The teacher guarded the treasure.,N,Q,NQ_vs_QN,Could the teacher fail to guard the treasure?,Is it false that the teacher guarded the treasure?
+52,The teacher guarded the treasure.,N,M,NM_vs_MN,The teacher allegedly failed to guard the treasure.,The teacher failed to allegedly guard the treasure.
+52,The teacher guarded the treasure.,N,T,NT_vs_TN,The teacher will fail to guard the treasure tomorrow.,The teacher failed to have guarded the treasure earlier.
+52,The teacher guarded the treasure.,Q,M,QM_vs_MQ,Could the teacher allegedly guard the treasure?,Is it alleged that the teacher guarded the treasure?
+52,The teacher guarded the treasure.,Q,T,QT_vs_TQ,Could the teacher guard the treasure tomorrow?,Will the teacher guard the treasure tomorrow?
+52,The teacher guarded the treasure.,M,T,MT_vs_TM,The teacher will allegedly guard the treasure tomorrow.,The teacher was allegedly going to guard the treasure.
+53,The manager supported the theory.,N,Q,NQ_vs_QN,Could the manager fail to support the theory?,Is it false that the manager supported the theory?
+53,The manager supported the theory.,N,M,NM_vs_MN,The manager allegedly failed to support the theory.,The manager failed to allegedly support the theory.
+53,The manager supported the theory.,N,T,NT_vs_TN,The manager will fail to support the theory tomorrow.,The manager failed to have supported the theory earlier.
+53,The manager supported the theory.,Q,M,QM_vs_MQ,Could the manager allegedly support the theory?,Is it alleged that the manager supported the theory?
+53,The manager supported the theory.,Q,T,QT_vs_TQ,Could the manager support the theory tomorrow?,Will the manager support the theory tomorrow?
+53,The manager supported the theory.,M,T,MT_vs_TM,The manager will allegedly support the theory tomorrow.,The manager was allegedly going to support the theory.
+54,The designer signed the treaty.,N,Q,NQ_vs_QN,Could the designer fail to sign the treaty?,Is it false that the designer signed the treaty?
+54,The designer signed the treaty.,N,M,NM_vs_MN,The designer allegedly failed to sign the treaty.,The designer failed to allegedly sign the treaty.
+54,The designer signed the treaty.,N,T,NT_vs_TN,The designer will fail to sign the treaty tomorrow.,The designer failed to have signed the treaty earlier.
+54,The designer signed the treaty.,Q,M,QM_vs_MQ,Could the designer allegedly sign the treaty?,Is it alleged that the designer signed the treaty?
+54,The designer signed the treaty.,Q,T,QT_vs_TQ,Could the designer sign the treaty tomorrow?,Will the designer sign the treaty tomorrow?
+54,The designer signed the treaty.,M,T,MT_vs_TM,The designer will allegedly sign the treaty tomorrow.,The designer was allegedly going to sign the treaty.
+55,The wizard approved the treatment.,N,Q,NQ_vs_QN,Could the wizard fail to approve the treatment?,Is it false that the wizard approved the treatment?
+55,The wizard approved the treatment.,N,M,NM_vs_MN,The wizard allegedly failed to approve the treatment.,The wizard failed to allegedly approve the treatment.
+55,The wizard approved the treatment.,N,T,NT_vs_TN,The wizard will fail to approve the treatment tomorrow.,The wizard failed to have approved the treatment earlier.
+55,The wizard approved the treatment.,Q,M,QM_vs_MQ,Could the wizard allegedly approve the treatment?,Is it alleged that the wizard approved the treatment?
+55,The wizard approved the treatment.,Q,T,QT_vs_TQ,Could the wizard approve the treatment tomorrow?,Will the wizard approve the treatment tomorrow?
+55,The wizard approved the treatment.,M,T,MT_vs_TM,The wizard will allegedly approve the treatment tomorrow.,The wizard was allegedly going to approve the treatment.
+56,The dragon guarded the treasure.,N,Q,NQ_vs_QN,Could the dragon fail to guard the treasure?,Is it false that the dragon guarded the treasure?
+56,The dragon guarded the treasure.,N,M,NM_vs_MN,The dragon allegedly failed to guard the treasure.,The dragon failed to allegedly guard the treasure.
+56,The dragon guarded the treasure.,N,T,NT_vs_TN,The dragon will fail to guard the treasure tomorrow.,The dragon failed to have guarded the treasure earlier.
+56,The dragon guarded the treasure.,Q,M,QM_vs_MQ,Could the dragon allegedly guard the treasure?,Is it alleged that the dragon guarded the treasure?
+56,The dragon guarded the treasure.,Q,T,QT_vs_TQ,Could the dragon guard the treasure tomorrow?,Will the dragon guard the treasure tomorrow?
+56,The dragon guarded the treasure.,M,T,MT_vs_TM,The dragon will allegedly guard the treasure tomorrow.,The dragon was allegedly going to guard the treasure.
+57,The architect opened the portal.,N,Q,NQ_vs_QN,Could the architect fail to open the portal?,Is it false that the architect opened the portal?
+57,The architect opened the portal.,N,M,NM_vs_MN,The architect allegedly failed to open the portal.,The architect failed to allegedly open the portal.
+57,The architect opened the portal.,N,T,NT_vs_TN,The architect will fail to open the portal tomorrow.,The architect failed to have opened the portal earlier.
+57,The architect opened the portal.,Q,M,QM_vs_MQ,Could the architect allegedly open the portal?,Is it alleged that the architect opened the portal?
+57,The architect opened the portal.,Q,T,QT_vs_TQ,Could the architect open the portal tomorrow?,Will the architect open the portal tomorrow?
+57,The architect opened the portal.,M,T,MT_vs_TM,The architect will allegedly open the portal tomorrow.,The architect was allegedly going to open the portal.
+58,The oracle accepted the explanation.,N,Q,NQ_vs_QN,Could the oracle fail to accept the explanation?,Is it false that the oracle accepted the explanation?
+58,The oracle accepted the explanation.,N,M,NM_vs_MN,The oracle allegedly failed to accept the explanation.,The oracle failed to allegedly accept the explanation.
+58,The oracle accepted the explanation.,N,T,NT_vs_TN,The oracle will fail to accept the explanation tomorrow.,The oracle failed to have accepted the explanation earlier.
+58,The oracle accepted the explanation.,Q,M,QM_vs_MQ,Could the oracle allegedly accept the explanation?,Is it alleged that the oracle accepted the explanation?
+58,The oracle accepted the explanation.,Q,T,QT_vs_TQ,Could the oracle accept the explanation tomorrow?,Will the oracle accept the explanation tomorrow?
+58,The oracle accepted the explanation.,M,T,MT_vs_TM,The oracle will allegedly accept the explanation tomorrow.,The oracle was allegedly going to accept the explanation.
+59,The engineer approved the treatment.,N,Q,NQ_vs_QN,Could the engineer fail to approve the treatment?,Is it false that the engineer approved the treatment?
+59,The engineer approved the treatment.,N,M,NM_vs_MN,The engineer allegedly failed to approve the treatment.,The engineer failed to allegedly approve the treatment.
+59,The engineer approved the treatment.,N,T,NT_vs_TN,The engineer will fail to approve the treatment tomorrow.,The engineer failed to have approved the treatment earlier.
+59,The engineer approved the treatment.,Q,M,QM_vs_MQ,Could the engineer allegedly approve the treatment?,Is it alleged that the engineer approved the treatment?
+59,The engineer approved the treatment.,Q,T,QT_vs_TQ,Could the engineer approve the treatment tomorrow?,Will the engineer approve the treatment tomorrow?
+59,The engineer approved the treatment.,M,T,MT_vs_TM,The engineer will allegedly approve the treatment tomorrow.,The engineer was allegedly going to approve the treatment.
+60,The designer approved the treatment.,N,Q,NQ_vs_QN,Could the designer fail to approve the treatment?,Is it false that the designer approved the treatment?
+60,The designer approved the treatment.,N,M,NM_vs_MN,The designer allegedly failed to approve the treatment.,The designer failed to allegedly approve the treatment.
+60,The designer approved the treatment.,N,T,NT_vs_TN,The designer will fail to approve the treatment tomorrow.,The designer failed to have approved the treatment earlier.
+60,The designer approved the treatment.,Q,M,QM_vs_MQ,Could the designer allegedly approve the treatment?,Is it alleged that the designer approved the treatment?
+60,The designer approved the treatment.,Q,T,QT_vs_TQ,Could the designer approve the treatment tomorrow?,Will the designer approve the treatment tomorrow?
+60,The designer approved the treatment.,M,T,MT_vs_TM,The designer will allegedly approve the treatment tomorrow.,The designer was allegedly going to approve the treatment.
+61,The oracle signed the treaty.,N,Q,NQ_vs_QN,Could the oracle fail to sign the treaty?,Is it false that the oracle signed the treaty?
+61,The oracle signed the treaty.,N,M,NM_vs_MN,The oracle allegedly failed to sign the treaty.,The oracle failed to allegedly sign the treaty.
+61,The oracle signed the treaty.,N,T,NT_vs_TN,The oracle will fail to sign the treaty tomorrow.,The oracle failed to have signed the treaty earlier.
+61,The oracle signed the treaty.,Q,M,QM_vs_MQ,Could the oracle allegedly sign the treaty?,Is it alleged that the oracle signed the treaty?
+61,The oracle signed the treaty.,Q,T,QT_vs_TQ,Could the oracle sign the treaty tomorrow?,Will the oracle sign the treaty tomorrow?
+61,The oracle signed the treaty.,M,T,MT_vs_TM,The oracle will allegedly sign the treaty tomorrow.,The oracle was allegedly going to sign the treaty.
+62,The teacher opened the portal.,N,Q,NQ_vs_QN,Could the teacher fail to open the portal?,Is it false that the teacher opened the portal?
+62,The teacher opened the portal.,N,M,NM_vs_MN,The teacher allegedly failed to open the portal.,The teacher failed to allegedly open the portal.
+62,The teacher opened the portal.,N,T,NT_vs_TN,The teacher will fail to open the portal tomorrow.,The teacher failed to have opened the portal earlier.
+62,The teacher opened the portal.,Q,M,QM_vs_MQ,Could the teacher allegedly open the portal?,Is it alleged that the teacher opened the portal?
+62,The teacher opened the portal.,Q,T,QT_vs_TQ,Could the teacher open the portal tomorrow?,Will the teacher open the portal tomorrow?
+62,The teacher opened the portal.,M,T,MT_vs_TM,The teacher will allegedly open the portal tomorrow.,The teacher was allegedly going to open the portal.
+63,The oracle fixed the bug.,N,Q,NQ_vs_QN,Could the oracle fail to fix the bug?,Is it false that the oracle fixed the bug?
+63,The oracle fixed the bug.,N,M,NM_vs_MN,The oracle allegedly failed to fix the bug.,The oracle failed to allegedly fix the bug.
+63,The oracle fixed the bug.,N,T,NT_vs_TN,The oracle will fail to fix the bug tomorrow.,The oracle failed to have fixed the bug earlier.
+63,The oracle fixed the bug.,Q,M,QM_vs_MQ,Could the oracle allegedly fix the bug?,Is it alleged that the oracle fixed the bug?
+63,The oracle fixed the bug.,Q,T,QT_vs_TQ,Could the oracle fix the bug tomorrow?,Will the oracle fix the bug tomorrow?
+63,The oracle fixed the bug.,M,T,MT_vs_TM,The oracle will allegedly fix the bug tomorrow.,The oracle was allegedly going to fix the bug.
+64,The scientist supported the theory.,N,Q,NQ_vs_QN,Could the scientist fail to support the theory?,Is it false that the scientist supported the theory?
+64,The scientist supported the theory.,N,M,NM_vs_MN,The scientist allegedly failed to support the theory.,The scientist failed to allegedly support the theory.
+64,The scientist supported the theory.,N,T,NT_vs_TN,The scientist will fail to support the theory tomorrow.,The scientist failed to have supported the theory earlier.
+64,The scientist supported the theory.,Q,M,QM_vs_MQ,Could the scientist allegedly support the theory?,Is it alleged that the scientist supported the theory?
+64,The scientist supported the theory.,Q,T,QT_vs_TQ,Could the scientist support the theory tomorrow?,Will the scientist support the theory tomorrow?
+64,The scientist supported the theory.,M,T,MT_vs_TM,The scientist will allegedly support the theory tomorrow.,The scientist was allegedly going to support the theory.
+65,The queen completed the repair.,N,Q,NQ_vs_QN,Could the queen fail to complete the repair?,Is it false that the queen completed the repair?
+65,The queen completed the repair.,N,M,NM_vs_MN,The queen allegedly failed to complete the repair.,The queen failed to allegedly complete the repair.
+65,The queen completed the repair.,N,T,NT_vs_TN,The queen will fail to complete the repair tomorrow.,The queen failed to have completed the repair earlier.
+65,The queen completed the repair.,Q,M,QM_vs_MQ,Could the queen allegedly complete the repair?,Is it alleged that the queen completed the repair?
+65,The queen completed the repair.,Q,T,QT_vs_TQ,Could the queen complete the repair tomorrow?,Will the queen complete the repair tomorrow?
+65,The queen completed the repair.,M,T,MT_vs_TM,The queen will allegedly complete the repair tomorrow.,The queen was allegedly going to complete the repair.
+66,The programmer opened the portal.,N,Q,NQ_vs_QN,Could the programmer fail to open the portal?,Is it false that the programmer opened the portal?
+66,The programmer opened the portal.,N,M,NM_vs_MN,The programmer allegedly failed to open the portal.,The programmer failed to allegedly open the portal.
+66,The programmer opened the portal.,N,T,NT_vs_TN,The programmer will fail to open the portal tomorrow.,The programmer failed to have opened the portal earlier.
+66,The programmer opened the portal.,Q,M,QM_vs_MQ,Could the programmer allegedly open the portal?,Is it alleged that the programmer opened the portal?
+66,The programmer opened the portal.,Q,T,QT_vs_TQ,Could the programmer open the portal tomorrow?,Will the programmer open the portal tomorrow?
+66,The programmer opened the portal.,M,T,MT_vs_TM,The programmer will allegedly open the portal tomorrow.,The programmer was allegedly going to open the portal.
+67,The pirate supported the theory.,N,Q,NQ_vs_QN,Could the pirate fail to support the theory?,Is it false that the pirate supported the theory?
+67,The pirate supported the theory.,N,M,NM_vs_MN,The pirate allegedly failed to support the theory.,The pirate failed to allegedly support the theory.
+67,The pirate supported the theory.,N,T,NT_vs_TN,The pirate will fail to support the theory tomorrow.,The pirate failed to have supported the theory earlier.
+67,The pirate supported the theory.,Q,M,QM_vs_MQ,Could the pirate allegedly support the theory?,Is it alleged that the pirate supported the theory?
+67,The pirate supported the theory.,Q,T,QT_vs_TQ,Could the pirate support the theory tomorrow?,Will the pirate support the theory tomorrow?
+67,The pirate supported the theory.,M,T,MT_vs_TM,The pirate will allegedly support the theory tomorrow.,The pirate was allegedly going to support the theory.
+68,The architect supported the theory.,N,Q,NQ_vs_QN,Could the architect fail to support the theory?,Is it false that the architect supported the theory?
+68,The architect supported the theory.,N,M,NM_vs_MN,The architect allegedly failed to support the theory.,The architect failed to allegedly support the theory.
+68,The architect supported the theory.,N,T,NT_vs_TN,The architect will fail to support the theory tomorrow.,The architect failed to have supported the theory earlier.
+68,The architect supported the theory.,Q,M,QM_vs_MQ,Could the architect allegedly support the theory?,Is it alleged that the architect supported the theory?
+68,The architect supported the theory.,Q,T,QT_vs_TQ,Could the architect support the theory tomorrow?,Will the architect support the theory tomorrow?
+68,The architect supported the theory.,M,T,MT_vs_TM,The architect will allegedly support the theory tomorrow.,The architect was allegedly going to support the theory.
+69,The wizard accepted the explanation.,N,Q,NQ_vs_QN,Could the wizard fail to accept the explanation?,Is it false that the wizard accepted the explanation?
+69,The wizard accepted the explanation.,N,M,NM_vs_MN,The wizard allegedly failed to accept the explanation.,The wizard failed to allegedly accept the explanation.
+69,The wizard accepted the explanation.,N,T,NT_vs_TN,The wizard will fail to accept the explanation tomorrow.,The wizard failed to have accepted the explanation earlier.
+69,The wizard accepted the explanation.,Q,M,QM_vs_MQ,Could the wizard allegedly accept the explanation?,Is it alleged that the wizard accepted the explanation?
+69,The wizard accepted the explanation.,Q,T,QT_vs_TQ,Could the wizard accept the explanation tomorrow?,Will the wizard accept the explanation tomorrow?
+69,The wizard accepted the explanation.,M,T,MT_vs_TM,The wizard will allegedly accept the explanation tomorrow.,The wizard was allegedly going to accept the explanation.
+70,The designer confirmed the answer.,N,Q,NQ_vs_QN,Could the designer fail to confirm the answer?,Is it false that the designer confirmed the answer?
+70,The designer confirmed the answer.,N,M,NM_vs_MN,The designer allegedly failed to confirm the answer.,The designer failed to allegedly confirm the answer.
+70,The designer confirmed the answer.,N,T,NT_vs_TN,The designer will fail to confirm the answer tomorrow.,The designer failed to have confirmed the answer earlier.
+70,The designer confirmed the answer.,Q,M,QM_vs_MQ,Could the designer allegedly confirm the answer?,Is it alleged that the designer confirmed the answer?
+70,The designer confirmed the answer.,Q,T,QT_vs_TQ,Could the designer confirm the answer tomorrow?,Will the designer confirm the answer tomorrow?
+70,The designer confirmed the answer.,M,T,MT_vs_TM,The designer will allegedly confirm the answer tomorrow.,The designer was allegedly going to confirm the answer.
+71,The robot supported the theory.,N,Q,NQ_vs_QN,Could the robot fail to support the theory?,Is it false that the robot supported the theory?
+71,The robot supported the theory.,N,M,NM_vs_MN,The robot allegedly failed to support the theory.,The robot failed to allegedly support the theory.
+71,The robot supported the theory.,N,T,NT_vs_TN,The robot will fail to support the theory tomorrow.,The robot failed to have supported the theory earlier.
+71,The robot supported the theory.,Q,M,QM_vs_MQ,Could the robot allegedly support the theory?,Is it alleged that the robot supported the theory?
+71,The robot supported the theory.,Q,T,QT_vs_TQ,Could the robot support the theory tomorrow?,Will the robot support the theory tomorrow?
+71,The robot supported the theory.,M,T,MT_vs_TM,The robot will allegedly support the theory tomorrow.,The robot was allegedly going to support the theory.
+72,The wizard completed the repair.,N,Q,NQ_vs_QN,Could the wizard fail to complete the repair?,Is it false that the wizard completed the repair?
+72,The wizard completed the repair.,N,M,NM_vs_MN,The wizard allegedly failed to complete the repair.,The wizard failed to allegedly complete the repair.
+72,The wizard completed the repair.,N,T,NT_vs_TN,The wizard will fail to complete the repair tomorrow.,The wizard failed to have completed the repair earlier.
+72,The wizard completed the repair.,Q,M,QM_vs_MQ,Could the wizard allegedly complete the repair?,Is it alleged that the wizard completed the repair?
+72,The wizard completed the repair.,Q,T,QT_vs_TQ,Could the wizard complete the repair tomorrow?,Will the wizard complete the repair tomorrow?
+72,The wizard completed the repair.,M,T,MT_vs_TM,The wizard will allegedly complete the repair tomorrow.,The wizard was allegedly going to complete the repair.
+73,The programmer supported the theory.,N,Q,NQ_vs_QN,Could the programmer fail to support the theory?,Is it false that the programmer supported the theory?
+73,The programmer supported the theory.,N,M,NM_vs_MN,The programmer allegedly failed to support the theory.,The programmer failed to allegedly support the theory.
+73,The programmer supported the theory.,N,T,NT_vs_TN,The programmer will fail to support the theory tomorrow.,The programmer failed to have supported the theory earlier.
+73,The programmer supported the theory.,Q,M,QM_vs_MQ,Could the programmer allegedly support the theory?,Is it alleged that the programmer supported the theory?
+73,The programmer supported the theory.,Q,T,QT_vs_TQ,Could the programmer support the theory tomorrow?,Will the programmer support the theory tomorrow?
+73,The programmer supported the theory.,M,T,MT_vs_TM,The programmer will allegedly support the theory tomorrow.,The programmer was allegedly going to support the theory.
+74,The architect verified the report.,N,Q,NQ_vs_QN,Could the architect fail to verify the report?,Is it false that the architect verified the report?
+74,The architect verified the report.,N,M,NM_vs_MN,The architect allegedly failed to verify the report.,The architect failed to allegedly verify the report.
+74,The architect verified the report.,N,T,NT_vs_TN,The architect will fail to verify the report tomorrow.,The architect failed to have verified the report earlier.
+74,The architect verified the report.,Q,M,QM_vs_MQ,Could the architect allegedly verify the report?,Is it alleged that the architect verified the report?
+74,The architect verified the report.,Q,T,QT_vs_TQ,Could the architect verify the report tomorrow?,Will the architect verify the report tomorrow?
+74,The architect verified the report.,M,T,MT_vs_TM,The architect will allegedly verify the report tomorrow.,The architect was allegedly going to verify the report.
+75,The engineer opened the portal.,N,Q,NQ_vs_QN,Could the engineer fail to open the portal?,Is it false that the engineer opened the portal?
+75,The engineer opened the portal.,N,M,NM_vs_MN,The engineer allegedly failed to open the portal.,The engineer failed to allegedly open the portal.
+75,The engineer opened the portal.,N,T,NT_vs_TN,The engineer will fail to open the portal tomorrow.,The engineer failed to have opened the portal earlier.
+75,The engineer opened the portal.,Q,M,QM_vs_MQ,Could the engineer allegedly open the portal?,Is it alleged that the engineer opened the portal?
+75,The engineer opened the portal.,Q,T,QT_vs_TQ,Could the engineer open the portal tomorrow?,Will the engineer open the portal tomorrow?
+75,The engineer opened the portal.,M,T,MT_vs_TM,The engineer will allegedly open the portal tomorrow.,The engineer was allegedly going to open the portal.
+76,The oracle opened the portal.,N,Q,NQ_vs_QN,Could the oracle fail to open the portal?,Is it false that the oracle opened the portal?
+76,The oracle opened the portal.,N,M,NM_vs_MN,The oracle allegedly failed to open the portal.,The oracle failed to allegedly open the portal.
+76,The oracle opened the portal.,N,T,NT_vs_TN,The oracle will fail to open the portal tomorrow.,The oracle failed to have opened the portal earlier.
+76,The oracle opened the portal.,Q,M,QM_vs_MQ,Could the oracle allegedly open the portal?,Is it alleged that the oracle opened the portal?
+76,The oracle opened the portal.,Q,T,QT_vs_TQ,Could the oracle open the portal tomorrow?,Will the oracle open the portal tomorrow?
+76,The oracle opened the portal.,M,T,MT_vs_TM,The oracle will allegedly open the portal tomorrow.,The oracle was allegedly going to open the portal.
+77,The manager confirmed the answer.,N,Q,NQ_vs_QN,Could the manager fail to confirm the answer?,Is it false that the manager confirmed the answer?
+77,The manager confirmed the answer.,N,M,NM_vs_MN,The manager allegedly failed to confirm the answer.,The manager failed to allegedly confirm the answer.
+77,The manager confirmed the answer.,N,T,NT_vs_TN,The manager will fail to confirm the answer tomorrow.,The manager failed to have confirmed the answer earlier.
+77,The manager confirmed the answer.,Q,M,QM_vs_MQ,Could the manager allegedly confirm the answer?,Is it alleged that the manager confirmed the answer?
+77,The manager confirmed the answer.,Q,T,QT_vs_TQ,Could the manager confirm the answer tomorrow?,Will the manager confirm the answer tomorrow?
+77,The manager confirmed the answer.,M,T,MT_vs_TM,The manager will allegedly confirm the answer tomorrow.,The manager was allegedly going to confirm the answer.
+78,The dragon signed the treaty.,N,Q,NQ_vs_QN,Could the dragon fail to sign the treaty?,Is it false that the dragon signed the treaty?
+78,The dragon signed the treaty.,N,M,NM_vs_MN,The dragon allegedly failed to sign the treaty.,The dragon failed to allegedly sign the treaty.
+78,The dragon signed the treaty.,N,T,NT_vs_TN,The dragon will fail to sign the treaty tomorrow.,The dragon failed to have signed the treaty earlier.
+78,The dragon signed the treaty.,Q,M,QM_vs_MQ,Could the dragon allegedly sign the treaty?,Is it alleged that the dragon signed the treaty?
+78,The dragon signed the treaty.,Q,T,QT_vs_TQ,Could the dragon sign the treaty tomorrow?,Will the dragon sign the treaty tomorrow?
+78,The dragon signed the treaty.,M,T,MT_vs_TM,The dragon will allegedly sign the treaty tomorrow.,The dragon was allegedly going to sign the treaty.
+79,The manager approved the treatment.,N,Q,NQ_vs_QN,Could the manager fail to approve the treatment?,Is it false that the manager approved the treatment?
+79,The manager approved the treatment.,N,M,NM_vs_MN,The manager allegedly failed to approve the treatment.,The manager failed to allegedly approve the treatment.
+79,The manager approved the treatment.,N,T,NT_vs_TN,The manager will fail to approve the treatment tomorrow.,The manager failed to have approved the treatment earlier.
+79,The manager approved the treatment.,Q,M,QM_vs_MQ,Could the manager allegedly approve the treatment?,Is it alleged that the manager approved the treatment?
+79,The manager approved the treatment.,Q,T,QT_vs_TQ,Could the manager approve the treatment tomorrow?,Will the manager approve the treatment tomorrow?
+79,The manager approved the treatment.,M,T,MT_vs_TM,The manager will allegedly approve the treatment tomorrow.,The manager was allegedly going to approve the treatment.

@@ -15,16 +15,16 @@ This file tracks the concrete changes required after the external review.
 - Ran a BERT syntax layerwise/pooling sanity check: layer `0` already reaches `1.0`, so syntax is not a last-layer geometry result.
 - Ran a DeBERTa-v3-small spot-check: Linear SVC supports `delta > concat > y_only`, while logistic regression remains mixed.
 - Ran larger/modern spot-checks on `bert-large-uncased` and `microsoft/deberta-v3-base`; `delta` is best for both Linear SVC and logistic regression on both models.
+- Added UPAT hard-holdout as an explicit boundary result instead of leaving it hidden in CSV files.
+- Ran full-semantic pooling ablation for BERT, RoBERTa, and GPT-2.
+- Added confusion-matrix analysis with negation-vs-non-negation recall.
 
 ### Must still be run
 
-1. `x_only/y_only/concat/delta` for every non-syntax holdout split that is still missing this breakdown.
-2. Full-semantic pooling ablation:
-   - BERT/RoBERTa `[CLS]` vs mean pooling
-   - GPT-2/DistilGPT-2 last-token vs mean pooling
+1. Resolve UPAT by expansion or matched-capacity comparison against the main dataset.
+2. `x_only/y_only/concat/delta` for every non-syntax holdout split that is still missing this breakdown.
 3. Convert large/modern spot-checks into multiseed runs if Track 1 is promoted to submission.
-4. Error analysis over confusion matrices.
-5. Proper related-work table and bibliography.
+4. Proper related-work table and bibliography in final citation format.
 
 ## Track 2: Signed Permutation Coherence
 
@@ -36,6 +36,9 @@ This file tracks the concrete changes required after the external review.
 - Added dataset audit showing zero duplicate endpoint rows.
 - Reframed negation failures as a substantive result.
 - Added GPT-2/DistilGPT-2 signed-permutation replication. `QMT` remains below null for both decoders, while negation-containing triples are model-dependent.
+- Added GPT-2/DistilGPT-2 pairwise composition summaries.
+- Added multiple-testing correction over the 20 model/triple signed-permutation tests.
+- Added a working hypothesis for why `QMT` is cross-architecture coherent.
 
 ### Must still be run
 
@@ -44,10 +47,11 @@ This file tracks the concrete changes required after the external review.
 3. Add endpoint-only controls.
 4. Add layerwise and pooling ablations for composition diagnostics.
 5. Add focused negation analysis before expanding the operator set.
-6. Re-run composition summaries for decoder models, not only third-order signed permutation summaries.
+6. Convert the QMT working hypothesis into a grammar-generated preregistered test.
 
 ## Global blockers
 
 - Related work positioning is incomplete.
+- Related work positioning is started, but citation formatting and comparison table remain incomplete.
 - Current model set now has draft-level larger/modern spot-checks, but not multiseed larger-model confirmation.
 - Mean pooling needs empirical justification for the full-semantic and composition experiments.

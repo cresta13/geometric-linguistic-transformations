@@ -146,7 +146,13 @@ def main():
     spotcheck = pd.read_csv(ROOT / "track1_spotcheck_results" / "spotcheck_representation_ablation_pivot.csv")
     large_spotcheck_path = ROOT / "track1_spotcheck_large_results" / "spotcheck_representation_ablation_pivot.csv"
     large_spotcheck = pd.read_csv(large_spotcheck_path) if large_spotcheck_path.exists() else pd.DataFrame()
+    upat_ablation = pd.read_csv(ROOT / "upat_audit_results" / "csv" / "ablation.csv")
+    upat_mcnemar = pd.read_csv(ROOT / "upat_audit_results" / "csv" / "mcnemar_delta_vs_y.csv")
+    pooling = pd.read_csv(ROOT / "full_semantic_pooling_ablation_results" / "full_semantic_pooling_ablation_pivot.csv")
+    confusion_neg = pd.read_csv(ROOT / "results" / "confusion_negation_summary.csv")
     decoder_jacobi = pd.read_csv(ROOT / "lie_algebraic_identities_decoder_results" / "csv" / "jacobi_summary.csv")
+    decoder_composition = pd.read_csv(ROOT / "lie_composition_decoder_results" / "csv" / "lie_composition_summary.csv")
+    multiple_testing = pd.read_csv(ROOT / "lie_algebraic_identities_results" / "csv" / "signed_permutation_multiple_testing.csv")
 
     with PdfPages(OUT) as pdf:
         add_text_page(
@@ -160,11 +166,11 @@ def main():
                 ),
                 (
                     "Track 1 fixed result",
-                    "Delta vectors add reproducible information beyond target-only endpoints in the multiseed full-semantic setting. The syntax=1.0 result has now been directly ablated: y_only also reaches 1.0, so the syntax split is interpreted as endpoint/surface leakage rather than as geometry. New BERT-large and DeBERTa-v3-base spot-checks both rank delta best under Linear SVC and logistic regression.",
+                    "Delta vectors add reproducible information beyond target-only endpoints in the multiseed full-semantic setting. The syntax=1.0 result has now been directly ablated: y_only also reaches 1.0, so the syntax split is interpreted as endpoint/surface leakage rather than as geometry. BERT-large and DeBERTa-v3-base spot-checks both rank delta best under Linear SVC and logistic regression. UPAT is now reported as a hard-holdout boundary where delta is not reliably better than y_only.",
                 ),
                 (
                     "Track 2 fixed result",
-                    "Composition order matters. Semantic equivalence shifts noncommutativity distributions with strong statistical tests. The third-order result is now framed as signed permutation coherence, not a formal Jacobi identity. Decoder replication now supports QMT below-null cancellation for GPT-2 and DistilGPT-2.",
+                    "Composition order matters. Semantic equivalence shifts noncommutativity distributions with strong statistical tests. The third-order result is now framed as signed permutation coherence, not a formal Jacobi identity. Decoder pairwise composition is now included. After multiple-testing correction, QMT is the only below-null triple that is stable across all five tested models.",
                 ),
                 (
                     "Main conclusion",
@@ -179,8 +185,14 @@ def main():
         add_table_page(pdf, "DeBERTa-v3-small modern spot-check", format_float_columns(spotcheck), max_rows=5)
         if not large_spotcheck.empty:
             add_table_page(pdf, "BERT-large and DeBERTa-v3-base spot-checks", format_float_columns(large_spotcheck), max_rows=8)
+        add_table_page(pdf, "UPAT hard-holdout representation ablation", format_float_columns(upat_ablation), max_rows=25)
+        add_table_page(pdf, "UPAT delta vs y_only McNemar tests", format_float_columns(upat_mcnemar), max_rows=10)
+        add_table_page(pdf, "Full-semantic pooling ablation", format_float_columns(pooling), max_rows=25)
+        add_table_page(pdf, "Confusion analysis: negation vs non-negation recall", format_float_columns(confusion_neg), max_rows=25)
         add_table_page(pdf, "Third-order signed permutation summary with bootstrap CI", format_float_columns(jacobi), max_rows=20)
         add_table_page(pdf, "Decoder signed permutation replication", format_float_columns(decoder_jacobi), max_rows=10)
+        add_table_page(pdf, "Signed permutation multiple-testing correction", format_float_columns(multiple_testing), max_rows=25)
+        add_table_page(pdf, "Decoder pairwise composition summary", format_float_columns(decoder_composition), max_rows=15)
         add_table_page(pdf, "Antisymmetry sanity check", format_float_columns(antisym), max_rows=30)
         add_table_page(pdf, "Semantic equivalence control", format_float_columns(semantic), max_rows=12)
         add_table_page(pdf, "Semantic equivalence effect sizes", format_float_columns(semantic_effects), max_rows=10)
@@ -202,7 +214,13 @@ def main():
             ("DeBERTa-v3-small spot-check", ROOT / "paper" / "figures" / "spotcheck_deberta_v3_small.png"),
             ("Large/modern spot-check: Linear SVC", ROOT / "paper" / "figures" / "spotcheck_large_linear_svc.png"),
             ("Large/modern spot-check: logistic regression", ROOT / "paper" / "figures" / "spotcheck_large_logreg.png"),
+            ("UPAT hard-holdout ablation", ROOT / "paper" / "figures" / "upat_representation_ablation.png"),
+            ("Full-semantic pooling ablation: Linear SVC", ROOT / "paper" / "figures" / "full_semantic_pooling_linear_svc.png"),
+            ("Full-semantic pooling ablation: logistic regression", ROOT / "paper" / "figures" / "full_semantic_pooling_logreg.png"),
+            ("Confusion analysis: negation recall Linear SVC", ROOT / "paper" / "figures" / "confusion_negation_linear_svc.png"),
+            ("Confusion analysis: negation recall logistic regression", ROOT / "paper" / "figures" / "confusion_negation_logreg.png"),
             ("Decoder signed permutation replication", ROOT / "paper" / "figures" / "decoder_signed_permutation_ratio.png"),
+            ("Decoder pairwise composition", ROOT / "lie_composition_decoder_results" / "figures" / "01_noncommutativity_heatmap.png"),
         ]
 
         for title, path in figures:
@@ -218,7 +236,8 @@ def main():
                 "Duplicate endpoint templates were detected and removed before finalizing today's result. The final dataset has 400 Jacobi rows and zero duplicate endpoint sets.",
                 "New Track 1 result: syntax y_only=1.0 confirms target/surface leakage for the syntax split. New Track 1 spot-check: DeBERTa-v3-small supports delta superiority for Linear SVC but not for logistic regression. New Track 2 result: GPT-2 and DistilGPT-2 both keep QMT below permutation null, while negation triples remain mixed.",
                 "2026-06-13 update: after cache cleanup, BERT-large and DeBERTa-v3-base were both run successfully. Delta is best for both Linear SVC and logistic regression on both models.",
-                "Remaining blockers: representation-ablation tables for every non-syntax holdout split, full-semantic pooling ablation, grammar-generated templates, endpoint-only controls for Track 2, focused negation analysis, and prior-work positioning.",
+                "Second 2026-06-13 update: UPAT is now explicitly reported as a hard-holdout boundary condition. Full-semantic pooling ablation, confusion/negation analysis, decoder pairwise composition, and signed-permutation multiple-testing correction are included.",
+                "Remaining blockers: resolve or expand UPAT, representation-ablation tables for every non-syntax holdout split, grammar-generated templates, endpoint-only controls for Track 2, composition layer/pooling ablations, and final bibliography formatting.",
             ],
         )
 
@@ -226,6 +245,9 @@ def main():
         add_code_listing(pdf, ROOT / "run_syntax_representation_ablation.py", "Code listing: run_syntax_representation_ablation.py")
         add_code_listing(pdf, ROOT / "run_layerwise_pooling_ablation.py", "Code listing: run_layerwise_pooling_ablation.py")
         add_code_listing(pdf, ROOT / "run_track1_spotcheck.py", "Code listing: run_track1_spotcheck.py")
+        add_code_listing(pdf, ROOT / "run_full_semantic_pooling_ablation.py", "Code listing: run_full_semantic_pooling_ablation.py")
+        add_code_listing(pdf, ROOT / "scripts" / "analyze_confusion_negation.py", "Code listing: analyze_confusion_negation.py")
+        add_code_listing(pdf, ROOT / "scripts" / "build_signed_permutation_multiple_testing.py", "Code listing: build_signed_permutation_multiple_testing.py")
 
     print(OUT)
 

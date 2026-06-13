@@ -27,6 +27,8 @@ Current evidence:
   - BERT-large logistic regression: `delta=0.854`, `concat=0.760`, `y_only=0.750`
   - DeBERTa-v3-base Linear SVC: `delta=0.812`, `concat=0.776`, `y_only=0.747`
   - DeBERTa-v3-base logistic regression: `delta=0.752`, `concat=0.694`, `y_only=0.726`
+- UPAT hard-holdout is a boundary result: `delta` is worse than `y_only` for BERT, RoBERTa, and GPT-2, and no UPAT delta-vs-y McNemar test is significant.
+- Full-semantic pooling ablation now supports mean pooling as a defensible main choice, while showing that the decoder effect is partly pooling-dependent.
 
 Scientific status:
 
@@ -34,7 +36,7 @@ This is the more mature paper. It can be written as a representation-geometry re
 
 Main risk:
 
-Some signal may come from target-sentence artifacts rather than pure transformation geometry. The concrete high-risk case is now confirmed: `syntax=1.0` reproduces under `y_only`, so it must be interpreted as a target/surface artifact unless future controls overturn that. The paper needs strong source-only, target-only, delta-only, and paraphrase controls.
+Some signal may come from target-sentence artifacts rather than pure transformation geometry. The concrete high-risk case is now confirmed: `syntax=1.0` reproduces under `y_only`, so it must be interpreted as a target/surface artifact unless future controls overturn that. UPAT also shows that `delta > y_only` is not universal under small hard-holdout regimes. The paper needs strong source-only, target-only, delta-only, and paraphrase controls.
 
 ## Track 2: Signed permutation coherence for linguistic operators
 
@@ -65,6 +67,8 @@ S(A,B,C) = ABC + BCA + CAB - ACB - CBA - BAC
   - GPT-2 `QMT`: ratio `0.539`, CI `[0.519, 0.561]`
   - DistilGPT-2 `QMT`: ratio `0.771`, CI `[0.745, 0.797]`
   - Negation-containing triples remain mixed and model-dependent.
+- Decoder pairwise composition summaries are now added, not only decoder third-order summaries.
+- Multiple-testing correction over `4 triples x 5 models` supports the narrowed claim: `QMT` is the only below-null triple passing across all five tested models.
 
 Scientific status:
 
@@ -103,16 +107,11 @@ Negative results remain part of the research record.
 
 ### Short term
 
-1. Transfer already-computed Track 1 results into the Track 1 draft:
-   - McNemar p-values
-   - multiseed standard deviations
-   - syntax representation breakdown
-   - Section 8 claim revision
+1. Resolve UPAT:
+   - either expand UPAT and match train sizes against the main dataset
+   - or keep it explicitly as a hard negative control and narrow Track 1 claims
 2. Treat the syntax holdout as resolved for the current draft: `y_only=1.0` means the `syntax=1.0` result is a target/surface artifact unless a future redesigned split proves otherwise.
-3. Analyze negation before expanding operators:
-   - isolate negation errors in Track 1 confusion matrices
-   - compare `N` pairwise commutators against non-`N` commutators
-   - test whether negation coherence improves by layer or pooling choice
+3. Convert large/modern Track 1 spot-checks into multiseed runs if Track 1 is promoted to submission.
 4. Build a grammar-driven template generator for `N,Q,M,T` that produces many paraphrases without duplicate endpoints.
 5. Add automated dataset validation:
    - no duplicate endpoint strings within a composition tuple
@@ -143,6 +142,7 @@ Negative results remain part of the research record.
    - multiseed standard deviations are reported
    - at least one prior-work baseline or comparison is written up, such as task vectors or function vectors
    - at least one model outside the original five is included as a spot-check; currently satisfied by BERT-large and DeBERTa-v3-base
+   - UPAT hard-holdout is either resolved experimentally or explicitly reported as a negative boundary condition
 2. Keep Track 2 as a diagnostics paper until grammar-generated templates and endpoint-only controls succeed.
 3. If Track 2 survives those controls, write it as a separate paper rather than merging it into Track 1.
 4. If Track 2 weakens under controls, keep it as a negative/diagnostic section in a broader research note.

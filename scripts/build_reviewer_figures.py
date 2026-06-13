@@ -77,11 +77,65 @@ def plot_decoder_signed_permutation():
     savefig("decoder_signed_permutation_ratio.png")
 
 
+def plot_upat_ablation():
+    path = ROOT / "upat_audit_results" / "csv" / "ablation.csv"
+    if not path.exists():
+        return
+    df = pd.read_csv(path)
+    pivot = df.pivot(index="model", columns="feature", values="acc")
+    keep = [c for c in ["x_only", "y_only", "concat_xy", "delta"] if c in pivot.columns]
+    ax = pivot[keep].plot(kind="bar", figsize=(9, 4.8), color=["#8a8f98", "#d95f02", "#7570b3", "#1b9e77"])
+    ax.set_title("UPAT hard-holdout representation ablation")
+    ax.set_ylabel("Accuracy")
+    ax.set_xlabel("")
+    ax.set_ylim(0, 1.0)
+    ax.axhline(0.2, color="#444444", linestyle="--", linewidth=1, label="chance")
+    ax.legend(loc="lower right", ncol=2)
+    savefig("upat_representation_ablation.png")
+
+
+def plot_pooling_ablation():
+    path = ROOT / "full_semantic_pooling_ablation_results" / "full_semantic_pooling_ablation_pivot.csv"
+    if not path.exists():
+        return
+    df = pd.read_csv(path)
+    for classifier in sorted(df["classifier"].unique()):
+        sub = df[df["classifier"] == classifier].copy()
+        sub["model_pooling"] = sub["model"] + "\n" + sub["pooling"]
+        sub = sub.set_index("model_pooling")[["y_only", "concat", "delta"]]
+        ax = sub.plot(kind="bar", figsize=(10.5, 4.8), color=["#d95f02", "#7570b3", "#1b9e77"])
+        ax.set_title(f"Full-semantic pooling ablation ({classifier})")
+        ax.set_ylabel("Accuracy")
+        ax.set_xlabel("")
+        ax.set_ylim(0, 1.0)
+        ax.legend(loc="lower right", ncol=3)
+        savefig(f"full_semantic_pooling_{classifier}.png")
+
+
+def plot_confusion_negation():
+    path = ROOT / "results" / "confusion_negation_summary.csv"
+    if not path.exists():
+        return
+    df = pd.read_csv(path)
+    for classifier in sorted(df["classifier"].unique()):
+        sub = df[df["classifier"] == classifier].pivot(index="model", columns="group", values="mean_recall")
+        ax = sub[["negation", "non_negation"]].plot(kind="bar", figsize=(8.5, 4.6), color=["#1b9e77", "#7570b3"])
+        ax.set_title(f"Full-semantic recall: negation vs other classes ({classifier})")
+        ax.set_ylabel("Mean recall")
+        ax.set_xlabel("")
+        ax.set_ylim(0, 1.05)
+        ax.legend(loc="lower right")
+        savefig(f"confusion_negation_{classifier}.png")
+
+
 def main():
     plot_syntax_ablation()
     plot_spotcheck()
     plot_large_spotcheck()
     plot_decoder_signed_permutation()
+    plot_upat_ablation()
+    plot_pooling_ablation()
+    plot_confusion_negation()
 
 
 if __name__ == "__main__":

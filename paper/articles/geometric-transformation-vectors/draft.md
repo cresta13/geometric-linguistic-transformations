@@ -14,6 +14,8 @@ Main scripts:
 - Syntax representation ablation: [run_syntax_representation_ablation.py](../../../run_syntax_representation_ablation.py)
 - Layerwise/pooling syntax ablation: [run_layerwise_pooling_ablation.py](../../../run_layerwise_pooling_ablation.py)
 - Modern-model spot-check: [run_track1_spotcheck.py](../../../run_track1_spotcheck.py)
+- Full-semantic pooling ablation: [run_full_semantic_pooling_ablation.py](../../../run_full_semantic_pooling_ablation.py)
+- Confusion/negation analysis: [analyze_confusion_negation.py](../../../scripts/analyze_confusion_negation.py)
 - Diverse dataset experiment: [lie_llm_diverse_dataset_experiment.py](../../../lie_llm_diverse_dataset_experiment.py)
 - Entity holdout: [lie_llm_entity_holdout_experiment.py](../../../lie_llm_entity_holdout_experiment.py)
 - Variant holdout: [lie_llm_variant_holdout_experiment.py](../../../lie_llm_variant_holdout_experiment.py)
@@ -31,6 +33,10 @@ Main result files:
 - Layerwise/pooling syntax ablation: [layerwise_pooling_ablation_top20.csv](../../../layerwise_pooling_ablation_results/layerwise_pooling_ablation_top20.csv)
 - DeBERTa-v3-small spot-check: [spotcheck_representation_ablation_pivot.csv](../../../track1_spotcheck_results/spotcheck_representation_ablation_pivot.csv)
 - Large/modern spot-check: [spotcheck_representation_ablation_pivot.csv](../../../track1_spotcheck_large_results/spotcheck_representation_ablation_pivot.csv)
+- UPAT hard-holdout ablation: [ablation.csv](../../../upat_audit_results/csv/ablation.csv)
+- UPAT McNemar tests: [mcnemar_delta_vs_y.csv](../../../upat_audit_results/csv/mcnemar_delta_vs_y.csv)
+- Full-semantic pooling ablation: [full_semantic_pooling_ablation_pivot.csv](../../../full_semantic_pooling_ablation_results/full_semantic_pooling_ablation_pivot.csv)
+- Confusion negation summary: [confusion_negation_summary.csv](../../../results/confusion_negation_summary.csv)
 - Diverse separability: [ALL_separability.csv](../../../lie_llm_diverse_results/ALL_separability.csv)
 
 ## 1. Motivation
@@ -49,14 +55,22 @@ The key question is no longer "can delta classify transformation labels?" That i
 
 ## 2. Related Work Positioning
 
-This track is adjacent to several lines of work:
+This track is adjacent to several lines of work.
 
-- task arithmetic: vector arithmetic over model/task updates
-- function vectors: activation directions that induce in-context functions
-- analogy probing: relational structure in embedding spaces
-- attribute editing and representation steering
+Task arithmetic represents downstream tasks as directions in model weight space, usually computed as the difference between fine-tuned and pretrained weights. Ilharco et al. show that these task vectors can be added, negated, and composed to steer model behavior. Our work differs in level and object: we do not edit model weights, and our vectors are sentence-pair displacements in representation space rather than parameter-space deltas.
 
-Our distinction is that we study sentence-pair displacement vectors for explicit linguistic transformations and compare `delta` against endpoint baselines. The final paper still needs a proper bibliography table. This is a pre-submission blocker, not optional polish.
+Function vectors study compact internal activation directions that encode in-context functions in autoregressive transformers. Todd et al. use causal mediation to identify heads/layers whose activations can induce task behavior. Our work is less causal and more diagnostic: we ask whether explicit linguistic transformations are recoverable from paired sentence embeddings, and whether those displacement vectors outperform endpoint baselines.
+
+Attribute and entity-representation benchmarks such as RAVEL emphasize disentangling entity attributes in language-model representations. Our experiments share the concern with disentanglement, but focus on transformations between sentence pairs rather than static attributes of one entity mention.
+
+Negation probing is directly relevant because negation is both an easy surface marker in Track 1 and a failure mode in Track 2. Kassner and Schuetze show that pretrained language models can fail to distinguish negated from non-negated cloze probes. This motivates treating negation results carefully: high negation classification accuracy does not imply robust semantic handling of negation.
+
+Working references:
+
+- Ilharco et al. 2023, "Editing Models with Task Arithmetic".
+- Todd et al. 2024, "Function Vectors in Large Language Models".
+- Huang et al. 2024, "RAVEL: Evaluating Interpretability Methods on Disentangling Language Model Representations".
+- Kassner and Schuetze 2020, "Negated and Misprimed Probes for Pretrained Language Models".
 
 ## 3. Experimental Setup
 
@@ -189,13 +203,80 @@ Top rows include:
 
 This strengthens the reinterpretation: for the syntax split, the signal is available from token/form information before deep contextual composition is needed. It does not invalidate the full-semantic delta result, but it removes syntax holdout from the headline evidence.
 
-## 9. Modern and Larger Model Spot-Checks
+## 9. Full-Semantic Pooling Ablation
+
+The full-semantic result was originally based on final-layer mean pooling. We now test mean, `[CLS]`, and last-token pooling on a reduced but still large full-semantic split (`N_BASE=150`, `n_train=1800`, `n_test=3600`) for BERT, RoBERTa, and GPT-2.
+
+![Full-semantic pooling ablation Linear SVC](../../figures/full_semantic_pooling_linear_svc.png)
+
+**Figure 7.** Full-semantic pooling ablation with Linear SVC.
+
+![Full-semantic pooling ablation logistic regression](../../figures/full_semantic_pooling_logreg.png)
+
+**Figure 8.** Full-semantic pooling ablation with logistic regression.
+
+Key rows:
+
+| Model | Pooling | Classifier | y_only | concat | delta |
+|---|---|---|---:|---:|---:|
+| BERT | mean | Linear SVC | `0.881` | `0.885` | `0.896` |
+| BERT | `[CLS]` | Linear SVC | `0.740` | `0.827` | `0.878` |
+| RoBERTa | mean | Linear SVC | `0.843` | `0.863` | `0.879` |
+| RoBERTa | `[CLS]` | Linear SVC | `0.791` | `0.824` | `0.874` |
+| GPT-2 | mean | Linear SVC | `0.754` | `0.782` | `0.845` |
+| GPT-2 | last-token | Linear SVC | `0.720` | `0.747` | `0.756` |
+
+Interpretation:
+
+Mean pooling remains a defensible choice for the main full-semantic experiments. For BERT and RoBERTa, `[CLS]` also preserves a delta advantage but is usually weaker than mean pooling. For GPT-2, last-token pooling still gives `delta > y_only`, but the effect is smaller than with mean pooling; therefore the strong decoder row in the main table should be interpreted as partly pooling-dependent.
+
+## 10. UPAT Hard-Holdout Boundary Result
+
+The UPAT audit is a harder and smaller holdout (`n=80`, 5 classes) designed to reduce easy endpoint shortcuts. It does not support the broad statement that `delta` always beats `y_only`.
+
+![UPAT representation ablation](../../figures/upat_representation_ablation.png)
+
+**Figure 9.** UPAT hard-holdout representation ablation.
+
+| Model | delta | y_only | delta - y_only | McNemar p |
+|---|---:|---:|---:|---:|
+| BERT | `0.725` | `0.825` | `-0.100` | `0.289` |
+| DistilRoBERTa | `0.725` | `0.650` | `+0.075` | `0.375` |
+| RoBERTa | `0.675` | `0.725` | `-0.050` | `0.804` |
+| GPT-2 | `0.425` | `0.475` | `-0.050` | `0.804` |
+| DistilGPT-2 | `0.650` | `0.600` | `+0.050` | `0.727` |
+
+No UPAT `delta` vs `y_only` comparison is significant at `p < 0.05`. This is now treated as a boundary condition:
+
+> Delta vectors add information in the main full-semantic setting and in larger-model spot-checks, but the advantage is not guaranteed under small, hard holdout regimes where target endpoints remain strong and training capacity is limited.
+
+This result should stay in the paper if UPAT remains in the package. Hiding it would create a worse reviewer problem than reporting it as a limitation.
+
+## 11. Confusion and Negation Analysis
+
+The reviewer hypothesis was that negation might be the bridge between Track 1 and Track 2. The full-semantic confusion matrices do not support that simple story.
+
+![Negation recall Linear SVC](../../figures/confusion_negation_linear_svc.png)
+
+**Figure 10.** Negation versus non-negation recall for Linear SVC.
+
+![Negation recall logistic regression](../../figures/confusion_negation_logreg.png)
+
+**Figure 11.** Negation versus non-negation recall for logistic regression.
+
+Across full-semantic classifiers, negation is usually one of the easiest classes, often near perfect recall. The hardest class is typically `uncertainty`, not negation. This means the Track 2 negation failure is not explained by Track 1 being unable to classify single-step negation deltas. The more precise bridge is:
+
+> Negation is easy as a surface-labeled one-step transformation, but unstable as a component of ordered third-order composition.
+
+That distinction should become part of the final narrative.
+
+## 12. Modern and Larger Model Spot-Checks
 
 The first compact modern-architecture substitute was `microsoft/deberta-v3-small`.
 
 ![DeBERTa-v3-small spot-check](../../figures/spotcheck_deberta_v3_small.png)
 
-**Figure 7.** DeBERTa-v3-small representation spot-check.
+**Figure 12.** DeBERTa-v3-small representation spot-check.
 
 | Classifier | x_only | y_only | concat | delta |
 |---|---:|---:|---:|---:|
@@ -208,11 +289,11 @@ After cleaning local caches, two stronger spot-checks were run: `bert-large-unca
 
 ![Large spot-check Linear SVC](../../figures/spotcheck_large_linear_svc.png)
 
-**Figure 8.** Larger/modern model spot-check with Linear SVC.
+**Figure 13.** Larger/modern model spot-check with Linear SVC.
 
 ![Large spot-check logistic regression](../../figures/spotcheck_large_logreg.png)
 
-**Figure 9.** Larger/modern model spot-check with logistic regression.
+**Figure 14.** Larger/modern model spot-check with logistic regression.
 
 | Model | Classifier | x_only | y_only | concat | delta |
 |---|---|---:|---:|---:|---:|
@@ -223,11 +304,11 @@ After cleaning local caches, two stronger spot-checks were run: `bert-large-unca
 
 These two spot-checks are stronger than the initial DeBERTa-v3-small run: `delta` is the best representation for both classifiers on both models. This does not replace full multiseed evaluation, but it removes the previous large-model blocker for the draft-level Track 1 claim.
 
-## 10. Claim Supported by Current Evidence
+## 13. Claim Supported by Current Evidence
 
 Defensible claim:
 
-> Delta vectors add reproducible transformation information beyond target-only endpoint representations across multiple small transformer models.
+> Delta vectors add reproducible transformation information beyond target-only endpoint representations in the main full-semantic setting and in larger-model spot-checks.
 
 Not yet defensible:
 
@@ -235,27 +316,22 @@ Not yet defensible:
 
 The revised paper should center the first claim.
 
-## 11. Current Limitations
+## 14. Current Limitations
 
 - `syntax=1.0` is now confirmed to be target/surface-cue dominated in the current split.
 - `y_only` is high, so target-side leakage is substantial.
+- UPAT hard-holdout results do not show a significant `delta > y_only` advantage and sometimes favor `y_only`.
 - The current core model set is small and old by 2026 standards, but draft-level spot-checks now include BERT-large and DeBERTa-v3-base.
-- Mean pooling is not fully justified for the main full-semantic experiments against `[CLS]` and last-token alternatives.
-- There is no full error analysis of confusion matrices yet.
-- Related work positioning is currently incomplete.
+- Mean pooling is now tested on a reduced full-semantic split, but the main multiseed table still uses only mean pooling.
+- Related work positioning is started but still needs final ACL/EMNLP-quality bibliography formatting.
 
-## 12. Required Pre-Submission Experiments
+## 15. Required Pre-Submission Experiments
 
 1. Produce `x_only/y_only/concat/delta` tables for every remaining holdout beyond syntax and full semantic.
-2. Add full-semantic pooling ablation:
-   - encoder `[CLS]` vs mean pooling
-   - decoder last-token vs mean pooling
+2. Reconcile UPAT with the main full-semantic result by either expanding UPAT, matching train sizes, or clearly treating it as a hard negative control.
 3. Convert the large/modern spot-check into a multiseed run if Track 1 becomes the submission priority.
 4. Add confidence intervals for `delta - y_only` and `delta - concat`.
-5. Add confusion-matrix error analysis:
-   - which transformations are confused?
-   - does negation behave differently?
-6. Add a proper related-work section and bibliography.
+5. Add a final related-work section and bibliography in submission format.
 
 ## Current Status
 

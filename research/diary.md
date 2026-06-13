@@ -165,3 +165,61 @@ Result:
 Interpretation:
 
 This is the strongest Track 1 spot-check so far. Unlike the earlier DeBERTa-v3-small result, both larger/modern models show `delta` as the best representation under both tested classifiers. This does not replace a full multiseed run, but it removes the immediate objection that the effect only appears in the original small/older model set.
+
+## 2026-06-13: Second external review response
+
+The second review identified one fatal remaining issue for Track 1 and several serious issues for both tracks.
+
+### UPAT hard-holdout boundary
+
+The UPAT audit had been present in the package but not discussed in the draft. This was a real problem because it partly contradicts the central Track 1 narrative.
+
+Result:
+
+- BERT: `delta=0.725`, `y_only=0.825`
+- RoBERTa: `delta=0.675`, `y_only=0.725`
+- GPT-2: `delta=0.425`, `y_only=0.475`
+- DistilRoBERTa and DistilGPT-2 favor `delta`, but by small and non-significant margins.
+- No UPAT delta-vs-y McNemar test reaches `p < 0.05`.
+
+Interpretation:
+
+UPAT is now included as a hard negative/boundary condition. The Track 1 claim is narrowed: `delta` adds information in the main full-semantic setting and larger-model spot-checks, but the advantage is not universal under small hard-holdout regimes.
+
+### Full-semantic pooling ablation
+
+We ran a reduced full-semantic pooling ablation (`N_BASE=150`) for BERT, RoBERTa, and GPT-2.
+
+Result:
+
+- BERT mean pooling remains strongest among tested pooling choices.
+- RoBERTa mean pooling remains competitive and usually strongest.
+- GPT-2 last-token pooling preserves `delta > y_only`, but the effect is smaller than with mean pooling.
+
+Interpretation:
+
+Mean pooling is no longer an untested assumption for the main result. The decoder interpretation is now qualified as partly pooling-dependent.
+
+### Confusion and negation analysis
+
+The reviewer expected Track 1 confusion matrices to explain Track 2 negation failures. The analysis showed a subtler result:
+
+- In full-semantic Track 1, negation is usually easy and often near perfect recall.
+- The hardest class is typically `uncertainty`.
+- Therefore Track 2 negation failure is not because single-step negation deltas are unclassifiable.
+
+Interpretation:
+
+Negation is easy as a surface-labeled one-step transformation but unstable inside ordered third-order composition. This is now the bridge between the two tracks.
+
+### Track 2 corrections
+
+We added decoder pairwise composition summaries for GPT-2 and DistilGPT-2, so decoders are not present only in the favorable third-order test.
+
+We also added multiple-testing correction over `4 triples x 5 models = 20` signed-permutation tests. Several triples pass in some models, but `QMT` is the only tested triple passing below-null across all five models. The claim is now:
+
+> QMT is the only cross-architecture stable below-null signed-permutation triple in the current test set.
+
+Working hypothesis:
+
+`Q`, `M`, and `T` are clause-level operators that preserve the event frame while changing illocution, epistemic status, and temporal anchoring. Negation changes truth-conditional polarity and introduces scope/surface interactions, so it is less stable under ordered composition.
