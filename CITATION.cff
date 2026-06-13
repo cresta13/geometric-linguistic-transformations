@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+title: Geometric Linguistic Transformations in Transformer Latent Spaces
+message: If you use this work, please cite it.
+authors:
+  - family-names: Simakova
+    given-names: Anna
+repository-code: https://github.com/cresta13/geometric-linguistic-transformations
+license: MIT
