@@ -20,7 +20,6 @@ Main result files:
 - Semantic equivalence summary: [semantic_equivalence_summary.csv](../../../lie_semantic_equivalence_results/csv/semantic_equivalence_summary.csv)
 - Semantic statistical tests: [semantic_equivalence_tests.csv](../../../lie_semantic_equivalence_results/csv/semantic_equivalence_tests.csv)
 - Semantic effect sizes: [reviewer_semantic_effect_sizes.csv](../../../lie_semantic_equivalence_results/csv/reviewer_semantic_effect_sizes.csv)
-- Antisymmetry summary: [antisymmetry_summary.csv](../../../lie_algebraic_identities_results/csv/antisymmetry_summary.csv)
 - Signed permutation summary: [jacobi_summary.csv](../../../lie_algebraic_identities_results/csv/jacobi_summary.csv)
 - Signed permutation raw rows: [jacobi_raw_all_models.csv](../../../lie_algebraic_identities_results/csv/jacobi_raw_all_models.csv)
 - Multiple-testing correction: [signed_permutation_multiple_testing.csv](../../../lie_algebraic_identities_results/csv/signed_permutation_multiple_testing.csv)
@@ -134,19 +133,22 @@ Interpretation:
 
 The difference is statistically strong. But the control should not be oversold as a clean separation: the standard deviations are substantial and distributions overlap. The correct claim is that semantic-equivalence labels shift the distribution of noncommutativity, not that they perfectly separate pair types.
 
-## 6. Antisymmetry Is a Sanity Check
+## 6. Tautological Antisymmetry Check
 
-The antisymmetry check asks whether:
+The implementation also checks whether:
 
 ```text
 [A,B] ~= -[B,A]
 ```
 
-The result is essentially perfect, but this follows from the implementation. We keep the figure as a sanity check only.
+This is not a scientific result. Given the endpoint definition:
 
-![Antisymmetry cosine heatmap](../../../lie_algebraic_identities_results/figures/01_antisymmetry_cosine_heatmap.png)
+```text
+[A,B] = delta_AB - delta_BA
+[B,A] = delta_BA - delta_AB
+```
 
-**Figure 5.** Antisymmetry sanity check.
+the identity `[A,B] = -[B,A]` follows algebraically for any vectors. We therefore do not treat perfect antisymmetry as evidence about transformers. The check is kept only as an implementation sanity test: if it failed, the code would be wrong.
 
 ## 7. Third-Order Signed Permutation Coherence
 
@@ -191,15 +193,15 @@ Dataset audit:
 
 ![Signed permutation relative norm heatmap](../../../lie_algebraic_identities_results/figures/03_jacobi_relative_norm_heatmap.png)
 
-**Figure 6.** Relative norm of the third-order signed permutation sum.
+**Figure 5.** Relative norm of the third-order signed permutation sum.
 
 ![Signed permutation versus null](../../../lie_algebraic_identities_results/figures/04_jacobi_vs_permutation_null_heatmap.png)
 
-**Figure 7.** Ratio of observed signed permutation norm to permutation-null mean. Values below `1.0` indicate stronger-than-null cancellation.
+**Figure 6.** Ratio of observed signed permutation norm to permutation-null mean. Values below `1.0` indicate stronger-than-null cancellation.
 
 ![Decoder signed permutation ratio](../../figures/decoder_signed_permutation_ratio.png)
 
-**Figure 8.** Decoder-model replication for the signed permutation ratio to permutation-null mean.
+**Figure 7.** Decoder-model replication for the signed permutation ratio to permutation-null mean.
 
 ## 8. Main Third-Order Result
 
@@ -246,6 +248,10 @@ Working hypothesis for why `QMT` is coherent:
 
 This is still a hypothesis, not a proven linguistic theory. It gives a pre-registered direction for the next template-generator experiment: if QMT coherence is real, it should survive grammar-generated paraphrases where question, modality, and tense vary without introducing negation.
 
+Critical template caveat:
+
+The current Lie-style dataset is synthetic and hand-written. Several operations have stable lexical markers: negation often introduces "failed to", questions often begin with a fixed auxiliary pattern, and tense can introduce explicit temporal markers. Variant transfer partially reduces this concern in Track 1, but the Lie-style composition experiments still need grammar-generated templates before submission. Until then, the Track 2 claim is a diagnostic result about this controlled probe set, not a general claim about natural-language operator algebra.
+
 ## 9. Negation Is a Result, Not Just a Limitation
 
 Negation-containing triples are where the structure breaks most clearly. This should be interpreted as a substantive finding.
@@ -280,6 +286,7 @@ Not proven:
 - model-independent operator calculus
 - robustness to grammar-generated templates
 - broad decoder-model generality beyond the two spot-checks
+- lexical-marker independence of the hand-written composition templates
 
 ## 11. Required Pre-Submission Experiments
 

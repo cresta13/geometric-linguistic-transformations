@@ -223,3 +223,31 @@ We also added multiple-testing correction over `4 triples x 5 models = 20` signe
 Working hypothesis:
 
 `Q`, `M`, and `T` are clause-level operators that preserve the event frame while changing illocution, epistemic status, and temporal anchoring. Negation changes truth-conditional polarity and introduces scope/surface interactions, so it is less stable under ordered composition.
+
+## 2026-06-13: Third review response and claim hygiene
+
+The next review correctly flagged several places where the draft could still mislead a reader.
+
+### Antisymmetry
+
+We rewrote antisymmetry as a tautological implementation check. Because `[A,B]` is implemented as `delta_AB - delta_BA`, perfect antisymmetry is guaranteed for arbitrary vectors. It is not evidence about transformer latent spaces.
+
+### UPAT and endpoint confounding
+
+The UPAT result is now treated as a central boundary condition rather than an appendix artifact. In UPAT, `y_only` can beat `delta`, especially for BERT, RoBERTa, and GPT-2. This means the Track 1 claim cannot be universal. The current claim is only that delta adds useful relational information in the main full-semantic setting and several spot-checks, while endpoint-only features remain a serious confounder.
+
+### Layer-0 syntax result
+
+The layer-0 result is now called a red flag. Perfect syntax performance from uncontextualized embedding-layer features means the syntax split is dominated by lexical/form cues.
+
+### Synthetic Lie templates
+
+The Track 2 draft now explicitly states that the current composition dataset is synthetic and hand-written. Stable lexical markers may induce or suppress signed-permutation cancellation. Grammar-generated templates remain required before submission.
+
+### Exploratory Procrustes and shuffle controls
+
+UPAT Procrustes alignment and 100-permutation shuffle controls are now marked exploratory. The Procrustes gains need random-label/random-pairing null baselines. The `p=0.0099` values are resolution-limited by 100 permutations, not precise p-values.
+
+Current status:
+
+The research record is more honest and more useful, but still not main-track submission-ready. The next actual experiments should prioritize Procrustes null baselines, 1000+ shuffles, commutator norm nulls, and grammar-generated Lie templates.

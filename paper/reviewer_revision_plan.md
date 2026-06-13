@@ -18,13 +18,19 @@ This file tracks the concrete changes required after the external review.
 - Added UPAT hard-holdout as an explicit boundary result instead of leaving it hidden in CSV files.
 - Ran full-semantic pooling ablation for BERT, RoBERTa, and GPT-2.
 - Added confusion-matrix analysis with negation-vs-non-negation recall.
+- Reframed layer-0 syntax accuracy as a surface-cue failure, not as evidence of semantic geometry.
+- Marked UPAT Procrustes alignment and 100-permutation shuffle p-values as exploratory only.
 
 ### Must still be run
 
 1. Resolve UPAT by expansion or matched-capacity comparison against the main dataset.
-2. `x_only/y_only/concat/delta` for every non-syntax holdout split that is still missing this breakdown.
-3. Convert large/modern spot-checks into multiseed runs if Track 1 is promoted to submission.
-4. Proper related-work table and bibliography in final citation format.
+2. Add UPAT Procrustes null baselines:
+   - random-label or random-pairing alignment
+   - report null distribution for F1 gain
+3. Increase UPAT shuffle controls from 100 to at least 1000 permutations before reporting precise p-values.
+4. `x_only/y_only/concat/delta` for every non-syntax holdout split that is still missing this breakdown.
+5. Convert large/modern spot-checks into multiseed runs if Track 1 is promoted to submission.
+6. Proper related-work table and bibliography in final citation format.
 
 ## Track 2: Signed Permutation Coherence
 
@@ -39,6 +45,8 @@ This file tracks the concrete changes required after the external review.
 - Added GPT-2/DistilGPT-2 pairwise composition summaries.
 - Added multiple-testing correction over the 20 model/triple signed-permutation tests.
 - Added a working hypothesis for why `QMT` is cross-architecture coherent.
+- Rewrote antisymmetry as a tautological implementation check rather than evidence.
+- Added explicit caveat that current Lie-style templates contain stable lexical markers and remain synthetic.
 
 ### Must still be run
 
@@ -48,6 +56,7 @@ This file tracks the concrete changes required after the external review.
 4. Add layerwise and pooling ablations for composition diagnostics.
 5. Add focused negation analysis before expanding the operator set.
 6. Convert the QMT working hypothesis into a grammar-generated preregistered test.
+7. Add null baselines for pairwise commutator norms `||[A,B]||` using matched random/shuffled operations.
 
 ## Global blockers
 

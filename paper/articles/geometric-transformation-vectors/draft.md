@@ -190,7 +190,7 @@ These plots support the existence of class-structured delta geometry, but the ne
 
 ## 8. Layerwise/Pooling Syntax Check
 
-The syntax ablation was also repeated across BERT layers and pooling choices. The important result is not which late layer performs best; the important result is that the artifact already appears at the embedding layer.
+The syntax ablation was also repeated across BERT layers and pooling choices. The important result is not which late layer performs best; the important result is that the artifact already appears at the embedding layer. This is a red flag, not a positive result: layer `0` contains token and positional embeddings without contextual semantic processing, so perfect separability at this layer strongly suggests lexical/form cues.
 
 Top rows include:
 
@@ -201,7 +201,7 @@ Top rows include:
 | BERT | `1` | mean | delta | Linear SVC | `1.000` |
 | BERT | `1` | mean | y_only | Linear SVC | `1.000` |
 
-This strengthens the reinterpretation: for the syntax split, the signal is available from token/form information before deep contextual composition is needed. It does not invalidate the full-semantic delta result, but it removes syntax holdout from the headline evidence.
+This strengthens the reinterpretation: for the syntax split, the signal is available from token/form information before deep contextual composition is needed. It does not invalidate the full-semantic delta result, but it removes syntax holdout from the headline evidence and should be treated as a diagnostic failure of that split.
 
 ## 9. Full-Semantic Pooling Ablation
 
@@ -251,6 +251,21 @@ No UPAT `delta` vs `y_only` comparison is significant at `p < 0.05`. This is now
 > Delta vectors add information in the main full-semantic setting and in larger-model spot-checks, but the advantage is not guaranteed under small, hard holdout regimes where target endpoints remain strong and training capacity is limited.
 
 This result should stay in the paper if UPAT remains in the package. Hiding it would create a worse reviewer problem than reporting it as a limitation.
+
+Why UPAT differs from the main full-semantic dataset:
+
+1. UPAT is much smaller, so the classifier has less data to estimate class directions.
+2. UPAT is deliberately harder and reduces some of the repeated transformation markers that the main synthetic dataset still contains.
+3. `y_only` remains strong, which means endpoint representations can still encode enough class information to beat or match `delta` under this regime.
+4. The capacity curve shows strong train-size sensitivity, so the UPAT result should not be read as final disproof of delta geometry, but it does block any universal claim.
+
+The correct interpretation is therefore not "`delta` is always the transformation representation." It is:
+
+> Delta can add useful relational information, but endpoint-only features remain a serious confounder and can dominate under smaller, harder holdouts.
+
+Exploratory UPAT notes:
+
+The UPAT package also includes cross-model Procrustes alignment and shuffle controls. These are currently exploratory only. The reported Procrustes gains can be very large, and the current analysis lacks a random-label or random-pairing Procrustes null. Likewise, shuffle-control `p=0.0099` reflects the resolution limit of 100 permutations (`1 / 101`), not a precise p-value. Before any Procrustes or shuffle claim is promoted, the experiment needs at least 1000 permutations and an alignment null baseline.
 
 ## 11. Confusion and Negation Analysis
 

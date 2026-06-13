@@ -52,7 +52,7 @@ Current evidence:
 
 - Composition order matters: `AB` and `BA` often differ substantially.
 - Semantic equivalence controls show lower noncommutativity for equivalent pairs than for non-equivalent pairs.
-- Antisymmetry is treated only as a sanity check because it follows from the commutator definition.
+- Antisymmetry is not treated as evidence. It is a tautological implementation check because `[A,B] = delta_AB - delta_BA` implies `[B,A] = -[A,B]`.
 - The non-tautological third-order signed permutation diagnostic is:
 
 ```text
@@ -76,7 +76,7 @@ This is promising but more fragile. It should be framed as a null-controlled dia
 
 Main risk:
 
-Hand-written templates may induce or suppress cancellation. GPT-2/DistilGPT-2 now support `QMT` below-null cancellation, but negation behaves inconsistently across architectures. The next experiments need grammar-driven templates, endpoint-only controls, and a focused negation analysis before expanding the operator set.
+Hand-written templates may induce or suppress cancellation. GPT-2/DistilGPT-2 now support `QMT` below-null cancellation, but negation behaves inconsistently across architectures. The current Lie-style templates still contain stable lexical markers, so the next experiments need grammar-driven templates, endpoint-only controls, commutator null baselines, and a focused negation analysis before expanding the operator set.
 
 ## Iterative logic
 
@@ -110,16 +110,20 @@ Negative results remain part of the research record.
 1. Resolve UPAT:
    - either expand UPAT and match train sizes against the main dataset
    - or keep it explicitly as a hard negative control and narrow Track 1 claims
-2. Treat the syntax holdout as resolved for the current draft: `y_only=1.0` means the `syntax=1.0` result is a target/surface artifact unless a future redesigned split proves otherwise.
-3. Convert large/modern Track 1 spot-checks into multiseed runs if Track 1 is promoted to submission.
-4. Build a grammar-driven template generator for `N,Q,M,T` that produces many paraphrases without duplicate endpoints.
-5. Add automated dataset validation:
+2. Add null baselines for exploratory UPAT alignment:
+   - random-label or random-pairing Procrustes null
+   - at least 1000 shuffle permutations instead of 100
+3. Treat the syntax holdout as resolved for the current draft: `y_only=1.0` and layer-0 `1.0` mean the `syntax=1.0` result is a target/surface artifact unless a future redesigned split proves otherwise.
+4. Convert large/modern Track 1 spot-checks into multiseed runs if Track 1 is promoted to submission.
+5. Build a grammar-driven template generator for `N,Q,M,T` that produces many paraphrases without duplicate endpoints.
+6. Add automated dataset validation:
    - no duplicate endpoint strings within a composition tuple
    - balanced subjects/actions
    - controlled lexical overlap
-6. Re-run composition and signed-permutation diagnostics on generated templates.
-7. Add target-only and endpoint-only baselines for the Lie-style paper.
-8. Regenerate a dated PDF packet after every major run.
+7. Add commutator null baselines for `||[A,B]||` using random or label-shuffled operations with matched norms.
+8. Re-run composition and signed-permutation diagnostics on generated templates.
+9. Add target-only and endpoint-only baselines for the Lie-style paper.
+10. Regenerate a dated PDF packet after every major run.
 
 ### Medium term
 

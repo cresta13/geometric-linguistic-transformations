@@ -8,7 +8,7 @@ Some linguistic transformations behave like locally noncommuting operators in tr
 
 - Composition tests show order-sensitive transformation behavior.
 - Semantic equivalence controls separate wording variation from semantic noncommutativity.
-- Antisymmetry is a sanity check and is tautological under the implemented commutator.
+- Antisymmetry is not evidence; it is a tautological implementation check under the implemented commutator.
 - Signed permutation diagnostics with bootstrap CI and permutation-null controls show robust `QMT` cancellation.
 
 ## Main caution
@@ -19,5 +19,6 @@ A literal nested-commutator Jacobi expansion over the same six endpoint vectors 
 
 - Expand beyond `N,Q,M,T`.
 - Replace hand-written templates with grammar-driven generation.
+- Add null baselines for pairwise commutator norms and Procrustes-style alignment claims before promoting them.
 - Test contextual embeddings layer by layer.
 - Add cross-model alignment for composition vectors.

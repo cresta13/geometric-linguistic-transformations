@@ -136,7 +136,6 @@ def main():
         ]
     ]
 
-    antisym = pd.read_csv(ROOT / "lie_algebraic_identities_results" / "csv" / "antisymmetry_summary.csv")
     semantic = pd.read_csv(ROOT / "lie_semantic_equivalence_results" / "csv" / "semantic_equivalence_summary.csv")
     semantic_effects = pd.read_csv(ROOT / "lie_semantic_equivalence_results" / "csv" / "reviewer_semantic_effect_sizes.csv")
     composition = pd.read_csv(ROOT / "lie_composition_results" / "csv" / "lie_composition_summary.csv")
@@ -193,7 +192,6 @@ def main():
         add_table_page(pdf, "Decoder signed permutation replication", format_float_columns(decoder_jacobi), max_rows=10)
         add_table_page(pdf, "Signed permutation multiple-testing correction", format_float_columns(multiple_testing), max_rows=25)
         add_table_page(pdf, "Decoder pairwise composition summary", format_float_columns(decoder_composition), max_rows=15)
-        add_table_page(pdf, "Antisymmetry sanity check", format_float_columns(antisym), max_rows=30)
         add_table_page(pdf, "Semantic equivalence control", format_float_columns(semantic), max_rows=12)
         add_table_page(pdf, "Semantic equivalence effect sizes", format_float_columns(semantic_effects), max_rows=10)
         add_table_page(
@@ -231,7 +229,7 @@ def main():
             pdf,
             "Audit notes for external verifier",
             [
-                "Antisymmetry is not treated as evidence because the implementation defines [B,A] as the negative order of [A,B].",
+                "Antisymmetry is not reported as evidence because the implementation defines [B,A] as the negative order of [A,B]. It is a tautological implementation check only.",
                 "A literal nested-commutator Jacobi expression over the same six endpoint vectors cancels algebraically. The reported third-order diagnostic is the non-tautological signed permutation composition sum ABC+BCA+CAB-ACB-CBA-BAC.",
                 "Duplicate endpoint templates were detected and removed before finalizing today's result. The final dataset has 400 Jacobi rows and zero duplicate endpoint sets.",
                 "New Track 1 result: syntax y_only=1.0 confirms target/surface leakage for the syntax split. New Track 1 spot-check: DeBERTa-v3-small supports delta superiority for Linear SVC but not for logistic regression. New Track 2 result: GPT-2 and DistilGPT-2 both keep QMT below permutation null, while negation triples remain mixed.",
@@ -240,6 +238,15 @@ def main():
                 "Remaining blockers: resolve or expand UPAT, representation-ablation tables for every non-syntax holdout split, grammar-generated templates, endpoint-only controls for Track 2, composition layer/pooling ablations, and final bibliography formatting.",
             ],
         )
+
+        response_path = ROOT / "paper" / "reviewer_response_round3.md"
+        if response_path.exists():
+            add_text_page(
+                pdf,
+                "Round-3 Reviewer Response",
+                [response_path.read_text(encoding="utf-8")],
+                fontsize=8,
+            )
 
         add_code_listing(pdf, ROOT / "run_lie_algebraic_identities.py", "Code listing: run_lie_algebraic_identities.py")
         add_code_listing(pdf, ROOT / "run_syntax_representation_ablation.py", "Code listing: run_syntax_representation_ablation.py")
