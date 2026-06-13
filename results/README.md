@@ -29,5 +29,7 @@ Important subdirectories:
 - `lie_semantic_equivalence_results/`
 - `upat_audit_results/`
 - `upat_large_results/`
+  - `csv/procrustes_null_summary.csv`: pilot null baselines for cross-model Procrustes transfer.
+  - `figures/10_procrustes_null_random_pairing.png` and `figures/10_procrustes_null_random_labels.png`: observed aligned F1 versus null baselines.
 
 The paper drafts link directly to the relevant CSVs and figures in these folders.

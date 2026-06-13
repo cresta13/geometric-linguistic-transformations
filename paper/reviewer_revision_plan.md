@@ -38,14 +38,22 @@ This file tracks completed reviewer-driven changes and future work needed before
 
 The UPAT-large Procrustes results suggest that transformation geometry may transfer across architectures after low-dimensional alignment. This is currently the most ambitious and potentially strongest narrative, but only if null controls rule out overfitting.
 
+### Newly addressed
+
+- Added a pilot Procrustes null audit with `N=30` repeats for every non-identity cross-model direction.
+- Random-pairing null: target anchor correspondences are shuffled before Procrustes fitting.
+- Random-label null: correct alignment is retained, but source training labels are shuffled.
+- Observed aligned F1 remains above both null baselines in every tested non-identity direction. This supports the cross-model transfer hypothesis, but the run is still a pilot because `N=30` limits empirical p-values to `0.0323`.
+
 ### Future submission work
 
-1. Random-label Procrustes null:
-   - shuffle transformation labels before fitting the alignment
-   - measure aligned-transfer F1 gain under the null
-2. Random-pairing Procrustes null:
-   - align mismatched examples across models
-   - measure how much gain is possible without true correspondence
+1. Scale Procrustes null baselines:
+   - at least 1000 repeats for final p-values
+   - report null confidence intervals and effect sizes
+2. Add stricter Procrustes controls:
+   - random-label alignment with shuffled labels before fitting
+   - random-pairing alignment with mismatched examples across models
+   - random orthogonal transforms with matched dimensionality
 3. Reverse-direction transfer:
    - small to large model
    - large to small model

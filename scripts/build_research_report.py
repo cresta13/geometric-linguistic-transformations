@@ -148,6 +148,8 @@ def main():
     large_spotcheck = pd.read_csv(large_spotcheck_path) if large_spotcheck_path.exists() else pd.DataFrame()
     upat_ablation = pd.read_csv(EXP / "upat_audit_results" / "csv" / "ablation.csv")
     upat_mcnemar = pd.read_csv(EXP / "upat_audit_results" / "csv" / "mcnemar_delta_vs_y.csv")
+    procrustes_null_path = EXP / "upat_large_results" / "csv" / "procrustes_null_summary.csv"
+    procrustes_null = pd.read_csv(procrustes_null_path) if procrustes_null_path.exists() else pd.DataFrame()
     pooling = pd.read_csv(EXP / "full_semantic_pooling_ablation_results" / "full_semantic_pooling_ablation_pivot.csv")
     confusion_neg = pd.read_csv(ROOT / "results" / "confusion_negation_summary.csv")
     decoder_jacobi = pd.read_csv(EXP / "lie_algebraic_identities_decoder_results" / "csv" / "jacobi_summary.csv")
@@ -174,7 +176,7 @@ def main():
                 ),
                 (
                     "Main conclusion",
-                    "The evidence supports a local QMT signed-permutation cancellation effect across tested encoder models, while negation-heavy triples expose the boundary of the phenomenon. The current work is promising but not submission-ready without the listed blocker experiments.",
+                    "The evidence supports a local QMT signed-permutation cancellation effect across tested encoder models, while negation-heavy triples expose the boundary of the phenomenon. A new UPAT-large Procrustes null pilot supports cross-model transfer surviving random-label and random-pairing controls, but it remains a pilot because N=30 caps empirical p-values at 0.0323.",
                 ),
             ],
         )
@@ -187,6 +189,8 @@ def main():
             add_table_page(pdf, "BERT-large and DeBERTa-v3-base spot-checks", format_float_columns(large_spotcheck), max_rows=8)
         add_table_page(pdf, "UPAT hard-holdout representation ablation", format_float_columns(upat_ablation), max_rows=25)
         add_table_page(pdf, "UPAT delta vs y_only McNemar tests", format_float_columns(upat_mcnemar), max_rows=10)
+        if not procrustes_null.empty:
+            add_table_page(pdf, "UPAT-large Procrustes null pilot", format_float_columns(procrustes_null), max_rows=30)
         add_table_page(pdf, "Full-semantic pooling ablation", format_float_columns(pooling), max_rows=25)
         add_table_page(pdf, "Confusion analysis: negation vs non-negation recall", format_float_columns(confusion_neg), max_rows=25)
         add_table_page(pdf, "Third-order signed permutation summary with bootstrap CI", format_float_columns(jacobi), max_rows=20)
@@ -213,6 +217,8 @@ def main():
             ("Large/modern spot-check: Linear SVC", ROOT / "paper" / "figures" / "spotcheck_large_linear_svc.png"),
             ("Large/modern spot-check: logistic regression", ROOT / "paper" / "figures" / "spotcheck_large_logreg.png"),
             ("UPAT hard-holdout ablation", ROOT / "paper" / "figures" / "upat_representation_ablation.png"),
+            ("UPAT-large Procrustes random-pairing null", EXP / "upat_large_results" / "figures" / "10_procrustes_null_random_pairing.png"),
+            ("UPAT-large Procrustes random-label null", EXP / "upat_large_results" / "figures" / "10_procrustes_null_random_labels.png"),
             ("Full-semantic pooling ablation: Linear SVC", ROOT / "paper" / "figures" / "full_semantic_pooling_linear_svc.png"),
             ("Full-semantic pooling ablation: logistic regression", ROOT / "paper" / "figures" / "full_semantic_pooling_logreg.png"),
             ("Confusion analysis: negation recall Linear SVC", ROOT / "paper" / "figures" / "confusion_negation_linear_svc.png"),

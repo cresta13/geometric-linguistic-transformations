@@ -101,14 +101,15 @@ Promising exploratory evidence:
 - BERT to `all-mpnet-base-v2`: raw F1 around `0.15`, aligned F1 around `0.857`.
 - BERT to `all-MiniLM-L6-v2`: raw F1 around `0.17`, aligned F1 around `0.754`.
 - UPAT-large cross-model results show large aligned-transfer gains across several architectures.
+- A first pilot null audit (`N=30` random-pairing and random-label repeats per direction) found that every non-identity cross-model direction stayed above both null baselines. Mean observed aligned F1 was about `0.685`, while random-label null mean F1 was about `0.170` and random-pairing null mean F1 was about `0.141`. Because `N=30` gives minimum empirical p-value `1/31 = 0.0323`, this is a promising pilot rather than a final significance claim.
 
 Current status:
 
-This could become the strongest paper if it survives null controls. It is not yet promoted because Procrustes has many degrees of freedom and can overfit small alignment sets.
+This could become the strongest paper if it survives larger null controls. The first random-pairing/random-label pilot is encouraging, but the result is not yet promoted because Procrustes has many degrees of freedom and needs larger null runs plus alignment-size and reverse-direction controls.
 
 Required gates before promotion:
 
-1. Random-label or random-pairing Procrustes null baseline.
+1. Scale random-label and random-pairing Procrustes null baselines beyond the current `N=30` pilot.
 2. Alignment-size curve with held-out evaluation.
 3. At least 1000 shuffle/permutation runs for precise p-values.
 4. Reverse-direction transfer tests, e.g. small model to large model and large model to small model.

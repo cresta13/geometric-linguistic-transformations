@@ -290,3 +290,39 @@ Month 3:
 Month 4-5:
 
 - write around the strongest surviving central story, likely ACL 2027 or ICLR 2027 rather than a rushed 2026 submission
+
+## 2026-06-13: UPAT-large Procrustes null pilot
+
+After archiving the Zenodo snapshot, we resumed the live research track with the highest-risk/highest-upside question: are the large UPAT cross-model Procrustes gains real, or can they be reproduced by bad alignment controls?
+
+New script:
+
+- `scripts/run_upat_procrustes_nulls.py`
+
+New outputs:
+
+- `results/experiments/upat_large_results/csv/procrustes_null_raw.csv`
+- `results/experiments/upat_large_results/csv/procrustes_null_summary.csv`
+- `results/experiments/upat_large_results/figures/10_procrustes_null_random_pairing.png`
+- `results/experiments/upat_large_results/figures/10_procrustes_null_random_labels.png`
+
+Design:
+
+- Keep the original UPAT-large train/test split and model set.
+- Recompute model embedding spaces and original cross-model transfer setup.
+- For each non-identity cross-model direction, evaluate two nulls:
+  - random-pairing null: shuffle target anchor correspondences before Procrustes fitting
+  - random-label null: keep matched anchors but shuffle source training labels
+- Use `N=30` repeats per null/direction as a pilot.
+
+Result:
+
+- Mean observed aligned F1 across non-identity directions: about `0.685`.
+- Mean random-label null F1: about `0.170`.
+- Mean random-pairing null F1: about `0.141`.
+- In every tested non-identity direction, observed aligned F1 exceeded both null baselines.
+- The empirical p-value is capped by the pilot size at `1/(30+1)=0.0323`, so this is encouraging but not final.
+
+Interpretation:
+
+This is the first real support for promoting Track 3. The large Procrustes gains do not appear to be explained by shuffled labels or mismatched anchor pairings in this pilot. The next step is to scale the nulls to at least `N=1000`, add random-orthogonal controls, and test alignment-size/reverse-direction behavior before making a paper-level universality claim.
