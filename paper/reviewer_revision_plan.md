@@ -1,6 +1,6 @@
-# Reviewer-Driven Revision Plan
+# Research Roadmap
 
-This file tracks the concrete changes required after the external review.
+This file tracks completed reviewer-driven changes and future work needed before any submission-grade paper. These items are not blockers for the Zenodo software/research-artifact snapshot.
 
 ## Track 1: Geometric Transformation Vectors
 
@@ -21,7 +21,7 @@ This file tracks the concrete changes required after the external review.
 - Reframed layer-0 syntax accuracy as a surface-cue failure, not as evidence of semantic geometry.
 - Marked UPAT Procrustes alignment and 100-permutation shuffle p-values as exploratory only.
 
-### Must still be run
+### Future submission work
 
 1. Resolve UPAT by expansion or matched-capacity comparison against the main dataset.
 2. Add UPAT Procrustes null baselines:
@@ -38,7 +38,7 @@ This file tracks the concrete changes required after the external review.
 
 The UPAT-large Procrustes results suggest that transformation geometry may transfer across architectures after low-dimensional alignment. This is currently the most ambitious and potentially strongest narrative, but only if null controls rule out overfitting.
 
-### Must still be run
+### Future submission work
 
 1. Random-label Procrustes null:
    - shuffle transformation labels before fitting the alignment
@@ -114,7 +114,7 @@ Measure whether transformations live in low-dimensional subspaces.
 - Rewrote antisymmetry as a tautological implementation check rather than evidence.
 - Added explicit caveat that current Lie-style templates contain stable lexical markers and remain synthetic.
 
-### Must still be run
+### Future submission work
 
 1. Rename code and CSV columns away from `jacobi_*`.
 2. Add grammar-generated templates.
@@ -124,10 +124,9 @@ Measure whether transformations live in low-dimensional subspaces.
 6. Convert the QMT working hypothesis into a grammar-generated preregistered test.
 7. Add null baselines for pairwise commutator norms `||[A,B]||` using matched random/shuffled operations.
 
-## Global blockers
+## Future submission priorities
 
-- Related work positioning is incomplete.
-- Related work positioning is started, but citation formatting and comparison table remain incomplete.
+- Related work positioning is started, including RISE, LRH, and cross-lingual transformation work, but final citation formatting and a comparison table remain future submission work.
 - Current model set now has draft-level larger/modern spot-checks, but not multiseed larger-model confirmation.
 - Mean pooling needs empirical justification for the full-semantic and composition experiments.
 - The central narrative should be selected before submission. Current candidates are:
