@@ -35,9 +35,16 @@ This is an active research repository, not a submission-ready paper. The current
 ## Important Artifacts
 
 - Main report: `reports/2026-06-13_reviewer_revised_report.pdf`
+- Release notes for DOI archiving: `reports/release_notes_v2026.06.13.md`
 - Research roadmap: `paper/research_program.md`
 - Track 1 draft: `paper/articles/geometric-transformation-vectors/draft.md`
 - Track 2 draft: `paper/articles/lie-style-linguistic-operators/draft.md`
+
+## Citable Snapshot
+
+The repository includes `CITATION.cff` for GitHub's citation widget and
+`.zenodo.json` for Zenodo/GitHub release archiving. The intended archival
+snapshot is `v2026.06.13`.
 
 ## Reproducibility Notes
 
