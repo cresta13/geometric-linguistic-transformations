@@ -81,52 +81,6 @@ def plot_full_semantic_accuracy():
     print("Saved full_semantic_accuracy.png")
 
 
-def plot_holdout_comparison():
-    rows = []
-
-    files = [
-        ("variant", os.path.join(DIVERSE_DIR, "variant_holdout", "variant_holdout_summary.csv")),
-        ("entity", os.path.join(DIVERSE_DIR, "entity_holdout", "entity_holdout_summary.csv")),
-        ("syntax", os.path.join(SYNTAX_DIR, "syntax_holdout_summary.csv")),
-        ("full_semantic", os.path.join(FULL_DIR, "full_semantic_holdout_summary.csv")),
-    ]
-
-    for holdout_name, path in files:
-        if not os.path.exists(path):
-            print("Missing:", path)
-            continue
-
-        df = pd.read_csv(path)
-
-        if "classifier" in df.columns:
-            df = df[df["classifier"] == "linear_svc"].copy()
-
-        for _, r in df.iterrows():
-            rows.append({
-                "holdout": holdout_name,
-                "model": r["model"],
-                "accuracy": r["accuracy"],
-            })
-
-    if not rows:
-        return
-
-    result = pd.DataFrame(rows)
-    result.to_csv(os.path.join(OUT_DIR, "holdout_accuracy_comparison.csv"), index=False)
-
-    plt.figure(figsize=(12, 6))
-    pivot = result.pivot(index="model", columns="holdout", values="accuracy")
-    pivot.plot(kind="bar", figsize=(12, 6))
-    plt.ylabel("Accuracy")
-    plt.title("Accuracy Across Holdout Settings")
-    plt.xticks(rotation=30, ha="right")
-    plt.tight_layout()
-    plt.savefig(os.path.join(OUT_DIR, "holdout_accuracy_comparison.png"), dpi=220)
-    plt.close()
-
-    print("Saved holdout_accuracy_comparison.png")
-
-
 def plot_diverse_separability():
     path = os.path.join(DIVERSE_DIR, "ALL_separability.csv")
     if not os.path.exists(path):
@@ -364,7 +318,6 @@ def main():
     print("Projection model:", MODEL_FOR_PROJECTION)
 
     plot_full_semantic_accuracy()
-    plot_holdout_comparison()
     plot_diverse_separability()
     plot_class_stability()
 

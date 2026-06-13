@@ -207,7 +207,6 @@ def main():
             ("Signed permutation norm versus permutation-null", EXP / "lie_algebraic_identities_results" / "figures" / "04_jacobi_vs_permutation_null_heatmap.png"),
             ("Semantic equivalent vs non-equivalent control", EXP / "lie_semantic_equivalence_results" / "figures" / "01_equivalent_vs_nonequivalent.png"),
             ("Composition noncommutativity heatmap", EXP / "lie_composition_results" / "figures" / "01_noncommutativity_heatmap.png"),
-            ("Original holdout accuracy comparison", ROOT / "paper" / "figures" / "holdout_accuracy_comparison.png"),
             ("Original PCA class geometry", ROOT / "paper" / "figures" / "pca_all_classes_bert-base-uncased.png"),
             ("Syntax representation ablation", ROOT / "paper" / "figures" / "syntax_representation_ablation.png"),
             ("DeBERTa-v3-small spot-check", ROOT / "paper" / "figures" / "spotcheck_deberta_v3_small.png"),

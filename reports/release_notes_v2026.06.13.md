@@ -9,13 +9,14 @@ This release freezes the current research artifact for external review and DOI a
 - Aggregate reviewer-facing tables live in `results/`.
 - Draft paper candidates live in `paper/articles/`.
 - The current reviewer PDF is `reports/2026-06-13_reviewer_revised_report.pdf`.
+- The current Python review environment is pinned in `requirements.txt`.
 
 ## Significant Results Preserved
 
 ### Track 1: Geometric Transformation Vectors
 
 - Delta vectors retain transformation-class information beyond simple endpoint-only baselines in several holdout regimes.
-- Syntax-holdout accuracy of `1.0` is treated conservatively as endpoint/surface leakage rather than deep syntactic generalization.
+- Syntax-holdout accuracy of `1.0` is treated conservatively as endpoint/surface leakage rather than deep syntactic generalization; the old all-holdout comparison plot is excluded from the archival draft.
 - Multiseed endpoint/delta/concat ablations and McNemar tests are preserved in `results/`.
 - Layerwise/pooling, syntax representation, and modern-model spot checks are preserved under `results/experiments/`.
 

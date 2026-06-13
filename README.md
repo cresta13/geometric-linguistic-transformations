@@ -49,6 +49,7 @@ snapshot is `v2026.06.13`.
 ## Reproducibility Notes
 
 The scripts require Python packages such as `torch`, `transformers`, `scikit-learn`, `pandas`, `numpy`, and `matplotlib`.
+The current review environment is pinned in `requirements.txt`.
 
 Run scripts from the repository root, for example:
 
