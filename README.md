@@ -11,7 +11,7 @@ This is an active research repository, not a submission-ready paper. The current
 - UPAT hard-holdout results are reported as a boundary condition where `y_only` can beat `delta`.
 - Lie-style antisymmetry is not evidence; it is a tautological implementation check.
 - Third-order signed permutation coherence is framed as a diagnostic, not as a formal Lie algebra or Jacobi identity.
-- Procrustes/cross-model transfer now survives `N=1000` null controls and held-out anchor alignment-size controls, but it still needs RISE/MDV comparison and anchor-domain robustness before being promoted as a main claim.
+- Procrustes/cross-model transfer now survives `N=1000` null controls and held-out anchor alignment-size controls. RISE/MDV-style prototype comparisons and a non-leaky hybrid feature-transfer test are now added; the hybrid does not improve over aligned `delta_only`, so Track 3 remains a stress-test/comparison track pending confidence intervals and anchor-domain robustness.
 
 ## Positioning
 

@@ -55,6 +55,11 @@ The UPAT-large Procrustes results suggest that transformation geometry may trans
   - within-model target cosine is high (`rise_style=0.923008`)
   - cross-model target prediction is harder (`rise_style` mean cosine `0.578347`, nearest-target label F1 `0.445518`)
   - aligned delta-classifier transfer remains higher on its own metric (`0.684651` mean F1)
+- Added a non-leaky Hybrid RISE-Procrustes transfer test:
+  - every pair is scored against all class prototypes, so the test label is never used to choose the prototype
+  - cross-model `delta_only` remains strongest (`0.684651` mean F1)
+  - the best hybrid/prototype feature set is `mdv_raw_hybrid_delta_scores` (`0.430839` mean F1)
+  - current conclusion: prototype target-reconstruction scores do not preserve transformation identity better than aligned deltas under the classifier-transfer metric
 
 ### Future submission work
 
@@ -74,12 +79,16 @@ The UPAT-large Procrustes results suggest that transformation geometry may trans
    - add confidence intervals
    - compare against the published RISE implementation if feasible
    - state clearly that target-embedding prediction and class-discriminative transfer are different metrics
-5. Report the completed null and held-out alignment audits in the draft:
+5. Add movement-level composition tests:
+   - linear centroid steering versus spherical delta steering
+   - delta-then-RISE versus RISE-then-delta
+   - target cosine, retrieval top-1, and retrieval label F1
+6. Report the completed null and held-out alignment audits in the draft:
    - null mean/std/max
    - empirical p-value resolution
    - effect sizes versus each null
    - held-out alignment-size curve
-6. Optional architecture expansion:
+7. Optional architecture expansion:
    - Llama/Mistral-style embedding spaces if local resources allow
    - otherwise stronger sentence encoders as a lower-cost proxy
 

@@ -113,6 +113,7 @@ Promising exploratory evidence:
 - Held-out anchor mean F1 rises from `0.452046` at `25` anchors to `0.661928` at `1000` anchors, compared with raw cross-model mean F1 `0.241524` and full-anchor Procrustes mean F1 `0.684651`.
 - At `1000` held-out anchors, no direction falls below its raw cross-model baseline.
 - A first RISE-aware UPAT comparison now evaluates `mdv_raw`, `mdv_unit`, and a simplified spherical `rise_style` prototype baseline. Within-model target prediction cosine is high (`rise_style=0.923008`), while cross-model target prediction is harder (`rise_style` mean cosine `0.578347`, nearest-target label F1 `0.445518`) than delta-classifier transfer in aligned spaces (`0.684651` mean F1).
+- A non-leaky Hybrid RISE-Procrustes transfer test now scores each pair against every MDV/RISE-style class prototype and trains transformation-label classifiers on `delta_only`, prototype scores, and `delta + prototype scores`. The hybrid does not improve cross-model label F1: `delta_only` remains `0.684651`, while the best hybrid/prototype variant is `mdv_raw_hybrid_delta_scores` at `0.430839`.
 
 Current status:
 
@@ -126,9 +127,14 @@ Required gates before promotion:
    - verify the simplified `rise_style` baseline against the published RISE implementation if feasible
    - add confidence intervals
    - clarify target-prediction versus class-discrimination metrics
-4. Reverse-direction transfer summary by model family, e.g. small model to large model and large model to small model.
-5. Stronger architectures if feasible, such as Llama/Mistral-class embedding spaces or high-quality sentence encoders.
-6. Package the result as a standalone Track 3 draft only after the RISE/MDV comparison and confidence-interval checks.
+4. Test mechanism composition on target-prediction metrics rather than class-label F1:
+   - linear centroid steering: `normalize(x + centroid_delta)`
+   - RISE-corrected / spherical delta steering via tangent projection and exp-map movement
+   - RISE-then-delta and delta-then-RISE orderings
+   - target cosine, retrieval top-1, and retrieval label F1
+5. Reverse-direction transfer summary by model family, e.g. small model to large model and large model to small model.
+6. Stronger architectures if feasible, such as Llama/Mistral-class embedding spaces or high-quality sentence encoders.
+7. Package the result as a standalone Track 3 draft only after the RISE/MDV comparison and confidence-interval checks.
 
 ## Track 4: Transformation vectors as editors
 

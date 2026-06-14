@@ -513,3 +513,53 @@ The prototype methods and the delta-classifier transfer answer different questio
 - RISE-style spherical canonicalization improves nearest-target class retrieval over MDV in this UPAT setup, but not enough to match delta-classifier transfer F1
 
 This is a useful positioning result, not a claim that our simplified RISE-style implementation matches the full RISE method.
+
+## 2026-06-14: Hybrid RISE-Procrustes transformation transfer
+
+We tested whether target-reconstructive prototype geometry can improve cross-model transformation identity transfer.
+
+New script:
+
+- `scripts/run_upat_hybrid_rise_procrustes.py`
+
+New outputs:
+
+- `results/experiments/upat_large_results/csv/hybrid_rise_procrustes_raw.csv`
+- `results/experiments/upat_large_results/csv/hybrid_rise_procrustes_summary.csv`
+- `results/experiments/upat_large_results/figures/13_hybrid_rise_procrustes_f1.png`
+- `results/experiments/upat_large_results/figures/13_hybrid_rise_procrustes_heatmap.png`
+
+Design:
+
+- Keep the same UPAT train/test split and cross-model full-anchor Procrustes alignment.
+- Learn class prototypes from the source model's train split.
+- For every train/test pair, score the pair against every possible class prototype.
+- Do not use the pair's true label to choose a prototype.
+- Train transformation-label classifiers on:
+  - `delta_only`
+  - all-class prototype score features
+  - `delta + prototype score` hybrid features
+
+Result:
+
+Cross-model/full-anchor mean macro F1:
+
+- `delta_only`: `0.684651`
+- best hybrid/prototype feature set, `mdv_raw_hybrid_delta_scores`: `0.430839`
+- `mdv_raw_prototype_scores`: `0.413582`
+- `rise_style_prototype_scores`: `0.375563`
+- `mdv_unit_prototype_scores`: `0.369480`
+
+Interpretation:
+
+This is a useful negative result. Target-reconstructive MDV/RISE-style prototype scores do not automatically preserve class-discriminative transformation identity better than aligned deltas. The result supports a cleaner separation:
+
+- RISE/MDV-style geometry asks "where should the target embedding land?"
+- Procrustes/delta classifiers ask "is the transformation identity still discriminable across model spaces?"
+
+The next composition should therefore be tested at the movement level, not just by concatenating classifier features:
+
+- linear centroid steering: `normalize(x + class_centroid_delta)`
+- spherical delta steering: project the centroid delta into the tangent space at `x` and move with an exp map
+- RISE-then-delta and delta-then-RISE orderings
+- metrics: target cosine, retrieval top-1, and retrieval label F1

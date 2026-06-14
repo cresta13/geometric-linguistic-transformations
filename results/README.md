@@ -37,5 +37,7 @@ Important subdirectories:
   - `figures/11_heldout_alignment_size_curve.png` and `figures/11_heldout_alignment_by_direction.png`: held-out alignment-size and by-direction summaries.
   - `csv/rise_aware_comparison_raw.csv` and `csv/rise_aware_comparison_summary.csv`: first-pass MDV/RISE-style prototype comparison on UPAT.
   - `figures/12_rise_aware_target_cosine.png` and `figures/12_rise_aware_retrieval_f1.png`: target-prediction and nearest-target class-retrieval summaries.
+  - `csv/hybrid_rise_procrustes_raw.csv` and `csv/hybrid_rise_procrustes_summary.csv`: non-leaky hybrid RISE-Procrustes transfer test using all-class prototype score features.
+  - `figures/13_hybrid_rise_procrustes_f1.png` and `figures/13_hybrid_rise_procrustes_heatmap.png`: hybrid transformation-label F1 summaries.
 
 The paper drafts link directly to the relevant CSVs and figures in these folders.

@@ -14,4 +14,4 @@ This folder stores separate paper candidates when results become coherent enough
 
 3. Future Track 3 candidate
    - Working title: "Stress-Testing Cross-Model Transformation Transfer in Transformer Embedding Spaces"
-   - This should not be drafted as a novelty claim about discovering cross-model geometric transformations. RISE already occupies that space strongly. A Track 3 paper is viable only after an explicit RISE/MDV-style comparison, confidence intervals, and anchor-domain robustness checks.
+   - This should not be drafted as a novelty claim about discovering cross-model geometric transformations. RISE already occupies that space strongly. A Track 3 paper is viable only after the current RISE/MDV and hybrid-feature results are extended with confidence intervals, movement-level spherical steering tests, and anchor-domain robustness checks.

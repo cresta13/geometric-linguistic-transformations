@@ -160,6 +160,8 @@ def main():
     )
     rise_aware_path = EXP / "upat_large_results" / "csv" / "rise_aware_comparison_summary.csv"
     rise_aware = pd.read_csv(rise_aware_path) if rise_aware_path.exists() else pd.DataFrame()
+    hybrid_rise_path = EXP / "upat_large_results" / "csv" / "hybrid_rise_procrustes_summary.csv"
+    hybrid_rise = pd.read_csv(hybrid_rise_path) if hybrid_rise_path.exists() else pd.DataFrame()
     pooling = pd.read_csv(EXP / "full_semantic_pooling_ablation_results" / "full_semantic_pooling_ablation_pivot.csv")
     confusion_neg = pd.read_csv(ROOT / "results" / "confusion_negation_summary.csv")
     decoder_jacobi = pd.read_csv(EXP / "lie_algebraic_identities_decoder_results" / "csv" / "jacobi_summary.csv")
@@ -216,6 +218,8 @@ def main():
             )
         if not rise_aware.empty:
             add_table_page(pdf, "UPAT RISE-aware prototype comparison", format_float_columns(rise_aware), max_rows=10)
+        if not hybrid_rise.empty:
+            add_table_page(pdf, "UPAT hybrid RISE-Procrustes transfer", format_float_columns(hybrid_rise), max_rows=20)
         add_table_page(pdf, "Full-semantic pooling ablation", format_float_columns(pooling), max_rows=25)
         add_table_page(pdf, "Confusion analysis: negation vs non-negation recall", format_float_columns(confusion_neg), max_rows=25)
         add_table_page(pdf, "Third-order signed permutation summary with bootstrap CI", format_float_columns(jacobi), max_rows=20)
@@ -249,6 +253,8 @@ def main():
             ("UPAT-large held-out alignment by direction", EXP / "upat_large_results" / "figures" / "11_heldout_alignment_by_direction.png"),
             ("UPAT RISE-aware target prediction cosine", EXP / "upat_large_results" / "figures" / "12_rise_aware_target_cosine.png"),
             ("UPAT RISE-aware nearest-target class retrieval", EXP / "upat_large_results" / "figures" / "12_rise_aware_retrieval_f1.png"),
+            ("UPAT hybrid RISE-Procrustes label F1", EXP / "upat_large_results" / "figures" / "13_hybrid_rise_procrustes_f1.png"),
+            ("UPAT hybrid RISE-Procrustes heatmap", EXP / "upat_large_results" / "figures" / "13_hybrid_rise_procrustes_heatmap.png"),
             ("Full-semantic pooling ablation: Linear SVC", ROOT / "paper" / "figures" / "full_semantic_pooling_linear_svc.png"),
             ("Full-semantic pooling ablation: logistic regression", ROOT / "paper" / "figures" / "full_semantic_pooling_logreg.png"),
             ("Confusion analysis: negation recall Linear SVC", ROOT / "paper" / "figures" / "confusion_negation_linear_svc.png"),
@@ -275,6 +281,7 @@ def main():
                 "Second 2026-06-14 update: held-out alignment-size controls are now added. Procrustes maps fitted on auxiliary anchor texts disjoint from classifier train/test texts recover most of the full-anchor transfer effect.",
                 "Third 2026-06-14 update: RISE is now the central related-work anchor. Track 3 is reframed as RISE-aware stress testing rather than first-discovery cross-model geometry. A RISE/MDV-style UPAT comparison is now a required gate.",
                 "Fourth 2026-06-14 update: first-pass RISE-aware UPAT comparison is now added. MDV and simplified RISE-style prototype methods predict targets well within-model, but cross-model target prediction remains harder than aligned delta-classifier transfer on the class-discrimination metric.",
+                "Fifth 2026-06-14 update: a non-leaky Hybrid RISE-Procrustes transfer test is now added. It scores every pair against all class prototypes, then tests prototype-score and delta+prototype-score features for cross-model transformation-label F1. The hybrid does not improve over aligned delta_only, suggesting that target-reconstructive prototype geometry and class-discriminative delta geometry are not automatically complementary under this metric.",
                 "Remaining blockers: confidence intervals and anchor-domain diversity for Track 3, stronger/faithful RISE comparison if feasible, resolve or expand UPAT hard-holdout, representation-ablation tables for every non-syntax holdout split, grammar-generated templates, endpoint-only controls for Track 2, composition layer/pooling ablations, and final bibliography formatting.",
             ],
         )
@@ -314,6 +321,7 @@ def main():
         add_code_listing(pdf, ROOT / "scripts" / "run_upat_procrustes_nulls.py", "Code listing: run_upat_procrustes_nulls.py")
         add_code_listing(pdf, ROOT / "scripts" / "run_upat_alignment_size_heldout.py", "Code listing: run_upat_alignment_size_heldout.py")
         add_code_listing(pdf, ROOT / "scripts" / "run_upat_rise_aware_comparison.py", "Code listing: run_upat_rise_aware_comparison.py")
+        add_code_listing(pdf, ROOT / "scripts" / "run_upat_hybrid_rise_procrustes.py", "Code listing: run_upat_hybrid_rise_procrustes.py")
         add_code_listing(pdf, ROOT / "scripts" / "analyze_confusion_negation.py", "Code listing: analyze_confusion_negation.py")
         add_code_listing(pdf, ROOT / "scripts" / "build_signed_permutation_multiple_testing.py", "Code listing: build_signed_permutation_multiple_testing.py")
 
