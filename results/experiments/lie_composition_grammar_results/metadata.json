@@ -1,0 +1,10 @@
+{
+  "models": [
+    "bert-base-uncased",
+    "distilroberta-base",
+    "roberta-base"
+  ],
+  "pca_dim": 64,
+  "n_null": 1000,
+  "note": "Grammar-generated Track 2 control: endpoint controls plus random-direction commutator norm nulls."
+}

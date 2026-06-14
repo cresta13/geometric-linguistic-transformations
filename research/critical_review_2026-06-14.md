@@ -54,10 +54,12 @@ Main result:
 - Semantic-equivalence controls show that the diagnostic is not just arbitrary wording noise.
 - The third-order result is correctly reframed as signed-permutation coherence, not a Jacobi identity.
 - `QMT` is the strongest local result across encoder and decoder checks.
+- Grammar-generated pairwise composition controls now preserve below-null commutator coherence, but endpoint-only controls remain near perfect.
 
 Critical caveats:
 
 - Hand-written templates may contain stable lexical markers.
+- Grammar-generated endpoints still contain explicit order/pair markers.
 - Negation-containing triples are unstable.
 - Endpoint-only controls for composition are still needed.
 - Pairwise commutator norms need null baselines before being promoted.
@@ -119,9 +121,9 @@ This is the most distinct intellectual contribution.
 
 Required:
 
-- grammar-generated templates for `N,Q,M,T`
-- endpoint-only and target-only controls for composition endpoints
-- pairwise commutator norm nulls
+- endpoint-balanced grammar generation for `N,Q,M,T`
+- target-only controls for third-order composition endpoints
+- stronger pairwise commutator nulls beyond the current random-pairing/norm-matched controls
 - layer/pooling ablation
 
 ### Direction C: Develop Track 3 as a RISE-Aware Stress-Test Paper

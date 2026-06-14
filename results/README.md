@@ -23,6 +23,12 @@ Important subdirectories:
 - `track1_spotcheck_results/`
 - `track1_spotcheck_large_results/`
 - `lie_composition_results/`
+- `lie_composition_grammar_results/`
+  - `csv/grammar_composition_dataset.csv`: grammar-generated pairwise composition dataset for `N,Q,M,T`.
+  - `csv/grammar_composition_summary.csv`: relative commutator norm and cosine summaries.
+  - `csv/grammar_endpoint_controls.csv`: endpoint-only and delta-only pair-label controls.
+  - `csv/grammar_commutator_nulls.csv`: `N=1000` same-pair, any-pair, and norm-matched random-direction commutator nulls.
+  - `figures/01_relative_commutator_norm_heatmap.png`: grammar-control relative commutator heatmap.
 - `lie_composition_decoder_results/`
 - `lie_algebraic_identities_results/`
 - `lie_algebraic_identities_decoder_results/`

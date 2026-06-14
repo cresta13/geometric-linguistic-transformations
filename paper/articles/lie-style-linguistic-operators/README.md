@@ -10,6 +10,7 @@ Some linguistic transformations behave like locally noncommuting operators in tr
 - Semantic equivalence controls separate wording variation from semantic noncommutativity.
 - Antisymmetry is not evidence; it is a tautological implementation check under the implemented commutator.
 - Signed permutation diagnostics with bootstrap CI and permutation-null controls show robust `QMT` cancellation.
+- Grammar-generated pairwise composition controls now show relative commutator norms below shuffled/norm-matched nulls, but endpoint-only controls are still near perfect.
 
 ## Main caution
 
@@ -17,8 +18,8 @@ A literal nested-commutator Jacobi expansion over the same six endpoint vectors 
 
 ## Next experiments
 
-- Replace hand-written templates with grammar-driven generation before expanding the operator set.
-- Add endpoint-only and target-only controls for composition diagnostics.
+- Build endpoint-balanced grammar generation before expanding the operator set.
+- Add target-only controls for third-order composition diagnostics.
 - Add null baselines for pairwise commutator norms before promoting pairwise composition claims.
 - Test contextual embeddings layer by layer and across pooling choices.
 - Treat cross-model alignment for composition vectors as a separate future direction, not a blocker for the local signed-permutation paper.

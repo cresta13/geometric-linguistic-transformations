@@ -616,3 +616,57 @@ This separates the metrics:
 - Linear deltas are currently better at "hit the exact target embedding."
 - RISE-style movement is currently better at "land in a target neighborhood with the right transformation label."
 - A useful next test is train-only step-size calibration for spherical movement, because the uncalibrated tangent step may be geometrically correct in direction but not in length.
+
+## 2026-06-14: Grammar-generated pairwise composition controls
+
+We returned to the Lie-like direction and added the first grammar-generated Track 2 control.
+
+New script:
+
+- `scripts/run_lie_composition_grammar_controls.py`
+
+New outputs:
+
+- `results/experiments/lie_composition_grammar_results/csv/grammar_composition_dataset.csv`
+- `results/experiments/lie_composition_grammar_results/csv/grammar_composition_summary.csv`
+- `results/experiments/lie_composition_grammar_results/csv/grammar_endpoint_controls.csv`
+- `results/experiments/lie_composition_grammar_results/csv/grammar_commutator_nulls.csv`
+- `results/experiments/lie_composition_grammar_results/figures/01_relative_commutator_norm_heatmap.png`
+
+Design:
+
+- Generate `720` pairwise composition rows for `N,Q,M,T`.
+- Vary subjects, actions, contexts, negation forms, modality markers, future forms, and question/order templates.
+- Compute `AB` and `BA` endpoint deltas from the same source sentence.
+- Report relative commutator norm:
+
+```text
+||delta_AB - delta_BA|| / mean(||delta_AB||, ||delta_BA||)
+```
+
+- Add endpoint-only controls for pair-label classification.
+- Add three `N=1000` commutator nulls:
+  - same-pair shuffled `AB`/`BA` pairing
+  - any-pair shuffled endpoints
+  - norm-matched random directions
+
+Result:
+
+- Relative commutator norms remain nonzero and structured under grammar variation.
+- Across all tested model/pair rows, observed mean relative commutator norms are below the same-pair shuffled null means at the current empirical resolution floor (`p=0.000999`).
+- Mean observed relative commutator norm across null rows: `0.5913`.
+- Mean nulls:
+  - same-pair random pairing: `0.8346`
+  - any-pair random pairing: `1.0218`
+  - norm-matched random directions: `1.4192`
+- Endpoint and delta controls are too strong:
+  - `ab_endpoint_only`: macro F1 `1.0000`
+  - `ab_delta_only`: macro F1 `1.0000`
+  - `commutator_delta`: macro F1 `1.0000`
+  - `source_only`: macro F1 `0.0476`, chance accuracy `0.1667`
+
+Interpretation:
+
+This is a real step toward the Lie-like track, but not a clean win. Grammar variation does not destroy pairwise order structure, and observed commutator norms are far below shuffled/null baselines. However, endpoint-only and delta-only controls perfectly recover the pair label. That means the generated `AB`/`BA` endpoints still contain strong explicit order markers.
+
+The next Track 2 step should be endpoint-balanced grammar generation: make pair labels harder to read from either endpoint alone while preserving ordered semantic composition. Only after that should we promote the pairwise commutator result as evidence for endpoint-independent algebraic structure.

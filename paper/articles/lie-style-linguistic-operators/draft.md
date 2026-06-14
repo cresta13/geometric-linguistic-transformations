@@ -261,7 +261,15 @@ This is still a hypothesis, not a proven linguistic theory. It gives a pre-regis
 
 Critical template caveat:
 
-The current Lie-style dataset is synthetic and hand-written. Several operations have stable lexical markers: negation often introduces "failed to", questions often begin with a fixed auxiliary pattern, and tense can introduce explicit temporal markers. Variant transfer partially reduces this concern in Track 1, but the Lie-style composition experiments still need grammar-generated templates before submission. Until then, the Track 2 claim is a diagnostic result about this controlled probe set, not a general claim about natural-language operator algebra.
+The original Lie-style dataset is synthetic and hand-written. Several operations have stable lexical markers: negation often introduces "failed to", questions often begin with a fixed auxiliary pattern, and tense can introduce explicit temporal markers. Variant transfer partially reduces this concern in Track 1, but the Lie-style composition experiments still need endpoint-balanced grammar generation before submission. Until then, the Track 2 claim is a diagnostic result about controlled probe sets, not a general claim about natural-language operator algebra.
+
+Update after the first grammar-generated pairwise control:
+
+- A grammar-generated `N,Q,M,T` pairwise composition probe now exists.
+- Observed relative commutator norms remain below `N=1000` shuffled and norm-matched nulls.
+- Endpoint-only and delta-only controls classify pair labels almost perfectly.
+
+This improves the evidence that pairwise order structure is not destroyed by grammar variation, but it does not solve the endpoint-artifact problem. The next version needs endpoint-balanced grammar generation and target-only controls for third-order composition endpoints.
 
 ## 9. Negation Is a Result, Not Just a Limitation
 
@@ -289,21 +297,22 @@ Evidence layers:
 3. Signed permutation coherence identifies one robust local third-order effect.
 4. Multiple-testing correction shows that QMT is the only below-null triple passing across all five models.
 5. Negation triples are model-dependent, which constrains the theory.
+6. Grammar-generated pairwise controls preserve below-null commutator coherence, but endpoint controls remain too strong.
 
 Not proven:
 
 - global Lie algebra
 - formal Jacobi identity
 - model-independent operator calculus
-- robustness to grammar-generated templates
+- endpoint-balanced robustness to grammar-generated templates
 - broad decoder-model generality beyond the two spot-checks
 - lexical-marker independence of the hand-written composition templates
 
 ## 11. Required Pre-Submission Experiments
 
 1. Rename code/CSV columns away from `jacobi_*` toward `signed_permutation_*`.
-2. Re-run with grammar-generated templates.
-3. Add endpoint-only / target-only controls for composition endpoints.
+2. Build endpoint-balanced grammar templates.
+3. Add target-only controls for third-order composition endpoints.
 4. Add layerwise analysis.
 5. Add pooling ablation.
 6. Add a focused negation analysis before adding new operators.

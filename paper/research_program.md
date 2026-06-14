@@ -81,6 +81,9 @@ S(A,B,C) = ABC + BCA + CAB - ACB - CBA - BAC
   - Negation-containing triples remain mixed and model-dependent.
 - Decoder pairwise composition summaries are now added, not only decoder third-order summaries.
 - Multiple-testing correction over `4 triples x 5 models` supports the narrowed claim: `QMT` is the only below-null triple passing across all five tested models.
+- A grammar-generated pairwise composition control now tests `720` generated `N,Q,M,T` rows across BERT, DistilRoBERTa, and RoBERTa.
+- In that grammar-control probe, observed relative commutator norms remain below all `N=1000` same-pair, any-pair, and norm-matched null means at the current `p=0.000999` resolution floor.
+- But endpoint-only and delta-only pair-label controls are essentially perfect (`macro F1 ~= 1.0`), so this is not endpoint-independent algebraic evidence yet.
 
 Scientific status:
 
@@ -88,7 +91,7 @@ This is promising but more fragile. It should be framed as a null-controlled dia
 
 Main risk:
 
-Hand-written templates may induce or suppress cancellation. GPT-2/DistilGPT-2 now support `QMT` below-null cancellation, but negation behaves inconsistently across architectures. The current Lie-style templates still contain stable lexical markers, so the next experiments need grammar-driven templates, endpoint-only controls, commutator null baselines, and a focused negation analysis before expanding the operator set.
+Hand-written templates may induce or suppress cancellation. GPT-2/DistilGPT-2 now support `QMT` below-null cancellation, and the grammar-generated pairwise control shows commutator coherence below nulls. However, endpoint controls remain too strong. The next experiments need endpoint-balanced grammar generation, target-only composition controls, and a focused negation analysis before expanding the operator set.
 
 ## Track 3: Cross-model transformation transfer
 

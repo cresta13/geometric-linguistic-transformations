@@ -22,6 +22,7 @@ All runnable research scripts live in this directory.
 - `run_lie_composition_audit.py`: pairwise composition/noncommutativity audit.
 - `run_lie_algebraic_identities.py`: signed-permutation diagnostic.
 - `run_lie_semantic_equivalence_control.py`: semantic-equivalence control.
+- `run_lie_composition_grammar_controls.py`: grammar-generated pairwise composition control for `N,Q,M,T`, with endpoint-only classifiers and commutator norm nulls.
 - `build_signed_permutation_multiple_testing.py`: table-level multiple-testing correction.
 
 ## UPAT / Cross-Model

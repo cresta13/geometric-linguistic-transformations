@@ -140,6 +140,12 @@ def main():
     semantic = pd.read_csv(EXP / "lie_semantic_equivalence_results" / "csv" / "semantic_equivalence_summary.csv")
     semantic_effects = pd.read_csv(EXP / "lie_semantic_equivalence_results" / "csv" / "reviewer_semantic_effect_sizes.csv")
     composition = pd.read_csv(EXP / "lie_composition_results" / "csv" / "lie_composition_summary.csv")
+    grammar_composition_path = EXP / "lie_composition_grammar_results" / "csv" / "grammar_composition_summary.csv"
+    grammar_composition = pd.read_csv(grammar_composition_path) if grammar_composition_path.exists() else pd.DataFrame()
+    grammar_controls_path = EXP / "lie_composition_grammar_results" / "csv" / "grammar_endpoint_controls.csv"
+    grammar_controls = pd.read_csv(grammar_controls_path) if grammar_controls_path.exists() else pd.DataFrame()
+    grammar_nulls_path = EXP / "lie_composition_grammar_results" / "csv" / "grammar_commutator_nulls.csv"
+    grammar_nulls = pd.read_csv(grammar_nulls_path) if grammar_nulls_path.exists() else pd.DataFrame()
     ablation = pd.read_csv(ROOT / "results" / "reviewer_ablation_table.csv")
     syntax_ablation = pd.read_csv(EXP / "syntax_representation_ablation_results" / "syntax_representation_ablation_pivot.csv")
     layerwise = pd.read_csv(EXP / "layerwise_pooling_ablation_results" / "layerwise_pooling_ablation_top20.csv")
@@ -238,12 +244,20 @@ def main():
             format_float_columns(composition.sort_values("mean_noncommutativity", ascending=False).head(18)),
             max_rows=18,
         )
+        if not grammar_composition.empty:
+            add_table_page(pdf, "Grammar-generated pairwise composition summary", format_float_columns(grammar_composition), max_rows=20)
+        if not grammar_controls.empty:
+            add_table_page(pdf, "Grammar composition endpoint controls", format_float_columns(grammar_controls), max_rows=25)
+        if not grammar_nulls.empty:
+            same_pair = grammar_nulls[grammar_nulls["null_type"] == "random_pairing_same_pair"]
+            add_table_page(pdf, "Grammar composition commutator nulls: same-pair shuffle", format_float_columns(same_pair), max_rows=20)
 
         figures = [
             ("Signed permutation relative norm", EXP / "lie_algebraic_identities_results" / "figures" / "03_jacobi_relative_norm_heatmap.png"),
             ("Signed permutation norm versus permutation-null", EXP / "lie_algebraic_identities_results" / "figures" / "04_jacobi_vs_permutation_null_heatmap.png"),
             ("Semantic equivalent vs non-equivalent control", EXP / "lie_semantic_equivalence_results" / "figures" / "01_equivalent_vs_nonequivalent.png"),
             ("Composition noncommutativity heatmap", EXP / "lie_composition_results" / "figures" / "01_noncommutativity_heatmap.png"),
+            ("Grammar composition relative commutator heatmap", EXP / "lie_composition_grammar_results" / "figures" / "01_relative_commutator_norm_heatmap.png"),
             ("Original PCA class geometry", ROOT / "paper" / "figures" / "pca_all_classes_bert-base-uncased.png"),
             ("Syntax representation ablation", ROOT / "paper" / "figures" / "syntax_representation_ablation.png"),
             ("DeBERTa-v3-small spot-check", ROOT / "paper" / "figures" / "spotcheck_deberta_v3_small.png"),
@@ -290,7 +304,8 @@ def main():
                 "Fourth 2026-06-14 update: first-pass RISE-aware UPAT comparison is now added. MDV and simplified RISE-style prototype methods predict targets well within-model, but cross-model target prediction remains harder than aligned delta-classifier transfer on the class-discrimination metric.",
                 "Fifth 2026-06-14 update: a non-leaky Hybrid RISE-Procrustes transfer test is now added. It scores every pair against all class prototypes, then tests prototype-score and delta+prototype-score features for cross-model transformation-label F1. The hybrid does not improve over aligned delta_only, suggesting that target-reconstructive prototype geometry and class-discriminative delta geometry are not automatically complementary under this metric.",
                 "Sixth 2026-06-14 update: movement-level spherical delta steering is now added. Linear centroid steering is best for cross-model target cosine, while RISE-style prediction is best for nearest-target label F1. Uncalibrated spherical delta movement slightly improves label F1 over linear deltas but lowers target cosine.",
-                "Remaining blockers: confidence intervals and anchor-domain diversity for Track 3, stronger/faithful RISE comparison if feasible, resolve or expand UPAT hard-holdout, representation-ablation tables for every non-syntax holdout split, grammar-generated templates, endpoint-only controls for Track 2, composition layer/pooling ablations, and final bibliography formatting.",
+                "Seventh 2026-06-14 update: grammar-generated pairwise composition controls are now added for Track 2. Observed relative commutator norms remain below shuffled/norm-matched nulls, but endpoint-only and delta-only controls classify pair labels almost perfectly, so this is not yet endpoint-independent algebraic evidence.",
+                "Remaining blockers: confidence intervals and anchor-domain diversity for Track 3, stronger/faithful RISE comparison if feasible, resolve or expand UPAT hard-holdout, representation-ablation tables for every non-syntax holdout split, endpoint-balanced grammar generation and third-order target-only controls for Track 2, composition layer/pooling ablations, and final bibliography formatting.",
             ],
         )
 
@@ -331,6 +346,7 @@ def main():
             )
 
         add_code_listing(pdf, ROOT / "scripts" / "run_lie_algebraic_identities.py", "Code listing: run_lie_algebraic_identities.py")
+        add_code_listing(pdf, ROOT / "scripts" / "run_lie_composition_grammar_controls.py", "Code listing: run_lie_composition_grammar_controls.py")
         add_code_listing(pdf, ROOT / "scripts" / "run_syntax_representation_ablation.py", "Code listing: run_syntax_representation_ablation.py")
         add_code_listing(pdf, ROOT / "scripts" / "run_layerwise_pooling_ablation.py", "Code listing: run_layerwise_pooling_ablation.py")
         add_code_listing(pdf, ROOT / "scripts" / "run_track1_spotcheck.py", "Code listing: run_track1_spotcheck.py")
