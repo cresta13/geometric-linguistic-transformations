@@ -34,6 +34,7 @@ Closest related work:
   - `figures/`: curated figures used in drafts and reports.
 - `research/`
   - `diary.md`: dated research diary.
+  - `critical_review_2026-06-14.md`: current skeptical state review and next-direction map.
   - `PROTOCOL.md`: working protocol.
 - `reports/`
   - dated PDF packets for external review.
@@ -45,7 +46,8 @@ Closest related work:
 
 ## Important Artifacts
 
-- Main report: `reports/2026-06-13_reviewer_revised_report.pdf`
+- Main live report: `reports/2026-06-14_reviewer_revised_report.pdf`
+- Zenodo snapshot report: `reports/2026-06-13_reviewer_revised_report.pdf`
 - Release notes for DOI archiving: `reports/release_notes_v2026.06.13.md`
 - Research roadmap: `paper/research_program.md`
 - Track 1 draft: `paper/articles/geometric-transformation-vectors/draft.md`

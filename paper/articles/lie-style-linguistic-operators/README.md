@@ -17,8 +17,8 @@ A literal nested-commutator Jacobi expansion over the same six endpoint vectors 
 
 ## Next experiments
 
-- Expand beyond `N,Q,M,T`.
-- Replace hand-written templates with grammar-driven generation.
-- Add null baselines for pairwise commutator norms and Procrustes-style alignment claims before promoting them.
-- Test contextual embeddings layer by layer.
-- Add cross-model alignment for composition vectors.
+- Replace hand-written templates with grammar-driven generation before expanding the operator set.
+- Add endpoint-only and target-only controls for composition diagnostics.
+- Add null baselines for pairwise commutator norms before promoting pairwise composition claims.
+- Test contextual embeddings layer by layer and across pooling choices.
+- Treat cross-model alignment for composition vectors as a separate future direction, not a blocker for the local signed-permutation paper.

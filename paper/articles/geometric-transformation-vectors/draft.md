@@ -79,7 +79,7 @@ Closest-work distinction:
 
 RISE is the closest and strongest neighbor because it already treats discourse-level semantic-syntactic transformations as geometric structure in sentence-embedding space, using spherical/Riemannian rotor operations and evaluating across languages and embedding models. This draft must therefore not claim novelty for the broad idea that linguistic transformations have cross-model geometric structure. The methodological distinction is narrower: RISE predicts transformed embeddings with rotor/prototype operations, while this track tests direct sentence-pair displacement vectors with endpoint-only, source-only, concat, multiseed, and McNemar controls. The practical contribution here is therefore not "we discovered geometric transformations before RISE"; it is a conservative ablation package showing when simple delta vectors add information beyond endpoints, when they fail, and which artifacts must be controlled before stronger claims.
 
-The necessary future comparison is explicit: run a RISE/MDV-style prototype-prediction baseline on the same UPAT pairs and compare it against direct delta classification and Procrustes-aligned classifier transfer. Without that comparison, this track should be framed as a controlled diagnostic study rather than as a main cross-model geometry paper.
+The RISE/MDV comparison has now been run as part of the broader Track 3 package. On UPAT, MDV/RISE-style prototype prediction is strong within-model, but cross-model target prediction remains harder than Procrustes-aligned delta-classifier transfer. A non-leaky hybrid feature-transfer test does not improve over aligned `delta_only`, and a movement-level spherical delta steering test separates exact target cosine from transformation-neighborhood retrieval. Therefore this Track 1 draft should remain a controlled endpoint/delta ablation study. Cross-model steering and RISE-aware comparisons belong in a separate Track 3 paper rather than being folded into this baseline paper.
 
 Compared with the Linear Representation Hypothesis literature, this draft is not a formal theory of linear representation. It is an empirical stress test of whether a simple linear object, `embedding(y) - embedding(x)`, survives endpoint leakage controls in controlled linguistic transformations.
 
@@ -272,9 +272,17 @@ The correct interpretation is therefore not "`delta` is always the transformatio
 
 > Delta can add useful relational information, but endpoint-only features remain a serious confounder and can dominate under smaller, harder holdouts.
 
-Exploratory UPAT notes:
+RISE-aware UPAT notes:
 
-The UPAT package also includes cross-model Procrustes alignment and shuffle controls. These are currently exploratory only. The reported Procrustes gains can be very large, and the current analysis lacks a random-label or random-pairing Procrustes null. Likewise, shuffle-control `p=0.0099` reflects the resolution limit of 100 permutations (`1 / 101`), not a precise p-value. Before any Procrustes or shuffle claim is promoted, the experiment needs at least 1000 permutations and an alignment null baseline.
+The UPAT package now includes a much stronger Track 3 stress-test suite than the original exploratory notes:
+
+- cross-model Procrustes transfer with `N=1000` random-label, random-pairing, and random-orthogonal nulls
+- held-out anchor alignment-size curves with auxiliary anchor texts disjoint from classifier train/test endpoints
+- MDV and simplified RISE-style prototype target prediction
+- non-leaky hybrid prototype-score transfer
+- movement-level spherical delta steering
+
+These results should not be promoted inside this Track 1 draft as evidence that delta vectors are universal operators. The cleaner interpretation is separation of questions: Track 1 asks whether `delta` adds information beyond endpoints; Track 3 asks how cross-model alignment, target reconstruction, and spherical movement interact. That separation keeps the baseline paper honest and prevents the UPAT stress tests from overloading the Track 1 narrative.
 
 ## 11. Confusion and Negation Analysis
 

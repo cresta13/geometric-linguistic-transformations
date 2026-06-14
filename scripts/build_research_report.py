@@ -8,7 +8,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 EXP = ROOT / "results" / "experiments"
-OUT = ROOT / "reports" / "2026-06-13_reviewer_revised_report.pdf"
+OUT = ROOT / "reports" / "2026-06-14_reviewer_revised_report.pdf"
 
 
 plt.rcParams["font.family"] = "DejaVu Sans"
@@ -175,7 +175,7 @@ def main():
             pdf,
             "Reviewer-Revised Research Report: Transformation Vectors and Composition Diagnostics",
             [
-                ("Date", "2026-06-12"),
+                ("Date", "2026-06-14"),
                 (
                     "Purpose",
                     "Fix the reviewer-revised research state for external verification. This version incorporates AC-level review concerns: endpoint leakage, syntax-holdout overclaiming, McNemar tests, semantic-control statistics, and the terminology change to a third-order signed permutation coherence test.",
@@ -318,6 +318,15 @@ def main():
                 pdf,
                 "RISE Related-Work Positioning",
                 [related_work_path.read_text(encoding="utf-8")],
+                fontsize=8,
+            )
+
+        critical_review_path = ROOT / "research" / "critical_review_2026-06-14.md"
+        if critical_review_path.exists():
+            add_text_page(
+                pdf,
+                "Critical Review: Current Research State",
+                [critical_review_path.read_text(encoding="utf-8")],
                 fontsize=8,
             )
 
