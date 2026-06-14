@@ -563,3 +563,56 @@ The next composition should therefore be tested at the movement level, not just 
 - spherical delta steering: project the centroid delta into the tangent space at `x` and move with an exp map
 - RISE-then-delta and delta-then-RISE orderings
 - metrics: target cosine, retrieval top-1, and retrieval label F1
+
+## 2026-06-14: Spherical delta steering
+
+We then tested the movement-level composition directly.
+
+New script:
+
+- `scripts/run_upat_spherical_delta_steering.py`
+
+New outputs:
+
+- `results/experiments/upat_large_results/csv/spherical_delta_steering_raw.csv`
+- `results/experiments/upat_large_results/csv/spherical_delta_steering_summary.csv`
+- `results/experiments/upat_large_results/figures/14_spherical_delta_target_cosine.png`
+- `results/experiments/upat_large_results/figures/14_spherical_delta_retrieval_top1.png`
+- `results/experiments/upat_large_results/figures/14_spherical_delta_retrieval_label_f1.png`
+
+Design:
+
+- Learn class centroid deltas on the train split.
+- Compare:
+  - `linear_delta`: `unit(x + class_delta)`
+  - `spherical_delta`: project class delta into the tangent space at `x`, then apply the sphere exp map
+  - `rise_only`: simplified RISE-style tangent prototype prediction
+  - residual orderings after `linear_delta`, `spherical_delta`, or `rise_only`
+  - `hybrid_average`: average of `spherical_delta` and `rise_only`
+- Evaluate target cosine, nearest-target retrieval top-1, and nearest-target label F1.
+
+Result:
+
+Within-model:
+
+- Best target cosine: `rise_then_ours_residual`, `0.923427`
+- `rise_only`: target cosine `0.923008`, retrieval label F1 `0.477279`
+- `linear_delta`: target cosine `0.921752`, retrieval label F1 `0.463490`
+
+Cross-model/full-anchor:
+
+- Best target cosine: `linear_delta`, `0.613559`
+- `spherical_delta`: target cosine `0.604795`, retrieval label F1 `0.412695`
+- `linear_delta` retrieval label F1: `0.407674`
+- Best retrieval label F1: `rise_only`, `0.445518`, with lower target cosine `0.578347`
+- `hybrid_average`: target cosine `0.596853`, retrieval label F1 `0.433902`
+
+Interpretation:
+
+The movement-level result is not a simple hybrid win. Uncalibrated spherical delta steering does not improve cross-model target cosine over linear centroid steering, although it slightly improves retrieval label F1. RISE-style prediction remains best for transformation-neighborhood retrieval while being worse for exact target cosine.
+
+This separates the metrics:
+
+- Linear deltas are currently better at "hit the exact target embedding."
+- RISE-style movement is currently better at "land in a target neighborhood with the right transformation label."
+- A useful next test is train-only step-size calibration for spherical movement, because the uncalibrated tangent step may be geometrically correct in direction but not in length.

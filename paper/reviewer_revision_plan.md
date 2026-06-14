@@ -60,6 +60,11 @@ The UPAT-large Procrustes results suggest that transformation geometry may trans
   - cross-model `delta_only` remains strongest (`0.684651` mean F1)
   - the best hybrid/prototype feature set is `mdv_raw_hybrid_delta_scores` (`0.430839` mean F1)
   - current conclusion: prototype target-reconstruction scores do not preserve transformation identity better than aligned deltas under the classifier-transfer metric
+- Added a movement-level spherical delta steering test:
+  - `linear_delta` is best for cross-model target cosine (`0.613559`)
+  - uncalibrated `spherical_delta` lowers target cosine (`0.604795`) but slightly improves retrieval label F1 over `linear_delta` (`0.412695` vs `0.407674`)
+  - `rise_only` remains best for retrieval label F1 (`0.445518`) while lower on target cosine (`0.578347`)
+  - current conclusion: target closeness and transformation-neighborhood retrieval are separable metrics
 
 ### Future submission work
 
@@ -79,10 +84,10 @@ The UPAT-large Procrustes results suggest that transformation geometry may trans
    - add confidence intervals
    - compare against the published RISE implementation if feasible
    - state clearly that target-embedding prediction and class-discriminative transfer are different metrics
-5. Add movement-level composition tests:
-   - linear centroid steering versus spherical delta steering
-   - delta-then-RISE versus RISE-then-delta
-   - target cosine, retrieval top-1, and retrieval label F1
+5. Extend movement-level composition tests:
+   - train-only per-class step-size calibration for spherical delta steering
+   - bootstrap confidence intervals for target cosine and retrieval metrics
+   - compare against a more faithful RISE implementation if feasible
 6. Report the completed null and held-out alignment audits in the draft:
    - null mean/std/max
    - empirical p-value resolution

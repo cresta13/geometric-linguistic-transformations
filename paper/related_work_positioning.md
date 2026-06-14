@@ -88,6 +88,7 @@ Current interpretation:
 - Cross-model prototype prediction is harder and model-pair dependent.
 - The simplified `rise_style` baseline improves nearest-target label retrieval over MDV in the current UPAT setup, but it is not a full reproduction of RISE.
 - A non-leaky hybrid test that combines aligned `delta_only` features with all-class MDV/RISE-style prototype scores does not improve cross-model transformation-label F1. The current interpretation is that target-reconstructive geometry and class-discriminative geometry are not automatically complementary under this classifier-transfer metric.
+- A movement-level spherical delta steering test gives a more nuanced split: linear centroid steering is best for cross-model target cosine, while RISE-style prediction is best for nearest-target label F1. Spherical/tangent steering does not improve target cosine in the current uncalibrated form, but it slightly improves label F1 over linear deltas.
 
 Track 3 remains a useful stress-test package, but it still should not be promoted as a main novelty paper against RISE until confidence intervals, anchor-domain robustness, and a more faithful RISE implementation are added.
 
@@ -103,5 +104,5 @@ Use this framing in future drafts:
 2. Stop using "universal transformation subspaces" as an unqualified Track 3 title.
 3. Rename Track 3 working title toward "stress-testing cross-model transformation transfer".
 4. Extend the first RISE/MDV comparison with confidence intervals and, if feasible, a more faithful RISE implementation before promoting Track 3.
-5. Test the next composition at the movement level: spherical delta steering and RISE/delta orderings on target cosine and retrieval metrics, rather than only transformation-label F1.
+5. Extend movement-level composition with train-only step-size calibration and confidence intervals before making any complementarity claim.
 6. Emphasize Track 2 composition/order diagnostics as the most distinct paper-level contribution.

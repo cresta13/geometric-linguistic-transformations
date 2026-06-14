@@ -114,6 +114,7 @@ Promising exploratory evidence:
 - At `1000` held-out anchors, no direction falls below its raw cross-model baseline.
 - A first RISE-aware UPAT comparison now evaluates `mdv_raw`, `mdv_unit`, and a simplified spherical `rise_style` prototype baseline. Within-model target prediction cosine is high (`rise_style=0.923008`), while cross-model target prediction is harder (`rise_style` mean cosine `0.578347`, nearest-target label F1 `0.445518`) than delta-classifier transfer in aligned spaces (`0.684651` mean F1).
 - A non-leaky Hybrid RISE-Procrustes transfer test now scores each pair against every MDV/RISE-style class prototype and trains transformation-label classifiers on `delta_only`, prototype scores, and `delta + prototype scores`. The hybrid does not improve cross-model label F1: `delta_only` remains `0.684651`, while the best hybrid/prototype variant is `mdv_raw_hybrid_delta_scores` at `0.430839`.
+- A movement-level spherical delta steering test now compares linear centroid steering, tangent/exp-map steering, RISE-style prediction, residual orderings, and hybrid averaging. Cross-model target cosine is best for `linear_delta` (`0.613559`), while retrieval label F1 is best for `rise_only` (`0.445518`); `spherical_delta` slightly improves label F1 over `linear_delta` (`0.412695` vs `0.407674`) but lowers target cosine (`0.604795` vs `0.613559`).
 
 Current status:
 
@@ -127,11 +128,10 @@ Required gates before promotion:
    - verify the simplified `rise_style` baseline against the published RISE implementation if feasible
    - add confidence intervals
    - clarify target-prediction versus class-discrimination metrics
-4. Test mechanism composition on target-prediction metrics rather than class-label F1:
-   - linear centroid steering: `normalize(x + centroid_delta)`
-   - RISE-corrected / spherical delta steering via tangent projection and exp-map movement
-   - RISE-then-delta and delta-then-RISE orderings
-   - target cosine, retrieval top-1, and retrieval label F1
+4. Extend movement-level composition with calibration:
+   - learn per-class step sizes for spherical delta steering on train only
+   - add bootstrap confidence intervals over directions and examples
+   - compare residual orderings against a more faithful published RISE implementation if feasible
 5. Reverse-direction transfer summary by model family, e.g. small model to large model and large model to small model.
 6. Stronger architectures if feasible, such as Llama/Mistral-class embedding spaces or high-quality sentence encoders.
 7. Package the result as a standalone Track 3 draft only after the RISE/MDV comparison and confidence-interval checks.

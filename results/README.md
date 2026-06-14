@@ -39,5 +39,7 @@ Important subdirectories:
   - `figures/12_rise_aware_target_cosine.png` and `figures/12_rise_aware_retrieval_f1.png`: target-prediction and nearest-target class-retrieval summaries.
   - `csv/hybrid_rise_procrustes_raw.csv` and `csv/hybrid_rise_procrustes_summary.csv`: non-leaky hybrid RISE-Procrustes transfer test using all-class prototype score features.
   - `figures/13_hybrid_rise_procrustes_f1.png` and `figures/13_hybrid_rise_procrustes_heatmap.png`: hybrid transformation-label F1 summaries.
+  - `csv/spherical_delta_steering_raw.csv` and `csv/spherical_delta_steering_summary.csv`: movement-level linear/spherical/RISE steering comparison.
+  - `figures/14_spherical_delta_target_cosine.png`, `figures/14_spherical_delta_retrieval_top1.png`, and `figures/14_spherical_delta_retrieval_label_f1.png`: target-cosine and retrieval summaries for spherical delta steering.
 
 The paper drafts link directly to the relevant CSVs and figures in these folders.
