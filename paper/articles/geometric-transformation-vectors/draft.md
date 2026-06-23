@@ -2,7 +2,7 @@
 
 ## Abstract
 
-Transformer embedding spaces encode relations between paired sentences, but the current evidence must be stated carefully. We study controlled linguistic transformations and represent each pair by `delta = embedding(target) - embedding(source)`. Across BERT, RoBERTa, DistilRoBERTa, GPT-2, and DistilGPT-2, delta representations outperform source-only and target-only baselines in the multiseed full-semantic setting, with McNemar tests significant for every seed/model pair. However, strong endpoint leakage remains: target-only representations are already highly predictive, and the `syntax=1.0` holdout result should be treated as a red flag for surface-form cues rather than as a central achievement. The defensible current claim is that delta vectors add reproducible transformation information beyond target endpoints, especially for decoder models, not that they isolate pure context-independent operators.
+Transformer embedding spaces encode relations between paired sentences, but the current evidence must be stated carefully. We study controlled linguistic transformations and represent each pair by `delta = embedding(target) - embedding(source)`. In the multiseed full-semantic setting, Linear SVC probes show a reproducible delta advantage over source-only and target-only baselines across BERT, RoBERTa, DistilRoBERTa, GPT-2, and DistilGPT-2, with McNemar tests significant for every seed/model pair. The effect is not classifier-invariant: logistic regression keeps the advantage for BERT-family and DistilGPT-2 models but not for GPT-2 or RoBERTa. Strong endpoint leakage also remains: target-only representations are already highly predictive, and the `syntax=1.0` holdout result should be treated as a red flag for surface-form cues rather than as a central achievement. The defensible current claim is that simple delta vectors can add reproducible transformation information beyond target endpoints under controlled probes, not that they isolate pure context-independent operators.
 
 ## Evidence Map
 
@@ -26,6 +26,7 @@ Main result files:
 - Legacy holdout summaries are retained only as diagnostics in experiment result folders; the old all-holdout comparison plot is intentionally excluded from the archival draft because the syntax split is target-leaky.
 - Multiseed ablation summary: [ablation_multiseed_aggregated.csv](../../../results/ablation_multiseed_aggregated.csv)
 - Reviewer ablation table: [reviewer_ablation_table.csv](../../../results/reviewer_ablation_table.csv)
+- Effect-size intervals: [track1_multiseed_effect_intervals.csv](../../../results/track1_multiseed_effect_intervals.csv)
 - McNemar tests: [ablation_multiseed_mcnemar.csv](../../../results/ablation_multiseed_mcnemar.csv)
 - Full semantic results: [full_semantic_holdout_summary.csv](../../../results/experiments/lie_llm_full_semantic_holdout_results/full_semantic_holdout_summary.csv)
 - Syntax holdout results: [syntax_holdout_summary.csv](../../../results/experiments/lie_llm_syntax_results/syntax_holdout_summary.csv)
@@ -100,7 +101,7 @@ Current pooling choice:
 
 Reviewer-critical caveat:
 
-Mean pooling is not yet justified. For encoder models, `[CLS]` pooling is a natural comparison. For decoder models, last-token pooling is a natural comparison because causal representations accumulate context at the final position. A pooling ablation is required before submission.
+Mean pooling is no longer an untested assumption for the full-semantic setting. Section 9 reports a reduced full-semantic pooling ablation comparing mean pooling, `[CLS]` pooling for encoder models, and last-token pooling for decoder models. Mean pooling remains the best or most stable choice in that reduced audit, but the main multiseed table still uses mean pooling only. Therefore pooling is partially controlled, not fully settled.
 
 ## 4. Holdout Results Are Evidence, But Not All Equally Strong
 
@@ -141,7 +142,7 @@ The full-semantic holdout remains more informative, but it is still vulnerable t
 
 ## 5. Delta Adds Reproducible Information Beyond Target-Only
 
-The multiseed ablation is currently the strongest Track 1 evidence.
+The multiseed ablation is currently the strongest Track 1 evidence, with an important qualifier: the cleanest positive result is for Linear SVC. Logistic regression is included as a stress test and is more mixed.
 
 Source files:
 
@@ -159,13 +160,31 @@ Linear SVC, five seeds:
 | GPT-2 | `0.833` | `0.750` | `0.777` | `0.167` | `+0.084` | `+0.057` | `<1e-15` |
 | DistilGPT-2 | `0.857` | `0.727` | `0.760` | `0.167` | `+0.131` | `+0.097` | `<1e-15` |
 
-All seed-level McNemar tests for `delta` versus `y_only` are significant at `p < 0.001`.
+All seed-level Linear SVC McNemar tests for `delta` versus `y_only` are significant at `p < 0.001`.
+
+Effect-size intervals:
+
+| Model | Classifier | Effect | Mean | 95% CI | All seeds positive |
+|---|---|---|---:|---:|---|
+| BERT | Linear SVC | delta - y_only | `+0.044` | `[+0.016, +0.073]` | yes |
+| RoBERTa | Linear SVC | delta - y_only | `+0.043` | `[+0.031, +0.055]` | yes |
+| DistilRoBERTa | Linear SVC | delta - y_only | `+0.050` | `[+0.043, +0.058]` | yes |
+| GPT-2 | Linear SVC | delta - y_only | `+0.084` | `[+0.065, +0.102]` | yes |
+| DistilGPT-2 | Linear SVC | delta - y_only | `+0.131` | `[+0.109, +0.152]` | yes |
+| BERT | Logistic regression | delta - y_only | `+0.044` | `[+0.034, +0.055]` | yes |
+| DistilRoBERTa | Logistic regression | delta - y_only | `+0.048` | `[+0.041, +0.054]` | yes |
+| DistilGPT-2 | Logistic regression | delta - y_only | `+0.065` | `[+0.062, +0.068]` | yes |
+| GPT-2 | Logistic regression | delta - y_only | `-0.011` | `[-0.017, -0.005]` | no |
+| RoBERTa | Logistic regression | delta - y_only | `-0.007` | `[-0.025, +0.010]` | no |
+
+These intervals are computed across the five random seeds using a t interval. They make the statistical status cleaner: the Linear SVC delta advantage is reproducible, while the broader classifier-invariant claim is not supported.
 
 This table changes the main claim:
 
 1. `y_only` is strong, so endpoint leakage is real.
-2. `delta` is stronger than `y_only` across all tested models.
-3. `delta` is also stronger than `concat`, especially for decoder models.
+2. Under Linear SVC, `delta` is stronger than `y_only` across all tested models.
+3. Under Linear SVC, `delta` is also usually stronger than `concat`, with the strongest margins for decoder models.
+4. Under logistic regression, the result is mixed: BERT-family and DistilGPT-2 remain positive, while GPT-2 and RoBERTa do not support `delta > y_only`.
 
 The `concat < delta` effect is not a nuisance. It may be one of the most interesting findings: the difference vector may cancel content variation that remains entangled in the concatenated representation. This is especially plausible for GPT-style mean-pooled decoder embeddings, where mean pooling mixes early low-context token states with later contextualized states.
 
@@ -362,9 +381,9 @@ The revised paper should center the first claim.
 1. Produce `x_only/y_only/concat/delta` tables for every remaining holdout beyond syntax and full semantic.
 2. Reconcile UPAT with the main full-semantic result by either expanding UPAT, matching train sizes, or clearly treating it as a hard negative control.
 3. Convert the large/modern spot-check into a multiseed run if Track 1 becomes the submission priority.
-4. Add confidence intervals for `delta - y_only` and `delta - concat`.
+4. Add classifier-robustness checks beyond Linear SVC and logistic regression if the paper claims more than a margin-probe result.
 5. Add a final related-work section and bibliography in submission format.
 
 ## Current Status
 
-This remains the more mature paper track, but the narrative has changed. The paper should be framed as a controlled ablation result about delta representations adding information beyond endpoints, not as a broad claim that all holdouts prove transformation geometry.
+This remains the more mature paper track, but the narrative has changed. The paper should be framed as a controlled ablation result: margin-based Linear SVC probes show reproducible delta information beyond endpoints, while endpoint leakage, classifier dependence, and UPAT boundary failures prevent a broad operator claim.

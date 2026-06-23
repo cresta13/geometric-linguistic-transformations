@@ -10,6 +10,7 @@ All runnable research scripts live in this directory.
 - `lie_llm_entity_holdout_experiment.py`: entity holdout.
 - `lie_llm_variant_holdout_experiment.py`: variant holdout.
 - `lie_llm_y_only_ablation_multiseed.py`: multiseed endpoint/delta ablation.
+- `build_track1_effect_intervals.py`: 95% seed-level effect intervals for Track 1 `delta-y_only` and `delta-concat`.
 - `run_syntax_representation_ablation.py`: syntax x/y/concat/delta ablation.
 - `run_layerwise_pooling_ablation.py`: syntax layerwise/pooling ablation.
 - `run_full_semantic_pooling_ablation.py`: full-semantic pooling ablation.

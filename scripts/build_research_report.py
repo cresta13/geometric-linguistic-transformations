@@ -184,6 +184,7 @@ def main():
         else pd.DataFrame()
     )
     ablation = pd.read_csv(ROOT / "results" / "reviewer_ablation_table.csv")
+    track1_intervals = pd.read_csv(ROOT / "results" / "track1_multiseed_effect_intervals.csv")
     syntax_ablation = pd.read_csv(EXP / "syntax_representation_ablation_results" / "syntax_representation_ablation_pivot.csv")
     layerwise = pd.read_csv(EXP / "layerwise_pooling_ablation_results" / "layerwise_pooling_ablation_top20.csv")
     spotcheck = pd.read_csv(EXP / "track1_spotcheck_results" / "spotcheck_representation_ablation_pivot.csv")
@@ -225,7 +226,7 @@ def main():
                 ),
                 (
                     "Track 1 fixed result",
-                    "Delta vectors add reproducible information beyond target-only endpoints in the multiseed full-semantic setting. The syntax=1.0 result has now been directly ablated: y_only also reaches 1.0, so the syntax split is interpreted as endpoint/surface leakage rather than as geometry. BERT-large and DeBERTa-v3-base spot-checks both rank delta best under Linear SVC and logistic regression. UPAT is now reported as a hard-holdout boundary where delta is not reliably better than y_only.",
+                    "Delta vectors add reproducible information beyond target-only endpoints in the multiseed full-semantic setting under Linear SVC. New seed-level effect intervals make the classifier dependence explicit: Linear SVC is positive for every original model, while logistic regression is mixed for GPT-2 and RoBERTa. The syntax=1.0 result has now been directly ablated: y_only also reaches 1.0, so the syntax split is interpreted as endpoint/surface leakage rather than as geometry. BERT-large and DeBERTa-v3-base spot-checks both rank delta best under Linear SVC and logistic regression. UPAT is now reported as a hard-holdout boundary where delta is not reliably better than y_only.",
                 ),
                 (
                     "Track 2 fixed result",
@@ -239,6 +240,7 @@ def main():
         )
 
         add_table_page(pdf, "Delta vs endpoint ablation with McNemar evidence", format_float_columns(ablation), max_rows=10)
+        add_table_page(pdf, "Track 1 seed-level effect intervals", format_float_columns(track1_intervals), max_rows=20)
         add_table_page(pdf, "Syntax representation ablation: y_only solves the split", format_float_columns(syntax_ablation), max_rows=12)
         add_table_page(pdf, "Layerwise/pooling syntax sanity check: top rows", format_float_columns(layerwise), max_rows=20)
         add_table_page(pdf, "DeBERTa-v3-small modern spot-check", format_float_columns(spotcheck), max_rows=5)
@@ -358,6 +360,7 @@ def main():
                 "Seventh 2026-06-14 update: grammar-generated pairwise composition controls are now added for Track 2. Observed relative commutator norms remain below shuffled/norm-matched nulls, but endpoint-only and delta-only controls classify pair labels almost perfectly, so this is not yet endpoint-independent algebraic evidence.",
                 "2026-06-23 update: the multilingual max audit completed successfully on seven languages and five multilingual encoders: paraphrase-multilingual-mpnet-base-v2, LaBSE, multilingual-e5-large, BGE-M3, and mBERT. All four third-order triples are below signed-null in every model-language cell; the global mean ratios are NQM=0.5798, QMT=0.6203, NQT=0.7014, and NMT=0.7716. This strengthens the existence of a controlled signed-permutation signal while weakening any universal claim that QMT is uniquely special.",
                 "2026-06-23 caution: source-only held-out-language controls are chance-like, but endpoint/delta/commutator controls remain high. Cross-language centroid cosine is moderate and high-variance. The next Track 2 gate is endpoint-balanced multilingual generation plus third-order target-only controls, not another unqualified scale-up.",
+                "2026-06-23 Track 1 cleanup: seed-level effect intervals are now added for delta-y_only and delta-concat. The Track 1 claim is narrowed to a robust Linear SVC/margin-probe result, because logistic regression is mixed for GPT-2 and RoBERTa.",
                 "Remaining blockers: confidence intervals and anchor-domain diversity for Track 3, stronger/faithful RISE comparison if feasible, resolve or expand UPAT hard-holdout, representation-ablation tables for every non-syntax holdout split, endpoint-balanced grammar generation and third-order target-only controls for Track 2, composition layer/pooling ablations, and final bibliography formatting.",
             ],
         )
@@ -402,6 +405,7 @@ def main():
         add_code_listing(pdf, ROOT / "scripts" / "run_lie_composition_grammar_controls.py", "Code listing: run_lie_composition_grammar_controls.py")
         add_code_listing(pdf, ROOT / "scripts" / "run_lie_multilingual_max_audit.py", "Code listing: run_lie_multilingual_max_audit.py")
         add_code_listing(pdf, ROOT / "scripts" / "run_syntax_representation_ablation.py", "Code listing: run_syntax_representation_ablation.py")
+        add_code_listing(pdf, ROOT / "scripts" / "build_track1_effect_intervals.py", "Code listing: build_track1_effect_intervals.py")
         add_code_listing(pdf, ROOT / "scripts" / "run_layerwise_pooling_ablation.py", "Code listing: run_layerwise_pooling_ablation.py")
         add_code_listing(pdf, ROOT / "scripts" / "run_track1_spotcheck.py", "Code listing: run_track1_spotcheck.py")
         add_code_listing(pdf, ROOT / "scripts" / "run_full_semantic_pooling_ablation.py", "Code listing: run_full_semantic_pooling_ablation.py")

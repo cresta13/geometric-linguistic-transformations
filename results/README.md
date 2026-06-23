@@ -7,6 +7,7 @@ This directory contains compact CSV summaries and experiment artifacts.
 - `reviewer_ablation_table.csv`: main multiseed delta/y_only/concat summary.
 - `ablation_multiseed_aggregated.csv`: aggregated multiseed ablation table.
 - `ablation_multiseed_mcnemar.csv`: McNemar tests for delta vs endpoint baselines.
+- `track1_multiseed_effect_intervals.csv`: 95% seed-level intervals for `delta-y_only` and `delta-concat`.
 - `confusion_negation_summary.csv`: negation vs non-negation confusion summary.
 - `confusion_class_recall.csv`: per-class recall from full-semantic confusion matrices.
 

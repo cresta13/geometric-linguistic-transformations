@@ -9,6 +9,8 @@ This file tracks completed reviewer-driven changes and future work needed before
 - Reframed `syntax=1.0` as a red flag for surface-form leakage, not a headline achievement.
 - Added delta/y_only/concat/x_only multiseed ablation table.
 - Added McNemar evidence from existing results.
+- Added seed-level 95% effect intervals for `delta-y_only` and `delta-concat`.
+- Narrowed the Track 1 claim to the robust Linear SVC result because logistic regression is mixed for GPT-2 and RoBERTa.
 - Highlighted `concat < delta`, especially for decoder models.
 - Added pooling and modern-model limitations.
 - Ran syntax representation ablation: `y_only=1.0` confirms syntax endpoint leakage.
@@ -24,13 +26,9 @@ This file tracks completed reviewer-driven changes and future work needed before
 ### Future submission work
 
 1. Resolve UPAT by expansion or matched-capacity comparison against the main dataset.
-2. Add UPAT Procrustes null baselines:
-   - random-label or random-pairing alignment
-   - report null distribution for F1 gain
-3. Increase UPAT shuffle controls from 100 to at least 1000 permutations before reporting precise p-values.
-4. `x_only/y_only/concat/delta` for every non-syntax holdout split that is still missing this breakdown.
-5. Convert large/modern spot-checks into multiseed runs if Track 1 is promoted to submission.
-6. Proper related-work table and bibliography in final citation format.
+2. `x_only/y_only/concat/delta` for every non-syntax holdout split that is still missing this breakdown.
+3. Convert large/modern spot-checks into multiseed runs if Track 1 is promoted to submission.
+4. Proper related-work table and bibliography in final citation format.
 
 ## Track 3: Cross-Model Transformation Transfer
 

@@ -31,6 +31,7 @@ Transformer embedding spaces contain displacement directions that encode linguis
 Current evidence:
 
 - Delta vectors classify transformations well across BERT, RoBERTa, DistilRoBERTa, GPT-2, and DistilGPT-2.
+- The cleanest multiseed claim is probe-dependent: Linear SVC shows reproducible `delta > y_only` across all original models, with positive 95% seed-level intervals; logistic regression is mixed for GPT-2 and RoBERTa.
 - Syntax holdouts reach `1.0` accuracy across tested models, but the new representation ablation shows `y_only=1.0` as well. This is now interpreted as endpoint/surface leakage, not as deep generalization.
 - Full semantic holdouts remain above chance, with accuracies around `0.82-0.89`.
 - Entity and variant holdouts remain strong, especially for BERT-family models.
@@ -48,7 +49,7 @@ This is the more mature paper. It can be written as a representation-geometry re
 
 Main risk:
 
-Some signal may come from target-sentence artifacts rather than pure transformation geometry. The concrete high-risk case is now confirmed: `syntax=1.0` reproduces under `y_only`, so it must be interpreted as a target/surface artifact unless future controls overturn that. UPAT also shows that `delta > y_only` is not universal under small hard-holdout regimes. The paper needs strong source-only, target-only, delta-only, and paraphrase controls.
+Some signal may come from target-sentence artifacts rather than pure transformation geometry. The concrete high-risk case is now confirmed: `syntax=1.0` reproduces under `y_only`, so it must be interpreted as a target/surface artifact unless future controls overturn that. UPAT also shows that `delta > y_only` is not universal under small hard-holdout regimes. The logistic-regression rows show the same caution from a different angle: the Track 1 result is currently strongest as a Linear SVC/margin-based probe result, not as a classifier-invariant law. The paper needs strong source-only, target-only, delta-only, and paraphrase controls.
 
 ## Track 2: Signed permutation coherence for linguistic operators
 
@@ -298,7 +299,7 @@ Negative results remain part of the research record.
 1. Track 1 is arXiv-ready only when this checklist is complete:
    - syntax holdout breakdown is in the draft and interpreted as endpoint leakage
    - McNemar tests are reported in the text
-   - multiseed standard deviations are reported
+   - multiseed standard deviations and seed-level effect intervals are reported
    - at least one prior-work baseline or comparison is written up, such as task vectors or function vectors
    - at least one model outside the original five is included as a spot-check; currently satisfied by BERT-large and DeBERTa-v3-base
    - UPAT hard-holdout is either resolved experimentally or explicitly reported as a negative boundary condition
