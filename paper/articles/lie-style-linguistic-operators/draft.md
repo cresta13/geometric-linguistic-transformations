@@ -2,7 +2,7 @@
 
 ## Abstract
 
-If linguistic transformations are recoverable as displacement vectors, the next question is whether they compose in structured ways. We test controlled transformations corresponding to negation (`N`), question formation (`Q`), modality/evidentiality (`M`), and tense (`T`). Ordered compositions differ in embedding space, and semantic-equivalence controls show statistically significant but distributionally broad separation between equivalent and non-equivalent pairs. For third-order compositions, we no longer describe the main test as a Jacobi identity. Instead, we evaluate a neutral diagnostic: third-order signed permutation coherence, defined by the alternating endpoint sum `ABC+BCA+CAB-ACB-CBA-BAC` and compared against permutation-null baselines with bootstrap intervals. The strongest current result is local: `QMT` shows robust below-null cancellation across BERT, DistilRoBERTa, and RoBERTa, while negation-containing triples are mixed or worse than null. The evidence supports a local signed-permutation coherence effect, not a global Lie algebra.
+If linguistic transformations are recoverable as displacement vectors, the next question is whether they compose in structured ways. We test controlled transformations corresponding to negation (`N`), question formation (`Q`), modality/evidentiality (`M`), and tense (`T`). Ordered compositions differ in embedding space, and semantic-equivalence controls show statistically significant but distributionally broad separation between equivalent and non-equivalent pairs. For third-order compositions, we no longer describe the main test as a Jacobi identity. Instead, we evaluate a neutral diagnostic: third-order signed permutation coherence, defined by the alternating endpoint sum `ABC+BCA+CAB-ACB-CBA-BAC` and compared against permutation-null baselines with bootstrap intervals. The original English encoder/decoder table singled out `QMT` as the only triple stable across all five tested models. The 2026-06-23 multilingual max audit changes the story: across 7 languages and 5 multilingual encoders, all four tested triples are below signed-null in every model-language cell, with `NQM` and `QMT` strongest. The evidence supports a controlled signed-permutation coherence effect, not a global Lie algebra.
 
 ## Evidence Map
 
@@ -11,6 +11,7 @@ Main scripts:
 - Composition audit: [run_lie_composition_audit.py](../../../scripts/run_lie_composition_audit.py)
 - Semantic equivalence control: [run_lie_semantic_equivalence_control.py](../../../scripts/run_lie_semantic_equivalence_control.py)
 - Algebraic-identity audit / signed permutation diagnostic: [run_lie_algebraic_identities.py](../../../scripts/run_lie_algebraic_identities.py)
+- Multilingual max audit: [run_lie_multilingual_max_audit.py](../../../scripts/run_lie_multilingual_max_audit.py)
 - Composition dataset helper: [lie_composition_dataset.py](../../../scripts/lie_composition_dataset.py)
 
 Main result files:
@@ -25,10 +26,13 @@ Main result files:
 - Multiple-testing correction: [signed_permutation_multiple_testing.csv](../../../results/experiments/lie_algebraic_identities_results/csv/signed_permutation_multiple_testing.csv)
 - Dataset audit: [reviewer_dataset_audit.csv](../../../results/experiments/lie_algebraic_identities_results/csv/reviewer_dataset_audit.csv)
 - Decoder signed permutation summary: [jacobi_summary.csv](../../../results/experiments/lie_algebraic_identities_decoder_results/csv/jacobi_summary.csv)
+- Multilingual signed-permutation global summary: [triple_global_summary.csv](../../../results/experiments/lie_multilingual_max_results/csv/triple_global_summary.csv)
+- Multilingual endpoint controls: [endpoint_controls_summary.csv](../../../results/experiments/lie_multilingual_max_results/csv/endpoint_controls_summary.csv)
+- Multilingual cross-language centroid summary: [cross_language_centroid_summary.csv](../../../results/experiments/lie_multilingual_max_results/csv/cross_language_centroid_summary.csv)
 
 Daily verification packet:
 
-- [2026-06-12_reviewer_revised_report.pdf](../../../reports/2026-06-12_reviewer_revised_report.pdf)
+- [2026-06-23_reviewer_revised_report.pdf](../../../reports/2026-06-23_reviewer_revised_report.pdf)
 
 ## 1. Motivation
 
@@ -36,7 +40,7 @@ The geometric transformation-vector paper shows that delta vectors add informati
 
 > Do linguistic transformations compose in a way that reveals structured operator-like behavior?
 
-The answer is currently partial. Pairwise composition shows order effects. Third-order signed permutation tests show one robust local effect (`QMT`) and several failures involving negation.
+The answer is currently partial. Pairwise composition shows order effects. Third-order signed permutation tests show controlled below-null cancellation, but the scope is sensitive to dataset regime: the English encoder/decoder table favored `QMT`, while the multilingual audit finds all four triples below null and puts `NQM` first.
 
 ## 2. Related Work Positioning
 
@@ -88,7 +92,7 @@ Decoder replication now added:
 
 Reviewer-critical caveat:
 
-The decoder replication supports the local `QMT` result, but negation-containing triples become more model-dependent. This strengthens the paper's narrowed framing: local signed-permutation coherence exists, but it is not a general operator algebra.
+The decoder replication supports the local `QMT` result, but negation-containing triples become more model-dependent. The later multilingual audit makes the conclusion broader and messier: negation-containing triples can be strongly below null in multilingual sentence encoders, so the scientific question becomes when negation breaks the diagnostic and when it participates in it.
 
 ## 4. Composition and Noncommutativity
 
@@ -216,7 +220,7 @@ Dataset audit:
 
 ## 8. Main Third-Order Result
 
-The most robust cross-architecture below-null result is `QMT`.
+The most robust result in the original English encoder/decoder table is `QMT`.
 
 | Model | Triple | Ratio to null | 95% CI |
 |---|---|---:|---:|
@@ -253,11 +257,59 @@ Therefore, the central claim is now narrower:
 
 > `QMT` is the only tested triple with stable third-order signed permutation cancellation stronger than null across all five tested models after table-level multiple-testing correction.
 
+This statement is now explicitly scoped to the original English encoder/decoder table. It should not be repeated as the global project claim.
+
+## 8.1 Multilingual Max Audit
+
+The 2026-06-23 scale-up tests whether the signed-permutation diagnostic survives beyond English templates and the original encoder/decoder set.
+
+Setup:
+
+- 7 languages: English, Spanish, French, German, Russian, Chinese, Arabic
+- 5 multilingual encoders: paraphrase-multilingual-mpnet-base-v2, LaBSE, multilingual-e5-large, BGE-M3, and mBERT
+- 48 templates per language
+- 2000 signed-null samples per row
+- PCA dimension 96
+- held-out-language endpoint/source/delta/commutator controls
+
+![Multilingual signed permutation ratios](../../../results/experiments/lie_multilingual_max_results/figures/01_multilingual_signed_permutation_ratios.png)
+
+**Figure 8.** Multilingual signed-permutation ratio to signed-null mean. Values below `1.0` indicate stronger-than-null cancellation.
+
+![Multilingual global triple ratios](../../../results/experiments/lie_multilingual_max_results/figures/02_triple_global_ratio_summary.png)
+
+**Figure 9.** Global mean ratio to signed-null by triple across all model-language cells.
+
+Global result:
+
+| Triple | Mean ratio to signed-null | Std | Cells below null |
+|---|---:|---:|---:|
+| `NQM` | `0.580` | `0.072` | `35/35` |
+| `QMT` | `0.620` | `0.085` | `35/35` |
+| `NQT` | `0.701` | `0.073` | `35/35` |
+| `NMT` | `0.772` | `0.049` | `35/35` |
+
+This is the strongest current evidence that the signed-permutation diagnostic is not only an English-template artifact. But it also weakens the older `QMT`-only narrative. In the multilingual setting, `NQM` is the strongest global triple and all four triples pass below null in every model-language cell.
+
+Controls:
+
+![Multilingual endpoint controls](../../../results/experiments/lie_multilingual_max_results/figures/03_endpoint_control_macro_f1.png)
+
+**Figure 10.** Held-out-language controls. Source-only features are chance-like, while endpoint/delta/commutator features remain high.
+
+![Multilingual cross-language centroid consistency](../../../results/experiments/lie_multilingual_max_results/figures/04_cross_language_centroid_consistency.png)
+
+**Figure 11.** Cross-language centroid consistency is moderate and high-variance, not a clean universality result.
+
+Interpretation:
+
+The multilingual audit moves Track 2 closer to the algebraic-composition goal because the third-order signal survives a much broader model/language grid. It is still not endpoint-independent algebraic evidence. Endpoint and delta controls remain strong, and cross-language centroid alignment is only moderate (`mean cosine ~= 0.32`). The next necessary experiment is endpoint-balanced multilingual generation plus target-only controls over the six third-order endpoints.
+
 Working hypothesis for why `QMT` is coherent:
 
 `Q`, `M`, and `T` are all clause-level operators that modify illocution, epistemic status, or temporal anchoring while preserving the same event frame. Their endpoints can remain relatively aligned around one proposition. Negation (`N`) changes truth-conditional polarity and often introduces lexical/scope markers that interact with syntax more sharply. This makes `N` easy to detect as a one-step surface-labeled transformation, but less stable as a component in ordered composition.
 
-This is still a hypothesis, not a proven linguistic theory. It gives a pre-registered direction for the next template-generator experiment: if QMT coherence is real, it should survive grammar-generated paraphrases where question, modality, and tense vary without introducing negation.
+This is still a hypothesis, not a proven linguistic theory. After the multilingual max audit it also becomes incomplete: the project must explain why `NQM` becomes strongest under multilingual templates and multilingual encoders.
 
 Critical template caveat:
 
@@ -294,10 +346,11 @@ Evidence layers:
 
 1. Pairwise composition gives noncommutativity.
 2. Semantic controls show a statistically significant distribution shift.
-3. Signed permutation coherence identifies one robust local third-order effect.
-4. Multiple-testing correction shows that QMT is the only below-null triple passing across all five models.
-5. Negation triples are model-dependent, which constrains the theory.
-6. Grammar-generated pairwise controls preserve below-null commutator coherence, but endpoint controls remain too strong.
+3. Signed permutation coherence identifies robust controlled third-order effects.
+4. Multiple-testing correction shows that QMT is the only below-null triple passing across all five models in the original English encoder/decoder table.
+5. The multilingual max audit broadens the effect to all four tested triples across 7 languages and 5 multilingual encoders.
+6. Negation triples are regime-dependent, which constrains the theory.
+7. Grammar-generated pairwise controls preserve below-null commutator coherence, but endpoint controls remain too strong.
 
 Not proven:
 
@@ -307,17 +360,20 @@ Not proven:
 - endpoint-balanced robustness to grammar-generated templates
 - broad decoder-model generality beyond the two spot-checks
 - lexical-marker independence of the hand-written composition templates
+- endpoint-balanced multilingual robustness
 
 ## 11. Required Pre-Submission Experiments
 
 1. Rename code/CSV columns away from `jacobi_*` toward `signed_permutation_*`.
 2. Build endpoint-balanced grammar templates.
 3. Add target-only controls for third-order composition endpoints.
-4. Add layerwise analysis.
-5. Add pooling ablation.
-6. Add a focused negation analysis before adding new operators.
-7. Add prior-work positioning and bibliography.
+4. Add endpoint-balanced multilingual generation and rerun the 7-language audit.
+5. Explain the `NQM` versus `QMT` reversal across regimes.
+6. Add layerwise analysis.
+7. Add pooling ablation.
+8. Add a focused negation analysis before adding new operators.
+9. Add prior-work positioning and bibliography.
 
 ## Current Status
 
-This is a promising diagnostic study, but it is not submission-ready. The current result is useful precisely because it is local and falsifiable: `QMT` survives current controls, while negation-heavy triples expose the boundary of the phenomenon.
+This is a promising diagnostic study, but it is not submission-ready. The current result is useful precisely because it is falsifiable: signed-permutation cancellation survives a large multilingual scale-up, while endpoint controls and regime-dependent triple rankings expose the boundary of the phenomenon.

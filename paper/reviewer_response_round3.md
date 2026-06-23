@@ -2,6 +2,10 @@
 
 Date: 2026-06-13
 
+Postscript, 2026-06-23:
+
+The later multilingual max audit revised the Track 2 narrative. The `QMT`-only claim below is historical and scoped to the original English encoder/decoder table. In the 7-language, 5-multilingual-encoder audit, all four tested triples are below signed-null in every model-language cell, with `NQM` and `QMT` strongest. Current drafts should use the multilingual framing rather than promote `QMT` as globally unique.
+
 This note records the current response to the latest review of the research package.
 
 ## Fixed in the Current Drafts

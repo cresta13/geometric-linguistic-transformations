@@ -80,10 +80,17 @@ S(A,B,C) = ABC + BCA + CAB - ACB - CBA - BAC
   - DistilGPT-2 `QMT`: ratio `0.771`, CI `[0.745, 0.797]`
   - Negation-containing triples remain mixed and model-dependent.
 - Decoder pairwise composition summaries are now added, not only decoder third-order summaries.
-- Multiple-testing correction over `4 triples x 5 models` supports the narrowed claim: `QMT` is the only below-null triple passing across all five tested models.
+- In the original English encoder/decoder table, multiple-testing correction over `4 triples x 5 models` supports the narrowed claim that `QMT` is the only below-null triple passing across all five tested models.
 - A grammar-generated pairwise composition control now tests `720` generated `N,Q,M,T` rows across BERT, DistilRoBERTa, and RoBERTa.
 - In that grammar-control probe, observed relative commutator norms remain below all `N=1000` same-pair, any-pair, and norm-matched null means at the current `p=0.000999` resolution floor.
 - But endpoint-only and delta-only pair-label controls are essentially perfect (`macro F1 ~= 1.0`), so this is not endpoint-independent algebraic evidence yet.
+- A 2026-06-23 multilingual max audit now extends the signed-permutation probe to 7 languages and 5 multilingual encoders:
+  - languages: English, Spanish, French, German, Russian, Chinese, Arabic
+  - models: paraphrase-multilingual-mpnet-base-v2, LaBSE, multilingual-e5-large, BGE-M3, and mBERT
+  - all four tested triples are below signed-null in all `35/35` model-language cells
+  - global mean ratios to signed-null: `NQM=0.580`, `QMT=0.620`, `NQT=0.701`, `NMT=0.772`
+  - source-only held-out-language controls are chance-like (`macro F1=0.0476`), but endpoint/delta/commutator controls remain high, so endpoint artifacts are not solved
+  - cross-language centroid consistency is moderate and high-variance (`mean cosine ~= 0.32`)
 
 Scientific status:
 
@@ -91,7 +98,7 @@ This is promising but more fragile. It should be framed as a null-controlled dia
 
 Main risk:
 
-Hand-written templates may induce or suppress cancellation. GPT-2/DistilGPT-2 now support `QMT` below-null cancellation, and the grammar-generated pairwise control shows commutator coherence below nulls. However, endpoint controls remain too strong. The next experiments need endpoint-balanced grammar generation, target-only composition controls, and a focused negation analysis before expanding the operator set.
+Hand-written templates may induce or suppress cancellation. GPT-2/DistilGPT-2 support `QMT` below-null cancellation, and the grammar-generated pairwise control shows commutator coherence below nulls. The multilingual max audit strengthens the existence of a signed-permutation signal but also revises the story: `QMT` is not uniquely strongest once we move to multilingual templates and multilingual encoders. Endpoint controls remain too strong. The next experiments need endpoint-balanced multilingual generation, target-only third-order composition controls, and a focused explanation of why different template regimes change the relative ordering of `NQM` and `QMT`.
 
 ## Track 3: Cross-model transformation transfer
 
@@ -179,6 +186,10 @@ Minimal experiment:
 4. Align language-specific transformation spaces with Procrustes.
 5. Test whether classifiers or centroids transfer across languages.
 
+2026-06-23 status:
+
+The first large multilingual Track 2 audit is complete for 7 languages and 5 multilingual encoders. It is not yet a clean cross-lingual universality result, because the templates are synthetic and endpoint controls remain strong. Still, it is the strongest current evidence that the signed-permutation diagnostic is not purely an English-only artifact.
+
 Scientific payoff:
 
 This is the cleanest answer to the criticism that the current effects may be English grammar or template artifacts.
@@ -259,8 +270,10 @@ Negative results remain part of the research record.
    - controlled lexical overlap
 9. Add commutator null baselines for `||[A,B]||` using random or label-shuffled operations with matched norms.
 10. Re-run composition and signed-permutation diagnostics on generated templates.
-11. Add target-only and endpoint-only baselines for the Lie-style paper.
-12. Regenerate a dated PDF packet after every major run.
+11. Add target-only and endpoint-only baselines for third-order multilingual signed-permutation endpoints.
+12. Build an endpoint-balanced multilingual generator and re-run the 7-language audit.
+13. Explain the `NQM` versus `QMT` reversal between the English/decoder table and the multilingual max audit.
+14. Regenerate a dated PDF packet after every major run.
 
 ### Medium term
 

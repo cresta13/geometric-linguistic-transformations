@@ -670,3 +670,53 @@ Interpretation:
 This is a real step toward the Lie-like track, but not a clean win. Grammar variation does not destroy pairwise order structure, and observed commutator norms are far below shuffled/null baselines. However, endpoint-only and delta-only controls perfectly recover the pair label. That means the generated `AB`/`BA` endpoints still contain strong explicit order markers.
 
 The next Track 2 step should be endpoint-balanced grammar generation: make pair labels harder to read from either endpoint alone while preserving ordered semantic composition. Only after that should we promote the pairwise commutator result as evidence for endpoint-independent algebraic structure.
+
+## 2026-06-23: Multilingual max audit for signed-permutation structure
+
+We ran the strongest Track 2 scale-up so far.
+
+Experiment:
+
+- Script: `scripts/run_lie_multilingual_max_audit.py`
+- Output: `results/experiments/lie_multilingual_max_results/`
+- Languages: English, Spanish, French, German, Russian, Chinese, Arabic
+- Models:
+  - `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`
+  - `sentence-transformers/LaBSE`
+  - `intfloat/multilingual-e5-large`
+  - `BAAI/bge-m3`
+  - `bert-base-multilingual-cased`
+- Dataset: `3360` rows, `8298` unique texts
+- Nulls: `2000` signed-null samples per row
+- PCA dimension: `96`
+
+Main result:
+
+| Triple | Mean ratio to signed-null | Std | Cells below null |
+|---|---:|---:|---:|
+| `NQM` | `0.580` | `0.072` | `35/35` |
+| `QMT` | `0.620` | `0.085` | `35/35` |
+| `NQT` | `0.701` | `0.073` | `35/35` |
+| `NMT` | `0.772` | `0.049` | `35/35` |
+
+This is the strongest evidence so far that the third-order signed-permutation diagnostic is not only an English-template artifact. The signal survives across seven languages and five multilingual encoders.
+
+But the result also revises the story. The earlier `QMT` claim was true for the original English encoder/decoder table, where `QMT` was the only triple passing across all five tested models. It is not the global project claim anymore. In the multilingual audit, all four triples are below null and `NQM` is the strongest global triple.
+
+Controls:
+
+- Source-only held-out-language macro F1 is chance-like: `0.0476` for every model.
+- Endpoint/delta/commutator controls remain high:
+  - `ab_delta_only` mean macro F1 ranges from about `0.679` to `0.867`.
+  - `commutator_delta` mean macro F1 ranges from about `0.497` to `0.758`.
+- Cross-language centroid consistency is moderate and high-variance:
+  - pair commutators: mean cosine `0.312`, std `0.332`
+  - triple signed vectors: mean cosine `0.322`, std `0.339`
+
+Interpretation:
+
+This moves us closer to the Lie-algebra direction because the non-tautological third-order signal survives a much broader stress test. It is still not proof of a Lie algebra. Endpoint information remains strong, cross-language centroid consistency is not clean, and the triple ranking changes across regimes.
+
+Next forced step:
+
+Build endpoint-balanced multilingual templates and add target-only controls for the six third-order endpoints. The core question is now not "does QMT survive?", but "which signed-permutation cancellations survive when endpoints stop carrying easy class/order markers?"

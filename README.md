@@ -46,7 +46,7 @@ Closest related work:
 
 ## Important Artifacts
 
-- Main live report: `reports/2026-06-14_reviewer_revised_report.pdf`
+- Main live report: `reports/2026-06-23_reviewer_revised_report.pdf`
 - Zenodo snapshot report: `reports/2026-06-13_reviewer_revised_report.pdf`
 - Release notes for DOI archiving: `reports/release_notes_v2026.06.13.md`
 - Research roadmap: `paper/research_program.md`

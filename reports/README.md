@@ -9,7 +9,7 @@ Current convention:
 
 Current verification packet:
 
-- [2026-06-14_reviewer_revised_report.pdf](2026-06-14_reviewer_revised_report.pdf)
+- [2026-06-23_reviewer_revised_report.pdf](2026-06-23_reviewer_revised_report.pdf)
 
 Zenodo snapshot packet:
 

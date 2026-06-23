@@ -8,10 +8,18 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 EXP = ROOT / "results" / "experiments"
-OUT = ROOT / "reports" / "2026-06-14_reviewer_revised_report.pdf"
+OUT = ROOT / "reports" / "2026-06-23_reviewer_revised_report.pdf"
 
 
 plt.rcParams["font.family"] = "DejaVu Sans"
+
+MODEL_ALIASES = {
+    "sentence-transformers/paraphrase-multilingual-mpnet-base-v2": "multi-mpnet",
+    "sentence-transformers/LaBSE": "LaBSE",
+    "intfloat/multilingual-e5-large": "e5-large",
+    "BAAI/bge-m3": "bge-m3",
+    "bert-base-multilingual-cased": "mBERT",
+}
 
 
 def add_text_page(pdf, title, paragraphs, fontsize=10):
@@ -54,6 +62,9 @@ def add_text_page(pdf, title, paragraphs, fontsize=10):
 
 def add_table_page(pdf, title, df, max_rows=30):
     visible = df.head(max_rows).copy()
+    for col in ["model", "source_model", "target_model"]:
+        if col in visible.columns:
+            visible[col] = visible[col].map(lambda x: MODEL_ALIASES.get(x, x))
     fig = plt.figure(figsize=(11.69, 8.27))
     fig.patch.set_facecolor("white")
     ax = fig.add_axes([0.03, 0.05, 0.94, 0.88])
@@ -86,7 +97,10 @@ def add_image_page(pdf, title, path):
 
 def add_code_listing(pdf, path, title, lines_per_page=54):
     lines = path.read_text(encoding="utf-8").splitlines()
-    numbered = [f"{i + 1:04d}: {line}" for i, line in enumerate(lines)]
+    numbered = [
+        f"{i + 1:04d}: {line.encode('unicode_escape').decode('ascii')}"
+        for i, line in enumerate(lines)
+    ]
 
     for page_idx in range(0, len(numbered), lines_per_page):
         chunk = numbered[page_idx:page_idx + lines_per_page]
@@ -146,6 +160,29 @@ def main():
     grammar_controls = pd.read_csv(grammar_controls_path) if grammar_controls_path.exists() else pd.DataFrame()
     grammar_nulls_path = EXP / "lie_composition_grammar_results" / "csv" / "grammar_commutator_nulls.csv"
     grammar_nulls = pd.read_csv(grammar_nulls_path) if grammar_nulls_path.exists() else pd.DataFrame()
+    multilingual_dir = EXP / "lie_multilingual_max_results"
+    multilingual_triple_path = multilingual_dir / "csv" / "triple_global_summary.csv"
+    multilingual_triple = pd.read_csv(multilingual_triple_path) if multilingual_triple_path.exists() else pd.DataFrame()
+    multilingual_triple_by_model_path = multilingual_dir / "csv" / "triple_by_model_summary.csv"
+    multilingual_triple_by_model = (
+        pd.read_csv(multilingual_triple_by_model_path)
+        if multilingual_triple_by_model_path.exists()
+        else pd.DataFrame()
+    )
+    multilingual_pair_path = multilingual_dir / "csv" / "pair_global_summary.csv"
+    multilingual_pair = pd.read_csv(multilingual_pair_path) if multilingual_pair_path.exists() else pd.DataFrame()
+    multilingual_endpoint_path = multilingual_dir / "csv" / "endpoint_controls_summary.csv"
+    multilingual_endpoint = (
+        pd.read_csv(multilingual_endpoint_path)
+        if multilingual_endpoint_path.exists()
+        else pd.DataFrame()
+    )
+    multilingual_centroid_path = multilingual_dir / "csv" / "cross_language_centroid_summary.csv"
+    multilingual_centroid = (
+        pd.read_csv(multilingual_centroid_path)
+        if multilingual_centroid_path.exists()
+        else pd.DataFrame()
+    )
     ablation = pd.read_csv(ROOT / "results" / "reviewer_ablation_table.csv")
     syntax_ablation = pd.read_csv(EXP / "syntax_representation_ablation_results" / "syntax_representation_ablation_pivot.csv")
     layerwise = pd.read_csv(EXP / "layerwise_pooling_ablation_results" / "layerwise_pooling_ablation_top20.csv")
@@ -181,7 +218,7 @@ def main():
             pdf,
             "Reviewer-Revised Research Report: Transformation Vectors and Composition Diagnostics",
             [
-                ("Date", "2026-06-14"),
+                ("Date", "2026-06-23"),
                 (
                     "Purpose",
                     "Fix the reviewer-revised research state for external verification. This version incorporates AC-level review concerns: endpoint leakage, syntax-holdout overclaiming, McNemar tests, semantic-control statistics, and the terminology change to a third-order signed permutation coherence test.",
@@ -192,11 +229,11 @@ def main():
                 ),
                 (
                     "Track 2 fixed result",
-                    "Composition order matters. Semantic equivalence shifts noncommutativity distributions with strong statistical tests. The third-order result is now framed as signed permutation coherence, not a formal Jacobi identity. Decoder pairwise composition is now included. After multiple-testing correction, QMT is the only below-null triple that is stable across all five tested models.",
+                    "Composition order matters. Semantic equivalence shifts noncommutativity distributions with strong statistical tests. The third-order result is now framed as signed permutation coherence, not a formal Jacobi identity. Decoder pairwise composition is now included. The 2026-06-23 multilingual max audit extends the signed-permutation probe to 7 languages and 5 multilingual encoders. All four tested triples are below signed-null in every model-language cell; therefore the older 'QMT-only' story must be narrowed to the earlier English/decoder table, not promoted as a universal claim.",
                 ),
                 (
                     "Main conclusion",
-                    "The evidence supports a local QMT signed-permutation cancellation effect across tested encoder models, while negation-heavy triples expose the boundary of the phenomenon. RISE (Freenor and Alvarez, ICLR 2026) is now treated as the closest prior work for spherical/geodesic semantic-syntactic transformations across languages and embedding models. Our Track 3 result is therefore framed as a stress test: UPAT-large cross-model Procrustes transfer survives N=1000 random-label, random-pairing, random-orthogonal, and held-out-anchor controls. The first RISE-aware comparison shows strong within-model prototype target prediction, harder cross-model target prediction, and higher aligned delta-classifier transfer on its own class-discrimination metric.",
+                    "The evidence now supports a broader but still controlled signed-permutation signal in multilingual sentence encoders, with NQM and QMT especially strong in the new audit. This is closer to the Lie-algebra direction, but still not a proof of a Lie algebra: endpoint controls remain strong and cross-language centroid consistency is only moderate with high variance. RISE (Freenor and Alvarez, ICLR 2026) remains the closest prior work for spherical/geodesic semantic-syntactic transformations across languages and embedding models.",
                 ),
             ],
         )
@@ -251,6 +288,16 @@ def main():
         if not grammar_nulls.empty:
             same_pair = grammar_nulls[grammar_nulls["null_type"] == "random_pairing_same_pair"]
             add_table_page(pdf, "Grammar composition commutator nulls: same-pair shuffle", format_float_columns(same_pair), max_rows=20)
+        if not multilingual_triple.empty:
+            add_table_page(pdf, "Multilingual max audit: global triple summary", format_float_columns(multilingual_triple), max_rows=10)
+        if not multilingual_triple_by_model.empty:
+            add_table_page(pdf, "Multilingual max audit: triple summary by model", format_float_columns(multilingual_triple_by_model), max_rows=25)
+        if not multilingual_pair.empty:
+            add_table_page(pdf, "Multilingual max audit: pairwise commutator summary", format_float_columns(multilingual_pair), max_rows=10)
+        if not multilingual_endpoint.empty:
+            add_table_page(pdf, "Multilingual max audit: held-out language endpoint controls", format_float_columns(multilingual_endpoint), max_rows=30)
+        if not multilingual_centroid.empty:
+            add_table_page(pdf, "Multilingual max audit: cross-language centroid consistency", format_float_columns(multilingual_centroid), max_rows=10)
 
         figures = [
             ("Signed permutation relative norm", EXP / "lie_algebraic_identities_results" / "figures" / "03_jacobi_relative_norm_heatmap.png"),
@@ -258,6 +305,10 @@ def main():
             ("Semantic equivalent vs non-equivalent control", EXP / "lie_semantic_equivalence_results" / "figures" / "01_equivalent_vs_nonequivalent.png"),
             ("Composition noncommutativity heatmap", EXP / "lie_composition_results" / "figures" / "01_noncommutativity_heatmap.png"),
             ("Grammar composition relative commutator heatmap", EXP / "lie_composition_grammar_results" / "figures" / "01_relative_commutator_norm_heatmap.png"),
+            ("Multilingual signed-permutation ratios", EXP / "lie_multilingual_max_results" / "figures" / "01_multilingual_signed_permutation_ratios.png"),
+            ("Multilingual global triple ratios", EXP / "lie_multilingual_max_results" / "figures" / "02_triple_global_ratio_summary.png"),
+            ("Multilingual endpoint controls", EXP / "lie_multilingual_max_results" / "figures" / "03_endpoint_control_macro_f1.png"),
+            ("Multilingual cross-language centroid consistency", EXP / "lie_multilingual_max_results" / "figures" / "04_cross_language_centroid_consistency.png"),
             ("Original PCA class geometry", ROOT / "paper" / "figures" / "pca_all_classes_bert-base-uncased.png"),
             ("Syntax representation ablation", ROOT / "paper" / "figures" / "syntax_representation_ablation.png"),
             ("DeBERTa-v3-small spot-check", ROOT / "paper" / "figures" / "spotcheck_deberta_v3_small.png"),
@@ -305,6 +356,8 @@ def main():
                 "Fifth 2026-06-14 update: a non-leaky Hybrid RISE-Procrustes transfer test is now added. It scores every pair against all class prototypes, then tests prototype-score and delta+prototype-score features for cross-model transformation-label F1. The hybrid does not improve over aligned delta_only, suggesting that target-reconstructive prototype geometry and class-discriminative delta geometry are not automatically complementary under this metric.",
                 "Sixth 2026-06-14 update: movement-level spherical delta steering is now added. Linear centroid steering is best for cross-model target cosine, while RISE-style prediction is best for nearest-target label F1. Uncalibrated spherical delta movement slightly improves label F1 over linear deltas but lowers target cosine.",
                 "Seventh 2026-06-14 update: grammar-generated pairwise composition controls are now added for Track 2. Observed relative commutator norms remain below shuffled/norm-matched nulls, but endpoint-only and delta-only controls classify pair labels almost perfectly, so this is not yet endpoint-independent algebraic evidence.",
+                "2026-06-23 update: the multilingual max audit completed successfully on seven languages and five multilingual encoders: paraphrase-multilingual-mpnet-base-v2, LaBSE, multilingual-e5-large, BGE-M3, and mBERT. All four third-order triples are below signed-null in every model-language cell; the global mean ratios are NQM=0.5798, QMT=0.6203, NQT=0.7014, and NMT=0.7716. This strengthens the existence of a controlled signed-permutation signal while weakening any universal claim that QMT is uniquely special.",
+                "2026-06-23 caution: source-only held-out-language controls are chance-like, but endpoint/delta/commutator controls remain high. Cross-language centroid cosine is moderate and high-variance. The next Track 2 gate is endpoint-balanced multilingual generation plus third-order target-only controls, not another unqualified scale-up.",
                 "Remaining blockers: confidence intervals and anchor-domain diversity for Track 3, stronger/faithful RISE comparison if feasible, resolve or expand UPAT hard-holdout, representation-ablation tables for every non-syntax holdout split, endpoint-balanced grammar generation and third-order target-only controls for Track 2, composition layer/pooling ablations, and final bibliography formatting.",
             ],
         )
@@ -347,6 +400,7 @@ def main():
 
         add_code_listing(pdf, ROOT / "scripts" / "run_lie_algebraic_identities.py", "Code listing: run_lie_algebraic_identities.py")
         add_code_listing(pdf, ROOT / "scripts" / "run_lie_composition_grammar_controls.py", "Code listing: run_lie_composition_grammar_controls.py")
+        add_code_listing(pdf, ROOT / "scripts" / "run_lie_multilingual_max_audit.py", "Code listing: run_lie_multilingual_max_audit.py")
         add_code_listing(pdf, ROOT / "scripts" / "run_syntax_representation_ablation.py", "Code listing: run_syntax_representation_ablation.py")
         add_code_listing(pdf, ROOT / "scripts" / "run_layerwise_pooling_ablation.py", "Code listing: run_layerwise_pooling_ablation.py")
         add_code_listing(pdf, ROOT / "scripts" / "run_track1_spotcheck.py", "Code listing: run_track1_spotcheck.py")

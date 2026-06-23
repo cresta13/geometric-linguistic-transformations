@@ -29,6 +29,13 @@ Important subdirectories:
   - `csv/grammar_endpoint_controls.csv`: endpoint-only and delta-only pair-label controls.
   - `csv/grammar_commutator_nulls.csv`: `N=1000` same-pair, any-pair, and norm-matched random-direction commutator nulls.
   - `figures/01_relative_commutator_norm_heatmap.png`: grammar-control relative commutator heatmap.
+- `lie_multilingual_max_results/`
+  - `csv/multilingual_composition_dataset.csv`: 7-language synthetic composition dataset for `N,Q,M,T`.
+  - `csv/triple_global_summary.csv`, `csv/triple_by_model_summary.csv`, and `csv/triple_by_language_summary.csv`: third-order signed-permutation summaries across multilingual encoders.
+  - `csv/pair_global_summary.csv`: pairwise commutator summary across models and languages.
+  - `csv/endpoint_controls_summary.csv`: held-out-language source/endpoint/delta/commutator controls.
+  - `csv/cross_language_centroid_summary.csv`: cross-language centroid-consistency summary.
+  - `figures/01_multilingual_signed_permutation_ratios.png`, `figures/02_triple_global_ratio_summary.png`, `figures/03_endpoint_control_macro_f1.png`, and `figures/04_cross_language_centroid_consistency.png`: compact figures for the multilingual audit.
 - `lie_composition_decoder_results/`
 - `lie_algebraic_identities_results/`
 - `lie_algebraic_identities_decoder_results/`

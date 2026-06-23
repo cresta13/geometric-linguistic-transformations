@@ -153,15 +153,16 @@ Measure whether transformations live in low-dimensional subspaces.
 - Added a working hypothesis for why `QMT` is cross-architecture coherent.
 - Rewrote antisymmetry as a tautological implementation check rather than evidence.
 - Added explicit caveat that current Lie-style templates contain stable lexical markers and remain synthetic.
+- Added the 2026-06-23 multilingual max audit: 7 languages, 5 multilingual encoders, 2000 signed-null samples per row. All four tested triples are below signed-null in every model-language cell, with `NQM` and `QMT` strongest. This strengthens the signed-permutation signal but revises the earlier `QMT`-only narrative.
 
 ### Future submission work
 
 1. Rename code and CSV columns away from `jacobi_*`.
-2. Add grammar-generated templates.
-3. Add endpoint-only controls.
+2. Add endpoint-balanced multilingual grammar templates.
+3. Add target-only and endpoint-only controls for the six third-order composition endpoints.
 4. Add layerwise and pooling ablations for composition diagnostics.
-5. Add focused negation analysis before expanding the operator set.
-6. Convert the QMT working hypothesis into a grammar-generated preregistered test.
+5. Explain the `NQM` versus `QMT` regime shift before expanding the operator set.
+6. Add focused negation analysis before expanding the operator set.
 7. Add null baselines for pairwise commutator norms `||[A,B]||` using matched random/shuffled operations.
 
 ## Future submission priorities

@@ -183,3 +183,25 @@ This is a real research program, not AI-flavored noise. The results are interest
 - RISE-like geometry and delta geometry optimize different notions of success
 
 The next best move is not adding more broad claims. It is adding calibration and confidence intervals to Track 3, while keeping Track 1 and Track 2 clean enough to become separate papers.
+
+## 2026-06-23 Update: Multilingual max audit
+
+The new multilingual audit is a genuine strengthening of Track 2, but it also forces a narrative correction.
+
+What got stronger:
+
+- The signed-permutation diagnostic now survives a 7-language, 5-multilingual-encoder stress test.
+- All four tested triples are below signed-null in every model-language cell.
+- Source-only held-out-language controls are chance-like, so the result is not simply recoverable from source sentences.
+
+What got weaker:
+
+- The previous `QMT`-as-unique story is no longer globally valid. `QMT` remains the unique stable triple in the older English encoder/decoder table, but `NQM` is strongest in the multilingual audit and every triple is below null.
+- Endpoint/delta/commutator controls remain strong, so the result is still not endpoint-independent algebraic evidence.
+- Cross-language centroid consistency is moderate with high variance, so the multilingual result should not be sold as a clean universal operator space.
+
+Updated skeptical verdict:
+
+> Controlled multilingual sentence encoders show robust third-order signed-permutation cancellation under synthetic `N,Q,M,T` templates, but endpoint controls and regime-dependent triple rankings prevent a Lie-algebra claim.
+
+The next decisive experiment is endpoint-balanced multilingual generation with third-order target-only controls.
