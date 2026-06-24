@@ -4,12 +4,12 @@ title: "Geometric Linguistic Transformations in Transformer Latent Spaces"
 type: software
 version: "2026.06.24"
 date-released: "2026-06-24"
-doi: "10.5281/zenodo.20680414"
+doi: "10.5281/zenodo.20829303"
 authors:
   - family-names: Simakova
     given-names: Anna
 repository-code: "https://github.com/cresta13/geometric-linguistic-transformations"
-repository-artifact: "https://doi.org/10.5281/zenodo.20680414"
+repository-artifact: "https://doi.org/10.5281/zenodo.20829303"
 url: "https://github.com/cresta13/geometric-linguistic-transformations"
 license: "MIT"
 abstract: >-

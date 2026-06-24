@@ -2,7 +2,9 @@
 
 This release freezes the current research artifact after the 2026-06-24 endpoint-residualization audits for the Lie-style / signed-permutation track.
 
-Zenodo concept DOI / previous record: [10.5281/zenodo.20680414](https://doi.org/10.5281/zenodo.20680414)
+Zenodo version DOI: [10.5281/zenodo.20829303](https://doi.org/10.5281/zenodo.20829303)
+
+Previous Zenodo version DOI: [10.5281/zenodo.20680414](https://doi.org/10.5281/zenodo.20680414)
 
 It should be archived on Zenodo as **Software** / reproducibility package, not as a peer-reviewed publication. The draft papers are included as research notes inside the software artifact.
 

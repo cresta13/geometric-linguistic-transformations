@@ -1,7 +1,7 @@
 {
   "title": "Geometric Linguistic Transformations in Transformer Latent Spaces: Research Artifact and Reproducibility Package",
   "version": "2026.06.24",
-  "doi": "10.5281/zenodo.20680414",
+  "doi": "10.5281/zenodo.20829303",
   "upload_type": "software",
   "access_right": "open",
   "license": "mit",
@@ -28,8 +28,13 @@
       "resource_type": "software"
     },
     {
-      "identifier": "https://doi.org/10.5281/zenodo.20680414",
+      "identifier": "https://doi.org/10.5281/zenodo.20829303",
       "relation": "isIdenticalTo",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "https://doi.org/10.5281/zenodo.20680414",
+      "relation": "isNewVersionOf",
       "resource_type": "software"
     }
   ]
