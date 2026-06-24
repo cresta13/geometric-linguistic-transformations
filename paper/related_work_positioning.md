@@ -1,8 +1,10 @@
-# Related Work Positioning: RISE and Our Tracks
+# Related Work Positioning: RISE, LRE, and Our Tracks
 
 This note records how the project should position itself after reading:
 
 Freenor and Alvarez, **"Mapping Semantic & Syntactic Relationships with Geometric Rotation"**, ICLR 2026.
+
+Xia and Kalita, **"Linear Relational Decoding of Morphology in Language Models"**, arXiv:2507.14640, 2025.
 
 ## What RISE Already Covers
 
@@ -61,6 +63,14 @@ Distinct value:
 
 This is the cleanest conceptual separation from RISE. It should be framed as a diagnostic of local composition/order effects, not as a steering method.
 
+Xia and Kalita add a second important boundary around this track. Their work shows that some linguistic relations, especially morphology, may be better modeled as relation-specific matrix operators derived from Jacobians than as additive displacement vectors. That matters for Track 2 because a matrix-valued operator formulation gives a more direct route to Lie-style tests:
+
+```text
+[W_A, W_B] = W_A W_B - W_B W_A
+```
+
+and to a true matrix Jacobi residual. Our current endpoint signed-permutation diagnostic is therefore a weaker, endpoint-level proxy. A future operator-valued Track 2 experiment should learn affine or multiplicative maps for `N,Q,M,T` and compare matrix commutators against the current endpoint/delta diagnostics.
+
 ### Track 3: Cross-Model Transfer Stress Tests
 
 Track 3 is closest to RISE and therefore needs the most careful positioning.
@@ -98,6 +108,10 @@ Use this framing in future drafts:
 
 > RISE shows that some discourse-level semantic-syntactic transformations can be modeled as spherical/geodesic operations across languages and embedding models. Our work is complementary: we stress-test simpler endpoint and delta representations under endpoint-only controls, hard holdouts, Procrustes nulls, and held-out alignment anchors, and we separately test whether ordered linguistic transformations exhibit noncommutative composition diagnostics.
 
+Also use this operator-valued caveat:
+
+> Linear Relational Decoding shows that some linguistic relations, especially morphology, can be captured by relation-specific multiplicative or affine maps in residual space. Our delta-based results should therefore not be framed as the only natural representation of linguistic transformations. They motivate a follow-up matrix/operator formulation where closure, commutators, and Jacobi residuals can be tested more directly.
+
 ## Immediate Backlog Changes
 
 1. Add RISE to every related-work section as the closest prior work.
@@ -106,3 +120,4 @@ Use this framing in future drafts:
 4. Extend the first RISE/MDV comparison with confidence intervals and, if feasible, a more faithful RISE implementation before promoting Track 3.
 5. Extend movement-level composition with train-only step-size calibration and confidence intervals before making any complementarity claim.
 6. Emphasize Track 2 composition/order diagnostics as the most distinct paper-level contribution.
+7. Add an affine/operator-valued Track 2 experiment inspired by Linear Relational Decoding: learn `W_op` and `b_op` for `N,Q,M,T`, compare additive delta-only, multiplicative matrix-only, and affine map variants, then compute matrix commutators and Jacobi residuals.

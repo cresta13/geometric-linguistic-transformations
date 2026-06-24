@@ -4,7 +4,14 @@
 
 Can linguistic transformations be represented not only as separable classes in transformer embedding spaces, but as reusable geometric operations with meaningful composition structure?
 
-The project currently has two paper tracks.
+This repository develops **GLT** (**Geometric Linguistic Transformations**), a research program for probing whether linguistic transformations appear as reusable geometric objects in transformer embedding spaces.
+
+Current tracks:
+
+- **GLT-DV**: delta-vector diagnostics with endpoint controls.
+- **GLT-SPOT**: signed-permutation operator tests for ordered composition.
+- **GLT-XFER**: cross-model transformation-transfer stress tests.
+- **GLT-MOLT**: planned matrix/operator extension motivated by Linear Relational Decoding.
 
 ## Strategic narrative
 
@@ -17,6 +24,7 @@ Current results are not enough to claim this as a complete theory yet. The Procr
 Closest prior-work anchor:
 
 - Freenor and Alvarez 2026, RISE, already demonstrates rotor-based discourse-level semantic-syntactic transformation geometry across languages and embedding models. Our work must be positioned as endpoint-controlled delta diagnostics, Procrustes/null stress testing, and ordered-composition diagnostics rather than as the first evidence for geometric linguistic transformations.
+- Xia and Kalita 2025, Linear Relational Decoding of Morphology in Language Models, shows that some linguistic relations can be decoded by relation-specific Jacobian-derived matrix operators, with strong morphology results across GPT-J, Llama-7b, and multilingual morphology. This is a key motivation for an operator-valued version of Track 2: delta vectors are not the only plausible representation of linguistic transformations.
 
 ## Track 1: Geometric transformation vectors
 
@@ -92,6 +100,11 @@ S(A,B,C) = ABC + BCA + CAB - ACB - CBA - BAC
   - global mean ratios to signed-null: `NQM=0.580`, `QMT=0.620`, `NQT=0.701`, `NMT=0.772`
   - source-only held-out-language controls are chance-like (`macro F1=0.0476`), but endpoint/delta/commutator controls remain high, so endpoint artifacts are not solved
   - cross-language centroid consistency is moderate and high-variance (`mean cosine ~= 0.32`)
+- A 2026-06-24 structure-constants closure audit now estimates primitive operator centroids for `N,Q,M,T`, projects pairwise commutators into their span, and compares closure residuals to 1000 random-subspace nulls:
+  - nonzero overall mean closure residual is below random-subspace null (`0.885` versus `0.984`)
+  - strongest Jacobi-like closure triples are `NMT` (`0.309`) and `QMT` (`0.333`)
+  - `NQT` remains weak (`0.853`)
+  - Chinese `NM-MN` and `MT-TM` rows have zero commutator norm under current templates and must be treated as template degeneracies
 
 Scientific status:
 
@@ -99,7 +112,17 @@ This is promising but more fragile. It should be framed as a null-controlled dia
 
 Main risk:
 
-Hand-written templates may induce or suppress cancellation. GPT-2/DistilGPT-2 support `QMT` below-null cancellation, and the grammar-generated pairwise control shows commutator coherence below nulls. The multilingual max audit strengthens the existence of a signed-permutation signal but also revises the story: `QMT` is not uniquely strongest once we move to multilingual templates and multilingual encoders. Endpoint controls remain too strong. The next experiments need endpoint-balanced multilingual generation, target-only third-order composition controls, and a focused explanation of why different template regimes change the relative ordering of `NQM` and `QMT`.
+Hand-written templates may induce or suppress cancellation. GPT-2/DistilGPT-2 support `QMT` below-null cancellation, and the grammar-generated pairwise control shows commutator coherence below nulls. The multilingual max audit strengthens the existence of a signed-permutation signal but also revises the story: `QMT` is not uniquely strongest once we move to multilingual templates and multilingual encoders. The structure-constants audit adds partial closure-like evidence, but the Chinese zero-commutator rows show that template degeneracy can create misleadingly clean cells. Endpoint controls remain too strong. The next experiments need endpoint-balanced multilingual generation, target-only third-order composition controls, affine/multiplicative operator maps, and a focused explanation of why different template regimes change the relative ordering of `NQM` and `QMT`.
+
+Important adjacent method:
+
+Linear Relational Decoding suggests that the additive endpoint-delta framing may be too weak for a serious Lie-style claim. A future Track 2 variant should learn relation-specific maps:
+
+```text
+y ~= W_op x + b_op
+```
+
+and compare additive delta-only, multiplicative matrix-only, and affine map variants. This would allow commutators and Jacobi residuals to be computed directly over learned operators instead of endpoint sums.
 
 ## Track 3: Cross-model transformation transfer
 
@@ -278,9 +301,13 @@ Negative results remain part of the research record.
    - joint sign/triple/position removal is complete
 12. Add target-only and endpoint-only baselines for third-order multilingual signed-permutation endpoints.
 13. Add nonlinear endpoint-artifact controls, such as adversarial endpoint balancing or kernel/MLP endpoint probes.
-14. Build an endpoint-balanced multilingual generator and re-run the 7-language audit.
-15. Explain the `NQM` versus `QMT` reversal between the English/decoder table and the multilingual max audit.
-16. Regenerate a dated PDF packet after every major run.
+14. Add an affine/operator-valued Track 2 experiment inspired by Linear Relational Decoding:
+   - learn `W_op`, `b_op` maps for `N,Q,M,T`
+   - compare additive delta-only, multiplicative matrix-only, and affine `W_op x + b_op`
+   - compute matrix commutators and Jacobi residuals directly
+15. Build an endpoint-balanced multilingual generator and re-run the 7-language audit.
+16. Explain the `NQM` versus `QMT` reversal between the English/decoder table and the multilingual max audit.
+17. Regenerate a dated PDF packet after every major run.
 
 ### Medium term
 

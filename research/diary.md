@@ -779,3 +779,93 @@ This is still not a Lie algebra proof. It is a stronger diagnostic result:
 Next forced step:
 
 Build endpoint-balanced multilingual templates and nonlinear/adversarial endpoint controls. The remaining criticism is no longer only "endpoint classifiers are strong"; it is "there may be nonlinear or lexical endpoint artifacts that the linear residualization audit does not remove."
+
+## 2026-06-24: Linear Relational Decoding as a matrix-operator follow-up
+
+We reviewed Xia and Kalita 2025, **"Linear Relational Decoding of Morphology in Language Models"** (`arXiv:2507.14640`).
+
+Why it matters:
+
+- The paper extends Linear Relational Embeddings to language-model morphology.
+- It reports that relation-specific Jacobian-derived matrix operators can faithfully approximate many morphological relations.
+- It separates additive and multiplicative mechanisms:
+  - additive / bias-like movement
+  - multiplicative matrix maps
+  - affine `W_r x + b_r` maps
+- Morphology appears especially compatible with multiplicative linear maps, including multilingual morphology.
+
+Implication for this project:
+
+Our current Track 2 signed-permutation diagnostic is still endpoint/delta based. That is a useful proxy, but it is not the strongest possible Lie-style formulation. The more literal version should learn operator-valued maps for `N,Q,M,T`:
+
+```text
+y ~= W_op x + b_op
+```
+
+and then compute:
+
+```text
+[W_A, W_B] = W_A W_B - W_B W_A
+```
+
+plus matrix Jacobi residuals. This would move the project closer to an actual algebraic claim than endpoint signed-permutation sums alone.
+
+New follow-up:
+
+Add an affine/operator-valued Track 2 experiment comparing additive delta-only, multiplicative matrix-only, and affine map variants. Use morphology as a possible sanity benchmark: if the pipeline cannot recover structure in a relation class where Linear Relational Decoding reports strong linearity, the method needs revision before broader linguistic-operator claims.
+
+## 2026-06-24: Structure-constants closure audit
+
+We ran the first GLT-MOLT-style bridge experiment.
+
+Script:
+
+- `scripts/run_lie_structure_constants_audit.py`
+
+Outputs:
+
+- `results/experiments/lie_structure_constants_results/`
+
+Design:
+
+- 7 languages: English, Spanish, French, German, Russian, Chinese, Arabic
+- 7 multilingual models:
+  - `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`
+  - `sentence-transformers/LaBSE`
+  - `intfloat/multilingual-e5-large`
+  - `BAAI/bge-m3`
+  - `bert-base-multilingual-cased`
+  - `xlm-roberta-base`
+  - `distilbert-base-multilingual-cased`
+- 160 templates per language
+- 31,776 unique texts
+- PCA dimension 128
+- 1000 random-subspace null samples
+
+Main closure result:
+
+| Pair | Mean closure residual | Random-subspace null |
+|---|---:|---:|
+| `MT - TM` | `0.767` | `0.986` |
+| `NM - MN` | `0.772` | `0.987` |
+| `NQ - QN` | `0.853` | `0.984` |
+| `NT - TN` | `0.885` | `0.984` |
+| `QT - TQ` | `0.878` | `0.984` |
+| `QM - MQ` | `0.905` | `0.984` |
+
+Important caveat:
+
+Chinese has zero commutator norm for `NM - MN` and `MT - TM` across all models. These rows are template degeneracies, not evidence of perfect closure. After removing zero-commutator rows, the nonzero overall mean closure residual is still below the random-subspace null (`0.885` versus `0.984`), so the partial closure signal survives.
+
+Jacobi-like closure result:
+
+| Triple | Mean relative Jacobi closure norm |
+|---|---:|
+| `NMT` | `0.309` |
+| `QMT` | `0.333` |
+| `NQM` | `0.431` |
+| `NQT` | `0.853` |
+
+Interpretation:
+
+This is not a Lie algebra proof, but it is the first result that resembles structure constants rather than only endpoint signed sums. Pairwise commutators are partially compressible into the span of primitive operator centroids better than random subspaces. The next step should replace centroid displacement operators with learned affine/multiplicative maps `W_op x + b_op`, then compute matrix commutators directly.

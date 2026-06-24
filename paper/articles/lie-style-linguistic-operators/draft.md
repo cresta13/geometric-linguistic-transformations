@@ -1,8 +1,8 @@
-# Third-Order Signed Permutation Coherence for Linguistic Transformations in Transformer Embedding Spaces
+# GLT-SPOT: Third-Order Signed Permutation Coherence for Linguistic Transformations in Transformer Embedding Spaces
 
 ## Abstract
 
-If linguistic transformations are recoverable as displacement vectors, the next question is whether they compose in structured ways. We test controlled transformations corresponding to negation (`N`), question formation (`Q`), modality/evidentiality (`M`), and tense (`T`). Ordered compositions differ in embedding space, and semantic-equivalence controls show statistically significant but distributionally broad separation between equivalent and non-equivalent pairs. For third-order compositions, we no longer describe the main test as a Jacobi identity. Instead, we evaluate a neutral diagnostic: third-order signed permutation coherence, defined by the alternating endpoint sum `ABC+BCA+CAB-ACB-CBA-BAC` and compared against permutation-null baselines with bootstrap intervals. The original English encoder/decoder table singled out `QMT` as the only triple stable across all five tested models. The 2026-06-23 multilingual max audit changes the story: across 7 languages and 5 multilingual encoders, all four tested triples are below signed-null in every model-language cell, with `NQM` and `QMT` strongest. The evidence supports a controlled signed-permutation coherence effect, not a global Lie algebra.
+If linguistic transformations are recoverable as displacement vectors, the next question is whether they compose in structured ways. We introduce **GLT-SPOT**, the **Geometric Linguistic Transformations Signed-Permutation Operator Test**, for probing controlled transformations corresponding to negation (`N`), question formation (`Q`), modality/evidentiality (`M`), and tense (`T`). Ordered compositions differ in embedding space, and semantic-equivalence controls show statistically significant but distributionally broad separation between equivalent and non-equivalent pairs. For third-order compositions, we no longer describe the main test as a Jacobi identity. Instead, GLT-SPOT evaluates a neutral diagnostic: third-order signed permutation coherence, defined by the alternating endpoint sum `ABC+BCA+CAB-ACB-CBA-BAC` and compared against permutation-null baselines with bootstrap intervals. The original English encoder/decoder table singled out `QMT` as the only triple stable across all five tested models. The 2026-06-23 multilingual max audit changes the story: across 7 languages and 5 multilingual encoders, all four tested triples are below signed-null in every model-language cell, with `NQM` and `QMT` strongest. The evidence supports a controlled signed-permutation coherence effect, not a global Lie algebra.
 
 ## Evidence Map
 
@@ -12,6 +12,7 @@ Main scripts:
 - Semantic equivalence control: [run_lie_semantic_equivalence_control.py](../../../scripts/run_lie_semantic_equivalence_control.py)
 - Algebraic-identity audit / signed permutation diagnostic: [run_lie_algebraic_identities.py](../../../scripts/run_lie_algebraic_identities.py)
 - Multilingual max audit: [run_lie_multilingual_max_audit.py](../../../scripts/run_lie_multilingual_max_audit.py)
+- Structure-constants / closure audit: [run_lie_structure_constants_audit.py](../../../scripts/run_lie_structure_constants_audit.py)
 - Composition dataset helper: [lie_composition_dataset.py](../../../scripts/lie_composition_dataset.py)
 
 Main result files:
@@ -29,6 +30,8 @@ Main result files:
 - Multilingual signed-permutation global summary: [triple_global_summary.csv](../../../results/experiments/lie_multilingual_max_results/csv/triple_global_summary.csv)
 - Multilingual endpoint controls: [endpoint_controls_summary.csv](../../../results/experiments/lie_multilingual_max_results/csv/endpoint_controls_summary.csv)
 - Multilingual cross-language centroid summary: [cross_language_centroid_summary.csv](../../../results/experiments/lie_multilingual_max_results/csv/cross_language_centroid_summary.csv)
+- Closure global summary: [closure_global_summary.csv](../../../results/experiments/lie_structure_constants_results/csv/closure_global_summary.csv)
+- Jacobi closure summary: [jacobi_closure_global_summary.csv](../../../results/experiments/lie_structure_constants_results/csv/jacobi_closure_global_summary.csv)
 
 Daily verification packet:
 
@@ -56,6 +59,7 @@ Working references:
 - Ilharco et al. 2023, "Editing Models with Task Arithmetic".
 - Todd et al. 2024, "Function Vectors in Large Language Models".
 - Park, Choe, and Veitch 2023/2024, "The Linear Representation Hypothesis and the Geometry of Large Language Models".
+- Xia and Kalita 2025, "Linear Relational Decoding of Morphology in Language Models".
 - De Raedt et al. 2021, "A Simple Geometric Method for Cross-Lingual Linguistic Transformations with Pre-trained Autoencoders".
 - Kassner and Schuetze 2020, "Negated and Misprimed Probes for Pretrained Language Models".
 - Huang et al. 2024, "RAVEL: Evaluating Interpretability Methods on Disentangling Language Model Representations".
@@ -67,6 +71,20 @@ RISE is the closest methodological neighbor, but this track asks a different que
 This distinction is now central rather than cosmetic. RISE strengthens the case that some transformations can be treated as reusable geometric operations; our Track 2 asks where ordered linguistic composition deviates from simple commutative addition. If this result survives grammar-generated templates and endpoint-only controls, it becomes a complementary diagnostics paper: RISE-style methods describe transferable one-step operations, while this track probes order sensitivity and local composition failures.
 
 Compared with LRH work, the signed-permutation diagnostic should not be read as a formal proof of a linear representation theorem. Compared with De Raedt et al. 2021, this is not a multilingual autoencoder property-transfer method; it is a controlled transformer-embedding diagnostic over ordered English sentence transformations.
+
+Xia and Kalita 2025 are especially relevant to the next version of this track. They extend Linear Relational Embeddings to morphology in language models and show that relation-specific Jacobian-derived matrix operators can faithfully approximate many morphological relations, including multilingual morphology. This is complementary but also a warning: a linguistic transformation may be better represented as a multiplicative or affine map,
+
+```text
+y ~= W_r x + b_r
+```
+
+rather than only as an additive endpoint displacement `y - x`. Our current signed-permutation diagnostic is therefore an endpoint-level proxy for operator structure. A stronger Lie-style version should learn matrix-valued operators for `N,Q,M,T` and compute commutators directly:
+
+```text
+[W_A, W_B] = W_A W_B - W_B W_A
+```
+
+That future formulation would allow a more literal closure and Jacobi-residual test than the current endpoint signed-permutation sum.
 
 ## 3. Operations and Models
 
@@ -354,6 +372,51 @@ The result should still be stated conservatively. The audit removes linear rowsp
 
 > In the current multilingual synthetic template regime, third-order signed-permutation coherence is not explained by simple linear endpoint-sign, endpoint-position, or triple-label probe subspaces.
 
+## 8.3 Structure-Constants Closure Audit
+
+The 2026-06-24 structure-constants audit is a bridge from GLT-SPOT toward GLT-MOLT. Instead of only testing endpoint signed-permutation sums, it estimates primitive operator centroids for `N,Q,M,T`, computes pairwise commutator centroids `[A,B] = AB - BA`, and asks whether those commutators are compressible into the span of the primitive operators.
+
+Setup:
+
+- 7 languages: English, Spanish, French, German, Russian, Chinese, Arabic
+- 7 multilingual models: paraphrase-multilingual-mpnet-base-v2, LaBSE, multilingual-e5-large, BGE-M3, mBERT, XLM-RoBERTa-base, and DistilBERT multilingual cased
+- 160 templates per language
+- 31,776 unique texts
+- PCA dimension 128
+- 1000 random-subspace null samples per model/language/pair
+
+![Closure residual versus random subspace](../../../results/experiments/lie_structure_constants_results/figures/01_closure_residual_vs_random_subspace.png)
+
+**Figure 13.** Commutator residual after projection into the primitive operator span, compared with random subspace residuals. Lower values mean stronger closure-like compression.
+
+Global closure result:
+
+| Pair | Mean closure residual | Random-subspace null |
+|---|---:|---:|
+| `MT - TM` | `0.767` | `0.986` |
+| `NM - MN` | `0.772` | `0.987` |
+| `NQ - QN` | `0.853` | `0.984` |
+| `NT - TN` | `0.885` | `0.984` |
+| `QT - TQ` | `0.878` | `0.984` |
+| `QM - MQ` | `0.905` | `0.984` |
+
+A caveat is important: in Chinese, `NM - MN` and `MT - TM` have zero commutator norm for every model under the current templates. These cells should be treated as template degeneracies rather than evidence of perfect closure. Removing zero-commutator cells still leaves the nonzero mean closure residual below the random-subspace null (`0.885` versus `0.984` overall), but the effect is partial rather than exact.
+
+The same audit estimates a Jacobi-like residual from the learned structure constants:
+
+| Triple | Mean relative Jacobi closure norm |
+|---|---:|
+| `NMT` | `0.309` |
+| `QMT` | `0.333` |
+| `NQM` | `0.431` |
+| `NQT` | `0.853` |
+
+This is the first result in the repository that resembles structure constants rather than only endpoint signed sums. It supports a narrow claim:
+
+> Pairwise linguistic commutators are partially compressible into the span of primitive operator centroids better than random subspaces, and the resulting estimated structure constants produce lower Jacobi-like residuals for `NMT` and `QMT` than for `NQT`.
+
+It still does not prove a Lie algebra. The primitive objects are centroids of endpoint displacements, not learned local linear maps; closure is partial; and the Chinese zero-commutator cells reveal template degeneracy. The next GLT-MOLT step should learn affine or multiplicative maps `W_op x + b_op` and compute matrix commutators directly.
+
 Working hypothesis for why `QMT` is coherent:
 
 `Q`, `M`, and `T` are all clause-level operators that modify illocution, epistemic status, or temporal anchoring while preserving the same event frame. Their endpoints can remain relatively aligned around one proposition. Negation (`N`) changes truth-conditional polarity and often introduces lexical/scope markers that interact with syntax more sharply. This makes `N` easy to detect as a one-step surface-labeled transformation, but less stable as a component in ordered composition.
@@ -399,8 +462,9 @@ Evidence layers:
 4. Multiple-testing correction shows that QMT is the only below-null triple passing across all five models in the original English encoder/decoder table.
 5. The multilingual max audit broadens the effect to all four tested triples across 7 languages and 5 multilingual encoders.
 6. Endpoint-subspace residualization shows that the multilingual signed-permutation effect largely survives removal of simple endpoint-derived probe subspaces.
-7. Negation triples are regime-dependent, which constrains the theory.
-8. Grammar-generated pairwise controls preserve below-null commutator coherence, but endpoint controls remain too strong.
+7. The structure-constants audit finds partial closure-like compression of pairwise commutators into the primitive operator span better than random subspaces.
+8. Negation triples are regime-dependent, which constrains the theory.
+9. Grammar-generated pairwise controls preserve below-null commutator coherence, but endpoint controls remain too strong.
 
 Not proven:
 
@@ -412,6 +476,8 @@ Not proven:
 - lexical-marker independence of the hand-written composition templates
 - endpoint-balanced multilingual robustness
 - removal of all possible nonlinear endpoint artifacts
+- matrix/operator-valued closure of learned linguistic transformations
+- non-degenerate endpoint-balanced closure across all languages and pairs
 
 ## 11. Required Pre-Submission Experiments
 
@@ -420,11 +486,15 @@ Not proven:
 3. Add target-only controls for third-order composition endpoints.
 4. Add endpoint-balanced multilingual generation and rerun the 7-language audit.
 5. Add nonlinear endpoint-artifact controls or adversarial endpoint balancing.
-6. Explain the `NQM` versus `QMT` reversal across regimes.
-7. Add layerwise analysis.
-8. Add pooling ablation.
-9. Add a focused negation analysis before adding new operators.
-10. Add prior-work positioning and bibliography.
+6. Add an affine/operator-valued Track 2 variant inspired by Linear Relational Decoding:
+   - learn additive delta-only, multiplicative matrix-only, and affine `W_op x + b_op` maps for `N,Q,M,T`
+   - test whether pairwise commutators close in the learned operator span
+   - compute matrix Jacobi residuals and compare them to endpoint signed-permutation diagnostics
+7. Explain the `NQM` versus `QMT` reversal across regimes.
+8. Add layerwise analysis.
+9. Add pooling ablation.
+10. Add a focused negation analysis before adding new operators.
+11. Add prior-work positioning and bibliography.
 
 ## Current Status
 

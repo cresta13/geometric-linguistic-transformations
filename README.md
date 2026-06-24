@@ -2,6 +2,15 @@
 
 Research code, result tables, figures, and draft papers for experiments on linguistic transformation geometry in transformer embedding spaces.
 
+This repository develops **GLT** (**Geometric Linguistic Transformations**), a research program for probing whether linguistic transformations appear as reusable geometric objects in transformer embedding spaces.
+
+Current tracks:
+
+- **GLT-DV**: delta-vector diagnostics with endpoint controls.
+- **GLT-SPOT**: signed-permutation operator tests for ordered composition.
+- **GLT-XFER**: cross-model transformation-transfer stress tests.
+- **GLT-MOLT**: planned matrix/operator extension motivated by Linear Relational Decoding.
+
 ## Current Status
 
 This is an active research repository, not a submission-ready paper. The current record is intentionally conservative:
@@ -21,6 +30,7 @@ This repository should be cited as a software/research-artifact snapshot, not as
 Closest related work:
 
 - Freenor and Alvarez 2026, RISE: geometric rotations for discourse-level semantic-syntactic transformations across languages and embedding models. This is the closest neighboring work and is stronger than this repository on cross-lingual/cross-model scope. This repository instead uses direct endpoint/delta representations, classifier/ablation diagnostics, null-controlled Procrustes transfer stress tests, and ordered-composition diagnostics; it also reports endpoint leakage and hard-holdout failures explicitly.
+- Xia and Kalita 2025, Linear Relational Decoding of Morphology in Language Models: relation-specific Jacobian-derived matrix operators can faithfully approximate many morphological relations in GPT-J and Llama-7b, including multilingual morphology. This motivates a future matrix/operator version of the Lie-style track, where commutators can be computed over learned affine or multiplicative maps rather than only over endpoint deltas.
 - Park, Choe, and Veitch 2023/2024: formal Linear Representation Hypothesis framing for linear directions and representation geometry in LLMs. This repository is empirical and diagnostic rather than a formal LRH theory paper.
 - De Raedt et al. 2021: geometric cross-lingual linguistic transformations with pretrained autoencoders. This repository studies paired-sentence displacement vectors and composition diagnostics in transformer embedding spaces, not cross-lingual autoencoder transfer.
 
