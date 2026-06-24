@@ -271,10 +271,16 @@ Negative results remain part of the research record.
    - controlled lexical overlap
 9. Add commutator null baselines for `||[A,B]||` using random or label-shuffled operations with matched norms.
 10. Re-run composition and signed-permutation diagnostics on generated templates.
-11. Add target-only and endpoint-only baselines for third-order multilingual signed-permutation endpoints.
-12. Build an endpoint-balanced multilingual generator and re-run the 7-language audit.
-13. Explain the `NQM` versus `QMT` reversal between the English/decoder table and the multilingual max audit.
-14. Regenerate a dated PDF packet after every major run.
+11. Treat endpoint-subspace residualization as complete for the current linear-control layer:
+   - sign-direction residualization is complete
+   - endpoint-position subspace removal is complete
+   - triple-label subspace removal is complete
+   - joint sign/triple/position removal is complete
+12. Add target-only and endpoint-only baselines for third-order multilingual signed-permutation endpoints.
+13. Add nonlinear endpoint-artifact controls, such as adversarial endpoint balancing or kernel/MLP endpoint probes.
+14. Build an endpoint-balanced multilingual generator and re-run the 7-language audit.
+15. Explain the `NQM` versus `QMT` reversal between the English/decoder table and the multilingual max audit.
+16. Regenerate a dated PDF packet after every major run.
 
 ### Medium term
 

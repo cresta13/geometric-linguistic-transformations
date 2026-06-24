@@ -1,0 +1,8 @@
+model,heldout_language,accuracy,macro_f1,chance,n_train,n_test
+sentence-transformers/paraphrase-multilingual-mpnet-base-v2,ar,0.5,0.4769167704605294,0.5,13824,2304
+sentence-transformers/paraphrase-multilingual-mpnet-base-v2,de,0.6119791666666666,0.6117814159532218,0.5,13824,2304
+sentence-transformers/paraphrase-multilingual-mpnet-base-v2,en,0.6202256944444444,0.6076177433855077,0.5,13824,2304
+sentence-transformers/paraphrase-multilingual-mpnet-base-v2,es,0.5833333333333334,0.5831209835739294,0.5,13824,2304
+sentence-transformers/paraphrase-multilingual-mpnet-base-v2,fr,0.58984375,0.5867609699714262,0.5,13824,2304
+sentence-transformers/paraphrase-multilingual-mpnet-base-v2,ru,0.5121527777777778,0.4682536879600967,0.5,13824,2304
+sentence-transformers/paraphrase-multilingual-mpnet-base-v2,zh,0.5690104166666666,0.5527739632640335,0.5,13824,2304

@@ -720,3 +720,62 @@ This moves us closer to the Lie-algebra direction because the non-tautological t
 Next forced step:
 
 Build endpoint-balanced multilingual templates and add target-only controls for the six third-order endpoints. The core question is now not "does QMT survive?", but "which signed-permutation cancellations survive when endpoints stop carrying easy class/order markers?"
+
+## 2026-06-24: Endpoint-subspace residualization audit
+
+We ran the next endpoint-artifact control for the Track 2 signed-permutation result.
+
+New scripts:
+
+- `scripts/run_lie_endpoint_residualization_audit.py`
+- `scripts/run_lie_endpoint_subspace_residualization_audit.py`
+
+New outputs:
+
+- `results/experiments/lie_endpoint_residualization_results/`
+- `results/experiments/lie_endpoint_subspace_residualization_results/`
+
+Design:
+
+- 7 languages: English, Spanish, French, German, Russian, Chinese, Arabic
+- 7 multilingual models:
+  - `sentence-transformers/paraphrase-multilingual-mpnet-base-v2`
+  - `sentence-transformers/LaBSE`
+  - `intfloat/multilingual-e5-large`
+  - `BAAI/bge-m3`
+  - `bert-base-multilingual-cased`
+  - `xlm-roberta-base`
+  - `distilbert-base-multilingual-cased`
+- 96 templates per language
+- PCA dimension 96
+- exact signed-null over the admissible endpoint sign assignments
+- held-out-language endpoint probes
+
+Endpoint probes:
+
+| Probe | Mean macro F1 | Chance |
+|---|---:|---:|
+| cyclic versus anticyclic from endpoint delta | `0.522386` | `0.500000` |
+| endpoint position from endpoint delta | `0.273599` | `0.166667` |
+| triple label from single endpoint delta | `0.755258` | `0.250000` |
+
+Main subspace-residualized result:
+
+| Triple | Raw | Remove sign | Remove triple label | Remove endpoint position | Remove all |
+|---|---:|---:|---:|---:|---:|
+| `NMT` | `0.764073` | `0.763916` | `0.763325` | `0.764539` | `0.764100` |
+| `NQM` | `0.543409` | `0.534386` | `0.544664` | `0.537042` | `0.538300` |
+| `NQT` | `0.676606` | `0.671906` | `0.679131` | `0.675365` | `0.677458` |
+| `QMT` | `0.589554` | `0.589631` | `0.589615` | `0.602188` | `0.603670` |
+
+Interpretation:
+
+The signed-permutation signal largely survives removal of endpoint sign, triple-label, and endpoint-position probe subspaces. This is stronger than merely saying that endpoint controls exist. Endpoints do encode task information, especially triple label from a single endpoint delta, but the third-order signed-permutation cancellation is not explained by those simple linear probe rowspaces.
+
+This is still not a Lie algebra proof. It is a stronger diagnostic result:
+
+> In the current multilingual synthetic setting, the third-order signed-permutation effect is robust to simple endpoint-derived linear residualization controls.
+
+Next forced step:
+
+Build endpoint-balanced multilingual templates and nonlinear/adversarial endpoint controls. The remaining criticism is no longer only "endpoint classifiers are strong"; it is "there may be nonlinear or lexical endpoint artifacts that the linear residualization audit does not remove."

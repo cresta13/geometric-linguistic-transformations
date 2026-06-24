@@ -11,6 +11,7 @@ This is an active research repository, not a submission-ready paper. The current
 - UPAT hard-holdout results are reported as a boundary condition where `y_only` can beat `delta`.
 - Lie-style antisymmetry is not evidence; it is a tautological implementation check.
 - Third-order signed permutation coherence is framed as a diagnostic, not as a formal Lie algebra or Jacobi identity.
+- The 2026-06-24 endpoint-subspace residualization audit shows that the multilingual signed-permutation signal largely survives removal of endpoint-derived sign, triple-label, and endpoint-position probe subspaces.
 - Procrustes/cross-model transfer now survives `N=1000` null controls and held-out anchor alignment-size controls. RISE/MDV-style prototype comparisons, non-leaky hybrid feature-transfer, and spherical delta steering tests are now added; current results separate target-cosine accuracy from transformation-neighborhood retrieval, so Track 3 remains a stress-test/comparison track pending calibration, confidence intervals, and anchor-domain robustness.
 
 ## Positioning
@@ -48,7 +49,7 @@ Closest related work:
 
 - Main live report: `reports/2026-06-23_reviewer_revised_report.pdf`
 - Zenodo snapshot report: `reports/2026-06-13_reviewer_revised_report.pdf`
-- Release notes for DOI archiving: `reports/release_notes_v2026.06.13.md`
+- Latest release notes for DOI archiving: `reports/release_notes_v2026.06.24.md`
 - Research roadmap: `paper/research_program.md`
 - Track 1 draft: `paper/articles/geometric-transformation-vectors/draft.md`
 - Track 2 draft: `paper/articles/lie-style-linguistic-operators/draft.md`
@@ -56,8 +57,8 @@ Closest related work:
 ## Citable Snapshot
 
 The repository includes `CITATION.cff` for GitHub's citation widget and
-`.zenodo.json` for Zenodo/GitHub release archiving. The intended archival
-snapshot is `v2026.06.13`.
+`.zenodo.json` for Zenodo/GitHub release archiving. The latest intended
+archival snapshot is `v2026.06.24`.
 
 Zenodo DOI: [10.5281/zenodo.20680414](https://doi.org/10.5281/zenodo.20680414)
 Zenodo record: https://zenodo.org/records/20680414

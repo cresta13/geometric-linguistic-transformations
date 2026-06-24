@@ -1,0 +1,9 @@
+control_task,feature,mean_macro_f1,min_macro_f1,max_macro_f1,mean_chance,n
+cyclic_vs_anticyclic_from_endpoint_delta,endpoint,0.5203897303676864,0.3367875647668393,0.6587513115208818,0.5,49
+cyclic_vs_anticyclic_from_endpoint_vec,endpoint,0.5029482957092419,0.3333333333333333,0.6501472489909601,0.5,49
+endpoint_position_from_endpoint_delta,endpoint,0.2743820669236389,0.0748756294078277,0.4775522159475254,0.16666666666666663,49
+triple_label_from_row_features,endpoint_concat,0.8268361237946198,0.1,1.0,0.25,49
+triple_label_from_row_features,endpoint_mean,0.7465855238784325,0.1,1.0,0.25,49
+triple_label_from_row_features,signed_vector,0.7065883573870405,0.0,1.0,0.25,49
+triple_label_from_row_features,source_only,0.1,0.1,0.1,0.25,49
+triple_label_from_single_endpoint_delta,endpoint,0.749826361210874,0.3639288526413144,0.9886843857929606,0.25,49

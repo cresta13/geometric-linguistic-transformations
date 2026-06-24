@@ -305,6 +305,55 @@ Interpretation:
 
 The multilingual audit moves Track 2 closer to the algebraic-composition goal because the third-order signal survives a much broader model/language grid. It is still not endpoint-independent algebraic evidence. Endpoint and delta controls remain strong, and cross-language centroid alignment is only moderate (`mean cosine ~= 0.32`). The next necessary experiment is endpoint-balanced multilingual generation plus target-only controls over the six third-order endpoints.
 
+## 8.2 Endpoint-Subspace Residualization Audit
+
+The 2026-06-24 audit asks whether the multilingual signed-permutation signal is merely a linear endpoint artifact. Instead of only reporting endpoint-control classifiers, we train held-out-language endpoint probes and remove their learned coefficient rowspaces before recomputing the signed-permutation diagnostic.
+
+Scripts and outputs:
+
+- sign-direction residualization: [run_lie_endpoint_residualization_audit.py](../../../scripts/run_lie_endpoint_residualization_audit.py)
+- endpoint-subspace residualization: [run_lie_endpoint_subspace_residualization_audit.py](../../../scripts/run_lie_endpoint_subspace_residualization_audit.py)
+- sign-residualized results: [lie_endpoint_residualization_results](../../../results/experiments/lie_endpoint_residualization_results/)
+- subspace-residualized results: [lie_endpoint_subspace_residualization_results](../../../results/experiments/lie_endpoint_subspace_residualization_results/)
+
+Setup:
+
+- 7 languages: English, Spanish, French, German, Russian, Chinese, Arabic
+- 7 multilingual models: paraphrase-multilingual-mpnet-base-v2, LaBSE, multilingual-e5-large, BGE-M3, mBERT, XLM-RoBERTa-base, and DistilBERT multilingual cased
+- 96 templates per language
+- PCA dimension 96
+- exact signed-null over the admissible six-endpoint sign assignments
+- held-out-language endpoint probes
+
+The endpoint probes confirm that endpoint deltas contain task-readable information:
+
+| Endpoint probe | Mean macro F1 | Chance |
+|---|---:|---:|
+| cyclic versus anticyclic from endpoint delta | `0.522386` | `0.500000` |
+| endpoint position from endpoint delta | `0.273599` | `0.166667` |
+| triple label from single endpoint delta | `0.755258` | `0.250000` |
+
+We then remove the learned endpoint-derived subspaces and recompute the ratio of the observed signed-permutation norm to the exact signed-null mean.
+
+![Endpoint subspace residualization ratios](../../../results/experiments/lie_endpoint_subspace_residualization_results/figures/01_subspace_residualization_ratios.png)
+
+**Figure 12.** Signed-permutation ratios after removing endpoint-derived probe subspaces. Values below `1.0` indicate stronger-than-null cancellation.
+
+Global result:
+
+| Triple | Raw | Remove sign | Remove triple label | Remove endpoint position | Remove all |
+|---|---:|---:|---:|---:|---:|
+| `NMT` | `0.764073` | `0.763916` | `0.763325` | `0.764539` | `0.764100` |
+| `NQM` | `0.543409` | `0.534386` | `0.544664` | `0.537042` | `0.538300` |
+| `NQT` | `0.676606` | `0.671906` | `0.679131` | `0.675365` | `0.677458` |
+| `QMT` | `0.589554` | `0.589631` | `0.589615` | `0.602188` | `0.603670` |
+
+This is a stronger endpoint-artifact control than the previous classifier-only check. The signed-permutation signal largely survives removal of endpoint sign, triple-label, and endpoint-position subspaces, and every global ratio remains far below `1.0`.
+
+The result should still be stated conservatively. The audit removes linear rowspaces learned by specific endpoint probes; it does not prove that all endpoint information is absent, nor does it establish a formal Jacobi identity. The correct claim is narrower:
+
+> In the current multilingual synthetic template regime, third-order signed-permutation coherence is not explained by simple linear endpoint-sign, endpoint-position, or triple-label probe subspaces.
+
 Working hypothesis for why `QMT` is coherent:
 
 `Q`, `M`, and `T` are all clause-level operators that modify illocution, epistemic status, or temporal anchoring while preserving the same event frame. Their endpoints can remain relatively aligned around one proposition. Negation (`N`) changes truth-conditional polarity and often introduces lexical/scope markers that interact with syntax more sharply. This makes `N` easy to detect as a one-step surface-labeled transformation, but less stable as a component in ordered composition.
@@ -349,8 +398,9 @@ Evidence layers:
 3. Signed permutation coherence identifies robust controlled third-order effects.
 4. Multiple-testing correction shows that QMT is the only below-null triple passing across all five models in the original English encoder/decoder table.
 5. The multilingual max audit broadens the effect to all four tested triples across 7 languages and 5 multilingual encoders.
-6. Negation triples are regime-dependent, which constrains the theory.
-7. Grammar-generated pairwise controls preserve below-null commutator coherence, but endpoint controls remain too strong.
+6. Endpoint-subspace residualization shows that the multilingual signed-permutation effect largely survives removal of simple endpoint-derived probe subspaces.
+7. Negation triples are regime-dependent, which constrains the theory.
+8. Grammar-generated pairwise controls preserve below-null commutator coherence, but endpoint controls remain too strong.
 
 Not proven:
 
@@ -361,6 +411,7 @@ Not proven:
 - broad decoder-model generality beyond the two spot-checks
 - lexical-marker independence of the hand-written composition templates
 - endpoint-balanced multilingual robustness
+- removal of all possible nonlinear endpoint artifacts
 
 ## 11. Required Pre-Submission Experiments
 
@@ -368,12 +419,13 @@ Not proven:
 2. Build endpoint-balanced grammar templates.
 3. Add target-only controls for third-order composition endpoints.
 4. Add endpoint-balanced multilingual generation and rerun the 7-language audit.
-5. Explain the `NQM` versus `QMT` reversal across regimes.
-6. Add layerwise analysis.
-7. Add pooling ablation.
-8. Add a focused negation analysis before adding new operators.
-9. Add prior-work positioning and bibliography.
+5. Add nonlinear endpoint-artifact controls or adversarial endpoint balancing.
+6. Explain the `NQM` versus `QMT` reversal across regimes.
+7. Add layerwise analysis.
+8. Add pooling ablation.
+9. Add a focused negation analysis before adding new operators.
+10. Add prior-work positioning and bibliography.
 
 ## Current Status
 
-This is a promising diagnostic study, but it is not submission-ready. The current result is useful precisely because it is falsifiable: signed-permutation cancellation survives a large multilingual scale-up, while endpoint controls and regime-dependent triple rankings expose the boundary of the phenomenon.
+This is a promising diagnostic study, but it is not submission-ready. The current result is useful precisely because it is falsifiable: signed-permutation cancellation survives a large multilingual scale-up and simple endpoint-subspace removal, while endpoint controls and regime-dependent triple rankings expose the boundary of the phenomenon.

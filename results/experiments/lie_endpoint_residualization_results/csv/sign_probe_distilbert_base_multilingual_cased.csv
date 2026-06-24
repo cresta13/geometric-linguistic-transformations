@@ -1,0 +1,8 @@
+model,heldout_language,accuracy,macro_f1,chance,n_train,n_test
+distilbert-base-multilingual-cased,ar,0.4865451388888889,0.41269664444194015,0.5,13824,2304
+distilbert-base-multilingual-cased,de,0.4874131944444444,0.48650303726717103,0.5,13824,2304
+distilbert-base-multilingual-cased,en,0.5416666666666666,0.5403352326829194,0.5,13824,2304
+distilbert-base-multilingual-cased,es,0.5208333333333334,0.5032058218067756,0.5,13824,2304
+distilbert-base-multilingual-cased,fr,0.5316840277777778,0.5225310684114849,0.5,13824,2304
+distilbert-base-multilingual-cased,ru,0.5208333333333334,0.4547694724269765,0.5,13824,2304
+distilbert-base-multilingual-cased,zh,0.5121527777777778,0.41222302013928547,0.5,13824,2304
