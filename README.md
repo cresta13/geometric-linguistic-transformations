@@ -10,8 +10,8 @@ Current tracks:
 - **GLT-SPOT**: signed-permutation operator tests for ordered composition.
 - **GLT-XFER**: cross-model transformation-transfer stress tests.
 - **GLT-MOLT**: planned matrix/operator extension motivated by Linear Relational Decoding.
-- **GLT-AFFECT**: planned graded affective-transformation geometry, starting with text-only emotional polarity scales and reserving sensory grounding claims for independent perceptual data.
-- The first GLT-AFFECT MVP suggests that text-embedding affective polarity is curved rather than a simple love/hate antipodal axis; this is interpreted as language-representation geometry, not grounded affect.
+- **GLT-AFFECT**: graded affective-transformation geometry, starting with text-only emotional polarity scales and reserving sensory grounding claims for independent perceptual data.
+- The first GLT-AFFECT MVP suggests that text-embedding affective polarity is curved rather than a simple love/hate antipodal axis; a marker-only pooling control weakens but preserves the same-direction love/hate signal, so the claim is treated as lexical affect-geometry evidence rather than grounded affect.
 
 ## Current Status
 

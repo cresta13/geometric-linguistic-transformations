@@ -1,0 +1,2401 @@
+language,template_id,level,text,marker
+en,0,-2,the teacher hates the design today.,hates
+en,0,-1,the teacher dislikes the design today.,dislikes
+en,0,0,the teacher feels indifferent toward the design today.,indifferent
+en,0,1,the teacher likes the design today.,likes
+en,0,2,the teacher loves the design today.,loves
+en,1,-2,she hates the song during the review.,hates
+en,1,-1,she dislikes the song during the review.,dislikes
+en,1,0,she feels indifferent toward the song during the review.,indifferent
+en,1,1,she likes the song during the review.,likes
+en,1,2,she loves the song during the review.,loves
+en,2,-2,I hates the proposal in private.,hates
+en,2,-1,I dislikes the proposal in private.,dislikes
+en,2,0,I feels indifferent toward the proposal in private.,indifferent
+en,2,1,I likes the proposal in private.,likes
+en,2,2,I loves the proposal in private.,loves
+en,3,-2,the artist hates the proposal at the end.,hates
+en,3,-1,the artist dislikes the proposal at the end.,dislikes
+en,3,0,the artist feels indifferent toward the proposal at the end.,indifferent
+en,3,1,the artist likes the proposal at the end.,likes
+en,3,2,the artist loves the proposal at the end.,loves
+en,4,-2,the teacher hates the proposal during the review.,hates
+en,4,-1,the teacher dislikes the proposal during the review.,dislikes
+en,4,0,the teacher feels indifferent toward the proposal during the review.,indifferent
+en,4,1,the teacher likes the proposal during the review.,likes
+en,4,2,the teacher loves the proposal during the review.,loves
+en,5,-2,the teacher hates this city after the meeting.,hates
+en,5,-1,the teacher dislikes this city after the meeting.,dislikes
+en,5,0,the teacher feels indifferent toward this city after the meeting.,indifferent
+en,5,1,the teacher likes this city after the meeting.,likes
+en,5,2,the teacher loves this city after the meeting.,loves
+en,6,-2,I hates the proposal during the review.,hates
+en,6,-1,I dislikes the proposal during the review.,dislikes
+en,6,0,I feels indifferent toward the proposal during the review.,indifferent
+en,6,1,I likes the proposal during the review.,likes
+en,6,2,I loves the proposal during the review.,loves
+en,7,-2,the researcher hates this film in private.,hates
+en,7,-1,the researcher dislikes this film in private.,dislikes
+en,7,0,the researcher feels indifferent toward this film in private.,indifferent
+en,7,1,the researcher likes this film in private.,likes
+en,7,2,the researcher loves this film in private.,loves
+en,8,-2,the critic hates the proposal after the meeting.,hates
+en,8,-1,the critic dislikes the proposal after the meeting.,dislikes
+en,8,0,the critic feels indifferent toward the proposal after the meeting.,indifferent
+en,8,1,the critic likes the proposal after the meeting.,likes
+en,8,2,the critic loves the proposal after the meeting.,loves
+en,9,-2,the artist hates the design during the review.,hates
+en,9,-1,the artist dislikes the design during the review.,dislikes
+en,9,0,the artist feels indifferent toward the design during the review.,indifferent
+en,9,1,the artist likes the design during the review.,likes
+en,9,2,the artist loves the design during the review.,loves
+en,10,-2,I hates this system today.,hates
+en,10,-1,I dislikes this system today.,dislikes
+en,10,0,I feels indifferent toward this system today.,indifferent
+en,10,1,I likes this system today.,likes
+en,10,2,I loves this system today.,loves
+en,11,-2,the user hates the proposal during the review.,hates
+en,11,-1,the user dislikes the proposal during the review.,dislikes
+en,11,0,the user feels indifferent toward the proposal during the review.,indifferent
+en,11,1,the user likes the proposal during the review.,likes
+en,11,2,the user loves the proposal during the review.,loves
+en,12,-2,the critic hates this system in private.,hates
+en,12,-1,the critic dislikes this system in private.,dislikes
+en,12,0,the critic feels indifferent toward this system in private.,indifferent
+en,12,1,the critic likes this system in private.,likes
+en,12,2,the critic loves this system in private.,loves
+en,13,-2,the researcher hates this city at the end.,hates
+en,13,-1,the researcher dislikes this city at the end.,dislikes
+en,13,0,the researcher feels indifferent toward this city at the end.,indifferent
+en,13,1,the researcher likes this city at the end.,likes
+en,13,2,the researcher loves this city at the end.,loves
+en,14,-2,the researcher hates you after the meeting.,hates
+en,14,-1,the researcher dislikes you after the meeting.,dislikes
+en,14,0,the researcher feels indifferent toward you after the meeting.,indifferent
+en,14,1,the researcher likes you after the meeting.,likes
+en,14,2,the researcher loves you after the meeting.,loves
+en,15,-2,she hates this idea in private.,hates
+en,15,-1,she dislikes this idea in private.,dislikes
+en,15,0,she feels indifferent toward this idea in private.,indifferent
+en,15,1,she likes this idea in private.,likes
+en,15,2,she loves this idea in private.,loves
+en,16,-2,the researcher hates the design after the meeting.,hates
+en,16,-1,the researcher dislikes the design after the meeting.,dislikes
+en,16,0,the researcher feels indifferent toward the design after the meeting.,indifferent
+en,16,1,the researcher likes the design after the meeting.,likes
+en,16,2,the researcher loves the design after the meeting.,loves
+en,17,-2,the researcher hates the song today.,hates
+en,17,-1,the researcher dislikes the song today.,dislikes
+en,17,0,the researcher feels indifferent toward the song today.,indifferent
+en,17,1,the researcher likes the song today.,likes
+en,17,2,the researcher loves the song today.,loves
+en,18,-2,the researcher hates the design at the end.,hates
+en,18,-1,the researcher dislikes the design at the end.,dislikes
+en,18,0,the researcher feels indifferent toward the design at the end.,indifferent
+en,18,1,the researcher likes the design at the end.,likes
+en,18,2,the researcher loves the design at the end.,loves
+en,19,-2,the user hates this idea after the meeting.,hates
+en,19,-1,the user dislikes this idea after the meeting.,dislikes
+en,19,0,the user feels indifferent toward this idea after the meeting.,indifferent
+en,19,1,the user likes this idea after the meeting.,likes
+en,19,2,the user loves this idea after the meeting.,loves
+en,20,-2,the researcher hates this system today.,hates
+en,20,-1,the researcher dislikes this system today.,dislikes
+en,20,0,the researcher feels indifferent toward this system today.,indifferent
+en,20,1,the researcher likes this system today.,likes
+en,20,2,the researcher loves this system today.,loves
+en,21,-2,the researcher hates the proposal today.,hates
+en,21,-1,the researcher dislikes the proposal today.,dislikes
+en,21,0,the researcher feels indifferent toward the proposal today.,indifferent
+en,21,1,the researcher likes the proposal today.,likes
+en,21,2,the researcher loves the proposal today.,loves
+en,22,-2,I hates this system in private.,hates
+en,22,-1,I dislikes this system in private.,dislikes
+en,22,0,I feels indifferent toward this system in private.,indifferent
+en,22,1,I likes this system in private.,likes
+en,22,2,I loves this system in private.,loves
+en,23,-2,the artist hates the design after the meeting.,hates
+en,23,-1,the artist dislikes the design after the meeting.,dislikes
+en,23,0,the artist feels indifferent toward the design after the meeting.,indifferent
+en,23,1,the artist likes the design after the meeting.,likes
+en,23,2,the artist loves the design after the meeting.,loves
+en,24,-2,the neighbor hates you at the end.,hates
+en,24,-1,the neighbor dislikes you at the end.,dislikes
+en,24,0,the neighbor feels indifferent toward you at the end.,indifferent
+en,24,1,the neighbor likes you at the end.,likes
+en,24,2,the neighbor loves you at the end.,loves
+en,25,-2,the neighbor hates the song during the review.,hates
+en,25,-1,the neighbor dislikes the song during the review.,dislikes
+en,25,0,the neighbor feels indifferent toward the song during the review.,indifferent
+en,25,1,the neighbor likes the song during the review.,likes
+en,25,2,the neighbor loves the song during the review.,loves
+en,26,-2,the researcher hates this film after the meeting.,hates
+en,26,-1,the researcher dislikes this film after the meeting.,dislikes
+en,26,0,the researcher feels indifferent toward this film after the meeting.,indifferent
+en,26,1,the researcher likes this film after the meeting.,likes
+en,26,2,the researcher loves this film after the meeting.,loves
+en,27,-2,the artist hates this idea during the review.,hates
+en,27,-1,the artist dislikes this idea during the review.,dislikes
+en,27,0,the artist feels indifferent toward this idea during the review.,indifferent
+en,27,1,the artist likes this idea during the review.,likes
+en,27,2,the artist loves this idea during the review.,loves
+en,28,-2,I hates the song in private.,hates
+en,28,-1,I dislikes the song in private.,dislikes
+en,28,0,I feels indifferent toward the song in private.,indifferent
+en,28,1,I likes the song in private.,likes
+en,28,2,I loves the song in private.,loves
+en,29,-2,the neighbor hates you today.,hates
+en,29,-1,the neighbor dislikes you today.,dislikes
+en,29,0,the neighbor feels indifferent toward you today.,indifferent
+en,29,1,the neighbor likes you today.,likes
+en,29,2,the neighbor loves you today.,loves
+en,30,-2,the teacher hates the design during the review.,hates
+en,30,-1,the teacher dislikes the design during the review.,dislikes
+en,30,0,the teacher feels indifferent toward the design during the review.,indifferent
+en,30,1,the teacher likes the design during the review.,likes
+en,30,2,the teacher loves the design during the review.,loves
+en,31,-2,she hates the proposal at the end.,hates
+en,31,-1,she dislikes the proposal at the end.,dislikes
+en,31,0,she feels indifferent toward the proposal at the end.,indifferent
+en,31,1,she likes the proposal at the end.,likes
+en,31,2,she loves the proposal at the end.,loves
+en,32,-2,the artist hates this city during the review.,hates
+en,32,-1,the artist dislikes this city during the review.,dislikes
+en,32,0,the artist feels indifferent toward this city during the review.,indifferent
+en,32,1,the artist likes this city during the review.,likes
+en,32,2,the artist loves this city during the review.,loves
+en,33,-2,the researcher hates the proposal at the end.,hates
+en,33,-1,the researcher dislikes the proposal at the end.,dislikes
+en,33,0,the researcher feels indifferent toward the proposal at the end.,indifferent
+en,33,1,the researcher likes the proposal at the end.,likes
+en,33,2,the researcher loves the proposal at the end.,loves
+en,34,-2,the researcher hates you today.,hates
+en,34,-1,the researcher dislikes you today.,dislikes
+en,34,0,the researcher feels indifferent toward you today.,indifferent
+en,34,1,the researcher likes you today.,likes
+en,34,2,the researcher loves you today.,loves
+en,35,-2,the critic hates the song during the review.,hates
+en,35,-1,the critic dislikes the song during the review.,dislikes
+en,35,0,the critic feels indifferent toward the song during the review.,indifferent
+en,35,1,the critic likes the song during the review.,likes
+en,35,2,the critic loves the song during the review.,loves
+en,36,-2,she hates this film after the meeting.,hates
+en,36,-1,she dislikes this film after the meeting.,dislikes
+en,36,0,she feels indifferent toward this film after the meeting.,indifferent
+en,36,1,she likes this film after the meeting.,likes
+en,36,2,she loves this film after the meeting.,loves
+en,37,-2,the neighbor hates this city at the end.,hates
+en,37,-1,the neighbor dislikes this city at the end.,dislikes
+en,37,0,the neighbor feels indifferent toward this city at the end.,indifferent
+en,37,1,the neighbor likes this city at the end.,likes
+en,37,2,the neighbor loves this city at the end.,loves
+en,38,-2,the researcher hates the song during the review.,hates
+en,38,-1,the researcher dislikes the song during the review.,dislikes
+en,38,0,the researcher feels indifferent toward the song during the review.,indifferent
+en,38,1,the researcher likes the song during the review.,likes
+en,38,2,the researcher loves the song during the review.,loves
+en,39,-2,the artist hates this film during the review.,hates
+en,39,-1,the artist dislikes this film during the review.,dislikes
+en,39,0,the artist feels indifferent toward this film during the review.,indifferent
+en,39,1,the artist likes this film during the review.,likes
+en,39,2,the artist loves this film during the review.,loves
+en,40,-2,the user hates the proposal after the meeting.,hates
+en,40,-1,the user dislikes the proposal after the meeting.,dislikes
+en,40,0,the user feels indifferent toward the proposal after the meeting.,indifferent
+en,40,1,the user likes the proposal after the meeting.,likes
+en,40,2,the user loves the proposal after the meeting.,loves
+en,41,-2,the neighbor hates the design at the end.,hates
+en,41,-1,the neighbor dislikes the design at the end.,dislikes
+en,41,0,the neighbor feels indifferent toward the design at the end.,indifferent
+en,41,1,the neighbor likes the design at the end.,likes
+en,41,2,the neighbor loves the design at the end.,loves
+en,42,-2,the teacher hates the song in private.,hates
+en,42,-1,the teacher dislikes the song in private.,dislikes
+en,42,0,the teacher feels indifferent toward the song in private.,indifferent
+en,42,1,the teacher likes the song in private.,likes
+en,42,2,the teacher loves the song in private.,loves
+en,43,-2,she hates this system at the end.,hates
+en,43,-1,she dislikes this system at the end.,dislikes
+en,43,0,she feels indifferent toward this system at the end.,indifferent
+en,43,1,she likes this system at the end.,likes
+en,43,2,she loves this system at the end.,loves
+en,44,-2,the researcher hates this city during the review.,hates
+en,44,-1,the researcher dislikes this city during the review.,dislikes
+en,44,0,the researcher feels indifferent toward this city during the review.,indifferent
+en,44,1,the researcher likes this city during the review.,likes
+en,44,2,the researcher loves this city during the review.,loves
+en,45,-2,I hates this idea during the review.,hates
+en,45,-1,I dislikes this idea during the review.,dislikes
+en,45,0,I feels indifferent toward this idea during the review.,indifferent
+en,45,1,I likes this idea during the review.,likes
+en,45,2,I loves this idea during the review.,loves
+en,46,-2,the critic hates the song today.,hates
+en,46,-1,the critic dislikes the song today.,dislikes
+en,46,0,the critic feels indifferent toward the song today.,indifferent
+en,46,1,the critic likes the song today.,likes
+en,46,2,the critic loves the song today.,loves
+en,47,-2,I hates the design at the end.,hates
+en,47,-1,I dislikes the design at the end.,dislikes
+en,47,0,I feels indifferent toward the design at the end.,indifferent
+en,47,1,I likes the design at the end.,likes
+en,47,2,I loves the design at the end.,loves
+en,48,-2,the artist hates the design today.,hates
+en,48,-1,the artist dislikes the design today.,dislikes
+en,48,0,the artist feels indifferent toward the design today.,indifferent
+en,48,1,the artist likes the design today.,likes
+en,48,2,the artist loves the design today.,loves
+en,49,-2,the artist hates this system during the review.,hates
+en,49,-1,the artist dislikes this system during the review.,dislikes
+en,49,0,the artist feels indifferent toward this system during the review.,indifferent
+en,49,1,the artist likes this system during the review.,likes
+en,49,2,the artist loves this system during the review.,loves
+en,50,-2,I hates this idea in private.,hates
+en,50,-1,I dislikes this idea in private.,dislikes
+en,50,0,I feels indifferent toward this idea in private.,indifferent
+en,50,1,I likes this idea in private.,likes
+en,50,2,I loves this idea in private.,loves
+en,51,-2,the artist hates the proposal in private.,hates
+en,51,-1,the artist dislikes the proposal in private.,dislikes
+en,51,0,the artist feels indifferent toward the proposal in private.,indifferent
+en,51,1,the artist likes the proposal in private.,likes
+en,51,2,the artist loves the proposal in private.,loves
+en,52,-2,the artist hates this system today.,hates
+en,52,-1,the artist dislikes this system today.,dislikes
+en,52,0,the artist feels indifferent toward this system today.,indifferent
+en,52,1,the artist likes this system today.,likes
+en,52,2,the artist loves this system today.,loves
+en,53,-2,the critic hates you during the review.,hates
+en,53,-1,the critic dislikes you during the review.,dislikes
+en,53,0,the critic feels indifferent toward you during the review.,indifferent
+en,53,1,the critic likes you during the review.,likes
+en,53,2,the critic loves you during the review.,loves
+en,54,-2,the researcher hates this idea during the review.,hates
+en,54,-1,the researcher dislikes this idea during the review.,dislikes
+en,54,0,the researcher feels indifferent toward this idea during the review.,indifferent
+en,54,1,the researcher likes this idea during the review.,likes
+en,54,2,the researcher loves this idea during the review.,loves
+en,55,-2,the researcher hates the proposal during the review.,hates
+en,55,-1,the researcher dislikes the proposal during the review.,dislikes
+en,55,0,the researcher feels indifferent toward the proposal during the review.,indifferent
+en,55,1,the researcher likes the proposal during the review.,likes
+en,55,2,the researcher loves the proposal during the review.,loves
+en,56,-2,the neighbor hates this idea today.,hates
+en,56,-1,the neighbor dislikes this idea today.,dislikes
+en,56,0,the neighbor feels indifferent toward this idea today.,indifferent
+en,56,1,the neighbor likes this idea today.,likes
+en,56,2,the neighbor loves this idea today.,loves
+en,57,-2,she hates the proposal during the review.,hates
+en,57,-1,she dislikes the proposal during the review.,dislikes
+en,57,0,she feels indifferent toward the proposal during the review.,indifferent
+en,57,1,she likes the proposal during the review.,likes
+en,57,2,she loves the proposal during the review.,loves
+en,58,-2,the researcher hates the song at the end.,hates
+en,58,-1,the researcher dislikes the song at the end.,dislikes
+en,58,0,the researcher feels indifferent toward the song at the end.,indifferent
+en,58,1,the researcher likes the song at the end.,likes
+en,58,2,the researcher loves the song at the end.,loves
+en,59,-2,the neighbor hates you in private.,hates
+en,59,-1,the neighbor dislikes you in private.,dislikes
+en,59,0,the neighbor feels indifferent toward you in private.,indifferent
+en,59,1,the neighbor likes you in private.,likes
+en,59,2,the neighbor loves you in private.,loves
+en,60,-2,the critic hates this film in private.,hates
+en,60,-1,the critic dislikes this film in private.,dislikes
+en,60,0,the critic feels indifferent toward this film in private.,indifferent
+en,60,1,the critic likes this film in private.,likes
+en,60,2,the critic loves this film in private.,loves
+en,61,-2,the user hates the song in private.,hates
+en,61,-1,the user dislikes the song in private.,dislikes
+en,61,0,the user feels indifferent toward the song in private.,indifferent
+en,61,1,the user likes the song in private.,likes
+en,61,2,the user loves the song in private.,loves
+en,62,-2,I hates the design during the review.,hates
+en,62,-1,I dislikes the design during the review.,dislikes
+en,62,0,I feels indifferent toward the design during the review.,indifferent
+en,62,1,I likes the design during the review.,likes
+en,62,2,I loves the design during the review.,loves
+en,63,-2,I hates this system during the review.,hates
+en,63,-1,I dislikes this system during the review.,dislikes
+en,63,0,I feels indifferent toward this system during the review.,indifferent
+en,63,1,I likes this system during the review.,likes
+en,63,2,I loves this system during the review.,loves
+en,64,-2,the artist hates this city today.,hates
+en,64,-1,the artist dislikes this city today.,dislikes
+en,64,0,the artist feels indifferent toward this city today.,indifferent
+en,64,1,the artist likes this city today.,likes
+en,64,2,the artist loves this city today.,loves
+en,65,-2,the critic hates this film after the meeting.,hates
+en,65,-1,the critic dislikes this film after the meeting.,dislikes
+en,65,0,the critic feels indifferent toward this film after the meeting.,indifferent
+en,65,1,the critic likes this film after the meeting.,likes
+en,65,2,the critic loves this film after the meeting.,loves
+en,66,-2,I hates the song today.,hates
+en,66,-1,I dislikes the song today.,dislikes
+en,66,0,I feels indifferent toward the song today.,indifferent
+en,66,1,I likes the song today.,likes
+en,66,2,I loves the song today.,loves
+en,67,-2,the user hates the proposal in private.,hates
+en,67,-1,the user dislikes the proposal in private.,dislikes
+en,67,0,the user feels indifferent toward the proposal in private.,indifferent
+en,67,1,the user likes the proposal in private.,likes
+en,67,2,the user loves the proposal in private.,loves
+en,68,-2,the user hates the design today.,hates
+en,68,-1,the user dislikes the design today.,dislikes
+en,68,0,the user feels indifferent toward the design today.,indifferent
+en,68,1,the user likes the design today.,likes
+en,68,2,the user loves the design today.,loves
+en,69,-2,she hates the song after the meeting.,hates
+en,69,-1,she dislikes the song after the meeting.,dislikes
+en,69,0,she feels indifferent toward the song after the meeting.,indifferent
+en,69,1,she likes the song after the meeting.,likes
+en,69,2,she loves the song after the meeting.,loves
+en,70,-2,the user hates this city in private.,hates
+en,70,-1,the user dislikes this city in private.,dislikes
+en,70,0,the user feels indifferent toward this city in private.,indifferent
+en,70,1,the user likes this city in private.,likes
+en,70,2,the user loves this city in private.,loves
+en,71,-2,she hates you in private.,hates
+en,71,-1,she dislikes you in private.,dislikes
+en,71,0,she feels indifferent toward you in private.,indifferent
+en,71,1,she likes you in private.,likes
+en,71,2,she loves you in private.,loves
+en,72,-2,I hates the song after the meeting.,hates
+en,72,-1,I dislikes the song after the meeting.,dislikes
+en,72,0,I feels indifferent toward the song after the meeting.,indifferent
+en,72,1,I likes the song after the meeting.,likes
+en,72,2,I loves the song after the meeting.,loves
+en,73,-2,the artist hates this film today.,hates
+en,73,-1,the artist dislikes this film today.,dislikes
+en,73,0,the artist feels indifferent toward this film today.,indifferent
+en,73,1,the artist likes this film today.,likes
+en,73,2,the artist loves this film today.,loves
+en,74,-2,the neighbor hates this system during the review.,hates
+en,74,-1,the neighbor dislikes this system during the review.,dislikes
+en,74,0,the neighbor feels indifferent toward this system during the review.,indifferent
+en,74,1,the neighbor likes this system during the review.,likes
+en,74,2,the neighbor loves this system during the review.,loves
+en,75,-2,the teacher hates the design after the meeting.,hates
+en,75,-1,the teacher dislikes the design after the meeting.,dislikes
+en,75,0,the teacher feels indifferent toward the design after the meeting.,indifferent
+en,75,1,the teacher likes the design after the meeting.,likes
+en,75,2,the teacher loves the design after the meeting.,loves
+en,76,-2,the teacher hates this city in private.,hates
+en,76,-1,the teacher dislikes this city in private.,dislikes
+en,76,0,the teacher feels indifferent toward this city in private.,indifferent
+en,76,1,the teacher likes this city in private.,likes
+en,76,2,the teacher loves this city in private.,loves
+en,77,-2,the artist hates the proposal today.,hates
+en,77,-1,the artist dislikes the proposal today.,dislikes
+en,77,0,the artist feels indifferent toward the proposal today.,indifferent
+en,77,1,the artist likes the proposal today.,likes
+en,77,2,the artist loves the proposal today.,loves
+en,78,-2,the researcher hates this idea after the meeting.,hates
+en,78,-1,the researcher dislikes this idea after the meeting.,dislikes
+en,78,0,the researcher feels indifferent toward this idea after the meeting.,indifferent
+en,78,1,the researcher likes this idea after the meeting.,likes
+en,78,2,the researcher loves this idea after the meeting.,loves
+en,79,-2,the researcher hates this system during the review.,hates
+en,79,-1,the researcher dislikes this system during the review.,dislikes
+en,79,0,the researcher feels indifferent toward this system during the review.,indifferent
+en,79,1,the researcher likes this system during the review.,likes
+en,79,2,the researcher loves this system during the review.,loves
+en,80,-2,the critic hates this system after the meeting.,hates
+en,80,-1,the critic dislikes this system after the meeting.,dislikes
+en,80,0,the critic feels indifferent toward this system after the meeting.,indifferent
+en,80,1,the critic likes this system after the meeting.,likes
+en,80,2,the critic loves this system after the meeting.,loves
+en,81,-2,I hates the proposal today.,hates
+en,81,-1,I dislikes the proposal today.,dislikes
+en,81,0,I feels indifferent toward the proposal today.,indifferent
+en,81,1,I likes the proposal today.,likes
+en,81,2,I loves the proposal today.,loves
+en,82,-2,the neighbor hates this film after the meeting.,hates
+en,82,-1,the neighbor dislikes this film after the meeting.,dislikes
+en,82,0,the neighbor feels indifferent toward this film after the meeting.,indifferent
+en,82,1,the neighbor likes this film after the meeting.,likes
+en,82,2,the neighbor loves this film after the meeting.,loves
+en,83,-2,the teacher hates this city during the review.,hates
+en,83,-1,the teacher dislikes this city during the review.,dislikes
+en,83,0,the teacher feels indifferent toward this city during the review.,indifferent
+en,83,1,the teacher likes this city during the review.,likes
+en,83,2,the teacher loves this city during the review.,loves
+en,84,-2,the researcher hates the song after the meeting.,hates
+en,84,-1,the researcher dislikes the song after the meeting.,dislikes
+en,84,0,the researcher feels indifferent toward the song after the meeting.,indifferent
+en,84,1,the researcher likes the song after the meeting.,likes
+en,84,2,the researcher loves the song after the meeting.,loves
+en,85,-2,the critic hates the design after the meeting.,hates
+en,85,-1,the critic dislikes the design after the meeting.,dislikes
+en,85,0,the critic feels indifferent toward the design after the meeting.,indifferent
+en,85,1,the critic likes the design after the meeting.,likes
+en,85,2,the critic loves the design after the meeting.,loves
+en,86,-2,I hates this film at the end.,hates
+en,86,-1,I dislikes this film at the end.,dislikes
+en,86,0,I feels indifferent toward this film at the end.,indifferent
+en,86,1,I likes this film at the end.,likes
+en,86,2,I loves this film at the end.,loves
+en,87,-2,she hates the song in private.,hates
+en,87,-1,she dislikes the song in private.,dislikes
+en,87,0,she feels indifferent toward the song in private.,indifferent
+en,87,1,she likes the song in private.,likes
+en,87,2,she loves the song in private.,loves
+en,88,-2,the user hates this city at the end.,hates
+en,88,-1,the user dislikes this city at the end.,dislikes
+en,88,0,the user feels indifferent toward this city at the end.,indifferent
+en,88,1,the user likes this city at the end.,likes
+en,88,2,the user loves this city at the end.,loves
+en,89,-2,I hates the design today.,hates
+en,89,-1,I dislikes the design today.,dislikes
+en,89,0,I feels indifferent toward the design today.,indifferent
+en,89,1,I likes the design today.,likes
+en,89,2,I loves the design today.,loves
+en,90,-2,she hates the song today.,hates
+en,90,-1,she dislikes the song today.,dislikes
+en,90,0,she feels indifferent toward the song today.,indifferent
+en,90,1,she likes the song today.,likes
+en,90,2,she loves the song today.,loves
+en,91,-2,the teacher hates the proposal at the end.,hates
+en,91,-1,the teacher dislikes the proposal at the end.,dislikes
+en,91,0,the teacher feels indifferent toward the proposal at the end.,indifferent
+en,91,1,the teacher likes the proposal at the end.,likes
+en,91,2,the teacher loves the proposal at the end.,loves
+en,92,-2,the user hates you during the review.,hates
+en,92,-1,the user dislikes you during the review.,dislikes
+en,92,0,the user feels indifferent toward you during the review.,indifferent
+en,92,1,the user likes you during the review.,likes
+en,92,2,the user loves you during the review.,loves
+en,93,-2,the artist hates this idea today.,hates
+en,93,-1,the artist dislikes this idea today.,dislikes
+en,93,0,the artist feels indifferent toward this idea today.,indifferent
+en,93,1,the artist likes this idea today.,likes
+en,93,2,the artist loves this idea today.,loves
+en,94,-2,the user hates this system in private.,hates
+en,94,-1,the user dislikes this system in private.,dislikes
+en,94,0,the user feels indifferent toward this system in private.,indifferent
+en,94,1,the user likes this system in private.,likes
+en,94,2,the user loves this system in private.,loves
+en,95,-2,the neighbor hates the song in private.,hates
+en,95,-1,the neighbor dislikes the song in private.,dislikes
+en,95,0,the neighbor feels indifferent toward the song in private.,indifferent
+en,95,1,the neighbor likes the song in private.,likes
+en,95,2,the neighbor loves the song in private.,loves
+en,96,-2,the teacher hates this system after the meeting.,hates
+en,96,-1,the teacher dislikes this system after the meeting.,dislikes
+en,96,0,the teacher feels indifferent toward this system after the meeting.,indifferent
+en,96,1,the teacher likes this system after the meeting.,likes
+en,96,2,the teacher loves this system after the meeting.,loves
+en,97,-2,the critic hates you in private.,hates
+en,97,-1,the critic dislikes you in private.,dislikes
+en,97,0,the critic feels indifferent toward you in private.,indifferent
+en,97,1,the critic likes you in private.,likes
+en,97,2,the critic loves you in private.,loves
+en,98,-2,the artist hates this system after the meeting.,hates
+en,98,-1,the artist dislikes this system after the meeting.,dislikes
+en,98,0,the artist feels indifferent toward this system after the meeting.,indifferent
+en,98,1,the artist likes this system after the meeting.,likes
+en,98,2,the artist loves this system after the meeting.,loves
+en,99,-2,the critic hates the proposal in private.,hates
+en,99,-1,the critic dislikes the proposal in private.,dislikes
+en,99,0,the critic feels indifferent toward the proposal in private.,indifferent
+en,99,1,the critic likes the proposal in private.,likes
+en,99,2,the critic loves the proposal in private.,loves
+en,100,-2,the neighbor hates the design today.,hates
+en,100,-1,the neighbor dislikes the design today.,dislikes
+en,100,0,the neighbor feels indifferent toward the design today.,indifferent
+en,100,1,the neighbor likes the design today.,likes
+en,100,2,the neighbor loves the design today.,loves
+en,101,-2,the neighbor hates this city after the meeting.,hates
+en,101,-1,the neighbor dislikes this city after the meeting.,dislikes
+en,101,0,the neighbor feels indifferent toward this city after the meeting.,indifferent
+en,101,1,the neighbor likes this city after the meeting.,likes
+en,101,2,the neighbor loves this city after the meeting.,loves
+en,102,-2,the artist hates this idea at the end.,hates
+en,102,-1,the artist dislikes this idea at the end.,dislikes
+en,102,0,the artist feels indifferent toward this idea at the end.,indifferent
+en,102,1,the artist likes this idea at the end.,likes
+en,102,2,the artist loves this idea at the end.,loves
+en,103,-2,the artist hates this city in private.,hates
+en,103,-1,the artist dislikes this city in private.,dislikes
+en,103,0,the artist feels indifferent toward this city in private.,indifferent
+en,103,1,the artist likes this city in private.,likes
+en,103,2,the artist loves this city in private.,loves
+en,104,-2,the artist hates the song after the meeting.,hates
+en,104,-1,the artist dislikes the song after the meeting.,dislikes
+en,104,0,the artist feels indifferent toward the song after the meeting.,indifferent
+en,104,1,the artist likes the song after the meeting.,likes
+en,104,2,the artist loves the song after the meeting.,loves
+en,105,-2,the neighbor hates this system in private.,hates
+en,105,-1,the neighbor dislikes this system in private.,dislikes
+en,105,0,the neighbor feels indifferent toward this system in private.,indifferent
+en,105,1,the neighbor likes this system in private.,likes
+en,105,2,the neighbor loves this system in private.,loves
+en,106,-2,the user hates you after the meeting.,hates
+en,106,-1,the user dislikes you after the meeting.,dislikes
+en,106,0,the user feels indifferent toward you after the meeting.,indifferent
+en,106,1,the user likes you after the meeting.,likes
+en,106,2,the user loves you after the meeting.,loves
+en,107,-2,the critic hates this idea during the review.,hates
+en,107,-1,the critic dislikes this idea during the review.,dislikes
+en,107,0,the critic feels indifferent toward this idea during the review.,indifferent
+en,107,1,the critic likes this idea during the review.,likes
+en,107,2,the critic loves this idea during the review.,loves
+en,108,-2,the critic hates the song at the end.,hates
+en,108,-1,the critic dislikes the song at the end.,dislikes
+en,108,0,the critic feels indifferent toward the song at the end.,indifferent
+en,108,1,the critic likes the song at the end.,likes
+en,108,2,the critic loves the song at the end.,loves
+en,109,-2,I hates the song during the review.,hates
+en,109,-1,I dislikes the song during the review.,dislikes
+en,109,0,I feels indifferent toward the song during the review.,indifferent
+en,109,1,I likes the song during the review.,likes
+en,109,2,I loves the song during the review.,loves
+en,110,-2,I hates you today.,hates
+en,110,-1,I dislikes you today.,dislikes
+en,110,0,I feels indifferent toward you today.,indifferent
+en,110,1,I likes you today.,likes
+en,110,2,I loves you today.,loves
+en,111,-2,the artist hates this system in private.,hates
+en,111,-1,the artist dislikes this system in private.,dislikes
+en,111,0,the artist feels indifferent toward this system in private.,indifferent
+en,111,1,the artist likes this system in private.,likes
+en,111,2,the artist loves this system in private.,loves
+en,112,-2,she hates this film in private.,hates
+en,112,-1,she dislikes this film in private.,dislikes
+en,112,0,she feels indifferent toward this film in private.,indifferent
+en,112,1,she likes this film in private.,likes
+en,112,2,she loves this film in private.,loves
+en,113,-2,the critic hates the design at the end.,hates
+en,113,-1,the critic dislikes the design at the end.,dislikes
+en,113,0,the critic feels indifferent toward the design at the end.,indifferent
+en,113,1,the critic likes the design at the end.,likes
+en,113,2,the critic loves the design at the end.,loves
+en,114,-2,she hates this idea after the meeting.,hates
+en,114,-1,she dislikes this idea after the meeting.,dislikes
+en,114,0,she feels indifferent toward this idea after the meeting.,indifferent
+en,114,1,she likes this idea after the meeting.,likes
+en,114,2,she loves this idea after the meeting.,loves
+en,115,-2,the neighbor hates this idea at the end.,hates
+en,115,-1,the neighbor dislikes this idea at the end.,dislikes
+en,115,0,the neighbor feels indifferent toward this idea at the end.,indifferent
+en,115,1,the neighbor likes this idea at the end.,likes
+en,115,2,the neighbor loves this idea at the end.,loves
+en,116,-2,she hates this city during the review.,hates
+en,116,-1,she dislikes this city during the review.,dislikes
+en,116,0,she feels indifferent toward this city during the review.,indifferent
+en,116,1,she likes this city during the review.,likes
+en,116,2,she loves this city during the review.,loves
+en,117,-2,I hates this city today.,hates
+en,117,-1,I dislikes this city today.,dislikes
+en,117,0,I feels indifferent toward this city today.,indifferent
+en,117,1,I likes this city today.,likes
+en,117,2,I loves this city today.,loves
+en,118,-2,the researcher hates the proposal after the meeting.,hates
+en,118,-1,the researcher dislikes the proposal after the meeting.,dislikes
+en,118,0,the researcher feels indifferent toward the proposal after the meeting.,indifferent
+en,118,1,the researcher likes the proposal after the meeting.,likes
+en,118,2,the researcher loves the proposal after the meeting.,loves
+en,119,-2,the critic hates the proposal today.,hates
+en,119,-1,the critic dislikes the proposal today.,dislikes
+en,119,0,the critic feels indifferent toward the proposal today.,indifferent
+en,119,1,the critic likes the proposal today.,likes
+en,119,2,the critic loves the proposal today.,loves
+en,120,-2,the teacher hates this film in private.,hates
+en,120,-1,the teacher dislikes this film in private.,dislikes
+en,120,0,the teacher feels indifferent toward this film in private.,indifferent
+en,120,1,the teacher likes this film in private.,likes
+en,120,2,the teacher loves this film in private.,loves
+en,121,-2,the user hates this city today.,hates
+en,121,-1,the user dislikes this city today.,dislikes
+en,121,0,the user feels indifferent toward this city today.,indifferent
+en,121,1,the user likes this city today.,likes
+en,121,2,the user loves this city today.,loves
+en,122,-2,the critic hates the proposal at the end.,hates
+en,122,-1,the critic dislikes the proposal at the end.,dislikes
+en,122,0,the critic feels indifferent toward the proposal at the end.,indifferent
+en,122,1,the critic likes the proposal at the end.,likes
+en,122,2,the critic loves the proposal at the end.,loves
+en,123,-2,I hates the song at the end.,hates
+en,123,-1,I dislikes the song at the end.,dislikes
+en,123,0,I feels indifferent toward the song at the end.,indifferent
+en,123,1,I likes the song at the end.,likes
+en,123,2,I loves the song at the end.,loves
+en,124,-2,the user hates this idea today.,hates
+en,124,-1,the user dislikes this idea today.,dislikes
+en,124,0,the user feels indifferent toward this idea today.,indifferent
+en,124,1,the user likes this idea today.,likes
+en,124,2,the user loves this idea today.,loves
+en,125,-2,the artist hates you today.,hates
+en,125,-1,the artist dislikes you today.,dislikes
+en,125,0,the artist feels indifferent toward you today.,indifferent
+en,125,1,the artist likes you today.,likes
+en,125,2,the artist loves you today.,loves
+en,126,-2,she hates the proposal after the meeting.,hates
+en,126,-1,she dislikes the proposal after the meeting.,dislikes
+en,126,0,she feels indifferent toward the proposal after the meeting.,indifferent
+en,126,1,she likes the proposal after the meeting.,likes
+en,126,2,she loves the proposal after the meeting.,loves
+en,127,-2,she hates you today.,hates
+en,127,-1,she dislikes you today.,dislikes
+en,127,0,she feels indifferent toward you today.,indifferent
+en,127,1,she likes you today.,likes
+en,127,2,she loves you today.,loves
+en,128,-2,she hates you at the end.,hates
+en,128,-1,she dislikes you at the end.,dislikes
+en,128,0,she feels indifferent toward you at the end.,indifferent
+en,128,1,she likes you at the end.,likes
+en,128,2,she loves you at the end.,loves
+en,129,-2,the critic hates this idea at the end.,hates
+en,129,-1,the critic dislikes this idea at the end.,dislikes
+en,129,0,the critic feels indifferent toward this idea at the end.,indifferent
+en,129,1,the critic likes this idea at the end.,likes
+en,129,2,the critic loves this idea at the end.,loves
+en,130,-2,she hates this film during the review.,hates
+en,130,-1,she dislikes this film during the review.,dislikes
+en,130,0,she feels indifferent toward this film during the review.,indifferent
+en,130,1,she likes this film during the review.,likes
+en,130,2,she loves this film during the review.,loves
+en,131,-2,the user hates this system today.,hates
+en,131,-1,the user dislikes this system today.,dislikes
+en,131,0,the user feels indifferent toward this system today.,indifferent
+en,131,1,the user likes this system today.,likes
+en,131,2,the user loves this system today.,loves
+en,132,-2,she hates this city in private.,hates
+en,132,-1,she dislikes this city in private.,dislikes
+en,132,0,she feels indifferent toward this city in private.,indifferent
+en,132,1,she likes this city in private.,likes
+en,132,2,she loves this city in private.,loves
+en,133,-2,the user hates the proposal today.,hates
+en,133,-1,the user dislikes the proposal today.,dislikes
+en,133,0,the user feels indifferent toward the proposal today.,indifferent
+en,133,1,the user likes the proposal today.,likes
+en,133,2,the user loves the proposal today.,loves
+en,134,-2,she hates the proposal in private.,hates
+en,134,-1,she dislikes the proposal in private.,dislikes
+en,134,0,she feels indifferent toward the proposal in private.,indifferent
+en,134,1,she likes the proposal in private.,likes
+en,134,2,she loves the proposal in private.,loves
+en,135,-2,the teacher hates this system in private.,hates
+en,135,-1,the teacher dislikes this system in private.,dislikes
+en,135,0,the teacher feels indifferent toward this system in private.,indifferent
+en,135,1,the teacher likes this system in private.,likes
+en,135,2,the teacher loves this system in private.,loves
+en,136,-2,the user hates the design after the meeting.,hates
+en,136,-1,the user dislikes the design after the meeting.,dislikes
+en,136,0,the user feels indifferent toward the design after the meeting.,indifferent
+en,136,1,the user likes the design after the meeting.,likes
+en,136,2,the user loves the design after the meeting.,loves
+en,137,-2,the artist hates you at the end.,hates
+en,137,-1,the artist dislikes you at the end.,dislikes
+en,137,0,the artist feels indifferent toward you at the end.,indifferent
+en,137,1,the artist likes you at the end.,likes
+en,137,2,the artist loves you at the end.,loves
+en,138,-2,I hates the design in private.,hates
+en,138,-1,I dislikes the design in private.,dislikes
+en,138,0,I feels indifferent toward the design in private.,indifferent
+en,138,1,I likes the design in private.,likes
+en,138,2,I loves the design in private.,loves
+en,139,-2,she hates this film at the end.,hates
+en,139,-1,she dislikes this film at the end.,dislikes
+en,139,0,she feels indifferent toward this film at the end.,indifferent
+en,139,1,she likes this film at the end.,likes
+en,139,2,she loves this film at the end.,loves
+en,140,-2,I hates this film in private.,hates
+en,140,-1,I dislikes this film in private.,dislikes
+en,140,0,I feels indifferent toward this film in private.,indifferent
+en,140,1,I likes this film in private.,likes
+en,140,2,I loves this film in private.,loves
+en,141,-2,the artist hates you in private.,hates
+en,141,-1,the artist dislikes you in private.,dislikes
+en,141,0,the artist feels indifferent toward you in private.,indifferent
+en,141,1,the artist likes you in private.,likes
+en,141,2,the artist loves you in private.,loves
+en,142,-2,the neighbor hates you during the review.,hates
+en,142,-1,the neighbor dislikes you during the review.,dislikes
+en,142,0,the neighbor feels indifferent toward you during the review.,indifferent
+en,142,1,the neighbor likes you during the review.,likes
+en,142,2,the neighbor loves you during the review.,loves
+en,143,-2,the critic hates this city during the review.,hates
+en,143,-1,the critic dislikes this city during the review.,dislikes
+en,143,0,the critic feels indifferent toward this city during the review.,indifferent
+en,143,1,the critic likes this city during the review.,likes
+en,143,2,the critic loves this city during the review.,loves
+en,144,-2,the neighbor hates the proposal today.,hates
+en,144,-1,the neighbor dislikes the proposal today.,dislikes
+en,144,0,the neighbor feels indifferent toward the proposal today.,indifferent
+en,144,1,the neighbor likes the proposal today.,likes
+en,144,2,the neighbor loves the proposal today.,loves
+en,145,-2,the critic hates the proposal during the review.,hates
+en,145,-1,the critic dislikes the proposal during the review.,dislikes
+en,145,0,the critic feels indifferent toward the proposal during the review.,indifferent
+en,145,1,the critic likes the proposal during the review.,likes
+en,145,2,the critic loves the proposal during the review.,loves
+en,146,-2,the teacher hates this idea after the meeting.,hates
+en,146,-1,the teacher dislikes this idea after the meeting.,dislikes
+en,146,0,the teacher feels indifferent toward this idea after the meeting.,indifferent
+en,146,1,the teacher likes this idea after the meeting.,likes
+en,146,2,the teacher loves this idea after the meeting.,loves
+en,147,-2,the user hates this film after the meeting.,hates
+en,147,-1,the user dislikes this film after the meeting.,dislikes
+en,147,0,the user feels indifferent toward this film after the meeting.,indifferent
+en,147,1,the user likes this film after the meeting.,likes
+en,147,2,the user loves this film after the meeting.,loves
+en,148,-2,the artist hates this film after the meeting.,hates
+en,148,-1,the artist dislikes this film after the meeting.,dislikes
+en,148,0,the artist feels indifferent toward this film after the meeting.,indifferent
+en,148,1,the artist likes this film after the meeting.,likes
+en,148,2,the artist loves this film after the meeting.,loves
+en,149,-2,she hates this idea during the review.,hates
+en,149,-1,she dislikes this idea during the review.,dislikes
+en,149,0,she feels indifferent toward this idea during the review.,indifferent
+en,149,1,she likes this idea during the review.,likes
+en,149,2,she loves this idea during the review.,loves
+en,150,-2,the teacher hates the design at the end.,hates
+en,150,-1,the teacher dislikes the design at the end.,dislikes
+en,150,0,the teacher feels indifferent toward the design at the end.,indifferent
+en,150,1,the teacher likes the design at the end.,likes
+en,150,2,the teacher loves the design at the end.,loves
+en,151,-2,the neighbor hates this film in private.,hates
+en,151,-1,the neighbor dislikes this film in private.,dislikes
+en,151,0,the neighbor feels indifferent toward this film in private.,indifferent
+en,151,1,the neighbor likes this film in private.,likes
+en,151,2,the neighbor loves this film in private.,loves
+en,152,-2,the user hates the song at the end.,hates
+en,152,-1,the user dislikes the song at the end.,dislikes
+en,152,0,the user feels indifferent toward the song at the end.,indifferent
+en,152,1,the user likes the song at the end.,likes
+en,152,2,the user loves the song at the end.,loves
+en,153,-2,the artist hates the song at the end.,hates
+en,153,-1,the artist dislikes the song at the end.,dislikes
+en,153,0,the artist feels indifferent toward the song at the end.,indifferent
+en,153,1,the artist likes the song at the end.,likes
+en,153,2,the artist loves the song at the end.,loves
+en,154,-2,the researcher hates this system in private.,hates
+en,154,-1,the researcher dislikes this system in private.,dislikes
+en,154,0,the researcher feels indifferent toward this system in private.,indifferent
+en,154,1,the researcher likes this system in private.,likes
+en,154,2,the researcher loves this system in private.,loves
+en,155,-2,the user hates this system after the meeting.,hates
+en,155,-1,the user dislikes this system after the meeting.,dislikes
+en,155,0,the user feels indifferent toward this system after the meeting.,indifferent
+en,155,1,the user likes this system after the meeting.,likes
+en,155,2,the user loves this system after the meeting.,loves
+en,156,-2,the researcher hates the design in private.,hates
+en,156,-1,the researcher dislikes the design in private.,dislikes
+en,156,0,the researcher feels indifferent toward the design in private.,indifferent
+en,156,1,the researcher likes the design in private.,likes
+en,156,2,the researcher loves the design in private.,loves
+en,157,-2,I hates you after the meeting.,hates
+en,157,-1,I dislikes you after the meeting.,dislikes
+en,157,0,I feels indifferent toward you after the meeting.,indifferent
+en,157,1,I likes you after the meeting.,likes
+en,157,2,I loves you after the meeting.,loves
+en,158,-2,she hates the design after the meeting.,hates
+en,158,-1,she dislikes the design after the meeting.,dislikes
+en,158,0,she feels indifferent toward the design after the meeting.,indifferent
+en,158,1,she likes the design after the meeting.,likes
+en,158,2,she loves the design after the meeting.,loves
+en,159,-2,the neighbor hates this city in private.,hates
+en,159,-1,the neighbor dislikes this city in private.,dislikes
+en,159,0,the neighbor feels indifferent toward this city in private.,indifferent
+en,159,1,the neighbor likes this city in private.,likes
+en,159,2,the neighbor loves this city in private.,loves
+ru,0,-2,ya nenavidit etot gorod v kontse.,nenavidit
+ru,0,-1,ya nedolyublivaet etot gorod v kontse.,nedolyublivaet
+ru,0,0,ya ravnodushen k etot gorod v kontse.,ravnodushen
+ru,0,1,ya simpatiziruet etot gorod v kontse.,simpatiziruet
+ru,0,2,ya lyubit etot gorod v kontse.,lyubit
+ru,1,-2,hudozhnik nenavidit etu pesnyu segodnya.,nenavidit
+ru,1,-1,hudozhnik nedolyublivaet etu pesnyu segodnya.,nedolyublivaet
+ru,1,0,hudozhnik ravnodushen k etu pesnyu segodnya.,ravnodushen
+ru,1,1,hudozhnik simpatiziruet etu pesnyu segodnya.,simpatiziruet
+ru,1,2,hudozhnik lyubit etu pesnyu segodnya.,lyubit
+ru,2,-2,sosed nenavidit etot dizayn naedine.,nenavidit
+ru,2,-1,sosed nedolyublivaet etot dizayn naedine.,nedolyublivaet
+ru,2,0,sosed ravnodushen k etot dizayn naedine.,ravnodushen
+ru,2,1,sosed simpatiziruet etot dizayn naedine.,simpatiziruet
+ru,2,2,sosed lyubit etot dizayn naedine.,lyubit
+ru,3,-2,polzovatel nenavidit etot film vo vremya obzora.,nenavidit
+ru,3,-1,polzovatel nedolyublivaet etot film vo vremya obzora.,nedolyublivaet
+ru,3,0,polzovatel ravnodushen k etot film vo vremya obzora.,ravnodushen
+ru,3,1,polzovatel simpatiziruet etot film vo vremya obzora.,simpatiziruet
+ru,3,2,polzovatel lyubit etot film vo vremya obzora.,lyubit
+ru,4,-2,sosed nenavidit eto predlozhenie segodnya.,nenavidit
+ru,4,-1,sosed nedolyublivaet eto predlozhenie segodnya.,nedolyublivaet
+ru,4,0,sosed ravnodushen k eto predlozhenie segodnya.,ravnodushen
+ru,4,1,sosed simpatiziruet eto predlozhenie segodnya.,simpatiziruet
+ru,4,2,sosed lyubit eto predlozhenie segodnya.,lyubit
+ru,5,-2,ona nenavidit etot gorod posle vstrechi.,nenavidit
+ru,5,-1,ona nedolyublivaet etot gorod posle vstrechi.,nedolyublivaet
+ru,5,0,ona ravnodushen k etot gorod posle vstrechi.,ravnodushen
+ru,5,1,ona simpatiziruet etot gorod posle vstrechi.,simpatiziruet
+ru,5,2,ona lyubit etot gorod posle vstrechi.,lyubit
+ru,6,-2,ya nenavidit etot gorod posle vstrechi.,nenavidit
+ru,6,-1,ya nedolyublivaet etot gorod posle vstrechi.,nedolyublivaet
+ru,6,0,ya ravnodushen k etot gorod posle vstrechi.,ravnodushen
+ru,6,1,ya simpatiziruet etot gorod posle vstrechi.,simpatiziruet
+ru,6,2,ya lyubit etot gorod posle vstrechi.,lyubit
+ru,7,-2,hudozhnik nenavidit tebya vo vremya obzora.,nenavidit
+ru,7,-1,hudozhnik nedolyublivaet tebya vo vremya obzora.,nedolyublivaet
+ru,7,0,hudozhnik ravnodushen k tebya vo vremya obzora.,ravnodushen
+ru,7,1,hudozhnik simpatiziruet tebya vo vremya obzora.,simpatiziruet
+ru,7,2,hudozhnik lyubit tebya vo vremya obzora.,lyubit
+ru,8,-2,hudozhnik nenavidit etu sistemu naedine.,nenavidit
+ru,8,-1,hudozhnik nedolyublivaet etu sistemu naedine.,nedolyublivaet
+ru,8,0,hudozhnik ravnodushen k etu sistemu naedine.,ravnodushen
+ru,8,1,hudozhnik simpatiziruet etu sistemu naedine.,simpatiziruet
+ru,8,2,hudozhnik lyubit etu sistemu naedine.,lyubit
+ru,9,-2,polzovatel nenavidit etot gorod vo vremya obzora.,nenavidit
+ru,9,-1,polzovatel nedolyublivaet etot gorod vo vremya obzora.,nedolyublivaet
+ru,9,0,polzovatel ravnodushen k etot gorod vo vremya obzora.,ravnodushen
+ru,9,1,polzovatel simpatiziruet etot gorod vo vremya obzora.,simpatiziruet
+ru,9,2,polzovatel lyubit etot gorod vo vremya obzora.,lyubit
+ru,10,-2,issledovatel nenavidit etot film naedine.,nenavidit
+ru,10,-1,issledovatel nedolyublivaet etot film naedine.,nedolyublivaet
+ru,10,0,issledovatel ravnodushen k etot film naedine.,ravnodushen
+ru,10,1,issledovatel simpatiziruet etot film naedine.,simpatiziruet
+ru,10,2,issledovatel lyubit etot film naedine.,lyubit
+ru,11,-2,polzovatel nenavidit tebya naedine.,nenavidit
+ru,11,-1,polzovatel nedolyublivaet tebya naedine.,nedolyublivaet
+ru,11,0,polzovatel ravnodushen k tebya naedine.,ravnodushen
+ru,11,1,polzovatel simpatiziruet tebya naedine.,simpatiziruet
+ru,11,2,polzovatel lyubit tebya naedine.,lyubit
+ru,12,-2,issledovatel nenavidit etot dizayn v kontse.,nenavidit
+ru,12,-1,issledovatel nedolyublivaet etot dizayn v kontse.,nedolyublivaet
+ru,12,0,issledovatel ravnodushen k etot dizayn v kontse.,ravnodushen
+ru,12,1,issledovatel simpatiziruet etot dizayn v kontse.,simpatiziruet
+ru,12,2,issledovatel lyubit etot dizayn v kontse.,lyubit
+ru,13,-2,ya nenavidit eto predlozhenie posle vstrechi.,nenavidit
+ru,13,-1,ya nedolyublivaet eto predlozhenie posle vstrechi.,nedolyublivaet
+ru,13,0,ya ravnodushen k eto predlozhenie posle vstrechi.,ravnodushen
+ru,13,1,ya simpatiziruet eto predlozhenie posle vstrechi.,simpatiziruet
+ru,13,2,ya lyubit eto predlozhenie posle vstrechi.,lyubit
+ru,14,-2,uchitel nenavidit eto predlozhenie v kontse.,nenavidit
+ru,14,-1,uchitel nedolyublivaet eto predlozhenie v kontse.,nedolyublivaet
+ru,14,0,uchitel ravnodushen k eto predlozhenie v kontse.,ravnodushen
+ru,14,1,uchitel simpatiziruet eto predlozhenie v kontse.,simpatiziruet
+ru,14,2,uchitel lyubit eto predlozhenie v kontse.,lyubit
+ru,15,-2,uchitel nenavidit etu ideyu naedine.,nenavidit
+ru,15,-1,uchitel nedolyublivaet etu ideyu naedine.,nedolyublivaet
+ru,15,0,uchitel ravnodushen k etu ideyu naedine.,ravnodushen
+ru,15,1,uchitel simpatiziruet etu ideyu naedine.,simpatiziruet
+ru,15,2,uchitel lyubit etu ideyu naedine.,lyubit
+ru,16,-2,ona nenavidit etu ideyu naedine.,nenavidit
+ru,16,-1,ona nedolyublivaet etu ideyu naedine.,nedolyublivaet
+ru,16,0,ona ravnodushen k etu ideyu naedine.,ravnodushen
+ru,16,1,ona simpatiziruet etu ideyu naedine.,simpatiziruet
+ru,16,2,ona lyubit etu ideyu naedine.,lyubit
+ru,17,-2,polzovatel nenavidit etu ideyu naedine.,nenavidit
+ru,17,-1,polzovatel nedolyublivaet etu ideyu naedine.,nedolyublivaet
+ru,17,0,polzovatel ravnodushen k etu ideyu naedine.,ravnodushen
+ru,17,1,polzovatel simpatiziruet etu ideyu naedine.,simpatiziruet
+ru,17,2,polzovatel lyubit etu ideyu naedine.,lyubit
+ru,18,-2,kritik nenavidit etu pesnyu vo vremya obzora.,nenavidit
+ru,18,-1,kritik nedolyublivaet etu pesnyu vo vremya obzora.,nedolyublivaet
+ru,18,0,kritik ravnodushen k etu pesnyu vo vremya obzora.,ravnodushen
+ru,18,1,kritik simpatiziruet etu pesnyu vo vremya obzora.,simpatiziruet
+ru,18,2,kritik lyubit etu pesnyu vo vremya obzora.,lyubit
+ru,19,-2,polzovatel nenavidit eto predlozhenie naedine.,nenavidit
+ru,19,-1,polzovatel nedolyublivaet eto predlozhenie naedine.,nedolyublivaet
+ru,19,0,polzovatel ravnodushen k eto predlozhenie naedine.,ravnodushen
+ru,19,1,polzovatel simpatiziruet eto predlozhenie naedine.,simpatiziruet
+ru,19,2,polzovatel lyubit eto predlozhenie naedine.,lyubit
+ru,20,-2,ya nenavidit tebya posle vstrechi.,nenavidit
+ru,20,-1,ya nedolyublivaet tebya posle vstrechi.,nedolyublivaet
+ru,20,0,ya ravnodushen k tebya posle vstrechi.,ravnodushen
+ru,20,1,ya simpatiziruet tebya posle vstrechi.,simpatiziruet
+ru,20,2,ya lyubit tebya posle vstrechi.,lyubit
+ru,21,-2,polzovatel nenavidit etot dizayn segodnya.,nenavidit
+ru,21,-1,polzovatel nedolyublivaet etot dizayn segodnya.,nedolyublivaet
+ru,21,0,polzovatel ravnodushen k etot dizayn segodnya.,ravnodushen
+ru,21,1,polzovatel simpatiziruet etot dizayn segodnya.,simpatiziruet
+ru,21,2,polzovatel lyubit etot dizayn segodnya.,lyubit
+ru,22,-2,polzovatel nenavidit etot gorod posle vstrechi.,nenavidit
+ru,22,-1,polzovatel nedolyublivaet etot gorod posle vstrechi.,nedolyublivaet
+ru,22,0,polzovatel ravnodushen k etot gorod posle vstrechi.,ravnodushen
+ru,22,1,polzovatel simpatiziruet etot gorod posle vstrechi.,simpatiziruet
+ru,22,2,polzovatel lyubit etot gorod posle vstrechi.,lyubit
+ru,23,-2,ya nenavidit eto predlozhenie v kontse.,nenavidit
+ru,23,-1,ya nedolyublivaet eto predlozhenie v kontse.,nedolyublivaet
+ru,23,0,ya ravnodushen k eto predlozhenie v kontse.,ravnodushen
+ru,23,1,ya simpatiziruet eto predlozhenie v kontse.,simpatiziruet
+ru,23,2,ya lyubit eto predlozhenie v kontse.,lyubit
+ru,24,-2,kritik nenavidit etu sistemu v kontse.,nenavidit
+ru,24,-1,kritik nedolyublivaet etu sistemu v kontse.,nedolyublivaet
+ru,24,0,kritik ravnodushen k etu sistemu v kontse.,ravnodushen
+ru,24,1,kritik simpatiziruet etu sistemu v kontse.,simpatiziruet
+ru,24,2,kritik lyubit etu sistemu v kontse.,lyubit
+ru,25,-2,kritik nenavidit etot dizayn naedine.,nenavidit
+ru,25,-1,kritik nedolyublivaet etot dizayn naedine.,nedolyublivaet
+ru,25,0,kritik ravnodushen k etot dizayn naedine.,ravnodushen
+ru,25,1,kritik simpatiziruet etot dizayn naedine.,simpatiziruet
+ru,25,2,kritik lyubit etot dizayn naedine.,lyubit
+ru,26,-2,ona nenavidit eto predlozhenie posle vstrechi.,nenavidit
+ru,26,-1,ona nedolyublivaet eto predlozhenie posle vstrechi.,nedolyublivaet
+ru,26,0,ona ravnodushen k eto predlozhenie posle vstrechi.,ravnodushen
+ru,26,1,ona simpatiziruet eto predlozhenie posle vstrechi.,simpatiziruet
+ru,26,2,ona lyubit eto predlozhenie posle vstrechi.,lyubit
+ru,27,-2,ona nenavidit eto predlozhenie v kontse.,nenavidit
+ru,27,-1,ona nedolyublivaet eto predlozhenie v kontse.,nedolyublivaet
+ru,27,0,ona ravnodushen k eto predlozhenie v kontse.,ravnodushen
+ru,27,1,ona simpatiziruet eto predlozhenie v kontse.,simpatiziruet
+ru,27,2,ona lyubit eto predlozhenie v kontse.,lyubit
+ru,28,-2,ona nenavidit tebya naedine.,nenavidit
+ru,28,-1,ona nedolyublivaet tebya naedine.,nedolyublivaet
+ru,28,0,ona ravnodushen k tebya naedine.,ravnodushen
+ru,28,1,ona simpatiziruet tebya naedine.,simpatiziruet
+ru,28,2,ona lyubit tebya naedine.,lyubit
+ru,29,-2,sosed nenavidit etot gorod naedine.,nenavidit
+ru,29,-1,sosed nedolyublivaet etot gorod naedine.,nedolyublivaet
+ru,29,0,sosed ravnodushen k etot gorod naedine.,ravnodushen
+ru,29,1,sosed simpatiziruet etot gorod naedine.,simpatiziruet
+ru,29,2,sosed lyubit etot gorod naedine.,lyubit
+ru,30,-2,issledovatel nenavidit tebya v kontse.,nenavidit
+ru,30,-1,issledovatel nedolyublivaet tebya v kontse.,nedolyublivaet
+ru,30,0,issledovatel ravnodushen k tebya v kontse.,ravnodushen
+ru,30,1,issledovatel simpatiziruet tebya v kontse.,simpatiziruet
+ru,30,2,issledovatel lyubit tebya v kontse.,lyubit
+ru,31,-2,sosed nenavidit etot dizayn segodnya.,nenavidit
+ru,31,-1,sosed nedolyublivaet etot dizayn segodnya.,nedolyublivaet
+ru,31,0,sosed ravnodushen k etot dizayn segodnya.,ravnodushen
+ru,31,1,sosed simpatiziruet etot dizayn segodnya.,simpatiziruet
+ru,31,2,sosed lyubit etot dizayn segodnya.,lyubit
+ru,32,-2,hudozhnik nenavidit etu sistemu vo vremya obzora.,nenavidit
+ru,32,-1,hudozhnik nedolyublivaet etu sistemu vo vremya obzora.,nedolyublivaet
+ru,32,0,hudozhnik ravnodushen k etu sistemu vo vremya obzora.,ravnodushen
+ru,32,1,hudozhnik simpatiziruet etu sistemu vo vremya obzora.,simpatiziruet
+ru,32,2,hudozhnik lyubit etu sistemu vo vremya obzora.,lyubit
+ru,33,-2,hudozhnik nenavidit etu pesnyu naedine.,nenavidit
+ru,33,-1,hudozhnik nedolyublivaet etu pesnyu naedine.,nedolyublivaet
+ru,33,0,hudozhnik ravnodushen k etu pesnyu naedine.,ravnodushen
+ru,33,1,hudozhnik simpatiziruet etu pesnyu naedine.,simpatiziruet
+ru,33,2,hudozhnik lyubit etu pesnyu naedine.,lyubit
+ru,34,-2,ya nenavidit etu sistemu naedine.,nenavidit
+ru,34,-1,ya nedolyublivaet etu sistemu naedine.,nedolyublivaet
+ru,34,0,ya ravnodushen k etu sistemu naedine.,ravnodushen
+ru,34,1,ya simpatiziruet etu sistemu naedine.,simpatiziruet
+ru,34,2,ya lyubit etu sistemu naedine.,lyubit
+ru,35,-2,ona nenavidit etu pesnyu vo vremya obzora.,nenavidit
+ru,35,-1,ona nedolyublivaet etu pesnyu vo vremya obzora.,nedolyublivaet
+ru,35,0,ona ravnodushen k etu pesnyu vo vremya obzora.,ravnodushen
+ru,35,1,ona simpatiziruet etu pesnyu vo vremya obzora.,simpatiziruet
+ru,35,2,ona lyubit etu pesnyu vo vremya obzora.,lyubit
+ru,36,-2,uchitel nenavidit eto predlozhenie posle vstrechi.,nenavidit
+ru,36,-1,uchitel nedolyublivaet eto predlozhenie posle vstrechi.,nedolyublivaet
+ru,36,0,uchitel ravnodushen k eto predlozhenie posle vstrechi.,ravnodushen
+ru,36,1,uchitel simpatiziruet eto predlozhenie posle vstrechi.,simpatiziruet
+ru,36,2,uchitel lyubit eto predlozhenie posle vstrechi.,lyubit
+ru,37,-2,hudozhnik nenavidit etot gorod naedine.,nenavidit
+ru,37,-1,hudozhnik nedolyublivaet etot gorod naedine.,nedolyublivaet
+ru,37,0,hudozhnik ravnodushen k etot gorod naedine.,ravnodushen
+ru,37,1,hudozhnik simpatiziruet etot gorod naedine.,simpatiziruet
+ru,37,2,hudozhnik lyubit etot gorod naedine.,lyubit
+ru,38,-2,polzovatel nenavidit etu ideyu vo vremya obzora.,nenavidit
+ru,38,-1,polzovatel nedolyublivaet etu ideyu vo vremya obzora.,nedolyublivaet
+ru,38,0,polzovatel ravnodushen k etu ideyu vo vremya obzora.,ravnodushen
+ru,38,1,polzovatel simpatiziruet etu ideyu vo vremya obzora.,simpatiziruet
+ru,38,2,polzovatel lyubit etu ideyu vo vremya obzora.,lyubit
+ru,39,-2,ya nenavidit eto predlozhenie naedine.,nenavidit
+ru,39,-1,ya nedolyublivaet eto predlozhenie naedine.,nedolyublivaet
+ru,39,0,ya ravnodushen k eto predlozhenie naedine.,ravnodushen
+ru,39,1,ya simpatiziruet eto predlozhenie naedine.,simpatiziruet
+ru,39,2,ya lyubit eto predlozhenie naedine.,lyubit
+ru,40,-2,ya nenavidit etu ideyu v kontse.,nenavidit
+ru,40,-1,ya nedolyublivaet etu ideyu v kontse.,nedolyublivaet
+ru,40,0,ya ravnodushen k etu ideyu v kontse.,ravnodushen
+ru,40,1,ya simpatiziruet etu ideyu v kontse.,simpatiziruet
+ru,40,2,ya lyubit etu ideyu v kontse.,lyubit
+ru,41,-2,issledovatel nenavidit etot gorod vo vremya obzora.,nenavidit
+ru,41,-1,issledovatel nedolyublivaet etot gorod vo vremya obzora.,nedolyublivaet
+ru,41,0,issledovatel ravnodushen k etot gorod vo vremya obzora.,ravnodushen
+ru,41,1,issledovatel simpatiziruet etot gorod vo vremya obzora.,simpatiziruet
+ru,41,2,issledovatel lyubit etot gorod vo vremya obzora.,lyubit
+ru,42,-2,uchitel nenavidit eto predlozhenie vo vremya obzora.,nenavidit
+ru,42,-1,uchitel nedolyublivaet eto predlozhenie vo vremya obzora.,nedolyublivaet
+ru,42,0,uchitel ravnodushen k eto predlozhenie vo vremya obzora.,ravnodushen
+ru,42,1,uchitel simpatiziruet eto predlozhenie vo vremya obzora.,simpatiziruet
+ru,42,2,uchitel lyubit eto predlozhenie vo vremya obzora.,lyubit
+ru,43,-2,ona nenavidit etot gorod segodnya.,nenavidit
+ru,43,-1,ona nedolyublivaet etot gorod segodnya.,nedolyublivaet
+ru,43,0,ona ravnodushen k etot gorod segodnya.,ravnodushen
+ru,43,1,ona simpatiziruet etot gorod segodnya.,simpatiziruet
+ru,43,2,ona lyubit etot gorod segodnya.,lyubit
+ru,44,-2,hudozhnik nenavidit etu ideyu posle vstrechi.,nenavidit
+ru,44,-1,hudozhnik nedolyublivaet etu ideyu posle vstrechi.,nedolyublivaet
+ru,44,0,hudozhnik ravnodushen k etu ideyu posle vstrechi.,ravnodushen
+ru,44,1,hudozhnik simpatiziruet etu ideyu posle vstrechi.,simpatiziruet
+ru,44,2,hudozhnik lyubit etu ideyu posle vstrechi.,lyubit
+ru,45,-2,ya nenavidit etot dizayn v kontse.,nenavidit
+ru,45,-1,ya nedolyublivaet etot dizayn v kontse.,nedolyublivaet
+ru,45,0,ya ravnodushen k etot dizayn v kontse.,ravnodushen
+ru,45,1,ya simpatiziruet etot dizayn v kontse.,simpatiziruet
+ru,45,2,ya lyubit etot dizayn v kontse.,lyubit
+ru,46,-2,ya nenavidit etot dizayn vo vremya obzora.,nenavidit
+ru,46,-1,ya nedolyublivaet etot dizayn vo vremya obzora.,nedolyublivaet
+ru,46,0,ya ravnodushen k etot dizayn vo vremya obzora.,ravnodushen
+ru,46,1,ya simpatiziruet etot dizayn vo vremya obzora.,simpatiziruet
+ru,46,2,ya lyubit etot dizayn vo vremya obzora.,lyubit
+ru,47,-2,hudozhnik nenavidit tebya posle vstrechi.,nenavidit
+ru,47,-1,hudozhnik nedolyublivaet tebya posle vstrechi.,nedolyublivaet
+ru,47,0,hudozhnik ravnodushen k tebya posle vstrechi.,ravnodushen
+ru,47,1,hudozhnik simpatiziruet tebya posle vstrechi.,simpatiziruet
+ru,47,2,hudozhnik lyubit tebya posle vstrechi.,lyubit
+ru,48,-2,uchitel nenavidit etot film v kontse.,nenavidit
+ru,48,-1,uchitel nedolyublivaet etot film v kontse.,nedolyublivaet
+ru,48,0,uchitel ravnodushen k etot film v kontse.,ravnodushen
+ru,48,1,uchitel simpatiziruet etot film v kontse.,simpatiziruet
+ru,48,2,uchitel lyubit etot film v kontse.,lyubit
+ru,49,-2,kritik nenavidit etot gorod v kontse.,nenavidit
+ru,49,-1,kritik nedolyublivaet etot gorod v kontse.,nedolyublivaet
+ru,49,0,kritik ravnodushen k etot gorod v kontse.,ravnodushen
+ru,49,1,kritik simpatiziruet etot gorod v kontse.,simpatiziruet
+ru,49,2,kritik lyubit etot gorod v kontse.,lyubit
+ru,50,-2,hudozhnik nenavidit eto predlozhenie v kontse.,nenavidit
+ru,50,-1,hudozhnik nedolyublivaet eto predlozhenie v kontse.,nedolyublivaet
+ru,50,0,hudozhnik ravnodushen k eto predlozhenie v kontse.,ravnodushen
+ru,50,1,hudozhnik simpatiziruet eto predlozhenie v kontse.,simpatiziruet
+ru,50,2,hudozhnik lyubit eto predlozhenie v kontse.,lyubit
+ru,51,-2,kritik nenavidit etu ideyu v kontse.,nenavidit
+ru,51,-1,kritik nedolyublivaet etu ideyu v kontse.,nedolyublivaet
+ru,51,0,kritik ravnodushen k etu ideyu v kontse.,ravnodushen
+ru,51,1,kritik simpatiziruet etu ideyu v kontse.,simpatiziruet
+ru,51,2,kritik lyubit etu ideyu v kontse.,lyubit
+ru,52,-2,polzovatel nenavidit etot dizayn v kontse.,nenavidit
+ru,52,-1,polzovatel nedolyublivaet etot dizayn v kontse.,nedolyublivaet
+ru,52,0,polzovatel ravnodushen k etot dizayn v kontse.,ravnodushen
+ru,52,1,polzovatel simpatiziruet etot dizayn v kontse.,simpatiziruet
+ru,52,2,polzovatel lyubit etot dizayn v kontse.,lyubit
+ru,53,-2,issledovatel nenavidit etot film v kontse.,nenavidit
+ru,53,-1,issledovatel nedolyublivaet etot film v kontse.,nedolyublivaet
+ru,53,0,issledovatel ravnodushen k etot film v kontse.,ravnodushen
+ru,53,1,issledovatel simpatiziruet etot film v kontse.,simpatiziruet
+ru,53,2,issledovatel lyubit etot film v kontse.,lyubit
+ru,54,-2,kritik nenavidit eto predlozhenie naedine.,nenavidit
+ru,54,-1,kritik nedolyublivaet eto predlozhenie naedine.,nedolyublivaet
+ru,54,0,kritik ravnodushen k eto predlozhenie naedine.,ravnodushen
+ru,54,1,kritik simpatiziruet eto predlozhenie naedine.,simpatiziruet
+ru,54,2,kritik lyubit eto predlozhenie naedine.,lyubit
+ru,55,-2,uchitel nenavidit etu sistemu v kontse.,nenavidit
+ru,55,-1,uchitel nedolyublivaet etu sistemu v kontse.,nedolyublivaet
+ru,55,0,uchitel ravnodushen k etu sistemu v kontse.,ravnodushen
+ru,55,1,uchitel simpatiziruet etu sistemu v kontse.,simpatiziruet
+ru,55,2,uchitel lyubit etu sistemu v kontse.,lyubit
+ru,56,-2,issledovatel nenavidit eto predlozhenie vo vremya obzora.,nenavidit
+ru,56,-1,issledovatel nedolyublivaet eto predlozhenie vo vremya obzora.,nedolyublivaet
+ru,56,0,issledovatel ravnodushen k eto predlozhenie vo vremya obzora.,ravnodushen
+ru,56,1,issledovatel simpatiziruet eto predlozhenie vo vremya obzora.,simpatiziruet
+ru,56,2,issledovatel lyubit eto predlozhenie vo vremya obzora.,lyubit
+ru,57,-2,polzovatel nenavidit etu sistemu posle vstrechi.,nenavidit
+ru,57,-1,polzovatel nedolyublivaet etu sistemu posle vstrechi.,nedolyublivaet
+ru,57,0,polzovatel ravnodushen k etu sistemu posle vstrechi.,ravnodushen
+ru,57,1,polzovatel simpatiziruet etu sistemu posle vstrechi.,simpatiziruet
+ru,57,2,polzovatel lyubit etu sistemu posle vstrechi.,lyubit
+ru,58,-2,issledovatel nenavidit etot dizayn segodnya.,nenavidit
+ru,58,-1,issledovatel nedolyublivaet etot dizayn segodnya.,nedolyublivaet
+ru,58,0,issledovatel ravnodushen k etot dizayn segodnya.,ravnodushen
+ru,58,1,issledovatel simpatiziruet etot dizayn segodnya.,simpatiziruet
+ru,58,2,issledovatel lyubit etot dizayn segodnya.,lyubit
+ru,59,-2,ona nenavidit eto predlozhenie vo vremya obzora.,nenavidit
+ru,59,-1,ona nedolyublivaet eto predlozhenie vo vremya obzora.,nedolyublivaet
+ru,59,0,ona ravnodushen k eto predlozhenie vo vremya obzora.,ravnodushen
+ru,59,1,ona simpatiziruet eto predlozhenie vo vremya obzora.,simpatiziruet
+ru,59,2,ona lyubit eto predlozhenie vo vremya obzora.,lyubit
+ru,60,-2,uchitel nenavidit etu ideyu posle vstrechi.,nenavidit
+ru,60,-1,uchitel nedolyublivaet etu ideyu posle vstrechi.,nedolyublivaet
+ru,60,0,uchitel ravnodushen k etu ideyu posle vstrechi.,ravnodushen
+ru,60,1,uchitel simpatiziruet etu ideyu posle vstrechi.,simpatiziruet
+ru,60,2,uchitel lyubit etu ideyu posle vstrechi.,lyubit
+ru,61,-2,kritik nenavidit etot gorod segodnya.,nenavidit
+ru,61,-1,kritik nedolyublivaet etot gorod segodnya.,nedolyublivaet
+ru,61,0,kritik ravnodushen k etot gorod segodnya.,ravnodushen
+ru,61,1,kritik simpatiziruet etot gorod segodnya.,simpatiziruet
+ru,61,2,kritik lyubit etot gorod segodnya.,lyubit
+ru,62,-2,ona nenavidit eto predlozhenie segodnya.,nenavidit
+ru,62,-1,ona nedolyublivaet eto predlozhenie segodnya.,nedolyublivaet
+ru,62,0,ona ravnodushen k eto predlozhenie segodnya.,ravnodushen
+ru,62,1,ona simpatiziruet eto predlozhenie segodnya.,simpatiziruet
+ru,62,2,ona lyubit eto predlozhenie segodnya.,lyubit
+ru,63,-2,hudozhnik nenavidit eto predlozhenie segodnya.,nenavidit
+ru,63,-1,hudozhnik nedolyublivaet eto predlozhenie segodnya.,nedolyublivaet
+ru,63,0,hudozhnik ravnodushen k eto predlozhenie segodnya.,ravnodushen
+ru,63,1,hudozhnik simpatiziruet eto predlozhenie segodnya.,simpatiziruet
+ru,63,2,hudozhnik lyubit eto predlozhenie segodnya.,lyubit
+ru,64,-2,issledovatel nenavidit etu pesnyu vo vremya obzora.,nenavidit
+ru,64,-1,issledovatel nedolyublivaet etu pesnyu vo vremya obzora.,nedolyublivaet
+ru,64,0,issledovatel ravnodushen k etu pesnyu vo vremya obzora.,ravnodushen
+ru,64,1,issledovatel simpatiziruet etu pesnyu vo vremya obzora.,simpatiziruet
+ru,64,2,issledovatel lyubit etu pesnyu vo vremya obzora.,lyubit
+ru,65,-2,hudozhnik nenavidit etu ideyu vo vremya obzora.,nenavidit
+ru,65,-1,hudozhnik nedolyublivaet etu ideyu vo vremya obzora.,nedolyublivaet
+ru,65,0,hudozhnik ravnodushen k etu ideyu vo vremya obzora.,ravnodushen
+ru,65,1,hudozhnik simpatiziruet etu ideyu vo vremya obzora.,simpatiziruet
+ru,65,2,hudozhnik lyubit etu ideyu vo vremya obzora.,lyubit
+ru,66,-2,ona nenavidit etu sistemu segodnya.,nenavidit
+ru,66,-1,ona nedolyublivaet etu sistemu segodnya.,nedolyublivaet
+ru,66,0,ona ravnodushen k etu sistemu segodnya.,ravnodushen
+ru,66,1,ona simpatiziruet etu sistemu segodnya.,simpatiziruet
+ru,66,2,ona lyubit etu sistemu segodnya.,lyubit
+ru,67,-2,ona nenavidit etu sistemu vo vremya obzora.,nenavidit
+ru,67,-1,ona nedolyublivaet etu sistemu vo vremya obzora.,nedolyublivaet
+ru,67,0,ona ravnodushen k etu sistemu vo vremya obzora.,ravnodushen
+ru,67,1,ona simpatiziruet etu sistemu vo vremya obzora.,simpatiziruet
+ru,67,2,ona lyubit etu sistemu vo vremya obzora.,lyubit
+ru,68,-2,polzovatel nenavidit etot gorod naedine.,nenavidit
+ru,68,-1,polzovatel nedolyublivaet etot gorod naedine.,nedolyublivaet
+ru,68,0,polzovatel ravnodushen k etot gorod naedine.,ravnodushen
+ru,68,1,polzovatel simpatiziruet etot gorod naedine.,simpatiziruet
+ru,68,2,polzovatel lyubit etot gorod naedine.,lyubit
+ru,69,-2,issledovatel nenavidit etu ideyu vo vremya obzora.,nenavidit
+ru,69,-1,issledovatel nedolyublivaet etu ideyu vo vremya obzora.,nedolyublivaet
+ru,69,0,issledovatel ravnodushen k etu ideyu vo vremya obzora.,ravnodushen
+ru,69,1,issledovatel simpatiziruet etu ideyu vo vremya obzora.,simpatiziruet
+ru,69,2,issledovatel lyubit etu ideyu vo vremya obzora.,lyubit
+ru,70,-2,kritik nenavidit etot film vo vremya obzora.,nenavidit
+ru,70,-1,kritik nedolyublivaet etot film vo vremya obzora.,nedolyublivaet
+ru,70,0,kritik ravnodushen k etot film vo vremya obzora.,ravnodushen
+ru,70,1,kritik simpatiziruet etot film vo vremya obzora.,simpatiziruet
+ru,70,2,kritik lyubit etot film vo vremya obzora.,lyubit
+ru,71,-2,uchitel nenavidit eto predlozhenie naedine.,nenavidit
+ru,71,-1,uchitel nedolyublivaet eto predlozhenie naedine.,nedolyublivaet
+ru,71,0,uchitel ravnodushen k eto predlozhenie naedine.,ravnodushen
+ru,71,1,uchitel simpatiziruet eto predlozhenie naedine.,simpatiziruet
+ru,71,2,uchitel lyubit eto predlozhenie naedine.,lyubit
+ru,72,-2,uchitel nenavidit etot dizayn posle vstrechi.,nenavidit
+ru,72,-1,uchitel nedolyublivaet etot dizayn posle vstrechi.,nedolyublivaet
+ru,72,0,uchitel ravnodushen k etot dizayn posle vstrechi.,ravnodushen
+ru,72,1,uchitel simpatiziruet etot dizayn posle vstrechi.,simpatiziruet
+ru,72,2,uchitel lyubit etot dizayn posle vstrechi.,lyubit
+ru,73,-2,sosed nenavidit tebya v kontse.,nenavidit
+ru,73,-1,sosed nedolyublivaet tebya v kontse.,nedolyublivaet
+ru,73,0,sosed ravnodushen k tebya v kontse.,ravnodushen
+ru,73,1,sosed simpatiziruet tebya v kontse.,simpatiziruet
+ru,73,2,sosed lyubit tebya v kontse.,lyubit
+ru,74,-2,ya nenavidit tebya segodnya.,nenavidit
+ru,74,-1,ya nedolyublivaet tebya segodnya.,nedolyublivaet
+ru,74,0,ya ravnodushen k tebya segodnya.,ravnodushen
+ru,74,1,ya simpatiziruet tebya segodnya.,simpatiziruet
+ru,74,2,ya lyubit tebya segodnya.,lyubit
+ru,75,-2,hudozhnik nenavidit etot dizayn naedine.,nenavidit
+ru,75,-1,hudozhnik nedolyublivaet etot dizayn naedine.,nedolyublivaet
+ru,75,0,hudozhnik ravnodushen k etot dizayn naedine.,ravnodushen
+ru,75,1,hudozhnik simpatiziruet etot dizayn naedine.,simpatiziruet
+ru,75,2,hudozhnik lyubit etot dizayn naedine.,lyubit
+ru,76,-2,hudozhnik nenavidit tebya naedine.,nenavidit
+ru,76,-1,hudozhnik nedolyublivaet tebya naedine.,nedolyublivaet
+ru,76,0,hudozhnik ravnodushen k tebya naedine.,ravnodushen
+ru,76,1,hudozhnik simpatiziruet tebya naedine.,simpatiziruet
+ru,76,2,hudozhnik lyubit tebya naedine.,lyubit
+ru,77,-2,kritik nenavidit etot gorod posle vstrechi.,nenavidit
+ru,77,-1,kritik nedolyublivaet etot gorod posle vstrechi.,nedolyublivaet
+ru,77,0,kritik ravnodushen k etot gorod posle vstrechi.,ravnodushen
+ru,77,1,kritik simpatiziruet etot gorod posle vstrechi.,simpatiziruet
+ru,77,2,kritik lyubit etot gorod posle vstrechi.,lyubit
+ru,78,-2,ya nenavidit eto predlozhenie segodnya.,nenavidit
+ru,78,-1,ya nedolyublivaet eto predlozhenie segodnya.,nedolyublivaet
+ru,78,0,ya ravnodushen k eto predlozhenie segodnya.,ravnodushen
+ru,78,1,ya simpatiziruet eto predlozhenie segodnya.,simpatiziruet
+ru,78,2,ya lyubit eto predlozhenie segodnya.,lyubit
+ru,79,-2,issledovatel nenavidit etot film vo vremya obzora.,nenavidit
+ru,79,-1,issledovatel nedolyublivaet etot film vo vremya obzora.,nedolyublivaet
+ru,79,0,issledovatel ravnodushen k etot film vo vremya obzora.,ravnodushen
+ru,79,1,issledovatel simpatiziruet etot film vo vremya obzora.,simpatiziruet
+ru,79,2,issledovatel lyubit etot film vo vremya obzora.,lyubit
+ru,80,-2,issledovatel nenavidit etu sistemu vo vremya obzora.,nenavidit
+ru,80,-1,issledovatel nedolyublivaet etu sistemu vo vremya obzora.,nedolyublivaet
+ru,80,0,issledovatel ravnodushen k etu sistemu vo vremya obzora.,ravnodushen
+ru,80,1,issledovatel simpatiziruet etu sistemu vo vremya obzora.,simpatiziruet
+ru,80,2,issledovatel lyubit etu sistemu vo vremya obzora.,lyubit
+ru,81,-2,hudozhnik nenavidit etot dizayn vo vremya obzora.,nenavidit
+ru,81,-1,hudozhnik nedolyublivaet etot dizayn vo vremya obzora.,nedolyublivaet
+ru,81,0,hudozhnik ravnodushen k etot dizayn vo vremya obzora.,ravnodushen
+ru,81,1,hudozhnik simpatiziruet etot dizayn vo vremya obzora.,simpatiziruet
+ru,81,2,hudozhnik lyubit etot dizayn vo vremya obzora.,lyubit
+ru,82,-2,issledovatel nenavidit tebya segodnya.,nenavidit
+ru,82,-1,issledovatel nedolyublivaet tebya segodnya.,nedolyublivaet
+ru,82,0,issledovatel ravnodushen k tebya segodnya.,ravnodushen
+ru,82,1,issledovatel simpatiziruet tebya segodnya.,simpatiziruet
+ru,82,2,issledovatel lyubit tebya segodnya.,lyubit
+ru,83,-2,sosed nenavidit etu sistemu naedine.,nenavidit
+ru,83,-1,sosed nedolyublivaet etu sistemu naedine.,nedolyublivaet
+ru,83,0,sosed ravnodushen k etu sistemu naedine.,ravnodushen
+ru,83,1,sosed simpatiziruet etu sistemu naedine.,simpatiziruet
+ru,83,2,sosed lyubit etu sistemu naedine.,lyubit
+ru,84,-2,uchitel nenavidit etu pesnyu v kontse.,nenavidit
+ru,84,-1,uchitel nedolyublivaet etu pesnyu v kontse.,nedolyublivaet
+ru,84,0,uchitel ravnodushen k etu pesnyu v kontse.,ravnodushen
+ru,84,1,uchitel simpatiziruet etu pesnyu v kontse.,simpatiziruet
+ru,84,2,uchitel lyubit etu pesnyu v kontse.,lyubit
+ru,85,-2,sosed nenavidit eto predlozhenie naedine.,nenavidit
+ru,85,-1,sosed nedolyublivaet eto predlozhenie naedine.,nedolyublivaet
+ru,85,0,sosed ravnodushen k eto predlozhenie naedine.,ravnodushen
+ru,85,1,sosed simpatiziruet eto predlozhenie naedine.,simpatiziruet
+ru,85,2,sosed lyubit eto predlozhenie naedine.,lyubit
+ru,86,-2,sosed nenavidit eto predlozhenie vo vremya obzora.,nenavidit
+ru,86,-1,sosed nedolyublivaet eto predlozhenie vo vremya obzora.,nedolyublivaet
+ru,86,0,sosed ravnodushen k eto predlozhenie vo vremya obzora.,ravnodushen
+ru,86,1,sosed simpatiziruet eto predlozhenie vo vremya obzora.,simpatiziruet
+ru,86,2,sosed lyubit eto predlozhenie vo vremya obzora.,lyubit
+ru,87,-2,sosed nenavidit etot film segodnya.,nenavidit
+ru,87,-1,sosed nedolyublivaet etot film segodnya.,nedolyublivaet
+ru,87,0,sosed ravnodushen k etot film segodnya.,ravnodushen
+ru,87,1,sosed simpatiziruet etot film segodnya.,simpatiziruet
+ru,87,2,sosed lyubit etot film segodnya.,lyubit
+ru,88,-2,ya nenavidit etu ideyu posle vstrechi.,nenavidit
+ru,88,-1,ya nedolyublivaet etu ideyu posle vstrechi.,nedolyublivaet
+ru,88,0,ya ravnodushen k etu ideyu posle vstrechi.,ravnodushen
+ru,88,1,ya simpatiziruet etu ideyu posle vstrechi.,simpatiziruet
+ru,88,2,ya lyubit etu ideyu posle vstrechi.,lyubit
+ru,89,-2,polzovatel nenavidit etu ideyu posle vstrechi.,nenavidit
+ru,89,-1,polzovatel nedolyublivaet etu ideyu posle vstrechi.,nedolyublivaet
+ru,89,0,polzovatel ravnodushen k etu ideyu posle vstrechi.,ravnodushen
+ru,89,1,polzovatel simpatiziruet etu ideyu posle vstrechi.,simpatiziruet
+ru,89,2,polzovatel lyubit etu ideyu posle vstrechi.,lyubit
+ru,90,-2,kritik nenavidit etot dizayn posle vstrechi.,nenavidit
+ru,90,-1,kritik nedolyublivaet etot dizayn posle vstrechi.,nedolyublivaet
+ru,90,0,kritik ravnodushen k etot dizayn posle vstrechi.,ravnodushen
+ru,90,1,kritik simpatiziruet etot dizayn posle vstrechi.,simpatiziruet
+ru,90,2,kritik lyubit etot dizayn posle vstrechi.,lyubit
+ru,91,-2,sosed nenavidit tebya posle vstrechi.,nenavidit
+ru,91,-1,sosed nedolyublivaet tebya posle vstrechi.,nedolyublivaet
+ru,91,0,sosed ravnodushen k tebya posle vstrechi.,ravnodushen
+ru,91,1,sosed simpatiziruet tebya posle vstrechi.,simpatiziruet
+ru,91,2,sosed lyubit tebya posle vstrechi.,lyubit
+ru,92,-2,uchitel nenavidit etot film posle vstrechi.,nenavidit
+ru,92,-1,uchitel nedolyublivaet etot film posle vstrechi.,nedolyublivaet
+ru,92,0,uchitel ravnodushen k etot film posle vstrechi.,ravnodushen
+ru,92,1,uchitel simpatiziruet etot film posle vstrechi.,simpatiziruet
+ru,92,2,uchitel lyubit etot film posle vstrechi.,lyubit
+ru,93,-2,sosed nenavidit etot film posle vstrechi.,nenavidit
+ru,93,-1,sosed nedolyublivaet etot film posle vstrechi.,nedolyublivaet
+ru,93,0,sosed ravnodushen k etot film posle vstrechi.,ravnodushen
+ru,93,1,sosed simpatiziruet etot film posle vstrechi.,simpatiziruet
+ru,93,2,sosed lyubit etot film posle vstrechi.,lyubit
+ru,94,-2,issledovatel nenavidit etot gorod naedine.,nenavidit
+ru,94,-1,issledovatel nedolyublivaet etot gorod naedine.,nedolyublivaet
+ru,94,0,issledovatel ravnodushen k etot gorod naedine.,ravnodushen
+ru,94,1,issledovatel simpatiziruet etot gorod naedine.,simpatiziruet
+ru,94,2,issledovatel lyubit etot gorod naedine.,lyubit
+ru,95,-2,uchitel nenavidit etot dizayn v kontse.,nenavidit
+ru,95,-1,uchitel nedolyublivaet etot dizayn v kontse.,nedolyublivaet
+ru,95,0,uchitel ravnodushen k etot dizayn v kontse.,ravnodushen
+ru,95,1,uchitel simpatiziruet etot dizayn v kontse.,simpatiziruet
+ru,95,2,uchitel lyubit etot dizayn v kontse.,lyubit
+ru,96,-2,polzovatel nenavidit etu pesnyu vo vremya obzora.,nenavidit
+ru,96,-1,polzovatel nedolyublivaet etu pesnyu vo vremya obzora.,nedolyublivaet
+ru,96,0,polzovatel ravnodushen k etu pesnyu vo vremya obzora.,ravnodushen
+ru,96,1,polzovatel simpatiziruet etu pesnyu vo vremya obzora.,simpatiziruet
+ru,96,2,polzovatel lyubit etu pesnyu vo vremya obzora.,lyubit
+ru,97,-2,hudozhnik nenavidit eto predlozhenie naedine.,nenavidit
+ru,97,-1,hudozhnik nedolyublivaet eto predlozhenie naedine.,nedolyublivaet
+ru,97,0,hudozhnik ravnodushen k eto predlozhenie naedine.,ravnodushen
+ru,97,1,hudozhnik simpatiziruet eto predlozhenie naedine.,simpatiziruet
+ru,97,2,hudozhnik lyubit eto predlozhenie naedine.,lyubit
+ru,98,-2,ona nenavidit etu pesnyu posle vstrechi.,nenavidit
+ru,98,-1,ona nedolyublivaet etu pesnyu posle vstrechi.,nedolyublivaet
+ru,98,0,ona ravnodushen k etu pesnyu posle vstrechi.,ravnodushen
+ru,98,1,ona simpatiziruet etu pesnyu posle vstrechi.,simpatiziruet
+ru,98,2,ona lyubit etu pesnyu posle vstrechi.,lyubit
+ru,99,-2,hudozhnik nenavidit etu sistemu v kontse.,nenavidit
+ru,99,-1,hudozhnik nedolyublivaet etu sistemu v kontse.,nedolyublivaet
+ru,99,0,hudozhnik ravnodushen k etu sistemu v kontse.,ravnodushen
+ru,99,1,hudozhnik simpatiziruet etu sistemu v kontse.,simpatiziruet
+ru,99,2,hudozhnik lyubit etu sistemu v kontse.,lyubit
+ru,100,-2,kritik nenavidit etot gorod vo vremya obzora.,nenavidit
+ru,100,-1,kritik nedolyublivaet etot gorod vo vremya obzora.,nedolyublivaet
+ru,100,0,kritik ravnodushen k etot gorod vo vremya obzora.,ravnodushen
+ru,100,1,kritik simpatiziruet etot gorod vo vremya obzora.,simpatiziruet
+ru,100,2,kritik lyubit etot gorod vo vremya obzora.,lyubit
+ru,101,-2,uchitel nenavidit eto predlozhenie segodnya.,nenavidit
+ru,101,-1,uchitel nedolyublivaet eto predlozhenie segodnya.,nedolyublivaet
+ru,101,0,uchitel ravnodushen k eto predlozhenie segodnya.,ravnodushen
+ru,101,1,uchitel simpatiziruet eto predlozhenie segodnya.,simpatiziruet
+ru,101,2,uchitel lyubit eto predlozhenie segodnya.,lyubit
+ru,102,-2,polzovatel nenavidit etu pesnyu v kontse.,nenavidit
+ru,102,-1,polzovatel nedolyublivaet etu pesnyu v kontse.,nedolyublivaet
+ru,102,0,polzovatel ravnodushen k etu pesnyu v kontse.,ravnodushen
+ru,102,1,polzovatel simpatiziruet etu pesnyu v kontse.,simpatiziruet
+ru,102,2,polzovatel lyubit etu pesnyu v kontse.,lyubit
+ru,103,-2,uchitel nenavidit etu sistemu naedine.,nenavidit
+ru,103,-1,uchitel nedolyublivaet etu sistemu naedine.,nedolyublivaet
+ru,103,0,uchitel ravnodushen k etu sistemu naedine.,ravnodushen
+ru,103,1,uchitel simpatiziruet etu sistemu naedine.,simpatiziruet
+ru,103,2,uchitel lyubit etu sistemu naedine.,lyubit
+ru,104,-2,sosed nenavidit etu pesnyu naedine.,nenavidit
+ru,104,-1,sosed nedolyublivaet etu pesnyu naedine.,nedolyublivaet
+ru,104,0,sosed ravnodushen k etu pesnyu naedine.,ravnodushen
+ru,104,1,sosed simpatiziruet etu pesnyu naedine.,simpatiziruet
+ru,104,2,sosed lyubit etu pesnyu naedine.,lyubit
+ru,105,-2,sosed nenavidit etu ideyu segodnya.,nenavidit
+ru,105,-1,sosed nedolyublivaet etu ideyu segodnya.,nedolyublivaet
+ru,105,0,sosed ravnodushen k etu ideyu segodnya.,ravnodushen
+ru,105,1,sosed simpatiziruet etu ideyu segodnya.,simpatiziruet
+ru,105,2,sosed lyubit etu ideyu segodnya.,lyubit
+ru,106,-2,issledovatel nenavidit etu sistemu posle vstrechi.,nenavidit
+ru,106,-1,issledovatel nedolyublivaet etu sistemu posle vstrechi.,nedolyublivaet
+ru,106,0,issledovatel ravnodushen k etu sistemu posle vstrechi.,ravnodushen
+ru,106,1,issledovatel simpatiziruet etu sistemu posle vstrechi.,simpatiziruet
+ru,106,2,issledovatel lyubit etu sistemu posle vstrechi.,lyubit
+ru,107,-2,ona nenavidit etu sistemu posle vstrechi.,nenavidit
+ru,107,-1,ona nedolyublivaet etu sistemu posle vstrechi.,nedolyublivaet
+ru,107,0,ona ravnodushen k etu sistemu posle vstrechi.,ravnodushen
+ru,107,1,ona simpatiziruet etu sistemu posle vstrechi.,simpatiziruet
+ru,107,2,ona lyubit etu sistemu posle vstrechi.,lyubit
+ru,108,-2,hudozhnik nenavidit etot gorod v kontse.,nenavidit
+ru,108,-1,hudozhnik nedolyublivaet etot gorod v kontse.,nedolyublivaet
+ru,108,0,hudozhnik ravnodushen k etot gorod v kontse.,ravnodushen
+ru,108,1,hudozhnik simpatiziruet etot gorod v kontse.,simpatiziruet
+ru,108,2,hudozhnik lyubit etot gorod v kontse.,lyubit
+ru,109,-2,ona nenavidit etot film segodnya.,nenavidit
+ru,109,-1,ona nedolyublivaet etot film segodnya.,nedolyublivaet
+ru,109,0,ona ravnodushen k etot film segodnya.,ravnodushen
+ru,109,1,ona simpatiziruet etot film segodnya.,simpatiziruet
+ru,109,2,ona lyubit etot film segodnya.,lyubit
+ru,110,-2,sosed nenavidit etu sistemu v kontse.,nenavidit
+ru,110,-1,sosed nedolyublivaet etu sistemu v kontse.,nedolyublivaet
+ru,110,0,sosed ravnodushen k etu sistemu v kontse.,ravnodushen
+ru,110,1,sosed simpatiziruet etu sistemu v kontse.,simpatiziruet
+ru,110,2,sosed lyubit etu sistemu v kontse.,lyubit
+ru,111,-2,polzovatel nenavidit etot dizayn posle vstrechi.,nenavidit
+ru,111,-1,polzovatel nedolyublivaet etot dizayn posle vstrechi.,nedolyublivaet
+ru,111,0,polzovatel ravnodushen k etot dizayn posle vstrechi.,ravnodushen
+ru,111,1,polzovatel simpatiziruet etot dizayn posle vstrechi.,simpatiziruet
+ru,111,2,polzovatel lyubit etot dizayn posle vstrechi.,lyubit
+ru,112,-2,issledovatel nenavidit etot gorod v kontse.,nenavidit
+ru,112,-1,issledovatel nedolyublivaet etot gorod v kontse.,nedolyublivaet
+ru,112,0,issledovatel ravnodushen k etot gorod v kontse.,ravnodushen
+ru,112,1,issledovatel simpatiziruet etot gorod v kontse.,simpatiziruet
+ru,112,2,issledovatel lyubit etot gorod v kontse.,lyubit
+ru,113,-2,polzovatel nenavidit etot gorod segodnya.,nenavidit
+ru,113,-1,polzovatel nedolyublivaet etot gorod segodnya.,nedolyublivaet
+ru,113,0,polzovatel ravnodushen k etot gorod segodnya.,ravnodushen
+ru,113,1,polzovatel simpatiziruet etot gorod segodnya.,simpatiziruet
+ru,113,2,polzovatel lyubit etot gorod segodnya.,lyubit
+ru,114,-2,ona nenavidit etot dizayn vo vremya obzora.,nenavidit
+ru,114,-1,ona nedolyublivaet etot dizayn vo vremya obzora.,nedolyublivaet
+ru,114,0,ona ravnodushen k etot dizayn vo vremya obzora.,ravnodushen
+ru,114,1,ona simpatiziruet etot dizayn vo vremya obzora.,simpatiziruet
+ru,114,2,ona lyubit etot dizayn vo vremya obzora.,lyubit
+ru,115,-2,issledovatel nenavidit etu sistemu v kontse.,nenavidit
+ru,115,-1,issledovatel nedolyublivaet etu sistemu v kontse.,nedolyublivaet
+ru,115,0,issledovatel ravnodushen k etu sistemu v kontse.,ravnodushen
+ru,115,1,issledovatel simpatiziruet etu sistemu v kontse.,simpatiziruet
+ru,115,2,issledovatel lyubit etu sistemu v kontse.,lyubit
+ru,116,-2,polzovatel nenavidit etu pesnyu naedine.,nenavidit
+ru,116,-1,polzovatel nedolyublivaet etu pesnyu naedine.,nedolyublivaet
+ru,116,0,polzovatel ravnodushen k etu pesnyu naedine.,ravnodushen
+ru,116,1,polzovatel simpatiziruet etu pesnyu naedine.,simpatiziruet
+ru,116,2,polzovatel lyubit etu pesnyu naedine.,lyubit
+ru,117,-2,ona nenavidit etu sistemu naedine.,nenavidit
+ru,117,-1,ona nedolyublivaet etu sistemu naedine.,nedolyublivaet
+ru,117,0,ona ravnodushen k etu sistemu naedine.,ravnodushen
+ru,117,1,ona simpatiziruet etu sistemu naedine.,simpatiziruet
+ru,117,2,ona lyubit etu sistemu naedine.,lyubit
+ru,118,-2,kritik nenavidit etu pesnyu v kontse.,nenavidit
+ru,118,-1,kritik nedolyublivaet etu pesnyu v kontse.,nedolyublivaet
+ru,118,0,kritik ravnodushen k etu pesnyu v kontse.,ravnodushen
+ru,118,1,kritik simpatiziruet etu pesnyu v kontse.,simpatiziruet
+ru,118,2,kritik lyubit etu pesnyu v kontse.,lyubit
+ru,119,-2,ona nenavidit etot dizayn naedine.,nenavidit
+ru,119,-1,ona nedolyublivaet etot dizayn naedine.,nedolyublivaet
+ru,119,0,ona ravnodushen k etot dizayn naedine.,ravnodushen
+ru,119,1,ona simpatiziruet etot dizayn naedine.,simpatiziruet
+ru,119,2,ona lyubit etot dizayn naedine.,lyubit
+ru,120,-2,uchitel nenavidit etot film naedine.,nenavidit
+ru,120,-1,uchitel nedolyublivaet etot film naedine.,nedolyublivaet
+ru,120,0,uchitel ravnodushen k etot film naedine.,ravnodushen
+ru,120,1,uchitel simpatiziruet etot film naedine.,simpatiziruet
+ru,120,2,uchitel lyubit etot film naedine.,lyubit
+ru,121,-2,kritik nenavidit etot film segodnya.,nenavidit
+ru,121,-1,kritik nedolyublivaet etot film segodnya.,nedolyublivaet
+ru,121,0,kritik ravnodushen k etot film segodnya.,ravnodushen
+ru,121,1,kritik simpatiziruet etot film segodnya.,simpatiziruet
+ru,121,2,kritik lyubit etot film segodnya.,lyubit
+ru,122,-2,hudozhnik nenavidit etot film naedine.,nenavidit
+ru,122,-1,hudozhnik nedolyublivaet etot film naedine.,nedolyublivaet
+ru,122,0,hudozhnik ravnodushen k etot film naedine.,ravnodushen
+ru,122,1,hudozhnik simpatiziruet etot film naedine.,simpatiziruet
+ru,122,2,hudozhnik lyubit etot film naedine.,lyubit
+ru,123,-2,kritik nenavidit etu pesnyu posle vstrechi.,nenavidit
+ru,123,-1,kritik nedolyublivaet etu pesnyu posle vstrechi.,nedolyublivaet
+ru,123,0,kritik ravnodushen k etu pesnyu posle vstrechi.,ravnodushen
+ru,123,1,kritik simpatiziruet etu pesnyu posle vstrechi.,simpatiziruet
+ru,123,2,kritik lyubit etu pesnyu posle vstrechi.,lyubit
+ru,124,-2,issledovatel nenavidit etot film posle vstrechi.,nenavidit
+ru,124,-1,issledovatel nedolyublivaet etot film posle vstrechi.,nedolyublivaet
+ru,124,0,issledovatel ravnodushen k etot film posle vstrechi.,ravnodushen
+ru,124,1,issledovatel simpatiziruet etot film posle vstrechi.,simpatiziruet
+ru,124,2,issledovatel lyubit etot film posle vstrechi.,lyubit
+ru,125,-2,hudozhnik nenavidit etu ideyu segodnya.,nenavidit
+ru,125,-1,hudozhnik nedolyublivaet etu ideyu segodnya.,nedolyublivaet
+ru,125,0,hudozhnik ravnodushen k etu ideyu segodnya.,ravnodushen
+ru,125,1,hudozhnik simpatiziruet etu ideyu segodnya.,simpatiziruet
+ru,125,2,hudozhnik lyubit etu ideyu segodnya.,lyubit
+ru,126,-2,polzovatel nenavidit etu ideyu v kontse.,nenavidit
+ru,126,-1,polzovatel nedolyublivaet etu ideyu v kontse.,nedolyublivaet
+ru,126,0,polzovatel ravnodushen k etu ideyu v kontse.,ravnodushen
+ru,126,1,polzovatel simpatiziruet etu ideyu v kontse.,simpatiziruet
+ru,126,2,polzovatel lyubit etu ideyu v kontse.,lyubit
+ru,127,-2,ona nenavidit eto predlozhenie naedine.,nenavidit
+ru,127,-1,ona nedolyublivaet eto predlozhenie naedine.,nedolyublivaet
+ru,127,0,ona ravnodushen k eto predlozhenie naedine.,ravnodushen
+ru,127,1,ona simpatiziruet eto predlozhenie naedine.,simpatiziruet
+ru,127,2,ona lyubit eto predlozhenie naedine.,lyubit
+ru,128,-2,ya nenavidit tebya v kontse.,nenavidit
+ru,128,-1,ya nedolyublivaet tebya v kontse.,nedolyublivaet
+ru,128,0,ya ravnodushen k tebya v kontse.,ravnodushen
+ru,128,1,ya simpatiziruet tebya v kontse.,simpatiziruet
+ru,128,2,ya lyubit tebya v kontse.,lyubit
+ru,129,-2,uchitel nenavidit etot film segodnya.,nenavidit
+ru,129,-1,uchitel nedolyublivaet etot film segodnya.,nedolyublivaet
+ru,129,0,uchitel ravnodushen k etot film segodnya.,ravnodushen
+ru,129,1,uchitel simpatiziruet etot film segodnya.,simpatiziruet
+ru,129,2,uchitel lyubit etot film segodnya.,lyubit
+ru,130,-2,sosed nenavidit tebya segodnya.,nenavidit
+ru,130,-1,sosed nedolyublivaet tebya segodnya.,nedolyublivaet
+ru,130,0,sosed ravnodushen k tebya segodnya.,ravnodushen
+ru,130,1,sosed simpatiziruet tebya segodnya.,simpatiziruet
+ru,130,2,sosed lyubit tebya segodnya.,lyubit
+ru,131,-2,polzovatel nenavidit etot film posle vstrechi.,nenavidit
+ru,131,-1,polzovatel nedolyublivaet etot film posle vstrechi.,nedolyublivaet
+ru,131,0,polzovatel ravnodushen k etot film posle vstrechi.,ravnodushen
+ru,131,1,polzovatel simpatiziruet etot film posle vstrechi.,simpatiziruet
+ru,131,2,polzovatel lyubit etot film posle vstrechi.,lyubit
+ru,132,-2,uchitel nenavidit tebya posle vstrechi.,nenavidit
+ru,132,-1,uchitel nedolyublivaet tebya posle vstrechi.,nedolyublivaet
+ru,132,0,uchitel ravnodushen k tebya posle vstrechi.,ravnodushen
+ru,132,1,uchitel simpatiziruet tebya posle vstrechi.,simpatiziruet
+ru,132,2,uchitel lyubit tebya posle vstrechi.,lyubit
+ru,133,-2,ona nenavidit etot dizayn posle vstrechi.,nenavidit
+ru,133,-1,ona nedolyublivaet etot dizayn posle vstrechi.,nedolyublivaet
+ru,133,0,ona ravnodushen k etot dizayn posle vstrechi.,ravnodushen
+ru,133,1,ona simpatiziruet etot dizayn posle vstrechi.,simpatiziruet
+ru,133,2,ona lyubit etot dizayn posle vstrechi.,lyubit
+ru,134,-2,sosed nenavidit etot gorod posle vstrechi.,nenavidit
+ru,134,-1,sosed nedolyublivaet etot gorod posle vstrechi.,nedolyublivaet
+ru,134,0,sosed ravnodushen k etot gorod posle vstrechi.,ravnodushen
+ru,134,1,sosed simpatiziruet etot gorod posle vstrechi.,simpatiziruet
+ru,134,2,sosed lyubit etot gorod posle vstrechi.,lyubit
+ru,135,-2,sosed nenavidit etot dizayn vo vremya obzora.,nenavidit
+ru,135,-1,sosed nedolyublivaet etot dizayn vo vremya obzora.,nedolyublivaet
+ru,135,0,sosed ravnodushen k etot dizayn vo vremya obzora.,ravnodushen
+ru,135,1,sosed simpatiziruet etot dizayn vo vremya obzora.,simpatiziruet
+ru,135,2,sosed lyubit etot dizayn vo vremya obzora.,lyubit
+ru,136,-2,polzovatel nenavidit etot dizayn vo vremya obzora.,nenavidit
+ru,136,-1,polzovatel nedolyublivaet etot dizayn vo vremya obzora.,nedolyublivaet
+ru,136,0,polzovatel ravnodushen k etot dizayn vo vremya obzora.,ravnodushen
+ru,136,1,polzovatel simpatiziruet etot dizayn vo vremya obzora.,simpatiziruet
+ru,136,2,polzovatel lyubit etot dizayn vo vremya obzora.,lyubit
+ru,137,-2,sosed nenavidit etot film naedine.,nenavidit
+ru,137,-1,sosed nedolyublivaet etot film naedine.,nedolyublivaet
+ru,137,0,sosed ravnodushen k etot film naedine.,ravnodushen
+ru,137,1,sosed simpatiziruet etot film naedine.,simpatiziruet
+ru,137,2,sosed lyubit etot film naedine.,lyubit
+ru,138,-2,uchitel nenavidit etu ideyu v kontse.,nenavidit
+ru,138,-1,uchitel nedolyublivaet etu ideyu v kontse.,nedolyublivaet
+ru,138,0,uchitel ravnodushen k etu ideyu v kontse.,ravnodushen
+ru,138,1,uchitel simpatiziruet etu ideyu v kontse.,simpatiziruet
+ru,138,2,uchitel lyubit etu ideyu v kontse.,lyubit
+ru,139,-2,polzovatel nenavidit etu ideyu segodnya.,nenavidit
+ru,139,-1,polzovatel nedolyublivaet etu ideyu segodnya.,nedolyublivaet
+ru,139,0,polzovatel ravnodushen k etu ideyu segodnya.,ravnodushen
+ru,139,1,polzovatel simpatiziruet etu ideyu segodnya.,simpatiziruet
+ru,139,2,polzovatel lyubit etu ideyu segodnya.,lyubit
+ru,140,-2,kritik nenavidit tebya posle vstrechi.,nenavidit
+ru,140,-1,kritik nedolyublivaet tebya posle vstrechi.,nedolyublivaet
+ru,140,0,kritik ravnodushen k tebya posle vstrechi.,ravnodushen
+ru,140,1,kritik simpatiziruet tebya posle vstrechi.,simpatiziruet
+ru,140,2,kritik lyubit tebya posle vstrechi.,lyubit
+ru,141,-2,kritik nenavidit etu ideyu segodnya.,nenavidit
+ru,141,-1,kritik nedolyublivaet etu ideyu segodnya.,nedolyublivaet
+ru,141,0,kritik ravnodushen k etu ideyu segodnya.,ravnodushen
+ru,141,1,kritik simpatiziruet etu ideyu segodnya.,simpatiziruet
+ru,141,2,kritik lyubit etu ideyu segodnya.,lyubit
+ru,142,-2,hudozhnik nenavidit etot gorod segodnya.,nenavidit
+ru,142,-1,hudozhnik nedolyublivaet etot gorod segodnya.,nedolyublivaet
+ru,142,0,hudozhnik ravnodushen k etot gorod segodnya.,ravnodushen
+ru,142,1,hudozhnik simpatiziruet etot gorod segodnya.,simpatiziruet
+ru,142,2,hudozhnik lyubit etot gorod segodnya.,lyubit
+ru,143,-2,issledovatel nenavidit tebya naedine.,nenavidit
+ru,143,-1,issledovatel nedolyublivaet tebya naedine.,nedolyublivaet
+ru,143,0,issledovatel ravnodushen k tebya naedine.,ravnodushen
+ru,143,1,issledovatel simpatiziruet tebya naedine.,simpatiziruet
+ru,143,2,issledovatel lyubit tebya naedine.,lyubit
+ru,144,-2,polzovatel nenavidit etot dizayn naedine.,nenavidit
+ru,144,-1,polzovatel nedolyublivaet etot dizayn naedine.,nedolyublivaet
+ru,144,0,polzovatel ravnodushen k etot dizayn naedine.,ravnodushen
+ru,144,1,polzovatel simpatiziruet etot dizayn naedine.,simpatiziruet
+ru,144,2,polzovatel lyubit etot dizayn naedine.,lyubit
+ru,145,-2,uchitel nenavidit etu pesnyu naedine.,nenavidit
+ru,145,-1,uchitel nedolyublivaet etu pesnyu naedine.,nedolyublivaet
+ru,145,0,uchitel ravnodushen k etu pesnyu naedine.,ravnodushen
+ru,145,1,uchitel simpatiziruet etu pesnyu naedine.,simpatiziruet
+ru,145,2,uchitel lyubit etu pesnyu naedine.,lyubit
+ru,146,-2,issledovatel nenavidit eto predlozhenie v kontse.,nenavidit
+ru,146,-1,issledovatel nedolyublivaet eto predlozhenie v kontse.,nedolyublivaet
+ru,146,0,issledovatel ravnodushen k eto predlozhenie v kontse.,ravnodushen
+ru,146,1,issledovatel simpatiziruet eto predlozhenie v kontse.,simpatiziruet
+ru,146,2,issledovatel lyubit eto predlozhenie v kontse.,lyubit
+ru,147,-2,issledovatel nenavidit etot film segodnya.,nenavidit
+ru,147,-1,issledovatel nedolyublivaet etot film segodnya.,nedolyublivaet
+ru,147,0,issledovatel ravnodushen k etot film segodnya.,ravnodushen
+ru,147,1,issledovatel simpatiziruet etot film segodnya.,simpatiziruet
+ru,147,2,issledovatel lyubit etot film segodnya.,lyubit
+ru,148,-2,uchitel nenavidit tebya v kontse.,nenavidit
+ru,148,-1,uchitel nedolyublivaet tebya v kontse.,nedolyublivaet
+ru,148,0,uchitel ravnodushen k tebya v kontse.,ravnodushen
+ru,148,1,uchitel simpatiziruet tebya v kontse.,simpatiziruet
+ru,148,2,uchitel lyubit tebya v kontse.,lyubit
+ru,149,-2,kritik nenavidit eto predlozhenie segodnya.,nenavidit
+ru,149,-1,kritik nedolyublivaet eto predlozhenie segodnya.,nedolyublivaet
+ru,149,0,kritik ravnodushen k eto predlozhenie segodnya.,ravnodushen
+ru,149,1,kritik simpatiziruet eto predlozhenie segodnya.,simpatiziruet
+ru,149,2,kritik lyubit eto predlozhenie segodnya.,lyubit
+ru,150,-2,polzovatel nenavidit etu sistemu naedine.,nenavidit
+ru,150,-1,polzovatel nedolyublivaet etu sistemu naedine.,nedolyublivaet
+ru,150,0,polzovatel ravnodushen k etu sistemu naedine.,ravnodushen
+ru,150,1,polzovatel simpatiziruet etu sistemu naedine.,simpatiziruet
+ru,150,2,polzovatel lyubit etu sistemu naedine.,lyubit
+ru,151,-2,polzovatel nenavidit tebya posle vstrechi.,nenavidit
+ru,151,-1,polzovatel nedolyublivaet tebya posle vstrechi.,nedolyublivaet
+ru,151,0,polzovatel ravnodushen k tebya posle vstrechi.,ravnodushen
+ru,151,1,polzovatel simpatiziruet tebya posle vstrechi.,simpatiziruet
+ru,151,2,polzovatel lyubit tebya posle vstrechi.,lyubit
+ru,152,-2,ona nenavidit etu ideyu posle vstrechi.,nenavidit
+ru,152,-1,ona nedolyublivaet etu ideyu posle vstrechi.,nedolyublivaet
+ru,152,0,ona ravnodushen k etu ideyu posle vstrechi.,ravnodushen
+ru,152,1,ona simpatiziruet etu ideyu posle vstrechi.,simpatiziruet
+ru,152,2,ona lyubit etu ideyu posle vstrechi.,lyubit
+ru,153,-2,ona nenavidit tebya posle vstrechi.,nenavidit
+ru,153,-1,ona nedolyublivaet tebya posle vstrechi.,nedolyublivaet
+ru,153,0,ona ravnodushen k tebya posle vstrechi.,ravnodushen
+ru,153,1,ona simpatiziruet tebya posle vstrechi.,simpatiziruet
+ru,153,2,ona lyubit tebya posle vstrechi.,lyubit
+ru,154,-2,ona nenavidit etu ideyu v kontse.,nenavidit
+ru,154,-1,ona nedolyublivaet etu ideyu v kontse.,nedolyublivaet
+ru,154,0,ona ravnodushen k etu ideyu v kontse.,ravnodushen
+ru,154,1,ona simpatiziruet etu ideyu v kontse.,simpatiziruet
+ru,154,2,ona lyubit etu ideyu v kontse.,lyubit
+ru,155,-2,hudozhnik nenavidit eto predlozhenie vo vremya obzora.,nenavidit
+ru,155,-1,hudozhnik nedolyublivaet eto predlozhenie vo vremya obzora.,nedolyublivaet
+ru,155,0,hudozhnik ravnodushen k eto predlozhenie vo vremya obzora.,ravnodushen
+ru,155,1,hudozhnik simpatiziruet eto predlozhenie vo vremya obzora.,simpatiziruet
+ru,155,2,hudozhnik lyubit eto predlozhenie vo vremya obzora.,lyubit
+ru,156,-2,ona nenavidit etot film vo vremya obzora.,nenavidit
+ru,156,-1,ona nedolyublivaet etot film vo vremya obzora.,nedolyublivaet
+ru,156,0,ona ravnodushen k etot film vo vremya obzora.,ravnodushen
+ru,156,1,ona simpatiziruet etot film vo vremya obzora.,simpatiziruet
+ru,156,2,ona lyubit etot film vo vremya obzora.,lyubit
+ru,157,-2,ya nenavidit etot film posle vstrechi.,nenavidit
+ru,157,-1,ya nedolyublivaet etot film posle vstrechi.,nedolyublivaet
+ru,157,0,ya ravnodushen k etot film posle vstrechi.,ravnodushen
+ru,157,1,ya simpatiziruet etot film posle vstrechi.,simpatiziruet
+ru,157,2,ya lyubit etot film posle vstrechi.,lyubit
+ru,158,-2,ona nenavidit etu pesnyu v kontse.,nenavidit
+ru,158,-1,ona nedolyublivaet etu pesnyu v kontse.,nedolyublivaet
+ru,158,0,ona ravnodushen k etu pesnyu v kontse.,ravnodushen
+ru,158,1,ona simpatiziruet etu pesnyu v kontse.,simpatiziruet
+ru,158,2,ona lyubit etu pesnyu v kontse.,lyubit
+ru,159,-2,ya nenavidit etu pesnyu posle vstrechi.,nenavidit
+ru,159,-1,ya nedolyublivaet etu pesnyu posle vstrechi.,nedolyublivaet
+ru,159,0,ya ravnodushen k etu pesnyu posle vstrechi.,ravnodushen
+ru,159,1,ya simpatiziruet etu pesnyu posle vstrechi.,simpatiziruet
+ru,159,2,ya lyubit etu pesnyu posle vstrechi.,lyubit
+zh,0,-2,yonghu taoyan zhe bu dianying zuihou.,taoyan
+zh,0,-1,yonghu bu tai xihuan zhe bu dianying zuihou.,bu tai xihuan
+zh,0,0,yonghu dui zhe bu dianying wu gan zuihou.,wu gan
+zh,0,1,yonghu xihuan zhe bu dianying zuihou.,xihuan
+zh,0,2,yonghu reai zhe bu dianying zuihou.,reai
+zh,1,-2,wo taoyan zhe ge xitong shencha shi.,taoyan
+zh,1,-1,wo bu tai xihuan zhe ge xitong shencha shi.,bu tai xihuan
+zh,1,0,wo dui zhe ge xitong wu gan shencha shi.,wu gan
+zh,1,1,wo xihuan zhe ge xitong shencha shi.,xihuan
+zh,1,2,wo reai zhe ge xitong shencha shi.,reai
+zh,2,-2,yishujia taoyan zhe ge xitong zuihou.,taoyan
+zh,2,-1,yishujia bu tai xihuan zhe ge xitong zuihou.,bu tai xihuan
+zh,2,0,yishujia dui zhe ge xitong wu gan zuihou.,wu gan
+zh,2,1,yishujia xihuan zhe ge xitong zuihou.,xihuan
+zh,2,2,yishujia reai zhe ge xitong zuihou.,reai
+zh,3,-2,pinglun zhe taoyan zhe ge jianyi shencha shi.,taoyan
+zh,3,-1,pinglun zhe bu tai xihuan zhe ge jianyi shencha shi.,bu tai xihuan
+zh,3,0,pinglun zhe dui zhe ge jianyi wu gan shencha shi.,wu gan
+zh,3,1,pinglun zhe xihuan zhe ge jianyi shencha shi.,xihuan
+zh,3,2,pinglun zhe reai zhe ge jianyi shencha shi.,reai
+zh,4,-2,ta taoyan zhe bu dianying huiyi hou.,taoyan
+zh,4,-1,ta bu tai xihuan zhe bu dianying huiyi hou.,bu tai xihuan
+zh,4,0,ta dui zhe bu dianying wu gan huiyi hou.,wu gan
+zh,4,1,ta xihuan zhe bu dianying huiyi hou.,xihuan
+zh,4,2,ta reai zhe bu dianying huiyi hou.,reai
+zh,5,-2,laoshi taoyan zhe zuo chengshi jintian.,taoyan
+zh,5,-1,laoshi bu tai xihuan zhe zuo chengshi jintian.,bu tai xihuan
+zh,5,0,laoshi dui zhe zuo chengshi wu gan jintian.,wu gan
+zh,5,1,laoshi xihuan zhe zuo chengshi jintian.,xihuan
+zh,5,2,laoshi reai zhe zuo chengshi jintian.,reai
+zh,6,-2,pinglun zhe taoyan zhe ge xitong huiyi hou.,taoyan
+zh,6,-1,pinglun zhe bu tai xihuan zhe ge xitong huiyi hou.,bu tai xihuan
+zh,6,0,pinglun zhe dui zhe ge xitong wu gan huiyi hou.,wu gan
+zh,6,1,pinglun zhe xihuan zhe ge xitong huiyi hou.,xihuan
+zh,6,2,pinglun zhe reai zhe ge xitong huiyi hou.,reai
+zh,7,-2,ta taoyan zhe ge jianyi shencha shi.,taoyan
+zh,7,-1,ta bu tai xihuan zhe ge jianyi shencha shi.,bu tai xihuan
+zh,7,0,ta dui zhe ge jianyi wu gan shencha shi.,wu gan
+zh,7,1,ta xihuan zhe ge jianyi shencha shi.,xihuan
+zh,7,2,ta reai zhe ge jianyi shencha shi.,reai
+zh,8,-2,linju taoyan zhe ge sheji huiyi hou.,taoyan
+zh,8,-1,linju bu tai xihuan zhe ge sheji huiyi hou.,bu tai xihuan
+zh,8,0,linju dui zhe ge sheji wu gan huiyi hou.,wu gan
+zh,8,1,linju xihuan zhe ge sheji huiyi hou.,xihuan
+zh,8,2,linju reai zhe ge sheji huiyi hou.,reai
+zh,9,-2,laoshi taoyan zhe shou ge jintian.,taoyan
+zh,9,-1,laoshi bu tai xihuan zhe shou ge jintian.,bu tai xihuan
+zh,9,0,laoshi dui zhe shou ge wu gan jintian.,wu gan
+zh,9,1,laoshi xihuan zhe shou ge jintian.,xihuan
+zh,9,2,laoshi reai zhe shou ge jintian.,reai
+zh,10,-2,yanjiu zhe taoyan zhe bu dianying zuihou.,taoyan
+zh,10,-1,yanjiu zhe bu tai xihuan zhe bu dianying zuihou.,bu tai xihuan
+zh,10,0,yanjiu zhe dui zhe bu dianying wu gan zuihou.,wu gan
+zh,10,1,yanjiu zhe xihuan zhe bu dianying zuihou.,xihuan
+zh,10,2,yanjiu zhe reai zhe bu dianying zuihou.,reai
+zh,11,-2,ta taoyan ni shencha shi.,taoyan
+zh,11,-1,ta bu tai xihuan ni shencha shi.,bu tai xihuan
+zh,11,0,ta dui ni wu gan shencha shi.,wu gan
+zh,11,1,ta xihuan ni shencha shi.,xihuan
+zh,11,2,ta reai ni shencha shi.,reai
+zh,12,-2,linju taoyan zhe ge jianyi zuihou.,taoyan
+zh,12,-1,linju bu tai xihuan zhe ge jianyi zuihou.,bu tai xihuan
+zh,12,0,linju dui zhe ge jianyi wu gan zuihou.,wu gan
+zh,12,1,linju xihuan zhe ge jianyi zuihou.,xihuan
+zh,12,2,linju reai zhe ge jianyi zuihou.,reai
+zh,13,-2,laoshi taoyan zhe shou ge sixiadi.,taoyan
+zh,13,-1,laoshi bu tai xihuan zhe shou ge sixiadi.,bu tai xihuan
+zh,13,0,laoshi dui zhe shou ge wu gan sixiadi.,wu gan
+zh,13,1,laoshi xihuan zhe shou ge sixiadi.,xihuan
+zh,13,2,laoshi reai zhe shou ge sixiadi.,reai
+zh,14,-2,pinglun zhe taoyan zhe zuo chengshi huiyi hou.,taoyan
+zh,14,-1,pinglun zhe bu tai xihuan zhe zuo chengshi huiyi hou.,bu tai xihuan
+zh,14,0,pinglun zhe dui zhe zuo chengshi wu gan huiyi hou.,wu gan
+zh,14,1,pinglun zhe xihuan zhe zuo chengshi huiyi hou.,xihuan
+zh,14,2,pinglun zhe reai zhe zuo chengshi huiyi hou.,reai
+zh,15,-2,pinglun zhe taoyan zhe zuo chengshi shencha shi.,taoyan
+zh,15,-1,pinglun zhe bu tai xihuan zhe zuo chengshi shencha shi.,bu tai xihuan
+zh,15,0,pinglun zhe dui zhe zuo chengshi wu gan shencha shi.,wu gan
+zh,15,1,pinglun zhe xihuan zhe zuo chengshi shencha shi.,xihuan
+zh,15,2,pinglun zhe reai zhe zuo chengshi shencha shi.,reai
+zh,16,-2,ta taoyan zhe shou ge jintian.,taoyan
+zh,16,-1,ta bu tai xihuan zhe shou ge jintian.,bu tai xihuan
+zh,16,0,ta dui zhe shou ge wu gan jintian.,wu gan
+zh,16,1,ta xihuan zhe shou ge jintian.,xihuan
+zh,16,2,ta reai zhe shou ge jintian.,reai
+zh,17,-2,linju taoyan zhe zuo chengshi huiyi hou.,taoyan
+zh,17,-1,linju bu tai xihuan zhe zuo chengshi huiyi hou.,bu tai xihuan
+zh,17,0,linju dui zhe zuo chengshi wu gan huiyi hou.,wu gan
+zh,17,1,linju xihuan zhe zuo chengshi huiyi hou.,xihuan
+zh,17,2,linju reai zhe zuo chengshi huiyi hou.,reai
+zh,18,-2,linju taoyan zhe ge jianyi sixiadi.,taoyan
+zh,18,-1,linju bu tai xihuan zhe ge jianyi sixiadi.,bu tai xihuan
+zh,18,0,linju dui zhe ge jianyi wu gan sixiadi.,wu gan
+zh,18,1,linju xihuan zhe ge jianyi sixiadi.,xihuan
+zh,18,2,linju reai zhe ge jianyi sixiadi.,reai
+zh,19,-2,yishujia taoyan zhe ge xiangfa jintian.,taoyan
+zh,19,-1,yishujia bu tai xihuan zhe ge xiangfa jintian.,bu tai xihuan
+zh,19,0,yishujia dui zhe ge xiangfa wu gan jintian.,wu gan
+zh,19,1,yishujia xihuan zhe ge xiangfa jintian.,xihuan
+zh,19,2,yishujia reai zhe ge xiangfa jintian.,reai
+zh,20,-2,yonghu taoyan zhe bu dianying sixiadi.,taoyan
+zh,20,-1,yonghu bu tai xihuan zhe bu dianying sixiadi.,bu tai xihuan
+zh,20,0,yonghu dui zhe bu dianying wu gan sixiadi.,wu gan
+zh,20,1,yonghu xihuan zhe bu dianying sixiadi.,xihuan
+zh,20,2,yonghu reai zhe bu dianying sixiadi.,reai
+zh,21,-2,ta taoyan zhe ge xiangfa zuihou.,taoyan
+zh,21,-1,ta bu tai xihuan zhe ge xiangfa zuihou.,bu tai xihuan
+zh,21,0,ta dui zhe ge xiangfa wu gan zuihou.,wu gan
+zh,21,1,ta xihuan zhe ge xiangfa zuihou.,xihuan
+zh,21,2,ta reai zhe ge xiangfa zuihou.,reai
+zh,22,-2,yonghu taoyan zhe ge jianyi jintian.,taoyan
+zh,22,-1,yonghu bu tai xihuan zhe ge jianyi jintian.,bu tai xihuan
+zh,22,0,yonghu dui zhe ge jianyi wu gan jintian.,wu gan
+zh,22,1,yonghu xihuan zhe ge jianyi jintian.,xihuan
+zh,22,2,yonghu reai zhe ge jianyi jintian.,reai
+zh,23,-2,yanjiu zhe taoyan zhe bu dianying shencha shi.,taoyan
+zh,23,-1,yanjiu zhe bu tai xihuan zhe bu dianying shencha shi.,bu tai xihuan
+zh,23,0,yanjiu zhe dui zhe bu dianying wu gan shencha shi.,wu gan
+zh,23,1,yanjiu zhe xihuan zhe bu dianying shencha shi.,xihuan
+zh,23,2,yanjiu zhe reai zhe bu dianying shencha shi.,reai
+zh,24,-2,wo taoyan ni huiyi hou.,taoyan
+zh,24,-1,wo bu tai xihuan ni huiyi hou.,bu tai xihuan
+zh,24,0,wo dui ni wu gan huiyi hou.,wu gan
+zh,24,1,wo xihuan ni huiyi hou.,xihuan
+zh,24,2,wo reai ni huiyi hou.,reai
+zh,25,-2,yonghu taoyan zhe ge xitong shencha shi.,taoyan
+zh,25,-1,yonghu bu tai xihuan zhe ge xitong shencha shi.,bu tai xihuan
+zh,25,0,yonghu dui zhe ge xitong wu gan shencha shi.,wu gan
+zh,25,1,yonghu xihuan zhe ge xitong shencha shi.,xihuan
+zh,25,2,yonghu reai zhe ge xitong shencha shi.,reai
+zh,26,-2,yishujia taoyan ni jintian.,taoyan
+zh,26,-1,yishujia bu tai xihuan ni jintian.,bu tai xihuan
+zh,26,0,yishujia dui ni wu gan jintian.,wu gan
+zh,26,1,yishujia xihuan ni jintian.,xihuan
+zh,26,2,yishujia reai ni jintian.,reai
+zh,27,-2,laoshi taoyan ni huiyi hou.,taoyan
+zh,27,-1,laoshi bu tai xihuan ni huiyi hou.,bu tai xihuan
+zh,27,0,laoshi dui ni wu gan huiyi hou.,wu gan
+zh,27,1,laoshi xihuan ni huiyi hou.,xihuan
+zh,27,2,laoshi reai ni huiyi hou.,reai
+zh,28,-2,pinglun zhe taoyan zhe bu dianying huiyi hou.,taoyan
+zh,28,-1,pinglun zhe bu tai xihuan zhe bu dianying huiyi hou.,bu tai xihuan
+zh,28,0,pinglun zhe dui zhe bu dianying wu gan huiyi hou.,wu gan
+zh,28,1,pinglun zhe xihuan zhe bu dianying huiyi hou.,xihuan
+zh,28,2,pinglun zhe reai zhe bu dianying huiyi hou.,reai
+zh,29,-2,laoshi taoyan zhe ge xitong shencha shi.,taoyan
+zh,29,-1,laoshi bu tai xihuan zhe ge xitong shencha shi.,bu tai xihuan
+zh,29,0,laoshi dui zhe ge xitong wu gan shencha shi.,wu gan
+zh,29,1,laoshi xihuan zhe ge xitong shencha shi.,xihuan
+zh,29,2,laoshi reai zhe ge xitong shencha shi.,reai
+zh,30,-2,wo taoyan zhe shou ge jintian.,taoyan
+zh,30,-1,wo bu tai xihuan zhe shou ge jintian.,bu tai xihuan
+zh,30,0,wo dui zhe shou ge wu gan jintian.,wu gan
+zh,30,1,wo xihuan zhe shou ge jintian.,xihuan
+zh,30,2,wo reai zhe shou ge jintian.,reai
+zh,31,-2,ta taoyan zhe bu dianying sixiadi.,taoyan
+zh,31,-1,ta bu tai xihuan zhe bu dianying sixiadi.,bu tai xihuan
+zh,31,0,ta dui zhe bu dianying wu gan sixiadi.,wu gan
+zh,31,1,ta xihuan zhe bu dianying sixiadi.,xihuan
+zh,31,2,ta reai zhe bu dianying sixiadi.,reai
+zh,32,-2,wo taoyan zhe ge sheji zuihou.,taoyan
+zh,32,-1,wo bu tai xihuan zhe ge sheji zuihou.,bu tai xihuan
+zh,32,0,wo dui zhe ge sheji wu gan zuihou.,wu gan
+zh,32,1,wo xihuan zhe ge sheji zuihou.,xihuan
+zh,32,2,wo reai zhe ge sheji zuihou.,reai
+zh,33,-2,yanjiu zhe taoyan zhe ge xitong zuihou.,taoyan
+zh,33,-1,yanjiu zhe bu tai xihuan zhe ge xitong zuihou.,bu tai xihuan
+zh,33,0,yanjiu zhe dui zhe ge xitong wu gan zuihou.,wu gan
+zh,33,1,yanjiu zhe xihuan zhe ge xitong zuihou.,xihuan
+zh,33,2,yanjiu zhe reai zhe ge xitong zuihou.,reai
+zh,34,-2,yonghu taoyan zhe bu dianying jintian.,taoyan
+zh,34,-1,yonghu bu tai xihuan zhe bu dianying jintian.,bu tai xihuan
+zh,34,0,yonghu dui zhe bu dianying wu gan jintian.,wu gan
+zh,34,1,yonghu xihuan zhe bu dianying jintian.,xihuan
+zh,34,2,yonghu reai zhe bu dianying jintian.,reai
+zh,35,-2,yanjiu zhe taoyan zhe ge sheji sixiadi.,taoyan
+zh,35,-1,yanjiu zhe bu tai xihuan zhe ge sheji sixiadi.,bu tai xihuan
+zh,35,0,yanjiu zhe dui zhe ge sheji wu gan sixiadi.,wu gan
+zh,35,1,yanjiu zhe xihuan zhe ge sheji sixiadi.,xihuan
+zh,35,2,yanjiu zhe reai zhe ge sheji sixiadi.,reai
+zh,36,-2,laoshi taoyan zhe zuo chengshi sixiadi.,taoyan
+zh,36,-1,laoshi bu tai xihuan zhe zuo chengshi sixiadi.,bu tai xihuan
+zh,36,0,laoshi dui zhe zuo chengshi wu gan sixiadi.,wu gan
+zh,36,1,laoshi xihuan zhe zuo chengshi sixiadi.,xihuan
+zh,36,2,laoshi reai zhe zuo chengshi sixiadi.,reai
+zh,37,-2,wo taoyan zhe shou ge sixiadi.,taoyan
+zh,37,-1,wo bu tai xihuan zhe shou ge sixiadi.,bu tai xihuan
+zh,37,0,wo dui zhe shou ge wu gan sixiadi.,wu gan
+zh,37,1,wo xihuan zhe shou ge sixiadi.,xihuan
+zh,37,2,wo reai zhe shou ge sixiadi.,reai
+zh,38,-2,yonghu taoyan zhe ge xiangfa zuihou.,taoyan
+zh,38,-1,yonghu bu tai xihuan zhe ge xiangfa zuihou.,bu tai xihuan
+zh,38,0,yonghu dui zhe ge xiangfa wu gan zuihou.,wu gan
+zh,38,1,yonghu xihuan zhe ge xiangfa zuihou.,xihuan
+zh,38,2,yonghu reai zhe ge xiangfa zuihou.,reai
+zh,39,-2,linju taoyan zhe ge xiangfa jintian.,taoyan
+zh,39,-1,linju bu tai xihuan zhe ge xiangfa jintian.,bu tai xihuan
+zh,39,0,linju dui zhe ge xiangfa wu gan jintian.,wu gan
+zh,39,1,linju xihuan zhe ge xiangfa jintian.,xihuan
+zh,39,2,linju reai zhe ge xiangfa jintian.,reai
+zh,40,-2,yishujia taoyan zhe ge xiangfa sixiadi.,taoyan
+zh,40,-1,yishujia bu tai xihuan zhe ge xiangfa sixiadi.,bu tai xihuan
+zh,40,0,yishujia dui zhe ge xiangfa wu gan sixiadi.,wu gan
+zh,40,1,yishujia xihuan zhe ge xiangfa sixiadi.,xihuan
+zh,40,2,yishujia reai zhe ge xiangfa sixiadi.,reai
+zh,41,-2,yishujia taoyan zhe bu dianying shencha shi.,taoyan
+zh,41,-1,yishujia bu tai xihuan zhe bu dianying shencha shi.,bu tai xihuan
+zh,41,0,yishujia dui zhe bu dianying wu gan shencha shi.,wu gan
+zh,41,1,yishujia xihuan zhe bu dianying shencha shi.,xihuan
+zh,41,2,yishujia reai zhe bu dianying shencha shi.,reai
+zh,42,-2,ta taoyan zhe shou ge shencha shi.,taoyan
+zh,42,-1,ta bu tai xihuan zhe shou ge shencha shi.,bu tai xihuan
+zh,42,0,ta dui zhe shou ge wu gan shencha shi.,wu gan
+zh,42,1,ta xihuan zhe shou ge shencha shi.,xihuan
+zh,42,2,ta reai zhe shou ge shencha shi.,reai
+zh,43,-2,yonghu taoyan zhe ge xiangfa sixiadi.,taoyan
+zh,43,-1,yonghu bu tai xihuan zhe ge xiangfa sixiadi.,bu tai xihuan
+zh,43,0,yonghu dui zhe ge xiangfa wu gan sixiadi.,wu gan
+zh,43,1,yonghu xihuan zhe ge xiangfa sixiadi.,xihuan
+zh,43,2,yonghu reai zhe ge xiangfa sixiadi.,reai
+zh,44,-2,ta taoyan zhe zuo chengshi zuihou.,taoyan
+zh,44,-1,ta bu tai xihuan zhe zuo chengshi zuihou.,bu tai xihuan
+zh,44,0,ta dui zhe zuo chengshi wu gan zuihou.,wu gan
+zh,44,1,ta xihuan zhe zuo chengshi zuihou.,xihuan
+zh,44,2,ta reai zhe zuo chengshi zuihou.,reai
+zh,45,-2,wo taoyan zhe ge xiangfa jintian.,taoyan
+zh,45,-1,wo bu tai xihuan zhe ge xiangfa jintian.,bu tai xihuan
+zh,45,0,wo dui zhe ge xiangfa wu gan jintian.,wu gan
+zh,45,1,wo xihuan zhe ge xiangfa jintian.,xihuan
+zh,45,2,wo reai zhe ge xiangfa jintian.,reai
+zh,46,-2,pinglun zhe taoyan zhe shou ge zuihou.,taoyan
+zh,46,-1,pinglun zhe bu tai xihuan zhe shou ge zuihou.,bu tai xihuan
+zh,46,0,pinglun zhe dui zhe shou ge wu gan zuihou.,wu gan
+zh,46,1,pinglun zhe xihuan zhe shou ge zuihou.,xihuan
+zh,46,2,pinglun zhe reai zhe shou ge zuihou.,reai
+zh,47,-2,linju taoyan zhe zuo chengshi zuihou.,taoyan
+zh,47,-1,linju bu tai xihuan zhe zuo chengshi zuihou.,bu tai xihuan
+zh,47,0,linju dui zhe zuo chengshi wu gan zuihou.,wu gan
+zh,47,1,linju xihuan zhe zuo chengshi zuihou.,xihuan
+zh,47,2,linju reai zhe zuo chengshi zuihou.,reai
+zh,48,-2,pinglun zhe taoyan zhe ge xiangfa zuihou.,taoyan
+zh,48,-1,pinglun zhe bu tai xihuan zhe ge xiangfa zuihou.,bu tai xihuan
+zh,48,0,pinglun zhe dui zhe ge xiangfa wu gan zuihou.,wu gan
+zh,48,1,pinglun zhe xihuan zhe ge xiangfa zuihou.,xihuan
+zh,48,2,pinglun zhe reai zhe ge xiangfa zuihou.,reai
+zh,49,-2,wo taoyan zhe ge xitong huiyi hou.,taoyan
+zh,49,-1,wo bu tai xihuan zhe ge xitong huiyi hou.,bu tai xihuan
+zh,49,0,wo dui zhe ge xitong wu gan huiyi hou.,wu gan
+zh,49,1,wo xihuan zhe ge xitong huiyi hou.,xihuan
+zh,49,2,wo reai zhe ge xitong huiyi hou.,reai
+zh,50,-2,yonghu taoyan zhe ge jianyi zuihou.,taoyan
+zh,50,-1,yonghu bu tai xihuan zhe ge jianyi zuihou.,bu tai xihuan
+zh,50,0,yonghu dui zhe ge jianyi wu gan zuihou.,wu gan
+zh,50,1,yonghu xihuan zhe ge jianyi zuihou.,xihuan
+zh,50,2,yonghu reai zhe ge jianyi zuihou.,reai
+zh,51,-2,laoshi taoyan zhe ge xitong sixiadi.,taoyan
+zh,51,-1,laoshi bu tai xihuan zhe ge xitong sixiadi.,bu tai xihuan
+zh,51,0,laoshi dui zhe ge xitong wu gan sixiadi.,wu gan
+zh,51,1,laoshi xihuan zhe ge xitong sixiadi.,xihuan
+zh,51,2,laoshi reai zhe ge xitong sixiadi.,reai
+zh,52,-2,pinglun zhe taoyan zhe ge jianyi zuihou.,taoyan
+zh,52,-1,pinglun zhe bu tai xihuan zhe ge jianyi zuihou.,bu tai xihuan
+zh,52,0,pinglun zhe dui zhe ge jianyi wu gan zuihou.,wu gan
+zh,52,1,pinglun zhe xihuan zhe ge jianyi zuihou.,xihuan
+zh,52,2,pinglun zhe reai zhe ge jianyi zuihou.,reai
+zh,53,-2,laoshi taoyan zhe ge xiangfa jintian.,taoyan
+zh,53,-1,laoshi bu tai xihuan zhe ge xiangfa jintian.,bu tai xihuan
+zh,53,0,laoshi dui zhe ge xiangfa wu gan jintian.,wu gan
+zh,53,1,laoshi xihuan zhe ge xiangfa jintian.,xihuan
+zh,53,2,laoshi reai zhe ge xiangfa jintian.,reai
+zh,54,-2,pinglun zhe taoyan zhe shou ge jintian.,taoyan
+zh,54,-1,pinglun zhe bu tai xihuan zhe shou ge jintian.,bu tai xihuan
+zh,54,0,pinglun zhe dui zhe shou ge wu gan jintian.,wu gan
+zh,54,1,pinglun zhe xihuan zhe shou ge jintian.,xihuan
+zh,54,2,pinglun zhe reai zhe shou ge jintian.,reai
+zh,55,-2,laoshi taoyan zhe bu dianying jintian.,taoyan
+zh,55,-1,laoshi bu tai xihuan zhe bu dianying jintian.,bu tai xihuan
+zh,55,0,laoshi dui zhe bu dianying wu gan jintian.,wu gan
+zh,55,1,laoshi xihuan zhe bu dianying jintian.,xihuan
+zh,55,2,laoshi reai zhe bu dianying jintian.,reai
+zh,56,-2,yonghu taoyan zhe ge xiangfa shencha shi.,taoyan
+zh,56,-1,yonghu bu tai xihuan zhe ge xiangfa shencha shi.,bu tai xihuan
+zh,56,0,yonghu dui zhe ge xiangfa wu gan shencha shi.,wu gan
+zh,56,1,yonghu xihuan zhe ge xiangfa shencha shi.,xihuan
+zh,56,2,yonghu reai zhe ge xiangfa shencha shi.,reai
+zh,57,-2,wo taoyan zhe ge xiangfa shencha shi.,taoyan
+zh,57,-1,wo bu tai xihuan zhe ge xiangfa shencha shi.,bu tai xihuan
+zh,57,0,wo dui zhe ge xiangfa wu gan shencha shi.,wu gan
+zh,57,1,wo xihuan zhe ge xiangfa shencha shi.,xihuan
+zh,57,2,wo reai zhe ge xiangfa shencha shi.,reai
+zh,58,-2,wo taoyan zhe ge xitong jintian.,taoyan
+zh,58,-1,wo bu tai xihuan zhe ge xitong jintian.,bu tai xihuan
+zh,58,0,wo dui zhe ge xitong wu gan jintian.,wu gan
+zh,58,1,wo xihuan zhe ge xitong jintian.,xihuan
+zh,58,2,wo reai zhe ge xitong jintian.,reai
+zh,59,-2,yanjiu zhe taoyan zhe ge sheji zuihou.,taoyan
+zh,59,-1,yanjiu zhe bu tai xihuan zhe ge sheji zuihou.,bu tai xihuan
+zh,59,0,yanjiu zhe dui zhe ge sheji wu gan zuihou.,wu gan
+zh,59,1,yanjiu zhe xihuan zhe ge sheji zuihou.,xihuan
+zh,59,2,yanjiu zhe reai zhe ge sheji zuihou.,reai
+zh,60,-2,laoshi taoyan zhe bu dianying huiyi hou.,taoyan
+zh,60,-1,laoshi bu tai xihuan zhe bu dianying huiyi hou.,bu tai xihuan
+zh,60,0,laoshi dui zhe bu dianying wu gan huiyi hou.,wu gan
+zh,60,1,laoshi xihuan zhe bu dianying huiyi hou.,xihuan
+zh,60,2,laoshi reai zhe bu dianying huiyi hou.,reai
+zh,61,-2,ta taoyan zhe ge xitong shencha shi.,taoyan
+zh,61,-1,ta bu tai xihuan zhe ge xitong shencha shi.,bu tai xihuan
+zh,61,0,ta dui zhe ge xitong wu gan shencha shi.,wu gan
+zh,61,1,ta xihuan zhe ge xitong shencha shi.,xihuan
+zh,61,2,ta reai zhe ge xitong shencha shi.,reai
+zh,62,-2,wo taoyan zhe ge jianyi jintian.,taoyan
+zh,62,-1,wo bu tai xihuan zhe ge jianyi jintian.,bu tai xihuan
+zh,62,0,wo dui zhe ge jianyi wu gan jintian.,wu gan
+zh,62,1,wo xihuan zhe ge jianyi jintian.,xihuan
+zh,62,2,wo reai zhe ge jianyi jintian.,reai
+zh,63,-2,laoshi taoyan zhe zuo chengshi huiyi hou.,taoyan
+zh,63,-1,laoshi bu tai xihuan zhe zuo chengshi huiyi hou.,bu tai xihuan
+zh,63,0,laoshi dui zhe zuo chengshi wu gan huiyi hou.,wu gan
+zh,63,1,laoshi xihuan zhe zuo chengshi huiyi hou.,xihuan
+zh,63,2,laoshi reai zhe zuo chengshi huiyi hou.,reai
+zh,64,-2,yanjiu zhe taoyan zhe ge xiangfa sixiadi.,taoyan
+zh,64,-1,yanjiu zhe bu tai xihuan zhe ge xiangfa sixiadi.,bu tai xihuan
+zh,64,0,yanjiu zhe dui zhe ge xiangfa wu gan sixiadi.,wu gan
+zh,64,1,yanjiu zhe xihuan zhe ge xiangfa sixiadi.,xihuan
+zh,64,2,yanjiu zhe reai zhe ge xiangfa sixiadi.,reai
+zh,65,-2,yonghu taoyan zhe ge xitong sixiadi.,taoyan
+zh,65,-1,yonghu bu tai xihuan zhe ge xitong sixiadi.,bu tai xihuan
+zh,65,0,yonghu dui zhe ge xitong wu gan sixiadi.,wu gan
+zh,65,1,yonghu xihuan zhe ge xitong sixiadi.,xihuan
+zh,65,2,yonghu reai zhe ge xitong sixiadi.,reai
+zh,66,-2,yonghu taoyan zhe shou ge sixiadi.,taoyan
+zh,66,-1,yonghu bu tai xihuan zhe shou ge sixiadi.,bu tai xihuan
+zh,66,0,yonghu dui zhe shou ge wu gan sixiadi.,wu gan
+zh,66,1,yonghu xihuan zhe shou ge sixiadi.,xihuan
+zh,66,2,yonghu reai zhe shou ge sixiadi.,reai
+zh,67,-2,yishujia taoyan ni shencha shi.,taoyan
+zh,67,-1,yishujia bu tai xihuan ni shencha shi.,bu tai xihuan
+zh,67,0,yishujia dui ni wu gan shencha shi.,wu gan
+zh,67,1,yishujia xihuan ni shencha shi.,xihuan
+zh,67,2,yishujia reai ni shencha shi.,reai
+zh,68,-2,yishujia taoyan zhe bu dianying zuihou.,taoyan
+zh,68,-1,yishujia bu tai xihuan zhe bu dianying zuihou.,bu tai xihuan
+zh,68,0,yishujia dui zhe bu dianying wu gan zuihou.,wu gan
+zh,68,1,yishujia xihuan zhe bu dianying zuihou.,xihuan
+zh,68,2,yishujia reai zhe bu dianying zuihou.,reai
+zh,69,-2,wo taoyan zhe zuo chengshi jintian.,taoyan
+zh,69,-1,wo bu tai xihuan zhe zuo chengshi jintian.,bu tai xihuan
+zh,69,0,wo dui zhe zuo chengshi wu gan jintian.,wu gan
+zh,69,1,wo xihuan zhe zuo chengshi jintian.,xihuan
+zh,69,2,wo reai zhe zuo chengshi jintian.,reai
+zh,70,-2,ta taoyan zhe ge xitong zuihou.,taoyan
+zh,70,-1,ta bu tai xihuan zhe ge xitong zuihou.,bu tai xihuan
+zh,70,0,ta dui zhe ge xitong wu gan zuihou.,wu gan
+zh,70,1,ta xihuan zhe ge xitong zuihou.,xihuan
+zh,70,2,ta reai zhe ge xitong zuihou.,reai
+zh,71,-2,wo taoyan zhe ge sheji huiyi hou.,taoyan
+zh,71,-1,wo bu tai xihuan zhe ge sheji huiyi hou.,bu tai xihuan
+zh,71,0,wo dui zhe ge sheji wu gan huiyi hou.,wu gan
+zh,71,1,wo xihuan zhe ge sheji huiyi hou.,xihuan
+zh,71,2,wo reai zhe ge sheji huiyi hou.,reai
+zh,72,-2,linju taoyan zhe ge jianyi shencha shi.,taoyan
+zh,72,-1,linju bu tai xihuan zhe ge jianyi shencha shi.,bu tai xihuan
+zh,72,0,linju dui zhe ge jianyi wu gan shencha shi.,wu gan
+zh,72,1,linju xihuan zhe ge jianyi shencha shi.,xihuan
+zh,72,2,linju reai zhe ge jianyi shencha shi.,reai
+zh,73,-2,laoshi taoyan zhe ge xiangfa huiyi hou.,taoyan
+zh,73,-1,laoshi bu tai xihuan zhe ge xiangfa huiyi hou.,bu tai xihuan
+zh,73,0,laoshi dui zhe ge xiangfa wu gan huiyi hou.,wu gan
+zh,73,1,laoshi xihuan zhe ge xiangfa huiyi hou.,xihuan
+zh,73,2,laoshi reai zhe ge xiangfa huiyi hou.,reai
+zh,74,-2,yanjiu zhe taoyan zhe ge jianyi zuihou.,taoyan
+zh,74,-1,yanjiu zhe bu tai xihuan zhe ge jianyi zuihou.,bu tai xihuan
+zh,74,0,yanjiu zhe dui zhe ge jianyi wu gan zuihou.,wu gan
+zh,74,1,yanjiu zhe xihuan zhe ge jianyi zuihou.,xihuan
+zh,74,2,yanjiu zhe reai zhe ge jianyi zuihou.,reai
+zh,75,-2,yanjiu zhe taoyan zhe ge jianyi huiyi hou.,taoyan
+zh,75,-1,yanjiu zhe bu tai xihuan zhe ge jianyi huiyi hou.,bu tai xihuan
+zh,75,0,yanjiu zhe dui zhe ge jianyi wu gan huiyi hou.,wu gan
+zh,75,1,yanjiu zhe xihuan zhe ge jianyi huiyi hou.,xihuan
+zh,75,2,yanjiu zhe reai zhe ge jianyi huiyi hou.,reai
+zh,76,-2,pinglun zhe taoyan zhe ge xitong zuihou.,taoyan
+zh,76,-1,pinglun zhe bu tai xihuan zhe ge xitong zuihou.,bu tai xihuan
+zh,76,0,pinglun zhe dui zhe ge xitong wu gan zuihou.,wu gan
+zh,76,1,pinglun zhe xihuan zhe ge xitong zuihou.,xihuan
+zh,76,2,pinglun zhe reai zhe ge xitong zuihou.,reai
+zh,77,-2,ta taoyan zhe ge xitong sixiadi.,taoyan
+zh,77,-1,ta bu tai xihuan zhe ge xitong sixiadi.,bu tai xihuan
+zh,77,0,ta dui zhe ge xitong wu gan sixiadi.,wu gan
+zh,77,1,ta xihuan zhe ge xitong sixiadi.,xihuan
+zh,77,2,ta reai zhe ge xitong sixiadi.,reai
+zh,78,-2,linju taoyan zhe bu dianying jintian.,taoyan
+zh,78,-1,linju bu tai xihuan zhe bu dianying jintian.,bu tai xihuan
+zh,78,0,linju dui zhe bu dianying wu gan jintian.,wu gan
+zh,78,1,linju xihuan zhe bu dianying jintian.,xihuan
+zh,78,2,linju reai zhe bu dianying jintian.,reai
+zh,79,-2,wo taoyan zhe zuo chengshi sixiadi.,taoyan
+zh,79,-1,wo bu tai xihuan zhe zuo chengshi sixiadi.,bu tai xihuan
+zh,79,0,wo dui zhe zuo chengshi wu gan sixiadi.,wu gan
+zh,79,1,wo xihuan zhe zuo chengshi sixiadi.,xihuan
+zh,79,2,wo reai zhe zuo chengshi sixiadi.,reai
+zh,80,-2,yishujia taoyan ni sixiadi.,taoyan
+zh,80,-1,yishujia bu tai xihuan ni sixiadi.,bu tai xihuan
+zh,80,0,yishujia dui ni wu gan sixiadi.,wu gan
+zh,80,1,yishujia xihuan ni sixiadi.,xihuan
+zh,80,2,yishujia reai ni sixiadi.,reai
+zh,81,-2,wo taoyan ni jintian.,taoyan
+zh,81,-1,wo bu tai xihuan ni jintian.,bu tai xihuan
+zh,81,0,wo dui ni wu gan jintian.,wu gan
+zh,81,1,wo xihuan ni jintian.,xihuan
+zh,81,2,wo reai ni jintian.,reai
+zh,82,-2,yanjiu zhe taoyan zhe ge sheji jintian.,taoyan
+zh,82,-1,yanjiu zhe bu tai xihuan zhe ge sheji jintian.,bu tai xihuan
+zh,82,0,yanjiu zhe dui zhe ge sheji wu gan jintian.,wu gan
+zh,82,1,yanjiu zhe xihuan zhe ge sheji jintian.,xihuan
+zh,82,2,yanjiu zhe reai zhe ge sheji jintian.,reai
+zh,83,-2,yonghu taoyan zhe ge sheji jintian.,taoyan
+zh,83,-1,yonghu bu tai xihuan zhe ge sheji jintian.,bu tai xihuan
+zh,83,0,yonghu dui zhe ge sheji wu gan jintian.,wu gan
+zh,83,1,yonghu xihuan zhe ge sheji jintian.,xihuan
+zh,83,2,yonghu reai zhe ge sheji jintian.,reai
+zh,84,-2,yishujia taoyan zhe ge xitong sixiadi.,taoyan
+zh,84,-1,yishujia bu tai xihuan zhe ge xitong sixiadi.,bu tai xihuan
+zh,84,0,yishujia dui zhe ge xitong wu gan sixiadi.,wu gan
+zh,84,1,yishujia xihuan zhe ge xitong sixiadi.,xihuan
+zh,84,2,yishujia reai zhe ge xitong sixiadi.,reai
+zh,85,-2,yanjiu zhe taoyan zhe ge sheji huiyi hou.,taoyan
+zh,85,-1,yanjiu zhe bu tai xihuan zhe ge sheji huiyi hou.,bu tai xihuan
+zh,85,0,yanjiu zhe dui zhe ge sheji wu gan huiyi hou.,wu gan
+zh,85,1,yanjiu zhe xihuan zhe ge sheji huiyi hou.,xihuan
+zh,85,2,yanjiu zhe reai zhe ge sheji huiyi hou.,reai
+zh,86,-2,ta taoyan zhe zuo chengshi sixiadi.,taoyan
+zh,86,-1,ta bu tai xihuan zhe zuo chengshi sixiadi.,bu tai xihuan
+zh,86,0,ta dui zhe zuo chengshi wu gan sixiadi.,wu gan
+zh,86,1,ta xihuan zhe zuo chengshi sixiadi.,xihuan
+zh,86,2,ta reai zhe zuo chengshi sixiadi.,reai
+zh,87,-2,pinglun zhe taoyan zhe ge sheji huiyi hou.,taoyan
+zh,87,-1,pinglun zhe bu tai xihuan zhe ge sheji huiyi hou.,bu tai xihuan
+zh,87,0,pinglun zhe dui zhe ge sheji wu gan huiyi hou.,wu gan
+zh,87,1,pinglun zhe xihuan zhe ge sheji huiyi hou.,xihuan
+zh,87,2,pinglun zhe reai zhe ge sheji huiyi hou.,reai
+zh,88,-2,yanjiu zhe taoyan ni jintian.,taoyan
+zh,88,-1,yanjiu zhe bu tai xihuan ni jintian.,bu tai xihuan
+zh,88,0,yanjiu zhe dui ni wu gan jintian.,wu gan
+zh,88,1,yanjiu zhe xihuan ni jintian.,xihuan
+zh,88,2,yanjiu zhe reai ni jintian.,reai
+zh,89,-2,linju taoyan zhe ge xiangfa shencha shi.,taoyan
+zh,89,-1,linju bu tai xihuan zhe ge xiangfa shencha shi.,bu tai xihuan
+zh,89,0,linju dui zhe ge xiangfa wu gan shencha shi.,wu gan
+zh,89,1,linju xihuan zhe ge xiangfa shencha shi.,xihuan
+zh,89,2,linju reai zhe ge xiangfa shencha shi.,reai
+zh,90,-2,linju taoyan ni shencha shi.,taoyan
+zh,90,-1,linju bu tai xihuan ni shencha shi.,bu tai xihuan
+zh,90,0,linju dui ni wu gan shencha shi.,wu gan
+zh,90,1,linju xihuan ni shencha shi.,xihuan
+zh,90,2,linju reai ni shencha shi.,reai
+zh,91,-2,yishujia taoyan zhe ge xitong shencha shi.,taoyan
+zh,91,-1,yishujia bu tai xihuan zhe ge xitong shencha shi.,bu tai xihuan
+zh,91,0,yishujia dui zhe ge xitong wu gan shencha shi.,wu gan
+zh,91,1,yishujia xihuan zhe ge xitong shencha shi.,xihuan
+zh,91,2,yishujia reai zhe ge xitong shencha shi.,reai
+zh,92,-2,ta taoyan zhe shou ge sixiadi.,taoyan
+zh,92,-1,ta bu tai xihuan zhe shou ge sixiadi.,bu tai xihuan
+zh,92,0,ta dui zhe shou ge wu gan sixiadi.,wu gan
+zh,92,1,ta xihuan zhe shou ge sixiadi.,xihuan
+zh,92,2,ta reai zhe shou ge sixiadi.,reai
+zh,93,-2,yonghu taoyan zhe shou ge jintian.,taoyan
+zh,93,-1,yonghu bu tai xihuan zhe shou ge jintian.,bu tai xihuan
+zh,93,0,yonghu dui zhe shou ge wu gan jintian.,wu gan
+zh,93,1,yonghu xihuan zhe shou ge jintian.,xihuan
+zh,93,2,yonghu reai zhe shou ge jintian.,reai
+zh,94,-2,yanjiu zhe taoyan zhe ge xitong sixiadi.,taoyan
+zh,94,-1,yanjiu zhe bu tai xihuan zhe ge xitong sixiadi.,bu tai xihuan
+zh,94,0,yanjiu zhe dui zhe ge xitong wu gan sixiadi.,wu gan
+zh,94,1,yanjiu zhe xihuan zhe ge xitong sixiadi.,xihuan
+zh,94,2,yanjiu zhe reai zhe ge xitong sixiadi.,reai
+zh,95,-2,ta taoyan zhe zuo chengshi huiyi hou.,taoyan
+zh,95,-1,ta bu tai xihuan zhe zuo chengshi huiyi hou.,bu tai xihuan
+zh,95,0,ta dui zhe zuo chengshi wu gan huiyi hou.,wu gan
+zh,95,1,ta xihuan zhe zuo chengshi huiyi hou.,xihuan
+zh,95,2,ta reai zhe zuo chengshi huiyi hou.,reai
+zh,96,-2,pinglun zhe taoyan zhe ge jianyi jintian.,taoyan
+zh,96,-1,pinglun zhe bu tai xihuan zhe ge jianyi jintian.,bu tai xihuan
+zh,96,0,pinglun zhe dui zhe ge jianyi wu gan jintian.,wu gan
+zh,96,1,pinglun zhe xihuan zhe ge jianyi jintian.,xihuan
+zh,96,2,pinglun zhe reai zhe ge jianyi jintian.,reai
+zh,97,-2,yishujia taoyan zhe shou ge huiyi hou.,taoyan
+zh,97,-1,yishujia bu tai xihuan zhe shou ge huiyi hou.,bu tai xihuan
+zh,97,0,yishujia dui zhe shou ge wu gan huiyi hou.,wu gan
+zh,97,1,yishujia xihuan zhe shou ge huiyi hou.,xihuan
+zh,97,2,yishujia reai zhe shou ge huiyi hou.,reai
+zh,98,-2,yonghu taoyan zhe bu dianying huiyi hou.,taoyan
+zh,98,-1,yonghu bu tai xihuan zhe bu dianying huiyi hou.,bu tai xihuan
+zh,98,0,yonghu dui zhe bu dianying wu gan huiyi hou.,wu gan
+zh,98,1,yonghu xihuan zhe bu dianying huiyi hou.,xihuan
+zh,98,2,yonghu reai zhe bu dianying huiyi hou.,reai
+zh,99,-2,yishujia taoyan ni huiyi hou.,taoyan
+zh,99,-1,yishujia bu tai xihuan ni huiyi hou.,bu tai xihuan
+zh,99,0,yishujia dui ni wu gan huiyi hou.,wu gan
+zh,99,1,yishujia xihuan ni huiyi hou.,xihuan
+zh,99,2,yishujia reai ni huiyi hou.,reai
+zh,100,-2,laoshi taoyan zhe ge jianyi sixiadi.,taoyan
+zh,100,-1,laoshi bu tai xihuan zhe ge jianyi sixiadi.,bu tai xihuan
+zh,100,0,laoshi dui zhe ge jianyi wu gan sixiadi.,wu gan
+zh,100,1,laoshi xihuan zhe ge jianyi sixiadi.,xihuan
+zh,100,2,laoshi reai zhe ge jianyi sixiadi.,reai
+zh,101,-2,laoshi taoyan zhe ge sheji zuihou.,taoyan
+zh,101,-1,laoshi bu tai xihuan zhe ge sheji zuihou.,bu tai xihuan
+zh,101,0,laoshi dui zhe ge sheji wu gan zuihou.,wu gan
+zh,101,1,laoshi xihuan zhe ge sheji zuihou.,xihuan
+zh,101,2,laoshi reai zhe ge sheji zuihou.,reai
+zh,102,-2,pinglun zhe taoyan ni zuihou.,taoyan
+zh,102,-1,pinglun zhe bu tai xihuan ni zuihou.,bu tai xihuan
+zh,102,0,pinglun zhe dui ni wu gan zuihou.,wu gan
+zh,102,1,pinglun zhe xihuan ni zuihou.,xihuan
+zh,102,2,pinglun zhe reai ni zuihou.,reai
+zh,103,-2,laoshi taoyan ni jintian.,taoyan
+zh,103,-1,laoshi bu tai xihuan ni jintian.,bu tai xihuan
+zh,103,0,laoshi dui ni wu gan jintian.,wu gan
+zh,103,1,laoshi xihuan ni jintian.,xihuan
+zh,103,2,laoshi reai ni jintian.,reai
+zh,104,-2,laoshi taoyan zhe ge xitong huiyi hou.,taoyan
+zh,104,-1,laoshi bu tai xihuan zhe ge xitong huiyi hou.,bu tai xihuan
+zh,104,0,laoshi dui zhe ge xitong wu gan huiyi hou.,wu gan
+zh,104,1,laoshi xihuan zhe ge xitong huiyi hou.,xihuan
+zh,104,2,laoshi reai zhe ge xitong huiyi hou.,reai
+zh,105,-2,pinglun zhe taoyan zhe bu dianying shencha shi.,taoyan
+zh,105,-1,pinglun zhe bu tai xihuan zhe bu dianying shencha shi.,bu tai xihuan
+zh,105,0,pinglun zhe dui zhe bu dianying wu gan shencha shi.,wu gan
+zh,105,1,pinglun zhe xihuan zhe bu dianying shencha shi.,xihuan
+zh,105,2,pinglun zhe reai zhe bu dianying shencha shi.,reai
+zh,106,-2,ta taoyan ni sixiadi.,taoyan
+zh,106,-1,ta bu tai xihuan ni sixiadi.,bu tai xihuan
+zh,106,0,ta dui ni wu gan sixiadi.,wu gan
+zh,106,1,ta xihuan ni sixiadi.,xihuan
+zh,106,2,ta reai ni sixiadi.,reai
+zh,107,-2,yonghu taoyan zhe zuo chengshi zuihou.,taoyan
+zh,107,-1,yonghu bu tai xihuan zhe zuo chengshi zuihou.,bu tai xihuan
+zh,107,0,yonghu dui zhe zuo chengshi wu gan zuihou.,wu gan
+zh,107,1,yonghu xihuan zhe zuo chengshi zuihou.,xihuan
+zh,107,2,yonghu reai zhe zuo chengshi zuihou.,reai
+zh,108,-2,yanjiu zhe taoyan zhe zuo chengshi sixiadi.,taoyan
+zh,108,-1,yanjiu zhe bu tai xihuan zhe zuo chengshi sixiadi.,bu tai xihuan
+zh,108,0,yanjiu zhe dui zhe zuo chengshi wu gan sixiadi.,wu gan
+zh,108,1,yanjiu zhe xihuan zhe zuo chengshi sixiadi.,xihuan
+zh,108,2,yanjiu zhe reai zhe zuo chengshi sixiadi.,reai
+zh,109,-2,pinglun zhe taoyan zhe bu dianying jintian.,taoyan
+zh,109,-1,pinglun zhe bu tai xihuan zhe bu dianying jintian.,bu tai xihuan
+zh,109,0,pinglun zhe dui zhe bu dianying wu gan jintian.,wu gan
+zh,109,1,pinglun zhe xihuan zhe bu dianying jintian.,xihuan
+zh,109,2,pinglun zhe reai zhe bu dianying jintian.,reai
+zh,110,-2,pinglun zhe taoyan zhe zuo chengshi jintian.,taoyan
+zh,110,-1,pinglun zhe bu tai xihuan zhe zuo chengshi jintian.,bu tai xihuan
+zh,110,0,pinglun zhe dui zhe zuo chengshi wu gan jintian.,wu gan
+zh,110,1,pinglun zhe xihuan zhe zuo chengshi jintian.,xihuan
+zh,110,2,pinglun zhe reai zhe zuo chengshi jintian.,reai
+zh,111,-2,wo taoyan zhe bu dianying zuihou.,taoyan
+zh,111,-1,wo bu tai xihuan zhe bu dianying zuihou.,bu tai xihuan
+zh,111,0,wo dui zhe bu dianying wu gan zuihou.,wu gan
+zh,111,1,wo xihuan zhe bu dianying zuihou.,xihuan
+zh,111,2,wo reai zhe bu dianying zuihou.,reai
+zh,112,-2,linju taoyan zhe bu dianying shencha shi.,taoyan
+zh,112,-1,linju bu tai xihuan zhe bu dianying shencha shi.,bu tai xihuan
+zh,112,0,linju dui zhe bu dianying wu gan shencha shi.,wu gan
+zh,112,1,linju xihuan zhe bu dianying shencha shi.,xihuan
+zh,112,2,linju reai zhe bu dianying shencha shi.,reai
+zh,113,-2,wo taoyan zhe ge xiangfa zuihou.,taoyan
+zh,113,-1,wo bu tai xihuan zhe ge xiangfa zuihou.,bu tai xihuan
+zh,113,0,wo dui zhe ge xiangfa wu gan zuihou.,wu gan
+zh,113,1,wo xihuan zhe ge xiangfa zuihou.,xihuan
+zh,113,2,wo reai zhe ge xiangfa zuihou.,reai
+zh,114,-2,linju taoyan ni huiyi hou.,taoyan
+zh,114,-1,linju bu tai xihuan ni huiyi hou.,bu tai xihuan
+zh,114,0,linju dui ni wu gan huiyi hou.,wu gan
+zh,114,1,linju xihuan ni huiyi hou.,xihuan
+zh,114,2,linju reai ni huiyi hou.,reai
+zh,115,-2,linju taoyan zhe shou ge jintian.,taoyan
+zh,115,-1,linju bu tai xihuan zhe shou ge jintian.,bu tai xihuan
+zh,115,0,linju dui zhe shou ge wu gan jintian.,wu gan
+zh,115,1,linju xihuan zhe shou ge jintian.,xihuan
+zh,115,2,linju reai zhe shou ge jintian.,reai
+zh,116,-2,wo taoyan zhe ge xitong zuihou.,taoyan
+zh,116,-1,wo bu tai xihuan zhe ge xitong zuihou.,bu tai xihuan
+zh,116,0,wo dui zhe ge xitong wu gan zuihou.,wu gan
+zh,116,1,wo xihuan zhe ge xitong zuihou.,xihuan
+zh,116,2,wo reai zhe ge xitong zuihou.,reai
+zh,117,-2,wo taoyan zhe ge jianyi sixiadi.,taoyan
+zh,117,-1,wo bu tai xihuan zhe ge jianyi sixiadi.,bu tai xihuan
+zh,117,0,wo dui zhe ge jianyi wu gan sixiadi.,wu gan
+zh,117,1,wo xihuan zhe ge jianyi sixiadi.,xihuan
+zh,117,2,wo reai zhe ge jianyi sixiadi.,reai
+zh,118,-2,wo taoyan zhe shou ge shencha shi.,taoyan
+zh,118,-1,wo bu tai xihuan zhe shou ge shencha shi.,bu tai xihuan
+zh,118,0,wo dui zhe shou ge wu gan shencha shi.,wu gan
+zh,118,1,wo xihuan zhe shou ge shencha shi.,xihuan
+zh,118,2,wo reai zhe shou ge shencha shi.,reai
+zh,119,-2,laoshi taoyan zhe ge jianyi jintian.,taoyan
+zh,119,-1,laoshi bu tai xihuan zhe ge jianyi jintian.,bu tai xihuan
+zh,119,0,laoshi dui zhe ge jianyi wu gan jintian.,wu gan
+zh,119,1,laoshi xihuan zhe ge jianyi jintian.,xihuan
+zh,119,2,laoshi reai zhe ge jianyi jintian.,reai
+zh,120,-2,pinglun zhe taoyan zhe ge xiangfa shencha shi.,taoyan
+zh,120,-1,pinglun zhe bu tai xihuan zhe ge xiangfa shencha shi.,bu tai xihuan
+zh,120,0,pinglun zhe dui zhe ge xiangfa wu gan shencha shi.,wu gan
+zh,120,1,pinglun zhe xihuan zhe ge xiangfa shencha shi.,xihuan
+zh,120,2,pinglun zhe reai zhe ge xiangfa shencha shi.,reai
+zh,121,-2,laoshi taoyan zhe bu dianying sixiadi.,taoyan
+zh,121,-1,laoshi bu tai xihuan zhe bu dianying sixiadi.,bu tai xihuan
+zh,121,0,laoshi dui zhe bu dianying wu gan sixiadi.,wu gan
+zh,121,1,laoshi xihuan zhe bu dianying sixiadi.,xihuan
+zh,121,2,laoshi reai zhe bu dianying sixiadi.,reai
+zh,122,-2,linju taoyan zhe shou ge shencha shi.,taoyan
+zh,122,-1,linju bu tai xihuan zhe shou ge shencha shi.,bu tai xihuan
+zh,122,0,linju dui zhe shou ge wu gan shencha shi.,wu gan
+zh,122,1,linju xihuan zhe shou ge shencha shi.,xihuan
+zh,122,2,linju reai zhe shou ge shencha shi.,reai
+zh,123,-2,yanjiu zhe taoyan zhe zuo chengshi zuihou.,taoyan
+zh,123,-1,yanjiu zhe bu tai xihuan zhe zuo chengshi zuihou.,bu tai xihuan
+zh,123,0,yanjiu zhe dui zhe zuo chengshi wu gan zuihou.,wu gan
+zh,123,1,yanjiu zhe xihuan zhe zuo chengshi zuihou.,xihuan
+zh,123,2,yanjiu zhe reai zhe zuo chengshi zuihou.,reai
+zh,124,-2,ta taoyan zhe ge sheji jintian.,taoyan
+zh,124,-1,ta bu tai xihuan zhe ge sheji jintian.,bu tai xihuan
+zh,124,0,ta dui zhe ge sheji wu gan jintian.,wu gan
+zh,124,1,ta xihuan zhe ge sheji jintian.,xihuan
+zh,124,2,ta reai zhe ge sheji jintian.,reai
+zh,125,-2,wo taoyan zhe bu dianying shencha shi.,taoyan
+zh,125,-1,wo bu tai xihuan zhe bu dianying shencha shi.,bu tai xihuan
+zh,125,0,wo dui zhe bu dianying wu gan shencha shi.,wu gan
+zh,125,1,wo xihuan zhe bu dianying shencha shi.,xihuan
+zh,125,2,wo reai zhe bu dianying shencha shi.,reai
+zh,126,-2,pinglun zhe taoyan zhe shou ge huiyi hou.,taoyan
+zh,126,-1,pinglun zhe bu tai xihuan zhe shou ge huiyi hou.,bu tai xihuan
+zh,126,0,pinglun zhe dui zhe shou ge wu gan huiyi hou.,wu gan
+zh,126,1,pinglun zhe xihuan zhe shou ge huiyi hou.,xihuan
+zh,126,2,pinglun zhe reai zhe shou ge huiyi hou.,reai
+zh,127,-2,laoshi taoyan zhe shou ge huiyi hou.,taoyan
+zh,127,-1,laoshi bu tai xihuan zhe shou ge huiyi hou.,bu tai xihuan
+zh,127,0,laoshi dui zhe shou ge wu gan huiyi hou.,wu gan
+zh,127,1,laoshi xihuan zhe shou ge huiyi hou.,xihuan
+zh,127,2,laoshi reai zhe shou ge huiyi hou.,reai
+zh,128,-2,yanjiu zhe taoyan zhe ge xitong jintian.,taoyan
+zh,128,-1,yanjiu zhe bu tai xihuan zhe ge xitong jintian.,bu tai xihuan
+zh,128,0,yanjiu zhe dui zhe ge xitong wu gan jintian.,wu gan
+zh,128,1,yanjiu zhe xihuan zhe ge xitong jintian.,xihuan
+zh,128,2,yanjiu zhe reai zhe ge xitong jintian.,reai
+zh,129,-2,ta taoyan ni huiyi hou.,taoyan
+zh,129,-1,ta bu tai xihuan ni huiyi hou.,bu tai xihuan
+zh,129,0,ta dui ni wu gan huiyi hou.,wu gan
+zh,129,1,ta xihuan ni huiyi hou.,xihuan
+zh,129,2,ta reai ni huiyi hou.,reai
+zh,130,-2,linju taoyan zhe ge sheji sixiadi.,taoyan
+zh,130,-1,linju bu tai xihuan zhe ge sheji sixiadi.,bu tai xihuan
+zh,130,0,linju dui zhe ge sheji wu gan sixiadi.,wu gan
+zh,130,1,linju xihuan zhe ge sheji sixiadi.,xihuan
+zh,130,2,linju reai zhe ge sheji sixiadi.,reai
+zh,131,-2,yanjiu zhe taoyan zhe ge jianyi jintian.,taoyan
+zh,131,-1,yanjiu zhe bu tai xihuan zhe ge jianyi jintian.,bu tai xihuan
+zh,131,0,yanjiu zhe dui zhe ge jianyi wu gan jintian.,wu gan
+zh,131,1,yanjiu zhe xihuan zhe ge jianyi jintian.,xihuan
+zh,131,2,yanjiu zhe reai zhe ge jianyi jintian.,reai
+zh,132,-2,yonghu taoyan ni huiyi hou.,taoyan
+zh,132,-1,yonghu bu tai xihuan ni huiyi hou.,bu tai xihuan
+zh,132,0,yonghu dui ni wu gan huiyi hou.,wu gan
+zh,132,1,yonghu xihuan ni huiyi hou.,xihuan
+zh,132,2,yonghu reai ni huiyi hou.,reai
+zh,133,-2,yishujia taoyan zhe ge jianyi jintian.,taoyan
+zh,133,-1,yishujia bu tai xihuan zhe ge jianyi jintian.,bu tai xihuan
+zh,133,0,yishujia dui zhe ge jianyi wu gan jintian.,wu gan
+zh,133,1,yishujia xihuan zhe ge jianyi jintian.,xihuan
+zh,133,2,yishujia reai zhe ge jianyi jintian.,reai
+zh,134,-2,wo taoyan zhe bu dianying sixiadi.,taoyan
+zh,134,-1,wo bu tai xihuan zhe bu dianying sixiadi.,bu tai xihuan
+zh,134,0,wo dui zhe bu dianying wu gan sixiadi.,wu gan
+zh,134,1,wo xihuan zhe bu dianying sixiadi.,xihuan
+zh,134,2,wo reai zhe bu dianying sixiadi.,reai
+zh,135,-2,yonghu taoyan zhe shou ge zuihou.,taoyan
+zh,135,-1,yonghu bu tai xihuan zhe shou ge zuihou.,bu tai xihuan
+zh,135,0,yonghu dui zhe shou ge wu gan zuihou.,wu gan
+zh,135,1,yonghu xihuan zhe shou ge zuihou.,xihuan
+zh,135,2,yonghu reai zhe shou ge zuihou.,reai
+zh,136,-2,yonghu taoyan zhe zuo chengshi shencha shi.,taoyan
+zh,136,-1,yonghu bu tai xihuan zhe zuo chengshi shencha shi.,bu tai xihuan
+zh,136,0,yonghu dui zhe zuo chengshi wu gan shencha shi.,wu gan
+zh,136,1,yonghu xihuan zhe zuo chengshi shencha shi.,xihuan
+zh,136,2,yonghu reai zhe zuo chengshi shencha shi.,reai
+zh,137,-2,yonghu taoyan zhe shou ge huiyi hou.,taoyan
+zh,137,-1,yonghu bu tai xihuan zhe shou ge huiyi hou.,bu tai xihuan
+zh,137,0,yonghu dui zhe shou ge wu gan huiyi hou.,wu gan
+zh,137,1,yonghu xihuan zhe shou ge huiyi hou.,xihuan
+zh,137,2,yonghu reai zhe shou ge huiyi hou.,reai
+zh,138,-2,yonghu taoyan zhe ge jianyi shencha shi.,taoyan
+zh,138,-1,yonghu bu tai xihuan zhe ge jianyi shencha shi.,bu tai xihuan
+zh,138,0,yonghu dui zhe ge jianyi wu gan shencha shi.,wu gan
+zh,138,1,yonghu xihuan zhe ge jianyi shencha shi.,xihuan
+zh,138,2,yonghu reai zhe ge jianyi shencha shi.,reai
+zh,139,-2,linju taoyan zhe bu dianying huiyi hou.,taoyan
+zh,139,-1,linju bu tai xihuan zhe bu dianying huiyi hou.,bu tai xihuan
+zh,139,0,linju dui zhe bu dianying wu gan huiyi hou.,wu gan
+zh,139,1,linju xihuan zhe bu dianying huiyi hou.,xihuan
+zh,139,2,linju reai zhe bu dianying huiyi hou.,reai
+zh,140,-2,yanjiu zhe taoyan zhe ge xiangfa huiyi hou.,taoyan
+zh,140,-1,yanjiu zhe bu tai xihuan zhe ge xiangfa huiyi hou.,bu tai xihuan
+zh,140,0,yanjiu zhe dui zhe ge xiangfa wu gan huiyi hou.,wu gan
+zh,140,1,yanjiu zhe xihuan zhe ge xiangfa huiyi hou.,xihuan
+zh,140,2,yanjiu zhe reai zhe ge xiangfa huiyi hou.,reai
+zh,141,-2,pinglun zhe taoyan zhe ge jianyi sixiadi.,taoyan
+zh,141,-1,pinglun zhe bu tai xihuan zhe ge jianyi sixiadi.,bu tai xihuan
+zh,141,0,pinglun zhe dui zhe ge jianyi wu gan sixiadi.,wu gan
+zh,141,1,pinglun zhe xihuan zhe ge jianyi sixiadi.,xihuan
+zh,141,2,pinglun zhe reai zhe ge jianyi sixiadi.,reai
+zh,142,-2,yanjiu zhe taoyan zhe zuo chengshi shencha shi.,taoyan
+zh,142,-1,yanjiu zhe bu tai xihuan zhe zuo chengshi shencha shi.,bu tai xihuan
+zh,142,0,yanjiu zhe dui zhe zuo chengshi wu gan shencha shi.,wu gan
+zh,142,1,yanjiu zhe xihuan zhe zuo chengshi shencha shi.,xihuan
+zh,142,2,yanjiu zhe reai zhe zuo chengshi shencha shi.,reai
+zh,143,-2,laoshi taoyan zhe bu dianying shencha shi.,taoyan
+zh,143,-1,laoshi bu tai xihuan zhe bu dianying shencha shi.,bu tai xihuan
+zh,143,0,laoshi dui zhe bu dianying wu gan shencha shi.,wu gan
+zh,143,1,laoshi xihuan zhe bu dianying shencha shi.,xihuan
+zh,143,2,laoshi reai zhe bu dianying shencha shi.,reai
+zh,144,-2,yanjiu zhe taoyan zhe ge jianyi sixiadi.,taoyan
+zh,144,-1,yanjiu zhe bu tai xihuan zhe ge jianyi sixiadi.,bu tai xihuan
+zh,144,0,yanjiu zhe dui zhe ge jianyi wu gan sixiadi.,wu gan
+zh,144,1,yanjiu zhe xihuan zhe ge jianyi sixiadi.,xihuan
+zh,144,2,yanjiu zhe reai zhe ge jianyi sixiadi.,reai
+zh,145,-2,pinglun zhe taoyan ni huiyi hou.,taoyan
+zh,145,-1,pinglun zhe bu tai xihuan ni huiyi hou.,bu tai xihuan
+zh,145,0,pinglun zhe dui ni wu gan huiyi hou.,wu gan
+zh,145,1,pinglun zhe xihuan ni huiyi hou.,xihuan
+zh,145,2,pinglun zhe reai ni huiyi hou.,reai
+zh,146,-2,yishujia taoyan zhe ge jianyi zuihou.,taoyan
+zh,146,-1,yishujia bu tai xihuan zhe ge jianyi zuihou.,bu tai xihuan
+zh,146,0,yishujia dui zhe ge jianyi wu gan zuihou.,wu gan
+zh,146,1,yishujia xihuan zhe ge jianyi zuihou.,xihuan
+zh,146,2,yishujia reai zhe ge jianyi zuihou.,reai
+zh,147,-2,ta taoyan zhe ge sheji sixiadi.,taoyan
+zh,147,-1,ta bu tai xihuan zhe ge sheji sixiadi.,bu tai xihuan
+zh,147,0,ta dui zhe ge sheji wu gan sixiadi.,wu gan
+zh,147,1,ta xihuan zhe ge sheji sixiadi.,xihuan
+zh,147,2,ta reai zhe ge sheji sixiadi.,reai
+zh,148,-2,yanjiu zhe taoyan ni huiyi hou.,taoyan
+zh,148,-1,yanjiu zhe bu tai xihuan ni huiyi hou.,bu tai xihuan
+zh,148,0,yanjiu zhe dui ni wu gan huiyi hou.,wu gan
+zh,148,1,yanjiu zhe xihuan ni huiyi hou.,xihuan
+zh,148,2,yanjiu zhe reai ni huiyi hou.,reai
+zh,149,-2,ta taoyan zhe ge jianyi sixiadi.,taoyan
+zh,149,-1,ta bu tai xihuan zhe ge jianyi sixiadi.,bu tai xihuan
+zh,149,0,ta dui zhe ge jianyi wu gan sixiadi.,wu gan
+zh,149,1,ta xihuan zhe ge jianyi sixiadi.,xihuan
+zh,149,2,ta reai zhe ge jianyi sixiadi.,reai
+zh,150,-2,ta taoyan zhe ge xiangfa huiyi hou.,taoyan
+zh,150,-1,ta bu tai xihuan zhe ge xiangfa huiyi hou.,bu tai xihuan
+zh,150,0,ta dui zhe ge xiangfa wu gan huiyi hou.,wu gan
+zh,150,1,ta xihuan zhe ge xiangfa huiyi hou.,xihuan
+zh,150,2,ta reai zhe ge xiangfa huiyi hou.,reai
+zh,151,-2,yanjiu zhe taoyan zhe zuo chengshi huiyi hou.,taoyan
+zh,151,-1,yanjiu zhe bu tai xihuan zhe zuo chengshi huiyi hou.,bu tai xihuan
+zh,151,0,yanjiu zhe dui zhe zuo chengshi wu gan huiyi hou.,wu gan
+zh,151,1,yanjiu zhe xihuan zhe zuo chengshi huiyi hou.,xihuan
+zh,151,2,yanjiu zhe reai zhe zuo chengshi huiyi hou.,reai
+zh,152,-2,ta taoyan zhe ge jianyi zuihou.,taoyan
+zh,152,-1,ta bu tai xihuan zhe ge jianyi zuihou.,bu tai xihuan
+zh,152,0,ta dui zhe ge jianyi wu gan zuihou.,wu gan
+zh,152,1,ta xihuan zhe ge jianyi zuihou.,xihuan
+zh,152,2,ta reai zhe ge jianyi zuihou.,reai
+zh,153,-2,wo taoyan zhe bu dianying jintian.,taoyan
+zh,153,-1,wo bu tai xihuan zhe bu dianying jintian.,bu tai xihuan
+zh,153,0,wo dui zhe bu dianying wu gan jintian.,wu gan
+zh,153,1,wo xihuan zhe bu dianying jintian.,xihuan
+zh,153,2,wo reai zhe bu dianying jintian.,reai
+zh,154,-2,pinglun zhe taoyan ni jintian.,taoyan
+zh,154,-1,pinglun zhe bu tai xihuan ni jintian.,bu tai xihuan
+zh,154,0,pinglun zhe dui ni wu gan jintian.,wu gan
+zh,154,1,pinglun zhe xihuan ni jintian.,xihuan
+zh,154,2,pinglun zhe reai ni jintian.,reai
+zh,155,-2,yishujia taoyan zhe ge sheji huiyi hou.,taoyan
+zh,155,-1,yishujia bu tai xihuan zhe ge sheji huiyi hou.,bu tai xihuan
+zh,155,0,yishujia dui zhe ge sheji wu gan huiyi hou.,wu gan
+zh,155,1,yishujia xihuan zhe ge sheji huiyi hou.,xihuan
+zh,155,2,yishujia reai zhe ge sheji huiyi hou.,reai
+zh,156,-2,laoshi taoyan ni zuihou.,taoyan
+zh,156,-1,laoshi bu tai xihuan ni zuihou.,bu tai xihuan
+zh,156,0,laoshi dui ni wu gan zuihou.,wu gan
+zh,156,1,laoshi xihuan ni zuihou.,xihuan
+zh,156,2,laoshi reai ni zuihou.,reai
+zh,157,-2,laoshi taoyan zhe zuo chengshi shencha shi.,taoyan
+zh,157,-1,laoshi bu tai xihuan zhe zuo chengshi shencha shi.,bu tai xihuan
+zh,157,0,laoshi dui zhe zuo chengshi wu gan shencha shi.,wu gan
+zh,157,1,laoshi xihuan zhe zuo chengshi shencha shi.,xihuan
+zh,157,2,laoshi reai zhe zuo chengshi shencha shi.,reai
+zh,158,-2,linju taoyan zhe ge xiangfa huiyi hou.,taoyan
+zh,158,-1,linju bu tai xihuan zhe ge xiangfa huiyi hou.,bu tai xihuan
+zh,158,0,linju dui zhe ge xiangfa wu gan huiyi hou.,wu gan
+zh,158,1,linju xihuan zhe ge xiangfa huiyi hou.,xihuan
+zh,158,2,linju reai zhe ge xiangfa huiyi hou.,reai
+zh,159,-2,yanjiu zhe taoyan zhe bu dianying jintian.,taoyan
+zh,159,-1,yanjiu zhe bu tai xihuan zhe bu dianying jintian.,bu tai xihuan
+zh,159,0,yanjiu zhe dui zhe bu dianying wu gan jintian.,wu gan
+zh,159,1,yanjiu zhe xihuan zhe bu dianying jintian.,xihuan
+zh,159,2,yanjiu zhe reai zhe bu dianying jintian.,reai

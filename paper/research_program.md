@@ -303,9 +303,34 @@ The first GLT-AFFECT polarity run is complete for 7 multilingual models and 7 la
 - The safe interpretation is that text embeddings represent love and hate as movements away from indifference into emotionally loaded language regions, not as simple antipodal valence directions.
 - The path-additivity sanity check is numerically exact, as expected from vector subtraction, and should not be presented as evidence.
 
+Marker-pooling control:
+
+The first artifact check replaces sentence-level mean pooling with marker-only pooling over the affective lexical marker span. This tests whether the love/hate same-direction result is merely caused by averaging the shared sentence template.
+
+- Experiment script: `scripts/run_glt_affect_marker_pool_control.py`
+- Result directory: `results/experiments/glt_affect_marker_pool_control_results/`
+- Models: 7 multilingual embedding/backbone models.
+- Languages: `en`, `ru`, `zh`.
+- Templates per language: `160`.
+- Marker span recovery: `1.000` for every language/level cell.
+- `neutral -> love` versus `neutral -> hate` mean row cosine:
+  - sentence mean pooling: `0.590`
+  - marker-only pooling: `0.526`
+- Adjacent norm coefficient of variation:
+  - sentence mean pooling: `0.238`
+  - marker-only pooling: `0.203`
+
+Interpretation:
+
+The effect weakens under marker-only pooling but does not disappear. Therefore the first GLT-AFFECT result is not fully explained by sentence-template mean-pooling artifacts. The conservative claim is that a same-direction affective-involvement component survives at the lexical marker level. This remains a text-embedding result, not a claim about real affective experience.
+
+Next control:
+
+Compare the affective scale against non-affective marker scales and random lexical marker ladders under the same pooling pipeline. If neutral/random marker scales show the same positive endpoint geometry, the GLT-AFFECT interpretation must be weakened to a generic lexical-substitution geometry. If affect remains distinct, the affective-involvement interpretation becomes stronger.
+
 Current interpretation:
 
-GLT-AFFECT is promising because it exposes a graded, curved affective geometry rather than another categorical classifier task. It remains text-only language-representation evidence, not a grounded theory of real affect.
+GLT-AFFECT is promising because it exposes a graded, curved affective geometry rather than another categorical classifier task. The marker-only control makes the first signal harder to dismiss, but the program still needs lexical-specificity controls before it can be promoted beyond cautious language-representation evidence.
 
 Longer-term grounding track:
 
