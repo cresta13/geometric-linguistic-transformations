@@ -1,0 +1,35 @@
+{
+  "seed": 20260626,
+  "n_templates_per_scale_language": 120,
+  "pca_dim": 128,
+  "batch_size": 8,
+  "device": "cpu",
+  "force": false,
+  "models": [
+    "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+    "sentence-transformers/LaBSE",
+    "intfloat/multilingual-e5-large",
+    "BAAI/bge-m3",
+    "bert-base-multilingual-cased",
+    "xlm-roberta-base",
+    "distilbert-base-multilingual-cased"
+  ],
+  "languages": [
+    "en",
+    "ru",
+    "zh"
+  ],
+  "scales": [
+    "affect",
+    "size",
+    "attention",
+    "random_label"
+  ],
+  "levels": [
+    -2,
+    -1,
+    0,
+    1,
+    2
+  ]
+}

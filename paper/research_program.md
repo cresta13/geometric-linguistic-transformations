@@ -328,6 +328,37 @@ Next control:
 
 Compare the affective scale against non-affective marker scales and random lexical marker ladders under the same pooling pipeline. If neutral/random marker scales show the same positive endpoint geometry, the GLT-AFFECT interpretation must be weakened to a generic lexical-substitution geometry. If affect remains distinct, the affective-involvement interpretation becomes stronger.
 
+Lexical-specificity control:
+
+The second artifact check compares the affective scale against size, attention, and random-label marker ladders using the same templates, languages, models, and marker-pooling pipeline.
+
+- Experiment script: `scripts/run_glt_affect_lexical_specificity_control.py`
+- Result directory: `results/experiments/glt_affect_lexical_specificity_control_results/`
+- Models: 7 multilingual embedding/backbone models.
+- Languages: `en`, `ru`, `zh`.
+- Scales: `affect`, `size`, `attention`, `random_label`.
+- Templates per scale/language: `120`.
+- Marker span recovery: `1.000` for every scale/language/level cell.
+- `neutral -> +2` versus `neutral -> -2` mean row cosine:
+  - marker-only pooling:
+    - `affect`: `0.524`
+    - `random_label`: `0.486`
+    - `size`: `0.421`
+    - `attention`: `0.418`
+  - sentence mean pooling:
+    - `affect`: `0.590`
+    - `random_label`: `0.504`
+    - `size`: `0.396`
+    - `attention`: `0.361`
+
+Interpretation:
+
+The affect scale is the strongest of the tested ladders, but the random-label ladder is also substantially positive. Therefore the current claim should not be phrased as a uniquely emotional geometry. A safer formulation is that affect shows an excess same-direction endpoint geometry over several lexical controls, while a nontrivial part of the effect is shared with generic lexical replacement.
+
+Immediate statistical follow-up:
+
+Compute paired bootstrap confidence intervals for `affect - random_label`, `affect - size`, and `affect - attention` over matched model/language/template cells. This decides whether the affect-leading result is statistically stable rather than a mean-table artifact.
+
 Current interpretation:
 
 GLT-AFFECT is promising because it exposes a graded, curved affective geometry rather than another categorical classifier task. The marker-only control makes the first signal harder to dismiss, but the program still needs lexical-specificity controls before it can be promoted beyond cautious language-representation evidence.
