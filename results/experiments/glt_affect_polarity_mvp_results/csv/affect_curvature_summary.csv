@@ -1,0 +1,8 @@
+metric,value
+mean_adjacent_norm,4.408168356029355
+cv_adjacent_norm_across_steps,0.22405505712543214
+cos_hate_dislike_to_dislike_neutral,-0.3433790776679026
+cos_dislike_neutral_to_neutral_like,-0.6824996991425144
+cos_neutral_like_to_like_love,-0.27933952151512614
+cos_hate_dislike_to_neutral_like,0.1039425256443495
+cos_dislike_neutral_to_like_love,0.1774110467391735

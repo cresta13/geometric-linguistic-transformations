@@ -1,0 +1,33 @@
+{
+  "seed": 20260625,
+  "n_templates_per_language": 160,
+  "pca_dim": 128,
+  "batch_size": 8,
+  "device": "cpu",
+  "force": false,
+  "models": [
+    "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+    "sentence-transformers/LaBSE",
+    "intfloat/multilingual-e5-large",
+    "BAAI/bge-m3",
+    "bert-base-multilingual-cased",
+    "xlm-roberta-base",
+    "distilbert-base-multilingual-cased"
+  ],
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "ru",
+    "zh",
+    "ar"
+  ],
+  "levels": [
+    -2,
+    -1,
+    0,
+    1,
+    2
+  ]
+}

@@ -814,6 +814,100 @@ New follow-up:
 
 Add an affine/operator-valued Track 2 experiment comparing additive delta-only, multiplicative matrix-only, and affine map variants. Use morphology as a possible sanity benchmark: if the pipeline cannot recover structure in a relation class where Linear Relational Decoding reports strong linearity, the method needs revision before broader linguistic-operator claims.
 
+## 2026-06-25: GLT-AFFECT planning note
+
+We added a new planned track:
+
+**GLT-AFFECT: Graded Affective Transformation Geometry**
+
+The core shift is from categorical operators to graded semantic axes. The first candidate axis is emotional polarity:
+
+```text
+hate (-2) -> dislike (-1) -> indifferent (0) -> like (+1) -> love (+2)
+```
+
+This gives a way to test linearity, curvature, saturation, and opposition directly. The important methodological correction is that antisymmetry is not evidence: `delta(A -> B) = -delta(B -> A)` follows from subtraction. It can stay only as a sanity check.
+
+The second correction is about affect/negation. A tempting example says:
+
+```text
+affect then negation: "I love you" -> "I do not love you"
+negation then affect: "I do not love you" -> "I hate you"
+```
+
+This is not a valid commutator unless both paths are defined as transformations toward comparable endpoints. "I do not love you" and "I hate you" are different affective states, not two equivalent endpoint orderings.
+
+The first GLT-AFFECT experiment should therefore be narrow:
+
+- text-only emotional polarity scale
+- adjacent and non-adjacent deltas
+- linearity and curvature tests
+- explicit statement that we test language-representation geometry, not real affective grounding
+
+Grounding is a separate future step. Pyrfume and psychophysical odor datasets make it possible to compare text-derived odor descriptor geometry with independent perceptual dissimilarity matrices, but that belongs to a later GLT-AFFECT-GROUNDING subtrack.
+
+## 2026-06-25: GLT-AFFECT polarity MVP
+
+We ran the first text-only GLT-AFFECT experiment.
+
+Script:
+
+- `scripts/run_glt_affect_polarity_mvp.py`
+
+Outputs:
+
+- `results/experiments/glt_affect_polarity_mvp_results/`
+
+Design:
+
+- 7 multilingual models
+- 7 languages
+- 160 templates per language
+- 5 affective levels:
+
+```text
+hate (-2) -> dislike (-1) -> indifferent (0) -> like (+1) -> love (+2)
+```
+
+Main adjacent step norms:
+
+| Step | Mean delta norm |
+|---|---:|
+| `hate -> dislike` | `3.896` |
+| `dislike -> indifferent` | `5.046` |
+| `indifferent -> like` | `5.377` |
+| `like -> love` | `3.314` |
+
+Opposition test:
+
+| Comparison | Value |
+|---|---:|
+| row cosine, `neutral -> love` versus `neutral -> hate` | `0.614` |
+| centroid cosine | `0.613` |
+| norm ratio love/hate | `1.053` |
+
+Curvature summary:
+
+| Metric | Value |
+|---|---:|
+| adjacent-step CV | `0.224` |
+| cosine `hate->dislike` vs `dislike->neutral` | `-0.343` |
+| cosine `dislike->neutral` vs `neutral->like` | `-0.682` |
+| cosine `neutral->like` vs `like->love` | `-0.279` |
+
+Interpretation:
+
+The affective polarity scale is not a straight line in embedding space. The middle steps are larger than the edge steps, and love/hate are not antipodal directions. A better first interpretation is involvement geometry: love and hate both move away from indifferent language toward emotionally loaded regions, while polarity is not represented as a simple one-dimensional sign.
+
+The line-additivity sanity check produced near-zero residuals, as it should from vector subtraction. This confirms the arithmetic but is not a scientific result.
+
+Next GLT-AFFECT steps:
+
+- redesign templates to reduce lexical asymmetry across languages
+- add more graded emotion axes, such as calm/anxious or trust/distrust
+- add bootstrapped confidence intervals over templates
+- later, compare text-derived descriptor geometry with non-textual psychophysical anchors through Pyrfume
+
 ## 2026-06-24: Structure-constants closure audit
 
 We ran the first GLT-MOLT-style bridge experiment.
@@ -869,3 +963,64 @@ Jacobi-like closure result:
 Interpretation:
 
 This is not a Lie algebra proof, but it is the first result that resembles structure constants rather than only endpoint signed sums. Pairwise commutators are partially compressible into the span of primitive operator centroids better than random subspaces. The next step should replace centroid displacement operators with learned affine/multiplicative maps `W_op x + b_op`, then compute matrix commutators directly.
+
+## 2026-06-24: GLT-MOLT affine operator pilot
+
+We ran the first matrix/operator version of the Track 2 audit.
+
+Script:
+
+- `scripts/run_glt_molt_affine_operator_audit.py`
+
+Outputs:
+
+- `results/experiments/glt_molt_affine_operator_results/`
+
+Design:
+
+- 7 multilingual models
+- 7 languages
+- 160 templates per language
+- PCA dimension 128
+- ridge alpha `10.0`
+- 200 random-subspace nulls
+
+The audit compares three operator families:
+
+- additive centroid maps: `y ~= x + delta_op`
+- linear matrix maps: `y ~= W_op x`
+- affine matrix maps: `y ~= W_op x + b_op`
+
+One-step target reconstruction:
+
+| Method | Mean target cosine |
+|---|---:|
+| additive | `0.895` |
+| linear | `0.735` |
+| affine | `0.693` |
+
+Ordered composition target prediction:
+
+| Method | Mean AB cosine | Mean BA cosine |
+|---|---:|---:|
+| additive | `0.809` | `0.823` |
+| linear | `0.595` | `0.617` |
+| affine | `0.476` | `0.522` |
+
+Matrix closure:
+
+| Method | Mean closure residual | Random-subspace null |
+|---|---:|---:|
+| affine | `0.965` | `0.9999` |
+| linear | `0.970` | `0.9999` |
+
+Matrix Jacobi-like residual:
+
+| Method | Mean relative Jacobi operator norm |
+|---|---:|
+| affine | `0.063` |
+| linear | `0.067` |
+
+Interpretation:
+
+This is a clean split. Additive deltas are better for hitting target endpoints, while learned matrix operators are worse at prediction but produce cleaner algebraic diagnostics. This does not mean the matrices are better linguistic models; ridge regularization may make them algebraically smooth. The next GLT-MOLT step should sweep `ridge_alpha` and report the tradeoff among target cosine, commutator norm, closure residual, and Jacobi residual.

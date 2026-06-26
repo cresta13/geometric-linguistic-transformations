@@ -12,6 +12,7 @@ Current tracks:
 - **GLT-SPOT**: signed-permutation operator tests for ordered composition.
 - **GLT-XFER**: cross-model transformation-transfer stress tests.
 - **GLT-MOLT**: planned matrix/operator extension motivated by Linear Relational Decoding.
+- **GLT-AFFECT**: planned graded affective-transformation geometry, starting with text-only emotional polarity scales and reserving sensory grounding claims for independent perceptual data.
 
 ## Strategic narrative
 
@@ -123,6 +124,19 @@ y ~= W_op x + b_op
 ```
 
 and compare additive delta-only, multiplicative matrix-only, and affine map variants. This would allow commutators and Jacobi residuals to be computed directly over learned operators instead of endpoint sums.
+
+GLT-MOLT pilot result:
+
+The first affine/operator audit is now complete for 7 multilingual models and 7 languages. It compares additive centroid maps, linear matrix maps, and affine `W_op x + b_op` maps for `N,Q,M,T`.
+
+- Additive maps predict one-step targets best (`mean target cosine = 0.895`).
+- Linear and affine maps are worse for target reconstruction (`0.735` and `0.693`).
+- Matrix commutators show weak but consistent closure-like compression against random-subspace nulls (`linear 0.970` and `affine 0.965` versus random null `~0.9999`).
+- Matrix Jacobi-like residuals are very small (`linear 0.067`, `affine 0.063`), but this should be interpreted cautiously because ridge-regularized maps may be algebraically smoother than they are predictively useful.
+
+Current interpretation:
+
+Additive deltas are better for endpoint reconstruction, while matrix operators are worse predictors but produce cleaner algebraic diagnostics. This split is useful: GLT-DV/GLT-SPOT and GLT-MOLT answer different questions.
 
 ## Track 3: Cross-model transformation transfer
 
@@ -239,6 +253,68 @@ Scientific payoff:
 
 This would quantify the complexity of each linguistic operator and explain why capacity curves keep improving with more examples.
 
+## Track 7: GLT-AFFECT, graded affective transformation geometry
+
+Working title:
+
+**GLT-AFFECT: Graded Affective Transformation Geometry**
+
+Central hypothesis:
+
+Some semantic transformations are not binary switches but graded axes. Emotional polarity is the first controlled case:
+
+```text
+hate (-2) -> dislike (-1) -> indifferent (0) -> like (+1) -> love (+2)
+```
+
+This turns the project from class separability toward measuring the shape of a semantic axis:
+
+- linearity: does `indifferent -> like` plus `like -> love` approximate `indifferent -> love`?
+- curvature: are adjacent step norms and directions stable across the scale?
+- saturation: are extreme steps compressed or expanded relative to middle steps?
+- opposition: is `neutral -> love` approximately opposite to `neutral -> hate`?
+
+Methodological guardrails:
+
+- Antisymmetry of `delta(A -> B) = -delta(B -> A)` is a subtraction identity and should only be used as a sanity check.
+- Affect/negation examples must not be treated as commutators until both orders are defined as paths to comparable endpoints. "I do not love you" and "I hate you" are different semantic states, not interchangeable endpoints.
+- Text-only models can test the geometry of language about affective states, not the lived affective or sensory reality itself.
+- Grounding claims require independent non-textual anchors, such as psychophysical odor datasets.
+
+MVP:
+
+1. Build a text-only graded affect dataset over one polarity scale: hate, dislike, indifferent, like, love.
+2. Use multiple subjects, objects, and contexts while keeping lexical leakage explicit and auditable.
+3. Compute adjacent and non-adjacent delta vectors.
+4. Test linearity, curvature, saturation, and opposition under model/language variation.
+5. Report the result as language-representation geometry, not real-world affect grounding.
+
+MVP result:
+
+The first GLT-AFFECT polarity run is complete for 7 multilingual models and 7 languages.
+
+- Adjacent affective step norms are not uniform:
+  - `hate -> dislike`: `3.90`
+  - `dislike -> indifferent`: `5.05`
+  - `indifferent -> like`: `5.38`
+  - `like -> love`: `3.31`
+- The coefficient of variation across adjacent step norms is `0.224`, suggesting a non-uniform scale.
+- `neutral -> love` and `neutral -> hate` are not opposite directions; their mean row cosine is positive (`0.614`) with centroid cosine `0.613`.
+- The safe interpretation is that text embeddings represent love and hate as movements away from indifference into emotionally loaded language regions, not as simple antipodal valence directions.
+- The path-additivity sanity check is numerically exact, as expected from vector subtraction, and should not be presented as evidence.
+
+Current interpretation:
+
+GLT-AFFECT is promising because it exposes a graded, curved affective geometry rather than another categorical classifier task. It remains text-only language-representation evidence, not a grounded theory of real affect.
+
+Longer-term grounding track:
+
+Use Pyrfume and related psychophysical odor datasets to compare text-derived descriptor geometry against independent perceptual dissimilarity matrices. This is a separate GLT-AFFECT-GROUNDING subtrack, not part of the first text-only MVP.
+
+Scientific payoff:
+
+GLT-AFFECT introduces the first graded semantic axis in the project. If it works, it gives a natural way to study deformation, curvature, and saturation in embedding space without immediately relying on binary operator composition.
+
 ## Iterative logic
 
 The research direction is:
@@ -305,9 +381,13 @@ Negative results remain part of the research record.
    - learn `W_op`, `b_op` maps for `N,Q,M,T`
    - compare additive delta-only, multiplicative matrix-only, and affine `W_op x + b_op`
    - compute matrix commutators and Jacobi residuals directly
-15. Build an endpoint-balanced multilingual generator and re-run the 7-language audit.
-16. Explain the `NQM` versus `QMT` reversal between the English/decoder table and the multilingual max audit.
-17. Regenerate a dated PDF packet after every major run.
+15. Add the GLT-AFFECT text-only MVP:
+   - graded emotional polarity scale
+   - linearity and curvature tests
+   - no affect/negation commutator claim until endpoints are formally controlled
+16. Build an endpoint-balanced multilingual generator and re-run the 7-language audit.
+17. Explain the `NQM` versus `QMT` reversal between the English/decoder table and the multilingual max audit.
+18. Regenerate a dated PDF packet after every major run.
 
 ### Medium term
 

@@ -1,0 +1,8 @@
+model,language,comparison,mean_cosine,centroid_cosine,mean_norm_pos,mean_norm_neg,norm_ratio_pos_over_neg
+sentence-transformers/paraphrase-multilingual-mpnet-base-v2,ar,neutral_to_love_vs_neutral_to_hate,0.7802228331565857,0.7827789187431335,0.7293902635574341,0.713078498840332,1.022875189781189
+sentence-transformers/paraphrase-multilingual-mpnet-base-v2,de,neutral_to_love_vs_neutral_to_hate,-0.06767518073320389,-0.16539764404296875,1.7001644372940063,1.9831784963607788,0.8572927117347717
+sentence-transformers/paraphrase-multilingual-mpnet-base-v2,en,neutral_to_love_vs_neutral_to_hate,0.33002448081970215,0.36358317732810974,3.2317938804626465,2.912216901779175,1.109736680984497
+sentence-transformers/paraphrase-multilingual-mpnet-base-v2,es,neutral_to_love_vs_neutral_to_hate,0.21990878880023956,0.22850443422794342,2.537479877471924,2.311965227127075,1.097542405128479
+sentence-transformers/paraphrase-multilingual-mpnet-base-v2,fr,neutral_to_love_vs_neutral_to_hate,0.3146924376487732,0.31692934036254883,2.5225157737731934,2.16579008102417,1.164709210395813
+sentence-transformers/paraphrase-multilingual-mpnet-base-v2,ru,neutral_to_love_vs_neutral_to_hate,0.5836498141288757,0.5809247493743896,1.098120927810669,1.0713125467300415,1.0250238180160522
+sentence-transformers/paraphrase-multilingual-mpnet-base-v2,zh,neutral_to_love_vs_neutral_to_hate,0.3904999792575836,0.3803458511829376,0.9913089871406555,0.9691845178604126,1.0228278636932373
