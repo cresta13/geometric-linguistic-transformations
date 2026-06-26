@@ -359,6 +359,27 @@ Immediate statistical follow-up:
 
 Compute paired bootstrap confidence intervals for `affect - random_label`, `affect - size`, and `affect - attention` over matched model/language/template cells. This decides whether the affect-leading result is statistically stable rather than a mean-table artifact.
 
+Bootstrap contrast result:
+
+The paired bootstrap follow-up is complete over matched model/language/template cells with `20,000` bootstrap resamples.
+
+- Experiment script: `scripts/run_glt_affect_lexical_contrast_bootstrap.py`
+- Result directory: `results/experiments/glt_affect_lexical_contrast_bootstrap_results/`
+- Input rows: `20,160`.
+- Contrast rows: `15,120`.
+- Global marker-only contrasts:
+  - `affect - random_label`: mean `0.038`, 95% CI `[0.031, 0.045]`
+  - `affect - size`: mean `0.104`, 95% CI `[0.095, 0.112]`
+  - `affect - attention`: mean `0.106`, 95% CI `[0.098, 0.114]`
+- Global sentence mean-pooling contrasts:
+  - `affect - random_label`: mean `0.086`, 95% CI `[0.076, 0.095]`
+  - `affect - size`: mean `0.194`, 95% CI `[0.184, 0.204]`
+  - `affect - attention`: mean `0.229`, 95% CI `[0.220, 0.238]`
+
+Interpretation:
+
+The contrast result supports a small but stable affect-specific excess over generic random-label replacement under marker-only pooling. The excess is much smaller than the raw affect signal, so GLT-AFFECT should be framed as an affect-leading lexical geometry result with a substantial generic lexical-substitution component.
+
 Current interpretation:
 
 GLT-AFFECT is promising because it exposes a graded, curved affective geometry rather than another categorical classifier task. The marker-only control makes the first signal harder to dismiss, but the program still needs lexical-specificity controls before it can be promoted beyond cautious language-representation evidence.

@@ -1,0 +1,5 @@
+{
+  "seed": 20260626,
+  "n_bootstrap": 20000,
+  "input": "results\\experiments\\glt_affect_lexical_specificity_control_results\\csv\\lexical_opposition_all_models.csv"
+}
