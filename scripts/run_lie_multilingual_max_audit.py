@@ -20,7 +20,7 @@ from sklearn.preprocessing import normalize
 from transformers import AutoModel, AutoTokenizer
 
 
-OUT_DIR = Path("results/experiments/lie_multilingual_max_results")
+OUT_DIR = Path(os.getenv("LIE_MULTI_OUT_DIR", "results/experiments/lie_multilingual_max_results"))
 CSV_DIR = OUT_DIR / "csv"
 FIG_DIR = OUT_DIR / "figures"
 CHECKPOINT_DIR = OUT_DIR / "checkpoints"
