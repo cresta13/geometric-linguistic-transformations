@@ -25,6 +25,7 @@ All runnable research scripts live in this directory.
 - `run_lie_semantic_equivalence_control.py`: semantic-equivalence control.
 - `run_lie_composition_grammar_controls.py`: grammar-generated pairwise composition control for `N,Q,M,T`, with endpoint-only classifiers and commutator norm nulls.
 - `run_lie_multilingual_max_audit.py`: multilingual signed-permutation and pairwise composition audit with held-out-language endpoint controls. Use `LIE_MULTI_OUT_DIR` for scale-up reruns without overwriting the canonical 2026-06-23 result.
+- `run_lie_multilingual_triple_endpoint_controls.py`: held-out-language third-order endpoint-control classifiers for source-only, endpoint-only, endpoint-concat, delta-concat, and signed endpoint vectors.
 - `build_signed_permutation_multiple_testing.py`: table-level multiple-testing correction.
 
 ## UPAT / Cross-Model

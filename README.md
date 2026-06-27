@@ -22,6 +22,7 @@ This is an active research repository, not a submission-ready paper. The current
 - UPAT hard-holdout results are reported as a boundary condition where `y_only` can beat `delta`.
 - Lie-style antisymmetry is not evidence; it is a tautological implementation check.
 - Third-order signed permutation coherence is framed as a diagnostic, not as a formal Lie algebra or Jacobi identity.
+- The 2026-06-27 extended multilingual GLT-SPOT audit scales the signed-permutation test to 7 models, 7 languages, 96 templates per language, and 5000 signed-null repeats; all four triples remain below null in all 49 model-language cells, while endpoint-derived controls remain a live limitation.
 - The 2026-06-24 endpoint-subspace residualization audit shows that the multilingual signed-permutation signal largely survives removal of endpoint-derived sign, triple-label, and endpoint-position probe subspaces.
 - Procrustes/cross-model transfer now survives `N=1000` null controls and held-out anchor alignment-size controls. RISE/MDV-style prototype comparisons, non-leaky hybrid feature-transfer, and spherical delta steering tests are now added; current results separate target-cosine accuracy from transformation-neighborhood retrieval, so Track 3 remains a stress-test/comparison track pending calibration, confidence intervals, and anchor-domain robustness.
 

@@ -101,6 +101,13 @@ S(A,B,C) = ABC + BCA + CAB - ACB - CBA - BAC
   - global mean ratios to signed-null: `NQM=0.580`, `QMT=0.620`, `NQT=0.701`, `NMT=0.772`
   - source-only held-out-language controls are chance-like (`macro F1=0.0476`), but endpoint/delta/commutator controls remain high, so endpoint artifacts are not solved
   - cross-language centroid consistency is moderate and high-variance (`mean cosine ~= 0.32`)
+- A 2026-06-27 extended multilingual GLT-SPOT audit scales the same diagnostic to 7 models, 7 languages, 96 templates per language, PCA dimension 128, and 5000 signed-null repeats:
+  - added XLM-RoBERTa and DistilBERT multilingual to the previous 5-model audit
+  - all four tested triples remain below signed-null in all `49/49` model-language cells
+  - global mean ratios to signed-null: `NQM=0.571`, `QMT=0.620`, `NQT=0.700`, `NMT=0.777`
+  - cross-language centroid consistency remains moderate and high-variance (`triple_signed mean cosine ~= 0.255`)
+  - source-only held-out-language controls remain chance-like (`macro F1=0.0476`), while endpoint/delta/commutator controls remain high
+  - this strengthens the controlled signed-permutation coherence claim, but does not solve endpoint-derived leakage
 - A 2026-06-24 structure-constants closure audit now estimates primitive operator centroids for `N,Q,M,T`, projects pairwise commutators into their span, and compares closure residuals to 1000 random-subspace nulls:
   - nonzero overall mean closure residual is below random-subspace null (`0.885` versus `0.984`)
   - strongest Jacobi-like closure triples are `NMT` (`0.309`) and `QMT` (`0.333`)
