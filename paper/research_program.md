@@ -108,6 +108,13 @@ S(A,B,C) = ABC + BCA + CAB - ACB - CBA - BAC
   - cross-language centroid consistency remains moderate and high-variance (`triple_signed mean cosine ~= 0.255`)
   - source-only held-out-language controls remain chance-like (`macro F1=0.0476`), while endpoint/delta/commutator controls remain high
   - this strengthens the controlled signed-permutation coherence claim, but does not solve endpoint-derived leakage
+- A 2026-06-27 third-order endpoint-control audit tests whether triple identity is recoverable from third-order endpoints under held-out-language transfer:
+  - models/languages/templates match the extended multilingual audit (`7 x 7 x 96`)
+  - source-only remains weak (`macro F1=0.100`, chance for four triples is `0.250` accuracy but macro F1 is low due to degenerate predictions)
+  - signed endpoint/delta sums are highly predictive (`macro F1=0.708`)
+  - endpoint concatenation is stronger (`macro F1=0.835`)
+  - delta concatenation is strongest (`macro F1=0.876`)
+  - this confirms that triple identity is strongly encoded in endpoint/delta geometry, so the current GLT-SPOT evidence is not endpoint-independent
 - A 2026-06-24 structure-constants closure audit now estimates primitive operator centroids for `N,Q,M,T`, projects pairwise commutators into their span, and compares closure residuals to 1000 random-subspace nulls:
   - nonzero overall mean closure residual is below random-subspace null (`0.885` versus `0.984`)
   - strongest Jacobi-like closure triples are `NMT` (`0.309`) and `QMT` (`0.333`)

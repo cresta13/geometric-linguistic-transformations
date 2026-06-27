@@ -374,10 +374,11 @@ def mean_pool(hidden, mask):
 
 @torch.no_grad()
 def embed_texts(model_name: str, texts: list[str], device: str, batch_size: int) -> np.ndarray:
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
+    trust_remote_code = os.getenv("LIE_TRUST_REMOTE_CODE", "0") == "1"
+    tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=trust_remote_code)
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token or tokenizer.unk_token or "[PAD]"
-    model = AutoModel.from_pretrained(model_name).to(device)
+    model = AutoModel.from_pretrained(model_name, trust_remote_code=trust_remote_code).to(device)
     model.eval()
 
     prefix = "query: " if "e5" in model_name.lower() else ""
