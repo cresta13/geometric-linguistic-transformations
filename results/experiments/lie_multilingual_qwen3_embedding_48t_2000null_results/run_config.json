@@ -1,0 +1,21 @@
+{
+  "seed": 20260622,
+  "n_templates_per_language": 48,
+  "n_null": 2000,
+  "pca_dim": 128,
+  "batch_size": 1,
+  "device": "cpu",
+  "force": true,
+  "models": [
+    "Qwen/Qwen3-Embedding-0.6B"
+  ],
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "ru",
+    "zh",
+    "ar"
+  ]
+}

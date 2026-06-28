@@ -115,6 +115,11 @@ S(A,B,C) = ABC + BCA + CAB - ACB - CBA - BAC
   - endpoint concatenation is stronger (`macro F1=0.835`)
   - delta concatenation is strongest (`macro F1=0.876`)
   - this confirms that triple identity is strongly encoded in endpoint/delta geometry, so the current GLT-SPOT evidence is not endpoint-independent
+- A 2026-06-28 new-model GLT-SPOT check tests newer multilingual embedding models at 48 templates per language and 2000 signed-null repeats:
+  - `intfloat/multilingual-e5-large-instruct`: all four triples below null in all `7/7` language cells (`NQM=0.615`, `QMT=0.649`, `NQT=0.739`, `NMT=0.780`)
+  - `Qwen/Qwen3-Embedding-0.6B`: all four triples below null in all `7/7` language cells (`NQM=0.539`, `QMT=0.639`, `NQT=0.692`, `NMT=0.727`)
+  - Qwen required casting pooled embeddings to `float32` before NumPy conversion because the model returns `bfloat16` tensors on CPU
+  - `Alibaba-NLP/gte-multilingual-base` and `jinaai/jina-embeddings-v3` are not reported here; the exploratory combined run terminated during `gte-multilingual-base` before producing a completed checkpoint
 - A 2026-06-24 structure-constants closure audit now estimates primitive operator centroids for `N,Q,M,T`, projects pairwise commutators into their span, and compares closure residuals to 1000 random-subspace nulls:
   - nonzero overall mean closure residual is below random-subspace null (`0.885` versus `0.984`)
   - strongest Jacobi-like closure triples are `NMT` (`0.309`) and `QMT` (`0.333`)

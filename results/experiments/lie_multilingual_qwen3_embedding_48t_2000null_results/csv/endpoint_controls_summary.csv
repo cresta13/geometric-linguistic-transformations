@@ -1,0 +1,7 @@
+model,feature,mean_macro_f1,min_macro_f1,n
+Qwen/Qwen3-Embedding-0.6B,ab_delta_only,0.701874954086675,0.2272655987620849,7
+Qwen/Qwen3-Embedding-0.6B,ab_endpoint_only,0.6344724984707842,0.1412235563178959,7
+Qwen/Qwen3-Embedding-0.6B,ba_delta_only,0.6770557634091764,0.1296750826109703,7
+Qwen/Qwen3-Embedding-0.6B,ba_endpoint_only,0.5425669858654045,0.0981493132012163,7
+Qwen/Qwen3-Embedding-0.6B,commutator_delta,0.5858021804370062,0.0953601687211374,7
+Qwen/Qwen3-Embedding-0.6B,source_only,0.0476190476190476,0.0476190476190476,7

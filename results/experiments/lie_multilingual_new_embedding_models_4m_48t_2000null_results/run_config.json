@@ -1,0 +1,24 @@
+{
+  "seed": 20260622,
+  "n_templates_per_language": 48,
+  "n_null": 2000,
+  "pca_dim": 128,
+  "batch_size": 1,
+  "device": "cpu",
+  "force": true,
+  "models": [
+    "intfloat/multilingual-e5-large-instruct",
+    "Alibaba-NLP/gte-multilingual-base",
+    "jinaai/jina-embeddings-v3",
+    "Qwen/Qwen3-Embedding-0.6B"
+  ],
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "ru",
+    "zh",
+    "ar"
+  ]
+}

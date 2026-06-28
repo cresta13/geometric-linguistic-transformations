@@ -388,7 +388,7 @@ def embed_texts(model_name: str, texts: list[str], device: str, batch_size: int)
         enc = tokenizer(batch, padding=True, truncation=True, max_length=128, return_tensors="pt").to(device)
         out = model(**enc)
         pooled = mean_pool(out.last_hidden_state, enc["attention_mask"])
-        embeddings.append(pooled.detach().cpu().numpy())
+        embeddings.append(pooled.detach().float().cpu().numpy())
     del model
     gc.collect()
     if device == "cuda":
