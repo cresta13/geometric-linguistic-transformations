@@ -120,6 +120,17 @@ S(A,B,C) = ABC + BCA + CAB - ACB - CBA - BAC
   - `Qwen/Qwen3-Embedding-0.6B`: all four triples below null in all `7/7` language cells (`NQM=0.539`, `QMT=0.639`, `NQT=0.692`, `NMT=0.727`)
   - Qwen required casting pooled embeddings to `float32` before NumPy conversion because the model returns `bfloat16` tensors on CPU
   - `Alibaba-NLP/gte-multilingual-base` and `jinaai/jina-embeddings-v3` are not reported here; the exploratory combined run terminated during `gte-multilingual-base` before producing a completed checkpoint
+- A 2026-06-28 new-model endpoint-subspace residualization audit then removes endpoint-derived linear rowspaces from the same newer model family:
+  - models: `intfloat/multilingual-e5-large-instruct`, `Qwen/Qwen3-Embedding-0.6B`
+  - templates per language: `96`
+  - probe evidence confirms endpoint-derived leakage is present (`triple_label_from_single_endpoint_delta macro F1=0.781`)
+  - after removing triple-label, endpoint-position, and cyclic-sign rowspaces together, all triples remain below exact sign-null in all `14/14` model-language cells
+  - global raw versus remove-all ratios:
+    - `NQM`: `0.556 -> 0.559`
+    - `QMT`: `0.621 -> 0.629`
+    - `NQT`: `0.699 -> 0.704`
+    - `NMT`: `0.739 -> 0.738`
+  - this is the strongest current evidence that the GLT-SPOT below-null signal is not only a linear endpoint-label artifact, while still falling short of a formal Lie-algebra proof
 - A 2026-06-24 structure-constants closure audit now estimates primitive operator centroids for `N,Q,M,T`, projects pairwise commutators into their span, and compares closure residuals to 1000 random-subspace nulls:
   - nonzero overall mean closure residual is below random-subspace null (`0.885` versus `0.984`)
   - strongest Jacobi-like closure triples are `NMT` (`0.309`) and `QMT` (`0.333`)
