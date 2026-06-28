@@ -26,6 +26,7 @@ All runnable research scripts live in this directory.
 - `run_lie_composition_grammar_controls.py`: grammar-generated pairwise composition control for `N,Q,M,T`, with endpoint-only classifiers and commutator norm nulls.
 - `run_lie_multilingual_max_audit.py`: multilingual signed-permutation and pairwise composition audit with held-out-language endpoint controls. Use `LIE_MULTI_OUT_DIR` for scale-up reruns without overwriting the canonical 2026-06-23 result; set `LIE_TRUST_REMOTE_CODE=1` for newer Hugging Face embedding models that require custom model code. Pooled tensors are cast to `float32` before NumPy conversion so CPU `bfloat16` models such as Qwen3 embeddings can be audited.
 - `run_lie_multilingual_triple_endpoint_controls.py`: held-out-language third-order endpoint-control classifiers for source-only, endpoint-only, endpoint-concat, delta-concat, and signed endpoint vectors.
+- `run_lie_endpoint_subspace_residualization_audit.py`: removes endpoint-derived triple-label, endpoint-position, and cyclic-sign rowspaces before recomputing signed-permutation ratios. Use `LIE_SUBSPACE_OUT_DIR` for separate reruns.
 - `build_signed_permutation_multiple_testing.py`: table-level multiple-testing correction.
 
 ## UPAT / Cross-Model

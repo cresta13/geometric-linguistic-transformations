@@ -27,7 +27,7 @@ from run_lie_endpoint_residualization_audit import (  # noqa: E402
 from run_lie_multilingual_max_audit import LANGS, TRIPLE_OPS, build_dataset, embed_texts  # noqa: E402
 
 
-OUT_DIR = Path("results/experiments/lie_endpoint_subspace_residualization_results")
+OUT_DIR = Path(os.getenv("LIE_SUBSPACE_OUT_DIR", "results/experiments/lie_endpoint_subspace_residualization_results"))
 CSV_DIR = OUT_DIR / "csv"
 FIG_DIR = OUT_DIR / "figures"
 CHECKPOINT_DIR = OUT_DIR / "checkpoints"
