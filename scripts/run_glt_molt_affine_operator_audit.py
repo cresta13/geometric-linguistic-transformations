@@ -20,7 +20,7 @@ from run_lie_multilingual_max_audit import LANGS, PAIR_OPS, embed_texts, fit_pca
 from run_lie_structure_constants_audit import OPS, build_structure_dataset  # noqa: E402
 
 
-OUT_DIR = Path("results/experiments/glt_molt_affine_operator_results")
+OUT_DIR = Path(os.getenv("GLT_MOLT_OUT_DIR", "results/experiments/glt_molt_affine_operator_results"))
 CSV_DIR = OUT_DIR / "csv"
 FIG_DIR = OUT_DIR / "figures"
 CKPT_DIR = OUT_DIR / "checkpoints"
