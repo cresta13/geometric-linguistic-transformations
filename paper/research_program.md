@@ -131,6 +131,17 @@ S(A,B,C) = ABC + BCA + CAB - ACB - CBA - BAC
     - `NQT`: `0.699 -> 0.704`
     - `NMT`: `0.739 -> 0.738`
   - this is the strongest current evidence that the GLT-SPOT below-null signal is not only a linear endpoint-label artifact, while still falling short of a formal Lie-algebra proof
+- A 2026-06-29 9-model endpoint-subspace residualization audit extends this linear-control layer to older and newer multilingual embedding models:
+  - models: paraphrase-multilingual-mpnet-base-v2, LaBSE, multilingual-e5-large, BGE-M3, mBERT, XLM-RoBERTa, DistilBERT multilingual, multilingual-e5-large-instruct, and Qwen3-Embedding-0.6B
+  - languages: English, Spanish, French, German, Russian, Chinese, Arabic
+  - templates per language: `96`; PCA dimension: `128`
+  - after removing triple-label, endpoint-position, and cyclic-sign rowspaces together, all four triples remain below exact signed-null in all `63/63` model-language cells
+  - global raw versus remove-all ratios:
+    - `NQM`: `0.549 -> 0.547`
+    - `QMT`: `0.602 -> 0.615`
+    - `NQT`: `0.684 -> 0.685`
+    - `NMT`: `0.756 -> 0.755`
+  - endpoint-derived information remains measurable (`triple_label_from_single_endpoint_delta macro F1=0.765`), so the result should be read as robustness to these linear subspace removals rather than endpoint independence
 - A 2026-06-24 structure-constants closure audit now estimates primitive operator centroids for `N,Q,M,T`, projects pairwise commutators into their span, and compares closure residuals to 1000 random-subspace nulls:
   - nonzero overall mean closure residual is below random-subspace null (`0.885` versus `0.984`)
   - strongest Jacobi-like closure triples are `NMT` (`0.309`) and `QMT` (`0.333`)

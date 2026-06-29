@@ -1,0 +1,4 @@
+probe,mean_macro_f1,min_macro_f1,max_macro_f1,mean_chance,mean_subspace_rank,n
+cyclic_vs_anticyclic_from_endpoint_delta,0.5260254882242408,0.3333333333333333,0.6557345183729947,0.5,1.0,63
+endpoint_position_from_endpoint_delta,0.28280277206439497,0.0768615352552438,0.4734232758856353,0.1666666666666666,6.0,63
+triple_label_from_single_endpoint_delta,0.7646497362498333,0.3270613029703665,0.999131941828046,0.25,4.0,63

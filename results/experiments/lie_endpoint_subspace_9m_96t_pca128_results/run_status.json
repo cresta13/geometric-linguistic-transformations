@@ -1,0 +1,15 @@
+{
+  "finished_at": "Mon Jun 29 02:09:23 2026",
+  "failures": [],
+  "completed_markers": [
+    "BAAI__bge_m3.done.json",
+    "bert_base_multilingual_cased.done.json",
+    "distilbert_base_multilingual_cased.done.json",
+    "intfloat__multilingual_e5_large.done.json",
+    "intfloat__multilingual_e5_large_instruct.done.json",
+    "Qwen__Qwen3_Embedding_0.6B.done.json",
+    "sentence_transformers__LaBSE.done.json",
+    "sentence_transformers__paraphrase_multilingual_mpnet_base_v2.done.json",
+    "xlm_roberta_base.done.json"
+  ]
+}

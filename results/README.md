@@ -37,6 +37,11 @@ Important subdirectories:
   - `csv/endpoint_controls_summary.csv`: held-out-language source/endpoint/delta/commutator controls.
   - `csv/cross_language_centroid_summary.csv`: cross-language centroid-consistency summary.
   - `figures/01_multilingual_signed_permutation_ratios.png`, `figures/02_triple_global_ratio_summary.png`, `figures/03_endpoint_control_macro_f1.png`, and `figures/04_cross_language_centroid_consistency.png`: compact figures for the multilingual audit.
+- `lie_endpoint_subspace_9m_96t_pca128_results/`
+  - `RUN_SUMMARY.md`: 2026-06-29 9-model endpoint-subspace residualization summary.
+  - `csv/subspace_residualized_global_summary.csv`: global raw and residualized signed-null ratios across 9 models, 7 languages, and 4 triples.
+  - `csv/endpoint_subspace_probe_summary.csv`: endpoint-derived probe checks for triple label, endpoint position, and cyclic sign.
+  - `figures/01_subspace_residualization_ratios.png`: compact residualization-ratio figure.
 - `lie_composition_decoder_results/`
 - `lie_algebraic_identities_results/`
 - `lie_algebraic_identities_decoder_results/`
