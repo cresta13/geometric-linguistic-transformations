@@ -42,6 +42,13 @@ Important subdirectories:
   - `csv/subspace_residualized_global_summary.csv`: global raw and residualized signed-null ratios across 9 models, 7 languages, and 4 triples.
   - `csv/endpoint_subspace_probe_summary.csv`: endpoint-derived probe checks for triple label, endpoint position, and cyclic sign.
   - `figures/01_subspace_residualization_ratios.png`: compact residualization-ratio figure.
+- `glt_molt_affine_operator_9m_160t_300null_results/`
+  - `RUN_SUMMARY.md`: 2026-06-29 9-model GLT-MOLT affine/operator summary.
+  - `csv/operator_fit_summary.csv`: additive, linear, and affine target-reconstruction results.
+  - `csv/composition_prediction_summary.csv`: pairwise composition-prediction summary.
+  - `csv/matrix_closure_summary.csv`: matrix-commutator closure against random-subspace nulls.
+  - `csv/matrix_jacobi_summary.csv`: Jacobi-like operator-norm diagnostics.
+  - `figures/matrix_closure_linear.png` and `figures/matrix_closure_affine.png`: closure residual figures.
 - `lie_composition_decoder_results/`
 - `lie_algebraic_identities_results/`
 - `lie_algebraic_identities_decoder_results/`

@@ -142,6 +142,15 @@ S(A,B,C) = ABC + BCA + CAB - ACB - CBA - BAC
     - `NQT`: `0.684 -> 0.685`
     - `NMT`: `0.756 -> 0.755`
   - endpoint-derived information remains measurable (`triple_label_from_single_endpoint_delta macro F1=0.765`), so the result should be read as robustness to these linear subspace removals rather than endpoint independence
+- A 2026-06-29 9-model GLT-MOLT affine/operator audit then tests whether learned operator maps give a more Lie-adjacent signal:
+  - models and languages match the 9-model multilingual stress-test family
+  - templates per language: `160`; PCA dimension: `128`; random-subspace nulls: `300`
+  - additive deltas remain better target-reconstruction maps than learned linear/affine operators (`M` target cosine `0.943` additive versus `0.788` linear and `0.731` affine; the same ordering holds for `N,Q,T`)
+  - learned matrix commutators are not closed exactly, but closure residuals are systematically below random-subspace nulls:
+    - linear pair residual range: `0.964-0.985` versus random null `~0.9999`
+    - affine pair residual range: `0.958-0.987` versus random null `~0.9999`
+  - relative Jacobi-like operator norms are low across triples (`~0.056-0.073`)
+  - interpretation: this is the strongest GLT-MOLT/operator-valued diagnostic so far, but it is still evidence for weak closure-like compression in learned PCA-space maps, not a formal Lie algebra
 - A 2026-06-24 structure-constants closure audit now estimates primitive operator centroids for `N,Q,M,T`, projects pairwise commutators into their span, and compares closure residuals to 1000 random-subspace nulls:
   - nonzero overall mean closure residual is below random-subspace null (`0.885` versus `0.984`)
   - strongest Jacobi-like closure triples are `NMT` (`0.309`) and `QMT` (`0.333`)
