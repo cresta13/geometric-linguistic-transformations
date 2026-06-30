@@ -49,6 +49,13 @@ Important subdirectories:
   - `csv/matrix_closure_summary.csv`: matrix-commutator closure against random-subspace nulls.
   - `csv/matrix_jacobi_summary.csv`: Jacobi-like operator-norm diagnostics.
   - `figures/matrix_closure_linear.png` and `figures/matrix_closure_affine.png`: closure residual figures.
+- `glt_molt_affine_operator_9m_160t_1000null_results/`
+  - `RUN_SUMMARY.md`: 2026-06-30 9-model GLT-MOLT affine/operator confirmation with 1000 random-subspace nulls.
+  - `csv/operator_fit_summary.csv`: additive, linear, and affine target-reconstruction results.
+  - `csv/composition_prediction_summary.csv`: pairwise composition-prediction summary.
+  - `csv/matrix_closure_summary.csv`: matrix-commutator closure against random-subspace nulls.
+  - `csv/matrix_jacobi_summary.csv`: Jacobi-like operator-norm diagnostics.
+  - `figures/matrix_closure_linear.png` and `figures/matrix_closure_affine.png`: closure residual figures.
 - `lie_composition_decoder_results/`
 - `lie_algebraic_identities_results/`
 - `lie_algebraic_identities_decoder_results/`

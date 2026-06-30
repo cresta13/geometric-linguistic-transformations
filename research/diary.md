@@ -1024,3 +1024,24 @@ Matrix Jacobi-like residual:
 Interpretation:
 
 This is a clean split. Additive deltas are better for hitting target endpoints, while learned matrix operators are worse at prediction but produce cleaner algebraic diagnostics. This does not mean the matrices are better linguistic models; ridge regularization may make them algebraically smooth. The next GLT-MOLT step should sweep `ridge_alpha` and report the tradeoff among target cosine, commutator norm, closure residual, and Jacobi residual.
+
+## 2026-06-30: GLT-MOLT 9-model 1000-null confirmation
+
+The 9-model GLT-MOLT affine/operator run completed with 1000 random-subspace nulls and no model failures.
+
+Outputs:
+
+- `results/experiments/glt_molt_affine_operator_9m_160t_1000null_results/`
+
+Main confirmation:
+
+- Additive maps remain better endpoint predictors than learned matrix maps (`0.903` mean target cosine versus `0.738` linear and `0.695` affine).
+- Composition prediction follows the same split: additive maps reach `0.821/0.835` mean AB/BA cosine, while linear maps reach `0.591/0.615` and affine maps `0.478/0.520`.
+- Matrix commutator closure remains weak but systematic against rank-matched random subspaces:
+  - linear mean residual `0.975` versus random null `~0.9999`, mean empirical p `0.0020`
+  - affine mean residual `0.971` versus random null `~0.9999`, mean empirical p `0.0037`
+- Jacobi-like residuals remain low (`0.067` linear, `0.064` affine).
+
+Interpretation:
+
+The 1000-null rerun does not change the story; it stabilizes it. The operator maps are not better predictors, and the commutators are far from exact closure, but the closure residuals are consistently better than random subspaces. The caution is still ridge regularization: the next experiment should sweep `ridge_alpha` and report the target-prediction/closure/Jacobi tradeoff.
