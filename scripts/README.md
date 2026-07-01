@@ -29,6 +29,7 @@ All runnable research scripts live in this directory.
 - `run_lie_endpoint_subspace_residualization_audit.py`: removes endpoint-derived triple-label, endpoint-position, and cyclic-sign rowspaces before recomputing signed-permutation ratios. Use `LIE_SUBSPACE_OUT_DIR` for separate reruns.
 - `run_glt_molt_affine_operator_audit.py`: GLT-MOLT additive, linear, and affine operator audit over `N,Q,M,T`.
 - `run_glt_molt_ridge_sweep.py`: GLT-MOLT ridge-alpha sweep that reuses each model's embeddings across alpha values and reports target-prediction, matrix-closure, and Jacobi tradeoffs.
+- `run_glt_molt_matched_nulls.py`: GLT-MOLT operator-closure control against random-subspace, Gaussian norm-matched, and signed-permutation matched operator nulls.
 - `build_signed_permutation_multiple_testing.py`: table-level multiple-testing correction.
 
 ## UPAT / Cross-Model
