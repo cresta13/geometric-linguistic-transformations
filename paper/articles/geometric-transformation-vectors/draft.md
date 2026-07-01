@@ -25,7 +25,7 @@ Main result files:
 
 - Legacy holdout summaries are retained only as diagnostics in experiment result folders; the old all-holdout comparison plot is intentionally excluded from the archival draft because the syntax split is target-leaky.
 - Multiseed ablation summary: [ablation_multiseed_aggregated.csv](../../../results/ablation_multiseed_aggregated.csv)
-- Reviewer ablation table: [reviewer_ablation_table.csv](../../../results/reviewer_ablation_table.csv)
+- Ablation control table: [ablation_control_table.csv](../../../results/ablation_control_table.csv)
 - Effect-size intervals: [track1_multiseed_effect_intervals.csv](../../../results/track1_multiseed_effect_intervals.csv)
 - McNemar tests: [ablation_multiseed_mcnemar.csv](../../../results/ablation_multiseed_mcnemar.csv)
 - Full semantic results: [full_semantic_holdout_summary.csv](../../../results/experiments/lie_llm_full_semantic_holdout_results/full_semantic_holdout_summary.csv)
@@ -99,7 +99,7 @@ Current pooling choice:
 
 - mean pooling over final-layer token states
 
-Reviewer-critical caveat:
+Important caveat:
 
 Mean pooling is no longer an untested assumption for the full-semantic setting. Section 9 reports a reduced full-semantic pooling ablation comparing mean pooling, `[CLS]` pooling for encoder models, and last-token pooling for decoder models. Mean pooling remains the best or most stable choice in that reduced audit, but the main multiseed table still uses mean pooling only. Therefore pooling is partially controlled, not fully settled.
 
@@ -120,7 +120,7 @@ Key numbers:
 | entity | BERT | `0.979` |
 | variant | BERT | `0.981` |
 
-Interpretation after the reviewer-triggered ablation:
+Interpretation after the control ablation:
 
 The syntax holdout result is not a headline result. The syntax representation ablation shows that `y_only` reaches `1.000` with Linear SVC for every tested model, while `x_only` remains at chance (`0.167`). Therefore, the `syntax=1.0` result is best interpreted as target-side surface leakage: question marks, negation markers, tense markers, and other endpoint form cues are sufficient to solve the task.
 
@@ -147,7 +147,7 @@ The multiseed ablation is currently the strongest Track 1 evidence, with an impo
 Source files:
 
 - [ablation_multiseed_aggregated.csv](../../../results/ablation_multiseed_aggregated.csv)
-- [reviewer_ablation_table.csv](../../../results/reviewer_ablation_table.csv)
+- [ablation_control_table.csv](../../../results/ablation_control_table.csv)
 - [ablation_multiseed_mcnemar.csv](../../../results/ablation_multiseed_mcnemar.csv)
 
 Linear SVC, five seeds:
@@ -278,7 +278,7 @@ No UPAT `delta` vs `y_only` comparison is significant at `p < 0.05`. This is now
 
 > Delta vectors add information in the main full-semantic setting and in larger-model spot-checks, but the advantage is not guaranteed under small, hard holdout regimes where target endpoints remain strong and training capacity is limited.
 
-This result should stay in the paper if UPAT remains in the package. Hiding it would create a worse reviewer problem than reporting it as a limitation.
+This result should stay in the paper if UPAT remains in the package. Hiding it would create a worse interpretation problem than reporting it as a limitation.
 
 Why UPAT differs from the main full-semantic dataset:
 
@@ -305,7 +305,7 @@ These results should not be promoted inside this Track 1 draft as evidence that 
 
 ## 11. Confusion and Negation Analysis
 
-The reviewer hypothesis was that negation might be the bridge between Track 1 and Track 2. The full-semantic confusion matrices do not support that simple story.
+The working hypothesis was that negation might be the bridge between Track 1 and Track 2. The full-semantic confusion matrices do not support that simple story.
 
 ![Negation recall Linear SVC](../../figures/confusion_negation_linear_svc.png)
 

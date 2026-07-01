@@ -13,7 +13,7 @@ classifiers (logreg, linear SVC) on four different representations of each
   - "x_only"  : source_emb                        (style-of-x baseline)
   - "concat"  : [source_emb, target_emb]          (upper-bound baseline)
 
-Rationale (the standard reviewer objection): if "y_only" performs comparably
+Rationale (the standard endpoint-control objection): if "y_only" performs comparably
 to "delta", the classifier may simply be learning to recognize the surface
 style/register of the transformed sentence (e.g. "questions sound like
 questions") rather than anything about the *transformation* (the geometric

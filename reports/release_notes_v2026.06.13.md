@@ -11,12 +11,12 @@ It should be archived on Zenodo as **Software** / reproducibility package, not a
 
 - Research code lives in `scripts/`.
 - Experiment-specific result tables and figures live in `results/experiments/`.
-- Aggregate reviewer-facing tables live in `results/`.
+- Aggregate methodological-facing tables live in `results/`.
 - Draft paper candidates live in `paper/articles/`.
-- The current reviewer PDF is `reports/2026-06-13_reviewer_revised_report.pdf`.
+- The current methodological PDF is `reports/2026-06-13_archival_report.pdf`.
 - The current Python review environment is pinned in `requirements.txt`.
 
-The main readable document for the archived snapshot is `reports/2026-06-13_reviewer_revised_report.pdf`. The markdown drafts in `paper/articles/` are working research notes included for transparency.
+The main readable document for the archived snapshot is `reports/2026-06-13_archival_report.pdf`. The markdown drafts in `paper/articles/` are working research notes included for transparency.
 
 ## Significant Results Preserved
 
@@ -30,7 +30,7 @@ The main readable document for the archived snapshot is `reports/2026-06-13_revi
 Key entry points:
 
 - Draft: `paper/articles/geometric-transformation-vectors/draft.md`
-- Main aggregate table: `results/reviewer_ablation_table.csv`
+- Main aggregate table: `results/ablation_control_table.csv`
 - McNemar tests: `results/ablation_multiseed_mcnemar.csv`
 - Full semantic holdout: `results/experiments/lie_llm_full_semantic_holdout_results/`
 - Syntax representation ablation: `results/experiments/syntax_representation_ablation_results/`

@@ -74,9 +74,9 @@ Why this moves us forward:
 
 The next research direction should not claim a full algebra. It should characterize which linguistic operators form locally algebraic patches, and why `QMT` behaves differently from triples involving negation.
 
-## 2026-06-12: Reviewer-driven controls and claim narrowing
+## 2026-06-12: Control-driven updates and claim narrowing
 
-Today we converted the reviewer concerns into executable checks.
+Today we converted the methodological concerns into executable checks.
 
 ### Syntax holdout ablation
 
@@ -202,7 +202,7 @@ Mean pooling is no longer an untested assumption for the main result. The decode
 
 ### Confusion and negation analysis
 
-The reviewer expected Track 1 confusion matrices to explain Track 2 negation failures. The analysis showed a subtler result:
+The working expectation Track 1 confusion matrices to explain Track 2 negation failures. The analysis showed a subtler result:
 
 - In full-semantic Track 1, negation is usually easy and often near perfect recall.
 - The hardest class is typically `uncertainty`.
@@ -374,7 +374,7 @@ This substantially strengthens Track 3. The UPAT-large Procrustes transfer effec
 
 ## 2026-06-14: Held-out alignment-size curve
 
-We tested the next reviewer-facing risk for Track 3: does cross-model Procrustes transfer still work when the alignment map is fitted on independent held-out anchor sentences rather than on the classifier train/test endpoints?
+We tested the next methodological risk for Track 3: does cross-model Procrustes transfer still work when the alignment map is fitted on independent held-out anchor sentences rather than on the classifier train/test endpoints?
 
 New script:
 

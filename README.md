@@ -48,16 +48,16 @@ Closest related work:
 - `paper/`
   - `research_program.md`: current research roadmap.
   - `related_work_positioning.md`: RISE/LRH positioning note and claim-boundary checklist.
-  - `reviewer_revision_plan.md`: reviewer-driven backlog and status.
-  - `reviewer_response_round3.md`: latest reviewer-response note.
+  - `research_roadmap.md`: research backlog and status.
+  - `revision_notes_round3.md`: latest revision note.
   - `articles/`: separate draft paper candidates.
   - `figures/`: curated figures used in drafts and reports.
 - `research/`
   - `diary.md`: dated research diary.
-  - `critical_review_2026-06-14.md`: current skeptical state review and next-direction map.
+  - `research_state_2026-06-14.md`: current skeptical state review and next-direction map.
   - `PROTOCOL.md`: working protocol.
 - `reports/`
-  - dated PDF packets for external review.
+  - dated PDF packets for external verification.
 - `results/`
   - aggregate Track 1 ablation, McNemar, and confusion-analysis tables.
   - `results/experiments/`: experiment-specific CSVs, figures, and metadata.
@@ -66,8 +66,8 @@ Closest related work:
 
 ## Important Artifacts
 
-- Main live report: `reports/2026-06-23_reviewer_revised_report.pdf`
-- Zenodo snapshot report: `reports/2026-06-13_reviewer_revised_report.pdf`
+- Main live report: `reports/2026-06-23_research_report.pdf`
+- Zenodo snapshot report: `reports/2026-06-13_archival_report.pdf`
 - Latest release notes for DOI archiving: `reports/release_notes_v2026.06.24.md`
 - Research roadmap: `paper/research_program.md`
 - Track 1 draft: `paper/articles/geometric-transformation-vectors/draft.md`
@@ -96,7 +96,7 @@ Run scripts from the repository root, for example:
 .\.venv\Scripts\python.exe scripts\build_research_report.py
 ```
 
-The reproducibility path is: run or inspect scripts in `scripts/`, compare generated outputs against CSVs and figures in `results/` and `results/experiments/`, then rebuild the reviewer packet with `scripts/build_research_report.py`.
+The reproducibility path is: run or inspect scripts in `scripts/`, compare generated outputs against CSVs and figures in `results/` and `results/experiments/`, then rebuild the research report with `scripts/build_research_report.py`.
 
 Large intermediate vector caches (`*.npy`), local virtual environments, IDE files, `.env`, and review zip archives are intentionally excluded from git.
 

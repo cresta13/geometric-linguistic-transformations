@@ -1,6 +1,6 @@
 # Research Roadmap
 
-This file tracks completed reviewer-driven changes and future work needed before any submission-grade paper. These items are not blockers for the Zenodo software/research-artifact snapshot.
+This file tracks completed research-driven changes and future work needed before any submission-grade paper. These items are not blockers for the Zenodo software/research-artifact snapshot.
 
 ## Track 1: Geometric Transformation Vectors
 

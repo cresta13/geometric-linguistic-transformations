@@ -1,8 +1,8 @@
-# Critical Review: Current Research State
+# Current Research State
 
 Date: 2026-06-14
 
-This note is a deliberately skeptical review of the repository after the RISE-aware UPAT work, hybrid transfer test, and spherical delta steering experiment.
+This note is a skeptical assessment of the repository after the RISE-aware UPAT work, hybrid transfer test, and spherical delta steering experiment.
 
 ## Executive Verdict
 
@@ -33,7 +33,7 @@ Main result:
 - BERT-large and DeBERTa-v3-base spot-checks support the delta advantage.
 - Pooling/layerwise checks reduce the risk that the mean-pooling choice alone creates the effect.
 
-Critical caveats:
+Caveats:
 
 - `y_only` is still strong.
 - syntax `1.0` is confirmed as target/surface leakage.
@@ -56,7 +56,7 @@ Main result:
 - `QMT` is the strongest local result across encoder and decoder checks.
 - Grammar-generated pairwise composition controls now preserve below-null commutator coherence, but endpoint-only controls remain near perfect.
 
-Critical caveats:
+Caveats:
 
 - Hand-written templates may contain stable lexical markers.
 - Grammar-generated endpoints still contain explicit order/pair markers.
@@ -83,7 +83,7 @@ Main result:
   - `rise_only` is best for transformation-neighborhood retrieval
   - uncalibrated spherical delta movement slightly improves label F1 but lowers target cosine
 
-Critical caveats:
+Caveats:
 
 - RISE is the closest and stronger neighboring paper for broad cross-model/cross-lingual transformation geometry.
 - The current `rise_style` implementation is only a simplified baseline, not a faithful reproduction.
@@ -154,7 +154,7 @@ Required:
 Strengths:
 
 - Scripts and results are now mostly discoverable through `scripts/README.md` and `results/README.md`.
-- Main research state is documented in `paper/research_program.md`, `paper/reviewer_revision_plan.md`, and `research/diary.md`.
+- Main research state is documented in `paper/research_program.md`, `paper/research_roadmap.md`, and `research/diary.md`.
 - The Zenodo snapshot is ethically framed as software/research artifact, not a peer-reviewed paper.
 - The repo includes code, CSVs, figures, requirements, citation metadata, and reports.
 
@@ -168,13 +168,13 @@ Weaknesses:
 Immediate cleanup recommendations:
 
 - Add a Track 3 article folder only after calibration/CI, or add a placeholder outline clearly marked "not draft-ready."
-- Add a `CURRENT_RESULTS.md` or keep this critical review as the compact state summary.
+- Add a `CURRENT_RESULTS.md` or keep this state summary as the compact state summary.
 - Keep old exploratory folders, but avoid citing them from current papers unless they are part of the active evidence chain.
-- Treat `reports/2026-06-13_reviewer_revised_report.pdf` as historical and build new live packets under the actual date.
+- Treat `reports/2026-06-13_archival_report.pdf` as historical and build new live packets under the actual date.
 
 ## Bottom Line
 
-This is a real research program, not AI-flavored noise. The results are interesting because they are not uniformly positive. They expose a structured split:
+The results are interesting because they are not uniformly positive. They expose a structured split:
 
 - delta vectors help classification beyond endpoints in some controlled settings
 - endpoint leakage is real and sometimes dominant

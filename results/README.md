@@ -4,7 +4,7 @@ This directory contains compact CSV summaries and experiment artifacts.
 
 ## Aggregate Tables
 
-- `reviewer_ablation_table.csv`: main multiseed delta/y_only/concat summary.
+- `ablation_control_table.csv`: main multiseed delta/y_only/concat summary.
 - `ablation_multiseed_aggregated.csv`: aggregated multiseed ablation table.
 - `ablation_multiseed_mcnemar.csv`: McNemar tests for delta vs endpoint baselines.
 - `track1_multiseed_effect_intervals.csv`: 95% seed-level intervals for `delta-y_only` and `delta-concat`.

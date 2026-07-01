@@ -21,11 +21,11 @@ Main result files:
 - Decoder composition summary: [lie_composition_summary.csv](../../../results/experiments/lie_composition_decoder_results/csv/lie_composition_summary.csv)
 - Semantic equivalence summary: [semantic_equivalence_summary.csv](../../../results/experiments/lie_semantic_equivalence_results/csv/semantic_equivalence_summary.csv)
 - Semantic statistical tests: [semantic_equivalence_tests.csv](../../../results/experiments/lie_semantic_equivalence_results/csv/semantic_equivalence_tests.csv)
-- Semantic effect sizes: [reviewer_semantic_effect_sizes.csv](../../../results/experiments/lie_semantic_equivalence_results/csv/reviewer_semantic_effect_sizes.csv)
+- Semantic effect sizes: [semantic_effect_sizes.csv](../../../results/experiments/lie_semantic_equivalence_results/csv/semantic_effect_sizes.csv)
 - Signed permutation summary: [jacobi_summary.csv](../../../results/experiments/lie_algebraic_identities_results/csv/jacobi_summary.csv)
 - Signed permutation raw rows: [jacobi_raw_all_models.csv](../../../results/experiments/lie_algebraic_identities_results/csv/jacobi_raw_all_models.csv)
 - Multiple-testing correction: [signed_permutation_multiple_testing.csv](../../../results/experiments/lie_algebraic_identities_results/csv/signed_permutation_multiple_testing.csv)
-- Dataset audit: [reviewer_dataset_audit.csv](../../../results/experiments/lie_algebraic_identities_results/csv/reviewer_dataset_audit.csv)
+- Dataset audit: [dataset_audit.csv](../../../results/experiments/lie_algebraic_identities_results/csv/dataset_audit.csv)
 - Decoder signed permutation summary: [jacobi_summary.csv](../../../results/experiments/lie_algebraic_identities_decoder_results/csv/jacobi_summary.csv)
 - Multilingual signed-permutation global summary: [triple_global_summary.csv](../../../results/experiments/lie_multilingual_max_results/csv/triple_global_summary.csv)
 - Multilingual endpoint controls: [endpoint_controls_summary.csv](../../../results/experiments/lie_multilingual_max_results/csv/endpoint_controls_summary.csv)
@@ -35,7 +35,7 @@ Main result files:
 
 Daily verification packet:
 
-- [2026-06-23_reviewer_revised_report.pdf](../../../reports/2026-06-23_reviewer_revised_report.pdf)
+- [2026-06-23_research_report.pdf](../../../reports/2026-06-23_research_report.pdf)
 
 ## 1. Motivation
 
@@ -108,7 +108,7 @@ Decoder replication now added:
 - `gpt2`
 - `distilgpt2`
 
-Reviewer-critical caveat:
+Important caveat:
 
 The decoder replication supports the local `QMT` result, but negation-containing triples become more model-dependent. The later multilingual audit makes the conclusion broader and messier: negation-containing triples can be strongly below null in multilingual sentence encoders, so the scientific question becomes when negation breaks the diagnostic and when it participates in it.
 

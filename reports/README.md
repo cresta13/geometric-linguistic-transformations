@@ -5,15 +5,15 @@ Dated PDF research packets are written here.
 Current convention:
 
 - `YYYY-MM-DD_research_report.pdf` for ordinary daily packets
-- `YYYY-MM-DD_reviewer_revised_report.pdf` for packets that incorporate external-review corrections
+- `YYYY-MM-DD_methodological_revised_report.pdf` for packets that incorporate external-review corrections
 
 Current verification packet:
 
-- [2026-06-23_reviewer_revised_report.pdf](2026-06-23_reviewer_revised_report.pdf)
+- [2026-06-23_research_report.pdf](2026-06-23_research_report.pdf)
 
 Zenodo snapshot packet:
 
-- [2026-06-13_reviewer_revised_report.pdf](2026-06-13_reviewer_revised_report.pdf)
+- [2026-06-13_archival_report.pdf](2026-06-13_archival_report.pdf)
 
 Build command:
 

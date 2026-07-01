@@ -45,7 +45,7 @@ All runnable research scripts live in this directory.
 
 ## Reports
 
-- `build_reviewer_figures.py`: reviewer-response figures.
+- `build_research_figures.py`: methodological-response figures.
 - `build_research_report.py`: dated PDF report.
 - `analyze_confusion_negation.py`: confusion/negation summary tables.
 

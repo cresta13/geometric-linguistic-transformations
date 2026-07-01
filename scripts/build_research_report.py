@@ -8,7 +8,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 EXP = ROOT / "results" / "experiments"
-OUT = ROOT / "reports" / "2026-06-23_reviewer_revised_report.pdf"
+OUT = ROOT / "reports" / "2026-06-23_research_report.pdf"
 
 
 plt.rcParams["font.family"] = "DejaVu Sans"
@@ -152,7 +152,7 @@ def main():
     ]
 
     semantic = pd.read_csv(EXP / "lie_semantic_equivalence_results" / "csv" / "semantic_equivalence_summary.csv")
-    semantic_effects = pd.read_csv(EXP / "lie_semantic_equivalence_results" / "csv" / "reviewer_semantic_effect_sizes.csv")
+    semantic_effects = pd.read_csv(EXP / "lie_semantic_equivalence_results" / "csv" / "semantic_effect_sizes.csv")
     composition = pd.read_csv(EXP / "lie_composition_results" / "csv" / "lie_composition_summary.csv")
     grammar_composition_path = EXP / "lie_composition_grammar_results" / "csv" / "grammar_composition_summary.csv"
     grammar_composition = pd.read_csv(grammar_composition_path) if grammar_composition_path.exists() else pd.DataFrame()
@@ -183,7 +183,7 @@ def main():
         if multilingual_centroid_path.exists()
         else pd.DataFrame()
     )
-    ablation = pd.read_csv(ROOT / "results" / "reviewer_ablation_table.csv")
+    ablation = pd.read_csv(ROOT / "results" / "ablation_control_table.csv")
     track1_intervals = pd.read_csv(ROOT / "results" / "track1_multiseed_effect_intervals.csv")
     syntax_ablation = pd.read_csv(EXP / "syntax_representation_ablation_results" / "syntax_representation_ablation_pivot.csv")
     layerwise = pd.read_csv(EXP / "layerwise_pooling_ablation_results" / "layerwise_pooling_ablation_top20.csv")
@@ -217,12 +217,12 @@ def main():
     with PdfPages(OUT) as pdf:
         add_text_page(
             pdf,
-            "Reviewer-Revised Research Report: Transformation Vectors and Composition Diagnostics",
+            "Research Report: Transformation Vectors and Composition Diagnostics",
             [
                 ("Date", "2026-06-23"),
                 (
                     "Purpose",
-                    "Fix the reviewer-revised research state for external verification. This version incorporates AC-level review concerns: endpoint leakage, syntax-holdout overclaiming, McNemar tests, semantic-control statistics, and the terminology change to a third-order signed permutation coherence test.",
+                    "Fix the research state for external verification. This version incorporates methodological concerns: endpoint leakage, syntax-holdout overclaiming, McNemar tests, semantic-control statistics, and the terminology change to a third-order signed permutation coherence test.",
                 ),
                 (
                     "Track 1 fixed result",
@@ -365,11 +365,11 @@ def main():
             ],
         )
 
-        response_path = ROOT / "paper" / "reviewer_response_round3.md"
+        response_path = ROOT / "paper" / "revision_notes_round3.md"
         if response_path.exists():
             add_text_page(
                 pdf,
-                "Round-3 Reviewer Response",
+                "Round-3 Revision Notes",
                 [response_path.read_text(encoding="utf-8")],
                 fontsize=8,
             )
@@ -392,12 +392,12 @@ def main():
                 fontsize=8,
             )
 
-        critical_review_path = ROOT / "research" / "critical_review_2026-06-14.md"
-        if critical_review_path.exists():
+        research_state_path = ROOT / "research" / "research_state_2026-06-14.md"
+        if research_state_path.exists():
             add_text_page(
                 pdf,
-                "Critical Review: Current Research State",
-                [critical_review_path.read_text(encoding="utf-8")],
+                "Current Research State",
+                [research_state_path.read_text(encoding="utf-8")],
                 fontsize=8,
             )
 

@@ -11,7 +11,7 @@ At the end of each research session we create a dated report packet:
 - supporting plots remain in the corresponding `*_results/figures/` folders
 - the report includes the core claims, key plots, CSV-derived tables, and the code listing for the newest experiment
 
-The PDF is intended for external verification in another LLM or by a human reviewer.
+The PDF is intended for external verification by an independent reader or analysis tool.
 
 ## Rule 2: Research diary
 
