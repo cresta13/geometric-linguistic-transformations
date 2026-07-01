@@ -176,13 +176,13 @@ Hand-written templates may induce or suppress cancellation. GPT-2/DistilGPT-2 su
 
 Important adjacent method:
 
-Linear Relational Decoding suggests that the additive endpoint-delta framing may be too weak for a serious Lie-style claim. A future Track 2 variant should learn relation-specific maps:
+Linear Relational Decoding suggests that the additive endpoint-delta framing may be too weak for a serious Lie-style claim. The current GLT-MOLT variant now learns relation-specific maps:
 
 ```text
 y ~= W_op x + b_op
 ```
 
-and compare additive delta-only, multiplicative matrix-only, and affine map variants. This would allow commutators and Jacobi residuals to be computed directly over learned operators instead of endpoint sums.
+and compares additive delta-only, linear matrix-only, and affine map variants. This allows commutators and Jacobi-like residuals to be computed directly over learned operators instead of endpoint sums.
 
 GLT-MOLT pilot result:
 
@@ -513,10 +513,9 @@ Negative results remain part of the research record.
    - joint sign/triple/position removal is complete
 12. Add target-only and endpoint-only baselines for third-order multilingual signed-permutation endpoints.
 13. Add nonlinear endpoint-artifact controls, such as adversarial endpoint balancing or kernel/MLP endpoint probes.
-14. Add an affine/operator-valued Track 2 experiment inspired by Linear Relational Decoding:
-   - learn `W_op`, `b_op` maps for `N,Q,M,T`
-   - compare additive delta-only, multiplicative matrix-only, and affine `W_op x + b_op`
-   - compute matrix commutators and Jacobi residuals directly
+14. Complete the GLT-MOLT matched-null follow-up:
+   - compare learned operator closure against norm-matched and signed-permutation matched operator nulls
+   - evaluate whether ridge-smoothed closure survives shrinkage-matched controls
 15. Add the GLT-AFFECT text-only MVP:
    - graded emotional polarity scale
    - linearity and curvature tests

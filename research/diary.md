@@ -1045,3 +1045,34 @@ Main confirmation:
 Interpretation:
 
 The 1000-null rerun does not change the story; it stabilizes it. The operator maps are not better predictors, and the commutators are far from exact closure, but the closure residuals are consistently better than random subspaces. The caution is still ridge regularization: the next experiment should sweep `ridge_alpha` and report the target-prediction/closure/Jacobi tradeoff.
+
+## 2026-07-01: GLT-MOLT ridge sweep
+
+We ran the GLT-MOLT ridge-alpha sweep to test whether the operator-valued closure signal is stable across regularization or mostly a ridge-smoothing artifact.
+
+Outputs:
+
+- `scripts/run_glt_molt_ridge_sweep.py`
+- `results/experiments/glt_molt_ridge_sweep_9m_160t_300null_results/`
+
+Setup:
+
+- 9 multilingual embedding models
+- 7 languages: English, Spanish, French, German, Russian, Chinese, Arabic
+- 160 templates per language
+- PCA dimension `128`
+- ridge alphas: `0.1`, `1.0`, `10.0`, `100.0`
+- 300 random-subspace nulls
+
+Main result:
+
+- Additive target prediction is unchanged at mean target cosine `0.903`.
+- Linear/affine target prediction is best around `alpha=10` (`0.738` linear, `0.695` affine) and worsens by `alpha=100`.
+- Closure residuals improve with stronger ridge smoothing:
+  - linear: `0.995 -> 0.991 -> 0.975 -> 0.882`
+  - affine: `0.994 -> 0.991 -> 0.970 -> 0.855`
+- Jacobi-like norms also generally improve, especially affine at `alpha=100` (`0.042`).
+
+Interpretation:
+
+The closure-like signal is not isolated to one alpha, but algebraic cleanliness is regularization-sensitive. This strengthens GLT-MOLT as a diagnostic while weakening any premature Lie-algebra claim. The next operator-level control must compare against norm-matched and shrinkage-matched operator nulls rather than only random subspaces.

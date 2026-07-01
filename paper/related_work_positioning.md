@@ -69,7 +69,7 @@ Xia and Kalita add a second important boundary around this track. Their work sho
 [W_A, W_B] = W_A W_B - W_B W_A
 ```
 
-and to a true matrix Jacobi residual. Our current endpoint signed-permutation diagnostic is therefore a weaker, endpoint-level proxy. A future operator-valued Track 2 experiment should learn affine or multiplicative maps for `N,Q,M,T` and compare matrix commutators against the current endpoint/delta diagnostics.
+and to a true matrix Jacobi residual. Our endpoint signed-permutation diagnostic is therefore a weaker, endpoint-level proxy. The current GLT-MOLT operator-valued audit now learns linear and affine maps for `N,Q,M,T`; it finds weak matrix-commutator closure below random-subspace nulls, but the ridge sweep shows that algebraic cleanliness is regularization-sensitive.
 
 ### Track 3: Cross-Model Transfer Stress Tests
 
@@ -120,4 +120,4 @@ Also use this operator-valued caveat:
 4. Extend the first RISE/MDV comparison with confidence intervals and, if feasible, a more faithful RISE implementation before promoting Track 3.
 5. Extend movement-level composition with train-only step-size calibration and confidence intervals before making any complementarity claim.
 6. Emphasize Track 2 composition/order diagnostics as the most distinct paper-level contribution.
-7. Add an affine/operator-valued Track 2 experiment inspired by Linear Relational Decoding: learn `W_op` and `b_op` for `N,Q,M,T`, compare additive delta-only, multiplicative matrix-only, and affine map variants, then compute matrix commutators and Jacobi residuals.
+7. Complete GLT-MOLT matched-null controls inspired by Linear Relational Decoding: compare learned operator closure against norm-matched, signed-permutation matched, and shrinkage-matched nulls before promoting matrix commutator results.

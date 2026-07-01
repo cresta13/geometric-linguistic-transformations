@@ -152,6 +152,8 @@ Measure whether transformations live in low-dimensional subspaces.
 - Rewrote antisymmetry as a tautological implementation check rather than evidence.
 - Added explicit caveat that current Lie-style templates contain stable lexical markers and remain synthetic.
 - Added the 2026-06-23 multilingual max audit: 7 languages, 5 multilingual encoders, 2000 signed-null samples per row. All four tested triples are below signed-null in every model-language cell, with `NQM` and `QMT` strongest. This strengthens the signed-permutation signal but revises the earlier `QMT`-only narrative.
+- Added the 2026-06-29/30 GLT-MOLT 9-model affine/operator audit with 1000 random-subspace nulls. Additive deltas remain better endpoint predictors, while learned linear/affine maps show weak matrix-commutator closure below random-subspace nulls.
+- Added the 2026-07-01 GLT-MOLT ridge sweep. Closure-like residuals improve under stronger ridge regularization, which makes norm-matched and shrinkage-matched operator nulls the next required control.
 
 ### Future submission work
 
@@ -161,7 +163,7 @@ Measure whether transformations live in low-dimensional subspaces.
 4. Add layerwise and pooling ablations for composition diagnostics.
 5. Explain the `NQM` versus `QMT` regime shift before expanding the operator set.
 6. Add focused negation analysis before expanding the operator set.
-7. Add null baselines for pairwise commutator norms `||[A,B]||` using matched random/shuffled operations.
+7. Finish GLT-MOLT matched-null controls for learned operator closure, including Gaussian norm-matched and signed-permutation matched operator nulls.
 
 ## Future submission priorities
 

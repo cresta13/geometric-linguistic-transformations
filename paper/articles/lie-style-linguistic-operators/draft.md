@@ -415,7 +415,69 @@ This is the first result in the repository that resembles structure constants ra
 
 > Pairwise linguistic commutators are partially compressible into the span of primitive operator centroids better than random subspaces, and the resulting estimated structure constants produce lower Jacobi-like residuals for `NMT` and `QMT` than for `NQT`.
 
-It still does not prove a Lie algebra. The primitive objects are centroids of endpoint displacements, not learned local linear maps; closure is partial; and the Chinese zero-commutator cells reveal template degeneracy. The next GLT-MOLT step should learn affine or multiplicative maps `W_op x + b_op` and compute matrix commutators directly.
+It still does not prove a Lie algebra. The primitive objects are centroids of endpoint displacements, not learned local linear maps; closure is partial; and the Chinese zero-commutator cells reveal template degeneracy. This motivates the GLT-MOLT learned-operator audit below, where commutators are computed directly over ridge-regularized linear and affine maps.
+
+## 8.4 GLT-MOLT Learned Operator Maps
+
+The structure-constants audit asks whether endpoint-derived commutator centroids can be compressed into the span of primitive displacement centroids. The next GLT-MOLT test is more directly operator-valued: for each primitive transformation `N,Q,M,T`, learn a map from source embeddings to target embeddings and compute commutators over the learned maps.
+
+We compare three prediction families:
+
+- additive centroid deltas: `y ~= x + delta_op`
+- linear ridge maps: `y ~= W_op x`
+- affine ridge maps: `y ~= W_op x + b_op`
+
+The 2026-06-29/30 9-model audit uses the same 7-language multilingual setting as the endpoint-subspace stress tests, with `160` templates per language, PCA dimension `128`, and `1000` random-subspace nulls in the confirmation run.
+
+Main result:
+
+| Method | Mean target cosine | Mean closure residual | Random-subspace null | Mean relative Jacobi-like norm |
+|---|---:|---:|---:|---:|
+| additive | `0.903` | n/a | n/a | n/a |
+| linear | `0.738` | `0.975` | `~0.9999` | `0.067` |
+| affine | `0.695` | `0.971` | `~0.9999` | `0.064` |
+
+The split is important. Additive deltas remain much better one-step target predictors, but learned matrix operators produce a weak closure-like signal: their commutators are still far from exactly closed, yet their residuals after projection into the primitive operator span are systematically below random-subspace nulls.
+
+This should not be overread as a Lie algebra. It is evidence for weak closure-like compression in ridge-regularized PCA-space maps. Ridge smoothing may itself make maps algebraically cleaner, so the result requires regularization controls.
+
+The 2026-07-01 ridge sweep tests that concern by rerunning the GLT-MOLT audit over ridge alphas `0.1`, `1.0`, `10.0`, and `100.0`.
+
+Mean target cosine:
+
+| Ridge alpha | additive | linear | affine |
+|---:|---:|---:|---:|
+| `0.1` | `0.903` | `0.681` | `0.659` |
+| `1.0` | `0.903` | `0.712` | `0.685` |
+| `10.0` | `0.903` | `0.738` | `0.695` |
+| `100.0` | `0.903` | `0.712` | `0.640` |
+
+Mean matrix-closure residual:
+
+| Ridge alpha | linear | affine | random-subspace null |
+|---:|---:|---:|---:|
+| `0.1` | `0.995` | `0.994` | `~0.9999` |
+| `1.0` | `0.991` | `0.991` | `~0.9999` |
+| `10.0` | `0.975` | `0.970` | `~0.9999` |
+| `100.0` | `0.882` | `0.855` | `~0.9999` |
+
+Mean relative Jacobi-like operator norm:
+
+| Ridge alpha | linear | affine |
+|---:|---:|---:|
+| `0.1` | `0.093` | `0.097` |
+| `1.0` | `0.080` | `0.083` |
+| `10.0` | `0.067` | `0.064` |
+| `100.0` | `0.072` | `0.042` |
+
+The ridge sweep confirms that the closure-like signal is not isolated to one alpha, but it also sharpens the limitation: algebraic cleanliness improves under heavier regularization while target prediction does not. The next GLT-MOLT control must therefore compare against norm-matched and shrinkage-matched operator nulls, not only random subspaces.
+
+Relevant artifacts:
+
+- script: [run_glt_molt_affine_operator_audit.py](../../../scripts/run_glt_molt_affine_operator_audit.py)
+- ridge sweep script: [run_glt_molt_ridge_sweep.py](../../../scripts/run_glt_molt_ridge_sweep.py)
+- 1000-null results: [glt_molt_affine_operator_9m_160t_1000null_results](../../../results/experiments/glt_molt_affine_operator_9m_160t_1000null_results/)
+- ridge sweep results: [glt_molt_ridge_sweep_9m_160t_300null_results](../../../results/experiments/glt_molt_ridge_sweep_9m_160t_300null_results/)
 
 Working hypothesis for why `QMT` is coherent:
 
@@ -463,8 +525,9 @@ Evidence layers:
 5. The multilingual max audit broadens the effect to all four tested triples across 7 languages and 5 multilingual encoders.
 6. Endpoint-subspace residualization shows that the multilingual signed-permutation effect largely survives removal of simple endpoint-derived probe subspaces.
 7. The structure-constants audit finds partial closure-like compression of pairwise commutators into the primitive operator span better than random subspaces.
-8. Negation triples are regime-dependent, which constrains the theory.
-9. Grammar-generated pairwise controls preserve below-null commutator coherence, but endpoint controls remain too strong.
+8. Learned GLT-MOLT matrix operators show weak closure-like compression, but the signal is regularization-sensitive.
+9. Negation triples are regime-dependent, which constrains the theory.
+10. Grammar-generated pairwise controls preserve below-null commutator coherence, but endpoint controls remain too strong.
 
 Not proven:
 
@@ -476,7 +539,7 @@ Not proven:
 - lexical-marker independence of the hand-written composition templates
 - endpoint-balanced multilingual robustness
 - removal of all possible nonlinear endpoint artifacts
-- matrix/operator-valued closure of learned linguistic transformations
+- matrix/operator-valued closure under norm-matched or shrinkage-matched operator nulls
 - non-degenerate endpoint-balanced closure across all languages and pairs
 
 ## 11. Required Pre-Submission Experiments
@@ -486,10 +549,10 @@ Not proven:
 3. Add target-only controls for third-order composition endpoints.
 4. Add endpoint-balanced multilingual generation and rerun the 7-language audit.
 5. Add nonlinear endpoint-artifact controls or adversarial endpoint balancing.
-6. Add an affine/operator-valued Track 2 variant inspired by Linear Relational Decoding:
-   - learn additive delta-only, multiplicative matrix-only, and affine `W_op x + b_op` maps for `N,Q,M,T`
-   - test whether pairwise commutators close in the learned operator span
-   - compute matrix Jacobi residuals and compare them to endpoint signed-permutation diagnostics
+6. Complete GLT-MOLT matched-null controls:
+   - compare learned matrix closure against Gaussian norm-matched operator nulls
+   - compare against signed-permutation matched operator nulls
+   - report whether the ridge-smoothed closure signal survives shrinkage-matched controls
 7. Explain the `NQM` versus `QMT` reversal across regimes.
 8. Add layerwise analysis.
 9. Add pooling ablation.
