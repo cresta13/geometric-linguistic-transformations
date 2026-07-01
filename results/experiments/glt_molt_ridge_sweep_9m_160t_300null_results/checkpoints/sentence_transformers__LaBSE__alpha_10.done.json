@@ -1,0 +1,5 @@
+{
+  "model": "sentence-transformers/LaBSE",
+  "ridge_alpha": 10.0,
+  "finished_at": "Tue Jun 30 15:43:23 2026"
+}

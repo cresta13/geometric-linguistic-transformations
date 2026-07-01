@@ -151,6 +151,15 @@ S(A,B,C) = ABC + BCA + CAB - ACB - CBA - BAC
     - affine pair residual range: `0.958-0.987` versus random null `~0.9999`
   - relative Jacobi-like operator norms are low across triples (`linear mean 0.067`; `affine mean 0.064`)
   - interpretation: this is the strongest GLT-MOLT/operator-valued diagnostic so far, but it is still evidence for weak closure-like compression in learned PCA-space maps, not a formal Lie algebra
+- A 2026-07-01 GLT-MOLT ridge sweep tests whether the operator-valued signal is stable across regularization:
+  - ridge alphas: `0.1`, `1.0`, `10.0`, `100.0`; models/languages/templates match the 9-model MOLT audit
+  - additive target prediction is unchanged (`mean target cosine 0.903`)
+  - linear/affine target prediction is best around `alpha=10` (`linear 0.738`, `affine 0.695`) and worsens at `alpha=100`
+  - closure residuals improve monotonically with stronger ridge smoothing:
+    - linear: `0.995 -> 0.991 -> 0.975 -> 0.882`
+    - affine: `0.994 -> 0.991 -> 0.970 -> 0.855`
+  - Jacobi-like norms also generally improve, especially affine at `alpha=100` (`0.042`)
+  - interpretation: the closure-like signal is robust across alphas, but algebraic cleanliness is partly regularization-sensitive; future MOLT nulls must be norm-matched or shrinkage-matched before making stronger Lie-style claims
 - A 2026-06-24 structure-constants closure audit now estimates primitive operator centroids for `N,Q,M,T`, projects pairwise commutators into their span, and compares closure residuals to 1000 random-subspace nulls:
   - nonzero overall mean closure residual is below random-subspace null (`0.885` versus `0.984`)
   - strongest Jacobi-like closure triples are `NMT` (`0.309`) and `QMT` (`0.333`)

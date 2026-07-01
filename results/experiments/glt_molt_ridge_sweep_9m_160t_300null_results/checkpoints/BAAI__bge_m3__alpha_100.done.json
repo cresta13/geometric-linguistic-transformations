@@ -1,0 +1,5 @@
+{
+  "model": "BAAI/bge-m3",
+  "ridge_alpha": 100.0,
+  "finished_at": "Tue Jun 30 19:32:48 2026"
+}

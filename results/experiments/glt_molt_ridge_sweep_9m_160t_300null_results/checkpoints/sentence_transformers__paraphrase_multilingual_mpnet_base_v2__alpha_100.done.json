@@ -1,0 +1,5 @@
+{
+  "model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+  "ridge_alpha": 100.0,
+  "finished_at": "Tue Jun 30 15:14:14 2026"
+}

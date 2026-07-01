@@ -1,0 +1,5 @@
+{
+  "model": "intfloat/multilingual-e5-large-instruct",
+  "ridge_alpha": 100.0,
+  "finished_at": "Wed Jul  1 03:29:22 2026"
+}

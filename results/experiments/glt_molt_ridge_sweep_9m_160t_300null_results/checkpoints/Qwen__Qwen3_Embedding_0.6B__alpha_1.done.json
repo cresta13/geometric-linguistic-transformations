@@ -1,0 +1,5 @@
+{
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "ridge_alpha": 1.0,
+  "finished_at": "Wed Jul  1 04:23:29 2026"
+}

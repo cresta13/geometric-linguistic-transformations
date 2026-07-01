@@ -56,6 +56,11 @@ Important subdirectories:
   - `csv/matrix_closure_summary.csv`: matrix-commutator closure against random-subspace nulls.
   - `csv/matrix_jacobi_summary.csv`: Jacobi-like operator-norm diagnostics.
   - `figures/matrix_closure_linear.png` and `figures/matrix_closure_affine.png`: closure residual figures.
+- `glt_molt_ridge_sweep_9m_160t_300null_results/`
+  - `RUN_SUMMARY.md`: 2026-07-01 GLT-MOLT ridge-alpha sweep summary.
+  - `csv/operator_fit_by_alpha_method.csv`: one-step target prediction by ridge alpha and method.
+  - `csv/matrix_closure_by_alpha_method.csv`: matrix-commutator closure by ridge alpha and method.
+  - `csv/matrix_jacobi_by_alpha_method.csv`: Jacobi-like operator norm by ridge alpha and method.
 - `lie_composition_decoder_results/`
 - `lie_algebraic_identities_results/`
 - `lie_algebraic_identities_decoder_results/`
