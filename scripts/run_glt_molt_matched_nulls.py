@@ -74,13 +74,11 @@ def signed_permutation_matched_ops(operators: dict[str, np.ndarray], rng: np.ran
 
 def null_closure_ratios(
     operators: dict[str, np.ndarray],
-    pair: tuple[str, str],
     n_nulls: int,
     rng: np.random.Generator,
     null_kind: str,
-) -> np.ndarray:
-    a, b = pair
-    ratios = []
+) -> dict[tuple[str, str], np.ndarray]:
+    ratios = {pair: [] for pair in PAIR_OPS}
     for _ in range(n_nulls):
         if null_kind == "gaussian_norm_matched":
             null_ops = gaussian_norm_matched_ops(operators, rng)
@@ -89,10 +87,11 @@ def null_closure_ratios(
         else:
             raise ValueError(f"unknown null kind: {null_kind}")
         basis = np.vstack([null_ops[op].reshape(1, -1) for op in OPS])
-        comm = null_ops[b] @ null_ops[a] - null_ops[a] @ null_ops[b]
-        ratio, _ = project_residual_ratio(comm.reshape(-1), basis)
-        ratios.append(ratio)
-    return np.asarray(ratios)
+        for a, b in PAIR_OPS:
+            comm = null_ops[b] @ null_ops[a] - null_ops[a] @ null_ops[b]
+            ratio, _ = project_residual_ratio(comm.reshape(-1), basis)
+            ratios[(a, b)].append(ratio)
+    return {pair: np.asarray(values) for pair, values in ratios.items()}
 
 
 def summarize(values: np.ndarray, observed: float, prefix: str) -> dict[str, float]:
@@ -148,6 +147,18 @@ def model_alpha_audit(
             operators = {op: maps[method][op]["matrix"] - np.eye(dim) for op in OPS}
             basis = np.vstack([operators[op].reshape(1, -1) for op in OPS])
             rank = int(np.linalg.matrix_rank(basis))
+            gaussian_matched_by_pair = null_closure_ratios(
+                operators,
+                config["n_nulls"],
+                rng,
+                "gaussian_norm_matched",
+            )
+            signed_perm_by_pair = null_closure_ratios(
+                operators,
+                config["n_nulls"],
+                rng,
+                "signed_permutation_matched",
+            )
 
             for op in OPS:
                 mat = operators[op]
@@ -167,8 +178,8 @@ def model_alpha_audit(
                 vector = comm.reshape(-1)
                 ratio, coeff = project_residual_ratio(vector, basis)
                 random_subspace = random_subspace_ratios(vector, max(rank, 1), config["n_nulls"], rng)
-                gaussian_matched = null_closure_ratios(operators, (a, b), config["n_nulls"], rng, "gaussian_norm_matched")
-                signed_perm = null_closure_ratios(operators, (a, b), config["n_nulls"], rng, "signed_permutation_matched")
+                gaussian_matched = gaussian_matched_by_pair[(a, b)]
+                signed_perm = signed_perm_by_pair[(a, b)]
                 closure_rows.append({
                     "model": model_name,
                     "ridge_alpha": alpha,
