@@ -470,14 +470,37 @@ Mean relative Jacobi-like operator norm:
 | `10.0` | `0.067` | `0.064` |
 | `100.0` | `0.072` | `0.042` |
 
-The ridge sweep confirms that the closure-like signal is not isolated to one alpha, but it also sharpens the limitation: algebraic cleanliness improves under heavier regularization while target prediction does not. The next GLT-MOLT control must therefore compare against norm-matched and shrinkage-matched operator nulls, not only random subspaces.
+The ridge sweep confirms that the closure-like signal is not isolated to one alpha, but it also sharpens the limitation: algebraic cleanliness improves under heavier regularization while target prediction does not. The next GLT-MOLT control must therefore compare against matched operator nulls, not only random subspaces.
+
+The 2026-07-02 matched-null audit adds that control for `alpha=10` and `alpha=100`. It compares observed learned-operator closure against three null families:
+
+- random subspaces
+- Gaussian operator maps matched to the Frobenius norms of the learned primitive operators
+- signed-permutation matched operator maps, which preserve each learned operator's entries up to row/column permutations and sign flips
+
+Mean matrix-closure residual:
+
+| Ridge alpha | Method | Observed | Random-subspace null | Gaussian norm-matched null | Signed-permutation matched null |
+|---:|---|---:|---:|---:|---:|
+| `10` | affine | `0.970` | `0.99988` | `0.99988` | `0.99978` |
+| `10` | linear | `0.975` | `0.99988` | `0.99988` | `0.99977` |
+| `100` | affine | `0.855` | `0.99988` | `0.99988` | `0.99989` |
+| `100` | linear | `0.882` | `0.99988` | `0.99988` | `0.99989` |
+
+For `alpha=100`, all mean empirical p-values are at the `N=1000` resolution floor (`0.000999`) across all three null families. For `alpha=10`, the observed closure is still below every matched-null family, with mean p-values around `0.002-0.009` depending on method and null.
+
+This is the strongest current GLT-MOLT evidence. It weakens the concern that the closure result is only a generic random-subspace or norm-scale artifact. However, it does not erase the central caveat: `alpha=100` gives cleaner algebraic compression but worse target prediction than `alpha=10`. The result should therefore be framed as:
+
+> Learned linguistic operator maps contain weak but robust closure-like compression under matched null controls, while endpoint reconstruction and algebraic compression remain different objectives.
 
 Relevant artifacts:
 
 - script: [run_glt_molt_affine_operator_audit.py](../../../scripts/run_glt_molt_affine_operator_audit.py)
 - ridge sweep script: [run_glt_molt_ridge_sweep.py](../../../scripts/run_glt_molt_ridge_sweep.py)
+- matched-null script: [run_glt_molt_matched_nulls.py](../../../scripts/run_glt_molt_matched_nulls.py)
 - 1000-null results: [glt_molt_affine_operator_9m_160t_1000null_results](../../../results/experiments/glt_molt_affine_operator_9m_160t_1000null_results/)
 - ridge sweep results: [glt_molt_ridge_sweep_9m_160t_300null_results](../../../results/experiments/glt_molt_ridge_sweep_9m_160t_300null_results/)
+- matched-null results: [glt_molt_matched_nulls_9m_160t_a10_100_1000null_results](../../../results/experiments/glt_molt_matched_nulls_9m_160t_a10_100_1000null_results/)
 
 Working hypothesis for why `QMT` is coherent:
 
@@ -539,7 +562,7 @@ Not proven:
 - lexical-marker independence of the hand-written composition templates
 - endpoint-balanced multilingual robustness
 - removal of all possible nonlinear endpoint artifacts
-- matrix/operator-valued closure under norm-matched or shrinkage-matched operator nulls
+- matrix/operator-valued closure under singular-spectrum or layerwise matched operator nulls
 - non-degenerate endpoint-balanced closure across all languages and pairs
 
 ## 11. Required Pre-Submission Experiments
@@ -549,10 +572,10 @@ Not proven:
 3. Add target-only controls for third-order composition endpoints.
 4. Add endpoint-balanced multilingual generation and rerun the 7-language audit.
 5. Add nonlinear endpoint-artifact controls or adversarial endpoint balancing.
-6. Complete GLT-MOLT matched-null controls:
-   - compare learned matrix closure against Gaussian norm-matched operator nulls
-   - compare against signed-permutation matched operator nulls
-   - report whether the ridge-smoothed closure signal survives shrinkage-matched controls
+6. Extend GLT-MOLT matched-null controls:
+   - compare learned matrix closure against singular-spectrum/shrinkage-matched operator nulls
+   - test layerwise and PCA-dimension sensitivity
+   - report whether the closure signal survives beyond last-layer PCA-space maps
 7. Explain the `NQM` versus `QMT` reversal across regimes.
 8. Add layerwise analysis.
 9. Add pooling ablation.

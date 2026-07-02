@@ -61,6 +61,11 @@ Important subdirectories:
   - `csv/operator_fit_by_alpha_method.csv`: one-step target prediction by ridge alpha and method.
   - `csv/matrix_closure_by_alpha_method.csv`: matrix-commutator closure by ridge alpha and method.
   - `csv/matrix_jacobi_by_alpha_method.csv`: Jacobi-like operator norm by ridge alpha and method.
+- `glt_molt_matched_nulls_9m_160t_a10_100_1000null_results/`
+  - `RUN_SUMMARY.md`: 2026-07-02 GLT-MOLT matched-null operator-closure summary.
+  - `csv/matched_closure_by_alpha_method.csv`: closure residuals versus random-subspace, Gaussian norm-matched, and signed-permutation matched nulls.
+  - `csv/operator_fit_by_alpha_method.csv`: one-step target prediction for `alpha=10` and `alpha=100`.
+  - `csv/operator_norms_summary.csv`: learned operator norm summaries by alpha, method, and primitive operator.
 - `lie_composition_decoder_results/`
 - `lie_algebraic_identities_results/`
 - `lie_algebraic_identities_decoder_results/`

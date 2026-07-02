@@ -1,0 +1,5 @@
+{
+  "model": "distilbert-base-multilingual-cased",
+  "ridge_alpha": 100.0,
+  "finished_at": "Thu Jul  2 07:10:45 2026"
+}

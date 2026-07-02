@@ -1076,3 +1076,40 @@ Main result:
 Interpretation:
 
 The closure-like signal is not isolated to one alpha, but algebraic cleanliness is regularization-sensitive. This strengthens GLT-MOLT as a diagnostic while weakening any premature Lie-algebra claim. The next operator-level control must compare against norm-matched and shrinkage-matched operator nulls rather than only random subspaces.
+
+## 2026-07-02: GLT-MOLT matched-null operator closure
+
+We ran the direct follow-up to the ridge sweep: a GLT-MOLT matched-null audit that compares learned operator closure against random-subspace, Gaussian norm-matched, and signed-permutation matched operator nulls.
+
+Outputs:
+
+- `scripts/run_glt_molt_matched_nulls.py`
+- `results/experiments/glt_molt_matched_nulls_9m_160t_a10_100_1000null_results/`
+
+Setup:
+
+- 9 multilingual embedding models
+- 7 languages
+- 160 templates per language
+- PCA dimension `128`
+- ridge alphas: `10.0`, `100.0`
+- 1000 null samples per row
+
+Main result:
+
+| Ridge alpha | Method | Observed closure | Random-subspace null | Gaussian norm-matched null | Signed-permutation matched null |
+|---:|---|---:|---:|---:|---:|
+| `10` | affine | `0.970` | `0.99988` | `0.99988` | `0.99978` |
+| `10` | linear | `0.975` | `0.99988` | `0.99988` | `0.99977` |
+| `100` | affine | `0.855` | `0.99988` | `0.99988` | `0.99989` |
+| `100` | linear | `0.882` | `0.99988` | `0.99988` | `0.99989` |
+
+At `alpha=100`, all mean empirical p-values are at the `N=1000` resolution floor (`0.000999`) across all three null families. At `alpha=10`, the observed closure remains below every null family with mean p-values around `0.002-0.009`.
+
+Interpretation:
+
+This is a meaningful strengthening of GLT-MOLT. The closure-like compression is not explained by random subspaces, norm-matched Gaussian operator maps, or signed-permutation matched operator maps. The central caveat remains: `alpha=100` is cleaner algebraically but worse for target prediction, so the result is about operator-space compression rather than endpoint reconstruction.
+
+Next step:
+
+Test singular-spectrum/shrinkage-matched nulls and layer/PCA-dimension sensitivity. If the signal survives those controls, GLT-MOLT becomes the closest current track to a serious Lie-algebra-style claim.

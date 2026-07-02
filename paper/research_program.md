@@ -160,6 +160,13 @@ S(A,B,C) = ABC + BCA + CAB - ACB - CBA - BAC
     - affine: `0.994 -> 0.991 -> 0.970 -> 0.855`
   - Jacobi-like norms also generally improve, especially affine at `alpha=100` (`0.042`)
   - interpretation: the closure-like signal is robust across alphas, but algebraic cleanliness is partly regularization-sensitive; future MOLT nulls must be norm-matched or shrinkage-matched before making stronger Lie-style claims
+- A 2026-07-02 GLT-MOLT matched-null audit directly tests that concern for `alpha=10` and `alpha=100`:
+  - null controls: random-subspace, Gaussian norm-matched operator maps, and signed-permutation matched operator maps
+  - observed closure remains below all three null families
+  - `alpha=10`: affine closure `0.970`, linear closure `0.975`, matched null means `~0.9998`
+  - `alpha=100`: affine closure `0.855`, linear closure `0.882`, all mean empirical p-values hit the `N=1000` resolution floor `0.000999`
+  - target prediction remains worse at `alpha=100` than at `alpha=10`, so the result separates algebraic compression from endpoint reconstruction
+  - interpretation: this strengthens GLT-MOLT as an operator-closure diagnostic, but it still supports only weak closure-like compression in ridge-regularized PCA-space maps, not a formal Lie algebra
 - A 2026-06-24 structure-constants closure audit now estimates primitive operator centroids for `N,Q,M,T`, projects pairwise commutators into their span, and compares closure residuals to 1000 random-subspace nulls:
   - nonzero overall mean closure residual is below random-subspace null (`0.885` versus `0.984`)
   - strongest Jacobi-like closure triples are `NMT` (`0.309`) and `QMT` (`0.333`)
@@ -513,9 +520,9 @@ Negative results remain part of the research record.
    - joint sign/triple/position removal is complete
 12. Add target-only and endpoint-only baselines for third-order multilingual signed-permutation endpoints.
 13. Add nonlinear endpoint-artifact controls, such as adversarial endpoint balancing or kernel/MLP endpoint probes.
-14. Complete the GLT-MOLT matched-null follow-up:
-   - compare learned operator closure against norm-matched and signed-permutation matched operator nulls
-   - evaluate whether ridge-smoothed closure survives shrinkage-matched controls
+14. Extend the completed GLT-MOLT matched-null result:
+   - add shrinkage-calibrated nulls that explicitly match singular-value spectra, not only Frobenius norms
+   - test whether the operator-closure signal survives across layers and PCA dimensions
 15. Add the GLT-AFFECT text-only MVP:
    - graded emotional polarity scale
    - linearity and curvature tests

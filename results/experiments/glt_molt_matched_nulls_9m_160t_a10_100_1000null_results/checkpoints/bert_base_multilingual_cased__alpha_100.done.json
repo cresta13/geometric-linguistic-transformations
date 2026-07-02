@@ -1,0 +1,5 @@
+{
+  "model": "bert-base-multilingual-cased",
+  "ridge_alpha": 100.0,
+  "finished_at": "Thu Jul  2 06:06:19 2026"
+}
