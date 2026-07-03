@@ -493,14 +493,27 @@ This is the strongest current GLT-MOLT evidence. It weakens the concern that the
 
 > Learned linguistic operator maps contain weak but robust closure-like compression under matched null controls, while endpoint reconstruction and algebraic compression remain different objectives.
 
+The 2026-07-03 spectral-null audit adds a stricter control for the strongest current setting, `alpha=100`. For each observed commutator, it generates null matrices that preserve the commutator's singular-value spectrum and randomize row/column directions through Givens rotations. This tests whether the closure signal is merely a consequence of shrinkage or spectral shape.
+
+Mean matrix-closure residual under the spectral null:
+
+| Ridge alpha | Method | Observed | Spectral matched null | Mean empirical p |
+|---:|---|---:|---:|---:|
+| `100` | affine | `0.855` | `0.99985` | `0.00333` |
+| `100` | linear | `0.882` | `0.99985` | `0.00347` |
+
+This strengthens the GLT-MOLT diagnostic: the observed commutators remain more compressible into the primitive `N,Q,M,T` operator span even against nulls with the same singular-value spectra. The model-level magnitudes are uneven, and `Qwen/Qwen3-Embedding-0.6B` is close to null-like in residual magnitude, so this should still be read as a controlled closure-compression result rather than a universal representation theorem.
+
 Relevant artifacts:
 
 - script: [run_glt_molt_affine_operator_audit.py](../../../scripts/run_glt_molt_affine_operator_audit.py)
 - ridge sweep script: [run_glt_molt_ridge_sweep.py](../../../scripts/run_glt_molt_ridge_sweep.py)
 - matched-null script: [run_glt_molt_matched_nulls.py](../../../scripts/run_glt_molt_matched_nulls.py)
+- spectral-null script: [run_glt_molt_spectral_nulls.py](../../../scripts/run_glt_molt_spectral_nulls.py)
 - 1000-null results: [glt_molt_affine_operator_9m_160t_1000null_results](../../../results/experiments/glt_molt_affine_operator_9m_160t_1000null_results/)
 - ridge sweep results: [glt_molt_ridge_sweep_9m_160t_300null_results](../../../results/experiments/glt_molt_ridge_sweep_9m_160t_300null_results/)
 - matched-null results: [glt_molt_matched_nulls_9m_160t_a10_100_1000null_results](../../../results/experiments/glt_molt_matched_nulls_9m_160t_a10_100_1000null_results/)
+- spectral-null results: [glt_molt_spectral_nulls_9m_160t_a100_300null_g256_results](../../../results/experiments/glt_molt_spectral_nulls_9m_160t_a100_300null_g256_results/)
 
 Working hypothesis for why `QMT` is coherent:
 

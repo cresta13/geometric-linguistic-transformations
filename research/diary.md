@@ -1113,3 +1113,37 @@ This is a meaningful strengthening of GLT-MOLT. The closure-like compression is 
 Next step:
 
 Test singular-spectrum/shrinkage-matched nulls and layer/PCA-dimension sensitivity. If the signal survives those controls, GLT-MOLT becomes the closest current track to a serious Lie-algebra-style claim.
+
+## 2026-07-03: GLT-MOLT spectral-null operator closure
+
+We ran the direct follow-up to the matched-null audit: a singular-spectrum matched null for the `alpha=100` GLT-MOLT setting.
+
+Artifacts:
+
+- `scripts/run_glt_molt_spectral_nulls.py`
+- `results/experiments/glt_molt_spectral_nulls_9m_160t_a100_300null_g256_results/`
+
+Configuration:
+
+- 9 multilingual embedding models
+- 7 languages
+- 160 templates per language
+- PCA dimension 128
+- ridge alpha `100`
+- 300 spectral null samples per row
+- 256 random Givens rotations for row and column directions
+
+Main result:
+
+| Method | Observed closure | Spectral matched null | Mean empirical p |
+|---|---:|---:|---:|
+| affine | `0.855` | `0.99985` | `0.00333` |
+| linear | `0.882` | `0.99985` | `0.00347` |
+
+Interpretation:
+
+The closure-like compression survives a stricter null that preserves each commutator's singular-value spectrum. This weakens the explanation that the `alpha=100` result is only generic ridge shrinkage or spectral shape. The result is still not a Lie-algebra proof: target prediction is worse at `alpha=100`, and model-level closure magnitudes are uneven, with `Qwen/Qwen3-Embedding-0.6B` close to null-like in residual magnitude.
+
+Next step:
+
+Run layer/PCA-dimension ablations for GLT-MOLT before expanding operator families. If the spectral-null signal survives those ablations, this track becomes the most serious route toward a Lie-style paper.

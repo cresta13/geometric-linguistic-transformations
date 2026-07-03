@@ -1,0 +1,5 @@
+{
+  "model": "xlm-roberta-base",
+  "ridge_alpha": 100.0,
+  "finished_at": "Fri Jul  3 06:18:39 2026"
+}

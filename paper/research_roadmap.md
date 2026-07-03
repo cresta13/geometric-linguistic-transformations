@@ -155,6 +155,7 @@ Measure whether transformations live in low-dimensional subspaces.
 - Added the 2026-06-29/30 GLT-MOLT 9-model affine/operator audit with 1000 random-subspace nulls. Additive deltas remain better endpoint predictors, while learned linear/affine maps show weak matrix-commutator closure below random-subspace nulls.
 - Added the 2026-07-01 GLT-MOLT ridge sweep. Closure-like residuals improve under stronger ridge regularization, which makes norm-matched and shrinkage-matched operator nulls the next required control.
 - Added the 2026-07-02 GLT-MOLT matched-null audit. Learned-operator closure remains below random-subspace, Gaussian norm-matched, and signed-permutation matched operator nulls for `alpha=10` and `alpha=100`.
+- Added the 2026-07-03 GLT-MOLT spectral-null audit. At `alpha=100`, learned-operator closure remains below singular-spectrum matched Givens-rotation nulls, weakening the explanation that the effect is only shrinkage or spectrum matching.
 
 ### Future submission work
 
@@ -164,7 +165,7 @@ Measure whether transformations live in low-dimensional subspaces.
 4. Add layerwise and pooling ablations for composition diagnostics.
 5. Explain the `NQM` versus `QMT` regime shift before expanding the operator set.
 6. Add focused negation analysis before expanding the operator set.
-7. Extend GLT-MOLT matched-null controls with singular-spectrum/shrinkage-matched nulls and layer/PCA-dimension ablations.
+7. Extend GLT-MOLT beyond the completed matched-null and spectral-null controls with layer/PCA-dimension ablations and, if needed, a multi-alpha spectral-null pass.
 
 ## Future submission priorities
 

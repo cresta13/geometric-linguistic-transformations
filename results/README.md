@@ -66,6 +66,11 @@ Important subdirectories:
   - `csv/matched_closure_by_alpha_method.csv`: closure residuals versus random-subspace, Gaussian norm-matched, and signed-permutation matched nulls.
   - `csv/operator_fit_by_alpha_method.csv`: one-step target prediction for `alpha=10` and `alpha=100`.
   - `csv/operator_norms_summary.csv`: learned operator norm summaries by alpha, method, and primitive operator.
+- `glt_molt_spectral_nulls_9m_160t_a100_300null_g256_results/`
+  - `RUN_SUMMARY.md`: 2026-07-03 GLT-MOLT spectral-null operator-closure summary.
+  - `csv/spectral_closure_by_alpha_method.csv`: `alpha=100` closure residuals versus singular-spectrum matched Givens-rotation nulls.
+  - `csv/spectral_closure_summary.csv`: pairwise commutator closure summaries by method and ordered-pair difference.
+  - `csv/operator_fit_by_alpha_method.csv`: one-step target prediction for the same learned linear and affine operators.
 - `lie_composition_decoder_results/`
 - `lie_algebraic_identities_results/`
 - `lie_algebraic_identities_decoder_results/`
