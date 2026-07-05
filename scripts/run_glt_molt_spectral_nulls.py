@@ -211,6 +211,19 @@ def aggregate() -> None:
 def run_model(model_name: str, df: pd.DataFrame, config: dict, alphas: list[float]) -> None:
     safe = safe_model_name(model_name)
     print(f"\n=== MODEL {model_name} ===", flush=True)
+    pending_alphas = []
+    for alpha in alphas:
+        label = alpha_label(alpha)
+        marker = CKPT_DIR / f"{safe}__alpha_{label}.done.json"
+        if marker.exists() and not config["force"]:
+            print(f"SKIP {model_name} alpha={alpha:g}", flush=True)
+        else:
+            pending_alphas.append(alpha)
+
+    if not pending_alphas:
+        print(f"SKIP {model_name}: all requested alphas complete", flush=True)
+        return
+
     texts = all_texts(df)
     print(f"templates={len(df)} texts={len(texts)}", flush=True)
     raw = embed_texts(model_name, texts, config["device"], config["batch_size"])
@@ -218,13 +231,9 @@ def run_model(model_name: str, df: pd.DataFrame, config: dict, alphas: list[floa
     vecs_by_text = dict(zip(texts, vecs))
     dim = vecs.shape[1]
 
-    for alpha in alphas:
+    for alpha in pending_alphas:
         label = alpha_label(alpha)
         marker = CKPT_DIR / f"{safe}__alpha_{label}.done.json"
-        if marker.exists() and not config["force"]:
-            print(f"SKIP {model_name} alpha={alpha:g}", flush=True)
-            continue
-
         print(f"alpha={alpha:g}", flush=True)
         fit, closure = model_alpha_audit(model_name, df, vecs_by_text, dim, alpha, config)
         fit.to_csv(CSV_DIR / f"operator_fit_{safe}__alpha_{label}.csv", index=False)
