@@ -71,6 +71,10 @@ Important subdirectories:
   - `csv/spectral_closure_by_alpha_method.csv`: `alpha=100` closure residuals versus singular-spectrum matched Givens-rotation nulls.
   - `csv/spectral_closure_summary.csv`: pairwise commutator closure summaries by method and ordered-pair difference.
   - `csv/operator_fit_by_alpha_method.csv`: one-step target prediction for the same learned linear and affine operators.
+- `glt_molt_spectral_pca_sweep_5m_160t_a100_300null_g256_results/`
+  - `RUN_SUMMARY.md`: 2026-07-08 compact GLT-MOLT PCA-64 spectral-null sensitivity summary.
+  - `pca_64/csv/spectral_closure_by_alpha_method.csv`: completed five-model PCA-64 closure residuals versus singular-spectrum matched nulls.
+  - `pca_64/csv/operator_fit_by_alpha_method.csv`: PCA-64 one-step target prediction for the same learned operators.
 - `lie_composition_decoder_results/`
 - `lie_algebraic_identities_results/`
 - `lie_algebraic_identities_decoder_results/`

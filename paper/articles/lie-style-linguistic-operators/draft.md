@@ -504,6 +504,15 @@ Mean matrix-closure residual under the spectral null:
 
 This strengthens the GLT-MOLT diagnostic: the observed commutators remain more compressible into the primitive `N,Q,M,T` operator span even against nulls with the same singular-value spectra. The model-level magnitudes are uneven, and `Qwen/Qwen3-Embedding-0.6B` is close to null-like in residual magnitude, so this should still be read as a controlled closure-compression result rather than a universal representation theorem.
 
+The 2026-07-08 compact PCA-64 sensitivity check adds a lower-dimensional follow-up on five stable multilingual encoders. This is not a full PCA sweep, but it tests whether the spectral-null result disappears when the operator maps are learned in a smaller PCA space.
+
+| PCA dim | Method | Observed | Spectral matched null | Mean empirical p |
+|---:|---|---:|---:|---:|
+| `64` | affine | `0.8285` | `0.9996` | `0.00332` |
+| `64` | linear | `0.8701` | `0.9995` | `0.00335` |
+
+The PCA-64 result supports the robustness of the closure-compression diagnostic, but it should not be cited as a completed PCA-dimension ablation. PCA-128 and PCA-256 sensitivity should be run as smaller separate jobs.
+
 Relevant artifacts:
 
 - script: [run_glt_molt_affine_operator_audit.py](../../../scripts/run_glt_molt_affine_operator_audit.py)
@@ -514,6 +523,7 @@ Relevant artifacts:
 - ridge sweep results: [glt_molt_ridge_sweep_9m_160t_300null_results](../../../results/experiments/glt_molt_ridge_sweep_9m_160t_300null_results/)
 - matched-null results: [glt_molt_matched_nulls_9m_160t_a10_100_1000null_results](../../../results/experiments/glt_molt_matched_nulls_9m_160t_a10_100_1000null_results/)
 - spectral-null results: [glt_molt_spectral_nulls_9m_160t_a100_300null_g256_results](../../../results/experiments/glt_molt_spectral_nulls_9m_160t_a100_300null_g256_results/)
+- compact PCA-64 sensitivity results: [glt_molt_spectral_pca_sweep_5m_160t_a100_300null_g256_results](../../../results/experiments/glt_molt_spectral_pca_sweep_5m_160t_a100_300null_g256_results/)
 
 Working hypothesis for why `QMT` is coherent:
 

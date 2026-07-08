@@ -1147,3 +1147,33 @@ The closure-like compression survives a stricter null that preserves each commut
 Next step:
 
 Run layer/PCA-dimension ablations for GLT-MOLT before expanding operator families. If the spectral-null signal survives those ablations, this track becomes the most serious route toward a Lie-style paper.
+
+## 2026-07-08: Compact GLT-MOLT PCA-64 spectral sensitivity
+
+We ran a compact follow-up to test whether the GLT-MOLT spectral-null closure signal survives in a lower-dimensional PCA space. Full 9-model PCA sweeps were too heavy for the machine, so this run uses five stable multilingual encoders and treats PCA-64 as a completed sensitivity slice rather than a complete PCA sweep.
+
+Artifacts:
+
+- `scripts/launch_glt_molt_compact_pca_sweep.ps1`
+- `results/experiments/glt_molt_spectral_pca_sweep_5m_160t_a100_300null_g256_results/`
+
+Configuration:
+
+- 5 stable multilingual encoder models
+- 7 languages
+- 160 templates per language
+- PCA dimension `64`
+- ridge alpha `100`
+- 300 spectral null samples per row
+- 256 random Givens rotations
+
+Main result:
+
+| Method | Observed closure | Spectral matched null | Mean empirical p |
+|---|---:|---:|---:|
+| affine | `0.8285` | `0.9996` | `0.00332` |
+| linear | `0.8701` | `0.9995` | `0.00335` |
+
+Interpretation:
+
+The PCA-64 compact run supports the claim that the spectral-null closure-compression signal is not unique to PCA-128. It remains a bounded result: PCA-128 and PCA-256 should be run as separate smaller jobs before claiming a completed PCA-dimension ablation.

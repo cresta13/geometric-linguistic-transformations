@@ -45,7 +45,10 @@ $env:LIE_TRUST_REMOTE_CODE = "1"
 $env:TOKENIZERS_PARALLELISM = "false"
 
 Write-Monitor "starting compact PCA sweep"
+$PreviousErrorActionPreference = $ErrorActionPreference
+$ErrorActionPreference = "Continue"
 & $Python (Join-Path $Root "scripts\run_glt_molt_spectral_pca_sweep.py") 1>> $Stdout 2>> $Stderr
 $code = $LASTEXITCODE
+$ErrorActionPreference = $PreviousErrorActionPreference
 Write-Monitor "finished compact PCA sweep exit_code=$code"
 exit $code

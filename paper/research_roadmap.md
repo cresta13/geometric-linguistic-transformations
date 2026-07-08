@@ -156,6 +156,7 @@ Measure whether transformations live in low-dimensional subspaces.
 - Added the 2026-07-01 GLT-MOLT ridge sweep. Closure-like residuals improve under stronger ridge regularization, which makes norm-matched and shrinkage-matched operator nulls the next required control.
 - Added the 2026-07-02 GLT-MOLT matched-null audit. Learned-operator closure remains below random-subspace, Gaussian norm-matched, and signed-permutation matched operator nulls for `alpha=10` and `alpha=100`.
 - Added the 2026-07-03 GLT-MOLT spectral-null audit. At `alpha=100`, learned-operator closure remains below singular-spectrum matched Givens-rotation nulls, weakening the explanation that the effect is only shrinkage or spectrum matching.
+- Added the 2026-07-08 compact PCA-64 GLT-MOLT sensitivity check. On five stable multilingual encoders, the spectral-null closure signal remains below singular-spectrum matched nulls at PCA dimension `64`.
 
 ### Future submission work
 
@@ -165,7 +166,7 @@ Measure whether transformations live in low-dimensional subspaces.
 4. Add layerwise and pooling ablations for composition diagnostics.
 5. Explain the `NQM` versus `QMT` regime shift before expanding the operator set.
 6. Add focused negation analysis before expanding the operator set.
-7. Extend GLT-MOLT beyond the completed matched-null and spectral-null controls with layer/PCA-dimension ablations and, if needed, a multi-alpha spectral-null pass.
+7. Extend GLT-MOLT beyond the completed matched-null, spectral-null, and compact PCA-64 controls with separate PCA-128/PCA-256 jobs, layer ablations, and, if needed, a multi-alpha spectral-null pass.
 
 ## Future submission priorities
 
