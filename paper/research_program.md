@@ -49,7 +49,7 @@ Current evidence:
   - BERT-large logistic regression: `delta=0.854`, `concat=0.760`, `y_only=0.750`
   - DeBERTa-v3-base Linear SVC: `delta=0.812`, `concat=0.776`, `y_only=0.747`
   - DeBERTa-v3-base logistic regression: `delta=0.752`, `concat=0.694`, `y_only=0.726`
-- UPAT hard-holdout is a boundary result: `delta` is worse than `y_only` for BERT, RoBERTa, and GPT-2, and no UPAT delta-vs-y McNemar test is significant.
+- UPAT hard-holdout is a bounded-claim result: `delta` is worse than `y_only` for BERT, RoBERTa, and GPT-2, and no UPAT delta-vs-y McNemar test is significant. This suggests that the main delta advantage captures transformation type better than absolute transformation identity under hard sentence-pair splits.
 - Full-semantic pooling ablation now supports mean pooling as a defensible main choice, while showing that the decoder effect is partly pooling-dependent.
 
 Scientific status:
@@ -58,7 +58,7 @@ This is the more mature paper. It can be written as a representation-geometry re
 
 Main risk:
 
-Some signal may come from target-sentence artifacts rather than pure transformation geometry. The concrete high-risk case is now confirmed: `syntax=1.0` reproduces under `y_only`, so it must be interpreted as a target/surface artifact unless future controls overturn that. UPAT also shows that `delta > y_only` is not universal under small hard-holdout regimes. The logistic-regression rows show the same caution from a different angle: the Track 1 result is currently strongest as a Linear SVC/margin-based probe result, not as a classifier-invariant law. The paper needs strong source-only, target-only, delta-only, and paraphrase controls.
+Some signal may come from target-sentence artifacts rather than pure transformation geometry. The concrete high-risk case is now confirmed: `syntax=1.0` reproduces under `y_only`, so it must be interpreted as a target/surface artifact unless future controls overturn that. UPAT bounds the positive claim rather than merely weakening it: `delta > y_only` is not universal under small hard-holdout regimes, which suggests that delta vectors are more reliable for transformation-type geometry than for absolute sentence-pair identity. The logistic-regression rows show the same caution from a different angle: the Track 1 result is currently strongest as a Linear SVC/margin-based probe result, not as a classifier-invariant law. The paper needs strong source-only, target-only, delta-only, and paraphrase controls.
 
 ## Track 2: Signed permutation coherence for linguistic operators
 
@@ -145,7 +145,7 @@ S(A,B,C) = ABC + BCA + CAB - ACB - CBA - BAC
 - A 2026-06-29/30 9-model GLT-MOLT affine/operator audit then tests whether learned operator maps give a more Lie-adjacent signal:
   - models and languages match the 9-model multilingual stress-test family
   - templates per language: `160`; PCA dimension: `128`; random-subspace nulls: `1000` in the confirmation run
-  - additive deltas remain better target-reconstruction maps than learned linear/affine operators (mean target cosine `0.903` additive versus `0.738` linear and `0.695` affine)
+  - simple additive displacement vectors outperform learned linear/affine operators at target prediction (mean target cosine `0.903` additive versus `0.738` linear and `0.695` affine), suggesting that endpoint differences capture target movement more naturally than parametric operator regression in the current setting
   - learned matrix commutators are not closed exactly, but closure residuals are systematically below random-subspace nulls:
     - linear pair residual range: `0.964-0.985` versus random null `~0.9999`
     - affine pair residual range: `0.958-0.987` versus random null `~0.9999`
@@ -212,7 +212,7 @@ The first affine/operator audit is now complete for 7 multilingual models and 7 
 
 Current interpretation:
 
-Additive deltas are better for endpoint reconstruction, while matrix operators are worse predictors but produce cleaner algebraic diagnostics. This split is useful: GLT-DV/GLT-SPOT and GLT-MOLT answer different questions.
+Simple additive displacement vectors outperform learned linear/affine operators at target prediction, while matrix operators are worse predictors but produce cleaner algebraic diagnostics. This split is useful: endpoint differences appear better suited to target movement, while learned operators are useful for asking algebraic closure questions.
 
 ## Track 3: Cross-model transformation transfer
 
@@ -502,9 +502,9 @@ Negative results remain part of the research record.
    - keep Procrustes null baselines in the evidence packet; `N=1000` random-label/random-pairing/random-orthogonal controls are now complete
    - increase shuffle/permutation controls to at least 1000, ideally 5000 for final numbers
    - add commutator norm null baselines
-2. Resolve UPAT:
+2. Keep UPAT as a bounded hard-holdout result unless future matched-capacity tests change it:
    - either expand UPAT and match train sizes against the main dataset
-   - or keep it explicitly as a hard negative control and narrow Track 1 claims
+   - or keep it explicitly as a bounded hard-holdout result and narrow Track 1 claims
 3. Extend UPAT alignment controls beyond the completed `N=1000` null audit and held-out alignment curve:
    - bootstrap confidence intervals
    - direction-family summary
@@ -568,7 +568,7 @@ Negative results remain part of the research record.
    - multiseed standard deviations and seed-level effect intervals are reported
    - at least one prior-work baseline or comparison is written up, such as task vectors or function vectors
    - at least one model outside the original five is included as a spot-check; currently satisfied by BERT-large and DeBERTa-v3-base
-   - UPAT hard-holdout is either resolved experimentally or explicitly reported as a negative boundary condition
+   - UPAT hard-holdout is either resolved experimentally or explicitly reported as a bounded hard-holdout result
 2. Keep Track 2 as a diagnostics paper until grammar-generated templates and endpoint-only controls succeed.
 3. Promote Track 3 only if it becomes clearly complementary to RISE: null-controlled Procrustes transfer plus held-out anchors plus an explicit RISE/MDV comparison. The main narrative should be stress-testing cross-model transfer, not claiming first discovery of universal transformation geometry.
 4. If steering works, write Track 4 as an intervention/controllable-generation paper.

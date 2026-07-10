@@ -437,7 +437,7 @@ Main result:
 | linear | `0.738` | `0.975` | `~0.9999` | `0.067` |
 | affine | `0.695` | `0.971` | `~0.9999` | `0.064` |
 
-The split is important. Additive deltas remain much better one-step target predictors, but learned matrix operators produce a weak closure-like signal: their commutators are still far from exactly closed, yet their residuals after projection into the primitive operator span are systematically below random-subspace nulls.
+The split is important. Simple additive displacement vectors outperform learned linear/affine operators at target prediction (`0.903` versus `0.738` and `0.695` mean cosine in the 1000-null audit), suggesting that transformation geometry is more naturally captured by endpoint differences than by parametric operator regression in the current setting. Learned matrix operators are still useful as algebraic probes: their commutators are far from exactly closed, yet their residuals after projection into the primitive operator span are systematically below random-subspace nulls.
 
 This should not be overread as a Lie algebra. It is evidence for weak closure-like compression in ridge-regularized PCA-space maps. Ridge smoothing may itself make maps algebraically cleaner, so the result requires regularization controls.
 
@@ -574,7 +574,7 @@ Evidence layers:
 5. The multilingual max audit broadens the effect to all four tested triples across 7 languages and 5 multilingual encoders.
 6. Endpoint-subspace residualization shows that the multilingual signed-permutation effect largely survives removal of simple endpoint-derived probe subspaces.
 7. The structure-constants audit finds partial closure-like compression of pairwise commutators into the primitive operator span better than random subspaces.
-8. Learned GLT-MOLT matrix operators show weak closure-like compression, but the signal is regularization-sensitive.
+8. GLT-MOLT shows a useful split: additive deltas are better target predictors, while learned matrix operators are worse predictors but expose weak closure-like compression under matched nulls.
 9. Negation triples are regime-dependent, which constrains the theory.
 10. Grammar-generated pairwise controls preserve below-null commutator coherence, but endpoint controls remain too strong.
 

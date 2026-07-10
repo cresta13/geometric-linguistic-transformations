@@ -11,14 +11,14 @@ Sentence-pair displacement vectors can add transformation information beyond end
 - Logistic regression is mixed, so the current claim is probe-dependent rather than classifier-invariant.
 - Syntax `1.0` is now explicitly reinterpreted as target/surface leakage because `y_only` also reaches `1.0`.
 - Pooling/layerwise checks, BERT-large, and DeBERTa-v3-base spot-checks support the controlled baseline claim.
-- UPAT is reported as a hard-holdout boundary where `delta > y_only` is not guaranteed.
+- UPAT is reported as a hard-holdout boundary where endpoint features dominate, suggesting that delta geometry captures transformation type better than absolute transformation identity.
 
 ## Risks
 
 - Target endpoints remain strong, so endpoint leakage is not eliminated.
 - The main positive result is strongest for Linear SVC; logistic regression does not support `delta > y_only` for every model.
 - The main multiseed table still uses mean pooling.
-- UPAT boundary results block any universal operator claim.
+- UPAT boundary results block any universal operator claim, but make the paper's bounded claim sharper.
 - Cross-model/Rise-aware steering results belong in Track 3, not as the headline of this Track 1 paper.
 
 ## Next experiments

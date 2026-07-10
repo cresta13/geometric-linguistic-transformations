@@ -19,7 +19,7 @@ This is an active research repository, not a submission-ready paper. The current
 
 - Delta vectors often add transformation information beyond endpoint-only baselines.
 - Syntax-holdout `1.0` results are treated as endpoint/surface leakage, not as evidence of deep generalization.
-- UPAT hard-holdout results are reported as a boundary condition where `y_only` can beat `delta`.
+- UPAT hard-holdout results are reported as a bounded-claim result: endpoint features can dominate hard sentence-pair identity splits, suggesting that delta geometry captures transformation type better than absolute transformation identity.
 - Lie-style antisymmetry is not evidence; it is a tautological implementation check.
 - Third-order signed permutation coherence is framed as a diagnostic, not as a formal Lie algebra or Jacobi identity.
 - The 2026-06-27 extended multilingual GLT-SPOT audit scales the signed-permutation test to 7 models, 7 languages, 96 templates per language, and 5000 signed-null repeats; all four triples remain below null in all 49 model-language cells, while endpoint-derived controls remain a live limitation.
@@ -27,7 +27,7 @@ This is an active research repository, not a submission-ready paper. The current
 - The 2026-06-28 new-model GLT-SPOT checks replicate the below-null signed-permutation pattern on `intfloat/multilingual-e5-large-instruct` and `Qwen/Qwen3-Embedding-0.6B` across all seven tested languages.
 - The 2026-06-28 new-model endpoint-subspace residualization check shows that this below-null pattern survives removal of linear endpoint-derived triple-label, endpoint-position, and cyclic-sign subspaces in both newer models.
 - The 2026-06-29 9-model endpoint-subspace residualization audit extends that stress test to older and newer multilingual embedding models; all four triples remain below exact signed-null after removing endpoint-derived linear rowspaces in all `63/63` model-language cells.
-- The 2026-06-29/30 9-model GLT-MOLT affine/operator audit, now confirmed with 1000 random-subspace nulls, shows that additive deltas remain better target predictors, while learned linear/affine maps show weak but systematic matrix-commutator closure and low Jacobi-like operator norms.
+- The 2026-06-29/30 9-model GLT-MOLT affine/operator audit, now confirmed with 1000 random-subspace nulls, shows a useful split: simple additive deltas outperform learned linear/affine operators at target prediction, while learned maps expose weak but systematic matrix-commutator closure and low Jacobi-like operator norms.
 - The 2026-07-01 GLT-MOLT ridge sweep shows that the closure-like signal persists across ridge alphas, but algebraic cleanliness strengthens under heavier regularization, so shrinkage-matched operator nulls are now required before making stronger Lie-style claims.
 - The 2026-07-02 GLT-MOLT matched-null audit shows that learned-operator closure remains below random-subspace, Gaussian norm-matched, and signed-permutation matched operator nulls; the result strengthens the operator-closure diagnostic while preserving the caveat that stronger regularization improves algebraic compression but not target prediction.
 - The 2026-07-03 GLT-MOLT spectral-null audit shows that the `alpha=100` closure signal also remains below singular-spectrum matched Givens-rotation nulls; this weakens the explanation that the effect is only a generic shrinkage or spectrum artifact, while still falling short of a formal Lie-algebra claim.

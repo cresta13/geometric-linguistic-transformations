@@ -43,7 +43,7 @@ Distinct value:
 - explicit endpoint leakage controls
 - multiseed delta/y_only/concat/x_only ablations
 - McNemar tests
-- hard negative/boundary reporting via UPAT
+- bounded hard-holdout reporting via UPAT
 - syntax `1.0` reinterpreted as endpoint/surface leakage rather than a success
 
 This makes Track 1 a conservative control paper, not a stronger version of RISE.

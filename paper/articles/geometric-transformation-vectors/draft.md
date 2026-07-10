@@ -2,7 +2,7 @@
 
 ## Abstract
 
-Transformer embedding spaces encode relations between paired sentences, but the current evidence must be stated carefully. We study controlled linguistic transformations and represent each pair by `delta = embedding(target) - embedding(source)`. In the multiseed full-semantic setting, Linear SVC probes show a reproducible delta advantage over source-only and target-only baselines across BERT, RoBERTa, DistilRoBERTa, GPT-2, and DistilGPT-2, with McNemar tests significant for every seed/model pair. The effect is not classifier-invariant: logistic regression keeps the advantage for BERT-family and DistilGPT-2 models but not for GPT-2 or RoBERTa. Strong endpoint leakage also remains: target-only representations are already highly predictive, and the `syntax=1.0` holdout result should be treated as a red flag for surface-form cues rather than as a central achievement. The defensible current claim is that simple delta vectors can add reproducible transformation information beyond target endpoints under controlled probes, not that they isolate pure context-independent operators.
+Transformer embedding spaces encode relations between paired sentences, but the current evidence must be stated carefully. We study controlled linguistic transformations and represent each pair by `delta = embedding(target) - embedding(source)`. In the multiseed full-semantic setting, Linear SVC probes show a reproducible delta advantage over source-only and target-only baselines across BERT, RoBERTa, DistilRoBERTa, GPT-2, and DistilGPT-2, with McNemar tests significant for every seed/model pair. The effect is not classifier-invariant: logistic regression keeps the advantage for BERT-family and DistilGPT-2 models but not for GPT-2 or RoBERTa. Strong endpoint leakage also remains: target-only representations are already highly predictive, and the `syntax=1.0` holdout result should be treated as a red flag for surface-form cues rather than as a central achievement. The defensible current claim is that simple delta vectors can add reproducible transformation information beyond target endpoints under controlled probes, not that they isolate pure context-independent operators. UPAT sharpens this into a bounded claim: the delta advantage is robust under full-semantic and entity/variant holdouts, but does not hold under hard sentence-pair holdout, where endpoint features dominate.
 
 ## Evidence Map
 
@@ -274,11 +274,11 @@ The UPAT audit is a harder and smaller holdout (`n=80`, 5 classes) designed to r
 | GPT-2 | `0.425` | `0.475` | `-0.050` | `0.804` |
 | DistilGPT-2 | `0.650` | `0.600` | `+0.050` | `0.727` |
 
-No UPAT `delta` vs `y_only` comparison is significant at `p < 0.05`. This is now treated as a boundary condition:
+No UPAT `delta` vs `y_only` comparison is significant at `p < 0.05`. This is now treated as a bounded-claim result rather than a missing fix:
 
-> Delta vectors add information in the main full-semantic setting and in larger-model spot-checks, but the advantage is not guaranteed under small, hard holdout regimes where target endpoints remain strong and training capacity is limited.
+> The delta advantage is robust under full-semantic holdout (accuracy around `0.82-0.89`) and entity/variant holdouts, but does not hold under hard sentence-pair holdout (UPAT), where endpoint features dominate. This suggests that delta geometry captures transformation type better than absolute transformation identity.
 
-This result should stay in the paper if UPAT remains in the package. Hiding it would create a worse interpretation problem than reporting it as a limitation.
+This result should stay in the paper if UPAT remains in the package. It is a useful boundary on the claim: delta vectors are informative about transformation classes in controlled regimes, but they are not guaranteed to identify the same transformation under a hard sentence-pair split with limited examples.
 
 Why UPAT differs from the main full-semantic dataset:
 
@@ -289,7 +289,7 @@ Why UPAT differs from the main full-semantic dataset:
 
 The correct interpretation is therefore not "`delta` is always the transformation representation." It is:
 
-> Delta can add useful relational information, but endpoint-only features remain a serious confounder and can dominate under smaller, harder holdouts.
+> Delta can add useful relational information about transformation type, but endpoint-only features remain a serious confounder and can dominate when the task requires harder pair-level identity generalization.
 
 RISE-aware UPAT notes:
 
@@ -371,7 +371,7 @@ The revised paper should center the first claim.
 
 - `syntax=1.0` is now confirmed to be target/surface-cue dominated in the current split.
 - `y_only` is high, so target-side leakage is substantial.
-- UPAT hard-holdout results do not show a significant `delta > y_only` advantage and sometimes favor `y_only`.
+- UPAT hard-holdout results do not show a significant `delta > y_only` advantage and sometimes favor `y_only`; this bounds the claim to transformation-type geometry rather than absolute transformation identity.
 - The current core model set is small and old by 2026 standards, but draft-level spot-checks now include BERT-large and DeBERTa-v3-base.
 - Mean pooling is now tested on a reduced full-semantic split, but the main multiseed table still uses only mean pooling.
 - Related work positioning is started but still needs final ACL/EMNLP-quality bibliography formatting.
@@ -379,11 +379,11 @@ The revised paper should center the first claim.
 ## 15. Required Pre-Submission Experiments
 
 1. Produce `x_only/y_only/concat/delta` tables for every remaining holdout beyond syntax and full semantic.
-2. Reconcile UPAT with the main full-semantic result by either expanding UPAT, matching train sizes, or clearly treating it as a hard negative control.
+2. Reconcile UPAT with the main full-semantic result by either expanding UPAT, matching train sizes, or clearly treating it as a bounded hard-holdout result.
 3. Convert the large/modern spot-check into a multiseed run if Track 1 becomes the submission priority.
 4. Add classifier-robustness checks beyond Linear SVC and logistic regression if the paper claims more than a margin-probe result.
 5. Add a final related-work section and bibliography in submission format.
 
 ## Current Status
 
-This remains the more mature paper track, but the narrative has changed. The paper should be framed as a controlled ablation result: margin-based Linear SVC probes show reproducible delta information beyond endpoints, while endpoint leakage, classifier dependence, and UPAT boundary failures prevent a broad operator claim.
+This remains the more mature paper track, but the narrative has changed. The paper should be framed as a controlled ablation result: margin-based Linear SVC probes show reproducible delta information beyond endpoints, while endpoint leakage, classifier dependence, and the UPAT boundary result restrict the claim to transformation-type geometry rather than broad context-independent operators.

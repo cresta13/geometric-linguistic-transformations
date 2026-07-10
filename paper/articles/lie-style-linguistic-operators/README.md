@@ -12,7 +12,7 @@ Some linguistic transformations behave like locally noncommuting operators in tr
 - Signed permutation diagnostics with bootstrap CI and permutation-null controls show robust controlled cancellation.
 - Grammar-generated pairwise composition controls now show relative commutator norms below shuffled/norm-matched nulls, but endpoint-only controls are still near perfect.
 - The multilingual max audit gives the strongest current scale-up: `NQM=0.580`, `QMT=0.620`, `NQT=0.701`, `NMT=0.772` as global mean ratios to signed-null across 35 model-language cells per triple.
-- GLT-MOLT learned operator maps now add an operator-valued bridge: additive deltas predict targets best, while ridge-regularized linear/affine maps show weak matrix-commutator closure below random-subspace nulls.
+- GLT-MOLT learned operator maps now add an operator-valued bridge: simple additive deltas predict targets best, suggesting endpoint differences capture target movement more naturally than parametric operator regression, while ridge-regularized linear/affine maps expose weak matrix-commutator closure below matched nulls.
 - The ridge sweep shows that algebraic cleanliness strengthens under heavier regularization. The matched-null and spectral-null audits then show that the learned-operator closure signal remains below Gaussian norm-matched, signed-permutation matched, and singular-spectrum matched operator nulls.
 
 ## Main caution

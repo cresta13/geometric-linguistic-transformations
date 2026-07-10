@@ -17,7 +17,7 @@ This file tracks completed research-driven changes and future work needed before
 - Ran a BERT syntax layerwise/pooling sanity check: layer `0` already reaches `1.0`, so syntax is not a last-layer geometry result.
 - Ran a DeBERTa-v3-small spot-check: Linear SVC supports `delta > concat > y_only`, while logistic regression remains mixed.
 - Ran larger/modern spot-checks on `bert-large-uncased` and `microsoft/deberta-v3-base`; `delta` is best for both Linear SVC and logistic regression on both models.
-- Added UPAT hard-holdout as an explicit boundary result instead of leaving it hidden in CSV files.
+- Added UPAT hard-holdout as an explicit bounded-claim result instead of leaving it hidden in CSV files.
 - Ran full-semantic pooling ablation for BERT, RoBERTa, and GPT-2.
 - Added confusion-matrix analysis with negation-vs-non-negation recall.
 - Reframed layer-0 syntax accuracy as a surface-cue failure, not as evidence of semantic geometry.
@@ -25,7 +25,7 @@ This file tracks completed research-driven changes and future work needed before
 
 ### Future submission work
 
-1. Resolve UPAT by expansion or matched-capacity comparison against the main dataset.
+1. Keep UPAT as a bounded hard-holdout result unless expansion or matched-capacity comparison changes the conclusion.
 2. `x_only/y_only/concat/delta` for every non-syntax holdout split that is still missing this breakdown.
 3. Convert large/modern spot-checks into multiseed runs if Track 1 is promoted to submission.
 4. Proper related-work table and bibliography in final citation format.
@@ -152,7 +152,7 @@ Measure whether transformations live in low-dimensional subspaces.
 - Rewrote antisymmetry as a tautological implementation check rather than evidence.
 - Added explicit caveat that current Lie-style templates contain stable lexical markers and remain synthetic.
 - Added the 2026-06-23 multilingual max audit: 7 languages, 5 multilingual encoders, 2000 signed-null samples per row. All four tested triples are below signed-null in every model-language cell, with `NQM` and `QMT` strongest. This strengthens the signed-permutation signal but revises the earlier `QMT`-only narrative.
-- Added the 2026-06-29/30 GLT-MOLT 9-model affine/operator audit with 1000 random-subspace nulls. Additive deltas remain better endpoint predictors, while learned linear/affine maps show weak matrix-commutator closure below random-subspace nulls.
+- Added the 2026-06-29/30 GLT-MOLT 9-model affine/operator audit with 1000 random-subspace nulls. Simple additive deltas remain better endpoint predictors, while learned linear/affine maps show weak matrix-commutator closure below random-subspace nulls.
 - Added the 2026-07-01 GLT-MOLT ridge sweep. Closure-like residuals improve under stronger ridge regularization, which makes norm-matched and shrinkage-matched operator nulls the next required control.
 - Added the 2026-07-02 GLT-MOLT matched-null audit. Learned-operator closure remains below random-subspace, Gaussian norm-matched, and signed-permutation matched operator nulls for `alpha=10` and `alpha=100`.
 - Added the 2026-07-03 GLT-MOLT spectral-null audit. At `alpha=100`, learned-operator closure remains below singular-spectrum matched Givens-rotation nulls, weakening the explanation that the effect is only shrinkage or spectrum matching.
