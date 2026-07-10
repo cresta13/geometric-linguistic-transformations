@@ -1,0 +1,38 @@
+{
+  "seed": 20260624,
+  "n_templates_per_language": 160,
+  "pca_dim": 128,
+  "batch_size": 1,
+  "n_nulls": 300,
+  "n_givens": 256,
+  "device": "cpu",
+  "force": false,
+  "ridge_alphas": [
+    100.0
+  ],
+  "models": [
+    "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+    "sentence-transformers/LaBSE",
+    "bert-base-multilingual-cased",
+    "xlm-roberta-base",
+    "distilbert-base-multilingual-cased"
+  ],
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "ru",
+    "zh",
+    "ar"
+  ],
+  "operators": [
+    "N",
+    "Q",
+    "M",
+    "T"
+  ],
+  "nulls": [
+    "givens_spectral_matched"
+  ]
+}

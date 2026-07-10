@@ -75,6 +75,10 @@ Important subdirectories:
   - `RUN_SUMMARY.md`: 2026-07-08 compact GLT-MOLT PCA-64 spectral-null sensitivity summary.
   - `pca_64/csv/spectral_closure_by_alpha_method.csv`: completed five-model PCA-64 closure residuals versus singular-spectrum matched nulls.
   - `pca_64/csv/operator_fit_by_alpha_method.csv`: PCA-64 one-step target prediction for the same learned operators.
+- `glt_molt_spectral_pca128_5m_160t_a100_300null_g256_results/`
+  - `RUN_SUMMARY.md`: 2026-07-08 compact GLT-MOLT PCA-128 spectral-null sensitivity summary.
+  - `csv/spectral_closure_by_alpha_method.csv`: completed five-model PCA-128 closure residuals versus singular-spectrum matched nulls.
+  - `csv/operator_fit_by_alpha_method.csv`: PCA-128 one-step target prediction for the same learned operators.
 - `lie_composition_decoder_results/`
 - `lie_algebraic_identities_results/`
 - `lie_algebraic_identities_decoder_results/`

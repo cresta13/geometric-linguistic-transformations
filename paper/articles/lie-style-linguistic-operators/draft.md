@@ -504,14 +504,16 @@ Mean matrix-closure residual under the spectral null:
 
 This strengthens the GLT-MOLT diagnostic: the observed commutators remain more compressible into the primitive `N,Q,M,T` operator span even against nulls with the same singular-value spectra. The model-level magnitudes are uneven, and `Qwen/Qwen3-Embedding-0.6B` is close to null-like in residual magnitude, so this should still be read as a controlled closure-compression result rather than a universal representation theorem.
 
-The 2026-07-08 compact PCA-64 sensitivity check adds a lower-dimensional follow-up on five stable multilingual encoders. This is not a full PCA sweep, but it tests whether the spectral-null result disappears when the operator maps are learned in a smaller PCA space.
+The 2026-07-08 compact PCA sensitivity checks add dimensional follow-ups on five stable multilingual encoders. These are not a full PCA sweep, but they test whether the spectral-null result disappears when the operator maps are learned in alternate PCA spaces.
 
 | PCA dim | Method | Observed | Spectral matched null | Mean empirical p |
 |---:|---|---:|---:|---:|
 | `64` | affine | `0.8285` | `0.9996` | `0.00332` |
 | `64` | linear | `0.8701` | `0.9995` | `0.00335` |
+| `128` | affine | `0.8153` | `0.9999` | `0.00332` |
+| `128` | linear | `0.8581` | `0.9999` | `0.00332` |
 
-The PCA-64 result supports the robustness of the closure-compression diagnostic, but it should not be cited as a completed PCA-dimension ablation. PCA-128 and PCA-256 sensitivity should be run as smaller separate jobs.
+The PCA-64 and PCA-128 results support the robustness of the closure-compression diagnostic, but they should not be cited as a completed PCA-dimension ablation. PCA-256 sensitivity should be run as a smaller separate job only if the paper needs the additional dimensional stress test.
 
 Relevant artifacts:
 
@@ -524,6 +526,7 @@ Relevant artifacts:
 - matched-null results: [glt_molt_matched_nulls_9m_160t_a10_100_1000null_results](../../../results/experiments/glt_molt_matched_nulls_9m_160t_a10_100_1000null_results/)
 - spectral-null results: [glt_molt_spectral_nulls_9m_160t_a100_300null_g256_results](../../../results/experiments/glt_molt_spectral_nulls_9m_160t_a100_300null_g256_results/)
 - compact PCA-64 sensitivity results: [glt_molt_spectral_pca_sweep_5m_160t_a100_300null_g256_results](../../../results/experiments/glt_molt_spectral_pca_sweep_5m_160t_a100_300null_g256_results/)
+- compact PCA-128 sensitivity results: [glt_molt_spectral_pca128_5m_160t_a100_300null_g256_results](../../../results/experiments/glt_molt_spectral_pca128_5m_160t_a100_300null_g256_results/)
 
 Working hypothesis for why `QMT` is coherent:
 
@@ -597,7 +600,7 @@ Not proven:
 5. Add nonlinear endpoint-artifact controls or adversarial endpoint balancing.
 6. Extend GLT-MOLT matched-null controls:
    - compare learned matrix closure against singular-spectrum/shrinkage-matched operator nulls
-   - test layerwise and PCA-dimension sensitivity
+   - optionally add PCA-256 and layerwise sensitivity
    - report whether the closure signal survives beyond last-layer PCA-space maps
 7. Explain the `NQM` versus `QMT` reversal across regimes.
 8. Add layerwise analysis.

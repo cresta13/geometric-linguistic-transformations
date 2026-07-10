@@ -1,0 +1,11 @@
+{
+  "finished_at": "Wed Jul  8 23:41:54 2026",
+  "failures": [],
+  "completed_markers": [
+    "bert_base_multilingual_cased__alpha_100.done.json",
+    "distilbert_base_multilingual_cased__alpha_100.done.json",
+    "sentence_transformers__LaBSE__alpha_100.done.json",
+    "sentence_transformers__paraphrase_multilingual_mpnet_base_v2__alpha_100.done.json",
+    "xlm_roberta_base__alpha_100.done.json"
+  ]
+}

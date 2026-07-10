@@ -1,0 +1,3 @@
+ridge_alpha,method,mean_closure_residual_ratio,mean_givens_spectral_matched_null,mean_p_below_givens_spectral_matched,cells
+100.0,affine,0.8152867122652877,0.9998987891346736,0.0033222591362126,210
+100.0,linear,0.8580642469581153,0.999896013323745,0.0033222591362126,210

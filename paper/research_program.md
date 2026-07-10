@@ -173,12 +173,10 @@ S(A,B,C) = ABC + BCA + CAB - ACB - CBA - BAC
     - affine closure `0.855` versus spectral null `0.99985`, mean empirical p `0.00333`
     - linear closure `0.882` versus spectral null `0.99985`, mean empirical p `0.00347`
   - interpretation: the closure-like compression is not explained by the commutator singular-value spectrum alone, though model-level magnitudes remain uneven and the result still supports only a controlled operator-closure diagnostic
-- A 2026-07-08 compact PCA-64 sensitivity check tests whether the spectral-null signal survives a lower-dimensional representation on five stable multilingual encoders:
-  - completed setting: PCA dimension `64`, ridge alpha `100`, 300 spectral null samples, 256 Givens rotations
-  - observed closure remains below spectral null:
-    - affine closure `0.8285` versus spectral null `0.9996`, mean empirical p `0.00332`
-    - linear closure `0.8701` versus spectral null `0.9995`, mean empirical p `0.00335`
-  - interpretation: this supports PCA-dimensional robustness at `64`, but it is not a completed PCA sweep; PCA-128 and PCA-256 should be run as separate smaller jobs
+- A 2026-07-08 compact PCA sensitivity check tests whether the spectral-null signal survives alternate PCA dimensions on five stable multilingual encoders:
+  - PCA-64: affine closure `0.8285` versus spectral null `0.9996`, mean empirical p `0.00332`; linear closure `0.8701` versus spectral null `0.9995`, mean empirical p `0.00335`
+  - PCA-128: affine closure `0.8153` versus spectral null `0.9999`, mean empirical p `0.00332`; linear closure `0.8581` versus spectral null `0.9999`, mean empirical p `0.00332`
+  - interpretation: this supports PCA-dimensional robustness at `64` and `128`, but it is still a compact stable-model sensitivity check rather than a complete PCA sweep; PCA-256 should be run only as a separate smaller job if needed
 - A 2026-06-24 structure-constants closure audit now estimates primitive operator centroids for `N,Q,M,T`, projects pairwise commutators into their span, and compares closure residuals to 1000 random-subspace nulls:
   - nonzero overall mean closure residual is below random-subspace null (`0.885` versus `0.984`)
   - strongest Jacobi-like closure triples are `NMT` (`0.309`) and `QMT` (`0.333`)
@@ -533,7 +531,7 @@ Negative results remain part of the research record.
 12. Add target-only and endpoint-only baselines for third-order multilingual signed-permutation endpoints.
 13. Add nonlinear endpoint-artifact controls, such as adversarial endpoint balancing or kernel/MLP endpoint probes.
 14. Extend the completed GLT-MOLT matched-null and spectral-null results:
-   - complete separate PCA-128 and PCA-256 spectral-null sensitivity jobs after the compact PCA-64 result
+   - optionally complete a separate PCA-256 spectral-null sensitivity job after the compact PCA-64 and PCA-128 results
    - test whether the operator-closure signal survives across layers
    - add a second spectral-null pass at multiple ridge alphas if the `alpha=100` result becomes central to the paper
 15. Add the GLT-AFFECT text-only MVP:
