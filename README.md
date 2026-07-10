@@ -1,97 +1,250 @@
 # Geometric Linguistic Transformations
 
-Research code, result tables, figures, and draft papers for experiments on linguistic transformation geometry in transformer embedding spaces.
+Research code, result tables, figures, and draft papers for **GLT** (**Geometric Linguistic Transformations**): a research program for testing whether linguistic transformations appear as reusable geometric objects in transformer embedding spaces.
 
-This repository develops **GLT** (**Geometric Linguistic Transformations**), a research program for probing whether linguistic transformations appear as reusable geometric objects in transformer embedding spaces.
+This is an active research repository and reproducibility package, not a peer-reviewed article release.
 
-Current tracks:
+## 1. Plain-Language Overview
 
-- **GLT-DV**: delta-vector diagnostics with endpoint controls.
-- **GLT-SPOT**: signed-permutation operator tests for ordered composition.
-- **GLT-XFER**: cross-model transformation-transfer stress tests.
-- **GLT-MOLT**: planned matrix/operator extension motivated by Linear Relational Decoding.
-- **GLT-AFFECT**: graded affective-transformation geometry, starting with text-only emotional polarity scales and reserving sensory grounding claims for independent perceptual data.
-- The first GLT-AFFECT MVP suggests that text-embedding affective polarity is curved rather than a simple love/hate antipodal axis; marker-only, lexical-specificity, and bootstrap contrast controls weaken but preserve an affect-leading same-direction signal, so the claim is treated as cautious lexical affect-geometry evidence rather than grounded affect.
+Modern language models turn sentences into high-dimensional vectors. This project asks a simple question:
 
-## Current Status
+> If one sentence is changed into another sentence, does the vector movement between them describe the kind of linguistic change that happened?
 
-This is an active research repository, not a submission-ready paper. The current record is intentionally conservative:
+For example:
 
-- Delta vectors often add transformation information beyond endpoint-only baselines.
-- Syntax-holdout `1.0` results are treated as endpoint/surface leakage, not as evidence of deep generalization.
-- UPAT hard-holdout results are reported as a bounded-claim result: endpoint features can dominate hard sentence-pair identity splits, suggesting that delta geometry captures transformation type better than absolute transformation identity.
-- Lie-style antisymmetry is not evidence; it is a tautological implementation check.
-- Third-order signed permutation coherence is framed as a diagnostic, not as a formal Lie algebra or Jacobi identity.
-- The 2026-06-27 extended multilingual GLT-SPOT audit scales the signed-permutation test to 7 models, 7 languages, 96 templates per language, and 5000 signed-null repeats; all four triples remain below null in all 49 model-language cells, while endpoint-derived controls remain a live limitation.
-- The 2026-06-27 third-order endpoint-control audit confirms that endpoint and delta features strongly recover triple identity on held-out languages, so GLT-SPOT remains evidence for controlled signed-permutation coherence rather than endpoint-independent algebra.
-- The 2026-06-28 new-model GLT-SPOT checks replicate the below-null signed-permutation pattern on `intfloat/multilingual-e5-large-instruct` and `Qwen/Qwen3-Embedding-0.6B` across all seven tested languages.
-- The 2026-06-28 new-model endpoint-subspace residualization check shows that this below-null pattern survives removal of linear endpoint-derived triple-label, endpoint-position, and cyclic-sign subspaces in both newer models.
-- The 2026-06-29 9-model endpoint-subspace residualization audit extends that stress test to older and newer multilingual embedding models; all four triples remain below exact signed-null after removing endpoint-derived linear rowspaces in all `63/63` model-language cells.
-- The 2026-06-29/30 9-model GLT-MOLT affine/operator audit, now confirmed with 1000 random-subspace nulls, shows a useful split: simple additive deltas outperform learned linear/affine operators at target prediction, while learned maps expose weak but systematic matrix-commutator closure and low Jacobi-like operator norms.
-- The 2026-07-01 GLT-MOLT ridge sweep shows that the closure-like signal persists across ridge alphas, but algebraic cleanliness strengthens under heavier regularization, so shrinkage-matched operator nulls are now required before making stronger Lie-style claims.
-- The 2026-07-02 GLT-MOLT matched-null audit shows that learned-operator closure remains below random-subspace, Gaussian norm-matched, and signed-permutation matched operator nulls; the result strengthens the operator-closure diagnostic while preserving the caveat that stronger regularization improves algebraic compression but not target prediction.
-- The 2026-07-03 GLT-MOLT spectral-null audit shows that the `alpha=100` closure signal also remains below singular-spectrum matched Givens-rotation nulls; this weakens the explanation that the effect is only a generic shrinkage or spectrum artifact, while still falling short of a formal Lie-algebra claim.
-- The 2026-07-08 compact GLT-MOLT PCA sensitivity checks show that the spectral-null closure signal appears on five stable multilingual encoders at PCA-64 (`affine 0.8285`, `linear 0.8701` versus spectral null `~0.9995`) and PCA-128 (`affine 0.8153`, `linear 0.8581` versus spectral null `~0.9999`); PCA-256 remains an optional separate follow-up.
-- The 2026-06-24 endpoint-subspace residualization audit shows that the multilingual signed-permutation signal largely survives removal of endpoint-derived sign, triple-label, and endpoint-position probe subspaces.
-- Procrustes/cross-model transfer now survives `N=1000` null controls and held-out anchor alignment-size controls. RISE/MDV-style prototype comparisons, non-leaky hybrid feature-transfer, and spherical delta steering tests are now added; current results separate target-cosine accuracy from transformation-neighborhood retrieval, so Track 3 remains a stress-test/comparison track pending calibration, confidence intervals, and anchor-domain robustness.
+```text
+source sentence -> transformed sentence
+statement       -> question
+present tense   -> future tense
+plain claim     -> uncertain claim
+positive claim  -> negated claim
+```
 
-## Positioning
+For each pair, we compute:
 
-This repository should be cited as a software/research-artifact snapshot, not as a peer-reviewed publication.
+```text
+delta = embedding(transformed sentence) - embedding(source sentence)
+```
 
-Closest related work:
+Then we test whether these deltas behave like meaningful transformation objects rather than arbitrary differences between two sentences.
 
-- Freenor and Alvarez 2026, RISE: geometric rotations for discourse-level semantic-syntactic transformations across languages and embedding models. This is the closest neighboring work and is stronger than this repository on cross-lingual/cross-model scope. This repository instead uses direct endpoint/delta representations, classifier/ablation diagnostics, null-controlled Procrustes transfer stress tests, and ordered-composition diagnostics; it also reports endpoint leakage and hard-holdout failures explicitly.
-- Xia and Kalita 2025, Linear Relational Decoding of Morphology in Language Models: relation-specific Jacobian-derived matrix operators can faithfully approximate many morphological relations in GPT-J and Llama-7b, including multilingual morphology. This motivates a future matrix/operator version of the Lie-style track, where commutators can be computed over learned affine or multiplicative maps rather than only over endpoint deltas.
-- Park, Choe, and Veitch 2023/2024: formal Linear Representation Hypothesis framing for linear directions and representation geometry in LLMs. This repository is empirical and diagnostic rather than a formal LRH theory paper.
-- De Raedt et al. 2021: geometric cross-lingual linguistic transformations with pretrained autoencoders. This repository studies paired-sentence displacement vectors and composition diagnostics in transformer embedding spaces, not cross-lingual autoencoder transfer.
+### What We Have Found So Far
+
+The current evidence supports a cautious version of the idea:
+
+- Sentence-pair deltas often contain information about the **type of transformation**.
+- In the main full-semantic experiments, deltas beat target-only baselines across several models under Linear SVC probes.
+- In harder sentence-pair holdouts such as UPAT, endpoint features can dominate. This suggests that delta geometry captures transformation type better than absolute transformation identity.
+- Some ordered transformations show structured composition effects, but this is not a proof of a Lie algebra.
+- Simple additive deltas predict target embeddings better than learned linear/affine maps, while learned maps are useful for algebraic closure diagnostics.
+- A first affective-scale experiment suggests that text embeddings treat love/hate-like polarity as curved affective-involvement geometry rather than a simple opposite-axis scale.
+
+### What Is Not Claimed
+
+This repository does not claim:
+
+- that transformer embeddings contain a complete linguistic algebra;
+- that the reported effects are independent of endpoint wording;
+- that syntax-holdout `1.0` results prove deep generalization;
+- that antisymmetry checks are scientific evidence;
+- that text-only affect geometry is grounded emotional experience;
+- that this is a submission-ready paper.
+
+The project is deliberately conservative: positive results, failures, endpoint leakage, and hard-holdout boundaries are all kept in the record.
+
+## 2. Technical Overview
+
+GLT is organized into several research tracks.
+
+### GLT-DV: Delta-Vector Diagnostics
+
+Question:
+
+> Do sentence-pair displacement vectors encode linguistic transformation type beyond source-only or target-only endpoint features?
+
+Main evidence:
+
+- Multiseed full-semantic ablations show reproducible `delta > y_only` under Linear SVC across the original model set.
+- McNemar tests and seed-level intervals support the Linear SVC delta advantage.
+- Large/modern spot-checks include BERT-large and DeBERTa-v3-base.
+- Syntax-holdout `1.0` is treated as target/surface leakage because `y_only` also solves it.
+- UPAT is kept as a bounded hard-holdout result: endpoint features dominate in that regime.
+
+Main draft:
+
+- `paper/articles/geometric-transformation-vectors/draft.md`
+
+Important result files:
+
+- `results/ablation_multiseed_aggregated.csv`
+- `results/ablation_multiseed_mcnemar.csv`
+- `results/track1_multiseed_effect_intervals.csv`
+- `results/experiments/upat_audit_results/`
+- `results/experiments/track1_spotcheck_large_results/`
+
+### GLT-SPOT: Signed-Permutation Operator Tests
+
+Question:
+
+> Do ordered linguistic transformations show nontrivial composition structure?
+
+This track studies operations such as:
+
+| Symbol | Operation |
+|---|---|
+| `N` | negation |
+| `Q` | question formation |
+| `M` | modality/evidentiality |
+| `T` | tense / temporal shift |
+
+The key diagnostic is a third-order signed endpoint sum:
+
+```text
+S(A,B,C) = ABC + BCA + CAB - ACB - CBA - BAC
+```
+
+This is not called a Jacobi identity. It is a signed-permutation coherence test compared against null baselines.
+
+Main evidence:
+
+- Pairwise order matters for several transformation pairs.
+- Semantic-equivalence controls shift noncommutativity distributions in the expected direction.
+- Multilingual audits show below-null signed-permutation ratios across 7 languages and multiple multilingual encoders.
+- Endpoint-subspace residualization shows the signal survives removal of several linear endpoint-derived probe subspaces.
+- Endpoint controls remain strong, so the result is framed as a controlled diagnostic rather than endpoint-independent algebra.
+
+Main draft:
+
+- `paper/articles/lie-style-linguistic-operators/draft.md`
+
+Important result folders:
+
+- `results/experiments/lie_multilingual_max_results/`
+- `results/experiments/lie_endpoint_subspace_9m_96t_pca128_results/`
+- `results/experiments/lie_multilingual_triple_endpoint_controls_7m_96t_results/`
+- `results/experiments/lie_structure_constants_results/`
+
+### GLT-MOLT: Matrix/Operator Diagnostics
+
+Question:
+
+> If transformations are learned as linear or affine maps, do their commutators show closure-like structure?
+
+This track compares:
+
+```text
+additive: y ~= x + delta_op
+linear:   y ~= W_op x
+affine:   y ~= W_op x + b_op
+```
+
+Main evidence:
+
+- Simple additive displacement vectors outperform learned linear/affine operators at target prediction.
+- Learned operators are worse target predictors but expose weak matrix-commutator closure under random-subspace, norm-matched, signed-permutation, and spectral null controls.
+- Ridge sweeps show that algebraic cleanliness improves under stronger regularization, so closure results are reported as controlled compression diagnostics, not as a formal Lie-algebra proof.
+- Compact PCA-64 and PCA-128 sensitivity checks preserve the spectral-null closure signal on five stable multilingual encoders.
+
+Important result folders:
+
+- `results/experiments/glt_molt_affine_operator_9m_160t_1000null_results/`
+- `results/experiments/glt_molt_ridge_sweep_9m_160t_300null_results/`
+- `results/experiments/glt_molt_matched_nulls_9m_160t_a10_100_1000null_results/`
+- `results/experiments/glt_molt_spectral_nulls_9m_160t_a100_300null_g256_results/`
+- `results/experiments/glt_molt_spectral_pca_sweep_5m_160t_a100_300null_g256_results/`
+- `results/experiments/glt_molt_spectral_pca128_5m_160t_a100_300null_g256_results/`
+
+### GLT-XFER: Cross-Model Transfer
+
+Question:
+
+> Does transformation geometry transfer across embedding models after alignment?
+
+Main evidence:
+
+- UPAT-large Procrustes transfer survives `N=1000` random-label, random-pairing, and random-orthogonal null controls.
+- Held-out anchor alignment-size curves show transfer improves with more alignment anchors.
+- RISE/MDV-style prototype comparisons and spherical delta steering tests separate target-cosine accuracy from transformation-neighborhood retrieval.
+
+Current status:
+
+This is a stress-test and comparison track, not the main novelty claim. It is positioned relative to RISE, which is the closest neighboring work on geometric rotations for semantic-syntactic transformations.
+
+Important result folder:
+
+- `results/experiments/upat_large_results/`
+
+### GLT-AFFECT: Graded Affective Geometry
+
+Question:
+
+> Do graded emotional polarity scales form simple straight axes, or curved semantic geometry?
+
+Current text-only scale:
+
+```text
+hate -> dislike -> indifferent -> like -> love
+```
+
+Main evidence:
+
+- Adjacent affective steps are not uniform.
+- `neutral -> love` and `neutral -> hate` are not opposite directions in text embeddings.
+- Marker-only pooling and lexical-specificity controls weaken but preserve a small affect-leading signal.
+- Bootstrap contrasts support a stable affect-specific excess over several lexical controls, but a substantial generic lexical-substitution component remains.
+
+Current interpretation:
+
+GLT-AFFECT is evidence about language-representation geometry, not grounded affective experience.
+
+## Related Work Positioning
+
+Closest neighboring work:
+
+- Freenor and Alvarez 2026, RISE: geometric rotations for discourse-level semantic-syntactic transformations across languages and embedding models.
+- Xia and Kalita 2025, Linear Relational Decoding of Morphology in Language Models: relation-specific matrix operators motivate GLT-MOLT.
+- Park, Choe, and Veitch 2023/2024: Linear Representation Hypothesis framing for representation geometry.
+- De Raedt et al. 2021: geometric cross-lingual linguistic transformations with pretrained autoencoders.
+
+This repository's distinct angle is not "geometric transformations exist" in the broadest sense. Its contribution is a set of endpoint-controlled diagnostics, null baselines, signed-composition tests, operator-closure audits, and explicit negative/bounded results.
 
 ## Repository Map
 
 - `paper/`
   - `research_program.md`: current research roadmap.
-  - `related_work_positioning.md`: RISE/LRH positioning note and claim-boundary checklist.
-  - `research_roadmap.md`: research backlog and status.
-  - `revision_notes_round3.md`: latest revision note.
-  - `articles/`: separate draft paper candidates.
+  - `research_roadmap.md`: research backlog and completed changes.
+  - `related_work_positioning.md`: positioning against RISE, LRH, and related work.
+  - `articles/`: draft paper candidates.
   - `figures/`: curated figures used in drafts and reports.
 - `research/`
   - `diary.md`: dated research diary.
-  - `research_state_2026-06-14.md`: current skeptical state review and next-direction map.
   - `PROTOCOL.md`: working protocol.
 - `reports/`
-  - dated PDF packets for external verification.
+  - PDF packets and release notes for external verification.
 - `results/`
-  - aggregate Track 1 ablation, McNemar, and confusion-analysis tables.
-  - `results/experiments/`: experiment-specific CSVs, figures, and metadata.
+  - aggregate CSV summaries and experiment artifacts.
+  - `results/experiments/`: experiment-specific CSVs, figures, metadata, and run summaries.
 - `scripts/`
-  - all experiment scripts, report builders, figure builders, and post-hoc analysis scripts.
+  - experiment scripts, report builders, figure builders, and post-hoc analysis scripts.
 
-## Important Artifacts
+## Main Artifacts
 
+- Research program: `paper/research_program.md`
+- Track 1 draft: `paper/articles/geometric-transformation-vectors/draft.md`
+- Track 2 / GLT-SPOT + GLT-MOLT draft: `paper/articles/lie-style-linguistic-operators/draft.md`
+- Results index: `results/README.md`
 - Main live report: `reports/2026-06-23_research_report.pdf`
 - Zenodo snapshot report: `reports/2026-06-13_archival_report.pdf`
-- Latest release notes for DOI archiving: `reports/release_notes_v2026.06.24.md`
-- Research roadmap: `paper/research_program.md`
-- Track 1 draft: `paper/articles/geometric-transformation-vectors/draft.md`
-- Track 2 draft: `paper/articles/lie-style-linguistic-operators/draft.md`
 
-## Citable Snapshot
+## Reproducibility
 
-The repository includes `CITATION.cff` for GitHub's citation widget and
-`.zenodo.json` for Zenodo/GitHub release archiving. The latest intended
-archival snapshot is `v2026.06.24`.
+The datasets in this repository are synthetic controlled sentence-pair templates generated by scripts in `scripts/`; no external natural-language corpus is required for the archived experiments.
 
-Latest Zenodo version DOI: [10.5281/zenodo.20829303](https://doi.org/10.5281/zenodo.20829303)
-Latest Zenodo record: https://zenodo.org/records/20829303
-Previous Zenodo version DOI: [10.5281/zenodo.20680414](https://doi.org/10.5281/zenodo.20680414)
+The current review environment is pinned in:
 
-## Reproducibility Notes
-
-The scripts require Python packages such as `torch`, `transformers`, `scikit-learn`, `pandas`, `numpy`, and `matplotlib`.
-The current review environment is pinned in `requirements.txt`.
-
-The datasets in this snapshot are synthetic controlled sentence-pair templates generated by the scripts in `scripts/`; no external natural-language corpus is required for the archived experiments.
+```text
+requirements.txt
+```
 
 Run scripts from the repository root, for example:
 
@@ -99,9 +252,31 @@ Run scripts from the repository root, for example:
 .\.venv\Scripts\python.exe scripts\build_research_report.py
 ```
 
-The reproducibility path is: run or inspect scripts in `scripts/`, compare generated outputs against CSVs and figures in `results/` and `results/experiments/`, then rebuild the research report with `scripts/build_research_report.py`.
+General reproducibility path:
 
-Large intermediate vector caches (`*.npy`), local virtual environments, IDE files, `.env`, and review zip archives are intentionally excluded from git.
+1. Inspect or run scripts in `scripts/`.
+2. Compare outputs against CSVs and figures in `results/` and `results/experiments/`.
+3. Read the corresponding `RUN_SUMMARY.md` files in experiment folders.
+4. Rebuild the research report if needed with `scripts/build_research_report.py`.
+
+Large intermediate vector caches (`*.npy`, `*.npz`), local virtual environments, IDE files, `.env`, logs, and review zip archives are intentionally excluded from git.
+
+## Citable Snapshots
+
+The repository includes:
+
+- `CITATION.cff` for GitHub's citation widget.
+- `.zenodo.json` for Zenodo/GitHub release archiving.
+
+Latest Zenodo version DOI:
+
+- [10.5281/zenodo.20829303](https://doi.org/10.5281/zenodo.20829303)
+
+Previous Zenodo version DOI:
+
+- [10.5281/zenodo.20680414](https://doi.org/10.5281/zenodo.20680414)
+
+Please cite this as a software/research-artifact snapshot, not as a peer-reviewed publication.
 
 ## License
 
