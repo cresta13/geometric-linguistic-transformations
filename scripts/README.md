@@ -44,6 +44,7 @@ All runnable research scripts live in this directory.
 - `run_upat_rise_aware_comparison.py`: first-pass MDV and simplified RISE-style prototype comparison for UPAT target-embedding prediction versus delta-classifier transfer.
 - `run_upat_hybrid_rise_procrustes.py`: non-leaky hybrid transfer test. It scores each UPAT pair against all MDV/RISE-style class prototypes and tests whether prototype-score features improve cross-model transformation-label F1 beyond aligned `delta_only`.
 - `run_upat_spherical_delta_steering.py`: movement-level steering test comparing linear centroid deltas, spherical/tangent delta movement, RISE-style prediction, residual orderings, and hybrid averaging on target cosine and retrieval metrics.
+- `run_gpt2_activation_steering_pilot.py`: generation-time GPT-2/distilGPT-2 residual-stream steering pilot using UPAT-derived transformation delta centroids with target, wrong-class, random-norm, and negative-vector controls. Use `scripts/launch_gpt2_activation_steering_pilot.ps1` for the overnight background run.
 
 ## Reports
 
