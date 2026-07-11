@@ -6,7 +6,6 @@ import os
 import random
 import sys
 import time
-from collections import defaultdict
 from pathlib import Path
 
 import numpy as np
@@ -25,7 +24,8 @@ SUMMARY_PATH = CSV_DIR / "activation_steering_summary.csv"
 STATUS_PATH = OUT_DIR / "run_status.json"
 
 MODELS = [m.strip() for m in os.getenv("STEERING_MODELS", "distilgpt2,gpt2").split(",") if m.strip()]
-CLASSES = [c.strip() for c in os.getenv("STEERING_CLASSES", "question,negation,modality,tense_shift").split(",") if c.strip()]
+CENTROID_CLASSES = [c.strip() for c in os.getenv("STEERING_CLASSES", "question,negation,modality,tense_shift").split(",") if c.strip()]
+EVAL_CLASSES = [c.strip() for c in os.getenv("STEERING_EVAL_CLASSES", ",".join(CENTROID_CLASSES)).split(",") if c.strip()]
 GAINS = [float(x) for x in os.getenv("STEERING_GAINS", "0.75,1.5,3.0").split(",") if x.strip()]
 CONTROLS = [c.strip() for c in os.getenv("STEERING_CONTROLS", "none,target,wrong_class,random_norm,negative_target").split(",") if c.strip()]
 MAX_TEST_SOURCES = int(os.getenv("STEERING_MAX_TEST_SOURCES", "24"))
@@ -77,7 +77,8 @@ def get_layer_indices(model) -> list[int]:
 def build_dataset() -> pd.DataFrame:
     cfg = UPATDatasetConfig(train_templates=TRAIN_TEMPLATES, test_templates=TEST_TEMPLATES)
     df = UPATDataset(cfg).build()
-    return df[df["class"].isin(CLASSES)].reset_index(drop=True)
+    required = sorted(set(CENTROID_CLASSES) | set(EVAL_CLASSES))
+    return df[df["class"].isin(required)].reset_index(drop=True)
 
 
 def last_token_hidden(tokenizer, model, texts: list[str], layers: list[int], batch_size: int = 16) -> dict[int, np.ndarray]:
@@ -108,7 +109,7 @@ def learn_delta_centroids(tokenizer, model, train_df: pd.DataFrame, layers: list
     centroids: dict[int, dict[str, np.ndarray]] = {layer: {} for layer in layers}
     for layer in layers:
         delta = target_h[layer] - source_h[layer]
-        for cls in CLASSES:
+        for cls in CENTROID_CLASSES:
             mask = np.array(labels) == cls
             centroids[layer][cls] = delta[mask].mean(axis=0).astype(np.float32)
     return centroids
@@ -124,7 +125,9 @@ def decode_new_text(tokenizer, full_ids: torch.Tensor, prompt_len: int) -> str:
 
 
 def choose_wrong_class(target_class: str) -> str:
-    choices = [c for c in CLASSES if c != target_class]
+    choices = [c for c in CENTROID_CLASSES if c != target_class]
+    if not choices:
+        raise ValueError("wrong_class control requires at least two STEERING_CLASSES")
     return random.choice(choices)
 
 
@@ -154,6 +157,7 @@ def score_output(text: str, target_class: str) -> dict[str, float | str]:
     other_hits = sum(v for k, v in scores.items() if k.endswith("_marker") and k != f"{target_class}_marker")
     scores["target_marker_hit"] = float(target_hit)
     scores["any_other_marker_hit"] = float(other_hits > 0)
+    scores["question_mark_hit"] = float("?" in text)
     scores["generated_chars"] = float(len(text))
     return scores
 
@@ -230,7 +234,7 @@ def run_model(model_name: str, df: pd.DataFrame, rows: list[dict]) -> None:
     layers = get_layer_indices(model)
     write_status(current_model=model_name, current_layers=layers, phase="learning_centroids")
     train_df = df[df["split"] == "train"].reset_index(drop=True)
-    test_df = df[df["split"] == "test"].reset_index(drop=True)
+    test_df = df[(df["split"] == "test") & (df["class"].isin(EVAL_CLASSES))].reset_index(drop=True)
     centroids = learn_delta_centroids(tokenizer, model, train_df, layers)
 
     unique_sources = list(dict.fromkeys(test_df["source"].tolist()))[:MAX_TEST_SOURCES]
@@ -327,7 +331,8 @@ def main() -> None:
         status="running",
         started_at=now(),
         models=MODELS,
-        classes=CLASSES,
+        centroid_classes=CENTROID_CLASSES,
+        eval_classes=EVAL_CLASSES,
         controls=CONTROLS,
         gains=GAINS,
         max_test_sources=MAX_TEST_SOURCES,
