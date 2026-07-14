@@ -52,7 +52,49 @@ This repository does not claim:
 
 The project is deliberately conservative: positive results, failures, endpoint leakage, and hard-holdout boundaries are all kept in the record.
 
-## 2. Technical Overview
+## 2. Quick Demo
+
+The fastest demo is the GLT-STEER question experiment.
+
+It shows a simple behavior-level result:
+
+```text
+Without steering: GPT-2 repeats a statement.
+With a question-transformation vector: GPT-2 starts producing question marks.
+With random or wrong-class vectors: the question-mark effect does not appear.
+```
+
+Run the lightweight demo from the repository root:
+
+```powershell
+.\.venv\Scripts\python.exe scripts\show_glt_steer_demo.py
+```
+
+This command does not download models or rerun the experiment. It reads the archived CSV in:
+
+```text
+results/experiments/gpt2_question_activation_steering_focused_20260714_results/
+```
+
+Headline result:
+
+| condition | question mark rate |
+|---|---:|
+| target question vector | `0.9350` |
+| random-norm control | `0.0000` |
+| wrong-class control | `0.0000` |
+| negative-target control | `0.0000` |
+
+Full notes:
+
+- `results/experiments/gpt2_question_activation_steering_focused_20260714_results/SUMMARY.md`
+- `docs/hackathon-build/demo-steering.md`
+
+Safe interpretation:
+
+> This is evidence that a question-transformation activation vector can steer GPT-2 toward question-like output form. It is not evidence that semantic editing is solved, and it is not proof of a complete linguistic algebra.
+
+## 3. Technical Overview
 
 GLT is organized into several research tracks.
 
