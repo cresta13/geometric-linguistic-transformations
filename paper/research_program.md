@@ -300,6 +300,14 @@ Main finding:
 - Across all tested layers at gain `0.75`, target question steering produced question marks in `93.50%` of generations.
 - Random-norm, wrong-class, and negative-target controls produced `0.00%` question marks in the aggregate control summary.
 
+Reviewer-facing follow-up controls:
+
+- Experiment script: `scripts/run_gpt2_question_steering_controls.py`
+- Result directory: `results/experiments/gpt2_question_steering_controls_20260714_results/`
+- No-steering question-mark base rate is `0.0000` for both in-template prompts (`160` rows) and out-of-template freeform prompts (`80` rows).
+- Under the same compact setting family (`layers 2,3`, gain `0.75`), in-template target steering reaches question-mark rate `0.9625`, while random-norm, wrong-class, and negative-target controls remain at `0.0000`.
+- On `40` freeform out-of-template declarative sentences, target steering still reaches question-mark rate `0.8375`, while no-steering and all compact controls remain at `0.0000`.
+
 Interpretation:
 
 This is the first behavior-level intervention result in GLT. It supports the cautious claim that a question-transformation activation vector can steer GPT-2 toward question-like output form under residual-stream injection.
@@ -308,6 +316,7 @@ Caveats:
 
 - This is currently a GPT-2-only, question-only result.
 - It shows output-form steering, not clean semantic rewriting.
+- The out-of-template control is promising but modest: `40` hand-written freeform declarative sentences.
 - The broad pilot showed weak or noisy results for negation, modality, and tense shift, so other transformations need redesigned prompts, metrics, or steering sites.
 - The result connects GLT to representation steering, but it is not evidence for a complete linguistic algebra.
 

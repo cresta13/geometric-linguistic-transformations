@@ -9,6 +9,9 @@ import pandas as pd
 
 RESULT_DIR = Path("results/experiments/gpt2_question_activation_steering_focused_20260714_results")
 RAW_PATH = RESULT_DIR / "csv" / "activation_steering_raw.csv"
+CONTROL_DIR = Path("results/experiments/gpt2_question_steering_controls_20260714_results")
+CONTROL_SUMMARY_PATH = CONTROL_DIR / "csv" / "question_steering_controls_summary.csv"
+BASE_RATE_PATH = CONTROL_DIR / "csv" / "question_mark_base_rate.csv"
 
 
 def fmt(value: float) -> str:
@@ -108,6 +111,39 @@ def main() -> None:
     )
     print()
     print(f"Full summary: {RESULT_DIR / 'SUMMARY.md'}")
+
+    if CONTROL_SUMMARY_PATH.exists() and BASE_RATE_PATH.exists():
+        control_summary = pd.read_csv(CONTROL_SUMMARY_PATH)
+        base_rate = pd.read_csv(BASE_RATE_PATH)
+
+        print()
+        print("Reviewer controls")
+        print("=" * 58)
+        print()
+        print("No-steering question-mark base rate:")
+        print()
+        print(f"{'source_set':<30} {'base_qmark_rate':>16} {'rows':>7}")
+        print("-" * 58)
+        for row in base_rate.itertuples(index=False):
+            print(f"{row.source_set:<30} {fmt(row.base_question_mark_rate):>16} {int(row.rows):>7}")
+
+        pivot = control_summary.pivot_table(
+            index="source_set",
+            columns="control",
+            values="question_mark_rate",
+            aggfunc="mean",
+        )
+        print()
+        print("Question-mark rate at layer family {2,3}, gain=0.75:")
+        print()
+        controls = ["none", "target", "random_norm", "wrong_class", "negative_target"]
+        print(f"{'source_set':<30} " + " ".join(f"{c:>15}" for c in controls))
+        print("-" * 110)
+        for source_set, row in pivot.iterrows():
+            print(f"{source_set:<30} " + " ".join(f"{fmt(row.get(c, float('nan'))):>15}" for c in controls))
+
+        print()
+        print(f"Control summary: {CONTROL_DIR / 'SUMMARY.md'}")
 
 
 if __name__ == "__main__":

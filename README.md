@@ -229,6 +229,8 @@ Main evidence:
 - At layer `2`, gain `0.75`, target question steering produced question marks in `93.75%` of generations.
 - Across all tested layers at gain `0.75`, target question steering produced question marks in `93.50%` of generations.
 - Random-norm, wrong-class, and negative-target controls produced `0.00%` question marks in the aggregate control summary.
+- A follow-up control found no-steering question-mark base rate `0.0000` for both in-template and out-of-template prompts.
+- The same question vector transferred to 40 freeform out-of-template declarative sentences, producing question marks at rate `0.8375` while all compact controls stayed at `0.0000`.
 
 Current interpretation:
 
@@ -238,6 +240,7 @@ Important result folders:
 
 - `results/experiments/gpt2_activation_steering_pilot_results/`
 - `results/experiments/gpt2_question_activation_steering_focused_20260714_results/`
+- `results/experiments/gpt2_question_steering_controls_20260714_results/`
 
 ### GLT-AFFECT: Graded Affective Geometry
 

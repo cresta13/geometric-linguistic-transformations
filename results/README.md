@@ -108,5 +108,11 @@ Important subdirectories:
   - `csv/activation_steering_raw.csv`: 6800 generated outputs for GPT-2 question steering.
   - `csv/activation_steering_summary.csv`: 85-row summary table.
   - `run_status.json`: completed run metadata.
+- `gpt2_question_steering_controls_20260714_results/`
+  - `SUMMARY.md`: base-rate and out-of-template question-steering control summary.
+  - `csv/question_mark_base_rate.csv`: no-steering question-mark base rates for in-template and freeform prompts.
+  - `csv/question_steering_controls_summary.csv`: compact target/control comparison for in-template and out-of-template prompts.
+  - `csv/question_steering_controls_raw.csv`: 1200 generated outputs across layers `2,3`, gain `0.75`, and controls.
+  - `csv/question_steering_control_sources.csv`: in-template and freeform source prompts.
 
 The paper drafts link directly to the relevant CSVs and figures in these folders.

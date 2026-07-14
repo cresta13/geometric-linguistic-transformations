@@ -1,0 +1,3 @@
+source_set,base_question_mark_rate,base_target_marker_rate,rows
+in_template_test,0.0,0.1,160
+out_of_template_freeform,0.0,0.15,80

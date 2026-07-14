@@ -1,0 +1,11 @@
+source_set,control,gain,question_mark_rate,target_marker_rate,other_marker_rate,mean_generated_chars,rows
+in_template_test,negative_target,0.75,0.0,0.11875,0.11875,117.25,160
+in_template_test,none,0.0,0.0,0.1,0.1,118.3875,160
+in_template_test,random_norm,0.75,0.0,0.1625,0.1625,117.30625,160
+in_template_test,target,0.75,0.9625,0.99375,0.28125,115.24375,160
+in_template_test,wrong_class,0.75,0.0,0.1125,0.1125,118.325,160
+out_of_template_freeform,negative_target,0.75,0.0,0.1375,0.1625,113.075,80
+out_of_template_freeform,none,0.0,0.0,0.15,0.175,118.6,80
+out_of_template_freeform,random_norm,0.75,0.0,0.1625,0.1875,115.325,80
+out_of_template_freeform,target,0.75,0.8375,0.875,0.45,111.275,80
+out_of_template_freeform,wrong_class,0.75,0.0,0.1625,0.1875,118.275,80

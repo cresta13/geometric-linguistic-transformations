@@ -1,0 +1,27 @@
+{
+  "status": "finished",
+  "started_at": "2026-07-14 19:29:20 +0300",
+  "model": "gpt2",
+  "layers": [
+    2,
+    3
+  ],
+  "gains": [
+    0.75
+  ],
+  "phase": "generating",
+  "updated_at": "2026-07-14 19:53:00 +0300",
+  "train_rows": 400,
+  "source_rows": 120,
+  "current_layer": 3,
+  "current_control": "negative_target",
+  "progress_done": 1200,
+  "progress_total": 1200,
+  "rows": 1200,
+  "finished_at": "2026-07-14 19:53:00 +0300",
+  "summary_rows": 10,
+  "base_rate_csv": "results\\experiments\\gpt2_question_steering_controls_20260714_results\\csv\\question_mark_base_rate.csv",
+  "raw_csv": "results\\experiments\\gpt2_question_steering_controls_20260714_results\\csv\\question_steering_controls_raw.csv",
+  "summary_csv": "results\\experiments\\gpt2_question_steering_controls_20260714_results\\csv\\question_steering_controls_summary.csv",
+  "failures": []
+}
