@@ -11,6 +11,7 @@ Current tracks:
 - **GLT-DV**: delta-vector diagnostics with endpoint controls.
 - **GLT-SPOT**: signed-permutation operator tests for ordered composition.
 - **GLT-XFER**: cross-model transformation-transfer stress tests.
+- **GLT-STEER**: activation-steering interventions that inject transformation vectors back into generative models.
 - **GLT-MOLT**: planned matrix/operator extension motivated by Linear Relational Decoding.
 - **GLT-AFFECT**: planned graded affective-transformation geometry, starting with text-only emotional polarity scales and reserving sensory grounding claims for independent perceptual data.
 
@@ -260,7 +261,7 @@ Required gates before promotion:
 6. Stronger architectures if feasible, such as Llama/Mistral-class embedding spaces or high-quality sentence encoders.
 7. Package the result as a standalone Track 3 draft only after the RISE/MDV comparison and confidence-interval checks.
 
-## Track 4: Transformation vectors as editors
+## Track 4: GLT-STEER, transformation vectors as editors
 
 Working title:
 
@@ -280,7 +281,35 @@ Minimal experiment:
 
 Scientific payoff:
 
-This would move the project from descriptive geometry to causal intervention. A positive result would connect the work to representation steering and controllable generation.
+First result:
+
+A focused GPT-2 question activation-steering run is complete.
+
+- Experiment script: `scripts/run_gpt2_activation_steering_pilot.py`
+- Result directory: `results/experiments/gpt2_question_activation_steering_focused_20260714_results/`
+- Model: `gpt2`
+- Transformation evaluated: `question`
+- Residual layers: `2, 3, 4, 5, 6`
+- Controls: `none`, `target`, `wrong_class`, `random_norm`, `negative_target`
+- Raw generations: `6800`
+- Failures: none
+
+Main finding:
+
+- At layer `2`, gain `0.75`, target question steering produced question marks in `93.75%` of generations.
+- Across all tested layers at gain `0.75`, target question steering produced question marks in `93.50%` of generations.
+- Random-norm, wrong-class, and negative-target controls produced `0.00%` question marks in the aggregate control summary.
+
+Interpretation:
+
+This is the first behavior-level intervention result in GLT. It supports the cautious claim that a question-transformation activation vector can steer GPT-2 toward question-like output form under residual-stream injection.
+
+Caveats:
+
+- This is currently a GPT-2-only, question-only result.
+- It shows output-form steering, not clean semantic rewriting.
+- The broad pilot showed weak or noisy results for negation, modality, and tense shift, so other transformations need redesigned prompts, metrics, or steering sites.
+- The result connects GLT to representation steering, but it is not evidence for a complete linguistic algebra.
 
 ## Track 5: Cross-lingual transformation geometry
 
@@ -544,7 +573,11 @@ Negative results remain part of the research record.
 
 ### Medium term
 
-1. Run the GPT-2 steering-vector experiment for one transformation, starting with negation or question formation.
+1. Extend GLT-STEER after the focused question result:
+   - repeat the question steering result with a second seed or prompt family
+   - add a stricter semantic-preservation metric
+   - test whether prompt cleanup reduces repetition
+   - rerun negation, modality, and tense shift with transformation-specific metrics
 2. Run the cross-lingual mBERT/XLM-R transformation-transfer experiment.
 3. Measure effective dimensionality of transformation subspaces:
    - participation ratio
@@ -571,7 +604,7 @@ Negative results remain part of the research record.
    - UPAT hard-holdout is either resolved experimentally or explicitly reported as a bounded hard-holdout result
 2. Keep Track 2 as a diagnostics paper until grammar-generated templates and endpoint-only controls succeed.
 3. Promote Track 3 only if it becomes clearly complementary to RISE: null-controlled Procrustes transfer plus held-out anchors plus an explicit RISE/MDV comparison. The main narrative should be stress-testing cross-model transfer, not claiming first discovery of universal transformation geometry.
-4. If steering works, write Track 4 as an intervention/controllable-generation paper.
+4. If GLT-STEER replicates beyond question formation, write Track 4 as an intervention/controllable-generation paper.
 5. If cross-lingual transfer works, it becomes the strongest version of the universality claim.
 6. If Track 2 survives grammar-generated controls, write it as a separate diagnostics paper rather than merging it into Track 1.
 7. If Track 2 weakens under controls, keep it as a negative/diagnostic section in a broader research note.

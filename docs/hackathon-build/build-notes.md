@@ -30,7 +30,7 @@ Immediate next steps:
 
 1. Write PRD for GLT Lab.
 2. Add a contributor-oriented research map.
-3. Add a demo walkthrough for the focused steering experiment.
+3. Add a demo walkthrough for the focused steering experiment. Done: `docs/hackathon-build/demo-steering.md`.
 4. Prepare Devpost project description and video script.
 5. Decide whether to add a minimal dashboard or keep the submission documentation-first with runnable scripts and result views.
 
@@ -40,3 +40,22 @@ Added `docs/hackathon-build/project-story.md` to capture the human narrative in 
 - reviving an old Lie-algebra background through AI-assisted research;
 - using Codex and GPT-5.6 as a bridge from curiosity to runnable experiments;
 - framing GLT Lab as public scientific participation rather than a finished theory.
+
+## 2026-07-14 Steering Demo
+
+Added the focused GPT-2 question-steering run as the clearest Build Week demo case.
+
+Why this result is useful for the hackathon:
+
+- It is visible without specialist math: the target vector makes GPT-2 produce question marks.
+- It has simple controls: random, wrong-class, and negative vectors do not produce the same question-mark behavior.
+- It connects the personal story to a working experiment: curiosity becomes a script, a controlled run, a table, and a caveat.
+- It is honest enough for a public demo: this is form steering, not solved semantic editing.
+
+Primary demo file:
+
+- `docs/hackathon-build/demo-steering.md`
+
+Primary result file:
+
+- `results/experiments/gpt2_question_activation_steering_focused_20260714_results/SUMMARY.md`

@@ -174,6 +174,29 @@ Important result folder:
 
 - `results/experiments/upat_large_results/`
 
+### GLT-STEER: Activation Steering
+
+Question:
+
+> Can transformation vectors do behavior-level work inside a generative model?
+
+Main evidence:
+
+- A broad GPT-2/DistilGPT-2 pilot found that question steering was the clearest target for a focused rerun.
+- The focused GPT-2 question-steering run completed `6800` generations with no failures.
+- At layer `2`, gain `0.75`, target question steering produced question marks in `93.75%` of generations.
+- Across all tested layers at gain `0.75`, target question steering produced question marks in `93.50%` of generations.
+- Random-norm, wrong-class, and negative-target controls produced `0.00%` question marks in the aggregate control summary.
+
+Current interpretation:
+
+This is the first behavior-level intervention result in GLT. It shows that a question-transformation activation vector can steer GPT-2 toward question-like output form under residual-stream injection. It does not yet show clean semantic rewriting, and it does not prove a complete linguistic algebra.
+
+Important result folders:
+
+- `results/experiments/gpt2_activation_steering_pilot_results/`
+- `results/experiments/gpt2_question_activation_steering_focused_20260714_results/`
+
 ### GLT-AFFECT: Graded Affective Geometry
 
 Question:

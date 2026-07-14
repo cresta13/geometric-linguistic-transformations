@@ -97,5 +97,16 @@ Important subdirectories:
   - `figures/13_hybrid_rise_procrustes_f1.png` and `figures/13_hybrid_rise_procrustes_heatmap.png`: hybrid transformation-label F1 summaries.
   - `csv/spherical_delta_steering_raw.csv` and `csv/spherical_delta_steering_summary.csv`: movement-level linear/spherical/RISE steering comparison.
   - `figures/14_spherical_delta_target_cosine.png`, `figures/14_spherical_delta_retrieval_top1.png`, and `figures/14_spherical_delta_retrieval_label_f1.png`: target-cosine and retrieval summaries for spherical delta steering.
+- `gpt2_activation_steering_pilot_results/`
+  - `SUMMARY.md`: exploratory pilot summary and rationale for the focused question rerun.
+  - exploratory GPT-2/DistilGPT-2 generation-time residual-stream steering pilot over question, negation, modality, and tense-shift vectors.
+  - `csv/activation_steering_raw.csv`: generated outputs and marker hits for target, wrong-class, random-norm, and negative-vector controls.
+  - `csv/activation_steering_summary.csv`: aggregate marker rates by model, layer, class, control, and gain.
+- `gpt2_question_activation_steering_focused_20260714_results/`
+  - `SUMMARY.md`: focused GPT-2 question-steering result summary.
+  - `DEMO_NOTES.md`: plain-language demo notes for Build Week.
+  - `csv/activation_steering_raw.csv`: 6800 generated outputs for GPT-2 question steering.
+  - `csv/activation_steering_summary.csv`: 85-row summary table.
+  - `run_status.json`: completed run metadata.
 
 The paper drafts link directly to the relevant CSVs and figures in these folders.

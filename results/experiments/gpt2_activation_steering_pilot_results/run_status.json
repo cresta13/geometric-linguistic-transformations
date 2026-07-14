@@ -1,0 +1,47 @@
+{
+  "status": "finished",
+  "started_at": "2026-07-11 00:55:15 +0300",
+  "models": [
+    "distilgpt2",
+    "gpt2"
+  ],
+  "classes": [
+    "question",
+    "negation",
+    "modality",
+    "tense_shift"
+  ],
+  "controls": [
+    "none",
+    "target",
+    "wrong_class",
+    "random_norm",
+    "negative_target"
+  ],
+  "gains": [
+    0.75,
+    1.5,
+    3.0
+  ],
+  "max_test_sources": 24,
+  "max_new_tokens": 28,
+  "phase": "generating",
+  "updated_at": "2026-07-11 02:45:40 +0300",
+  "current_model": "gpt2",
+  "current_layers": [
+    4,
+    8,
+    11
+  ],
+  "current_layer": 11,
+  "current_class": "tense_shift",
+  "current_control": "negative_target",
+  "progress_done": 3744,
+  "progress_total": 3744,
+  "rows": 7488,
+  "finished_at": "2026-07-11 02:45:40 +0300",
+  "failures": [],
+  "summary_rows": 312,
+  "raw_csv": "results\\experiments\\gpt2_activation_steering_pilot_results\\csv\\activation_steering_raw.csv",
+  "summary_csv": "results\\experiments\\gpt2_activation_steering_pilot_results\\csv\\activation_steering_summary.csv"
+}

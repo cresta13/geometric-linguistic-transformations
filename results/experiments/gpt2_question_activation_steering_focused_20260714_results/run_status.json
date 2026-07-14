@@ -1,0 +1,52 @@
+{
+  "status": "finished",
+  "started_at": "2026-07-14 01:18:38 +0300",
+  "models": [
+    "gpt2"
+  ],
+  "centroid_classes": [
+    "question",
+    "negation",
+    "modality",
+    "tense_shift"
+  ],
+  "eval_classes": [
+    "question"
+  ],
+  "controls": [
+    "none",
+    "target",
+    "wrong_class",
+    "random_norm",
+    "negative_target"
+  ],
+  "gains": [
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "max_test_sources": 80,
+  "max_new_tokens": 28,
+  "phase": "generating",
+  "updated_at": "2026-07-14 03:04:04 +0300",
+  "current_model": "gpt2",
+  "current_layers": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "current_layer": 6,
+  "current_class": "question",
+  "current_control": "negative_target",
+  "progress_done": 6800,
+  "progress_total": 6800,
+  "rows": 6800,
+  "finished_at": "2026-07-14 03:04:04 +0300",
+  "failures": [],
+  "summary_rows": 85,
+  "raw_csv": "results\\experiments\\gpt2_question_activation_steering_focused_20260714_results\\csv\\activation_steering_raw.csv",
+  "summary_csv": "results\\experiments\\gpt2_question_activation_steering_focused_20260714_results\\csv\\activation_steering_summary.csv"
+}
