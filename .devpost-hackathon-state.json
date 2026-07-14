@@ -1,0 +1,23 @@
+{
+  "event": {
+    "name": "OpenAI Build Week",
+    "slug": "openai",
+    "url": "https://openai.devpost.com/",
+    "submission_deadline_utc": "2026-07-22T00:00:00Z",
+    "submission_deadline_note": "Tuesday, July 21, 2026 at 5:00 PM PT"
+  },
+  "project": {
+    "name": "GLT Lab",
+    "summary": "A reproducible public research lab for testing whether linguistic transformations appear as reusable geometric objects in transformer embedding spaces.",
+    "track": "Education"
+  },
+  "learning": {
+    "status": "active",
+    "current_step": "scope",
+    "completed_steps": [
+      "onboard"
+    ],
+    "plan_file": "docs/hackathon-build/scope.md",
+    "next_command": "build-prd"
+  }
+}
