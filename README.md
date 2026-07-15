@@ -98,11 +98,19 @@ Headline result:
 | wrong-class control | `0.0000` |
 | negative-target control | `0.0000` |
 
+Stronger copy-prompt preservation result:
+
+| condition | question-and-preserved rate |
+|---|---:|
+| target question vector, copy-like prompts | up to `0.9750` |
+| wrong-vector / no-steering controls | `0.0000` in the matched headline rows |
+
 Full notes:
 
 - `results/experiments/gpt2_question_activation_steering_focused_20260714_results/SUMMARY.md`
 - `results/experiments/gpt2_question_steering_controls_20260714_results/SUMMARY.md`
 - `results/experiments/gpt2_question_prompt_robustness_20260715_results/SUMMARY.md`
+- `results/experiments/gpt2_question_copy_prompt_preservation_20260716_results/SUMMARY.md`
 
 Safe interpretation:
 
