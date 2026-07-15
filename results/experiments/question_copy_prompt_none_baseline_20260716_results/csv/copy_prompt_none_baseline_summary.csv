@@ -1,0 +1,5 @@
+model,source_set,max_none_question_mark_rate,mean_none_question_mark_rate,min_content_preservation,max_content_preservation,rows
+distilgpt2,in_template_test,0.0,0.0,0.825,1.0,240
+distilgpt2,out_of_template_freeform,0.0,0.0,0.75,1.0,240
+gpt2,in_template_test,0.0,0.0,0.95,1.0,240
+gpt2,out_of_template_freeform,0.0,0.0,0.9416666666666668,0.9916666666666666,240

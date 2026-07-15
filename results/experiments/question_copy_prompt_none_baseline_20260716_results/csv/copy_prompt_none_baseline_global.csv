@@ -1,0 +1,2 @@
+models,prompt_styles,max_none_question_mark_rate,mean_none_question_mark_rate,total_rows
+"distilgpt2,gpt2","copy_sentence,repeat_sentence,same_sentence",0.0,0.0,960

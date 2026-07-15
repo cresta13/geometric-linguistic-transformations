@@ -105,12 +105,20 @@ Stronger copy-prompt preservation result:
 | target question vector, copy-like prompts | up to `0.9750` |
 | wrong-vector / no-steering controls | `0.0000` in the matched headline rows |
 
+Reviewer-facing prompt-only control:
+
+| condition | question mark rate |
+|---|---:|
+| copy-like prompts without steering, GPT-2 + DistilGPT-2 | `0.0000` across `960` no-steering rows |
+
 Full notes:
 
 - `results/experiments/gpt2_question_activation_steering_focused_20260714_results/SUMMARY.md`
 - `results/experiments/gpt2_question_steering_controls_20260714_results/SUMMARY.md`
 - `results/experiments/gpt2_question_prompt_robustness_20260715_results/SUMMARY.md`
 - `results/experiments/gpt2_question_copy_prompt_preservation_20260716_results/SUMMARY.md`
+- `results/experiments/distilgpt2_question_copy_prompt_preservation_20260716_results/SUMMARY.md`
+- `results/experiments/question_copy_prompt_none_baseline_20260716_results/SUMMARY.md`
 
 Safe interpretation:
 
@@ -256,6 +264,8 @@ Main evidence:
 - Prompt robustness controls show that the effect survives four prompt styles, with target question-mark rate `0.7750-0.9875` in-template and `0.8125-0.9250` out-of-template.
 - Content-preservation audits show that prompt wording matters: copy-like prompts preserve source content while adding question form much better than bare or quoted prompts.
 - Under copy-like prompts, target question steering reaches high question-and-preserved rates: `0.9625-0.9750` in-template and `0.8250-0.9000` out-of-template for `repeat_sentence`, `same_sentence`, and `copy_sentence`.
+- A copy-prompt none-baseline audit shows that copy-like prompts without steering produce `0.0000` question marks across `960` no-steering rows from GPT-2 and DistilGPT-2.
+- A DistilGPT-2 replication preserves the qualitative target-vs-control separation, but the effect is much weaker than GPT-2: best question-and-preserved rate `0.4625`.
 
 Current interpretation:
 
@@ -269,6 +279,8 @@ Important result folders:
 - `results/experiments/gpt2_question_prompt_robustness_20260715_results/`
 - `results/experiments/gpt2_question_content_preservation_20260716_results/`
 - `results/experiments/gpt2_question_copy_prompt_preservation_20260716_results/`
+- `results/experiments/distilgpt2_question_copy_prompt_preservation_20260716_results/`
+- `results/experiments/question_copy_prompt_none_baseline_20260716_results/`
 
 ### GLT-AFFECT: Graded Affective Geometry
 

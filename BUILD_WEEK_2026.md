@@ -72,6 +72,8 @@ Build Week added and packaged **GLT-STEER**, the behavior-level intervention tra
 - prompt-wrapper robustness controls;
 - content-preservation audit;
 - copy-prompt preservation follow-up;
+- copy-prompt no-steering baseline audit;
+- DistilGPT-2 copy-prompt replication;
 - a lightweight demo command for judges;
 - public submission and provenance notes.
 
@@ -82,6 +84,8 @@ The steering result was strengthened step by step:
 3. Out-of-template prompts showed the effect was not restricted to the original template sentences.
 4. Prompt-robustness tests showed the effect survived several prompt wrappers.
 5. Content-preservation tests showed an important boundary: copy-like prompts preserve source content much better than bare or quoted prompts.
+6. A no-steering copy-prompt audit showed that copy-like prompts alone do not produce question marks: `0.0000` question-mark rate across `960` no-steering rows from GPT-2 and DistilGPT-2.
+7. A DistilGPT-2 replication preserved the qualitative target-vs-control separation but reduced the effect size substantially.
 
 ## How Codex Was Used
 
@@ -116,13 +120,14 @@ AI did not make the scientific decisions. It made the choices understandable eno
 
 The cleanest current Build Week claim is:
 
-> Under copy-like prompts, a GPT-2 question-transformation activation vector can often preserve the source content while steering the continuation toward question form. This effect is sharply separated from no-steering and wrong-vector controls on the joint question-and-preserved metric.
+> Under copy-like prompts, a GPT-2 question-transformation activation vector can often preserve the source content while steering the continuation toward question form. This effect is sharply separated from no-steering and wrong-vector controls on the joint question-and-preserved metric. Copy-like prompts alone do not produce question marks in the tested no-steering controls.
 
 This is a bounded result:
 
 - GPT-2-only so far;
 - question-only so far;
 - prompt-dependent;
+- model-dependent, with DistilGPT-2 much weaker than GPT-2;
 - not robust general-purpose semantic editing;
 - not proof of a complete linguistic algebra.
 
@@ -149,6 +154,8 @@ Recommended quick path:
    results/experiments/gpt2_question_prompt_robustness_20260715_results/SUMMARY.md
    results/experiments/gpt2_question_content_preservation_20260716_results/SUMMARY.md
    results/experiments/gpt2_question_copy_prompt_preservation_20260716_results/SUMMARY.md
+   results/experiments/distilgpt2_question_copy_prompt_preservation_20260716_results/SUMMARY.md
+   results/experiments/question_copy_prompt_none_baseline_20260716_results/SUMMARY.md
    paper/research_program.md
    ```
 

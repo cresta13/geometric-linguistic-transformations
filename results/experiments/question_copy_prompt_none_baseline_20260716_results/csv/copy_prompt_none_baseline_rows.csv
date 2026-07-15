@@ -1,0 +1,13 @@
+model,source_set,prompt_style,control,question_mark_rate,mean_content_preservation,question_and_preserved_rate,target_marker_rate,other_marker_rate,rows
+gpt2,in_template_test,copy_sentence,none,0.0,0.95,0.0,0.0,0.05,80
+gpt2,in_template_test,repeat_sentence,none,0.0,0.9916666666666666,0.0,0.1,0.1,80
+gpt2,in_template_test,same_sentence,none,0.0,1.0,0.0,0.0,0.0,80
+gpt2,out_of_template_freeform,copy_sentence,none,0.0,0.9416666666666668,0.0,0.075,0.1,80
+gpt2,out_of_template_freeform,repeat_sentence,none,0.0,0.9916666666666666,0.0,0.15,0.2,80
+gpt2,out_of_template_freeform,same_sentence,none,0.0,0.9916666666666666,0.0,0.025,0.025,80
+distilgpt2,in_template_test,copy_sentence,none,0.0,0.825,0.0,0.05,0.05,80
+distilgpt2,in_template_test,repeat_sentence,none,0.0,0.9166666666666666,0.0,0.125,0.125,80
+distilgpt2,in_template_test,same_sentence,none,0.0,1.0,0.0,0.0,0.0,80
+distilgpt2,out_of_template_freeform,copy_sentence,none,0.0,0.75,0.0,0.175,0.175,80
+distilgpt2,out_of_template_freeform,repeat_sentence,none,0.0,0.9166666666666666,0.0,0.075,0.1,80
+distilgpt2,out_of_template_freeform,same_sentence,none,0.0,1.0,0.0,0.0,0.0,80

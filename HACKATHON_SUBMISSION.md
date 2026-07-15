@@ -105,11 +105,21 @@ target question vector stays strong across four prompt styles:
 Copy-prompt preservation:
 question-and-preserved rate reaches 0.9625-0.9750 in-template
 and 0.8250-0.9000 out-of-template for copy-like prompts.
+
+Prompt-only control:
+copy-like prompts without steering produce 0.0000 question marks
+across 960 no-steering rows from GPT-2 and DistilGPT-2.
+
+DistilGPT-2 replication:
+the qualitative target-vs-control separation remains, but the effect is
+weaker than GPT-2, with best question-and-preserved rate 0.4625.
 ```
 
 Safe interpretation:
 
 > A GPT-2 question-transformation activation vector can steer output toward question form, and under copy-like prompts it can often preserve recognizable source content. This is not robust general-purpose semantic editing and not proof of a complete linguistic algebra.
+
+The no-steering copy-prompt audit is important: copy-like prompts explain source retention, but they do not by themselves create question marks in the tested setup.
 
 ## Important Files for Judges
 
@@ -125,6 +135,8 @@ Safe interpretation:
 - `results/experiments/gpt2_question_prompt_robustness_20260715_results/SUMMARY.md`
 - `results/experiments/gpt2_question_content_preservation_20260716_results/SUMMARY.md`
 - `results/experiments/gpt2_question_copy_prompt_preservation_20260716_results/SUMMARY.md`
+- `results/experiments/distilgpt2_question_copy_prompt_preservation_20260716_results/SUMMARY.md`
+- `results/experiments/question_copy_prompt_none_baseline_20260716_results/SUMMARY.md`
 - `paper/research_program.md`: full research roadmap and scientific framing.
 - `docs/hackathon-build/project-story.md`: plain-language project story.
 - `docs/hackathon-build/demo-steering.md`: short demo explanation.
@@ -216,6 +228,8 @@ Keep the public YouTube demo under 3 minutes.
 - [x] Base-rate and out-of-template controls.
 - [x] Prompt-robustness controls.
 - [x] Content-preservation and copy-prompt follow-up.
+- [x] Copy-prompt prompt-only / no-steering baseline.
+- [x] DistilGPT-2 copy-prompt replication.
 - [x] Build Week provenance file.
 - [x] Devpost field draft.
 - [ ] Demo video under 3 minutes.

@@ -52,8 +52,15 @@ question-and-preserved rate:
 0.8250-0.9000 out-of-template
 ```
 
+Prompt-only control:
+
+```text
+copy-like prompts without steering:
+0.0000 question-mark rate across 960 no-steering rows
+```
+
 ## Safe Interpretation
 
 This is evidence that a question-transformation activation vector can steer GPT-2 toward question form, and that copy-like prompts can preserve source content while adding that form.
 
-It is not evidence that semantic editing is solved. It is not proof of a complete linguistic algebra. It is a bounded behavior-level intervention result.
+It is not evidence that semantic editing is solved. It is not proof of a complete linguistic algebra. It is a bounded behavior-level intervention result, and the DistilGPT-2 replication shows that the effect is model-dependent.

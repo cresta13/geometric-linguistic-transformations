@@ -315,10 +315,12 @@ Reviewer-facing follow-up controls:
   - first-pass target preserved-with-question rates are strong for structured prompts (`0.7500-0.8500` in-template for `Input/Output` and sentence-continuation prompts), but weak for plain out-of-template prompts (`0.0875`) and source-response out-of-template prompts (`0.2125`)
   - copy-oriented prompts improve the result substantially: `repeat_sentence`, `same_sentence`, and `copy_sentence` reach target question-and-preserved rates of `0.9625-0.9750` in-template and `0.8250-0.9000` out-of-template
   - `quoted_echo` remains weak for content preservation despite question-mark generation, so prompt format is a real boundary condition rather than cosmetic wording
+- A copy-prompt none-baseline audit directly tests the prompt-only alternative. Across GPT-2 and DistilGPT-2, copy-like prompts without steering produce `0.0000` question-mark rate across `960` no-steering rows.
+- A DistilGPT-2 replication is qualitatively positive but much weaker than GPT-2: the best target question-and-preserved rate is `0.4625`, while controls remain at `0.0000` on the joint metric.
 
 Interpretation:
 
-This is the first behavior-level intervention result in GLT. It supports the cautious claim that a question-transformation activation vector can steer GPT-2 toward question-like output form under residual-stream injection. The copy-prompt follow-up strengthens the result from mere punctuation steering toward partial form-preserving rewriting, but only under prompt families that already ask the model to repeat or copy the source sentence.
+This is the first behavior-level intervention result in GLT. It supports the cautious claim that a question-transformation activation vector can steer GPT-2 toward question-like output form under residual-stream injection. The copy-prompt follow-up strengthens the result from mere punctuation steering toward partial form-preserving rewriting, but only under prompt families that already ask the model to repeat or copy the source sentence. The no-steering copy-prompt audit rules out the simplest prompt-only explanation for question marks, while the DistilGPT-2 replication shows that effect size is model-dependent.
 
 Caveats:
 
@@ -327,6 +329,7 @@ Caveats:
 - The out-of-template control is promising but modest: `40` hand-written freeform declarative sentences.
 - The prompt-robustness result reduces concern about one prompt wrapper, but it still uses simple declarative prompts and should be extended to more natural contexts.
 - The content-preservation result depends strongly on prompt wording; copy-like prompts are much cleaner than quoted or bare prompts.
+- DistilGPT-2 weakens the effect substantially, so the result is not architecture-invariant.
 - The broad pilot showed weak or noisy results for negation, modality, and tense shift, so other transformations need redesigned prompts, metrics, or steering sites.
 - The result connects GLT to representation steering, but it is not evidence for a complete linguistic algebra.
 

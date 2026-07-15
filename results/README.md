@@ -129,5 +129,16 @@ Important subdirectories:
   - `csv/question_copy_prompt_sources.csv`: in-template and freeform source prompts.
   - `csv/question_copy_prompt_raw.csv`: 3200 generated outputs across copy-oriented prompt styles, layers `2,3`, and controls.
   - `run_status.json`: completed run metadata.
+- `distilgpt2_question_copy_prompt_preservation_20260716_results/`
+  - `SUMMARY.md`: DistilGPT-2 replication of the copy-prompt question-steering preservation audit.
+  - `csv/question_copy_prompt_summary.csv`: question-mark, content-preservation, and joint rates by prompt style and control.
+  - `csv/question_copy_prompt_sources.csv`: in-template and freeform source prompts.
+  - `csv/question_copy_prompt_raw.csv`: 3200 generated outputs across copy-oriented prompt styles, layers `2,3`, and controls.
+  - `run_status.json`: completed run metadata.
+- `question_copy_prompt_none_baseline_20260716_results/`
+  - `SUMMARY.md`: explicit no-steering copy-prompt baseline audit for GPT-2 and DistilGPT-2.
+  - `csv/copy_prompt_none_baseline_rows.csv`: all no-steering copy-like prompt rows from the two copy-prompt runs.
+  - `csv/copy_prompt_none_baseline_summary.csv`: max/mean no-steering question-mark rates by model and source set.
+  - `csv/copy_prompt_none_baseline_global.csv`: global prompt-only control summary.
 
 The paper drafts link directly to the relevant CSVs and figures in these folders.
