@@ -12,6 +12,8 @@ RAW_PATH = RESULT_DIR / "csv" / "activation_steering_raw.csv"
 CONTROL_DIR = Path("results/experiments/gpt2_question_steering_controls_20260714_results")
 CONTROL_SUMMARY_PATH = CONTROL_DIR / "csv" / "question_steering_controls_summary.csv"
 BASE_RATE_PATH = CONTROL_DIR / "csv" / "question_mark_base_rate.csv"
+PROMPT_ROBUSTNESS_DIR = Path("results/experiments/gpt2_question_prompt_robustness_20260715_results")
+PROMPT_ROBUSTNESS_SUMMARY_PATH = PROMPT_ROBUSTNESS_DIR / "csv" / "question_prompt_robustness_summary.csv"
 
 
 def fmt(value: float) -> str:
@@ -144,6 +146,31 @@ def main() -> None:
 
         print()
         print(f"Control summary: {CONTROL_DIR / 'SUMMARY.md'}")
+
+    if PROMPT_ROBUSTNESS_SUMMARY_PATH.exists():
+        prompt_summary = pd.read_csv(PROMPT_ROBUSTNESS_SUMMARY_PATH)
+        prompt_pivot = prompt_summary.pivot_table(
+            index=["source_set", "prompt_style"],
+            columns="control",
+            values="question_mark_rate",
+            aggfunc="mean",
+        )
+
+        print()
+        print("Prompt robustness controls")
+        print("=" * 58)
+        print()
+        controls = ["none", "target", "random_norm", "wrong_class", "negative_target"]
+        print(f"{'source_set':<28} {'prompt_style':<24} " + " ".join(f"{c:>15}" for c in controls))
+        print("-" * 132)
+        for (source_set, prompt_style), row in prompt_pivot.iterrows():
+            print(
+                f"{source_set:<28} {prompt_style:<24} "
+                + " ".join(f"{fmt(row.get(c, float('nan'))):>15}" for c in controls)
+            )
+
+        print()
+        print(f"Prompt robustness summary: {PROMPT_ROBUSTNESS_DIR / 'SUMMARY.md'}")
 
 
 if __name__ == "__main__":

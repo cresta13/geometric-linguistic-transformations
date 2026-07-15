@@ -1,0 +1,31 @@
+{
+  "status": "finished",
+  "started_at": "2026-07-15 12:08:32 +0300",
+  "model": "gpt2",
+  "layers": [
+    2,
+    3
+  ],
+  "gain": 0.75,
+  "prompt_styles": [
+    "input_output",
+    "source_response",
+    "sentence_continuation",
+    "plain_statement"
+  ],
+  "phase": "generating",
+  "updated_at": "2026-07-15 13:10:36 +0300",
+  "train_rows": 400,
+  "source_rows": 80,
+  "current_layer": 3,
+  "current_prompt_style": "plain_statement",
+  "current_control": "negative_target",
+  "progress_done": 3200,
+  "progress_total": 3200,
+  "rows": 3200,
+  "finished_at": "2026-07-15 13:10:36 +0300",
+  "summary_rows": 40,
+  "raw_csv": "results\\experiments\\gpt2_question_prompt_robustness_20260715_results\\csv\\question_prompt_robustness_raw.csv",
+  "summary_csv": "results\\experiments\\gpt2_question_prompt_robustness_20260715_results\\csv\\question_prompt_robustness_summary.csv",
+  "failures": []
+}

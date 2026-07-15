@@ -114,5 +114,10 @@ Important subdirectories:
   - `csv/question_steering_controls_summary.csv`: compact target/control comparison for in-template and out-of-template prompts.
   - `csv/question_steering_controls_raw.csv`: 1200 generated outputs across layers `2,3`, gain `0.75`, and controls.
   - `csv/question_steering_control_sources.csv`: in-template and freeform source prompts.
+- `gpt2_question_prompt_robustness_20260715_results/`
+  - `SUMMARY.md`: prompt-wrapper robustness summary for GPT-2 question steering.
+  - `csv/question_prompt_robustness_summary.csv`: question-mark rates by source set, prompt style, and control.
+  - `csv/question_prompt_robustness_raw.csv`: 3200 generated outputs across prompt styles, layers `2,3`, and controls.
+  - `csv/question_prompt_robustness_sources.csv`: in-template and freeform source prompts.
 
 The paper drafts link directly to the relevant CSVs and figures in these folders.

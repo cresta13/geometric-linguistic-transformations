@@ -4,6 +4,10 @@ Research code, result tables, figures, and draft papers for **GLT** (**Geometric
 
 This is an active research repository and reproducibility package, not a peer-reviewed article release.
 
+OpenAI Build Week submission notes:
+
+- `HACKATHON_SUBMISSION.md`
+
 ## 1. Plain-Language Overview
 
 Modern language models turn sentences into high-dimensional vectors. This project asks a simple question:
@@ -89,6 +93,7 @@ Full notes:
 
 - `results/experiments/gpt2_question_activation_steering_focused_20260714_results/SUMMARY.md`
 - `docs/hackathon-build/demo-steering.md`
+- `HACKATHON_SUBMISSION.md`
 
 Safe interpretation:
 
@@ -231,6 +236,7 @@ Main evidence:
 - Random-norm, wrong-class, and negative-target controls produced `0.00%` question marks in the aggregate control summary.
 - A follow-up control found no-steering question-mark base rate `0.0000` for both in-template and out-of-template prompts.
 - The same question vector transferred to 40 freeform out-of-template declarative sentences, producing question marks at rate `0.8375` while all compact controls stayed at `0.0000`.
+- Prompt robustness controls show that the effect survives four prompt styles, with target question-mark rate `0.7750-0.9875` in-template and `0.8125-0.9250` out-of-template.
 
 Current interpretation:
 
@@ -241,6 +247,7 @@ Important result folders:
 - `results/experiments/gpt2_activation_steering_pilot_results/`
 - `results/experiments/gpt2_question_activation_steering_focused_20260714_results/`
 - `results/experiments/gpt2_question_steering_controls_20260714_results/`
+- `results/experiments/gpt2_question_prompt_robustness_20260715_results/`
 
 ### GLT-AFFECT: Graded Affective Geometry
 

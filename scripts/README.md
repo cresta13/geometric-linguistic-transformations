@@ -46,6 +46,7 @@ All runnable research scripts live in this directory.
 - `run_upat_spherical_delta_steering.py`: movement-level steering test comparing linear centroid deltas, spherical/tangent delta movement, RISE-style prediction, residual orderings, and hybrid averaging on target cosine and retrieval metrics.
 - `run_gpt2_activation_steering_pilot.py`: generation-time GPT-2/distilGPT-2 residual-stream steering pilot using UPAT-derived transformation delta centroids with target, wrong-class, random-norm, and negative-vector controls. Use `scripts/launch_gpt2_activation_steering_pilot.ps1` for the overnight background run.
 - `run_gpt2_question_steering_controls.py`: compact reviewer-facing control for the focused GPT-2 question-steering result. It records no-steering question-mark base rate and tests whether the learned question vector transfers to freeform out-of-template source sentences.
+- `run_gpt2_question_prompt_robustness.py`: prompt-wrapper robustness control for the focused GPT-2 question-steering result. It tests `Input/Output`, `Source/Response`, `Sentence/Continuation`, and bare statement prompts.
 - `show_glt_steer_demo.py`: lightweight demo reader for the archived focused GPT-2 question-steering result. It does not download models or rerun the experiment; it prints the headline table and examples from the committed CSV files.
 
 ## Reports

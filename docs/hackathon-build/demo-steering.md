@@ -47,6 +47,12 @@ Best setting:
 
 Across all tested layers at gain `0.75`, target steering produced question marks in `0.9350` of generations.
 
+Follow-up controls:
+
+- no-steering question-mark base rate is `0.0000`;
+- out-of-template freeform target steering reaches `0.8375`, while compact controls remain `0.0000`;
+- prompt-wrapper robustness holds across `Input/Output`, `Source/Response`, `Sentence/Continuation`, and bare statement prompts.
+
 ## Demo Example
 
 Source:
@@ -84,4 +90,3 @@ This demo shows the whole idea in one minute:
 This does not mean we solved semantic editing. The model often repeats text, and the result currently shows question-form steering more than full sentence rewriting.
 
 That honesty is part of the point: GLT Lab teaches people how to inspect evidence, not just how to celebrate positive results.
-

@@ -59,3 +59,18 @@ Primary demo file:
 Primary result file:
 
 - `results/experiments/gpt2_question_activation_steering_focused_20260714_results/SUMMARY.md`
+
+## 2026-07-16 Submission Packet
+
+Added `HACKATHON_SUBMISSION.md` as the single checklist for the OpenAI Build Week submission.
+
+The judge-facing quick path is now:
+
+1. open `README.md`;
+2. run `scripts/show_glt_steer_demo.py`;
+3. inspect the three steering summaries:
+   - focused steering result;
+   - base-rate and out-of-template controls;
+   - prompt-wrapper robustness controls.
+
+The only remaining manual submission items are the demo video and the Codex `/feedback` session ID.

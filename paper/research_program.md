@@ -307,6 +307,10 @@ Reviewer-facing follow-up controls:
 - No-steering question-mark base rate is `0.0000` for both in-template prompts (`160` rows) and out-of-template freeform prompts (`80` rows).
 - Under the same compact setting family (`layers 2,3`, gain `0.75`), in-template target steering reaches question-mark rate `0.9625`, while random-norm, wrong-class, and negative-target controls remain at `0.0000`.
 - On `40` freeform out-of-template declarative sentences, target steering still reaches question-mark rate `0.8375`, while no-steering and all compact controls remain at `0.0000`.
+- A prompt-robustness control then tests four prompt wrappers (`Input/Output`, `Source/Response`, `Sentence/Continuation`, and bare statement prompts). Target steering remains strong across all wrappers:
+  - in-template target question-mark rate range: `0.7750-0.9875`
+  - out-of-template target question-mark rate range: `0.8125-0.9250`
+  - no-steering and wrong-vector controls remain at `0.0000` except one random-norm in-template plain-statement row at `0.0250`
 
 Interpretation:
 
@@ -317,6 +321,7 @@ Caveats:
 - This is currently a GPT-2-only, question-only result.
 - It shows output-form steering, not clean semantic rewriting.
 - The out-of-template control is promising but modest: `40` hand-written freeform declarative sentences.
+- The prompt-robustness result reduces concern about one prompt wrapper, but it still uses simple declarative prompts and should be extended to more natural contexts.
 - The broad pilot showed weak or noisy results for negation, modality, and tense shift, so other transformations need redesigned prompts, metrics, or steering sites.
 - The result connects GLT to representation steering, but it is not evidence for a complete linguistic algebra.
 
