@@ -1,0 +1,9 @@
+source_set,prompt_style,target_qmark,best_control_qmark,target_preserved,best_control_preserved,target_strict_preserved,best_control_strict_preserved
+in_template_test,input_output,0.9625,0.0,0.75,0.0,0.75,0.0
+in_template_test,plain_statement,0.775,0.025,0.4875,0.0,0.4875,0.0
+in_template_test,sentence_continuation,0.9875,0.0,0.85,0.0,0.85,0.0
+in_template_test,source_response,0.925,0.0,0.7375,0.0,0.7375,0.0
+out_of_template_freeform,input_output,0.8375,0.0,0.5,0.0,0.5,0.0
+out_of_template_freeform,plain_statement,0.8125,0.0,0.0875,0.0,0.0875,0.0
+out_of_template_freeform,sentence_continuation,0.925,0.0,0.7,0.0,0.7,0.0
+out_of_template_freeform,source_response,0.875,0.0,0.2125,0.0,0.2125,0.0

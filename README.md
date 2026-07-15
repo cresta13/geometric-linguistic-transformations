@@ -4,39 +4,13 @@ Research code, result tables, figures, and draft papers for **GLT** (**Geometric
 
 This is an active and reproducible research program. The Build Week submission is not presented as a finished theorem or a final paper, but as a working experimental pipeline, an evidence package, and an open scientific question.
 
-## OpenAI Build Week 2026
+## OpenAI Build Week 2026 Note
 
-This repository is also the submission package for **OpenAI Build Week 2026**.
+This repository is being used as a Build Week submission in the **Developer Tools** category: the working artifact is a reproducible research workflow rather than a separate web app.
 
-The project is submitted as a working research workflow, not as a separate demo app. The working artifact is the repository itself: experiment scripts, synthetic controlled datasets, result tables, figures, reports, research notes, negative results, and reviewer-style controls.
+Codex was used as the primary implementation environment for recent scripts, controls, result summaries, documentation updates, and repository organization. GPT-5.6 was used as a reasoning partner for revisiting mathematical background, reading related work, challenging interpretations, and turning vague research questions into concrete controls.
 
-Build Week positioning:
-
-- **Project title:** Geometric Linguistic Transformations
-- **Primary track:** Developer Tools
-- **Secondary fit:** Education
-- **Deadline:** Tuesday, July 21, 2026 at 5:00 PM PT
-- **Submission notes:** `HACKATHON_SUBMISSION.md`
-- **Build Week provenance:** `BUILD_WEEK_2026.md`
-- **Project story:** `docs/hackathon-build/project-story.md`
-
-What existed before Build Week:
-
-- GLT-DV: delta-vector diagnostics with endpoint controls.
-- GLT-SPOT: signed-permutation composition diagnostics.
-- GLT-MOLT: matrix/operator audits and null baselines.
-- GLT-XFER: cross-model transfer and alignment stress tests.
-- GLT-AFFECT: early affective-scale geometry controls.
-- Draft papers, reports, Zenodo snapshots, and reproducibility infrastructure.
-
-What changed during Build Week:
-
-- GLT-STEER was added as a behavior-level intervention track.
-- Codex built and organized GPT-2 question-steering experiments, base-rate controls, out-of-template tests, prompt-robustness checks, and content-preservation audits.
-- The repository gained a lightweight judge demo that reads committed CSVs instead of requiring a model rerun.
-- The submission documents now explain how Codex and GPT-5.6 were used in the research workflow.
-
-The central Build Week message is simple: GLT is one example of independent AI-assisted science. The broader point is that modern AI tools can help many more people return to hard questions, understand unfamiliar material, build careful experiments, and contribute evidence in areas they care about.
+The human role remained to choose the research direction, decide which claims were honest enough to keep, interpret results, and stay responsible for remaining mistakes. The broader project message is that AI can make careful independent scientific work more accessible without removing the need for evidence, criticism, and humility.
 
 ## 1. Plain-Language Overview
 
@@ -122,8 +96,8 @@ Headline result:
 Full notes:
 
 - `results/experiments/gpt2_question_activation_steering_focused_20260714_results/SUMMARY.md`
-- `docs/hackathon-build/demo-steering.md`
-- `HACKATHON_SUBMISSION.md`
+- `results/experiments/gpt2_question_steering_controls_20260714_results/SUMMARY.md`
+- `results/experiments/gpt2_question_prompt_robustness_20260715_results/SUMMARY.md`
 
 Safe interpretation:
 
@@ -267,10 +241,12 @@ Main evidence:
 - A follow-up control found no-steering question-mark base rate `0.0000` for both in-template and out-of-template prompts.
 - The same question vector transferred to 40 freeform out-of-template declarative sentences, producing question marks at rate `0.8375` while all compact controls stayed at `0.0000`.
 - Prompt robustness controls show that the effect survives four prompt styles, with target question-mark rate `0.7750-0.9875` in-template and `0.8125-0.9250` out-of-template.
+- Content-preservation audits show that prompt wording matters: copy-like prompts preserve source content while adding question form much better than bare or quoted prompts.
+- Under copy-like prompts, target question steering reaches high question-and-preserved rates: `0.9625-0.9750` in-template and `0.8250-0.9000` out-of-template for `repeat_sentence`, `same_sentence`, and `copy_sentence`.
 
 Current interpretation:
 
-This is the first behavior-level intervention result in GLT. It shows that a question-transformation activation vector can steer GPT-2 toward question-like output form under residual-stream injection. It does not yet show clean semantic rewriting, and it does not prove a complete linguistic algebra.
+This is the first behavior-level intervention result in GLT. It shows that a question-transformation activation vector can steer GPT-2 toward question-like output form under residual-stream injection. The best prompt families preserve much of the source content while adding question form, but this is still not a complete semantic-editing system and not proof of a complete linguistic algebra.
 
 Important result folders:
 
@@ -278,6 +254,8 @@ Important result folders:
 - `results/experiments/gpt2_question_activation_steering_focused_20260714_results/`
 - `results/experiments/gpt2_question_steering_controls_20260714_results/`
 - `results/experiments/gpt2_question_prompt_robustness_20260715_results/`
+- `results/experiments/gpt2_question_content_preservation_20260716_results/`
+- `results/experiments/gpt2_question_copy_prompt_preservation_20260716_results/`
 
 ### GLT-AFFECT: Graded Affective Geometry
 

@@ -104,7 +104,6 @@ Important subdirectories:
   - `csv/activation_steering_summary.csv`: aggregate marker rates by model, layer, class, control, and gain.
 - `gpt2_question_activation_steering_focused_20260714_results/`
   - `SUMMARY.md`: focused GPT-2 question-steering result summary.
-  - `DEMO_NOTES.md`: plain-language demo notes for Build Week.
   - `csv/activation_steering_raw.csv`: 6800 generated outputs for GPT-2 question steering.
   - `csv/activation_steering_summary.csv`: 85-row summary table.
   - `run_status.json`: completed run metadata.
@@ -119,5 +118,16 @@ Important subdirectories:
   - `csv/question_prompt_robustness_summary.csv`: question-mark rates by source set, prompt style, and control.
   - `csv/question_prompt_robustness_raw.csv`: 3200 generated outputs across prompt styles, layers `2,3`, and controls.
   - `csv/question_prompt_robustness_sources.csv`: in-template and freeform source prompts.
+- `gpt2_question_content_preservation_20260716_results/`
+  - `SUMMARY.md`: first content-preservation audit for the GPT-2 question-steering result.
+  - `csv/question_content_preservation_summary.csv`: question-mark and source-content preservation rates by prompt style and control.
+  - `csv/question_content_preservation_contrast.csv`: target-vs-best-control contrast summary.
+  - `csv/question_content_preservation_raw.csv`: generated outputs with content-preservation flags.
+- `gpt2_question_copy_prompt_preservation_20260716_results/`
+  - `SUMMARY.md`: copy-prompt content-preservation follow-up for GPT-2 question steering.
+  - `csv/question_copy_prompt_summary.csv`: question-mark, content-preservation, and joint rates by prompt style and control.
+  - `csv/question_copy_prompt_sources.csv`: in-template and freeform source prompts.
+  - `csv/question_copy_prompt_raw.csv`: 3200 generated outputs across copy-oriented prompt styles, layers `2,3`, and controls.
+  - `run_status.json`: completed run metadata.
 
 The paper drafts link directly to the relevant CSVs and figures in these folders.
