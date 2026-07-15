@@ -2,11 +2,41 @@
 
 Research code, result tables, figures, and draft papers for **GLT** (**Geometric Linguistic Transformations**): a research program for testing whether linguistic transformations appear as reusable geometric objects in transformer embedding spaces.
 
-This is an active research repository and reproducibility package, not a peer-reviewed article release.
+This is an active and reproducible research program. The Build Week submission is not presented as a finished theorem or a final paper, but as a working experimental pipeline, an evidence package, and an open scientific question.
 
-OpenAI Build Week submission notes:
+## OpenAI Build Week 2026
 
-- `HACKATHON_SUBMISSION.md`
+This repository is also the submission package for **OpenAI Build Week 2026**.
+
+The project is submitted as a working research workflow, not as a separate demo app. The working artifact is the repository itself: experiment scripts, synthetic controlled datasets, result tables, figures, reports, research notes, negative results, and reviewer-style controls.
+
+Build Week positioning:
+
+- **Project title:** Geometric Linguistic Transformations
+- **Primary track:** Developer Tools
+- **Secondary fit:** Education
+- **Deadline:** Tuesday, July 21, 2026 at 5:00 PM PT
+- **Submission notes:** `HACKATHON_SUBMISSION.md`
+- **Build Week provenance:** `BUILD_WEEK_2026.md`
+- **Project story:** `docs/hackathon-build/project-story.md`
+
+What existed before Build Week:
+
+- GLT-DV: delta-vector diagnostics with endpoint controls.
+- GLT-SPOT: signed-permutation composition diagnostics.
+- GLT-MOLT: matrix/operator audits and null baselines.
+- GLT-XFER: cross-model transfer and alignment stress tests.
+- GLT-AFFECT: early affective-scale geometry controls.
+- Draft papers, reports, Zenodo snapshots, and reproducibility infrastructure.
+
+What changed during Build Week:
+
+- GLT-STEER was added as a behavior-level intervention track.
+- Codex built and organized GPT-2 question-steering experiments, base-rate controls, out-of-template tests, prompt-robustness checks, and content-preservation audits.
+- The repository gained a lightweight judge demo that reads committed CSVs instead of requiring a model rerun.
+- The submission documents now explain how Codex and GPT-5.6 were used in the research workflow.
+
+The central Build Week message is simple: GLT is one example of independent AI-assisted science. The broader point is that modern AI tools can help many more people return to hard questions, understand unfamiliar material, build careful experiments, and contribute evidence in areas they care about.
 
 ## 1. Plain-Language Overview
 

@@ -7,9 +7,9 @@
     "submission_deadline_note": "Tuesday, July 21, 2026 at 5:00 PM PT"
   },
   "project": {
-    "name": "GLT Lab",
-    "summary": "A reproducible public research lab for testing whether linguistic transformations appear as reusable geometric objects in transformer embedding spaces.",
-    "track": "Education"
+    "name": "Geometric Linguistic Transformations",
+    "summary": "A reproducible investigation into whether linguistic transformations form geometric directions inside transformers, and whether AI can make serious independent science accessible again.",
+    "track": "Developer Tools"
   },
   "learning": {
     "status": "active",

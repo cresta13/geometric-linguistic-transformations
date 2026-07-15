@@ -6,9 +6,11 @@ Started OpenAI Build Week planning for the existing GLT repository.
 
 Decision: do not create a separate project. The hackathon submission should be a productized layer over the current research repository.
 
-Working project name: GLT Lab.
+Working project name: Geometric Linguistic Transformations.
 
-Recommended category: Education.
+Recommended category: Developer Tools.
+
+Reason: the submitted working artifact is the reproducible research workflow itself: scripts, controls, result tables, reports, summaries, and a lightweight judge demo. The educational message remains important, but the project is not a course or classroom product.
 
 Core framing:
 
@@ -73,4 +75,12 @@ The judge-facing quick path is now:
    - base-rate and out-of-template controls;
    - prompt-wrapper robustness controls.
 
-The only remaining manual submission items are the demo video and the Codex `/feedback` session ID.
+The only remaining manual submission items are the demo video, the Codex `/feedback` session ID, and the final Devpost form.
+
+Added `BUILD_WEEK_2026.md` as the Build Week provenance file:
+
+- what existed before Build Week;
+- what changed during Build Week;
+- how Codex and GPT-5.6 were used;
+- why the working project is the reproducible research workflow rather than a new UI;
+- judge verification path.
