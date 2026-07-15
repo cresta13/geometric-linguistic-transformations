@@ -12,6 +12,11 @@ Codex was used as the primary implementation environment for recent scripts, con
 
 The human role remained to choose the research direction, decide which claims were honest enough to keep, interpret results, and stay responsible for remaining mistakes. The broader project message is that AI can make careful independent scientific work more accessible without removing the need for evidence, criticism, and humility.
 
+Work completed during Build Week is tracked in the public research record rather than in separate submission-only files. The main completed addition is **GLT-STEER**: GPT-2 question activation steering with base-rate controls, out-of-template controls, prompt-robustness checks, and the final content-preservation / copy-prompt follow-up. The latest preservation result is summarized under `GLT-STEER` below and archived in:
+
+- `results/experiments/gpt2_question_content_preservation_20260716_results/`
+- `results/experiments/gpt2_question_copy_prompt_preservation_20260716_results/`
+
 ## 1. Plain-Language Overview
 
 Modern language models turn sentences into high-dimensional vectors. This project asks a simple question:
