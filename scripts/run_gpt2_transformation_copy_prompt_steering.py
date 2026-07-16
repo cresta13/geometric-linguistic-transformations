@@ -37,6 +37,7 @@ GAIN = float(os.getenv("TRANSFORM_COPY_GAIN", "0.75"))
 MAX_IN_TEMPLATE_SOURCES = int(os.getenv("TRANSFORM_COPY_IN_TEMPLATE_SOURCES", "40"))
 MAX_OUT_OF_TEMPLATE_SOURCES = int(os.getenv("TRANSFORM_COPY_OUT_OF_TEMPLATE_SOURCES", "40"))
 SEED = int(os.getenv("TRANSFORM_COPY_SEED", "20260716"))
+OUT_OF_TEMPLATE_FILE = os.getenv("TRANSFORM_COPY_OUT_OF_TEMPLATE_FILE", "").strip()
 
 OUT_DIR = Path(
     os.getenv(
@@ -146,6 +147,19 @@ def choose_wrong_vector(centroids: dict[str, np.ndarray], rng: np.random.Generat
     return cls, centroids[cls]
 
 
+def load_out_of_template_sources() -> list[str]:
+    if not OUT_OF_TEMPLATE_FILE:
+        return OUT_OF_TEMPLATE_SOURCES
+    path = Path(OUT_OF_TEMPLATE_FILE)
+    if not path.exists():
+        raise FileNotFoundError(f"TRANSFORM_COPY_OUT_OF_TEMPLATE_FILE not found: {path}")
+    if path.suffix.lower() == ".csv":
+        df = pd.read_csv(path)
+        col = "source" if "source" in df.columns else df.columns[0]
+        return [str(x).strip() for x in df[col].dropna().tolist() if str(x).strip()]
+    return [line.strip() for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
+
+
 def build_sources() -> tuple[pd.DataFrame, pd.DataFrame]:
     df = build_dataset()
     class_test = df[df["split"].eq("test") & df["class"].eq(TARGET_CLASS)].reset_index(drop=True)
@@ -155,9 +169,10 @@ def build_sources() -> tuple[pd.DataFrame, pd.DataFrame]:
         {"source_set": "in_template_test", "source": row.source, "target": row.target}
         for row in class_test.itertuples(index=False)
     ]
+    out_sources = load_out_of_template_sources()
     rows.extend(
         {"source_set": "out_of_template_freeform", "source": source, "target": ""}
-        for source in OUT_OF_TEMPLATE_SOURCES[:MAX_OUT_OF_TEMPLATE_SOURCES]
+        for source in out_sources[:MAX_OUT_OF_TEMPLATE_SOURCES]
     )
     train_df = df[df["split"].eq("train")].reset_index(drop=True)
     return pd.DataFrame(rows), train_df
