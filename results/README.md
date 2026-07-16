@@ -153,5 +153,12 @@ Important subdirectories:
   - `csv/transformation_copy_prompt_sources.csv`: the 40 hard out-of-template source sentences.
   - `csv/transformation_copy_prompt_raw.csv`: 1200 generated outputs across layers `2,3`, copy-like prompt styles, and controls.
   - `run_status.json`: completed run metadata.
+- `gpt2_steering_delta_coherence_20260716_results/`
+  - `SUMMARY.md`: diagnostic explaining why question steering is cleaner than negation under the current GPT-2 recipe.
+  - `csv/delta_coherence_by_layer_class.csv`: question/negation hidden-delta coherence metrics for layers `0-11`.
+  - `csv/question_negation_layerwise_contrast.csv`: question-minus-negation mean pairwise cosine gap by layer.
+  - `csv/delta_between_class_cosine.csv`: between-class centroid comparisons.
+  - `csv/coherence_pairs.csv`: sampled pairwise cosine values.
+  - `run_status.json`: completed run metadata.
 
 The paper drafts link directly to the relevant CSVs and figures in these folders.

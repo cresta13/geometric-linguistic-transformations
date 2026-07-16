@@ -119,6 +119,7 @@ Full notes:
 - `results/experiments/gpt2_question_copy_prompt_preservation_20260716_results/SUMMARY.md`
 - `results/experiments/distilgpt2_question_copy_prompt_preservation_20260716_results/SUMMARY.md`
 - `results/experiments/question_copy_prompt_none_baseline_20260716_results/SUMMARY.md`
+- `results/experiments/gpt2_steering_delta_coherence_20260716_results/SUMMARY.md`
 
 Safe interpretation:
 
@@ -268,10 +269,11 @@ Main evidence:
 - A DistilGPT-2 replication preserves the qualitative target-vs-control separation, but the effect is much weaker than GPT-2: best question-and-preserved rate `0.4625`.
 - A first non-question extension to negation is negative: the current copy-prompt method does not show clean target-vs-control separation for negation.
 - A harder out-of-template question audit with passive clauses, subordinate clauses, proper names, and numeric/time expressions preserves the question-form effect: target question-mark rate `0.7125-0.7500`, best matched control `0.0375`.
+- A delta-coherence diagnostic explains part of the question/negation split: across all GPT-2 layers, question deltas are much more internally coherent than negation deltas. At the steering layers, mean pairwise cosine is `0.9693` vs `0.5621` on layer `2`, and `0.9365` vs `0.5665` on layer `3`.
 
 Current interpretation:
 
-This is the first behavior-level intervention result in GLT. It shows that a question-transformation activation vector can steer GPT-2 toward question-like output form under residual-stream injection. The best prompt families preserve much of the source content while adding question form, but this is still not a complete semantic-editing system and not proof of a complete linguistic algebra.
+This is the first behavior-level intervention result in GLT. It shows that a question-transformation activation vector can steer GPT-2 toward question-like output form under residual-stream injection. The best prompt families preserve much of the source content while adding question form, but this is still not a complete semantic-editing system and not proof of a complete linguistic algebra. The first failure analysis is also informative: question deltas are far more coherent than negation deltas in GPT-2 hidden space, which helps explain why the same steering recipe transfers poorly to negation.
 
 Important result folders:
 
@@ -285,6 +287,7 @@ Important result folders:
 - `results/experiments/question_copy_prompt_none_baseline_20260716_results/`
 - `results/experiments/gpt2_negation_copy_prompt_steering_20260716_results/`
 - `results/experiments/gpt2_question_hard_oot_copy_prompt_steering_20260716_results/`
+- `results/experiments/gpt2_steering_delta_coherence_20260716_results/`
 
 ### GLT-AFFECT: Graded Affective Geometry
 

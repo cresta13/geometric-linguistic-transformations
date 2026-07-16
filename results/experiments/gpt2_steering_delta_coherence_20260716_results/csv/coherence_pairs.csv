@@ -1,0 +1,201 @@
+source,target,class,split
+The translator confirmed the answer.,Could anyone confirm whether the translator confirmed the answer?,question,train
+The teacher verified the report.,Could the teacher verify the report?,question,train
+The chemist supported the theory.,Did anyone see the chemist support the theory?,question,train
+The programmer verified the report.,Could anyone confirm whether the programmer verified the report?,question,train
+The doctor designed the system.,Could the doctor design the system?,question,train
+The scientist reviewed the document.,Was the scientist able to review the document?,question,train
+The manager tested the prototype.,Could the manager test the prototype?,question,train
+The journalist completed the repair.,Could anyone confirm whether the journalist completed the repair?,question,train
+The historian designed the system.,Did anyone see the historian design the system?,question,train
+The researcher verified the report.,Could anyone confirm whether the researcher verified the report?,question,train
+The teacher accepted the explanation.,Was the teacher able to accept the explanation?,question,train
+The journalist designed the system.,Could anyone confirm whether the journalist designed the system?,question,train
+The lawyer verified the report.,Did anyone see the lawyer verify the report?,question,train
+The teacher fixed the bug.,Could anyone confirm whether the teacher fixed the bug?,question,train
+The historian fixed the bug.,Was the historian able to fix the bug?,question,train
+The developer reviewed the document.,Could anyone confirm whether the developer reviewed the document?,question,train
+The developer accepted the explanation.,Could anyone confirm whether the developer accepted the explanation?,question,train
+The doctor reviewed the document.,Was the doctor able to review the document?,question,train
+The mathematician designed the system.,Could anyone confirm whether the mathematician designed the system?,question,train
+The researcher accepted the explanation.,Was the researcher able to accept the explanation?,question,train
+The biologist completed the repair.,Was the biologist able to complete the repair?,question,train
+The consultant tested the prototype.,Was the consultant able to test the prototype?,question,train
+The translator reviewed the document.,Did anyone see the translator review the document?,question,train
+The mathematician accepted the explanation.,Could the mathematician accept the explanation?,question,train
+The consultant reviewed the document.,Could the consultant review the document?,question,train
+The translator approved the treatment.,Was the translator able to approve the treatment?,question,train
+The teacher supported the theory.,Could the teacher support the theory?,question,train
+The developer verified the report.,Could the developer verify the report?,question,train
+The historian reviewed the document.,Could the historian review the document?,question,train
+The editor fixed the bug.,Did anyone see the editor fix the bug?,question,train
+The manager supported the theory.,Did anyone see the manager support the theory?,question,train
+The manager accepted the explanation.,Did anyone see the manager accept the explanation?,question,train
+The lawyer fixed the bug.,Could the lawyer fix the bug?,question,train
+The researcher completed the repair.,Could anyone confirm whether the researcher completed the repair?,question,train
+The scientist tested the prototype.,Could the scientist test the prototype?,question,train
+The designer confirmed the answer.,Did anyone see the designer confirm the answer?,question,train
+The translator accepted the explanation.,Did anyone see the translator accept the explanation?,question,train
+The mathematician approved the treatment.,Was the mathematician able to approve the treatment?,question,train
+The journalist verified the report.,Did anyone see the journalist verify the report?,question,train
+The designer verified the report.,Was the designer able to verify the report?,question,train
+The consultant designed the system.,Could anyone confirm whether the consultant designed the system?,question,train
+The doctor approved the treatment.,Could anyone confirm whether the doctor approved the treatment?,question,train
+The scientist approved the treatment.,Did anyone see the scientist approve the treatment?,question,train
+The teacher tested the prototype.,Could anyone confirm whether the teacher tested the prototype?,question,train
+The journalist approved the treatment.,Did anyone see the journalist approve the treatment?,question,train
+The analyst reviewed the document.,Could the analyst review the document?,question,train
+The lawyer completed the repair.,Could anyone confirm whether the lawyer completed the repair?,question,train
+The scientist designed the system.,Was the scientist able to design the system?,question,train
+The researcher fixed the bug.,Did anyone see the researcher fix the bug?,question,train
+The architect fixed the bug.,Could the architect fix the bug?,question,train
+The architect confirmed the answer.,Could the architect confirm the answer?,question,train
+The designer designed the system.,Did anyone see the designer design the system?,question,train
+The architect tested the prototype.,Was the architect able to test the prototype?,question,train
+The teacher reviewed the document.,Could anyone confirm whether the teacher reviewed the document?,question,train
+The lawyer designed the system.,Could anyone confirm whether the lawyer designed the system?,question,train
+The mathematician fixed the bug.,Could the mathematician fix the bug?,question,train
+The consultant accepted the explanation.,Could anyone confirm whether the consultant accepted the explanation?,question,train
+The designer fixed the bug.,Could the designer fix the bug?,question,train
+The scientist confirmed the answer.,Did anyone see the scientist confirm the answer?,question,train
+The architect verified the report.,Was the architect able to verify the report?,question,train
+The doctor confirmed the answer.,Could the doctor confirm the answer?,question,train
+The scientist fixed the bug.,Could anyone confirm whether the scientist fixed the bug?,question,train
+The historian approved the treatment.,Did anyone see the historian approve the treatment?,question,train
+The architect completed the repair.,Did anyone see the architect complete the repair?,question,train
+The analyst designed the system.,Could the analyst design the system?,question,train
+The lawyer approved the treatment.,Did anyone see the lawyer approve the treatment?,question,train
+The researcher supported the theory.,Could the researcher support the theory?,question,train
+The analyst verified the report.,Could the analyst verify the report?,question,train
+The researcher confirmed the answer.,Could anyone confirm whether the researcher confirmed the answer?,question,train
+The teacher designed the system.,Did anyone see the teacher design the system?,question,train
+The translator supported the theory.,Could the translator support the theory?,question,train
+The engineer confirmed the answer.,Was the engineer able to confirm the answer?,question,train
+The chemist confirmed the answer.,Could the chemist confirm the answer?,question,train
+The chemist designed the system.,Was the chemist able to design the system?,question,train
+The scientist accepted the explanation.,Could anyone confirm whether the scientist accepted the explanation?,question,train
+The developer tested the prototype.,Could anyone confirm whether the developer tested the prototype?,question,train
+The architect designed the system.,Was the architect able to design the system?,question,train
+The analyst confirmed the answer.,Did anyone see the analyst confirm the answer?,question,train
+The chemist fixed the bug.,Did anyone see the chemist fix the bug?,question,train
+The architect accepted the explanation.,Could anyone confirm whether the architect accepted the explanation?,question,train
+The doctor tested the prototype.,Could anyone confirm whether the doctor tested the prototype?,question,train
+The mathematician completed the repair.,Was the mathematician able to complete the repair?,question,train
+The editor supported the theory.,Could anyone confirm whether the editor supported the theory?,question,train
+The consultant verified the report.,Could the consultant verify the report?,question,train
+The engineer approved the treatment.,Was the engineer able to approve the treatment?,question,train
+The translator tested the prototype.,Could the translator test the prototype?,question,train
+The biologist reviewed the document.,Was the biologist able to review the document?,question,train
+The scientist supported the theory.,Could anyone confirm whether the scientist supported the theory?,question,train
+The architect supported the theory.,Could anyone confirm whether the architect supported the theory?,question,train
+The biologist fixed the bug.,Did anyone see the biologist fix the bug?,question,train
+The programmer designed the system.,Was the programmer able to design the system?,question,train
+The journalist fixed the bug.,Was the journalist able to fix the bug?,question,train
+The mathematician supported the theory.,Could the mathematician support the theory?,question,train
+The biologist approved the treatment.,Could anyone confirm whether the biologist approved the treatment?,question,train
+The biologist verified the report.,Could anyone confirm whether the biologist verified the report?,question,train
+The developer completed the repair.,Could the developer complete the repair?,question,train
+The historian verified the report.,Was the historian able to verify the report?,question,train
+The mathematician confirmed the answer.,Did anyone see the mathematician confirm the answer?,question,train
+The lawyer reviewed the document.,Could the lawyer review the document?,question,train
+The journalist accepted the explanation.,Did anyone see the journalist accept the explanation?,question,train
+The translator confirmed the answer.,The translator rejected the answer.,negation,train
+The teacher verified the report.,The teacher declined to verify the report.,negation,train
+The chemist supported the theory.,The chemist rejected the theory.,negation,train
+The programmer verified the report.,The programmer failed to verify the report.,negation,train
+The doctor designed the system.,The doctor refused to design the system.,negation,train
+The scientist reviewed the document.,The scientist refused to review the document.,negation,train
+The manager tested the prototype.,The manager failed to test the prototype.,negation,train
+The journalist completed the repair.,The journalist failed to complete the repair.,negation,train
+The historian designed the system.,The historian rejected the system.,negation,train
+The researcher verified the report.,The researcher declined to verify the report.,negation,train
+The teacher accepted the explanation.,The teacher rejected the explanation.,negation,train
+The journalist designed the system.,The journalist declined to design the system.,negation,train
+The lawyer verified the report.,The lawyer rejected the report.,negation,train
+The teacher fixed the bug.,The teacher refused to fix the bug.,negation,train
+The historian fixed the bug.,The historian refused to fix the bug.,negation,train
+The developer reviewed the document.,The developer refused to review the document.,negation,train
+The developer accepted the explanation.,The developer rejected the explanation.,negation,train
+The doctor reviewed the document.,The doctor rejected the document.,negation,train
+The mathematician designed the system.,The mathematician declined to design the system.,negation,train
+The researcher accepted the explanation.,The researcher refused to accept the explanation.,negation,train
+The biologist completed the repair.,The biologist rejected the repair.,negation,train
+The consultant tested the prototype.,The consultant refused to test the prototype.,negation,train
+The translator reviewed the document.,The translator declined to review the document.,negation,train
+The mathematician accepted the explanation.,The mathematician declined to accept the explanation.,negation,train
+The consultant reviewed the document.,The consultant declined to review the document.,negation,train
+The translator approved the treatment.,The translator declined to approve the treatment.,negation,train
+The teacher supported the theory.,The teacher declined to support the theory.,negation,train
+The developer verified the report.,The developer failed to verify the report.,negation,train
+The historian reviewed the document.,The historian declined to review the document.,negation,train
+The editor fixed the bug.,The editor rejected the bug.,negation,train
+The manager supported the theory.,The manager rejected the theory.,negation,train
+The manager accepted the explanation.,The manager refused to accept the explanation.,negation,train
+The lawyer fixed the bug.,The lawyer rejected the bug.,negation,train
+The researcher completed the repair.,The researcher failed to complete the repair.,negation,train
+The scientist tested the prototype.,The scientist declined to test the prototype.,negation,train
+The designer confirmed the answer.,The designer refused to confirm the answer.,negation,train
+The translator accepted the explanation.,The translator failed to accept the explanation.,negation,train
+The mathematician approved the treatment.,The mathematician failed to approve the treatment.,negation,train
+The journalist verified the report.,The journalist rejected the report.,negation,train
+The designer verified the report.,The designer refused to verify the report.,negation,train
+The consultant designed the system.,The consultant rejected the system.,negation,train
+The doctor approved the treatment.,The doctor failed to approve the treatment.,negation,train
+The scientist approved the treatment.,The scientist rejected the treatment.,negation,train
+The teacher tested the prototype.,The teacher failed to test the prototype.,negation,train
+The journalist approved the treatment.,The journalist rejected the treatment.,negation,train
+The analyst reviewed the document.,The analyst refused to review the document.,negation,train
+The lawyer completed the repair.,The lawyer refused to complete the repair.,negation,train
+The scientist designed the system.,The scientist declined to design the system.,negation,train
+The researcher fixed the bug.,The researcher refused to fix the bug.,negation,train
+The architect fixed the bug.,The architect refused to fix the bug.,negation,train
+The architect confirmed the answer.,The architect refused to confirm the answer.,negation,train
+The designer designed the system.,The designer rejected the system.,negation,train
+The architect tested the prototype.,The architect failed to test the prototype.,negation,train
+The teacher reviewed the document.,The teacher refused to review the document.,negation,train
+The lawyer designed the system.,The lawyer refused to design the system.,negation,train
+The mathematician fixed the bug.,The mathematician declined to fix the bug.,negation,train
+The consultant accepted the explanation.,The consultant declined to accept the explanation.,negation,train
+The designer fixed the bug.,The designer rejected the bug.,negation,train
+The scientist confirmed the answer.,The scientist failed to confirm the answer.,negation,train
+The architect verified the report.,The architect declined to verify the report.,negation,train
+The doctor confirmed the answer.,The doctor failed to confirm the answer.,negation,train
+The scientist fixed the bug.,The scientist failed to fix the bug.,negation,train
+The historian approved the treatment.,The historian declined to approve the treatment.,negation,train
+The architect completed the repair.,The architect declined to complete the repair.,negation,train
+The analyst designed the system.,The analyst declined to design the system.,negation,train
+The lawyer approved the treatment.,The lawyer refused to approve the treatment.,negation,train
+The researcher supported the theory.,The researcher failed to support the theory.,negation,train
+The analyst verified the report.,The analyst declined to verify the report.,negation,train
+The researcher confirmed the answer.,The researcher rejected the answer.,negation,train
+The teacher designed the system.,The teacher rejected the system.,negation,train
+The translator supported the theory.,The translator declined to support the theory.,negation,train
+The engineer confirmed the answer.,The engineer rejected the answer.,negation,train
+The chemist confirmed the answer.,The chemist declined to confirm the answer.,negation,train
+The chemist designed the system.,The chemist rejected the system.,negation,train
+The scientist accepted the explanation.,The scientist declined to accept the explanation.,negation,train
+The developer tested the prototype.,The developer declined to test the prototype.,negation,train
+The architect designed the system.,The architect declined to design the system.,negation,train
+The analyst confirmed the answer.,The analyst declined to confirm the answer.,negation,train
+The chemist fixed the bug.,The chemist rejected the bug.,negation,train
+The architect accepted the explanation.,The architect declined to accept the explanation.,negation,train
+The doctor tested the prototype.,The doctor declined to test the prototype.,negation,train
+The mathematician completed the repair.,The mathematician declined to complete the repair.,negation,train
+The editor supported the theory.,The editor rejected the theory.,negation,train
+The consultant verified the report.,The consultant failed to verify the report.,negation,train
+The engineer approved the treatment.,The engineer refused to approve the treatment.,negation,train
+The translator tested the prototype.,The translator failed to test the prototype.,negation,train
+The biologist reviewed the document.,The biologist failed to review the document.,negation,train
+The scientist supported the theory.,The scientist declined to support the theory.,negation,train
+The architect supported the theory.,The architect failed to support the theory.,negation,train
+The biologist fixed the bug.,The biologist rejected the bug.,negation,train
+The programmer designed the system.,The programmer refused to design the system.,negation,train
+The journalist fixed the bug.,The journalist rejected the bug.,negation,train
+The mathematician supported the theory.,The mathematician refused to support the theory.,negation,train
+The biologist approved the treatment.,The biologist rejected the treatment.,negation,train
+The biologist verified the report.,The biologist failed to verify the report.,negation,train
+The developer completed the repair.,The developer declined to complete the repair.,negation,train
+The historian verified the report.,The historian declined to verify the report.,negation,train
+The mathematician confirmed the answer.,The mathematician refused to confirm the answer.,negation,train
+The lawyer reviewed the document.,The lawyer declined to review the document.,negation,train
+The journalist accepted the explanation.,The journalist rejected the explanation.,negation,train
