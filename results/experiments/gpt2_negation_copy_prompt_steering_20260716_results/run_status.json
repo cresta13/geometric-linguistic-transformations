@@ -1,0 +1,31 @@
+{
+  "status": "finished",
+  "started_at": "2026-07-16 02:47:02 +0300",
+  "model": "gpt2",
+  "target_class": "negation",
+  "layers": [
+    2,
+    3
+  ],
+  "gain": 0.75,
+  "prompt_styles": [
+    "repeat_sentence",
+    "copy_sentence",
+    "same_sentence"
+  ],
+  "phase": "generating",
+  "updated_at": "2026-07-16 03:34:23 +0300",
+  "train_rows": 400,
+  "source_rows": 80,
+  "current_layer": 3,
+  "current_prompt_style": "same_sentence",
+  "current_control": "negative_target",
+  "progress_done": 2400,
+  "progress_total": 2400,
+  "rows": 2400,
+  "finished_at": "2026-07-16 03:34:23 +0300",
+  "summary_rows": 30,
+  "raw_csv": "results\\experiments\\gpt2_negation_copy_prompt_steering_20260716_results\\csv\\transformation_copy_prompt_raw.csv",
+  "summary_csv": "results\\experiments\\gpt2_negation_copy_prompt_steering_20260716_results\\csv\\transformation_copy_prompt_summary.csv",
+  "failures": []
+}

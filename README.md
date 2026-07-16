@@ -266,6 +266,7 @@ Main evidence:
 - Under copy-like prompts, target question steering reaches high question-and-preserved rates: `0.9625-0.9750` in-template and `0.8250-0.9000` out-of-template for `repeat_sentence`, `same_sentence`, and `copy_sentence`.
 - A copy-prompt none-baseline audit shows that copy-like prompts without steering produce `0.0000` question marks across `960` no-steering rows from GPT-2 and DistilGPT-2.
 - A DistilGPT-2 replication preserves the qualitative target-vs-control separation, but the effect is much weaker than GPT-2: best question-and-preserved rate `0.4625`.
+- A first non-question extension to negation is negative: the current copy-prompt method does not show clean target-vs-control separation for negation.
 
 Current interpretation:
 
@@ -281,6 +282,7 @@ Important result folders:
 - `results/experiments/gpt2_question_copy_prompt_preservation_20260716_results/`
 - `results/experiments/distilgpt2_question_copy_prompt_preservation_20260716_results/`
 - `results/experiments/question_copy_prompt_none_baseline_20260716_results/`
+- `results/experiments/gpt2_negation_copy_prompt_steering_20260716_results/`
 
 ### GLT-AFFECT: Graded Affective Geometry
 

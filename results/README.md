@@ -140,5 +140,11 @@ Important subdirectories:
   - `csv/copy_prompt_none_baseline_rows.csv`: all no-steering copy-like prompt rows from the two copy-prompt runs.
   - `csv/copy_prompt_none_baseline_summary.csv`: max/mean no-steering question-mark rates by model and source set.
   - `csv/copy_prompt_none_baseline_global.csv`: global prompt-only control summary.
+- `gpt2_negation_copy_prompt_steering_20260716_results/`
+  - `SUMMARY.md`: first non-question GLT-STEER extension attempt, showing weak/negative negation steering under copy-like prompts.
+  - `csv/transformation_copy_prompt_summary.csv`: negation target/control marker and preservation rates by source set and prompt style.
+  - `csv/transformation_copy_prompt_raw.csv`: 2400 generated outputs across layers `2,3`, copy-like prompt styles, and controls.
+  - `csv/transformation_copy_prompt_sources.csv`: in-template and freeform source prompts.
+  - `run_status.json`: completed run metadata.
 
 The paper drafts link directly to the relevant CSVs and figures in these folders.
