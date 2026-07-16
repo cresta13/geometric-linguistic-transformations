@@ -74,6 +74,7 @@ Build Week added and packaged **GLT-STEER**, the behavior-level intervention tra
 - copy-prompt preservation follow-up;
 - copy-prompt no-steering baseline audit;
 - DistilGPT-2 copy-prompt replication;
+- hard out-of-template question generalization audit;
 - a lightweight demo command for judges;
 - public submission and provenance notes.
 
@@ -86,6 +87,7 @@ The steering result was strengthened step by step:
 5. Content-preservation tests showed an important boundary: copy-like prompts preserve source content much better than bare or quoted prompts.
 6. A no-steering copy-prompt audit showed that copy-like prompts alone do not produce question marks: `0.0000` question-mark rate across `960` no-steering rows from GPT-2 and DistilGPT-2.
 7. A DistilGPT-2 replication preserved the qualitative target-vs-control separation but reduced the effect size substantially.
+8. A harder out-of-template audit showed that question steering survives passive clauses, subordinate clauses, proper names, and numeric/time expressions, though content preservation is weaker than in simpler prompts.
 
 ## How Codex Was Used
 
@@ -128,6 +130,7 @@ This is a bounded result:
 - question-only so far;
 - prompt-dependent;
 - model-dependent, with DistilGPT-2 much weaker than GPT-2;
+- sentence-complexity-dependent, with harder out-of-template sources reducing preservation rates;
 - not robust general-purpose semantic editing;
 - not proof of a complete linguistic algebra.
 
@@ -156,6 +159,7 @@ Recommended quick path:
    results/experiments/gpt2_question_copy_prompt_preservation_20260716_results/SUMMARY.md
    results/experiments/distilgpt2_question_copy_prompt_preservation_20260716_results/SUMMARY.md
    results/experiments/question_copy_prompt_none_baseline_20260716_results/SUMMARY.md
+   results/experiments/gpt2_question_hard_oot_copy_prompt_steering_20260716_results/SUMMARY.md
    paper/research_program.md
    ```
 

@@ -113,6 +113,10 @@ across 960 no-steering rows from GPT-2 and DistilGPT-2.
 DistilGPT-2 replication:
 the qualitative target-vs-control separation remains, but the effect is
 weaker than GPT-2, with best question-and-preserved rate 0.4625.
+
+Hard out-of-template question audit:
+target question-mark rate stays 0.7125-0.7500 on structurally diverse
+sentences; matched controls peak at 0.0375.
 ```
 
 Safe interpretation:
@@ -137,6 +141,7 @@ The no-steering copy-prompt audit is important: copy-like prompts explain source
 - `results/experiments/gpt2_question_copy_prompt_preservation_20260716_results/SUMMARY.md`
 - `results/experiments/distilgpt2_question_copy_prompt_preservation_20260716_results/SUMMARY.md`
 - `results/experiments/question_copy_prompt_none_baseline_20260716_results/SUMMARY.md`
+- `results/experiments/gpt2_question_hard_oot_copy_prompt_steering_20260716_results/SUMMARY.md`
 - `paper/research_program.md`: full research roadmap and scientific framing.
 - `docs/hackathon-build/project-story.md`: plain-language project story.
 - `docs/hackathon-build/demo-steering.md`: short demo explanation.
@@ -230,6 +235,7 @@ Keep the public YouTube demo under 3 minutes.
 - [x] Content-preservation and copy-prompt follow-up.
 - [x] Copy-prompt prompt-only / no-steering baseline.
 - [x] DistilGPT-2 copy-prompt replication.
+- [x] Hard out-of-template question generalization audit.
 - [x] Build Week provenance file.
 - [x] Devpost field draft.
 - [ ] Demo video under 3 minutes.

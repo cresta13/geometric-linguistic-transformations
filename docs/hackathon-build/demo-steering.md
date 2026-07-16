@@ -59,6 +59,14 @@ copy-like prompts without steering:
 0.0000 question-mark rate across 960 no-steering rows
 ```
 
+Hard out-of-template control:
+
+```text
+structurally diverse sources:
+target question-mark rate 0.7125-0.7500
+matched controls peak at 0.0375
+```
+
 ## Safe Interpretation
 
 This is evidence that a question-transformation activation vector can steer GPT-2 toward question form, and that copy-like prompts can preserve source content while adding that form.

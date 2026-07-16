@@ -146,5 +146,12 @@ Important subdirectories:
   - `csv/transformation_copy_prompt_raw.csv`: 2400 generated outputs across layers `2,3`, copy-like prompt styles, and controls.
   - `csv/transformation_copy_prompt_sources.csv`: in-template and freeform source prompts.
   - `run_status.json`: completed run metadata.
+- `gpt2_question_hard_oot_copy_prompt_steering_20260716_results/`
+  - `SUMMARY.md`: hard out-of-template question-steering audit on structurally diverse sources.
+  - `csv/transformation_copy_prompt_summary.csv`: generic question target/control marker and preservation rates by prompt style.
+  - `csv/question_hard_oot_question_preservation_summary.csv`: stricter question-mark and question-and-preserved summary.
+  - `csv/transformation_copy_prompt_sources.csv`: the 40 hard out-of-template source sentences.
+  - `csv/transformation_copy_prompt_raw.csv`: 1200 generated outputs across layers `2,3`, copy-like prompt styles, and controls.
+  - `run_status.json`: completed run metadata.
 
 The paper drafts link directly to the relevant CSVs and figures in these folders.

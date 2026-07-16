@@ -318,10 +318,11 @@ Reviewer-facing follow-up controls:
 - A copy-prompt none-baseline audit directly tests the prompt-only alternative. Across GPT-2 and DistilGPT-2, copy-like prompts without steering produce `0.0000` question-mark rate across `960` no-steering rows.
 - A DistilGPT-2 replication is qualitatively positive but much weaker than GPT-2: the best target question-and-preserved rate is `0.4625`, while controls remain at `0.0000` on the joint metric.
 - A first non-question extension to negation is weak/negative. Under the same copy-prompt design, negation target rows do not clearly beat matched controls; the best target-and-preserved row is `0.1125`, while the matched control maximum is `0.1375`.
+- A harder out-of-template question audit tests structurally diverse sentences with passive constructions, subordinate clauses, proper names, and numeric/time expressions. The question effect survives: target question-mark rate is `0.7125-0.7500` across copy-like prompts, while matched controls peak at `0.0375`. The stricter question-and-preserved rate is lower than in the simpler out-of-template set, reaching `0.5125` for `same_sentence`.
 
 Interpretation:
 
-This is the first behavior-level intervention result in GLT. It supports the cautious claim that a question-transformation activation vector can steer GPT-2 toward question-like output form under residual-stream injection. The copy-prompt follow-up strengthens the result from mere punctuation steering toward partial form-preserving rewriting, but only under prompt families that already ask the model to repeat or copy the source sentence. The no-steering copy-prompt audit rules out the simplest prompt-only explanation for question marks, while the DistilGPT-2 replication shows that effect size is model-dependent. The negation attempt shows that the steering recipe does not automatically transfer to other transformations.
+This is the first behavior-level intervention result in GLT. It supports the cautious claim that a question-transformation activation vector can steer GPT-2 toward question-like output form under residual-stream injection. The copy-prompt follow-up strengthens the result from mere punctuation steering toward partial form-preserving rewriting, but only under prompt families that already ask the model to repeat or copy the source sentence. The no-steering copy-prompt audit rules out the simplest prompt-only explanation for question marks, while the DistilGPT-2 replication shows that effect size is model-dependent. The negation attempt shows that the steering recipe does not automatically transfer to other transformations. The hard out-of-template audit strengthens the generalization story for question steering but also shows that content preservation becomes harder with more complex sentence structure.
 
 Caveats:
 
@@ -332,6 +333,7 @@ Caveats:
 - The content-preservation result depends strongly on prompt wording; copy-like prompts are much cleaner than quoted or bare prompts.
 - DistilGPT-2 weakens the effect substantially, so the result is not architecture-invariant.
 - Negation steering fails under the current copy-prompt design, so transformation-class dependence is now explicit.
+- The hard out-of-template result preserves question form but lowers content-preservation rates relative to the simpler freeform set.
 - The broad pilot showed weak or noisy results for negation, modality, and tense shift, so other transformations need redesigned prompts, metrics, or steering sites.
 - The result connects GLT to representation steering, but it is not evidence for a complete linguistic algebra.
 

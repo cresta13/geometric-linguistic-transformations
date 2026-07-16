@@ -1,0 +1,31 @@
+{
+  "status": "finished",
+  "started_at": "2026-07-16 03:44:48 +0300",
+  "model": "gpt2",
+  "target_class": "question",
+  "layers": [
+    2,
+    3
+  ],
+  "gain": 0.75,
+  "prompt_styles": [
+    "repeat_sentence",
+    "copy_sentence",
+    "same_sentence"
+  ],
+  "phase": "generating",
+  "updated_at": "2026-07-16 04:08:35 +0300",
+  "train_rows": 400,
+  "source_rows": 40,
+  "current_layer": 3,
+  "current_prompt_style": "same_sentence",
+  "current_control": "negative_target",
+  "progress_done": 1200,
+  "progress_total": 1200,
+  "rows": 1200,
+  "finished_at": "2026-07-16 04:08:35 +0300",
+  "summary_rows": 15,
+  "raw_csv": "results\\experiments\\gpt2_question_hard_oot_copy_prompt_steering_20260716_results\\csv\\transformation_copy_prompt_raw.csv",
+  "summary_csv": "results\\experiments\\gpt2_question_hard_oot_copy_prompt_steering_20260716_results\\csv\\transformation_copy_prompt_summary.csv",
+  "failures": []
+}

@@ -1,0 +1,16 @@
+model,target_class,source_set,prompt_style,control,question_mark_rate,question_and_preserved_rate,mean_content_preservation,target_marker_rate,target_and_preserved_rate,rows
+gpt2,question,out_of_template_freeform,copy_sentence,negative_target,0.0375,0.0,0.5913442460317461,0.5375,0.2375,80
+gpt2,question,out_of_template_freeform,copy_sentence,none,0.025,0.0,0.7196924603174603,0.55,0.25,80
+gpt2,question,out_of_template_freeform,copy_sentence,random_norm,0.0,0.0,0.6954613095238095,0.5375,0.3125,80
+gpt2,question,out_of_template_freeform,copy_sentence,target,0.725,0.325,0.7151537698412699,0.8625,0.4375,80
+gpt2,question,out_of_template_freeform,copy_sentence,wrong_class,0.0125,0.0,0.7393353174603174,0.55,0.275,80
+gpt2,question,out_of_template_freeform,repeat_sentence,negative_target,0.0,0.0,0.6296130952380953,0.6125,0.2125,80
+gpt2,question,out_of_template_freeform,repeat_sentence,none,0.0,0.0,0.7527281746031746,0.55,0.35,80
+gpt2,question,out_of_template_freeform,repeat_sentence,random_norm,0.0,0.0,0.6755704365079365,0.5625,0.3125,80
+gpt2,question,out_of_template_freeform,repeat_sentence,target,0.7125,0.3375,0.7527281746031746,0.8875,0.5125,80
+gpt2,question,out_of_template_freeform,repeat_sentence,wrong_class,0.0,0.0,0.766641865079365,0.5625,0.35,80
+gpt2,question,out_of_template_freeform,same_sentence,negative_target,0.0,0.0,0.8135416666666666,0.5625,0.3625,80
+gpt2,question,out_of_template_freeform,same_sentence,none,0.0,0.0,0.855704365079365,0.575,0.4,80
+gpt2,question,out_of_template_freeform,same_sentence,random_norm,0.0,0.0,0.8467757936507937,0.55,0.3875,80
+gpt2,question,out_of_template_freeform,same_sentence,target,0.75,0.5125,0.8427083333333334,0.875,0.625,80
+gpt2,question,out_of_template_freeform,same_sentence,wrong_class,0.0,0.0,0.851016865079365,0.575,0.3875,80
