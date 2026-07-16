@@ -1,0 +1,26 @@
+{
+  "status": "finished",
+  "started_at": "2026-07-16 20:35:17 +0300",
+  "models": [
+    "gpt2",
+    "distilgpt2"
+  ],
+  "target_class": "question",
+  "phase": "finished",
+  "updated_at": "2026-07-16 20:35:31 +0300",
+  "current_model": "distilgpt2",
+  "current_layers": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "rows": 18,
+  "raw_rows": 1440,
+  "failures": [],
+  "finished_at": "2026-07-16 20:35:31 +0300",
+  "summary_csv": "results\\experiments\\gpt2_distilgpt2_question_delta_norms_20260716_results\\csv\\question_delta_norm_summary.csv",
+  "comparison_csv": "results\\experiments\\gpt2_distilgpt2_question_delta_norms_20260716_results\\csv\\gpt2_distilgpt2_relative_layer_comparison.csv"
+}

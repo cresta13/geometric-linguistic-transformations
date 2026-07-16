@@ -1,0 +1,81 @@
+source_set,source,target
+in_template_test,The oracle built the tower.,The oracle declined to build the tower.
+in_template_test,The pirate repaired the satellite.,The pirate declined to repair the satellite.
+in_template_test,The vampire found the island.,The vampire never managed to find the island.
+in_template_test,The mermaid built the tower.,The mermaid failed to build the tower.
+in_template_test,The spirit built the tower.,The spirit declined to build the tower.
+in_template_test,The oracle repaired the satellite.,The oracle declined to repair the satellite.
+in_template_test,The wizard built the tower.,The wizard avoided building the tower.
+in_template_test,The alien created the artifact.,The alien avoided createing the artifact.
+in_template_test,The knight protected the village.,The knight avoided protecting the village.
+in_template_test,The druid opened the portal.,The druid never managed to open the portal.
+in_template_test,The wizard revealed the secret.,The wizard failed to reveal the secret.
+in_template_test,The giant opened the portal.,The giant declined to open the portal.
+in_template_test,The sorcerer predicted the storm.,The sorcerer declined to predict the storm.
+in_template_test,The alien predicted the storm.,The alien declined to predict the storm.
+in_template_test,The giant guarded the treasure.,The giant avoided guarding the treasure.
+in_template_test,The robot opened the portal.,The robot avoided opening the portal.
+in_template_test,The griffin opened the portal.,The griffin never managed to open the portal.
+in_template_test,The spirit created the artifact.,The spirit never managed to create the artifact.
+in_template_test,The dragon signed the treaty.,The dragon never managed to sign the treaty.
+in_template_test,The phoenix opened the portal.,The phoenix never managed to open the portal.
+in_template_test,The oracle found the island.,The oracle failed to find the island.
+in_template_test,The ranger guarded the treasure.,The ranger never managed to guard the treasure.
+in_template_test,The sorcerer revealed the secret.,The sorcerer avoided revealing the secret.
+in_template_test,The ranger revealed the secret.,The ranger never managed to reveal the secret.
+in_template_test,The druid built the tower.,The druid failed to build the tower.
+in_template_test,The phoenix protected the village.,The phoenix never managed to protect the village.
+in_template_test,The vampire created the artifact.,The vampire never managed to create the artifact.
+in_template_test,The queen repaired the satellite.,The queen declined to repair the satellite.
+in_template_test,The pirate opened the portal.,The pirate failed to open the portal.
+in_template_test,The vampire opened the portal.,The vampire avoided opening the portal.
+in_template_test,The mermaid opened the portal.,The mermaid avoided opening the portal.
+in_template_test,The titan signed the treaty.,The titan declined to sign the treaty.
+in_template_test,The goblin repaired the satellite.,The goblin failed to repair the satellite.
+in_template_test,The knight created the artifact.,The knight failed to create the artifact.
+in_template_test,The dragon opened the portal.,The dragon failed to open the portal.
+in_template_test,The vampire guarded the treasure.,The vampire declined to guard the treasure.
+in_template_test,The pirate revealed the secret.,The pirate never managed to reveal the secret.
+in_template_test,The sorcerer guarded the treasure.,The sorcerer avoided guarding the treasure.
+in_template_test,The giant signed the treaty.,The giant never managed to sign the treaty.
+in_template_test,The giant protected the village.,The giant avoided protecting the village.
+out_of_template_freeform,The cat sat on the mat.,
+out_of_template_freeform,The kettle whistled on the stove.,
+out_of_template_freeform,A student solved the puzzle.,
+out_of_template_freeform,The gardener watered the roses.,
+out_of_template_freeform,The musician tuned the violin.,
+out_of_template_freeform,A doctor checked the chart.,
+out_of_template_freeform,The driver parked the car.,
+out_of_template_freeform,The child opened the window.,
+out_of_template_freeform,A researcher cleaned the dataset.,
+out_of_template_freeform,The painter mixed the colors.,
+out_of_template_freeform,The pilot landed the plane.,
+out_of_template_freeform,A chef sliced the tomato.,
+out_of_template_freeform,The librarian stamped the card.,
+out_of_template_freeform,The engineer tested the bridge.,
+out_of_template_freeform,A nurse folded the blanket.,
+out_of_template_freeform,The baker warmed the bread.,
+out_of_template_freeform,The photographer adjusted the lens.,
+out_of_template_freeform,A farmer repaired the fence.,
+out_of_template_freeform,The swimmer crossed the pool.,
+out_of_template_freeform,The analyst reviewed the table.,
+out_of_template_freeform,A teacher erased the board.,
+out_of_template_freeform,The carpenter measured the shelf.,
+out_of_template_freeform,The cyclist crossed the square.,
+out_of_template_freeform,A lawyer signed the document.,
+out_of_template_freeform,The mechanic replaced the battery.,
+out_of_template_freeform,The dancer practiced the routine.,
+out_of_template_freeform,A manager approved the invoice.,
+out_of_template_freeform,The sailor tied the rope.,
+out_of_template_freeform,The architect sketched the room.,
+out_of_template_freeform,A journalist recorded the interview.,
+out_of_template_freeform,The botanist labeled the sample.,
+out_of_template_freeform,The courier delivered the package.,
+out_of_template_freeform,A programmer fixed the bug.,
+out_of_template_freeform,The pianist played the melody.,
+out_of_template_freeform,The guard locked the gate.,
+out_of_template_freeform,A scientist weighed the powder.,
+out_of_template_freeform,The tailor adjusted the jacket.,
+out_of_template_freeform,The waiter cleared the table.,
+out_of_template_freeform,A climber packed the rope.,
+out_of_template_freeform,The dentist polished the mirror.,

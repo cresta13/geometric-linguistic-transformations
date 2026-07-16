@@ -1,0 +1,24 @@
+{
+  "status": "finished",
+  "started_at": "2026-07-16 19:47:43 +0300",
+  "model": "gpt2",
+  "layers": [
+    2,
+    3
+  ],
+  "gain": 0.75,
+  "phase": "finished",
+  "updated_at": "2026-07-16 20:35:01 +0300",
+  "train_rows": 240,
+  "source_rows": 80,
+  "progress_done": 2400,
+  "progress_total": 2400,
+  "current_layer": 3,
+  "current_prompt_style": "same_sentence",
+  "current_control": "negative_target",
+  "rows": 2400,
+  "finished_at": "2026-07-16 20:35:01 +0300",
+  "summary_csv": "results\\experiments\\gpt2_exclamation_copy_prompt_steering_20260716_results\\csv\\exclamation_copy_prompt_summary.csv",
+  "raw_csv": "results\\experiments\\gpt2_exclamation_copy_prompt_steering_20260716_results\\csv\\exclamation_copy_prompt_raw.csv",
+  "failures": []
+}

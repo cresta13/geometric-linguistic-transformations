@@ -160,5 +160,25 @@ Important subdirectories:
   - `csv/delta_between_class_cosine.csv`: between-class centroid comparisons.
   - `csv/coherence_pairs.csv`: sampled pairwise cosine values.
   - `run_status.json`: completed run metadata.
+- `gpt2_negation_copy_prompt_layer_sweep_20260716_results/`
+  - `SUMMARY.md`: full GPT-2 layer sweep for negation steering, showing no clean negation layer under the current recipe.
+  - `csv/transformation_copy_prompt_summary.csv`: target/control marker and preservation rates aggregated over layers `0-11`.
+  - `csv/transformation_copy_prompt_raw.csv`: 14400 generated outputs.
+  - `csv/transformation_copy_prompt_sources.csv`: in-template and freeform source prompts.
+  - `run_status.json`: completed run metadata.
+- `gpt2_exclamation_copy_prompt_steering_20260716_results/`
+  - `SUMMARY.md`: final-punctuation marker control for the question-steering interpretation.
+  - `csv/exclamation_copy_prompt_summary.csv`: exclamation target/control rates.
+  - `csv/exclamation_copy_prompt_raw.csv`: 2400 generated outputs.
+  - `csv/exclamation_copy_prompt_sources.csv`: in-template and hard out-of-template source sentences.
+  - `csv/exclamation_training_pairs.csv`: synthetic statement-to-`!` and statement-to-`?` training pairs.
+  - `run_status.json`: completed run metadata.
+- `gpt2_distilgpt2_question_delta_norms_20260716_results/`
+  - `SUMMARY.md`: GPT-2 vs DistilGPT-2 question-delta norm diagnostic.
+  - `csv/question_delta_norm_summary.csv`: model/layer delta norm and coherence metrics.
+  - `csv/gpt2_distilgpt2_relative_layer_comparison.csv`: matched relative-layer comparison.
+  - `csv/question_delta_norm_raw.csv`: per-row delta norms.
+  - `csv/question_delta_sources.csv`: matched source/target pairs.
+  - `run_status.json`: completed run metadata.
 
 The paper drafts link directly to the relevant CSVs and figures in these folders.
