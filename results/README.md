@@ -180,5 +180,24 @@ Important subdirectories:
   - `csv/question_delta_norm_raw.csv`: per-row delta norms.
   - `csv/question_delta_sources.csv`: matched source/target pairs.
   - `run_status.json`: completed run metadata.
+- `distilgpt2_question_copy_prompt_layer_gain_sweep_v2_gain05_20260717_results/`
+  - `SUMMARY.md`: DistilGPT-2 question steering layer/gain sweep slice for `gain=0.5`.
+  - `csv/transformation_copy_prompt_summary.csv`: default aggregate summary from the runner.
+  - `csv/transformation_copy_prompt_raw.csv`: 7200 generated outputs with layer-level rows.
+  - `csv/transformation_copy_prompt_sources.csv`: in-template and freeform source prompts.
+  - `run_status.json`: completed run metadata.
+- `distilgpt2_question_copy_prompt_layer_gain_sweep_v3_gain10_20260717_results/`
+  - `SUMMARY.md`: DistilGPT-2 question steering layer/gain sweep slice for `gain=1.0`, the best tested setting.
+  - `csv/distilgpt2_gain_layer_sweep_aggregate.csv`: layer-aware aggregate across gains `0.5`, `1.0`, and `1.5`.
+  - `csv/transformation_copy_prompt_summary.csv`: default aggregate summary from the runner.
+  - `csv/transformation_copy_prompt_raw.csv`: 7200 generated outputs with layer-level rows.
+  - `csv/transformation_copy_prompt_sources.csv`: in-template and freeform source prompts.
+  - `run_status.json`: completed run metadata.
+- `distilgpt2_question_copy_prompt_layer_gain_sweep_v3_gain15_20260717_results/`
+  - `SUMMARY.md`: DistilGPT-2 question steering layer/gain sweep slice for `gain=1.5`, showing over-steering.
+  - `csv/transformation_copy_prompt_summary.csv`: default aggregate summary from the runner.
+  - `csv/transformation_copy_prompt_raw.csv`: 7200 generated outputs with layer-level rows.
+  - `csv/transformation_copy_prompt_sources.csv`: in-template and freeform source prompts.
+  - `run_status.json`: completed run metadata.
 
 The paper drafts link directly to the relevant CSVs and figures in these folders.
