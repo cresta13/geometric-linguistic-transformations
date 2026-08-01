@@ -1,0 +1,4 @@
+source_set,prompt_style,ab_equals_ba_rate,ab_ba_marker_profile_equal_rate,ab_equals_plus_rate,ba_equals_plus_rate,ab_a_marker_rate,ab_b_marker_rate,ba_a_marker_rate,ba_b_marker_rate,plus_a_marker_rate,plus_b_marker_rate,rows
+hard_out_of_template,copy_sentence,0.2,0.65,0.15,0.2,0.725,0.325,0.825,0.2,0.775,0.225,40
+hard_out_of_template,repeat_sentence,0.3,0.725,0.15,0.225,0.725,0.225,0.875,0.15,0.775,0.3,40
+hard_out_of_template,same_sentence,0.2,0.65,0.1,0.15,0.75,0.275,0.775,0.175,0.75,0.225,40

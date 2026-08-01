@@ -1,0 +1,241 @@
+split,class,source,target
+train,question_mark,The artist opened the archive before lunch.,The artist opened the archive before lunch?
+train,exclamation,The artist opened the archive before lunch.,The artist opened the archive before lunch!
+train,question_mark,The writer fixed the problem near the station.,The writer fixed the problem near the station?
+train,exclamation,The writer fixed the problem near the station.,The writer fixed the problem near the station!
+train,question_mark,The pilot measured the signal after the meeting.,The pilot measured the signal after the meeting?
+train,exclamation,The pilot measured the signal after the meeting.,The pilot measured the signal after the meeting!
+train,question_mark,The artist measured the signal with care.,The artist measured the signal with care?
+train,exclamation,The artist measured the signal with care.,The artist measured the signal with care!
+train,question_mark,The manager tested the system during the session.,The manager tested the system during the session?
+train,exclamation,The manager tested the system during the session.,The manager tested the system during the session!
+train,question_mark,The musician explained the pattern in the lab.,The musician explained the pattern in the lab?
+train,exclamation,The musician explained the pattern in the lab.,The musician explained the pattern in the lab!
+train,question_mark,The pilot cleaned the dataset on Monday.,The pilot cleaned the dataset on Monday?
+train,exclamation,The pilot cleaned the dataset on Monday.,The pilot cleaned the dataset on Monday!
+train,question_mark,The teacher cleaned the dataset for the team.,The teacher cleaned the dataset for the team?
+train,exclamation,The teacher cleaned the dataset for the team.,The teacher cleaned the dataset for the team!
+train,question_mark,The teacher reviewed the plan for the team.,The teacher reviewed the plan for the team?
+train,exclamation,The teacher reviewed the plan for the team.,The teacher reviewed the plan for the team!
+train,question_mark,The teacher completed the task without delay.,The teacher completed the task without delay?
+train,exclamation,The teacher completed the task without delay.,The teacher completed the task without delay!
+train,question_mark,The analyst checked the result for the team.,The analyst checked the result for the team?
+train,exclamation,The analyst checked the result for the team.,The analyst checked the result for the team!
+train,question_mark,The analyst updated the report on Monday.,The analyst updated the report on Monday?
+train,exclamation,The analyst updated the report on Monday.,The analyst updated the report on Monday!
+train,question_mark,The gardener updated the report during the session.,The gardener updated the report during the session?
+train,exclamation,The gardener updated the report during the session.,The gardener updated the report during the session!
+train,question_mark,The analyst opened the archive on Monday.,The analyst opened the archive on Monday?
+train,exclamation,The analyst opened the archive on Monday.,The analyst opened the archive on Monday!
+train,question_mark,The gardener tested the system with care.,The gardener tested the system with care?
+train,exclamation,The gardener tested the system with care.,The gardener tested the system with care!
+train,question_mark,The manager designed the prototype without delay.,The manager designed the prototype without delay?
+train,exclamation,The manager designed the prototype without delay.,The manager designed the prototype without delay!
+train,question_mark,The pilot updated the report near the station.,The pilot updated the report near the station?
+train,exclamation,The pilot updated the report near the station.,The pilot updated the report near the station!
+train,question_mark,The researcher reviewed the plan before lunch.,The researcher reviewed the plan before lunch?
+train,exclamation,The researcher reviewed the plan before lunch.,The researcher reviewed the plan before lunch!
+train,question_mark,The writer opened the archive for the team.,The writer opened the archive for the team?
+train,exclamation,The writer opened the archive for the team.,The writer opened the archive for the team!
+train,question_mark,The analyst cleaned the dataset before lunch.,The analyst cleaned the dataset before lunch?
+train,exclamation,The analyst cleaned the dataset before lunch.,The analyst cleaned the dataset before lunch!
+train,question_mark,The doctor cleaned the dataset near the station.,The doctor cleaned the dataset near the station?
+train,exclamation,The doctor cleaned the dataset near the station.,The doctor cleaned the dataset near the station!
+train,question_mark,The engineer reviewed the plan without delay.,The engineer reviewed the plan without delay?
+train,exclamation,The engineer reviewed the plan without delay.,The engineer reviewed the plan without delay!
+train,question_mark,The researcher designed the prototype without delay.,The researcher designed the prototype without delay?
+train,exclamation,The researcher designed the prototype without delay.,The researcher designed the prototype without delay!
+train,question_mark,The engineer published the note for the team.,The engineer published the note for the team?
+train,exclamation,The engineer published the note for the team.,The engineer published the note for the team!
+train,question_mark,The artist explained the pattern in the lab.,The artist explained the pattern in the lab?
+train,exclamation,The artist explained the pattern in the lab.,The artist explained the pattern in the lab!
+train,question_mark,The teacher updated the report with care.,The teacher updated the report with care?
+train,exclamation,The teacher updated the report with care.,The teacher updated the report with care!
+train,question_mark,The analyst published the note during the session.,The analyst published the note during the session?
+train,exclamation,The analyst published the note during the session.,The analyst published the note during the session!
+train,question_mark,The pilot published the note for the team.,The pilot published the note for the team?
+train,exclamation,The pilot published the note for the team.,The pilot published the note for the team!
+train,question_mark,The artist completed the task without delay.,The artist completed the task without delay?
+train,exclamation,The artist completed the task without delay.,The artist completed the task without delay!
+train,question_mark,The teacher updated the report today.,The teacher updated the report today?
+train,exclamation,The teacher updated the report today.,The teacher updated the report today!
+train,question_mark,The researcher explained the pattern with care.,The researcher explained the pattern with care?
+train,exclamation,The researcher explained the pattern with care.,The researcher explained the pattern with care!
+train,question_mark,The student published the note in the lab.,The student published the note in the lab?
+train,exclamation,The student published the note in the lab.,The student published the note in the lab!
+train,question_mark,The pilot explained the pattern with care.,The pilot explained the pattern with care?
+train,exclamation,The pilot explained the pattern with care.,The pilot explained the pattern with care!
+train,question_mark,The researcher completed the task with care.,The researcher completed the task with care?
+train,exclamation,The researcher completed the task with care.,The researcher completed the task with care!
+train,question_mark,The manager checked the result for the team.,The manager checked the result for the team?
+train,exclamation,The manager checked the result for the team.,The manager checked the result for the team!
+train,question_mark,The analyst fixed the problem in the lab.,The analyst fixed the problem in the lab?
+train,exclamation,The analyst fixed the problem in the lab.,The analyst fixed the problem in the lab!
+train,question_mark,The teacher fixed the problem on Monday.,The teacher fixed the problem on Monday?
+train,exclamation,The teacher fixed the problem on Monday.,The teacher fixed the problem on Monday!
+train,question_mark,The researcher designed the prototype after the meeting.,The researcher designed the prototype after the meeting?
+train,exclamation,The researcher designed the prototype after the meeting.,The researcher designed the prototype after the meeting!
+train,question_mark,The musician completed the task today.,The musician completed the task today?
+train,exclamation,The musician completed the task today.,The musician completed the task today!
+train,question_mark,The writer updated the report today.,The writer updated the report today?
+train,exclamation,The writer updated the report today.,The writer updated the report today!
+train,question_mark,The engineer cleaned the dataset after the meeting.,The engineer cleaned the dataset after the meeting?
+train,exclamation,The engineer cleaned the dataset after the meeting.,The engineer cleaned the dataset after the meeting!
+train,question_mark,The teacher checked the result with care.,The teacher checked the result with care?
+train,exclamation,The teacher checked the result with care.,The teacher checked the result with care!
+train,question_mark,The manager explained the pattern on Monday.,The manager explained the pattern on Monday?
+train,exclamation,The manager explained the pattern on Monday.,The manager explained the pattern on Monday!
+train,question_mark,The student checked the result today.,The student checked the result today?
+train,exclamation,The student checked the result today.,The student checked the result today!
+train,question_mark,The engineer fixed the problem today.,The engineer fixed the problem today?
+train,exclamation,The engineer fixed the problem today.,The engineer fixed the problem today!
+train,question_mark,The pilot cleaned the dataset without delay.,The pilot cleaned the dataset without delay?
+train,exclamation,The pilot cleaned the dataset without delay.,The pilot cleaned the dataset without delay!
+train,question_mark,The student fixed the problem for the team.,The student fixed the problem for the team?
+train,exclamation,The student fixed the problem for the team.,The student fixed the problem for the team!
+train,question_mark,The student designed the prototype for the team.,The student designed the prototype for the team?
+train,exclamation,The student designed the prototype for the team.,The student designed the prototype for the team!
+train,question_mark,The researcher opened the archive in the lab.,The researcher opened the archive in the lab?
+train,exclamation,The researcher opened the archive in the lab.,The researcher opened the archive in the lab!
+train,question_mark,The researcher completed the task before lunch.,The researcher completed the task before lunch?
+train,exclamation,The researcher completed the task before lunch.,The researcher completed the task before lunch!
+train,question_mark,The manager checked the result in the lab.,The manager checked the result in the lab?
+train,exclamation,The manager checked the result in the lab.,The manager checked the result in the lab!
+train,question_mark,The writer updated the report before lunch.,The writer updated the report before lunch?
+train,exclamation,The writer updated the report before lunch.,The writer updated the report before lunch!
+train,question_mark,The artist explained the pattern near the station.,The artist explained the pattern near the station?
+train,exclamation,The artist explained the pattern near the station.,The artist explained the pattern near the station!
+train,question_mark,The analyst measured the signal on Monday.,The analyst measured the signal on Monday?
+train,exclamation,The analyst measured the signal on Monday.,The analyst measured the signal on Monday!
+train,question_mark,The engineer designed the prototype with care.,The engineer designed the prototype with care?
+train,exclamation,The engineer designed the prototype with care.,The engineer designed the prototype with care!
+train,question_mark,The manager cleaned the dataset in the lab.,The manager cleaned the dataset in the lab?
+train,exclamation,The manager cleaned the dataset in the lab.,The manager cleaned the dataset in the lab!
+train,question_mark,The musician checked the result in the lab.,The musician checked the result in the lab?
+train,exclamation,The musician checked the result in the lab.,The musician checked the result in the lab!
+train,question_mark,The engineer explained the pattern without delay.,The engineer explained the pattern without delay?
+train,exclamation,The engineer explained the pattern without delay.,The engineer explained the pattern without delay!
+train,question_mark,The doctor opened the archive before lunch.,The doctor opened the archive before lunch?
+train,exclamation,The doctor opened the archive before lunch.,The doctor opened the archive before lunch!
+train,question_mark,The student fixed the problem on Monday.,The student fixed the problem on Monday?
+train,exclamation,The student fixed the problem on Monday.,The student fixed the problem on Monday!
+train,question_mark,The writer measured the signal after the meeting.,The writer measured the signal after the meeting?
+train,exclamation,The writer measured the signal after the meeting.,The writer measured the signal after the meeting!
+train,question_mark,The gardener opened the archive before lunch.,The gardener opened the archive before lunch?
+train,exclamation,The gardener opened the archive before lunch.,The gardener opened the archive before lunch!
+train,question_mark,The gardener cleaned the dataset without delay.,The gardener cleaned the dataset without delay?
+train,exclamation,The gardener cleaned the dataset without delay.,The gardener cleaned the dataset without delay!
+train,question_mark,The pilot completed the task near the station.,The pilot completed the task near the station?
+train,exclamation,The pilot completed the task near the station.,The pilot completed the task near the station!
+train,question_mark,The doctor checked the result on Monday.,The doctor checked the result on Monday?
+train,exclamation,The doctor checked the result on Monday.,The doctor checked the result on Monday!
+train,question_mark,The musician opened the archive near the station.,The musician opened the archive near the station?
+train,exclamation,The musician opened the archive near the station.,The musician opened the archive near the station!
+train,question_mark,The writer reviewed the plan today.,The writer reviewed the plan today?
+train,exclamation,The writer reviewed the plan today.,The writer reviewed the plan today!
+train,question_mark,The musician checked the result on Monday.,The musician checked the result on Monday?
+train,exclamation,The musician checked the result on Monday.,The musician checked the result on Monday!
+train,question_mark,The researcher opened the archive during the session.,The researcher opened the archive during the session?
+train,exclamation,The researcher opened the archive during the session.,The researcher opened the archive during the session!
+train,question_mark,The engineer cleaned the dataset for the team.,The engineer cleaned the dataset for the team?
+train,exclamation,The engineer cleaned the dataset for the team.,The engineer cleaned the dataset for the team!
+train,question_mark,The gardener fixed the problem before lunch.,The gardener fixed the problem before lunch?
+train,exclamation,The gardener fixed the problem before lunch.,The gardener fixed the problem before lunch!
+train,question_mark,The musician updated the report on Monday.,The musician updated the report on Monday?
+train,exclamation,The musician updated the report on Monday.,The musician updated the report on Monday!
+train,question_mark,The artist updated the report near the station.,The artist updated the report near the station?
+train,exclamation,The artist updated the report near the station.,The artist updated the report near the station!
+train,question_mark,The artist checked the result during the session.,The artist checked the result during the session?
+train,exclamation,The artist checked the result during the session.,The artist checked the result during the session!
+train,question_mark,The researcher fixed the problem for the team.,The researcher fixed the problem for the team?
+train,exclamation,The researcher fixed the problem for the team.,The researcher fixed the problem for the team!
+train,question_mark,The researcher measured the signal in the lab.,The researcher measured the signal in the lab?
+train,exclamation,The researcher measured the signal in the lab.,The researcher measured the signal in the lab!
+train,question_mark,The musician opened the archive during the session.,The musician opened the archive during the session?
+train,exclamation,The musician opened the archive during the session.,The musician opened the archive during the session!
+train,question_mark,The gardener designed the prototype near the station.,The gardener designed the prototype near the station?
+train,exclamation,The gardener designed the prototype near the station.,The gardener designed the prototype near the station!
+train,question_mark,The manager measured the signal after the meeting.,The manager measured the signal after the meeting?
+train,exclamation,The manager measured the signal after the meeting.,The manager measured the signal after the meeting!
+train,question_mark,The gardener cleaned the dataset after the meeting.,The gardener cleaned the dataset after the meeting?
+train,exclamation,The gardener cleaned the dataset after the meeting.,The gardener cleaned the dataset after the meeting!
+train,question_mark,The doctor updated the report in the lab.,The doctor updated the report in the lab?
+train,exclamation,The doctor updated the report in the lab.,The doctor updated the report in the lab!
+train,question_mark,The doctor fixed the problem before lunch.,The doctor fixed the problem before lunch?
+train,exclamation,The doctor fixed the problem before lunch.,The doctor fixed the problem before lunch!
+train,question_mark,The gardener checked the result near the station.,The gardener checked the result near the station?
+train,exclamation,The gardener checked the result near the station.,The gardener checked the result near the station!
+train,question_mark,The gardener cleaned the dataset during the session.,The gardener cleaned the dataset during the session?
+train,exclamation,The gardener cleaned the dataset during the session.,The gardener cleaned the dataset during the session!
+train,question_mark,The engineer reviewed the plan before lunch.,The engineer reviewed the plan before lunch?
+train,exclamation,The engineer reviewed the plan before lunch.,The engineer reviewed the plan before lunch!
+train,question_mark,The gardener cleaned the dataset in the lab.,The gardener cleaned the dataset in the lab?
+train,exclamation,The gardener cleaned the dataset in the lab.,The gardener cleaned the dataset in the lab!
+train,question_mark,The manager measured the signal for the team.,The manager measured the signal for the team?
+train,exclamation,The manager measured the signal for the team.,The manager measured the signal for the team!
+train,question_mark,The artist completed the task with care.,The artist completed the task with care?
+train,exclamation,The artist completed the task with care.,The artist completed the task with care!
+train,question_mark,The manager completed the task without delay.,The manager completed the task without delay?
+train,exclamation,The manager completed the task without delay.,The manager completed the task without delay!
+train,question_mark,The artist fixed the problem after the meeting.,The artist fixed the problem after the meeting?
+train,exclamation,The artist fixed the problem after the meeting.,The artist fixed the problem after the meeting!
+train,question_mark,The pilot explained the pattern before lunch.,The pilot explained the pattern before lunch?
+train,exclamation,The pilot explained the pattern before lunch.,The pilot explained the pattern before lunch!
+train,question_mark,The engineer measured the signal for the team.,The engineer measured the signal for the team?
+train,exclamation,The engineer measured the signal for the team.,The engineer measured the signal for the team!
+train,question_mark,The writer opened the archive before lunch.,The writer opened the archive before lunch?
+train,exclamation,The writer opened the archive before lunch.,The writer opened the archive before lunch!
+train,question_mark,The manager updated the report after the meeting.,The manager updated the report after the meeting?
+train,exclamation,The manager updated the report after the meeting.,The manager updated the report after the meeting!
+train,question_mark,The analyst updated the report before lunch.,The analyst updated the report before lunch?
+train,exclamation,The analyst updated the report before lunch.,The analyst updated the report before lunch!
+train,question_mark,The artist completed the task on Monday.,The artist completed the task on Monday?
+train,exclamation,The artist completed the task on Monday.,The artist completed the task on Monday!
+train,question_mark,The teacher completed the task today.,The teacher completed the task today?
+train,exclamation,The teacher completed the task today.,The teacher completed the task today!
+train,question_mark,The manager completed the task today.,The manager completed the task today?
+train,exclamation,The manager completed the task today.,The manager completed the task today!
+train,question_mark,The teacher completed the task after the meeting.,The teacher completed the task after the meeting?
+train,exclamation,The teacher completed the task after the meeting.,The teacher completed the task after the meeting!
+train,question_mark,The musician cleaned the dataset today.,The musician cleaned the dataset today?
+train,exclamation,The musician cleaned the dataset today.,The musician cleaned the dataset today!
+train,question_mark,The analyst tested the system after the meeting.,The analyst tested the system after the meeting?
+train,exclamation,The analyst tested the system after the meeting.,The analyst tested the system after the meeting!
+train,question_mark,The analyst updated the report near the station.,The analyst updated the report near the station?
+train,exclamation,The analyst updated the report near the station.,The analyst updated the report near the station!
+train,question_mark,The doctor updated the report for the team.,The doctor updated the report for the team?
+train,exclamation,The doctor updated the report for the team.,The doctor updated the report for the team!
+train,question_mark,The doctor cleaned the dataset before lunch.,The doctor cleaned the dataset before lunch?
+train,exclamation,The doctor cleaned the dataset before lunch.,The doctor cleaned the dataset before lunch!
+train,question_mark,The doctor reviewed the plan without delay.,The doctor reviewed the plan without delay?
+train,exclamation,The doctor reviewed the plan without delay.,The doctor reviewed the plan without delay!
+train,question_mark,The student fixed the problem today.,The student fixed the problem today?
+train,exclamation,The student fixed the problem today.,The student fixed the problem today!
+train,question_mark,The musician measured the signal with care.,The musician measured the signal with care?
+train,exclamation,The musician measured the signal with care.,The musician measured the signal with care!
+train,question_mark,The musician fixed the problem without delay.,The musician fixed the problem without delay?
+train,exclamation,The musician fixed the problem without delay.,The musician fixed the problem without delay!
+train,question_mark,The researcher reviewed the plan for the team.,The researcher reviewed the plan for the team?
+train,exclamation,The researcher reviewed the plan for the team.,The researcher reviewed the plan for the team!
+train,question_mark,The pilot opened the archive today.,The pilot opened the archive today?
+train,exclamation,The pilot opened the archive today.,The pilot opened the archive today!
+train,question_mark,The writer explained the pattern without delay.,The writer explained the pattern without delay?
+train,exclamation,The writer explained the pattern without delay.,The writer explained the pattern without delay!
+train,question_mark,The gardener measured the signal after the meeting.,The gardener measured the signal after the meeting?
+train,exclamation,The gardener measured the signal after the meeting.,The gardener measured the signal after the meeting!
+train,question_mark,The musician tested the system for the team.,The musician tested the system for the team?
+train,exclamation,The musician tested the system for the team.,The musician tested the system for the team!
+train,question_mark,The engineer completed the task during the session.,The engineer completed the task during the session?
+train,exclamation,The engineer completed the task during the session.,The engineer completed the task during the session!
+train,question_mark,The student opened the archive with care.,The student opened the archive with care?
+train,exclamation,The student opened the archive with care.,The student opened the archive with care!
+train,question_mark,The musician reviewed the plan in the lab.,The musician reviewed the plan in the lab?
+train,exclamation,The musician reviewed the plan in the lab.,The musician reviewed the plan in the lab!
+train,question_mark,The gardener tested the system near the station.,The gardener tested the system near the station?
+train,exclamation,The gardener tested the system near the station.,The gardener tested the system near the station!
+train,question_mark,The manager completed the task with care.,The manager completed the task with care?
+train,exclamation,The manager completed the task with care.,The manager completed the task with care!
+train,question_mark,The engineer explained the pattern in the lab.,The engineer explained the pattern in the lab?
+train,exclamation,The engineer explained the pattern in the lab.,The engineer explained the pattern in the lab!
+train,question_mark,The analyst explained the pattern before lunch.,The analyst explained the pattern before lunch?
+train,exclamation,The analyst explained the pattern before lunch.,The analyst explained the pattern before lunch!

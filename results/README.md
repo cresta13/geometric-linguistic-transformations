@@ -180,6 +180,13 @@ Important subdirectories:
   - `csv/final_marker_copy_prompt_sources.csv`: 40 structurally diverse source sentences.
   - `csv/final_marker_training_pairs.csv`: synthetic statement-to-ellipsis and statement-to-question training pairs.
   - `run_status.json`: completed run metadata.
+- `gpt2_question_exclamation_marker_composition_layer2_3_20260801_results/`
+  - `SUMMARY.md`: first marker-composition steering test comparing `?`, `!`, `?+!`, `?` then `!`, and `!` then `?`.
+  - `csv/marker_composition_steering_summary.csv`: marker and preservation rates by prompt style and control.
+  - `csv/marker_composition_order_contrast_summary.csv`: exact-output and marker-profile order contrasts.
+  - `csv/marker_composition_steering_raw.csv`: 840 generated outputs.
+  - `csv/marker_composition_sources.csv`: 40 hard out-of-template source sentences.
+  - `run_status.json`: completed run metadata.
 - `gpt2_distilgpt2_question_delta_norms_20260716_results/`
   - `SUMMARY.md`: GPT-2 vs DistilGPT-2 question-delta norm diagnostic.
   - `csv/question_delta_norm_summary.csv`: model/layer delta norm and coherence metrics.

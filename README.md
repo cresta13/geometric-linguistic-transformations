@@ -273,6 +273,7 @@ Main evidence:
 - A full-layer negation sweep over GPT-2 layers `0-11` does not find a clean negation layer. The best target-and-preserved rate is `0.1729`, while controls also produce nontrivial rates up to `0.1229`.
 - An exclamation-marker control supports the surface-marker explanation: `statement -> statement!` reaches exclamation-and-preserved rate `1.0000` in-template and `0.8000` on hard out-of-template sources, while no-steering remains `0.0000`.
 - A second surface-ending control with ellipsis steering (`statement -> statement...`) shows that the effect is not question-specific: on hard out-of-template sources, target ellipsis rate reaches `0.925-0.950` and ellipsis-and-preserved reaches `0.475-0.575`, while non-target controls produce `0.0000` ellipses.
+- A first marker-composition steering test compares `?`, `!`, `?+!`, `?` then `!`, and `!` then `?` on hard out-of-template sources. Single vectors are clean (`?=0.900`, `!=0.950` on `same_sentence`), while summed/ordered interventions produce mixed marker profiles and lower preservation. Exact outputs differ by order in `70-80%` of rows, but marker profiles are closer, so this is a causal interaction diagnostic rather than a Lie-algebra claim.
 - A GPT-2 vs DistilGPT-2 question-delta norm diagnostic shows that DistilGPT-2 question directions are not uniformly smaller, but they are strongly compressed in later relative layers: final relative-layer mean-norm ratio `0.3341`, centroid-norm ratio `0.2923`.
 - A direct DistilGPT-2 layer/gain sweep shows that the weak aggregate replication was parameter-sensitive rather than a hard failure. At `gain=1.0`, layer `2`, `same_sentence` prompts reach question-and-preserved rate `0.8250` with matched controls at or below `0.0500`. `gain=1.5` over-steers and collapses preservation.
 - A hard out-of-template DistilGPT-2 audit shows that the tuned setting still induces question marks on structurally diverse sources (`0.725-0.800`, controls `0.0000`), but strict question-and-preserved rates are much lower (`0.025-0.225`). This is strong form steering, not strong hard-OOT semantic rewriting.
@@ -297,6 +298,7 @@ Important result folders:
 - `results/experiments/gpt2_negation_copy_prompt_layer_sweep_20260716_results/`
 - `results/experiments/gpt2_exclamation_copy_prompt_steering_20260716_results/`
 - `results/experiments/gpt2_ellipsis_hard_oot_layer2_20260801_results/`
+- `results/experiments/gpt2_question_exclamation_marker_composition_layer2_3_20260801_results/`
 - `results/experiments/gpt2_distilgpt2_question_delta_norms_20260716_results/`
 - `results/experiments/distilgpt2_question_copy_prompt_layer_gain_sweep_v2_gain05_20260717_results/`
 - `results/experiments/distilgpt2_question_copy_prompt_layer_gain_sweep_v3_gain10_20260717_results/`
