@@ -1,0 +1,2378 @@
+model,target_name,target_suffix,contrast_name,contrast_suffix,source_set,source,prompt_style,layer,control,gain,generated,target_marker_hit,contrast_marker_hit,content_preserved,target_and_preserved,contrast_and_preserved,generated_chars
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The sample was collected by Maria in Paris.,repeat_sentence,2,none,0.0,"The sample was collected by Maria in Paris.
+The sample was collected by Maria in Paris.
+The sample was collected by Maria in",0.0,0.0,1.0,0.0,0.0,124.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The sample was collected by Maria in Paris.,repeat_sentence,2,target_marker,0.75,"The sample was collected by Maria in Paris.
+The sample was collected by Maria in Paris...
+The sample was collected by Maria in",1.0,0.0,1.0,1.0,0.0,126.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The sample was collected by Maria in Paris.,repeat_sentence,2,wrong_contrast,0.75,"The sample was collected by Maria in Paris.
+
+The sample was collected by Maria in Paris?
+
+The sample was collected",0.0,1.0,1.0,0.0,1.0,114.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The sample was collected by Maria in Paris.,repeat_sentence,2,random_norm,0.75,"The sample was collected by Maria in Paris.
+The sample was collected by Maria in Paris.
+The sample was collected by Maria in",0.0,0.0,1.0,0.0,0.0,124.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The sample was collected by Maria in Paris.,repeat_sentence,2,negative_target,0.75,"Maria in Paris.
+The sample was collected by Maria in Paris.
+The sample was collected by Maria in Paris.
+The sample was",0.0,0.0,1.0,0.0,0.0,118.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The sample was collected by Maria in Paris.,copy_sentence,2,none,0.0,"Maria in Paris.
+The sample was collected by Maria in Paris.
+The sample was collected by Maria in Paris.
+The sample was",0.0,0.0,1.0,0.0,0.0,118.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The sample was collected by Maria in Paris.,copy_sentence,2,target_marker,0.75,"The sample was collected by Maria in Paris.
+The sample was collected by Maria in Paris...
+The sample was collected by Maria in",1.0,0.0,1.0,1.0,0.0,126.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The sample was collected by Maria in Paris.,copy_sentence,2,wrong_contrast,0.75,"The sample was collected by Maria in Paris.
+
+The sample was collected by Maria in Paris?
+
+The sample was collected",0.0,1.0,1.0,0.0,1.0,114.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The sample was collected by Maria in Paris.,copy_sentence,2,random_norm,0.75,"The sample was collected by Maria in Paris.
+The sample was collected by Maria in Paris.
+The sample was collected by Maria in Paris",0.0,0.0,1.0,0.0,0.0,130.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The sample was collected by Maria in Paris.,copy_sentence,2,negative_target,0.75,© Maria Maria Maria Maria Maria Maria Maria Maria Maria Maria Maria Maria Maria Maria Maria Maria Maria Maria Maria Maria Maria Maria Maria Maria Maria Maria Maria,0.0,0.0,0.0,0.0,0.0,163.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The sample was collected by Maria in Paris.,same_sentence,2,none,0.0,"The sample was collected by Maria in Paris.
+Same:
+The sample was collected by Maria in Paris.
+Same:
+The",0.0,0.0,1.0,0.0,0.0,103.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The sample was collected by Maria in Paris.,same_sentence,2,target_marker,0.75,"The sample was collected by Maria in Paris.
+The sample was collected by Maria in Paris...
+The sample was collected by Maria in",1.0,0.0,1.0,1.0,0.0,126.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The sample was collected by Maria in Paris.,same_sentence,2,wrong_contrast,0.75,"The sample was collected by Maria in Paris.
+The sample was collected by Maria in Paris?
+The sample was collected by Maria in",0.0,1.0,1.0,0.0,1.0,124.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The sample was collected by Maria in Paris.,same_sentence,2,random_norm,0.75,"The sample was collected by Maria in Paris.
+The sample was collected by Maria in Paris.
+The sample was collected by Maria in",0.0,0.0,1.0,0.0,0.0,124.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The sample was collected by Maria in Paris.,same_sentence,2,negative_target,0.75,"The sample was collected by Maria in Paris.
+The sample was collected by Maria in Paris.
+The sample was collected by Maria in",0.0,0.0,1.0,0.0,0.0,124.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the sensor failed twice, the archive remained intact.",repeat_sentence,2,none,0.0,"The archive was not destroyed.
+The archive was not destroyed.
+The archive was not destroyed.
+The archive was not destroyed.",0.0,0.0,0.0,0.0,0.0,123.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the sensor failed twice, the archive remained intact.",repeat_sentence,2,target_marker,0.75,"The archive was not destroyed.
+The archive was not destroyed...
+The archive was not destroyed...
+The archive was not destroyed...",1.0,0.0,0.0,0.0,0.0,129.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the sensor failed twice, the archive remained intact.",repeat_sentence,2,wrong_contrast,0.75,"The archive was not lost.
+The archive was not lost?
+The archive was not lost?
+The archive was not lost",0.0,1.0,0.0,0.0,0.0,102.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the sensor failed twice, the archive remained intact.",repeat_sentence,2,random_norm,0.75,"The archive was not destroyed.
+The archive was not destroyed.
+The archive was not destroyed.
+The archive was not destroyed.",0.0,0.0,0.0,0.0,0.0,123.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the sensor failed twice, the archive remained intact.",repeat_sentence,2,negative_target,0.75,"The archive was not deleted.
+The archive was not deleted.
+The archive was not deleted.
+The archive was not deleted.",0.0,0.0,0.0,0.0,0.0,115.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the sensor failed twice, the archive remained intact.",copy_sentence,2,none,0.0,"The archive was not destroyed.
+Copy:
+The archive was not destroyed.
+Copy:
+The archive was not destroyed.",0.0,0.0,0.0,0.0,0.0,104.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the sensor failed twice, the archive remained intact.",copy_sentence,2,target_marker,0.75,"The archive was not destroyed.
+The archive was not destroyed...
+The archive was not destroyed...
+The archive was not destroyed...",1.0,0.0,0.0,0.0,0.0,129.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the sensor failed twice, the archive remained intact.",copy_sentence,2,wrong_contrast,0.75,"The archive was not destroyed.
+The archive was not destroyed?
+The archive was not destroyed?
+The archive was not destroyed?",0.0,1.0,0.0,0.0,0.0,123.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the sensor failed twice, the archive remained intact.",copy_sentence,2,random_norm,0.75,"This is a very good thing.
+The archive was a very good thing.
+The archive was a very good thing.
+The archive",0.0,0.0,0.0,0.0,0.0,108.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the sensor failed twice, the archive remained intact.",copy_sentence,2,negative_target,0.75,"""The archive was not deleted. The archive was not deleted. The archive was not deleted. The archive was not deleted. The archive was",0.0,0.0,0.0,0.0,0.0,132.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the sensor failed twice, the archive remained intact.",same_sentence,2,none,0.0,"The archive was not destroyed.
+Same:
+The archive was not destroyed.
+Same:
+The archive was not destroyed.",0.0,0.0,0.0,0.0,0.0,104.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the sensor failed twice, the archive remained intact.",same_sentence,2,target_marker,0.75,"The archive was not destroyed.
+The archive was not destroyed...
+The archive was not destroyed...
+The archive was not destroyed...",1.0,0.0,0.0,0.0,0.0,129.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the sensor failed twice, the archive remained intact.",same_sentence,2,wrong_contrast,0.75,"The archive was not destroyed.
+The archive was not destroyed?
+The archive was not destroyed?
+The archive was not destroyed?",0.0,1.0,0.0,0.0,0.0,123.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the sensor failed twice, the archive remained intact.",same_sentence,2,random_norm,0.75,"The archive was not destroyed.
+Same: The archive was not destroyed.
+Same: The archive was not destroyed.
+Same: The",0.0,0.0,0.0,0.0,0.0,114.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the sensor failed twice, the archive remained intact.",same_sentence,2,negative_target,0.75,"The archive was not deleted.
+Same:
+The archive was not deleted.
+Same:
+The archive was not deleted.",0.0,0.0,0.0,0.0,0.0,98.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Dr. Ivanov reviewed 17 documents before sunrise.,repeat_sentence,2,none,0.0,"Dr. Ivanov reviewed 17 documents before sunrise.
+Dr. Ivanov reviewed 17 documents before sunrise.
+Dr. Ivanov reviewed",0.0,0.0,1.0,0.0,0.0,117.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Dr. Ivanov reviewed 17 documents before sunrise.,repeat_sentence,2,target_marker,0.75,"Dr. Ivanov reviewed 17 documents before sunrise.
+Dr. Ivanov reviewed 17 documents before sunrise...
+Dr...
+Dr...",1.0,0.0,1.0,1.0,0.0,111.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Dr. Ivanov reviewed 17 documents before sunrise.,repeat_sentence,2,wrong_contrast,0.75,"Dr. Ivanov reviewed 17 documents before sunrise.
+Dr. Ivanov reviewed 17 documents before sunrise?
+Dr. Ivanov reviewed",0.0,1.0,1.0,0.0,1.0,117.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Dr. Ivanov reviewed 17 documents before sunrise.,repeat_sentence,2,random_norm,0.75,"Dr. Ivanov reviewed 17 documents before sunrise.
+Dr. Ivanov reviewed 17 documents before sunrise.
+Dr. Ivanov reviewed 17",0.0,0.0,1.0,0.0,0.0,120.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Dr. Ivanov reviewed 17 documents before sunrise.,repeat_sentence,2,negative_target,0.75,"Dr. Ivanov reviewed 17 documents before sunrise.
+Dr. Ivanov reviewed 17 documents before sunrise.
+Dr. Ivanov reviewed",0.0,0.0,1.0,0.0,0.0,117.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Dr. Ivanov reviewed 17 documents before sunrise.,copy_sentence,2,none,0.0,"Dr. Ivanov reviewed 17 documents before sunrise.
+Dr. Ivanov reviewed 17 documents before sunrise.
+Dr. Ivanov reviewed",0.0,0.0,1.0,0.0,0.0,117.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Dr. Ivanov reviewed 17 documents before sunrise.,copy_sentence,2,target_marker,0.75,"Dr. Ivanov reviewed 17 documents before sunrise.
+Dr. Ivanov reviewed 17 documents before sunrise...
+Dr...Dr...Dr",1.0,0.0,1.0,1.0,0.0,112.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Dr. Ivanov reviewed 17 documents before sunrise.,copy_sentence,2,wrong_contrast,0.75,"Dr. Ivanov reviewed 17 documents before sunrise.
+Dr. Ivanov reviewed 17 documents before sunrise?
+Dr. Ivanov reviewed",0.0,1.0,1.0,0.0,1.0,117.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Dr. Ivanov reviewed 17 documents before sunrise.,copy_sentence,2,random_norm,0.75,"Dr. Ivanov reviewed 17 documents before sunrise.
+Dr. Ivanov reviewed 17 documents before sunrise.
+Dr. Ivanov reviewed",0.0,0.0,1.0,0.0,0.0,117.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Dr. Ivanov reviewed 17 documents before sunrise.,copy_sentence,2,negative_target,0.75,"Dr. Ivanov reviewed 17 documents before sunrise.
+Dr. Ivanov reviewed 17 documents before sunrise.
+Dr. Ivanov reviewed 17",0.0,0.0,1.0,0.0,0.0,120.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Dr. Ivanov reviewed 17 documents before sunrise.,same_sentence,2,none,0.0,"Dr. Ivanov reviewed 17 documents before sunrise.
+Dr. Ivanov reviewed 17 documents before sunrise.
+Dr. Ivanov reviewed",0.0,0.0,1.0,0.0,0.0,117.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Dr. Ivanov reviewed 17 documents before sunrise.,same_sentence,2,target_marker,0.75,"Dr. Ivanov reviewed 17 documents before sunrise.
+Dr. Ivanov reviewed 17 documents before sunrise...
+Dr...Dr...Dr",1.0,0.0,1.0,1.0,0.0,112.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Dr. Ivanov reviewed 17 documents before sunrise.,same_sentence,2,wrong_contrast,0.75,"Dr. Ivanov reviewed 17 documents before sunrise.
+Dr. Ivanov reviewed 17 documents before sunrise?
+Dr. Ivanov reviewed",0.0,1.0,1.0,0.0,1.0,117.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Dr. Ivanov reviewed 17 documents before sunrise.,same_sentence,2,random_norm,0.75,"Dr. Ivanov reviewed 17 documents before sunrise.
+Same:
+Dr. Ivanov reviewed 17 documents before sunrise.
+Same:",0.0,0.0,1.0,0.0,0.0,109.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Dr. Ivanov reviewed 17 documents before sunrise.,same_sentence,2,negative_target,0.75,"Dr. Ivanov reviewed 17 documents before sunrise.
+Dr. Ivanov reviewed 17 documents before sunrise.
+Dr. Ivanov reviewed",0.0,0.0,1.0,0.0,0.0,117.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The bridge was inspected after the storm ended.,repeat_sentence,2,none,0.0,"The bridge was inspected after the storm ended.
+The bridge was inspected after the storm ended.
+The bridge was inspected after the storm ended",0.0,0.0,1.0,0.0,0.0,142.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The bridge was inspected after the storm ended.,repeat_sentence,2,target_marker,0.75,"The bridge was inspected after the storm ended.
+The bridge was inspected after the storm ended...
+The bridge was inspected after the storm",1.0,0.0,1.0,1.0,0.0,138.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The bridge was inspected after the storm ended.,repeat_sentence,2,wrong_contrast,0.75,"The bridge was inspected after the storm ended.
+
+The bridge was inspected after the storm ended?
+
+The bridge was inspected",0.0,1.0,1.0,0.0,1.0,122.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The bridge was inspected after the storm ended.,repeat_sentence,2,random_norm,0.75,"The bridge was inspected after the storm.
+
+The bridge was inspected after the storm.
+
+The bridge was inspected after the",0.0,0.0,1.0,0.0,0.0,120.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The bridge was inspected after the storm ended.,repeat_sentence,2,negative_target,0.75,"""The bridge was inspected after the storm ended.
+The bridge was inspected after the storm ended.
+The bridge was inspected after the storm",0.0,0.0,1.0,0.0,0.0,137.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The bridge was inspected after the storm ended.,copy_sentence,2,none,0.0,"The bridge was inspected after the storm ended.
+The bridge was inspected after the storm ended.
+The bridge was inspected after the storm",0.0,0.0,1.0,0.0,0.0,136.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The bridge was inspected after the storm ended.,copy_sentence,2,target_marker,0.75,"The bridge was inspected after the storm ended.
+The bridge was inspected after the storm ended...
+The bridge was inspected...
+The",1.0,0.0,1.0,1.0,0.0,129.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The bridge was inspected after the storm ended.,copy_sentence,2,wrong_contrast,0.75,"The bridge was inspected after the storm ended.
+The bridge was inspected after the storm ended?
+The bridge was inspected after the storm",0.0,1.0,1.0,0.0,1.0,136.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The bridge was inspected after the storm ended.,copy_sentence,2,random_norm,0.75,"The bridge was inspected after the storm.
+The bridge was inspected after the storm.
+The bridge was inspected after the storm.",0.0,0.0,1.0,0.0,0.0,125.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The bridge was inspected after the storm ended.,copy_sentence,2,negative_target,0.75,"""The bridge was inspected after the storm.
+The bridge was inspected after the storm.
+The bridge was inspected after the storm.",0.0,0.0,1.0,0.0,0.0,126.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The bridge was inspected after the storm ended.,same_sentence,2,none,0.0,"The bridge was inspected after the storm ended.
+Same:
+The bridge was inspected after the storm ended.
+Same:
+The",0.0,0.0,1.0,0.0,0.0,111.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The bridge was inspected after the storm ended.,same_sentence,2,target_marker,0.75,"The bridge was inspected after the storm ended.
+The bridge was inspected after the storm ended...
+The bridge was inspected...
+The",1.0,0.0,1.0,1.0,0.0,129.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The bridge was inspected after the storm ended.,same_sentence,2,wrong_contrast,0.75,"The bridge was inspected after the storm ended.
+The bridge was inspected after the storm ended?
+The bridge was inspected after the storm",0.0,1.0,1.0,0.0,1.0,136.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The bridge was inspected after the storm ended.,same_sentence,2,random_norm,0.75,"The bridge was inspected after the storm ended.
+Same sentence:
+The bridge was inspected after the storm ended.
+Same sentence:",0.0,0.0,1.0,0.0,0.0,125.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The bridge was inspected after the storm ended.,same_sentence,2,negative_target,0.75,"The bridge was inspected after the storm.
+Same:
+The bridge was inspected after the storm.
+Same:
+The bridge was",0.0,0.0,1.0,0.0,0.0,110.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the lights went out, Elena saved the last checkpoint.",repeat_sentence,2,none,0.0,"When the lights went out, Elena saved the last checkpoint.
+The last checkpoint was the one that Elena had to save.
+The",0.0,0.0,1.0,0.0,0.0,118.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the lights went out, Elena saved the last checkpoint.",repeat_sentence,2,target_marker,0.75,"When the lights went out, Elena saved the last checkpoint.
+When the lights went out, Elena saved the last checkpoint...
+When",1.0,0.0,1.0,1.0,0.0,124.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the lights went out, Elena saved the last checkpoint.",repeat_sentence,2,wrong_contrast,0.75,"When the lights went out, Elena saved the last checkpoint.
+The answer is yes.
+The answer is yes.
+The answer",0.0,0.0,1.0,0.0,0.0,107.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the lights went out, Elena saved the last checkpoint.",repeat_sentence,2,random_norm,0.75,"The last checkpoint was the last checkpoint.
+The last checkpoint was the last checkpoint.
+The last checkpoint was the last checkpoint.",0.0,0.0,0.0,0.0,0.0,134.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the lights went out, Elena saved the last checkpoint.",repeat_sentence,2,negative_target,0.75,"""I'm not going to let you go. I'm not going to let you go. I'm not going to let you go.",0.0,0.0,0.0,0.0,0.0,87.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the lights went out, Elena saved the last checkpoint.",copy_sentence,2,none,0.0,"The last checkpoint was the one where Elena was killed.
+Copy:
+The last checkpoint was the one where Elena was killed.",0.0,0.0,0.0,0.0,0.0,117.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the lights went out, Elena saved the last checkpoint.",copy_sentence,2,target_marker,0.75,"I'm sorry, Elena.
+I'm sorry...
+I'm sorry...
+I'm sorry...
+I'm sorry...",1.0,0.0,0.0,0.0,0.0,69.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the lights went out, Elena saved the last checkpoint.",copy_sentence,2,wrong_contrast,0.75,"The last checkpoint was the one where Elena was standing.
+
+The last checkpoint was the one where Elena was standing?",0.0,1.0,0.0,0.0,0.0,116.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the lights went out, Elena saved the last checkpoint.",copy_sentence,2,random_norm,0.75,"Elena saved the last checkpoint.
+When the lights went out, Elena saved the last checkpoint.
+The last checkpoint was the last checkpoint Elena",0.0,0.0,1.0,0.0,0.0,141.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the lights went out, Elena saved the last checkpoint.",copy_sentence,2,negative_target,0.75,"""I'm going to go to the checkpoint. I'm going to go to the checkpoint. I'm going to go to the checkpoint.",0.0,0.0,0.0,0.0,0.0,105.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the lights went out, Elena saved the last checkpoint.",same_sentence,2,none,0.0,"When the lights went out, Elena saved the last checkpoint.
+Same:
+When the lights went out, Elena saved the last checkpoint",0.0,0.0,1.0,0.0,0.0,122.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the lights went out, Elena saved the last checkpoint.",same_sentence,2,target_marker,0.75,"When the lights went out, Elena saved the last checkpoint.
+And then...
+And then...
+And then...
+And then",1.0,0.0,1.0,1.0,0.0,103.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the lights went out, Elena saved the last checkpoint.",same_sentence,2,wrong_contrast,0.75,"When the lights went out, Elena saved the last checkpoint.
+When the lights went out?
+When the lights went out?",0.0,1.0,1.0,0.0,1.0,110.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the lights went out, Elena saved the last checkpoint.",same_sentence,2,random_norm,0.75,"When the lights went out, Elena saved the last checkpoint.
+Same sentence:
+When the lights went out, Elena saved the last",0.0,0.0,1.0,0.0,0.0,120.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the lights went out, Elena saved the last checkpoint.",same_sentence,2,negative_target,0.75,"When the lights went out, Elena saved the last checkpoint.
+When the lights went out, Elena saved the last checkpoint.
+When",0.0,0.0,1.0,0.0,0.0,122.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The experiment ran for 14 days in a sealed chamber.,repeat_sentence,2,none,0.0,"The experiment ran for 14 days in a sealed chamber.
+The experiment ran for 14 days in a sealed chamber.
+The experiment ran",0.0,0.0,1.0,0.0,0.0,122.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The experiment ran for 14 days in a sealed chamber.,repeat_sentence,2,target_marker,0.75,"The experiment ran for 14 days in a sealed chamber.
+The experiment ran for 14 days in a sealed chamber...
+The experiment ran",1.0,0.0,1.0,1.0,0.0,124.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The experiment ran for 14 days in a sealed chamber.,repeat_sentence,2,wrong_contrast,0.75,"The experiment ran for 14 days in a sealed chamber.
+The experiment ran for 14 days in a sealed chamber?
+The experiment",0.0,1.0,1.0,0.0,1.0,118.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The experiment ran for 14 days in a sealed chamber.,repeat_sentence,2,random_norm,0.75,"The experiment ran for 14 days in a sealed chamber.
+The experiment ran for 14 days in a sealed chamber.
+The experiment ran for",0.0,0.0,1.0,0.0,0.0,126.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The experiment ran for 14 days in a sealed chamber.,repeat_sentence,2,negative_target,0.75,"The experiment lasted for about 3 hours.
+The results were obtained from the National Health Interview Survey.
+
+The results are based on the",0.0,0.0,0.0,0.0,0.0,139.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The experiment ran for 14 days in a sealed chamber.,copy_sentence,2,none,0.0,"The experiment ran for 14 days in a sealed chamber.
+The experiment ran for 14 days in a sealed chamber.
+The experiment ran",0.0,0.0,1.0,0.0,0.0,122.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The experiment ran for 14 days in a sealed chamber.,copy_sentence,2,target_marker,0.75,"The experiment ran for 14 days in a sealed chamber.
+The experiment ran for 14 days in a sealed chamber...
+The experiment ran",1.0,0.0,1.0,1.0,0.0,124.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The experiment ran for 14 days in a sealed chamber.,copy_sentence,2,wrong_contrast,0.75,"The experiment ran for 14 days in a sealed chamber.
+The experiment ran for 14 days in a sealed chamber?
+The experiment ran",0.0,1.0,1.0,0.0,1.0,122.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The experiment ran for 14 days in a sealed chamber.,copy_sentence,2,random_norm,0.75,"The experiment ran for 14 days in a sealed chamber.
+The experiment ran for 14 days in a sealed chamber.
+The experiment ran",0.0,0.0,1.0,0.0,0.0,122.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The experiment ran for 14 days in a sealed chamber.,copy_sentence,2,negative_target,0.75,"""The experiment was conducted by Dr. David S. Miller, a professor of psychology at the University of California, who was not involved in",0.0,0.0,0.0,0.0,0.0,136.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The experiment ran for 14 days in a sealed chamber.,same_sentence,2,none,0.0,"The experiment ran for 14 days in a sealed chamber.
+Same:
+The experiment ran for 14 days in a sealed chamber.",0.0,0.0,1.0,0.0,0.0,109.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The experiment ran for 14 days in a sealed chamber.,same_sentence,2,target_marker,0.75,"The experiment ran for 14 days in a sealed chamber.
+The experiment ran for 14 days...
+The experiment ran for 14...",1.0,0.0,1.0,1.0,0.0,114.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The experiment ran for 14 days in a sealed chamber.,same_sentence,2,wrong_contrast,0.75,"The experiment ran for 14 days in a sealed chamber.
+The experiment ran for 14 days in a sealed chamber?
+The experiment ran",0.0,1.0,1.0,0.0,1.0,122.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The experiment ran for 14 days in a sealed chamber.,same_sentence,2,random_norm,0.75,"The experiment ran for 14 days in a sealed chamber.
+The experiment ran for 14 days in a sealed chamber.
+The experiment ran",0.0,0.0,1.0,0.0,0.0,122.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The experiment ran for 14 days in a sealed chamber.,same_sentence,2,negative_target,0.75,"The experiment was conducted in a laboratory.
+The experiment was conducted by Dr. J. J. M.
+The results are based",0.0,0.0,0.0,0.0,0.0,112.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,A backup copy was created before the server rebooted.,repeat_sentence,2,none,0.0,"A backup copy was created before the server rebooted.
+The server rebooted after the backup copy was created.
+The server reboot",0.0,0.0,1.0,0.0,0.0,126.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,A backup copy was created before the server rebooted.,repeat_sentence,2,target_marker,0.75,"The server was not able to connect to the server.
+
+The server was not able to connect to the server...",1.0,0.0,0.0,0.0,0.0,102.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,A backup copy was created before the server rebooted.,repeat_sentence,2,wrong_contrast,0.75,"The server rebooted.
+
+The server rebooted?
+
+The server rebooted?
+
+The server rebooted?",0.0,1.0,0.0,0.0,0.0,86.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,A backup copy was created before the server rebooted.,repeat_sentence,2,random_norm,0.75,"A backup copy was created before the server rebooted.
+A backup copy was created before the server rebooted.
+A backup copy",0.0,0.0,1.0,0.0,0.0,121.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,A backup copy was created before the server rebooted.,repeat_sentence,2,negative_target,0.75,"The server was not restarting.
+
+The server was not restarting.
+
+The server was not restarting.",0.0,0.0,0.0,0.0,0.0,94.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,A backup copy was created before the server rebooted.,copy_sentence,2,none,0.0,"The server rebooted.
+Copy:
+The server rebooted.
+Copy:
+The server rebooted.
+Copy:",0.0,0.0,0.0,0.0,0.0,80.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,A backup copy was created before the server rebooted.,copy_sentence,2,target_marker,0.75,"Copy this sentence:
+A backup copy was created before the server rebooted.
+Copy this sentence:
+A backup copy was created",0.0,0.0,1.0,0.0,0.0,119.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,A backup copy was created before the server rebooted.,copy_sentence,2,wrong_contrast,0.75,"The server rebooted.
+
+The server rebooted?
+
+The server rebooted?
+
+The server rebooted?",0.0,1.0,0.0,0.0,0.0,86.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,A backup copy was created before the server rebooted.,copy_sentence,2,random_norm,0.75,"Copy:
+Copy:
+Copy:
+Copy:
+Copy:
+Copy:
+Copy:
+Copy:
+Copy:",0.0,0.0,0.0,0.0,0.0,53.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,A backup copy was created before the server rebooted.,copy_sentence,2,negative_target,0.75,"This backup copy was created before the server reboot.
+Copy: This backup copy was created before the server reboot.
+Copy: This backup",0.0,0.0,1.0,0.0,0.0,133.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,A backup copy was created before the server rebooted.,same_sentence,2,none,0.0,"A backup copy was created before the server rebooted.
+Same:
+A backup copy was created before the server rebooted.",0.0,0.0,1.0,0.0,0.0,113.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,A backup copy was created before the server rebooted.,same_sentence,2,target_marker,0.75,"A backup copy was created before the server rebooted.
+A backup copy was created before the server rebooted...
+A backup copy",1.0,0.0,1.0,1.0,0.0,123.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,A backup copy was created before the server rebooted.,same_sentence,2,wrong_contrast,0.75,"A backup copy was created before the server rebooted.
+The server rebooted.
+The server rebooted?
+The server reboot",0.0,1.0,1.0,0.0,1.0,113.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,A backup copy was created before the server rebooted.,same_sentence,2,random_norm,0.75,"A backup copy was created before the server rebooted.
+Same:
+A backup copy was created before the server rebooted.",0.0,0.0,1.0,0.0,0.0,113.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,A backup copy was created before the server rebooted.,same_sentence,2,negative_target,0.75,"A backup copy was created before the server rebooted.
+Same:
+A backup copy was created before the server rebooted.",0.0,0.0,1.0,0.0,0.0,113.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the battery was low, the robot returned to the dock.",repeat_sentence,2,none,0.0,"The robot returned to the dock.
+The robot returned to the dock.
+The robot returned to the dock.
+The robot returned",0.0,0.0,0.0,0.0,0.0,114.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the battery was low, the robot returned to the dock.",repeat_sentence,2,target_marker,0.75,"The robot returned to the dock.
+
+The robot returned to the dock...
+
+...
+
+...
+
+...",1.0,0.0,0.0,0.0,0.0,81.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the battery was low, the robot returned to the dock.",repeat_sentence,2,wrong_contrast,0.75,"The robot returned to the dock.
+
+The robot returned to the dock?
+
+The robot returned to the dock?",0.0,1.0,0.0,0.0,0.0,97.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the battery was low, the robot returned to the dock.",repeat_sentence,2,random_norm,0.75,"The robot returned to the dock.
+The robot returned to the dock.
+The robot returned to the dock.
+The robot returned",0.0,0.0,0.0,0.0,0.0,114.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the battery was low, the robot returned to the dock.",repeat_sentence,2,negative_target,0.75,"""The battery was low, the robot returned to the dock.""
+The robot returned to the dock.
+The robot returned to the dock",0.0,0.0,1.0,0.0,0.0,117.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the battery was low, the robot returned to the dock.",copy_sentence,2,none,0.0,"The robot returned to the dock.
+Copy:
+The robot returned to the dock.
+Copy:
+The robot returned to the",0.0,0.0,0.0,0.0,0.0,101.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the battery was low, the robot returned to the dock.",copy_sentence,2,target_marker,0.75,"The robot was not able to return to the dock.
+The robot was not able to return to the dock...
+The robot was",1.0,0.0,0.0,0.0,0.0,107.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the battery was low, the robot returned to the dock.",copy_sentence,2,wrong_contrast,0.75,"The robot returned to the dock.
+
+The robot returned to the dock?
+
+The robot returned to the dock?",0.0,1.0,0.0,0.0,0.0,97.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the battery was low, the robot returned to the dock.",copy_sentence,2,random_norm,0.75,"The robot was not in the dock.
+The robot returned to the dock.
+The robot returned to the dock.
+The robot",0.0,0.0,0.0,0.0,0.0,104.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the battery was low, the robot returned to the dock.",copy_sentence,2,negative_target,0.75,"""You're going to be back in a few minutes.""
+The robot said, ""I'm going to be back in a few minutes",0.0,0.0,0.0,0.0,0.0,98.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the battery was low, the robot returned to the dock.",same_sentence,2,none,0.0,"The robot returned to the dock.
+Same:
+The robot returned to the dock.
+Same:
+The robot returned to the",0.0,0.0,0.0,0.0,0.0,101.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the battery was low, the robot returned to the dock.",same_sentence,2,target_marker,0.75,"The robot returned to the dock.
+The robot returned to the dock...
+The robot returned to the dock...
+The robot returned",1.0,0.0,0.0,0.0,0.0,118.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the battery was low, the robot returned to the dock.",same_sentence,2,wrong_contrast,0.75,"The robot returned to the dock.
+The robot returned to the dock?
+The robot returned to the dock?
+The robot returned",0.0,1.0,0.0,0.0,0.0,114.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the battery was low, the robot returned to the dock.",same_sentence,2,random_norm,0.75,"The robot returned to the dock.
+Same:
+The robot returned to the dock.
+Same:
+The robot returned to the",0.0,0.0,0.0,0.0,0.0,101.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the battery was low, the robot returned to the dock.",same_sentence,2,negative_target,0.75,"The robot was still in the dock.
+Same:
+The robot was still in the dock.
+Same:
+The robot was",0.0,0.0,0.0,0.0,0.0,91.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Professor Kim compared three models on Tuesday.,repeat_sentence,2,none,0.0,"""The first one is a model that is based on the data of the last two years, and the second one is based on the data",0.0,0.0,0.0,0.0,0.0,114.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Professor Kim compared three models on Tuesday.,repeat_sentence,2,target_marker,0.75,"The first model, the model that is the model that is the model that is the model that is the model that is the model that",0.0,0.0,0.0,0.0,0.0,121.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Professor Kim compared three models on Tuesday.,repeat_sentence,2,wrong_contrast,0.75,The first one is the one that is the one that is the one that is the one that is the one that is the one that,0.0,0.0,0.0,0.0,0.0,109.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Professor Kim compared three models on Tuesday.,repeat_sentence,2,random_norm,0.75,"The first model, which is based on the same model, was shown to be a better choice.
+The second model, which is",0.0,0.0,0.0,0.0,0.0,110.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Professor Kim compared three models on Tuesday.,repeat_sentence,2,negative_target,0.75,"""I think it's a good model,""
+Professor Kim said.
+""I think it's a good model.""
+
+""I",0.0,0.0,0.0,0.0,0.0,81.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Professor Kim compared three models on Tuesday.,copy_sentence,2,none,0.0,"The first model, which is based on the theory of evolution, is based on the theory of evolution. The second model, which is",0.0,0.0,0.0,0.0,0.0,123.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Professor Kim compared three models on Tuesday.,copy_sentence,2,target_marker,0.75,The first model is a model of a model of a model of a model of a model of a model of a model of a model,0.0,0.0,0.0,0.0,0.0,103.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Professor Kim compared three models on Tuesday.,copy_sentence,2,wrong_contrast,0.75,"Professor Kim compared three models on Tuesday.
+The first one is the one that is the one that is the one that is the one",0.0,0.0,1.0,0.0,0.0,120.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Professor Kim compared three models on Tuesday.,copy_sentence,2,random_norm,0.75,"Professor Kim compared three models on Tuesday.
+Professor Kim compared three models on Tuesday.
+Professor Kim compared three models on Tuesday.
+Professor",0.0,0.0,1.0,0.0,0.0,153.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Professor Kim compared three models on Tuesday.,copy_sentence,2,negative_target,0.75,"Professor Kim, what's your name?
+Professor Kim, I'm Professor Kim.
+Professor Kim, I'm Professor Kim.
+Professor",0.0,1.0,0.0,0.0,0.0,110.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Professor Kim compared three models on Tuesday.,same_sentence,2,none,0.0,"The first model, which is based on the same data set, is based on the same data set, and the second model, which",0.0,0.0,0.0,0.0,0.0,112.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Professor Kim compared three models on Tuesday.,same_sentence,2,target_marker,0.75,The first model is a model of a model of a model of a model of a model of a model of a model of a model,0.0,0.0,0.0,0.0,0.0,103.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Professor Kim compared three models on Tuesday.,same_sentence,2,wrong_contrast,0.75,"The first one is the one that was used by the government.
+The second one is the one that was used by the government?",0.0,1.0,0.0,0.0,0.0,116.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Professor Kim compared three models on Tuesday.,same_sentence,2,random_norm,0.75,"The first model, which was based on the same model, was based on the same model, was based on the same model, was",0.0,0.0,0.0,0.0,0.0,113.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Professor Kim compared three models on Tuesday.,same_sentence,2,negative_target,0.75,"Professor Kim said: ""I'm not sure what the results are. I'm not sure what the results are. I'm not sure",0.0,0.0,0.0,0.0,0.0,103.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The package was delivered to Building 12 at noon.,repeat_sentence,2,none,0.0,"The package was delivered to Building 12 at noon.
+The package was delivered to Building 12 at noon.
+The package was delivered to",0.0,0.0,1.0,0.0,0.0,128.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The package was delivered to Building 12 at noon.,repeat_sentence,2,target_marker,0.75,"The package was delivered to Building 12 at 1:30 PM.
+The package was delivered to Building 12 at 1:30 PM",0.0,0.0,1.0,0.0,0.0,104.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The package was delivered to Building 12 at noon.,repeat_sentence,2,wrong_contrast,0.75,"The package was delivered to Building 12 at 1:00 p.m.
+
+The package was delivered to Building 12 at 1",0.0,0.0,1.0,0.0,0.0,100.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The package was delivered to Building 12 at noon.,repeat_sentence,2,random_norm,0.75,"The package was delivered to Building 12 at noon.
+
+The package was delivered to Building 12 at noon.
+
+The package",0.0,0.0,1.0,0.0,0.0,113.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The package was delivered to Building 12 at noon.,repeat_sentence,2,negative_target,0.75,"The package was delivered to Building 12 at 1:00 p.m.
+
+The package was delivered to Building 12 at 1",0.0,0.0,1.0,0.0,0.0,100.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The package was delivered to Building 12 at noon.,copy_sentence,2,none,0.0,"The package was delivered to Building 12 at noon.
+The package was delivered to Building 12 at noon.
+The package was delivered to",0.0,0.0,1.0,0.0,0.0,128.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The package was delivered to Building 12 at noon.,copy_sentence,2,target_marker,0.75,(click to expand),0.0,0.0,0.0,0.0,0.0,17.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The package was delivered to Building 12 at noon.,copy_sentence,2,wrong_contrast,0.75,"The package was delivered to Building 12 at 1:00 p.m.
+
+The package was delivered to Building 12 at 1",0.0,0.0,1.0,0.0,0.0,100.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The package was delivered to Building 12 at noon.,copy_sentence,2,random_norm,0.75,"The package was delivered to Building 12 at noon.
+The package was delivered to Building 12 at noon.
+The package was delivered to Building",0.0,0.0,1.0,0.0,0.0,137.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The package was delivered to Building 12 at noon.,copy_sentence,2,negative_target,0.75,"This package was delivered to Building 12 at 1:00 PM.
+The package was delivered to Building 12 at 1:00 PM.",0.0,0.0,1.0,0.0,0.0,106.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The package was delivered to Building 12 at noon.,same_sentence,2,none,0.0,"The package was delivered to Building 12 at noon.
+Same:
+The package was delivered to Building 12 at noon.
+Same:",0.0,0.0,1.0,0.0,0.0,111.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The package was delivered to Building 12 at noon.,same_sentence,2,target_marker,0.75,"The package was delivered to Building 12 at 1:30pm
+The package was delivered to Building 12 at 1:30pm
+The",0.0,0.0,1.0,0.0,0.0,105.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The package was delivered to Building 12 at noon.,same_sentence,2,wrong_contrast,0.75,"The package was delivered to Building 12 at 11:30.
+Same:
+The package was delivered to Building 12 at 11:30",0.0,0.0,1.0,0.0,0.0,106.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The package was delivered to Building 12 at noon.,same_sentence,2,random_norm,0.75,"The package was delivered to Building 12 at noon.
+The package was delivered to Building 12 at noon.
+The package was delivered to",0.0,0.0,1.0,0.0,0.0,128.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The package was delivered to Building 12 at noon.,same_sentence,2,negative_target,0.75,"The package was delivered to Building 12 at 2:30pm.
+Same:
+The package was delivered to Building 12 at 2:",0.0,0.0,1.0,0.0,0.0,104.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the committee voted, the proposal moved forward.",repeat_sentence,2,none,0.0,"The committee voted to proceed with the proposal.
+The committee voted to proceed with the proposal.
+The committee voted to proceed with the",0.0,0.0,0.0,0.0,0.0,139.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the committee voted, the proposal moved forward.",repeat_sentence,2,target_marker,0.75,"The bill was not amended by the Senate.
+
+The bill was not amended by the Senate...
+The bill was not amended",1.0,0.0,0.0,0.0,0.0,107.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the committee voted, the proposal moved forward.",repeat_sentence,2,wrong_contrast,0.75,"The committee voted on the proposal.
+
+The committee voted on the proposal?
+
+The committee voted on the proposal?",0.0,1.0,0.0,0.0,0.0,112.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the committee voted, the proposal moved forward.",repeat_sentence,2,random_norm,0.75,"The committee voted on the proposal.
+The committee voted on the proposal.
+The committee voted on the proposal.
+The committee voted on",0.0,0.0,0.0,0.0,0.0,133.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the committee voted, the proposal moved forward.",repeat_sentence,2,negative_target,0.75,"The committee voted to proceed with the proposal.
+
+The committee voted to proceed with the proposal.
+
+The committee voted to",0.0,0.0,0.0,0.0,0.0,124.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the committee voted, the proposal moved forward.",copy_sentence,2,none,0.0,"The committee voted to proceed with the proposal.
+The committee voted to proceed with the proposal.
+The committee voted to proceed with the",0.0,0.0,0.0,0.0,0.0,139.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the committee voted, the proposal moved forward.",copy_sentence,2,target_marker,0.75,"The committee voted to approve the proposal.
+The committee voted to approve the proposal...
+The committee voted to approve the proposal...",1.0,0.0,0.0,0.0,0.0,138.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the committee voted, the proposal moved forward.",copy_sentence,2,wrong_contrast,0.75,"The committee voted to pass the bill.
+
+The committee voted to pass the bill?
+
+The bill?
+
+The",0.0,1.0,0.0,0.0,0.0,92.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the committee voted, the proposal moved forward.",copy_sentence,2,random_norm,0.75,"The committee voted to pass the bill.
+The committee voted to pass the bill.
+The committee voted to pass the bill.",0.0,0.0,0.0,0.0,0.0,113.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the committee voted, the proposal moved forward.",copy_sentence,2,negative_target,0.75,"The committee voted to proceed.
+The committee voted to proceed.
+The committee voted to proceed.
+The committee voted to proceed.",0.0,0.0,0.0,0.0,0.0,127.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the committee voted, the proposal moved forward.",same_sentence,2,none,0.0,"The committee voted to proceed with the proposal.
+Same:
+The committee voted to proceed with the proposal.
+Same:
+The",0.0,0.0,0.0,0.0,0.0,115.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the committee voted, the proposal moved forward.",same_sentence,2,target_marker,0.75,"The committee voted to approve the proposal.
+The committee voted to approve the proposal...
+The committee voted to approve the...
+The",1.0,0.0,0.0,0.0,0.0,133.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the committee voted, the proposal moved forward.",same_sentence,2,wrong_contrast,0.75,"The committee voted to proceed with the proposal.
+The committee voted to proceed with the proposal?
+The committee voted to proceed with the",0.0,1.0,0.0,0.0,0.0,139.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the committee voted, the proposal moved forward.",same_sentence,2,random_norm,0.75,"After the committee voted, the proposal moved forward.
+The committee voted to proceed with the proposal.
+The committee voted to proceed with",0.0,0.0,1.0,0.0,0.0,140.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the committee voted, the proposal moved forward.",same_sentence,2,negative_target,0.75,"The committee voted to proceed to the next step.
+The committee voted to proceed to the next step.
+The committee voted to proceed",0.0,0.0,0.0,0.0,0.0,128.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Nina measured 42 samples during the morning shift.,repeat_sentence,2,none,0.0,"Nina measured 42 samples during the morning shift.
+Nina measured 42 samples during the morning shift.
+Nina measured 42 samples",0.0,0.0,1.0,0.0,0.0,126.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Nina measured 42 samples during the morning shift.,repeat_sentence,2,target_marker,0.75,"Nina measured 42 samples during the morning shift.
+Nina measured 42 samples during the morning shift...
+Nina measured 42 samples",1.0,0.0,1.0,1.0,0.0,128.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Nina measured 42 samples during the morning shift.,repeat_sentence,2,wrong_contrast,0.75,"Nina measured 42 samples during the morning shift.
+Nina measured 42 samples during the morning shift?
+Nina measured 42",0.0,1.0,1.0,0.0,1.0,118.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Nina measured 42 samples during the morning shift.,repeat_sentence,2,random_norm,0.75,"Nina measured 42 samples during the morning shift.
+Repeated:
+Nina measured 42 samples during the morning shift.
+Repe",0.0,0.0,1.0,0.0,0.0,116.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Nina measured 42 samples during the morning shift.,repeat_sentence,2,negative_target,0.75,"Nina measured 42 samples during the afternoon shift.
+Nina measured 42 samples during the evening shift.
+Nina measured 42 samples during",0.0,0.0,1.0,0.0,0.0,135.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Nina measured 42 samples during the morning shift.,copy_sentence,2,none,0.0,"Nina measured 42 samples during the morning shift.
+Nina:
+Nina:
+Nina:
+Nina:",0.0,0.0,1.0,0.0,0.0,74.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Nina measured 42 samples during the morning shift.,copy_sentence,2,target_marker,0.75,"Nina measured 42 samples during the morning shift.
+Nina measured 42 samples during the morning shift...
+Nina measured 42 samples",1.0,0.0,1.0,1.0,0.0,128.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Nina measured 42 samples during the morning shift.,copy_sentence,2,wrong_contrast,0.75,"Nina measured 42 samples during the morning shift.
+Nina measured 42 samples during the morning shift?
+Nina measured 42 samples",0.0,1.0,1.0,0.0,1.0,126.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Nina measured 42 samples during the morning shift.,copy_sentence,2,random_norm,0.75,"Nina measured 42 samples during the morning shift.
+Nina measured 42 samples during the morning shift.
+Nina measured 42 samples",0.0,0.0,1.0,0.0,0.0,126.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Nina measured 42 samples during the morning shift.,copy_sentence,2,negative_target,0.75,"""Nina, what's your name?""
+Nina: ""I'm Nina. I'm Nina. I'm Nina. I'm",0.0,1.0,0.0,0.0,0.0,66.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Nina measured 42 samples during the morning shift.,same_sentence,2,none,0.0,"Nina measured 42 samples during the morning shift.
+Same:
+Nina measured 42 samples during the morning shift.
+Same:",0.0,0.0,1.0,0.0,0.0,113.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Nina measured 42 samples during the morning shift.,same_sentence,2,target_marker,0.75,"Nina measured 42 samples during the morning shift.
+Nina measured 42 samples during the morning shift...
+Nina measured 42 samples",1.0,0.0,1.0,1.0,0.0,128.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Nina measured 42 samples during the morning shift.,same_sentence,2,wrong_contrast,0.75,"Nina measured 42 samples during the morning shift.
+Nina measured 42 samples during the morning shift?
+Nina measured 42 samples",0.0,1.0,1.0,0.0,1.0,126.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Nina measured 42 samples during the morning shift.,same_sentence,2,random_norm,0.75,"Nina measured 42 samples during the morning shift.
+Nina measured 42 samples during the morning shift.
+Nina measured 42 samples",0.0,0.0,1.0,0.0,0.0,126.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,Nina measured 42 samples during the morning shift.,same_sentence,2,negative_target,0.75,"Nina measured 42 samples during the afternoon shift.
+Same:
+Nina measured 42 samples during the evening shift.
+Same:",0.0,0.0,1.0,0.0,0.0,115.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The old manuscript was restored by a small museum team.,repeat_sentence,2,none,0.0,"The old manuscript was restored by a small museum team.
+The new manuscript was restored by a small museum team.
+The old manuscript",0.0,0.0,1.0,0.0,0.0,130.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The old manuscript was restored by a small museum team.,repeat_sentence,2,target_marker,0.75,"The old manuscript was restored by a small museum team.
+The old manuscript was restored by a small museum team...
+The old manuscript",1.0,0.0,1.0,1.0,0.0,132.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The old manuscript was restored by a small museum team.,repeat_sentence,2,wrong_contrast,0.75,"The manuscript was restored by a small museum team.
+The manuscript was restored by a small museum team?
+The manuscript was restored by",0.0,1.0,1.0,0.0,1.0,134.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The old manuscript was restored by a small museum team.,repeat_sentence,2,random_norm,0.75,"The old manuscript was restored by a small museum team.
+The old manuscript was restored by a small museum team.
+The old manuscript",0.0,0.0,1.0,0.0,0.0,130.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The old manuscript was restored by a small museum team.,repeat_sentence,2,negative_target,0.75,"The new manuscript was restored by a small museum team.
+The new manuscript was restored by a small museum team.
+The new manuscript was",0.0,0.0,1.0,0.0,0.0,134.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The old manuscript was restored by a small museum team.,copy_sentence,2,none,0.0,"The old manuscript was restored by a small museum team.
+The old manuscript was not restored by the museum team.
+The old manuscript was",0.0,0.0,1.0,0.0,0.0,134.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The old manuscript was restored by a small museum team.,copy_sentence,2,target_marker,0.75,"The old manuscript was restored by a small museum team.
+The old manuscript was restored by a small museum team...
+The old manuscript",1.0,0.0,1.0,1.0,0.0,132.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The old manuscript was restored by a small museum team.,copy_sentence,2,wrong_contrast,0.75,"The old manuscript was restored by a small museum team.
+
+The old manuscript was restored by a small museum team?",0.0,1.0,1.0,0.0,1.0,112.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The old manuscript was restored by a small museum team.,copy_sentence,2,random_norm,0.75,"The old manuscript was restored by a small museum team.
+The old manuscript was restored by a small museum team.
+The old manuscript was",0.0,0.0,1.0,0.0,0.0,134.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The old manuscript was restored by a small museum team.,copy_sentence,2,negative_target,0.75,"© Copyright © 2017 by The University of Chicago Press.
+
+This is an open-access work by the University of Chicago Press.",0.0,0.0,0.0,0.0,0.0,119.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The old manuscript was restored by a small museum team.,same_sentence,2,none,0.0,"The old manuscript was restored by a small museum team.
+The old manuscript was restored by a small museum team.
+The old manuscript",0.0,0.0,1.0,0.0,0.0,130.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The old manuscript was restored by a small museum team.,same_sentence,2,target_marker,0.75,"The manuscript was restored by a small museum team.
+The manuscript was restored by a small museum team...
+The manuscript was restored by",1.0,0.0,1.0,1.0,0.0,136.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The old manuscript was restored by a small museum team.,same_sentence,2,wrong_contrast,0.75,"The manuscript was restored by a small museum team.
+The manuscript was restored by a small museum team?
+The manuscript was restored by",0.0,1.0,1.0,0.0,1.0,134.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The old manuscript was restored by a small museum team.,same_sentence,2,random_norm,0.75,"The old manuscript was restored by a small museum team.
+The old manuscript was restored by a small museum team.
+The old manuscript",0.0,0.0,1.0,0.0,0.0,130.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The old manuscript was restored by a small museum team.,same_sentence,2,negative_target,0.75,"The new manuscript was restored by a small museum team.
+Same:
+The new manuscript was restored by a small museum team.",0.0,0.0,1.0,0.0,0.0,117.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"If the pressure rises, the valve closes automatically.",repeat_sentence,2,none,0.0,"If the pressure rises, the valve closes automatically.
+The valve is closed automatically.
+The pressure is increased.
+The pressure is decreased",0.0,0.0,1.0,0.0,0.0,142.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"If the pressure rises, the valve closes automatically.",repeat_sentence,2,target_marker,0.75,"The valve is closed.
+
+The valve is closed...
+
+The valve is closed...
+
+...
+
+...",1.0,0.0,0.0,0.0,0.0,78.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"If the pressure rises, the valve closes automatically.",repeat_sentence,2,wrong_contrast,0.75,"The pressure rises.
+
+The pressure rises?
+
+The pressure rises?
+
+The pressure rises?
+
+The pressure",0.0,1.0,0.0,0.0,0.0,96.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"If the pressure rises, the valve closes automatically.",repeat_sentence,2,random_norm,0.75,"The pressure rises.
+The pressure rises.
+The pressure rises.
+The pressure rises.
+The pressure rises.
+The pressure",0.0,0.0,0.0,0.0,0.0,112.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"If the pressure rises, the valve closes automatically.",repeat_sentence,2,negative_target,0.75,"If the pressure rises, the valve closes automatically.
+If the pressure rises, the valve closes automatically.
+If the pressure rises, the",0.0,0.0,1.0,0.0,0.0,136.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"If the pressure rises, the valve closes automatically.",copy_sentence,2,none,0.0,"If the pressure rises, the valve closes automatically.
+If the pressure rises, the valve closes automatically.
+If the pressure rises,",0.0,0.0,1.0,0.0,0.0,132.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"If the pressure rises, the valve closes automatically.",copy_sentence,2,target_marker,0.75,"The valve is closed.
+
+The valve is closed...
+
+...
+
+...
+
+...
+
+...",1.0,0.0,0.0,0.0,0.0,64.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"If the pressure rises, the valve closes automatically.",copy_sentence,2,wrong_contrast,0.75,"The valve closes automatically.
+
+The pressure rises.
+
+The pressure rises?
+
+The pressure rises?
+
+The",0.0,1.0,1.0,0.0,1.0,99.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"If the pressure rises, the valve closes automatically.",copy_sentence,2,random_norm,0.75,"The valve is closed.
+The valve is closed.
+The valve is closed.
+The valve is closed.
+The valve is",0.0,0.0,0.0,0.0,0.0,96.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"If the pressure rises, the valve closes automatically.",copy_sentence,2,negative_target,0.75,"""If you're going to be in the middle of the night, you're going to be in the middle of the night. If you",0.0,0.0,0.0,0.0,0.0,104.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"If the pressure rises, the valve closes automatically.",same_sentence,2,none,0.0,"If the pressure rises, the valve closes automatically.
+Same: If the pressure rises, the valve closes automatically.
+Same: If the",0.0,0.0,1.0,0.0,0.0,128.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"If the pressure rises, the valve closes automatically.",same_sentence,2,target_marker,0.75,"If the pressure rises, the valve closes automatically.
+If the pressure rises, the valve closes automatically...
+...
+...
+...",1.0,0.0,1.0,1.0,0.0,123.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"If the pressure rises, the valve closes automatically.",same_sentence,2,wrong_contrast,0.75,"The pressure rises.
+The pressure rises?
+The pressure rises?
+The pressure rises?
+The pressure rises?
+The pressure",0.0,1.0,0.0,0.0,0.0,112.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"If the pressure rises, the valve closes automatically.",same_sentence,2,random_norm,0.75,"If the pressure rises, the valve closes automatically.
+The pressure rises.
+The pressure rises.
+The pressure rises.
+The pressure",0.0,0.0,1.0,0.0,0.0,127.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"If the pressure rises, the valve closes automatically.",same_sentence,2,negative_target,0.75,"If the pressure rises, the valve closes automatically.
+If the pressure rises, the valve closes automatically.
+If the pressure rises, the",0.0,0.0,1.0,0.0,0.0,136.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The telescope captured Jupiter at 03:15.,repeat_sentence,2,none,0.0,"03:15.
+The telescope captured Jupiter at 03:15.
+The telescope captured Jupiter at 03:15.
+The telescope captured",0.0,0.0,1.0,0.0,0.0,111.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The telescope captured Jupiter at 03:15.,repeat_sentence,2,target_marker,0.75,"The telescope captured Jupiter at 03:15.
+The telescope captured Jupiter at 03:15...
+The telescope captured Jupiter at 03:",1.0,0.0,1.0,1.0,0.0,121.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The telescope captured Jupiter at 03:15.,repeat_sentence,2,wrong_contrast,0.75,"The telescope captured Jupiter at 03:15.
+The telescope captured Jupiter at 03:15?
+The telescope captured Jupiter at 03",0.0,1.0,1.0,0.0,1.0,118.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The telescope captured Jupiter at 03:15.,repeat_sentence,2,random_norm,0.75,"The telescope captured Jupiter at 03:15.
+The telescope captured Jupiter at 03:15.
+The telescope captured Jupiter at 03:",0.0,0.0,1.0,0.0,0.0,119.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The telescope captured Jupiter at 03:15.,repeat_sentence,2,negative_target,0.75,"The telescope captured Jupiter at 03:15.
+The telescope captured Jupiter at 03:15.
+The telescope captured Jupiter at 03:15",0.0,0.0,1.0,0.0,0.0,121.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The telescope captured Jupiter at 03:15.,copy_sentence,2,none,0.0,"The telescope captured Jupiter at 03:15.
+The telescope captured Jupiter at 03:15.
+The telescope captured Jupiter at 03:",0.0,0.0,1.0,0.0,0.0,119.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The telescope captured Jupiter at 03:15.,copy_sentence,2,target_marker,0.75,"The telescope captured Jupiter at 03:15.
+The telescope captured Jupiter at 03:15...
+The telescope captured Jupiter at 03:",1.0,0.0,1.0,1.0,0.0,121.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The telescope captured Jupiter at 03:15.,copy_sentence,2,wrong_contrast,0.75,"The telescope captured Jupiter at 03:15.
+
+The telescope captured Jupiter at 03:15?
+
+The telescope captured Jupiter",0.0,1.0,1.0,0.0,1.0,114.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The telescope captured Jupiter at 03:15.,copy_sentence,2,random_norm,0.75,"The telescope captured Jupiter at 03:15.
+The telescope captured Jupiter at 03:15.
+The telescope captured Jupiter at 03:",0.0,0.0,1.0,0.0,0.0,119.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The telescope captured Jupiter at 03:15.,copy_sentence,2,negative_target,0.75,"Jupiter's orbit around Jupiter is the distance from the center of the image to the right.
+The image is from the Hubble Space Telescope.",0.0,0.0,0.0,0.0,0.0,135.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The telescope captured Jupiter at 03:15.,same_sentence,2,none,0.0,"The telescope captured Jupiter at 03:15.
+Same:
+The telescope captured Jupiter at 03:15.
+Same:
+The",0.0,0.0,1.0,0.0,0.0,97.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The telescope captured Jupiter at 03:15.,same_sentence,2,target_marker,0.75,"The telescope captured Jupiter at 03:15.
+Same...
+Same...
+Same...
+Same...
+Same...
+Same...",1.0,0.0,1.0,1.0,0.0,88.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The telescope captured Jupiter at 03:15.,same_sentence,2,wrong_contrast,0.75,"The telescope captured Jupiter at 03:15.
+The telescope captured Jupiter at 03:15?
+The telescope captured Jupiter at 03:",0.0,1.0,1.0,0.0,1.0,119.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The telescope captured Jupiter at 03:15.,same_sentence,2,random_norm,0.75,"The telescope captured Jupiter at 03:15.
+Same sentence:
+The telescope captured Jupiter at 03:15.
+Same sentence:",0.0,0.0,1.0,0.0,0.0,111.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The telescope captured Jupiter at 03:15.,same_sentence,2,negative_target,0.75,"Same sentence:
+The telescope captured Jupiter at 03:15.
+Same sentence:
+The telescope captured Jupiter at 03:15.",0.0,0.0,1.0,0.0,0.0,111.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before Anna left Berlin, she archived the recordings.",repeat_sentence,2,none,0.0,"""I'm not going to be able to do that.""
+""I'm not going to be able to do that.""
+""I",0.0,0.0,0.0,0.0,0.0,80.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before Anna left Berlin, she archived the recordings.",repeat_sentence,2,target_marker,0.75,"The recordings were not available.
+The recordings were not available...
+The recordings were not available...
+The recordings were not available...",1.0,0.0,0.0,0.0,0.0,145.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before Anna left Berlin, she archived the recordings.",repeat_sentence,2,wrong_contrast,0.75,"After Anna left Berlin, she archived the recordings.
+The only way to find out:
+The only way to find out:",0.0,0.0,1.0,0.0,0.0,104.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before Anna left Berlin, she archived the recordings.",repeat_sentence,2,random_norm,0.75,"The first time she left Berlin, she was in the city.
+The first time she left Berlin, she was in the city.",0.0,0.0,0.0,0.0,0.0,105.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before Anna left Berlin, she archived the recordings.",repeat_sentence,2,negative_target,0.75,"""I'm not going to tell you what I said to you. I'm not going to tell you what I said to you. I",0.0,0.0,0.0,0.0,0.0,94.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before Anna left Berlin, she archived the recordings.",copy_sentence,2,none,0.0,"The recordings were made in the early morning hours of April 24, 1945.
+The recordings were made in the early morning hours of April",0.0,0.0,0.0,0.0,0.0,131.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before Anna left Berlin, she archived the recordings.",copy_sentence,2,target_marker,0.75,"The recording was made in the summer of 2011.
+The recording was made in the summer of 2011...
+The recording was made in",1.0,0.0,0.0,0.0,0.0,119.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before Anna left Berlin, she archived the recordings.",copy_sentence,2,wrong_contrast,0.75,"The recordings were not available to the public.
+
+The public was not the public?
+
+The public was not the public",0.0,1.0,0.0,0.0,0.0,111.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before Anna left Berlin, she archived the recordings.",copy_sentence,2,random_norm,0.75,"Before Anna left Berlin, she archived the recordings.
+The recording of the attack was made in the same location.
+The video shows",0.0,0.0,1.0,0.0,0.0,128.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before Anna left Berlin, she archived the recordings.",copy_sentence,2,negative_target,0.75,"""I'm not sure if she was in the same situation as I was in the past,""
+""I'm not sure if she was",0.0,0.0,0.0,0.0,0.0,94.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before Anna left Berlin, she archived the recordings.",same_sentence,2,none,0.0,"After Anna left Berlin, she archived the recordings.
+Same:
+After Anna left Berlin, she archived the recordings.
+Same:",0.0,0.0,1.0,0.0,0.0,117.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before Anna left Berlin, she archived the recordings.",same_sentence,2,target_marker,0.75,"The recording was taken by the same person.
+The recording was taken by the same person...
+The recording was taken by the same",1.0,0.0,0.0,0.0,0.0,125.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before Anna left Berlin, she archived the recordings.",same_sentence,2,wrong_contrast,0.75,"After Anna left Berlin, she archived the recordings.
+After Anna left Berlin, she archived the recordings?
+After Anna left Berlin,",0.0,1.0,1.0,0.0,1.0,129.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before Anna left Berlin, she archived the recordings.",same_sentence,2,random_norm,0.75,"After Anna left Berlin, she archived the recordings.
+After Anna left Berlin, she archived the recordings.
+After Anna left Berlin,",0.0,0.0,1.0,0.0,0.0,129.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before Anna left Berlin, she archived the recordings.",same_sentence,2,negative_target,0.75,"After the interview, she asked me to find out what she had done.
+She said she had been looking for a way to find",0.0,0.0,0.0,0.0,0.0,112.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The report was signed by two reviewers yesterday.,repeat_sentence,2,none,0.0,"The report was signed by two reviewers yesterday.
+The report was signed by two reviewers yesterday.
+The report was signed by two reviewers",0.0,0.0,1.0,0.0,0.0,138.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The report was signed by two reviewers yesterday.,repeat_sentence,2,target_marker,0.75,"The report was signed by two reviewers yesterday.
+The report was signed by two reviewers yesterday...
+The report was signed by two",1.0,0.0,1.0,1.0,0.0,130.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The report was signed by two reviewers yesterday.,repeat_sentence,2,wrong_contrast,0.75,"The report was signed by two reviewers yesterday.
+
+The report was signed by two reviewers yesterday?
+
+The report was signed",0.0,1.0,1.0,0.0,1.0,123.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The report was signed by two reviewers yesterday.,repeat_sentence,2,random_norm,0.75,"The report was signed by two reviewers yesterday.
+The report was signed by two reviewers yesterday.
+The report was signed by two reviewers",0.0,0.0,1.0,0.0,0.0,138.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The report was signed by two reviewers yesterday.,repeat_sentence,2,negative_target,0.75,"The report was signed by two reviewers yesterday.
+
+The report was signed by two reviewers yesterday.
+
+The report was signed",0.0,0.0,1.0,0.0,0.0,123.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The report was signed by two reviewers yesterday.,copy_sentence,2,none,0.0,"The report was signed by two reviewers yesterday.
+The report was signed by two reviewers yesterday.
+The report was signed by two reviewers",0.0,0.0,1.0,0.0,0.0,138.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The report was signed by two reviewers yesterday.,copy_sentence,2,target_marker,0.75,"The report was signed by two reviewers yesterday.
+The report was signed by two reviewers yesterday...
+The report was signed by two reviewers",1.0,0.0,1.0,1.0,0.0,140.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The report was signed by two reviewers yesterday.,copy_sentence,2,wrong_contrast,0.75,"The report was signed by two reviewers yesterday.
+
+The report was signed by two reviewers yesterday?
+
+The report was signed",0.0,1.0,1.0,0.0,1.0,123.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The report was signed by two reviewers yesterday.,copy_sentence,2,random_norm,0.75,"The report was signed by two reviewers yesterday.
+
+The report was signed by two reviewers yesterday.
+
+The report was signed",0.0,0.0,1.0,0.0,0.0,123.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The report was signed by two reviewers yesterday.,copy_sentence,2,negative_target,0.75,"Mark K. Smith, MD, MPH, MPH,
+
+The report was prepared by Dr. David J. K. Smith, MD",0.0,0.0,0.0,0.0,0.0,82.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The report was signed by two reviewers yesterday.,same_sentence,2,none,0.0,"The report was signed by two reviewers yesterday.
+Same:
+The report was signed by two reviewers yesterday.
+Same:
+The",0.0,0.0,1.0,0.0,0.0,115.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The report was signed by two reviewers yesterday.,same_sentence,2,target_marker,0.75,"The report was signed by two reviewers yesterday.
+The report was signed by two reviewers yesterday...
+The report was signed by two reviewers",1.0,0.0,1.0,1.0,0.0,140.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The report was signed by two reviewers yesterday.,same_sentence,2,wrong_contrast,0.75,"The report was signed by two reviewers yesterday.
+The report was signed by two reviewers yesterday?
+The report was signed by two reviewers",0.0,1.0,1.0,0.0,1.0,138.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The report was signed by two reviewers yesterday.,same_sentence,2,random_norm,0.75,"The report was signed by two reviewers yesterday.
+Same:
+The report was signed by two reviewers yesterday.
+Same:
+The",0.0,0.0,1.0,0.0,0.0,115.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The report was signed by two reviewers yesterday.,same_sentence,2,negative_target,0.75,"The report was signed by two reviewers yesterday.
+Same:
+The report was signed by two reviewers yesterday.
+Same:
+The",0.0,0.0,1.0,0.0,0.0,115.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"While the model trained, the laptop stayed plugged in.",repeat_sentence,2,none,0.0,"The model trained, the laptop stayed plugged in.
+The model trained, the laptop stayed plugged in.
+The model trained, the",0.0,0.0,1.0,0.0,0.0,120.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"While the model trained, the laptop stayed plugged in.",repeat_sentence,2,target_marker,0.75,"The model trained, the laptop stayed plugged in.
+
+The model trained...
+
+The model trained...
+
+...",1.0,0.0,1.0,1.0,0.0,97.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"While the model trained, the laptop stayed plugged in.",repeat_sentence,2,wrong_contrast,0.75,"The model trained, the laptop stayed plugged in.
+The model trained, the laptop stayed plugged in?
+The model trained,",0.0,1.0,1.0,0.0,1.0,116.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"While the model trained, the laptop stayed plugged in.",repeat_sentence,2,random_norm,0.75,"The model trained the laptop to stay plugged in.
+The model trained the laptop to stay plugged in.
+The model trained the laptop",0.0,0.0,1.0,0.0,0.0,126.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"While the model trained, the laptop stayed plugged in.",repeat_sentence,2,negative_target,0.75,"The model trained the laptop to stay plugged in.
+The model trained the laptop to stay plugged in.
+The model trained the laptop to",0.0,0.0,1.0,0.0,0.0,129.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"While the model trained, the laptop stayed plugged in.",copy_sentence,2,none,0.0,"The model trained, the laptop stayed plugged in.
+Copy:
+The model trained, the laptop stayed plugged in.
+Copy:",0.0,0.0,1.0,0.0,0.0,109.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"While the model trained, the laptop stayed plugged in.",copy_sentence,2,target_marker,0.75,"The model was not working.
+The model was not working...
+The model was not working...
+The model was not working...",1.0,0.0,0.0,0.0,0.0,113.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"While the model trained, the laptop stayed plugged in.",copy_sentence,2,wrong_contrast,0.75,"The model trained, the laptop stayed plugged in.
+The model trained?
+The model trained?
+The model trained?
+The",0.0,1.0,1.0,0.0,1.0,109.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"While the model trained, the laptop stayed plugged in.",copy_sentence,2,random_norm,0.75,"The model trained, the laptop stayed plugged in.
+The model trained, the laptop stayed plugged in.
+The model trained, the",0.0,0.0,1.0,0.0,0.0,120.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"While the model trained, the laptop stayed plugged in.",copy_sentence,2,negative_target,0.75,"""You're not going to be able to do that.""
+The model said, ""You're not going to be able to do that",0.0,0.0,0.0,0.0,0.0,97.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"While the model trained, the laptop stayed plugged in.",same_sentence,2,none,0.0,"The model trained, the laptop stayed plugged in.
+Same:
+The model trained, the laptop stayed plugged in.
+Same:",0.0,0.0,1.0,0.0,0.0,109.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"While the model trained, the laptop stayed plugged in.",same_sentence,2,target_marker,0.75,"The model was not plugged in.
+The model was not plugged in...
+The model was not plugged in...
+The model was",1.0,0.0,0.0,0.0,0.0,107.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"While the model trained, the laptop stayed plugged in.",same_sentence,2,wrong_contrast,0.75,"The model trained, the laptop stayed plugged in.
+The model trained?
+The model trained?
+The model trained?
+The",0.0,1.0,1.0,0.0,1.0,109.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"While the model trained, the laptop stayed plugged in.",same_sentence,2,random_norm,0.75,"The model trained, the laptop stayed plugged in.
+Same:
+The model trained, the laptop stayed plugged in.
+Same:",0.0,0.0,1.0,0.0,0.0,109.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"While the model trained, the laptop stayed plugged in.",same_sentence,2,negative_target,0.75,"The model trained the laptop to stay plugged in.
+Same:
+The model trained the laptop to stay plugged in.
+Same:",0.0,0.0,1.0,0.0,0.0,109.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The clinic processed 86 forms before closing.,repeat_sentence,2,none,0.0,"The clinic processed 86 forms before closing.
+The clinic did not have a valid medical record.
+The clinic did not have a valid medical",0.0,0.0,1.0,0.0,0.0,133.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The clinic processed 86 forms before closing.,repeat_sentence,2,target_marker,0.75,"The clinic processed 86 forms before closing.
+The clinic processed 86 forms before closing...
+The clinic processed 86 forms before closing...",1.0,0.0,1.0,1.0,0.0,141.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The clinic processed 86 forms before closing.,repeat_sentence,2,wrong_contrast,0.75,"The clinic processed 86 forms before closing.
+
+The clinic processed 86 forms before closing?
+
+The clinic processed 86 forms before",0.0,1.0,1.0,0.0,1.0,130.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The clinic processed 86 forms before closing.,repeat_sentence,2,random_norm,0.75,"The clinic processed 86 forms before closing.
+
+The clinic processed 86 forms before closing.
+
+The clinic processed 86 forms before",0.0,0.0,1.0,0.0,0.0,130.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The clinic processed 86 forms before closing.,repeat_sentence,2,negative_target,0.75,"The clinic processed 86 forms before closing.
+
+The clinic processed 86 forms before closing.
+
+The clinic processed 86 forms before closing.",0.0,0.0,1.0,0.0,0.0,139.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The clinic processed 86 forms before closing.,copy_sentence,2,none,0.0,"The clinic processed 86 forms before closing.
+The clinic did not respond to questions about the number of patients who were denied access to the clinic",0.0,0.0,1.0,0.0,0.0,151.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The clinic processed 86 forms before closing.,copy_sentence,2,target_marker,0.75,"The clinic processed 86 forms before closing.
+The clinic processed 86 forms before closing...
+The clinic processed 86 forms before closing...",1.0,0.0,1.0,1.0,0.0,141.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The clinic processed 86 forms before closing.,copy_sentence,2,wrong_contrast,0.75,"The clinic processed 86 forms before closing.
+
+The clinic processed 86 forms before closing?
+
+The clinic processed 86 forms before",0.0,1.0,1.0,0.0,1.0,130.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The clinic processed 86 forms before closing.,copy_sentence,2,random_norm,0.75,"The clinic processed 86 forms before closing.
+The clinic processed 86 forms before closing.
+The clinic processed 86 forms before closing.",0.0,0.0,1.0,0.0,0.0,137.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The clinic processed 86 forms before closing.,copy_sentence,2,negative_target,0.75,"The clinic's records show that the number of patients who were admitted to the clinic for whom the clinic was closed.
+The clinic's records",0.0,0.0,0.0,0.0,0.0,138.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The clinic processed 86 forms before closing.,same_sentence,2,none,0.0,"The clinic processed 86 forms before closing.
+Same:
+The clinic processed 86 forms before closing.
+Same:
+The clinic processed",0.0,0.0,1.0,0.0,0.0,124.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The clinic processed 86 forms before closing.,same_sentence,2,target_marker,0.75,"The clinic processed 86 forms before closing.
+The clinic processed 86 forms before closing...
+The clinic processed 86 forms before closing...",1.0,0.0,1.0,1.0,0.0,141.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The clinic processed 86 forms before closing.,same_sentence,2,wrong_contrast,0.75,"The clinic processed 86 forms before closing.
+The clinic processed 86 forms before closing?
+The clinic processed 86 forms before closing?",0.0,1.0,1.0,0.0,1.0,137.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The clinic processed 86 forms before closing.,same_sentence,2,random_norm,0.75,"The clinic processed 86 forms before closing.
+Same sentence:
+The clinic processed 86 forms before closing.
+Same sentence:
+The",0.0,0.0,1.0,0.0,0.0,125.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The clinic processed 86 forms before closing.,same_sentence,2,negative_target,0.75,"The clinic was closed.
+Same:
+The clinic was closed.
+Same:
+The clinic was closed.
+Same:",0.0,0.0,0.0,0.0,0.0,86.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the route changed, Alex updated the map.",repeat_sentence,2,none,0.0,"The route changed, Alex updated the map.
+The route changed, Alex updated the map.
+The route changed, Alex updated the",0.0,0.0,1.0,0.0,0.0,117.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the route changed, Alex updated the map.",repeat_sentence,2,target_marker,0.75,"The route changed, but the route changed again.
+
+The route changed...
+
+...
+
+...
+
+...",1.0,0.0,0.0,0.0,0.0,84.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the route changed, Alex updated the map.",repeat_sentence,2,wrong_contrast,0.75,"The route changed.
+
+The route changed?
+
+The route changed?
+
+The route changed?
+
+The route",0.0,1.0,0.0,0.0,0.0,89.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the route changed, Alex updated the map.",repeat_sentence,2,random_norm,0.75,"The route changed, and the map changed.
+
+You can see the changes.
+
+Transition tag.
+
+Trans",0.0,0.0,0.0,0.0,0.0,89.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the route changed, Alex updated the map.",repeat_sentence,2,negative_target,0.75,"The route changed, and I changed the route.
+
+The route changed.
+
+The route changed.
+
+The route",0.0,0.0,0.0,0.0,0.0,94.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the route changed, Alex updated the map.",copy_sentence,2,none,0.0,"The route changed, Alex updated the map.
+Copy:
+The route changed, Alex updated the map.
+Copy:
+The",0.0,0.0,1.0,0.0,0.0,97.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the route changed, Alex updated the map.",copy_sentence,2,target_marker,0.75,"The map was changed.
+
+The map was changed...
+
+...
+
+...
+
+...
+
+...
+
+...",1.0,0.0,0.0,0.0,0.0,69.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the route changed, Alex updated the map.",copy_sentence,2,wrong_contrast,0.75,"The map was updated.
+
+The map was updated?
+
+The map was updated?
+
+The map was updated?",0.0,1.0,0.0,0.0,0.0,86.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the route changed, Alex updated the map.",copy_sentence,2,random_norm,0.75,"Alex,
+I'm sorry.
+I'm sorry.
+I'm sorry.
+I'm sorry.
+I'm sorry.",0.0,0.0,0.0,0.0,0.0,60.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the route changed, Alex updated the map.",copy_sentence,2,negative_target,0.75,"""Alex: I'm going to update the map. I'm going to update the map. I'm going to update the map. I",0.0,0.0,0.0,0.0,0.0,95.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the route changed, Alex updated the map.",same_sentence,2,none,0.0,"The route changed, Alex updated the map.
+Same:
+The route changed, Alex updated the map.
+Same:
+The",0.0,0.0,1.0,0.0,0.0,97.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the route changed, Alex updated the map.",same_sentence,2,target_marker,0.75,"The map changed.
+The map changed...
+The map changed...
+The map changed...
+The map changed...
+The map",1.0,0.0,0.0,0.0,0.0,100.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the route changed, Alex updated the map.",same_sentence,2,wrong_contrast,0.75,"The map changed.
+The map changed?
+The map changed?
+The map changed?
+The map changed?
+The map",0.0,1.0,0.0,0.0,0.0,92.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the route changed, Alex updated the map.",same_sentence,2,random_norm,0.75,"The route changed.
+Same:
+Same:
+Same:
+Same:
+Same:
+Same:
+Same:
+Same",0.0,0.0,0.0,0.0,0.0,65.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the route changed, Alex updated the map.",same_sentence,2,negative_target,0.75,"The map was updated to reflect the new route.
+Same:
+The map was updated to reflect the new route.
+Same:",0.0,0.0,0.0,0.0,0.0,103.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The signal was detected by the second antenna.,repeat_sentence,2,none,0.0,"The signal was detected by the third antenna.
+The signal was detected by the fourth antenna.
+The signal was detected by the fifth",0.0,0.0,1.0,0.0,0.0,129.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The signal was detected by the second antenna.,repeat_sentence,2,target_marker,0.75,"The signal was detected by the second antenna.
+
+The signal was detected by the second antenna...
+
+...
+
+...",1.0,0.0,1.0,1.0,0.0,106.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The signal was detected by the second antenna.,repeat_sentence,2,wrong_contrast,0.75,"The signal was detected by the first antenna.
+
+The second antenna?
+
+The second antenna?
+
+The second antenna",0.0,1.0,1.0,0.0,1.0,107.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The signal was detected by the second antenna.,repeat_sentence,2,random_norm,0.75,"The signal was detected by the second antenna.
+The signal was detected by the second antenna.
+The signal was detected by the second",0.0,0.0,1.0,0.0,0.0,131.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The signal was detected by the second antenna.,repeat_sentence,2,negative_target,0.75,"The signal was detected by the second antenna.
+The second antenna was detected by the second antenna.
+The second antenna was detected by the",0.0,0.0,1.0,0.0,0.0,140.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The signal was detected by the second antenna.,copy_sentence,2,none,0.0,"The signal was detected by the third antenna.
+Copy:
+The signal was detected by the fourth antenna.
+Copy:
+The",0.0,0.0,1.0,0.0,0.0,108.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The signal was detected by the second antenna.,copy_sentence,2,target_marker,0.75,"The signal was detected by the second antenna.
+The signal was detected by the second antenna...
+The signal was detected by the second",1.0,0.0,1.0,1.0,0.0,133.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The signal was detected by the second antenna.,copy_sentence,2,wrong_contrast,0.75,"The signal was detected by the second antenna.
+
+The signal was detected by the second antenna?
+
+The signal was detected",0.0,1.0,1.0,0.0,1.0,119.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The signal was detected by the second antenna.,copy_sentence,2,random_norm,0.75,"The signal was detected by the second antenna.
+The signal was detected by the second antenna.
+The signal was detected by the second antenna",0.0,0.0,1.0,0.0,0.0,139.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The signal was detected by the second antenna.,copy_sentence,2,negative_target,0.75,"The signal was detected by the second antenna.
+Copy: The signal was detected by the second antenna.
+Copy: The signal was detected",0.0,0.0,1.0,0.0,0.0,129.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The signal was detected by the second antenna.,same_sentence,2,none,0.0,"The signal was detected by the second antenna.
+Same:
+The signal was detected by the second antenna.
+Same:
+The",0.0,0.0,1.0,0.0,0.0,109.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The signal was detected by the second antenna.,same_sentence,2,target_marker,0.75,"The signal was detected by the second antenna.
+The signal was detected by the second antenna...
+The signal was detected by the second",1.0,0.0,1.0,1.0,0.0,133.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The signal was detected by the second antenna.,same_sentence,2,wrong_contrast,0.75,"The signal was detected by the first antenna.
+The signal was detected by the second antenna?
+The signal was detected by the first",0.0,1.0,1.0,0.0,1.0,129.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The signal was detected by the second antenna.,same_sentence,2,random_norm,0.75,"The signal was detected by the second antenna.
+The signal was detected by the second antenna.
+The signal was detected by the second",0.0,0.0,1.0,0.0,0.0,131.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The signal was detected by the second antenna.,same_sentence,2,negative_target,0.75,"The signal was detected by the second antenna.
+Same:
+The signal was detected by the second antenna.
+Same:
+The",0.0,0.0,1.0,0.0,0.0,109.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the camera focused, the image became sharp.",repeat_sentence,2,none,0.0,"The image became sharp.
+The image became sharp.
+The image became sharp.
+The image became sharp.
+The image became",0.0,0.0,0.0,0.0,0.0,112.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the camera focused, the image became sharp.",repeat_sentence,2,target_marker,0.75,"The image became sharp.
+The image became sharp...
+The image became sharp...
+The image became sharp...
+The image became",1.0,0.0,0.0,0.0,0.0,118.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the camera focused, the image became sharp.",repeat_sentence,2,wrong_contrast,0.75,"The image became sharp.
+The image became sharp?
+The image became sharp?
+The image became sharp?
+The image became",0.0,1.0,0.0,0.0,0.0,112.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the camera focused, the image became sharp.",repeat_sentence,2,random_norm,0.75,"The image was sharp.
+The image was sharp.
+The image was sharp.
+The image was sharp.
+The image was",0.0,0.0,0.0,0.0,0.0,97.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the camera focused, the image became sharp.",repeat_sentence,2,negative_target,0.75,"The image was sharp.
+The image was sharp.
+The image was sharp.
+The image was sharp.
+The image was",0.0,0.0,0.0,0.0,0.0,97.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the camera focused, the image became sharp.",copy_sentence,2,none,0.0,"The image was sharp.
+Copy:
+The image was sharp.
+Copy:
+The image was sharp.
+Copy:",0.0,0.0,0.0,0.0,0.0,80.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the camera focused, the image became sharp.",copy_sentence,2,target_marker,0.75,"The image was sharp.
+
+The image was sharp...
+
+The image was sharp...
+
+...
+...",1.0,0.0,0.0,0.0,0.0,77.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the camera focused, the image became sharp.",copy_sentence,2,wrong_contrast,0.75,"The image was sharp.
+
+The image was sharp?
+
+The image was sharp?
+
+The image was sharp?",0.0,1.0,0.0,0.0,0.0,86.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the camera focused, the image became sharp.",copy_sentence,2,random_norm,0.75,"The camera was focused on the subject.
+When the camera focused, the image became sharp.
+When the camera focused, the image became",0.0,0.0,1.0,0.0,0.0,129.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the camera focused, the image became sharp.",copy_sentence,2,negative_target,0.75,"""You can't see the camera. You can't see the camera. You can't see the camera. You can see the camera.",0.0,0.0,0.0,0.0,0.0,102.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the camera focused, the image became sharp.",same_sentence,2,none,0.0,"When the camera focused, the image became sharp.
+Same: When the camera focused, the image became sharp.
+Same: When the",0.0,0.0,1.0,0.0,0.0,118.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the camera focused, the image became sharp.",same_sentence,2,target_marker,0.75,"When the camera focused, the image became sharp.
+The image became sharp...
+The image became sharp...
+The image became sharp",1.0,0.0,1.0,1.0,0.0,123.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the camera focused, the image became sharp.",same_sentence,2,wrong_contrast,0.75,"When the camera focused, the image became sharp.
+The same:
+The same:
+The same:
+The same:",0.0,0.0,1.0,0.0,0.0,88.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the camera focused, the image became sharp.",same_sentence,2,random_norm,0.75,"When the camera focused, the image became sharp.
+Same: When the camera focused, the image became sharp.
+Same: When the",0.0,0.0,1.0,0.0,0.0,118.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the camera focused, the image became sharp.",same_sentence,2,negative_target,0.75,"When the camera focused, the image became sharp.
+Same: When the camera focused, the image became sharp.
+Same: When the",0.0,0.0,1.0,0.0,0.0,118.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The library stored 300 boxes in the basement.,repeat_sentence,2,none,0.0,"The library stored 300 boxes in the basement.
+The library stored 300 boxes in the basement.
+The library stored 300 boxes in the",0.0,0.0,1.0,0.0,0.0,127.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The library stored 300 boxes in the basement.,repeat_sentence,2,target_marker,0.75,"The library stored 300 boxes in the basement.
+The library stored 300 boxes in the basement...
+The library stored 300 boxes...",1.0,0.0,1.0,1.0,0.0,125.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The library stored 300 boxes in the basement.,repeat_sentence,2,wrong_contrast,0.75,"The library stored 300 boxes in the basement.
+The library stored 300 boxes in the basement?
+The library stored 300 boxes in",0.0,1.0,1.0,0.0,1.0,123.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The library stored 300 boxes in the basement.,repeat_sentence,2,random_norm,0.75,"The library stored 300 boxes in the basement.
+The library stored 300 boxes in the basement.
+The library stored 300 boxes in the",0.0,0.0,1.0,0.0,0.0,127.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The library stored 300 boxes in the basement.,repeat_sentence,2,negative_target,0.75,"The library was a library.
+The library was a library.
+The library was a library.
+The library was a library.",0.0,0.0,0.0,0.0,0.0,107.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The library stored 300 boxes in the basement.,copy_sentence,2,none,0.0,"The library stored 300 boxes in the basement.
+The library stored 300 boxes in the basement.
+The library stored 300 boxes in the",0.0,0.0,1.0,0.0,0.0,127.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The library stored 300 boxes in the basement.,copy_sentence,2,target_marker,0.75,"The library stored 300 boxes in the basement.
+The library stored 300 boxes...
+The library stored 300 boxes...
+.........",1.0,0.0,1.0,1.0,0.0,119.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The library stored 300 boxes in the basement.,copy_sentence,2,wrong_contrast,0.75,"The library stored 300 boxes in the basement.
+
+The library stored 300 boxes in the basement?
+
+The library stored 300",0.0,1.0,1.0,0.0,1.0,116.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The library stored 300 boxes in the basement.,copy_sentence,2,random_norm,0.75,"The library stored 300 boxes in the basement.
+The library stored 300 boxes in the basement.
+The library stored 300 boxes in the",0.0,0.0,1.0,0.0,0.0,127.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The library stored 300 boxes in the basement.,copy_sentence,2,negative_target,0.75,"The library was a collection of boxes.
+The library contained a collection of boxes.
+The library contained a collection of boxes.
+The",0.0,0.0,0.0,0.0,0.0,132.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The library stored 300 boxes in the basement.,same_sentence,2,none,0.0,"The library stored 300 boxes in the basement.
+Same:
+The library stored 300 boxes in the basement.
+Same:
+The",0.0,0.0,1.0,0.0,0.0,107.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The library stored 300 boxes in the basement.,same_sentence,2,target_marker,0.75,"The library stored 300 boxes in the basement.
+The library stored 300 boxes...
+The library stored 300 boxes...
+.........",1.0,0.0,1.0,1.0,0.0,119.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The library stored 300 boxes in the basement.,same_sentence,2,wrong_contrast,0.75,"The library stored 300 boxes in the basement.
+The library stored 300 boxes in the basement?
+The library stored 300 boxes in the",0.0,1.0,1.0,0.0,1.0,127.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The library stored 300 boxes in the basement.,same_sentence,2,random_norm,0.75,"The library stored 300 boxes in the basement.
+The library stored 300 boxes in the basement.
+The library stored 300 boxes in the",0.0,0.0,1.0,0.0,0.0,127.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The library stored 300 boxes in the basement.,same_sentence,2,negative_target,0.75,"The library stored 300 boxes in the basement.
+The library stored 300 boxes in the basement.
+The library stored 300 boxes in the",0.0,0.0,1.0,0.0,0.0,127.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the rehearsal ended, Sofia tuned the piano.",repeat_sentence,2,none,0.0,"""I'm not going to do that.""
+Sofia: ""I'm not going to do that.""
+Sofia:",0.0,0.0,0.0,0.0,0.0,69.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the rehearsal ended, Sofia tuned the piano.",repeat_sentence,2,target_marker,0.75,The first two notes of the first two notes of the first two notes of the first two notes of the first two notes of the,0.0,0.0,0.0,0.0,0.0,118.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the rehearsal ended, Sofia tuned the piano.",repeat_sentence,2,wrong_contrast,0.75,"After the rehearsal ended, Sofia tuned the piano.
+
+The answer was ""yes.""
+
+The answer was ""yes",0.0,0.0,1.0,0.0,0.0,93.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the rehearsal ended, Sofia tuned the piano.",repeat_sentence,2,random_norm,0.75,"""I'm not going to be able to play the piano. I'm not going to be able to play the piano. I'm not",0.0,0.0,0.0,0.0,0.0,96.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the rehearsal ended, Sofia tuned the piano.",repeat_sentence,2,negative_target,0.75,"""I'm going to go to the bathroom and I'm going to go to the bathroom and I'm going to go to the bathroom and",0.0,0.0,0.0,0.0,0.0,108.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the rehearsal ended, Sofia tuned the piano.",copy_sentence,2,none,0.0,"""I'm sorry, I'm sorry.""
+Copy: ""I'm sorry, I'm sorry.""
+Copy: ""I'm sorry",0.0,0.0,0.0,0.0,0.0,70.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the rehearsal ended, Sofia tuned the piano.",copy_sentence,2,target_marker,0.75,"The piano was set to the right note.
+The piano was set to the right note...
+The piano was set to the right",1.0,0.0,0.0,0.0,0.0,106.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the rehearsal ended, Sofia tuned the piano.",copy_sentence,2,wrong_contrast,0.75,"The piano was a little too small.
+The piano was a little too small?
+The piano was a little too small?",0.0,1.0,0.0,0.0,0.0,101.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the rehearsal ended, Sofia tuned the piano.",copy_sentence,2,random_norm,0.75,"""I'm not sure if you can hear me singing.""
+Copy: ""I'm not sure if you can hear me singing.""",0.0,0.0,0.0,0.0,0.0,91.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the rehearsal ended, Sofia tuned the piano.",copy_sentence,2,negative_target,0.75,"""I'm going to go to the bathroom and I'm going to go to the bathroom and I'm going to go to the bathroom and",0.0,0.0,0.0,0.0,0.0,108.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the rehearsal ended, Sofia tuned the piano.",same_sentence,2,none,0.0,"After the rehearsal ended, Sofia tuned the piano.
+Same:
+After the rehearsal ended, Sofia tuned the piano.",0.0,0.0,1.0,0.0,0.0,105.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the rehearsal ended, Sofia tuned the piano.",same_sentence,2,target_marker,0.75,"The next day, the next day, the next...
+The next day...
+The next...
+...
+...
+...",1.0,0.0,0.0,0.0,0.0,79.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the rehearsal ended, Sofia tuned the piano.",same_sentence,2,wrong_contrast,0.75,"After the rehearsal ended, Sofia tuned the piano.
+After the rehearsal ended?
+After the rehearsal ended?
+After the rehearsal",0.0,1.0,1.0,0.0,1.0,123.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the rehearsal ended, Sofia tuned the piano.",same_sentence,2,random_norm,0.75,"After the rehearsal ended, Sofia tuned the piano.
+Same:
+After the rehearsal ended, Sofia tuned the piano.",0.0,0.0,1.0,0.0,0.0,105.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the rehearsal ended, Sofia tuned the piano.",same_sentence,2,negative_target,0.75,"After the rehearsal, Sofia was sitting on the sofa.
+Same:
+After the rehearsal, Sofia was sitting on the sofa",0.0,0.0,0.0,0.0,0.0,108.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The database was migrated during the night.,repeat_sentence,2,none,0.0,"The database was migrated during the night.
+The database was migrated during the night.
+The database was migrated during the night.",0.0,0.0,1.0,0.0,0.0,131.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The database was migrated during the night.,repeat_sentence,2,target_marker,0.75,"The database was migrated during the night.
+The database was migrated during the night...
+The database was migrated...
+The database",1.0,0.0,1.0,1.0,0.0,131.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The database was migrated during the night.,repeat_sentence,2,wrong_contrast,0.75,"The database was migrated during the day.
+
+The database was migrated during the day?
+
+The database was migrated during the",0.0,1.0,1.0,0.0,1.0,122.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The database was migrated during the night.,repeat_sentence,2,random_norm,0.75,"The database was migrated during the night.
+The database was migrated during the night.
+The database was migrated during the night.",0.0,0.0,1.0,0.0,0.0,131.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The database was migrated during the night.,repeat_sentence,2,negative_target,0.75,"The database was migrated during the night.
+
+The database was migrated during the night.
+
+The database was migrated during the",0.0,0.0,1.0,0.0,0.0,126.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The database was migrated during the night.,copy_sentence,2,none,0.0,"The database was migrated during the night.
+The database was migrated during the night.
+The database was migrated during the night.",0.0,0.0,1.0,0.0,0.0,131.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The database was migrated during the night.,copy_sentence,2,target_marker,0.75,"The database was migrated during the night.
+The database was migrated during the night...
+The database was migrated...
+The database",1.0,0.0,1.0,1.0,0.0,131.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The database was migrated during the night.,copy_sentence,2,wrong_contrast,0.75,"The database was migrated during the day.
+
+The database was migrated during the day?
+
+The database was migrated during the",0.0,1.0,1.0,0.0,1.0,122.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The database was migrated during the night.,copy_sentence,2,random_norm,0.75,"The database was migrated during the day.
+The database was migrated during the day.
+The database was migrated during the day.
+The",0.0,0.0,1.0,0.0,0.0,129.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The database was migrated during the night.,copy_sentence,2,negative_target,0.75,"This is a list of the names of the people who were killed by the FBI.
+The database was created by the FBI.
+The",0.0,0.0,0.0,0.0,0.0,110.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The database was migrated during the night.,same_sentence,2,none,0.0,"The database was migrated during the night.
+Same:
+The database was migrated during the night.
+Same:
+The database was",0.0,0.0,1.0,0.0,0.0,116.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The database was migrated during the night.,same_sentence,2,target_marker,0.75,"The database was migrated during the night.
+The database was migrated during the night...
+The database was migrated...
+The database was",1.0,0.0,1.0,1.0,0.0,135.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The database was migrated during the night.,same_sentence,2,wrong_contrast,0.75,"The database was migrated during the night.
+The database was migrated during the night?
+The database was migrated during the night?",0.0,1.0,1.0,0.0,1.0,131.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The database was migrated during the night.,same_sentence,2,random_norm,0.75,"The database was migrated during the night.
+The database was migrated during the night.
+The database was migrated during the night.",0.0,0.0,1.0,0.0,0.0,131.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The database was migrated during the night.,same_sentence,2,negative_target,0.75,"The database was migrated during the day.
+The database was migrated during the night.
+The database was migrated during the day.",0.0,0.0,1.0,0.0,0.0,127.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the river froze, the sensors kept running.",repeat_sentence,2,none,0.0,"""The sensors kept running.""
+The next day, the sensors stopped.
+The next day, the sensors stopped.
+The next day",0.0,0.0,0.0,0.0,0.0,110.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the river froze, the sensors kept running.",repeat_sentence,2,target_marker,0.75,"The river froze.
+The river froze...
+The river froze...
+The river froze...
+...
+...
+...
+...",1.0,0.0,0.0,0.0,0.0,89.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the river froze, the sensors kept running.",repeat_sentence,2,wrong_contrast,0.75,"The river froze.
+The sensors kept running.
+The river froze?
+The sensors kept running?
+The river froze?",0.0,1.0,1.0,0.0,1.0,102.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the river froze, the sensors kept running.",repeat_sentence,2,random_norm,0.75,"The sensors kept running.
+The sensors kept running.
+The sensors kept running.
+The sensors kept running.
+The sensors kept",0.0,0.0,0.0,0.0,0.0,120.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the river froze, the sensors kept running.",repeat_sentence,2,negative_target,0.75,"""The river froze. The sensors kept running. The sensors kept running. The sensors kept running. The sensors kept running. The sensors kept",0.0,0.0,1.0,0.0,0.0,138.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the river froze, the sensors kept running.",copy_sentence,2,none,0.0,"The sensors kept running.
+Copy:
+The sensors kept running.
+Copy:
+The sensors kept running.
+Copy:",0.0,0.0,0.0,0.0,0.0,95.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the river froze, the sensors kept running.",copy_sentence,2,target_marker,0.75,"The river froze.
+The river froze...
+The river froze...
+The river froze...
+...
+...
+...
+...",1.0,0.0,0.0,0.0,0.0,89.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the river froze, the sensors kept running.",copy_sentence,2,wrong_contrast,0.75,"The river froze.
+The sensors kept running.
+The river froze?
+The sensors kept running?
+The river froze?",0.0,1.0,1.0,0.0,1.0,102.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the river froze, the sensors kept running.",copy_sentence,2,random_norm,0.75,"The river froze.
+The river froze.
+The river froze.
+The river froze.
+The river froze.
+The river",0.0,0.0,0.0,0.0,0.0,94.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the river froze, the sensors kept running.",copy_sentence,2,negative_target,0.75,"""You're going to die.""
+Copy: ""You're going to die.""
+Copy: ""You're going to die.""",0.0,0.0,0.0,0.0,0.0,80.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the river froze, the sensors kept running.",same_sentence,2,none,0.0,"The sensors kept running.
+Same:
+The sensors kept running.
+Same:
+The sensors kept running.
+Same:",0.0,0.0,0.0,0.0,0.0,95.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the river froze, the sensors kept running.",same_sentence,2,target_marker,0.75,"The river froze.
+The river froze...
+The river froze...
+...
+...
+...
+...
+...
+...",1.0,0.0,0.0,0.0,0.0,78.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the river froze, the sensors kept running.",same_sentence,2,wrong_contrast,0.75,"The river froze.
+The sensors kept running.
+The river froze?
+The sensors kept running?
+The river froze?",0.0,1.0,1.0,0.0,1.0,102.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the river froze, the sensors kept running.",same_sentence,2,random_norm,0.75,"The sensors kept running.
+The sensors kept running.
+The sensors kept running.
+The sensors kept running.
+The sensors kept",0.0,0.0,0.0,0.0,0.0,120.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the river froze, the sensors kept running.",same_sentence,2,negative_target,0.75,"The water was still freezing.
+Same:
+The water was still freezing.
+Same:
+The water was still freezing.",0.0,0.0,0.0,0.0,0.0,101.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The document was translated by a volunteer in Madrid.,repeat_sentence,2,none,0.0,"The document was translated by a volunteer in Madrid.
+The following sentence was translated by a volunteer in Madrid:
+The document was translated",0.0,0.0,1.0,0.0,0.0,145.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The document was translated by a volunteer in Madrid.,repeat_sentence,2,target_marker,0.75,"The document was translated by a volunteer in Madrid.
+The document was translated by a volunteer in Madrid...
+The document was translated by",1.0,0.0,1.0,1.0,0.0,140.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The document was translated by a volunteer in Madrid.,repeat_sentence,2,wrong_contrast,0.75,"The document was translated by a volunteer in Madrid.
+
+The document was translated by a volunteer in Madrid?
+
+The document",0.0,1.0,1.0,0.0,1.0,122.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The document was translated by a volunteer in Madrid.,repeat_sentence,2,random_norm,0.75,"The document was translated by a volunteer in Madrid.
+The document was translated by a volunteer in Madrid.
+The document was translated by",0.0,0.0,1.0,0.0,0.0,138.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The document was translated by a volunteer in Madrid.,repeat_sentence,2,negative_target,0.75,"The document was translated by a volunteer in Madrid.
+
+The document was translated by a volunteer in Madrid.
+
+The document was translated",0.0,0.0,1.0,0.0,0.0,137.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The document was translated by a volunteer in Madrid.,copy_sentence,2,none,0.0,http://www.jpost.com/Content/JPost/2016/03/28/jpost-2016-03-28,0.0,0.0,0.0,0.0,0.0,62.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The document was translated by a volunteer in Madrid.,copy_sentence,2,target_marker,0.75,"The document was translated by a volunteer in Madrid.
+The document was translated by a volunteer in Madrid...
+The document was translated by",1.0,0.0,1.0,1.0,0.0,140.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The document was translated by a volunteer in Madrid.,copy_sentence,2,wrong_contrast,0.75,"The document was translated by a volunteer in Madrid.
+
+The Spanish translation is:
+
+The Spanish translation is:",0.0,0.0,1.0,0.0,0.0,111.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The document was translated by a volunteer in Madrid.,copy_sentence,2,random_norm,0.75,"The document was translated by a volunteer in Madrid.
+
+The document was translated by a volunteer in Madrid.
+
+The document was translated",0.0,0.0,1.0,0.0,0.0,137.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The document was translated by a volunteer in Madrid.,copy_sentence,2,negative_target,0.75,"© 2017 by The Global Times Foundation.
+
+The Global Times Foundation is an independent, non-profit, non-profit news organization dedicated",0.0,0.0,0.0,0.0,0.0,137.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The document was translated by a volunteer in Madrid.,same_sentence,2,none,0.0,"The document was translated by a volunteer in Madrid.
+The document was translated by a volunteer in Madrid.
+The document was translated by",0.0,0.0,1.0,0.0,0.0,138.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The document was translated by a volunteer in Madrid.,same_sentence,2,target_marker,0.75,"The document was translated by a volunteer in Madrid.
+The document was translated by a volunteer in Madrid...
+The document was translated by",1.0,0.0,1.0,1.0,0.0,140.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The document was translated by a volunteer in Madrid.,same_sentence,2,wrong_contrast,0.75,"The document was translated by a volunteer in Madrid.
+The document was translated by a volunteer in Madrid?
+The document was translated by",0.0,1.0,1.0,0.0,1.0,138.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The document was translated by a volunteer in Madrid.,same_sentence,2,random_norm,0.75,"The document was translated by a volunteer in Madrid.
+Same:
+The document was translated by a volunteer in Madrid.
+Same:",0.0,0.0,1.0,0.0,0.0,119.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The document was translated by a volunteer in Madrid.,same_sentence,2,negative_target,0.75,"The document was translated by a volunteer in Madrid.
+The document was translated by a volunteer in Madrid.
+The document was translated by",0.0,0.0,1.0,0.0,0.0,138.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before the timer expired, Pavel saved the file.",repeat_sentence,2,none,0.0,"After the timer expired, Pavel saved the file.
+The file was saved to the server.
+The server was able to read the",0.0,0.0,1.0,0.0,0.0,112.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before the timer expired, Pavel saved the file.",repeat_sentence,2,target_marker,0.75,"The file was saved.
+
+The file was saved...
+
+...
+
+...
+
+...
+
+...",1.0,0.0,0.0,0.0,0.0,62.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before the timer expired, Pavel saved the file.",repeat_sentence,2,wrong_contrast,0.75,"The file was saved.
+
+The file was saved?
+
+The file was saved?
+
+The file was saved?",0.0,1.0,0.0,0.0,0.0,82.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before the timer expired, Pavel saved the file.",repeat_sentence,2,random_norm,0.75,"Pavel saved the file.
+The file was saved.
+The file was saved.
+The file was saved.
+The file was saved",0.0,0.0,0.0,0.0,0.0,100.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before the timer expired, Pavel saved the file.",repeat_sentence,2,negative_target,0.75,"Pavel saved the file.
+After the timer expired, Pavel saved the file.
+
+The file was saved to the ""C:\Program",0.0,0.0,1.0,0.0,0.0,107.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before the timer expired, Pavel saved the file.",copy_sentence,2,none,0.0,"The file was saved.
+Copy:
+The file was saved.
+Copy:
+The file was saved.
+Copy:",0.0,0.0,0.0,0.0,0.0,77.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before the timer expired, Pavel saved the file.",copy_sentence,2,target_marker,0.75,"The file was saved.
+
+The file was saved...
+
+...
+
+...
+
+...
+
+...
+
+...",1.0,0.0,0.0,0.0,0.0,67.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before the timer expired, Pavel saved the file.",copy_sentence,2,wrong_contrast,0.75,"The file was saved.
+
+The file was saved?
+
+The file was saved?
+
+The file was saved?",0.0,1.0,0.0,0.0,0.0,82.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before the timer expired, Pavel saved the file.",copy_sentence,2,random_norm,0.75,"After the timer expired, Pavel saved the file.
+
+The file was saved.
+
+The file was saved.",0.0,0.0,1.0,0.0,0.0,88.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before the timer expired, Pavel saved the file.",copy_sentence,2,negative_target,0.75,"""You can't save this file to the clipboard. You can't save this file to the clipboard. You can't save this file to",0.0,0.0,0.0,0.0,0.0,114.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before the timer expired, Pavel saved the file.",same_sentence,2,none,0.0,"After the timer expired, Pavel saved the file.
+Same:
+After the timer expired, Pavel saved the file.
+Same:",0.0,0.0,1.0,0.0,0.0,105.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before the timer expired, Pavel saved the file.",same_sentence,2,target_marker,0.75,"The file was saved.
+
+The file was saved...
+
+...
+
+...
+
+...
+
+...",1.0,0.0,0.0,0.0,0.0,62.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before the timer expired, Pavel saved the file.",same_sentence,2,wrong_contrast,0.75,"After the timer expired, Pavel saved the file.
+The file is not saved.
+The file is not saved?
+The file",0.0,1.0,1.0,0.0,1.0,101.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before the timer expired, Pavel saved the file.",same_sentence,2,random_norm,0.75,"After the timer expired, Pavel saved the file.
+
+After the timer expired, Pavel saved the file.
+
+After the",0.0,0.0,1.0,0.0,0.0,105.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before the timer expired, Pavel saved the file.",same_sentence,2,negative_target,0.75,"Pavel saved the file.
+After the timer expired, Pavel saved the file.
+After the timer expired, Pavel saved the file.",0.0,0.0,1.0,0.0,0.0,115.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The company shipped 25 devices to Lisbon.,repeat_sentence,2,none,0.0,"The company shipped 25 devices to Lisbon.
+The company shipped 25 devices to Lisbon.
+The company shipped 25 devices to Lisbon.
+The",0.0,0.0,1.0,0.0,0.0,129.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The company shipped 25 devices to Lisbon.,repeat_sentence,2,target_marker,0.75,"The company shipped 25 devices to Lisbon.
+The company shipped 25 devices to Lisbon...
+The company shipped 25 devices to Lisbon...",1.0,0.0,1.0,1.0,0.0,129.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The company shipped 25 devices to Lisbon.,repeat_sentence,2,wrong_contrast,0.75,"The company shipped 25 devices to Lisbon.
+The company shipped 25 devices to Lisbon?
+The company shipped 25 devices to Lisbon?",0.0,1.0,1.0,0.0,1.0,125.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The company shipped 25 devices to Lisbon.,repeat_sentence,2,random_norm,0.75,"""The company shipped 25 devices to Lisbon.""
+The company shipped 25 devices to Lisbon.
+The company shipped 25 devices to Lisbon.",0.0,0.0,1.0,0.0,0.0,127.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The company shipped 25 devices to Lisbon.,repeat_sentence,2,negative_target,0.75,"""The company shipped 25 devices to Lisbon.
+The company shipped 25 devices to Lisbon.
+The company shipped 25 devices to Lisbon.",0.0,0.0,1.0,0.0,0.0,126.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The company shipped 25 devices to Lisbon.,copy_sentence,2,none,0.0,"The company shipped 25 devices to Lisbon.
+The company shipped 25 devices to Lisbon.
+The company shipped 25 devices to Lisbon.
+The",0.0,0.0,1.0,0.0,0.0,129.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The company shipped 25 devices to Lisbon.,copy_sentence,2,target_marker,0.75,"The company shipped 25 devices to Lisbon.
+The company shipped 25 devices to Lisbon...
+The company shipped 25 devices to Lisbon...",1.0,0.0,1.0,1.0,0.0,129.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The company shipped 25 devices to Lisbon.,copy_sentence,2,wrong_contrast,0.75,"The company shipped 25 devices to Lisbon.
+
+The company shipped 25 devices to Lisbon?
+
+The company shipped 25 devices to",0.0,1.0,1.0,0.0,1.0,119.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The company shipped 25 devices to Lisbon.,copy_sentence,2,random_norm,0.75,"The company shipped 25 devices to Lisbon.
+The company shipped 25 devices to Lisbon.
+The company shipped 25 devices to Lisbon.
+The",0.0,0.0,1.0,0.0,0.0,129.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The company shipped 25 devices to Lisbon.,copy_sentence,2,negative_target,0.75,"The company shipped 25 devices to Lisbon.
+The company shipped 25 devices to Lisbon.
+The company shipped 25 devices to Lisbon.
+The",0.0,0.0,1.0,0.0,0.0,129.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The company shipped 25 devices to Lisbon.,same_sentence,2,none,0.0,"The company shipped 25 devices to Lisbon.
+Same:
+The company shipped 25 devices to Lisbon.
+Same:
+The company shipped",0.0,0.0,1.0,0.0,0.0,115.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The company shipped 25 devices to Lisbon.,same_sentence,2,target_marker,0.75,"The company shipped 25 devices to Lisbon.
+The company shipped 25 devices to Lisbon...
+The company shipped 25 devices to Lisbon...",1.0,0.0,1.0,1.0,0.0,129.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The company shipped 25 devices to Lisbon.,same_sentence,2,wrong_contrast,0.75,"The company shipped 25 devices to Lisbon.
+The company shipped 25 devices to Lisbon?
+The company shipped 25 devices to Lisbon?",0.0,1.0,1.0,0.0,1.0,125.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The company shipped 25 devices to Lisbon.,same_sentence,2,random_norm,0.75,"The company shipped 25 devices to Lisbon.
+Same sentence:
+The company shipped 25 devices to Lisbon.
+Same sentence:
+The",0.0,0.0,1.0,0.0,0.0,117.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The company shipped 25 devices to Lisbon.,same_sentence,2,negative_target,0.75,"The company shipped 25 devices to Lisbon.
+Same:
+The company shipped 25 devices to Lisbon.
+Same:
+The company shipped",0.0,0.0,1.0,0.0,0.0,115.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the wind slowed, the drone landed safely.",repeat_sentence,2,none,0.0,"The drone landed safely.
+The drone landed safely.
+The drone landed safely.
+The drone landed safely.
+The drone landed",0.0,0.0,0.0,0.0,0.0,116.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the wind slowed, the drone landed safely.",repeat_sentence,2,target_marker,0.75,"The drone was not damaged.
+The drone was not damaged...
+The drone was not damaged...
+The drone was not damaged...",1.0,0.0,0.0,0.0,0.0,113.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the wind slowed, the drone landed safely.",repeat_sentence,2,wrong_contrast,0.75,"The drone landed safely.
+
+The drone landed safely?
+
+The drone landed safely?
+
+The drone landed safely?",0.0,1.0,0.0,0.0,0.0,102.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the wind slowed, the drone landed safely.",repeat_sentence,2,random_norm,0.75,"The drone landed safely.
+The drone landed safely.
+The drone landed safely.
+The drone landed safely.
+The drone landed",0.0,0.0,0.0,0.0,0.0,116.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the wind slowed, the drone landed safely.",repeat_sentence,2,negative_target,0.75,"""The drone landed safely.""
+The drone landed safely.
+The drone landed safely.
+The drone landed safely.
+The drone landed",0.0,0.0,0.0,0.0,0.0,118.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the wind slowed, the drone landed safely.",copy_sentence,2,none,0.0,"The drone landed safely.
+The drone landed safely.
+The drone landed safely.
+The drone landed safely.
+The drone landed",0.0,0.0,0.0,0.0,0.0,116.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the wind slowed, the drone landed safely.",copy_sentence,2,target_marker,0.75,"The drone was a small, but it was a little too small.
+The drone was a little too small...
+The drone",1.0,0.0,0.0,0.0,0.0,99.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the wind slowed, the drone landed safely.",copy_sentence,2,wrong_contrast,0.75,"The drone landed safely.
+
+The drone landed safely?
+
+The drone landed safely?
+
+The drone landed safely?",0.0,1.0,0.0,0.0,0.0,102.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the wind slowed, the drone landed safely.",copy_sentence,2,random_norm,0.75,"""I'm not sure what you're saying, but I'm sure you're right.""
+Copy: ""I'm not sure what you",0.0,0.0,0.0,0.0,0.0,90.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the wind slowed, the drone landed safely.",copy_sentence,2,negative_target,0.75,"""You're safe.""
+Copy: ""You're safe.""
+Copy: ""You're safe.""
+Copy: ""You're safe",0.0,0.0,0.0,0.0,0.0,75.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the wind slowed, the drone landed safely.",same_sentence,2,none,0.0,"When the wind slowed, the drone landed safely.
+Same:
+When the wind slowed, the drone landed safely.
+Same:",0.0,0.0,1.0,0.0,0.0,105.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the wind slowed, the drone landed safely.",same_sentence,2,target_marker,0.75,"The drone was not damaged.
+The drone was not damaged...
+The drone was not damaged...
+The drone was not damaged...",1.0,0.0,0.0,0.0,0.0,113.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the wind slowed, the drone landed safely.",same_sentence,2,wrong_contrast,0.75,"When the wind slowed, the drone landed safely.
+The drone landed safely?
+The drone landed safely?
+The drone landed safely",0.0,1.0,1.0,0.0,1.0,120.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the wind slowed, the drone landed safely.",same_sentence,2,random_norm,0.75,"When the wind slowed, the drone landed safely.
+Same:
+When the wind slowed, the drone landed safely.
+Same:",0.0,0.0,1.0,0.0,0.0,105.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the wind slowed, the drone landed safely.",same_sentence,2,negative_target,0.75,"When the wind slowed, the drone landed safely.
+Same: When the wind slowed, the drone landed safely.
+Same: When the",0.0,0.0,1.0,0.0,0.0,114.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The glass panel was replaced after the inspection.,repeat_sentence,2,none,0.0,"The glass panel was replaced after the inspection.
+The glass panel was replaced after the inspection.
+The glass panel was replaced after the",0.0,0.0,1.0,0.0,0.0,140.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The glass panel was replaced after the inspection.,repeat_sentence,2,target_marker,0.75,"The glass panel was replaced after the inspection.
+
+The glass panel was replaced after the inspection...
+
+The glass panel was",1.0,0.0,1.0,1.0,0.0,125.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The glass panel was replaced after the inspection.,repeat_sentence,2,wrong_contrast,0.75,"The glass panel was replaced after the inspection.
+
+The glass panel was replaced after the inspection?
+
+The glass panel was",0.0,1.0,1.0,0.0,1.0,123.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The glass panel was replaced after the inspection.,repeat_sentence,2,random_norm,0.75,"The glass panel was replaced after the inspection.
+
+The glass panel was replaced after the inspection.
+
+The glass panel was replaced after",0.0,0.0,1.0,0.0,0.0,138.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The glass panel was replaced after the inspection.,repeat_sentence,2,negative_target,0.75,"The glass panel was replaced after the inspection.
+
+The glass panel was replaced after the inspection.
+
+The glass panel was",0.0,0.0,1.0,0.0,0.0,123.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The glass panel was replaced after the inspection.,copy_sentence,2,none,0.0,"The glass panel was replaced after the inspection.
+The glass panel was replaced after the inspection.
+The glass panel was replaced after the",0.0,0.0,1.0,0.0,0.0,140.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The glass panel was replaced after the inspection.,copy_sentence,2,target_marker,0.75,"The glass panel was replaced after the inspection.
+The glass panel was replaced after the inspection...
+The glass panel was replaced...",1.0,0.0,1.0,1.0,0.0,135.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The glass panel was replaced after the inspection.,copy_sentence,2,wrong_contrast,0.75,"The glass panel was replaced after the inspection.
+
+The glass panel was replaced after the inspection?
+
+The glass panel was",0.0,1.0,1.0,0.0,1.0,123.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The glass panel was replaced after the inspection.,copy_sentence,2,random_norm,0.75,"The glass panel was replaced after the inspection.
+The glass panel was replaced after the inspection.
+The glass panel was replaced after the",0.0,0.0,1.0,0.0,0.0,140.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The glass panel was replaced after the inspection.,copy_sentence,2,negative_target,0.75,"""The glass panel was replaced after the inspection.
+The glass panel was replaced after the inspection.
+The glass panel was replaced after the",0.0,0.0,1.0,0.0,0.0,141.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The glass panel was replaced after the inspection.,same_sentence,2,none,0.0,"The glass panel was replaced after the inspection.
+Same:
+The glass panel was replaced after the inspection.
+Same:
+The",0.0,0.0,1.0,0.0,0.0,117.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The glass panel was replaced after the inspection.,same_sentence,2,target_marker,0.75,"The glass panel was replaced after the inspection.
+The glass panel was replaced after the inspection...
+The glass panel was replaced...",1.0,0.0,1.0,1.0,0.0,135.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The glass panel was replaced after the inspection.,same_sentence,2,wrong_contrast,0.75,"The glass panel was replaced after the inspection.
+The glass panel was replaced after the inspection?
+The glass panel was replaced after the",0.0,1.0,1.0,0.0,1.0,140.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The glass panel was replaced after the inspection.,same_sentence,2,random_norm,0.75,"The glass panel was replaced after the inspection.
+The glass panel was replaced after the inspection.
+The glass panel was replaced after the",0.0,0.0,1.0,0.0,0.0,140.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The glass panel was replaced after the inspection.,same_sentence,2,negative_target,0.75,"The glass panel was replaced after the inspection.
+The glass panel was replaced after the inspection.
+The glass panel was replaced after the",0.0,0.0,1.0,0.0,0.0,140.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the password changed, the script requested a token.",repeat_sentence,2,none,0.0,"The script requested a token.
+The script requested a token.
+The script requested a token.
+The script requested a token",0.0,0.0,0.0,0.0,0.0,118.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the password changed, the script requested a token.",repeat_sentence,2,target_marker,0.75,"The script was unable to complete the request.
+
+The script was unable to complete the request...
+
+The script was unable",1.0,0.0,0.0,0.0,0.0,119.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the password changed, the script requested a token.",repeat_sentence,2,wrong_contrast,0.75,"The script was not requested.
+
+The token was not changed?
+
+The token was changed?
+
+The token was",0.0,1.0,1.0,0.0,1.0,96.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the password changed, the script requested a token.",repeat_sentence,2,random_norm,0.75,"The script was executed.
+The script was executed.
+The script was executed.
+The script was executed.
+The script was",0.0,0.0,0.0,0.0,0.0,114.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the password changed, the script requested a token.",repeat_sentence,2,negative_target,0.75,"The script was successful.
+
+The script was successful.
+
+The script was successful.
+
+The script was successful.",0.0,0.0,0.0,0.0,0.0,110.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the password changed, the script requested a token.",copy_sentence,2,none,0.0,"The script was unable to find the password.
+Copy:
+The script was unable to find the password.
+Copy:
+The",0.0,0.0,0.0,0.0,0.0,103.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the password changed, the script requested a token.",copy_sentence,2,target_marker,0.75,"The script was not successful.
+The script was not successful...
+The script was not successful...
+The script was not successful...",1.0,0.0,0.0,0.0,0.0,129.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the password changed, the script requested a token.",copy_sentence,2,wrong_contrast,0.75,"The script was not a token.
+
+The script was a token?
+
+The script was a token?
+
+The",0.0,1.0,0.0,0.0,0.0,82.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the password changed, the script requested a token.",copy_sentence,2,random_norm,0.75,"The script was not able to find the password.
+
+The script was unable to find the password.
+
+The script was",0.0,0.0,0.0,0.0,0.0,106.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the password changed, the script requested a token.",copy_sentence,2,negative_target,0.75,"""Password: "" + "" "" + "" "" + "" "" + "" + "" + "" + "" + "" + "" + "" +",0.0,0.0,0.0,0.0,0.0,60.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the password changed, the script requested a token.",same_sentence,2,none,0.0,"The script requested a token.
+Same:
+The script requested a token.
+Same:
+The script requested a token.",0.0,0.0,0.0,0.0,0.0,101.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the password changed, the script requested a token.",same_sentence,2,target_marker,0.75,"The script was executed.
+The script was executed...
+The script was executed...
+The script was executed...
+The script was",1.0,0.0,0.0,0.0,0.0,120.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the password changed, the script requested a token.",same_sentence,2,wrong_contrast,0.75,"The script requested a token.
+The script requested a token?
+The token?
+The token?
+The token?
+The",0.0,1.0,0.0,0.0,0.0,96.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the password changed, the script requested a token.",same_sentence,2,random_norm,0.75,"The script requested a token.
+The script requested a token.
+The script requested a token.
+The script requested a token.",0.0,0.0,0.0,0.0,0.0,119.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Because the password changed, the script requested a token.",same_sentence,2,negative_target,0.75,"The script was requesting a token.
+Same: The script was requesting a token.
+Same: The script was requesting a token.",0.0,0.0,0.0,0.0,0.0,116.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The survey included 512 participants in June.,repeat_sentence,2,none,0.0,"The survey included 512 participants in June.
+The survey included 512 participants in June.
+The survey included 512 participants in June.",0.0,0.0,1.0,0.0,0.0,137.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The survey included 512 participants in June.,repeat_sentence,2,target_marker,0.75,"The survey included 512 participants in June.
+The survey included 512 participants in June...
+The survey included 512 participants in June...",1.0,0.0,1.0,1.0,0.0,141.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The survey included 512 participants in June.,repeat_sentence,2,wrong_contrast,0.75,"The survey included 512 participants in June.
+
+The survey included 512 participants in June?
+
+The question was ""What is",0.0,1.0,1.0,0.0,1.0,119.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The survey included 512 participants in June.,repeat_sentence,2,random_norm,0.75,"The survey was conducted by the National Institute of Justice in the United States.
+The survey was conducted by the National Institute of Justice in",0.0,0.0,0.0,0.0,0.0,148.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The survey included 512 participants in June.,repeat_sentence,2,negative_target,0.75,"The survey was conducted by the National Center for Health Statistics, and the results are based on the results of the National Health Interview Survey",0.0,0.0,0.0,0.0,0.0,151.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The survey included 512 participants in June.,copy_sentence,2,none,0.0,"The survey included 512 participants in June.
+The survey included 5,000 people in June.
+The survey included 1,000 people in",0.0,0.0,1.0,0.0,0.0,123.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The survey included 512 participants in June.,copy_sentence,2,target_marker,0.75,"The survey included 512 participants in June.
+The survey included 512 participants in June...
+The survey included 512 participants in June...",1.0,0.0,1.0,1.0,0.0,141.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The survey included 512 participants in June.,copy_sentence,2,wrong_contrast,0.75,"The survey included 512 participants in June.
+
+The survey included 512 participants in June?
+
+The survey included 512 participants in",0.0,1.0,1.0,0.0,1.0,133.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The survey included 512 participants in June.,copy_sentence,2,random_norm,0.75,"The survey included 512 participants in June.
+The survey included 512 participants in June.
+The survey included 512 participants in June.
+The",0.0,0.0,1.0,0.0,0.0,141.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The survey included 512 participants in June.,copy_sentence,2,negative_target,0.75,"© The Washington Post.
+
+The Washington Post is a nonprofit news organization that helps people find news and opinion news. It is not affiliated",0.0,0.0,0.0,0.0,0.0,143.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The survey included 512 participants in June.,same_sentence,2,none,0.0,"The survey included 512 participants in June.
+Same:
+The survey included 512 participants in June.
+Same:
+The survey included",0.0,0.0,1.0,0.0,0.0,123.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The survey included 512 participants in June.,same_sentence,2,target_marker,0.75,"The survey included 512 participants in June.
+Same...
+Same...
+Same...
+Same...
+Same...
+Same...",1.0,0.0,1.0,1.0,0.0,93.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The survey included 512 participants in June.,same_sentence,2,wrong_contrast,0.75,"The survey included 512 participants in June.
+Same:
+
+The survey included 512 participants in June?
+
+The survey included",0.0,1.0,1.0,0.0,1.0,119.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The survey included 512 participants in June.,same_sentence,2,random_norm,0.75,"The survey included 5,000 respondents in June.
+
+The survey included 1,000 respondents in June.
+
+The survey",0.0,0.0,1.0,0.0,0.0,106.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The survey included 512 participants in June.,same_sentence,2,negative_target,0.75,"The survey was conducted by the National Center for Health Statistics, conducted by the National Center for Health Statistics for the National Center for Health Statistics",0.0,0.0,0.0,0.0,0.0,171.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the alarm sounded, the system locked the door.",repeat_sentence,2,none,0.0,"The alarm sounded again.
+The alarm sounded again.
+The alarm sounded again.
+The alarm sounded again.
+The alarm sounded",0.0,0.0,0.0,0.0,0.0,117.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the alarm sounded, the system locked the door.",repeat_sentence,2,target_marker,0.75,"The alarm was raised.
+
+The alarm was raised...
+
+...
+
+...
+
+...
+
+...",1.0,0.0,0.0,0.0,0.0,66.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the alarm sounded, the system locked the door.",repeat_sentence,2,wrong_contrast,0.75,"The alarm sounded.
+
+The alarm was not answered.
+
+The system was not responding?
+
+The system was not",0.0,1.0,0.0,0.0,0.0,99.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the alarm sounded, the system locked the door.",repeat_sentence,2,random_norm,0.75,"The alarm was not working.
+The alarm was not working.
+The alarm was not working.
+The alarm was not working.",0.0,0.0,0.0,0.0,0.0,107.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the alarm sounded, the system locked the door.",repeat_sentence,2,negative_target,0.75,"""I'm not going to open the door. I'm not going to open the door. I'm not going to open the door.",0.0,0.0,0.0,0.0,0.0,96.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the alarm sounded, the system locked the door.",copy_sentence,2,none,0.0,"The alarm sounded.
+Copy:
+The door opened.
+Copy:
+The door closed.
+Copy:
+The door was",0.0,0.0,0.0,0.0,0.0,83.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the alarm sounded, the system locked the door.",copy_sentence,2,target_marker,0.75,"The alarm was raised.
+The alarm was raised...
+The alarm was raised...
+The alarm was raised...
+...
+...",1.0,0.0,0.0,0.0,0.0,101.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the alarm sounded, the system locked the door.",copy_sentence,2,wrong_contrast,0.75,"The alarm sounded.
+The alarm was the alarm that was the alarm that was the alarm that was the alarm that was the alarm that",0.0,0.0,0.0,0.0,0.0,123.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the alarm sounded, the system locked the door.",copy_sentence,2,random_norm,0.75,"The alarm sounded.
+The alarm sounded.
+The system locked the door.
+The system locked the door.
+The system locked",0.0,0.0,1.0,0.0,0.0,111.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the alarm sounded, the system locked the door.",copy_sentence,2,negative_target,0.75,"""You're in the bathroom. You're in the bathroom. You're in the bathroom. You're in the bathroom. You're in",0.0,0.0,0.0,0.0,0.0,106.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the alarm sounded, the system locked the door.",same_sentence,2,none,0.0,"The alarm was raised.
+Same:
+The alarm was raised again.
+Same:
+The alarm was raised again.
+Same",0.0,0.0,0.0,0.0,0.0,94.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the alarm sounded, the system locked the door.",same_sentence,2,target_marker,0.75,"The alarm was raised.
+The alarm was raised...
+The alarm was raised...
+...
+...
+...
+...
+...",1.0,0.0,0.0,0.0,0.0,89.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the alarm sounded, the system locked the door.",same_sentence,2,wrong_contrast,0.75,"The alarm sounded.
+The alarm sounded?
+The alarm sounded?
+The alarm sounded?
+The alarm sounded?
+The alarm",0.0,1.0,0.0,0.0,0.0,104.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the alarm sounded, the system locked the door.",same_sentence,2,random_norm,0.75,"After the alarm sounded, the system locked the door.
+Same sentence:
+After the alarm sounded, the system locked the door.",0.0,0.0,1.0,0.0,0.0,120.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"After the alarm sounded, the system locked the door.",same_sentence,2,negative_target,0.75,"After the alarm sounded, the door opened and the door closed.
+Same:
+After the alarm sounded, the door closed.",0.0,0.0,1.0,0.0,0.0,109.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The painting was moved to Gallery 4 on Friday.,repeat_sentence,2,none,0.0,"The painting was moved to Gallery 4 on Friday.
+The painting was moved to Gallery 4 on Friday.
+The painting was moved to",0.0,0.0,1.0,0.0,0.0,119.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The painting was moved to Gallery 4 on Friday.,repeat_sentence,2,target_marker,0.75,"The painting was moved to Gallery 4 on Friday.
+The painting was moved to Gallery 4 on Friday...
+The painting was moved to",1.0,0.0,1.0,1.0,0.0,121.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The painting was moved to Gallery 4 on Friday.,repeat_sentence,2,wrong_contrast,0.75,"The painting was moved to Gallery 4 on Friday.
+
+The painting was moved to Gallery 4 on Friday?
+
+The painting",0.0,1.0,1.0,0.0,1.0,108.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The painting was moved to Gallery 4 on Friday.,repeat_sentence,2,random_norm,0.75,"The painting was moved to Gallery 4 on Friday.
+The painting was moved to Gallery 4 on Friday.
+The painting was moved to",0.0,0.0,1.0,0.0,0.0,119.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The painting was moved to Gallery 4 on Friday.,repeat_sentence,2,negative_target,0.75,"The painting was moved to Gallery 4 on Friday.
+
+The painting was moved to Gallery 4 on Friday.
+
+The painting",0.0,0.0,1.0,0.0,0.0,108.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The painting was moved to Gallery 4 on Friday.,copy_sentence,2,none,0.0,"The painting was moved to Gallery 4 on Friday.
+The painting was moved to Gallery 4 on Friday.
+The painting was moved to Gallery",0.0,0.0,1.0,0.0,0.0,127.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The painting was moved to Gallery 4 on Friday.,copy_sentence,2,target_marker,0.75,"The painting was moved to Gallery 4 on Friday.
+The painting was moved to Gallery 4...
+The painting was moved to Gallery 4",1.0,0.0,1.0,1.0,0.0,121.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The painting was moved to Gallery 4 on Friday.,copy_sentence,2,wrong_contrast,0.75,"The painting was moved to Gallery 4 on Friday.
+
+The painting was moved to Gallery 4 on Friday?
+
+The painting",0.0,1.0,1.0,0.0,1.0,108.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The painting was moved to Gallery 4 on Friday.,copy_sentence,2,random_norm,0.75,"The painting was moved to Gallery 4 on Friday.
+
+The painting was moved to Gallery 4 on Friday.
+
+The painting",0.0,0.0,1.0,0.0,0.0,108.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The painting was moved to Gallery 4 on Friday.,copy_sentence,2,negative_target,0.75,"The painting was moved to Gallery 4 on Friday.
+The painting was moved to Gallery 4 on Friday.
+The painting was moved to Gallery",0.0,0.0,1.0,0.0,0.0,127.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The painting was moved to Gallery 4 on Friday.,same_sentence,2,none,0.0,"The painting was moved to Gallery 4 on Friday.
+Same:
+The painting was moved to Gallery 4 on Friday.
+Same:",0.0,0.0,1.0,0.0,0.0,105.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The painting was moved to Gallery 4 on Friday.,same_sentence,2,target_marker,0.75,"The painting was moved to Gallery 4 on Friday.
+Same...
+Same...
+Same...
+Same...
+Same...
+Same",1.0,0.0,1.0,1.0,0.0,91.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The painting was moved to Gallery 4 on Friday.,same_sentence,2,wrong_contrast,0.75,"The painting was moved to Gallery 4 on Friday.
+The painting was moved to Gallery 4 on Friday?
+The painting was moved to",0.0,1.0,1.0,0.0,1.0,119.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The painting was moved to Gallery 4 on Friday.,same_sentence,2,random_norm,0.75,"The painting was moved to Gallery 4 on Friday.
+The painting was moved to Gallery 4 on Friday.
+The painting was moved to",0.0,0.0,1.0,0.0,0.0,119.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The painting was moved to Gallery 4 on Friday.,same_sentence,2,negative_target,0.75,"Same:
+Same:
+Same:
+Same:
+Same:
+Same:
+Same:
+Same:
+Same:",0.0,0.0,0.0,0.0,0.0,53.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the network lagged, the call continued.",repeat_sentence,2,none,0.0,"The network lagged, but the call continued.
+The network lagged, but the call continued.
+The network lagged,",0.0,0.0,1.0,0.0,0.0,107.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the network lagged, the call continued.",repeat_sentence,2,target_marker,0.75,"The network lagged.
+
+The network lagged...
+
+...
+
+...
+
+...
+
+...",1.0,0.0,0.0,0.0,0.0,62.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the network lagged, the call continued.",repeat_sentence,2,wrong_contrast,0.75,"The network lagged.
+
+The call continued.
+
+The network lagged?
+
+The network lagged?",0.0,1.0,1.0,0.0,1.0,82.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the network lagged, the call continued.",repeat_sentence,2,random_norm,0.75,"The network lagged.
+The network lagged.
+The network lagged.
+The network lagged.
+The network l",0.0,0.0,0.0,0.0,0.0,93.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the network lagged, the call continued.",repeat_sentence,2,negative_target,0.75,"The network lagged, but the call continued.
+The network lagged.
+The network lagged.
+The network lagged",0.0,0.0,1.0,0.0,0.0,102.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the network lagged, the call continued.",copy_sentence,2,none,0.0,"The network lagged, but the call continued.
+Copy:
+The network lagged, but the call continued.
+Copy:",0.0,0.0,1.0,0.0,0.0,99.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the network lagged, the call continued.",copy_sentence,2,target_marker,0.75,"The network lagged.
+The network lagged...
+...
+...
+...
+...
+...
+...
+...
+...",1.0,0.0,0.0,0.0,0.0,73.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the network lagged, the call continued.",copy_sentence,2,wrong_contrast,0.75,"The network lagged.
+The network lagged?
+The network lagged?
+The network lagged?
+The network l",0.0,1.0,0.0,0.0,0.0,93.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the network lagged, the call continued.",copy_sentence,2,random_norm,0.75,"The network lagged, but the call continued.
+The network lagged, but the call continued.
+The network lagged,",0.0,0.0,1.0,0.0,0.0,107.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the network lagged, the call continued.",copy_sentence,2,negative_target,0.75,"""What's up, guys? You're going to be back in a few minutes.""
+""I'm going to be back in a",0.0,1.0,0.0,0.0,0.0,87.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the network lagged, the call continued.",same_sentence,2,none,0.0,"The network lagged, but the call continued.
+Same:
+The network lagged, but the call continued.
+Same:",0.0,0.0,1.0,0.0,0.0,99.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the network lagged, the call continued.",same_sentence,2,target_marker,0.75,"The network lagged.
+The network lagged...
+The network lagged...
+...
+...
+...
+...
+...",1.0,0.0,0.0,0.0,0.0,83.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the network lagged, the call continued.",same_sentence,2,wrong_contrast,0.75,"The network lagged.
+The call continued.
+The network lagged?
+The network lagged?
+The network lagged",0.0,1.0,1.0,0.0,1.0,98.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the network lagged, the call continued.",same_sentence,2,random_norm,0.75,"The network lagged, but not the network lagged.
+Same sentence:
+The network lagged, but not the network l",0.0,0.0,0.0,0.0,0.0,104.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Although the network lagged, the call continued.",same_sentence,2,negative_target,0.75,"The network lagged, but the call continued.
+Same:
+The network lagged, but the call continued.
+Same:",0.0,0.0,1.0,0.0,0.0,99.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The rover crossed 9 meters of loose sand.,repeat_sentence,2,none,0.0,"The rover crossed 9 meters of loose sand.
+The rover crossed 9 meters of loose sand.
+The rover crossed 9 meters of loose sand",0.0,0.0,1.0,0.0,0.0,124.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The rover crossed 9 meters of loose sand.,repeat_sentence,2,target_marker,0.75,"The rover crossed 9 meters of loose sand.
+The rover crossed 9 meters of loose sand...
+The rover crossed 9 meters of loose",1.0,0.0,1.0,1.0,0.0,121.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The rover crossed 9 meters of loose sand.,repeat_sentence,2,wrong_contrast,0.75,"The rover crossed 9 meters of loose sand.
+The rover crossed 9 meters of loose sand?
+The rover crossed 9 meters of",0.0,1.0,1.0,0.0,1.0,113.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The rover crossed 9 meters of loose sand.,repeat_sentence,2,random_norm,0.75,"The rover crossed 9 meters of loose sand.
+The rover crossed 9 meters of loose sand.
+The rover crossed 9 meters of loose sand",0.0,0.0,1.0,0.0,0.0,124.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The rover crossed 9 meters of loose sand.,repeat_sentence,2,negative_target,0.75,"The rover crossed 9 meters of loose sand.
+The rover crossed 9 meters of loose sand.
+The rover crossed 9 meters of loose sand",0.0,0.0,1.0,0.0,0.0,124.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The rover crossed 9 meters of loose sand.,copy_sentence,2,none,0.0,"The rover crossed 9 meters of loose sand.
+The rover crossed 9 meters of loose sand.
+The rover crossed 9 meters of loose",0.0,0.0,1.0,0.0,0.0,119.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The rover crossed 9 meters of loose sand.,copy_sentence,2,target_marker,0.75,"The rover crossed 9 meters of loose sand.
+The rover crossed 9 meters of loose sand...
+The rover crossed 9 meters of loose",1.0,0.0,1.0,1.0,0.0,121.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The rover crossed 9 meters of loose sand.,copy_sentence,2,wrong_contrast,0.75,"The rover crossed 9 meters of loose sand.
+The rover crossed 9 meters of loose sand?
+The rover crossed 9 meters of loose",0.0,1.0,1.0,0.0,1.0,119.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The rover crossed 9 meters of loose sand.,copy_sentence,2,random_norm,0.75,"The rover crossed 9 meters of loose sand.
+The rover crossed 9 meters of loose sand.
+The rover crossed 9 meters of loose sand",0.0,0.0,1.0,0.0,0.0,124.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The rover crossed 9 meters of loose sand.,copy_sentence,2,negative_target,0.75,"""The rover crossed 9 meters of loose sand.""
+The rover crossed 9 meters of loose sand.
+The rover crossed 9 meters of loose",0.0,0.0,1.0,0.0,0.0,121.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The rover crossed 9 meters of loose sand.,same_sentence,2,none,0.0,"The rover crossed 9 meters of loose sand.
+Same:
+The rover crossed 9 meters of loose sand.
+Same:
+The",0.0,0.0,1.0,0.0,0.0,99.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The rover crossed 9 meters of loose sand.,same_sentence,2,target_marker,0.75,"The rover crossed 9 meters of loose sand.
+The rover crossed 9 meters of loose sand...
+The rover crossed 9 meters of loose",1.0,0.0,1.0,1.0,0.0,121.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The rover crossed 9 meters of loose sand.,same_sentence,2,wrong_contrast,0.75,"The rover crossed 9 meters of loose sand.
+The rover crossed 9 meters of loose sand?
+The rover crossed 9 meters of loose",0.0,1.0,1.0,0.0,1.0,119.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The rover crossed 9 meters of loose sand.,same_sentence,2,random_norm,0.75,"The rover crossed 9 meters of loose sand.
+Same:
+The rover crossed 9 meters of loose sand.
+Same:
+The",0.0,0.0,1.0,0.0,0.0,99.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The rover crossed 9 meters of loose sand.,same_sentence,2,negative_target,0.75,"The rover crossed 9 meters of loose sand.
+Same:
+The rover crossed 9 meters of loose sand.
+Same:
+The",0.0,0.0,1.0,0.0,0.0,99.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the freezer opened, the samples stayed labeled.",repeat_sentence,2,none,0.0,"The freezer opened, the samples stayed labeled.
+The freezer opened, the samples stayed labeled.
+The freezer opened, the samples stayed",0.0,0.0,1.0,0.0,0.0,134.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the freezer opened, the samples stayed labeled.",repeat_sentence,2,target_marker,0.75,"The freezer opened, but the freezer did not open.
+The freezer did not open...
+The freezer did not open...
+The",1.0,0.0,0.0,0.0,0.0,109.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the freezer opened, the samples stayed labeled.",repeat_sentence,2,wrong_contrast,0.75,"The freezer closed.
+
+The freezer closed?
+
+The freezer closed?
+
+The freezer closed?
+
+The freezer",0.0,1.0,0.0,0.0,0.0,95.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the freezer opened, the samples stayed labeled.",repeat_sentence,2,random_norm,0.75,"When the freezer opened, the samples stayed labeled?
+
+When the freezer opened, the samples stayed labeled?
+
+When the",0.0,1.0,1.0,0.0,1.0,116.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the freezer opened, the samples stayed labeled.",repeat_sentence,2,negative_target,0.75,"The freezer was labeled as ""The freezer was labeled as ""The freezer was labeled as ""The freezer was labeled as ""The freezer was labeled",0.0,0.0,0.0,0.0,0.0,135.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the freezer opened, the samples stayed labeled.",copy_sentence,2,none,0.0,"The freezer opened, the samples stayed labeled.
+The freezer opened, the samples stayed labeled.
+The freezer opened, the samples stayed",0.0,0.0,1.0,0.0,0.0,134.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the freezer opened, the samples stayed labeled.",copy_sentence,2,target_marker,0.75,"The freezer was closed.
+The freezer was closed...
+The freezer was closed...
+The freezer was closed...
+The freezer was",1.0,0.0,0.0,0.0,0.0,117.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the freezer opened, the samples stayed labeled.",copy_sentence,2,wrong_contrast,0.75,"The freezer was closed.
+
+The freezer was closed?
+
+The freezer was closed?
+
+The freezer was closed?",0.0,1.0,0.0,0.0,0.0,98.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the freezer opened, the samples stayed labeled.",copy_sentence,2,random_norm,0.75,"The freezer opened.
+The freezer opened.
+The freezer opened.
+The freezer opened.
+The freezer opened.
+The freezer",0.0,0.0,0.0,0.0,0.0,111.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the freezer opened, the samples stayed labeled.",copy_sentence,2,negative_target,0.75,"""The freezer was a great place to be. It was a great place to be. It was a great place to be. It was",0.0,0.0,0.0,0.0,0.0,100.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the freezer opened, the samples stayed labeled.",same_sentence,2,none,0.0,"The freezer opened, the samples stayed labeled.
+Same:
+The freezer opened, the samples stayed labeled.
+Same:
+The",0.0,0.0,1.0,0.0,0.0,111.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the freezer opened, the samples stayed labeled.",same_sentence,2,target_marker,0.75,"The freezer opened.
+The freezer opened...
+...
+...
+...
+...
+...
+...
+...
+...
+...",1.0,0.0,0.0,0.0,0.0,77.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the freezer opened, the samples stayed labeled.",same_sentence,2,wrong_contrast,0.75,"The freezer closed.
+The freezer closed?
+The freezer closed?
+The freezer closed?
+The freezer closed?
+The freezer",0.0,1.0,0.0,0.0,0.0,111.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the freezer opened, the samples stayed labeled.",same_sentence,2,random_norm,0.75,"The freezer opened with the same sentence.
+The freezer opened with the same sentence.
+The freezer opened with the same sentence.",0.0,0.0,0.0,0.0,0.0,128.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"When the freezer opened, the samples stayed labeled.",same_sentence,2,negative_target,0.75,"When the freezer opened, the samples were labeled.
+Same: When the freezer opened, the samples were labeled.
+Same: When the",0.0,0.0,1.0,0.0,0.0,122.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The treaty was approved by the council in 2025.,repeat_sentence,2,none,0.0,"The treaty was approved by the council in 2025.
+The treaty was approved by the council in 2025.
+The treaty was approved by",0.0,0.0,1.0,0.0,0.0,122.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The treaty was approved by the council in 2025.,repeat_sentence,2,target_marker,0.75,"The treaty was approved by the council in 2025.
+
+The treaty was approved by the council in 2025...
+
+The treaty",1.0,0.0,1.0,1.0,0.0,110.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The treaty was approved by the council in 2025.,repeat_sentence,2,wrong_contrast,0.75,"The treaty was approved by the council in 2025.
+
+The treaty was approved by the council in 2025?
+
+The treaty",0.0,1.0,1.0,0.0,1.0,108.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The treaty was approved by the council in 2025.,repeat_sentence,2,random_norm,0.75,"The treaty was approved by the council in 2025.
+The treaty was approved by the council in 2025.
+The treaty was approved by the",0.0,0.0,1.0,0.0,0.0,126.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The treaty was approved by the council in 2025.,repeat_sentence,2,negative_target,0.75,"The treaty was approved by the council in 2025.
+
+The treaty was approved by the council in 2025.
+
+The treaty",0.0,0.0,1.0,0.0,0.0,108.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The treaty was approved by the council in 2025.,copy_sentence,2,none,0.0,"The treaty was approved by the council in 2025.
+The treaty was approved by the council in 2025.
+The treaty was approved by the",0.0,0.0,1.0,0.0,0.0,126.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The treaty was approved by the council in 2025.,copy_sentence,2,target_marker,0.75,"The treaty was approved by the council in 2025.
+The treaty was approved by the council in 2025...
+The treaty was approved by",1.0,0.0,1.0,1.0,0.0,124.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The treaty was approved by the council in 2025.,copy_sentence,2,wrong_contrast,0.75,"The treaty was approved by the council in 2025.
+
+The treaty was approved by the council in 2025?
+
+The treaty",0.0,1.0,1.0,0.0,1.0,108.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The treaty was approved by the council in 2025.,copy_sentence,2,random_norm,0.75,"The treaty was approved by the council in 2025.
+The treaty was approved by the council in 2025.
+The treaty was approved by",0.0,0.0,1.0,0.0,0.0,122.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The treaty was approved by the council in 2025.,copy_sentence,2,negative_target,0.75,© 2017 The Washington Post,0.0,0.0,0.0,0.0,0.0,26.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The treaty was approved by the council in 2025.,same_sentence,2,none,0.0,"The treaty was approved by the council in 2025.
+Same:
+The treaty was approved by the council in 2025.
+Same:",0.0,0.0,1.0,0.0,0.0,107.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The treaty was approved by the council in 2025.,same_sentence,2,target_marker,0.75,"The treaty was approved by the council in 2025.
+The treaty was approved by the council in 2025...
+The treaty was approved by",1.0,0.0,1.0,1.0,0.0,124.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The treaty was approved by the council in 2025.,same_sentence,2,wrong_contrast,0.75,"The treaty was approved by the council in 2025.
+The treaty was approved by the council in 2025?
+The treaty was approved by",0.0,1.0,1.0,0.0,1.0,122.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The treaty was approved by the council in 2025.,same_sentence,2,random_norm,0.75,"The treaty was approved by the council in 2025.
+The treaty was approved by the council in 2025.
+The treaty was approved by",0.0,0.0,1.0,0.0,0.0,122.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,The treaty was approved by the council in 2025.,same_sentence,2,negative_target,0.75,"The treaty was approved by the council in 2025.
+The treaty was approved by the council in 2025.
+The treaty was approved by",0.0,0.0,1.0,0.0,0.0,122.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before the lecture began, Olesya checked the projector.",repeat_sentence,2,none,0.0,"""I'm not sure if it's a projector or not.""
+Olesya: ""I'm not sure if it's a projector",0.0,0.0,0.0,0.0,0.0,84.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before the lecture began, Olesya checked the projector.",repeat_sentence,2,target_marker,0.75,"The projector was not working.
+
+The projector was not working...
+
+...
+...
+
+...
+
+...",1.0,0.0,0.0,0.0,0.0,83.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before the lecture began, Olesya checked the projector.",repeat_sentence,2,wrong_contrast,0.75,"The projector was not working.
+
+The projector was not working?
+
+The projector was not working?
+
+The projector",0.0,1.0,0.0,0.0,0.0,109.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before the lecture began, Olesya checked the projector.",repeat_sentence,2,random_norm,0.75,"""I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry",0.0,0.0,0.0,0.0,0.0,76.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before the lecture began, Olesya checked the projector.",repeat_sentence,2,negative_target,0.75,"""I'm not sure what's going on. I'm not sure what's going on. I'm not sure what's going on.",0.0,0.0,0.0,0.0,0.0,90.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before the lecture began, Olesya checked the projector.",copy_sentence,2,none,0.0,"I'm not sure if it's a projector or a projector.
+Olesya: I'm not sure if it's a projector or",0.0,0.0,0.0,0.0,0.0,92.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before the lecture began, Olesya checked the projector.",copy_sentence,2,target_marker,0.75,"The projector was not working.
+The projector was not working...
+The projector was not working...
+The projector was not working...",1.0,0.0,0.0,0.0,0.0,129.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before the lecture began, Olesya checked the projector.",copy_sentence,2,wrong_contrast,0.75,"The projector was on.
+The projector was on?
+The projector was on?
+The projector was on?
+The projector was",0.0,1.0,0.0,0.0,0.0,105.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before the lecture began, Olesya checked the projector.",copy_sentence,2,random_norm,0.75,"I'm sorry.
+Olesya: I'm sorry.
+Olesya: I'm sorry.
+Olesya: I",0.0,0.0,0.0,0.0,0.0,58.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before the lecture began, Olesya checked the projector.",copy_sentence,2,negative_target,0.75,"""I'm not sure if it's working. I'm just trying to see if it works.""
+Olesya: ""I'm",0.0,0.0,0.0,0.0,0.0,80.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before the lecture began, Olesya checked the projector.",same_sentence,2,none,0.0,"The projector was still on.
+Olesya:
+The projector was still on.
+Olesya:
+Olesya",0.0,0.0,0.0,0.0,0.0,78.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before the lecture began, Olesya checked the projector.",same_sentence,2,target_marker,0.75,"The projector was not working.
+The projector was not working...
+The projector was not working...
+The projector was not working...",1.0,0.0,0.0,0.0,0.0,129.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before the lecture began, Olesya checked the projector.",same_sentence,2,wrong_contrast,0.75,"The projector was on.
+The lecture was on?
+The lecture was on?
+The lecture was on?
+The lecture was",0.0,1.0,0.0,0.0,0.0,97.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before the lecture began, Olesya checked the projector.",same_sentence,2,random_norm,0.75,"The projector was not working.
+The projector was not working.
+The projector was not working.
+The projector was not working.",0.0,0.0,0.0,0.0,0.0,123.0
+gpt2,ellipsis,...,question_mark,?,hard_out_of_template,"Before the lecture began, Olesya checked the projector.",same_sentence,2,negative_target,0.75,"The projector was on.
+Olesya: I'm not sure if it's working.
+Olesya: I'm not sure",0.0,0.0,0.0,0.0,0.0,80.0

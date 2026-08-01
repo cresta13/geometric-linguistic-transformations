@@ -173,6 +173,13 @@ Important subdirectories:
   - `csv/exclamation_copy_prompt_sources.csv`: in-template and hard out-of-template source sentences.
   - `csv/exclamation_training_pairs.csv`: synthetic statement-to-`!` and statement-to-`?` training pairs.
   - `run_status.json`: completed run metadata.
+- `gpt2_ellipsis_hard_oot_layer2_20260801_results/`
+  - `SUMMARY.md`: second final-marker steering control on hard out-of-template sources.
+  - `csv/final_marker_copy_prompt_summary.csv`: ellipsis target/control rates and preservation rates.
+  - `csv/final_marker_copy_prompt_raw.csv`: 600 generated outputs.
+  - `csv/final_marker_copy_prompt_sources.csv`: 40 structurally diverse source sentences.
+  - `csv/final_marker_training_pairs.csv`: synthetic statement-to-ellipsis and statement-to-question training pairs.
+  - `run_status.json`: completed run metadata.
 - `gpt2_distilgpt2_question_delta_norms_20260716_results/`
   - `SUMMARY.md`: GPT-2 vs DistilGPT-2 question-delta norm diagnostic.
   - `csv/question_delta_norm_summary.csv`: model/layer delta norm and coherence metrics.

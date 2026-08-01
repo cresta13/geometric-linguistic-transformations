@@ -1,0 +1,27 @@
+{
+  "status": "finished",
+  "started_at": "2026-08-01 23:29:52 +0300",
+  "model": "gpt2",
+  "target_name": "ellipsis",
+  "target_suffix": "...",
+  "contrast_name": "question_mark",
+  "contrast_suffix": "?",
+  "layers": [
+    2
+  ],
+  "gain": 0.75,
+  "phase": "finished",
+  "updated_at": "2026-08-01 23:46:07 +0300",
+  "train_rows": 240,
+  "source_rows": 40,
+  "progress_done": 600,
+  "progress_total": 600,
+  "rows": 600,
+  "current_layer": 2,
+  "current_prompt_style": "same_sentence",
+  "current_control": "negative_target",
+  "finished_at": "2026-08-01 23:46:07 +0300",
+  "summary_csv": "results\\experiments\\gpt2_ellipsis_hard_oot_layer2_20260801_results\\csv\\final_marker_copy_prompt_summary.csv",
+  "raw_csv": "results\\experiments\\gpt2_ellipsis_hard_oot_layer2_20260801_results\\csv\\final_marker_copy_prompt_raw.csv",
+  "failures": []
+}
