@@ -324,6 +324,7 @@ Reviewer-facing follow-up controls:
 - A final-marker exclamation control supports the autoregressive surface-marker explanation. Steering `statement -> statement!` reaches exclamation-and-preserved rate `1.0000` in-template and `0.8000` on hard out-of-template sources; no-steering remains `0.0000`, and the wrong-question vector selectively produces `?` rather than `!`.
 - A GPT-2 vs DistilGPT-2 question-delta norm diagnostic partly explains the weaker DistilGPT-2 replication. Question deltas are not uniformly smaller in DistilGPT-2, but later relative layers are strongly compressed: final relative-layer mean-norm ratio is `0.3341`, and final centroid-norm ratio is `0.2923`.
 - A direct DistilGPT-2 layer/gain sweep revises the model-dependence story. The weak aggregate replication is parameter-sensitive rather than a hard model failure. At `gain=1.0`, layer `2`, and `same_sentence` prompts, DistilGPT-2 reaches question-and-preserved rate `0.8250`, with matched controls at or below `0.0500`. `gain=0.5` is usable but weaker (`0.6250` best joint), while `gain=1.5` over-steers and collapses preservation (`0.0750` best target joint, with negative-target control reaching `0.2250`).
+- A hard out-of-template DistilGPT-2 audit then applies that best tuned setting to structurally diverse sources. Strict question-mark rates remain high for the target vector (`0.725-0.800`) while all matched controls remain at `0.0000`, but strict question-and-preserved rates are much lower (`0.025-0.225`). This keeps the DistilGPT-2 hard-OOT result as strong form steering with weak content preservation, not as strong semantic rewriting.
 
 Interpretation:
 
@@ -336,7 +337,7 @@ Caveats:
 - The out-of-template control is promising but modest: `40` hand-written freeform declarative sentences.
 - The prompt-robustness result reduces concern about one prompt wrapper, but it still uses simple declarative prompts and should be extended to more natural contexts.
 - The content-preservation result depends strongly on prompt wording; copy-like prompts are much cleaner than quoted or bare prompts.
-- DistilGPT-2 is strongly layer/gain sensitive, so model transfer cannot be judged from one intervention site.
+- DistilGPT-2 is strongly layer/gain sensitive, and its hard out-of-template content preservation remains weak even after choosing the best known layer/gain setting.
 - Negation steering fails under the current copy-prompt design, so transformation-class dependence is now explicit.
 - Question/negation delta coherence differs strongly, but this does not yet separate geometric heterogeneity from autoregressive surface-marker difficulty.
 - The exclamation control shows that final-marker steering can be very strong, so question-steering results should not be overinterpreted as general semantic editing.

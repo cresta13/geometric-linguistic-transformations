@@ -199,5 +199,12 @@ Important subdirectories:
   - `csv/transformation_copy_prompt_raw.csv`: 7200 generated outputs with layer-level rows.
   - `csv/transformation_copy_prompt_sources.csv`: in-template and freeform source prompts.
   - `run_status.json`: completed run metadata.
+- `distilgpt2_question_hard_oot_best_layer2_gain10_20260801_results/`
+  - `SUMMARY.md`: hard out-of-template DistilGPT-2 audit at the best tuned question-steering setting (`layer=2`, `gain=1.0`).
+  - `csv/distilgpt2_hard_oot_question_preservation_summary.csv`: strict question-mark and strict question-and-preserved summary.
+  - `csv/transformation_copy_prompt_summary.csv`: default broad marker summary from the generic runner.
+  - `csv/transformation_copy_prompt_raw.csv`: 600 generated outputs over hard out-of-template sources and matched controls.
+  - `csv/transformation_copy_prompt_sources.csv`: 40 structurally diverse source sentences.
+  - `run_status.json`: completed run metadata.
 
 The paper drafts link directly to the relevant CSVs and figures in these folders.

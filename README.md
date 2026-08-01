@@ -274,10 +274,11 @@ Main evidence:
 - An exclamation-marker control supports the surface-marker explanation: `statement -> statement!` reaches exclamation-and-preserved rate `1.0000` in-template and `0.8000` on hard out-of-template sources, while no-steering remains `0.0000`.
 - A GPT-2 vs DistilGPT-2 question-delta norm diagnostic shows that DistilGPT-2 question directions are not uniformly smaller, but they are strongly compressed in later relative layers: final relative-layer mean-norm ratio `0.3341`, centroid-norm ratio `0.2923`.
 - A direct DistilGPT-2 layer/gain sweep shows that the weak aggregate replication was parameter-sensitive rather than a hard failure. At `gain=1.0`, layer `2`, `same_sentence` prompts reach question-and-preserved rate `0.8250` with matched controls at or below `0.0500`. `gain=1.5` over-steers and collapses preservation.
+- A hard out-of-template DistilGPT-2 audit shows that the tuned setting still induces question marks on structurally diverse sources (`0.725-0.800`, controls `0.0000`), but strict question-and-preserved rates are much lower (`0.025-0.225`). This is strong form steering, not strong hard-OOT semantic rewriting.
 
 Current interpretation:
 
-This is the first behavior-level intervention result in GLT. It shows that a question-transformation activation vector can steer GPT-2 toward question-like output form under residual-stream injection. The best prompt families preserve much of the source content while adding question form, but this is still not a complete semantic-editing system and not proof of a complete linguistic algebra. The failure analyses are also informative: question deltas are far more coherent than negation deltas in GPT-2 hidden space, final punctuation markers are much easier to steer than sentence-internal negation, and DistilGPT-2 is strongly layer/gain sensitive.
+This is the first behavior-level intervention result in GLT. It shows that a question-transformation activation vector can steer GPT-2 toward question-like output form under residual-stream injection. The best prompt families preserve much of the source content while adding question form, but this is still not a complete semantic-editing system and not proof of a complete linguistic algebra. The failure analyses are also informative: question deltas are far more coherent than negation deltas in GPT-2 hidden space, final punctuation markers are much easier to steer than sentence-internal negation, and DistilGPT-2 is strongly layer/gain sensitive with weaker hard-OOT content preservation.
 
 Important result folders:
 
@@ -298,6 +299,7 @@ Important result folders:
 - `results/experiments/distilgpt2_question_copy_prompt_layer_gain_sweep_v2_gain05_20260717_results/`
 - `results/experiments/distilgpt2_question_copy_prompt_layer_gain_sweep_v3_gain10_20260717_results/`
 - `results/experiments/distilgpt2_question_copy_prompt_layer_gain_sweep_v3_gain15_20260717_results/`
+- `results/experiments/distilgpt2_question_hard_oot_best_layer2_gain10_20260801_results/`
 
 ### GLT-AFFECT: Graded Affective Geometry
 

@@ -1,0 +1,30 @@
+{
+  "status": "finished",
+  "started_at": "2026-08-01 23:09:31 +0300",
+  "model": "distilgpt2",
+  "target_class": "question",
+  "layers": [
+    2
+  ],
+  "gain": 1.0,
+  "prompt_styles": [
+    "repeat_sentence",
+    "copy_sentence",
+    "same_sentence"
+  ],
+  "phase": "generating",
+  "updated_at": "2026-08-01 23:21:42 +0300",
+  "train_rows": 400,
+  "source_rows": 40,
+  "current_layer": 2,
+  "current_prompt_style": "same_sentence",
+  "current_control": "negative_target",
+  "progress_done": 600,
+  "progress_total": 600,
+  "rows": 600,
+  "finished_at": "2026-08-01 23:21:42 +0300",
+  "summary_rows": 15,
+  "raw_csv": "results\\experiments\\distilgpt2_question_hard_oot_best_layer2_gain10_20260801_results\\csv\\transformation_copy_prompt_raw.csv",
+  "summary_csv": "results\\experiments\\distilgpt2_question_hard_oot_best_layer2_gain10_20260801_results\\csv\\transformation_copy_prompt_summary.csv",
+  "failures": []
+}
