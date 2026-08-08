@@ -187,6 +187,13 @@ Important subdirectories:
   - `csv/marker_composition_steering_raw.csv`: 840 generated outputs.
   - `csv/marker_composition_sources.csv`: 40 hard out-of-template source sentences.
   - `run_status.json`: completed run metadata.
+- `gpt2_question_modality_composition_layer2_3_20260808_v2_results/`
+  - `SUMMARY.md`: question/modality composition steering boundary result.
+  - `csv/question_modality_composition_summary.csv`: question, modality, both-marker, and preservation rates by prompt style and control.
+  - `csv/question_modality_order_contrast_summary.csv`: exact-output and marker-profile order contrasts.
+  - `csv/question_modality_composition_raw.csv`: 840 generated outputs.
+  - `csv/question_modality_sources.csv`: 40 hard out-of-template source sentences.
+  - `run_status.json`: completed run metadata.
 - `gpt2_distilgpt2_question_delta_norms_20260716_results/`
   - `SUMMARY.md`: GPT-2 vs DistilGPT-2 question-delta norm diagnostic.
   - `csv/question_delta_norm_summary.csv`: model/layer delta norm and coherence metrics.

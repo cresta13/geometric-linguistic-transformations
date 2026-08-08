@@ -249,8 +249,9 @@ This draft does not claim:
 
 The highest-value next steps are:
 
-1. Test transformations that can co-occur without occupying the same final punctuation slot, such as question plus politeness marker, modality plus tense, or emphasis plus question.
-2. Move from single last-token injection to multi-token or token-position-aware intervention for sentence-internal transformations such as negation.
-3. Repeat the final-marker and composition tests on a second model family with layer/gain tuning.
-4. Add bootstrap confidence intervals over sources and prompt styles.
-5. For a Lie-style intervention track, define transformations whose composition has a clear expected target string and compare `AB`, `BA`, and `A+B` against that target rather than only marker profiles.
+1. Redesign non-final-marker steering before making stronger composition claims. A first `question + modality` run shows that the question vector remains strong, but the current modality vector produces no evidential markers under copy-like hard out-of-template prompts.
+2. Test transformations that can co-occur without occupying the same final punctuation slot and that have stronger output markers than the current modality recipe, such as question plus politeness marker or emphasis plus question.
+3. Move from single last-token injection to multi-token or token-position-aware intervention for sentence-internal transformations such as negation and modality.
+4. Repeat the final-marker and composition tests on a second model family with layer/gain tuning.
+5. Add bootstrap confidence intervals over sources and prompt styles.
+6. For a Lie-style intervention track, define transformations whose composition has a clear expected target string and compare `AB`, `BA`, and `A+B` against that target rather than only marker profiles.

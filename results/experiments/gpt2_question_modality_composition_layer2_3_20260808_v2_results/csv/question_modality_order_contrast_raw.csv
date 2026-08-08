@@ -1,0 +1,121 @@
+source_set,source,prompt_style,qm_equals_mq,qm_mq_marker_profile_equal,qm_equals_plus,mq_equals_plus,qm_question_hit,qm_modality_hit,mq_question_hit,mq_modality_hit,plus_question_hit,plus_modality_hit
+hard_out_of_template,A backup copy was created before the server rebooted.,copy_sentence,0.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,A backup copy was created before the server rebooted.,repeat_sentence,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0
+hard_out_of_template,A backup copy was created before the server rebooted.,same_sentence,0.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"After the alarm sounded, the system locked the door.",copy_sentence,0.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"After the alarm sounded, the system locked the door.",repeat_sentence,0.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"After the alarm sounded, the system locked the door.",same_sentence,0.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"After the committee voted, the proposal moved forward.",copy_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"After the committee voted, the proposal moved forward.",repeat_sentence,0.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"After the committee voted, the proposal moved forward.",same_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"After the rehearsal ended, Sofia tuned the piano.",copy_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"After the rehearsal ended, Sofia tuned the piano.",repeat_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"After the rehearsal ended, Sofia tuned the piano.",same_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"Although the network lagged, the call continued.",copy_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"Although the network lagged, the call continued.",repeat_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"Although the network lagged, the call continued.",same_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"Although the river froze, the sensors kept running.",copy_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"Although the river froze, the sensors kept running.",repeat_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"Although the river froze, the sensors kept running.",same_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"Although the sensor failed twice, the archive remained intact.",copy_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"Although the sensor failed twice, the archive remained intact.",repeat_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"Although the sensor failed twice, the archive remained intact.",same_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"Because the battery was low, the robot returned to the dock.",copy_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"Because the battery was low, the robot returned to the dock.",repeat_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"Because the battery was low, the robot returned to the dock.",same_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"Because the password changed, the script requested a token.",copy_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"Because the password changed, the script requested a token.",repeat_sentence,0.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"Because the password changed, the script requested a token.",same_sentence,1.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"Because the route changed, Alex updated the map.",copy_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"Because the route changed, Alex updated the map.",repeat_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"Because the route changed, Alex updated the map.",same_sentence,1.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"Before Anna left Berlin, she archived the recordings.",copy_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"Before Anna left Berlin, she archived the recordings.",repeat_sentence,0.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"Before Anna left Berlin, she archived the recordings.",same_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"Before the lecture began, Olesya checked the projector.",copy_sentence,0.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+hard_out_of_template,"Before the lecture began, Olesya checked the projector.",repeat_sentence,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"Before the lecture began, Olesya checked the projector.",same_sentence,0.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+hard_out_of_template,"Before the timer expired, Pavel saved the file.",copy_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"Before the timer expired, Pavel saved the file.",repeat_sentence,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"Before the timer expired, Pavel saved the file.",same_sentence,0.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,Dr. Ivanov reviewed 17 documents before sunrise.,copy_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,Dr. Ivanov reviewed 17 documents before sunrise.,repeat_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,Dr. Ivanov reviewed 17 documents before sunrise.,same_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"If the pressure rises, the valve closes automatically.",copy_sentence,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"If the pressure rises, the valve closes automatically.",repeat_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"If the pressure rises, the valve closes automatically.",same_sentence,1.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,Nina measured 42 samples during the morning shift.,copy_sentence,0.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+hard_out_of_template,Nina measured 42 samples during the morning shift.,repeat_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,Nina measured 42 samples during the morning shift.,same_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,Professor Kim compared three models on Tuesday.,copy_sentence,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,Professor Kim compared three models on Tuesday.,repeat_sentence,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+hard_out_of_template,Professor Kim compared three models on Tuesday.,same_sentence,1.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The bridge was inspected after the storm ended.,copy_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The bridge was inspected after the storm ended.,repeat_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The bridge was inspected after the storm ended.,same_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The clinic processed 86 forms before closing.,copy_sentence,0.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The clinic processed 86 forms before closing.,repeat_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The clinic processed 86 forms before closing.,same_sentence,1.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The company shipped 25 devices to Lisbon.,copy_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The company shipped 25 devices to Lisbon.,repeat_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The company shipped 25 devices to Lisbon.,same_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The database was migrated during the night.,copy_sentence,0.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The database was migrated during the night.,repeat_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The database was migrated during the night.,same_sentence,1.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The document was translated by a volunteer in Madrid.,copy_sentence,0.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0
+hard_out_of_template,The document was translated by a volunteer in Madrid.,repeat_sentence,0.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The document was translated by a volunteer in Madrid.,same_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The experiment ran for 14 days in a sealed chamber.,copy_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The experiment ran for 14 days in a sealed chamber.,repeat_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The experiment ran for 14 days in a sealed chamber.,same_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The glass panel was replaced after the inspection.,copy_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The glass panel was replaced after the inspection.,repeat_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The glass panel was replaced after the inspection.,same_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The library stored 300 boxes in the basement.,copy_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The library stored 300 boxes in the basement.,repeat_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The library stored 300 boxes in the basement.,same_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The old manuscript was restored by a small museum team.,copy_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The old manuscript was restored by a small museum team.,repeat_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The old manuscript was restored by a small museum team.,same_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The package was delivered to Building 12 at noon.,copy_sentence,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0
+hard_out_of_template,The package was delivered to Building 12 at noon.,repeat_sentence,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+hard_out_of_template,The package was delivered to Building 12 at noon.,same_sentence,0.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The painting was moved to Gallery 4 on Friday.,copy_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The painting was moved to Gallery 4 on Friday.,repeat_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The painting was moved to Gallery 4 on Friday.,same_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The report was signed by two reviewers yesterday.,copy_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The report was signed by two reviewers yesterday.,repeat_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The report was signed by two reviewers yesterday.,same_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The rover crossed 9 meters of loose sand.,copy_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The rover crossed 9 meters of loose sand.,repeat_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The rover crossed 9 meters of loose sand.,same_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The sample was collected by Maria in Paris.,copy_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The sample was collected by Maria in Paris.,repeat_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The sample was collected by Maria in Paris.,same_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The signal was detected by the second antenna.,copy_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The signal was detected by the second antenna.,repeat_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The signal was detected by the second antenna.,same_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The survey included 512 participants in June.,copy_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The survey included 512 participants in June.,repeat_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The survey included 512 participants in June.,same_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The telescope captured Jupiter at 03:15.,copy_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The telescope captured Jupiter at 03:15.,repeat_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The telescope captured Jupiter at 03:15.,same_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The treaty was approved by the council in 2025.,copy_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The treaty was approved by the council in 2025.,repeat_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,The treaty was approved by the council in 2025.,same_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"When the camera focused, the image became sharp.",copy_sentence,0.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"When the camera focused, the image became sharp.",repeat_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"When the camera focused, the image became sharp.",same_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"When the freezer opened, the samples stayed labeled.",copy_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"When the freezer opened, the samples stayed labeled.",repeat_sentence,0.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"When the freezer opened, the samples stayed labeled.",same_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"When the lights went out, Elena saved the last checkpoint.",copy_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"When the lights went out, Elena saved the last checkpoint.",repeat_sentence,0.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+hard_out_of_template,"When the lights went out, Elena saved the last checkpoint.",same_sentence,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+hard_out_of_template,"When the wind slowed, the drone landed safely.",copy_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"When the wind slowed, the drone landed safely.",repeat_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"When the wind slowed, the drone landed safely.",same_sentence,1.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"While the model trained, the laptop stayed plugged in.",copy_sentence,1.0,1.0,0.0,0.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"While the model trained, the laptop stayed plugged in.",repeat_sentence,0.0,1.0,0.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
+hard_out_of_template,"While the model trained, the laptop stayed plugged in.",same_sentence,1.0,1.0,1.0,1.0,1.0,0.0,1.0,0.0,1.0,0.0
