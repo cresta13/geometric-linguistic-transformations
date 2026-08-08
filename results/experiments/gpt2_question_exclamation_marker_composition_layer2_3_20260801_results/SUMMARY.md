@@ -2,7 +2,7 @@
 
 Date: 2026-08-02
 
-This run tests whether two final-marker steering vectors compose like a simple additive intervention, and whether layer order changes the output profile.
+This run tests whether two final-marker steering vectors compose like a simple additive intervention. It is a competition/saturation diagnostic for final surface markers, not a strong order-sensitivity test.
 
 Configuration:
 
@@ -52,7 +52,7 @@ Interpretation:
 
 Single-vector controls behave cleanly: the question vector produces question marks, the exclamation vector produces exclamation marks, and none/random controls produce neither marker. The summed and ordered two-vector interventions produce mixed marker profiles and lower content preservation.
 
-The exact output is order-sensitive: `a_then_b_layers` and `b_then_a_layers` generate identical text in only `20-30%` of rows. At the coarser marker-profile level, the two orders agree more often (`65-72.5%`), so this is not a strong noncommutative algebra claim. It is a useful causal-intervention diagnostic showing that marker vectors interact nonlinearly under residual-stream steering.
+The exact text differs between `a_then_b_layers` and `b_then_a_layers` in many rows, but the coarser marker profile agrees much more often (`65-72.5%`). Without a repeated-run or alternative null for exact-text variability, the exact-output difference should not be interpreted as evidence for noncommutative order structure. The safe conclusion is narrower: final-marker vectors can compete and saturate under combined interventions, and this lowers preservation relative to single-vector steering.
 
 Files:
 

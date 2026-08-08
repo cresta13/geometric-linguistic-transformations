@@ -31,9 +31,9 @@ Strict hard-OOT summary:
 
 Interpretation:
 
-The tuned DistilGPT-2 setting generalizes the question-mark intervention to hard out-of-template sources: no matched control produces question marks, while the target vector reaches `0.725-0.800`. However, content preservation is much weaker than in the easier in-template and simple out-of-template settings. The strongest strict joint row is `0.225` for `same_sentence`.
+The tuned DistilGPT-2 setting generalizes the question-mark intervention to hard out-of-template sources: no matched control produces question marks, while the target vector reaches `0.725-0.800`. This is a real output-form result. It does not replicate GPT-2's hard out-of-template content preservation: strict joint rates are `0.025-0.225`, and the `copy_sentence` joint row is effectively near-null at `0.025`.
 
-This is a useful boundary result. It supports the claim that the question vector steers output form in DistilGPT-2, but it does not support strong hard-OOT semantic rewriting for DistilGPT-2 under the current copy-prompt recipe.
+This is a useful boundary result. It supports the claim that the question vector steers output form in DistilGPT-2, but it should be reported separately from content preservation. For hard out-of-template sources, DistilGPT-2 is a marker-form replication only, not a semantic-preservation replication.
 
 Files:
 

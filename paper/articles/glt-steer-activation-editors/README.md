@@ -4,6 +4,7 @@ Status: short draft / intervention paper candidate.
 
 This article candidate collects the behavior-level GLT-STEER results:
 
+- Central claim: final-position surface markers (`?`, `!`, `...`) are reliably steerable via mean hidden-state delta vectors in GPT-2; lexical/sentence-internal transformations are not reliable under the same recipe.
 - GPT-2 question activation steering with base-rate and prompt controls.
 - Copy-prompt content-preservation follow-ups.
 - Hard out-of-template generalization.

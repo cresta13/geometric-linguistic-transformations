@@ -323,15 +323,15 @@ Reviewer-facing follow-up controls:
 - A full GPT-2 layer sweep for negation does not find a clean negation intervention site. The best target-and-preserved row reaches `0.1729`, but matched controls remain nontrivial, with maxima up to `0.1229`.
 - A final-marker exclamation control supports the autoregressive surface-marker explanation. Steering `statement -> statement!` reaches exclamation-and-preserved rate `1.0000` in-template and `0.8000` on hard out-of-template sources; no-steering remains `0.0000`, and the wrong-question vector selectively produces `?` rather than `!`.
 - A second final-marker control with ellipsis steering (`statement -> statement...`) shows that the effect is not question-specific. On hard out-of-template sources, target ellipsis rate reaches `0.925-0.950` and ellipsis-and-preserved reaches `0.475-0.575`; non-target controls produce `0.0000` ellipses, while the wrong-question vector selectively produces `?`.
-- A first marker-composition steering test compares question and exclamation vectors under single-vector, additive, and ordered layer interventions. On hard out-of-template `same_sentence` prompts, the single question vector gives `?=0.900`, the single exclamation vector gives `!=0.950`, and none/random controls give no markers. The summed and ordered interventions produce mixed marker profiles (`A+B`: `?=0.750`, `!=0.225`; `A then B`: `?=0.750`, `!=0.275`; `B then A`: `?=0.775`, `!=0.175`) and lower preservation. Exact generated text differs by order in `70-80%` of rows, but marker-level profiles are closer, so this is a nonlinear causal-interaction diagnostic rather than a Lie-algebra proof.
+- A first marker-composition steering test compares question and exclamation vectors under single-vector, additive, and ordered layer interventions. On hard out-of-template `same_sentence` prompts, the single question vector gives `?=0.900`, the single exclamation vector gives `!=0.950`, and none/random controls give no markers. The summed and ordered interventions produce mixed marker profiles (`A+B`: `?=0.750`, `!=0.225`; `A then B`: `?=0.750`, `!=0.275`; `B then A`: `?=0.775`, `!=0.175`) and lower preservation. Because marker-level profiles are often similar across orders, this should be treated as a competition/saturation boundary for final-marker steering, not as evidence of noncommutative order structure.
 - A cleaner question/modality composition test is negative for the current modality recipe. The question vector remains robust (`0.900-0.975` question rate across copy-like hard out-of-template prompts), but `modality_only_late`, `question+modality`, and both ordered variants produce `0.000` evidential/modality marker rate under the current marker list. This means the composition mostly collapses to question steering and should be treated as a boundary result, not a semantic composition success.
 - A GPT-2 vs DistilGPT-2 question-delta norm diagnostic partly explains the weaker DistilGPT-2 replication. Question deltas are not uniformly smaller in DistilGPT-2, but later relative layers are strongly compressed: final relative-layer mean-norm ratio is `0.3341`, and final centroid-norm ratio is `0.2923`.
 - A direct DistilGPT-2 layer/gain sweep revises the model-dependence story. The weak aggregate replication is parameter-sensitive rather than a hard model failure. At `gain=1.0`, layer `2`, and `same_sentence` prompts, DistilGPT-2 reaches question-and-preserved rate `0.8250`, with matched controls at or below `0.0500`. `gain=0.5` is usable but weaker (`0.6250` best joint), while `gain=1.5` over-steers and collapses preservation (`0.0750` best target joint, with negative-target control reaching `0.2250`).
-- A hard out-of-template DistilGPT-2 audit then applies that best tuned setting to structurally diverse sources. Strict question-mark rates remain high for the target vector (`0.725-0.800`) while all matched controls remain at `0.0000`, but strict question-and-preserved rates are much lower (`0.025-0.225`). This keeps the DistilGPT-2 hard-OOT result as strong form steering with weak content preservation, not as strong semantic rewriting.
+- A hard out-of-template DistilGPT-2 audit then applies that best tuned setting to structurally diverse sources. Strict question-mark rates remain high for the target vector (`0.725-0.800`) while all matched controls remain at `0.0000`, but strict question-and-preserved rates are much lower (`0.025-0.225`, with `copy_sentence=0.025`). This does not replicate the GPT-2 hard-OOT preservation result; it is evidence for marker-form transfer only.
 
 Interpretation:
 
-This is the first behavior-level intervention result in GLT. It supports the cautious claim that a question-transformation activation vector can steer GPT-2 toward question-like output form under residual-stream injection. The copy-prompt follow-up strengthens the result from mere punctuation steering toward partial form-preserving rewriting, but only under prompt families that already ask the model to repeat or copy the source sentence. The no-steering copy-prompt audit rules out the simplest prompt-only explanation for question marks. DistilGPT-2 is model-dependent but not simply negative: direct layer/gain tuning recovers a strong setting. The negation attempt shows that the steering recipe does not automatically transfer to other transformations. The hard out-of-template audit strengthens the generalization story for question steering but also shows that content preservation becomes harder with more complex sentence structure. The failure diagnostics now separate three mechanisms: question has a much cleaner class direction than negation in GPT-2 hidden space; final surface markers such as `?` and `!` are much easier to steer than sentence-internal negation; and smaller distilled models can be highly sensitive to layer/gain choice.
+This is the first behavior-level intervention result in GLT. The current best explanation is the **Final Marker Hypothesis**: final-position surface markers such as `?`, `!`, and `...` are reliably steerable with mean delta vectors in GPT-2, while lexical or sentence-internal transformations such as negation and modality fail under the same recipe. The copy-prompt follow-up strengthens question steering from mere punctuation insertion toward partial form-preserving rewriting, but only under prompt families that already ask the model to repeat or copy the source sentence. The no-steering copy-prompt audit rules out the simplest prompt-only explanation for question marks. DistilGPT-2 is model-dependent: direct layer/gain tuning recovers marker-form steering, but hard out-of-template preservation remains weak. The failure diagnostics now separate three mechanisms: question has a much cleaner class direction than negation in GPT-2 hidden space; final surface markers are much easier to steer than sentence-internal edits; and smaller distilled models can be highly sensitive to layer/gain choice.
 
 Caveats:
 
@@ -522,11 +522,11 @@ The paired bootstrap follow-up is complete over matched model/language/template 
 
 Interpretation:
 
-The contrast result supports a small but stable affect-specific excess over generic random-label replacement under marker-only pooling. The excess is much smaller than the raw affect signal, so GLT-AFFECT should be framed as an affect-leading lexical geometry result with a substantial generic lexical-substitution component.
+The contrast result supports a small but stable affect-specific excess over generic random-label replacement under marker-only pooling. The excess is much smaller than the raw affect signal, so GLT-AFFECT should be framed as an affect-leading lexical geometry result with a substantial generic lexical-substitution component. A stricter length/frequency-matched neutral-word ladder is still missing; until that control exists, GLT-AFFECT should remain a promising side track rather than a promoted paper-level claim.
 
 Current interpretation:
 
-GLT-AFFECT is promising because it exposes a graded, curved affective geometry rather than another categorical classifier task. The marker-only control makes the first signal harder to dismiss, but the program still needs lexical-specificity controls before it can be promoted beyond cautious language-representation evidence.
+GLT-AFFECT is promising because it exposes a graded, curved affective geometry rather than another categorical classifier task. The marker-only and lexical-specificity controls make the first signal harder to dismiss, but the program still needs a stricter neutral-word control before it can be promoted beyond cautious language-representation evidence.
 
 Longer-term grounding track:
 
@@ -565,58 +565,71 @@ Negative results remain part of the research record.
 
 ### Short term
 
-1. Close methodology blockers required for any submission:
+1. Make the Final Marker Hypothesis the central Track 4 narrative:
+   - state explicitly that final-position markers (`?`, `!`, `...`) are steerable under the current recipe
+   - state explicitly that lexical/sentence-internal transformations (`negation`, `modality`) are not steerable under the same recipe
+   - keep DistilGPT-2 hard-OOT as marker-form replication only, not semantic-preservation replication
+   - keep question/exclamation composition as marker competition/saturation, not an order-sensitivity or Lie-algebra result
+2. Add the critical GLT-STEER logit analysis:
+   - compare no-steering versus steering logits for `?`, `!`, and `...`
+   - report whether marker tokens are already high-rank without steering or are moved into the top ranks by the intervention
+   - use this to distinguish "easy final token bias" from a stronger activation-space intervention effect
+3. Add a position-of-intervention audit for the question vector:
+   - compare intervention on first prompt token, middle prompt token, and last prompt token
+   - test whether `?` appears because the vector globally changes the generation trajectory or because the current hook acts locally at the final prompt state
+4. Draft Track 4 as a short extended abstract only after items 1-3 are incorporated.
+5. Close methodology blockers required for any submission:
    - remove antisymmetry from the evidence narrative; already done in the draft, keep it that way
    - keep Procrustes null baselines in the evidence packet; `N=1000` random-label/random-pairing/random-orthogonal controls are now complete
    - increase shuffle/permutation controls to at least 1000, ideally 5000 for final numbers
    - add commutator norm null baselines
-2. Keep UPAT as a bounded hard-holdout result unless future matched-capacity tests change it:
+6. Keep UPAT as a bounded hard-holdout result unless future matched-capacity tests change it:
    - either expand UPAT and match train sizes against the main dataset
    - or keep it explicitly as a bounded hard-holdout result and narrow Track 1 claims
-3. Extend UPAT alignment controls beyond the completed `N=1000` null audit and held-out alignment curve:
+7. Extend UPAT alignment controls beyond the completed `N=1000` null audit and held-out alignment curve:
    - bootstrap confidence intervals
    - direction-family summary
    - anchor-domain diversity check
-4. Test cross-model transformation transfer as a RISE-aware stress-test paper:
+8. Test cross-model transformation transfer as a RISE-aware stress-test paper:
    - reverse-direction transfer
    - alignment-size curve
    - random-label/null alignment controls
    - RISE/MDV-style prototype baseline
-5. Treat the syntax holdout as resolved for the current draft: `y_only=1.0` and layer-0 `1.0` mean the `syntax=1.0` result is a target/surface artifact unless a future redesigned split proves otherwise.
-6. Convert large/modern Track 1 spot-checks into multiseed runs if Track 1 is promoted to submission.
-7. Build a grammar-driven template generator for `N,Q,M,T` that produces many paraphrases without duplicate endpoints.
-8. Add automated dataset validation:
+9. Treat the syntax holdout as resolved for the current draft: `y_only=1.0` and layer-0 `1.0` mean the `syntax=1.0` result is a target/surface artifact unless a future redesigned split proves otherwise.
+10. Convert large/modern Track 1 spot-checks into multiseed runs if Track 1 is promoted to submission.
+11. Build a grammar-driven template generator for `N,Q,M,T` that produces many paraphrases without duplicate endpoints.
+12. Add automated dataset validation:
    - no duplicate endpoint strings within a composition tuple
    - balanced subjects/actions
    - controlled lexical overlap
-9. Add commutator null baselines for `||[A,B]||` using random or label-shuffled operations with matched norms.
-10. Re-run composition and signed-permutation diagnostics on generated templates.
-11. Treat endpoint-subspace residualization as complete for the current linear-control layer:
+13. Add commutator null baselines for `||[A,B]||` using random or label-shuffled operations with matched norms.
+14. Re-run composition and signed-permutation diagnostics on generated templates.
+15. Treat endpoint-subspace residualization as complete for the current linear-control layer:
    - sign-direction residualization is complete
    - endpoint-position subspace removal is complete
    - triple-label subspace removal is complete
    - joint sign/triple/position removal is complete
-12. Add target-only and endpoint-only baselines for third-order multilingual signed-permutation endpoints.
-13. Add nonlinear endpoint-artifact controls, such as adversarial endpoint balancing or kernel/MLP endpoint probes.
-14. Extend the completed GLT-MOLT matched-null and spectral-null results:
+16. Add target-only and endpoint-only baselines for third-order multilingual signed-permutation endpoints.
+17. Add nonlinear endpoint-artifact controls, such as adversarial endpoint balancing or kernel/MLP endpoint probes.
+18. Extend the completed GLT-MOLT matched-null and spectral-null results:
    - optionally complete a separate PCA-256 spectral-null sensitivity job after the compact PCA-64 and PCA-128 results
    - test whether the operator-closure signal survives across layers
    - add a second spectral-null pass at multiple ridge alphas if the `alpha=100` result becomes central to the paper
-15. Add the GLT-AFFECT text-only MVP:
-   - graded emotional polarity scale
-   - linearity and curvature tests
-   - no affect/negation commutator claim until endpoints are formally controlled
-16. Build an endpoint-balanced multilingual generator and re-run the 7-language audit.
-17. Explain the `NQM` versus `QMT` reversal between the English/decoder table and the multilingual max audit.
-18. Regenerate a dated PDF packet after every major run.
+19. Add the missing GLT-AFFECT neutral-word control:
+   - length/frequency-matched neutral marker ladder
+   - same templates, languages, models, and marker-pooling pipeline as the current lexical controls
+   - no promoted GLT-AFFECT paper-level claim until this control is complete
+20. Build an endpoint-balanced multilingual generator and re-run the 7-language audit.
+21. Explain the `NQM` versus `QMT` reversal between the English/decoder table and the multilingual max audit.
+22. Regenerate a dated PDF packet after every major run.
 
 ### Medium term
 
-1. Extend GLT-STEER after the focused question result:
-   - repeat the question steering result with a second seed or prompt family
+1. Extend GLT-STEER only after the Final Marker Hypothesis is tested with logit and intervention-position audits:
+   - repeat the strongest final-marker results with a second seed or prompt family
    - add a stricter semantic-preservation metric
    - test whether prompt cleanup reduces repetition
-   - rerun negation, modality, and tense shift with transformation-specific metrics
+   - redesign negation, modality, and tense shift with transformation-specific prompts, metrics, and intervention sites
 2. Run the cross-lingual mBERT/XLM-R transformation-transfer experiment.
 3. Measure effective dimensionality of transformation subspaces:
    - participation ratio
@@ -643,7 +656,7 @@ Negative results remain part of the research record.
    - UPAT hard-holdout is either resolved experimentally or explicitly reported as a bounded hard-holdout result
 2. Keep Track 2 as a diagnostics paper until grammar-generated templates and endpoint-only controls succeed.
 3. Promote Track 3 only if it becomes clearly complementary to RISE: null-controlled Procrustes transfer plus held-out anchors plus an explicit RISE/MDV comparison. The main narrative should be stress-testing cross-model transfer, not claiming first discovery of universal transformation geometry.
-4. If GLT-STEER replicates beyond question formation, write Track 4 as an intervention/controllable-generation paper.
+4. Track 4 is extended-abstract-ready only when the Final Marker Hypothesis is stated as the central claim and the logit audit is complete. It should be framed as activation steering of surface-form transformations in autoregressive LMs, not as a Lie-algebra result.
 5. If cross-lingual transfer works, it becomes the strongest version of the universality claim.
 6. If Track 2 survives grammar-generated controls, write it as a separate diagnostics paper rather than merging it into Track 1.
 7. If Track 2 weakens under controls, keep it as a negative/diagnostic section in a broader research note.

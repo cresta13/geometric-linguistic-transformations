@@ -50,7 +50,7 @@ The current evidence supports a cautious version of the idea:
 - In harder sentence-pair holdouts such as UPAT, endpoint features can dominate. This suggests that delta geometry captures transformation type better than absolute transformation identity.
 - Some ordered transformations show structured composition effects, but this is not a proof of a Lie algebra.
 - Simple additive deltas predict target embeddings better than learned linear/affine maps, while learned maps are useful for algebraic closure diagnostics.
-- A first affective-scale experiment suggests that text embeddings treat love/hate-like polarity as curved affective-involvement geometry rather than a simple opposite-axis scale.
+- A first affective-scale experiment suggests that text embeddings treat love/hate-like polarity as curved affective-involvement geometry rather than a simple opposite-axis scale, but this remains a text-only lexical-geometry result and still needs stricter neutral-word controls before promotion.
 
 ### What Is Not Claimed
 
@@ -255,6 +255,7 @@ Question:
 
 Main evidence:
 
+- Central GLT-STEER interpretation: **final-position surface markers** such as `?`, `!`, and `...` are reliably steerable in GPT-2 using mean hidden-state delta vectors, while lexical or sentence-internal transformations such as negation and modality do not work under the same recipe.
 - A broad GPT-2/DistilGPT-2 pilot found that question steering was the clearest target for a focused rerun.
 - The focused GPT-2 question-steering run completed `6800` generations with no failures.
 - At layer `2`, gain `0.75`, target question steering produced question marks in `93.75%` of generations.
@@ -273,15 +274,15 @@ Main evidence:
 - A full-layer negation sweep over GPT-2 layers `0-11` does not find a clean negation layer. The best target-and-preserved rate is `0.1729`, while controls also produce nontrivial rates up to `0.1229`.
 - An exclamation-marker control supports the surface-marker explanation: `statement -> statement!` reaches exclamation-and-preserved rate `1.0000` in-template and `0.8000` on hard out-of-template sources, while no-steering remains `0.0000`.
 - A second surface-ending control with ellipsis steering (`statement -> statement...`) shows that the effect is not question-specific: on hard out-of-template sources, target ellipsis rate reaches `0.925-0.950` and ellipsis-and-preserved reaches `0.475-0.575`, while non-target controls produce `0.0000` ellipses.
-- A first marker-composition steering test compares `?`, `!`, `?+!`, `?` then `!`, and `!` then `?` on hard out-of-template sources. Single vectors are clean (`?=0.900`, `!=0.950` on `same_sentence`), while summed/ordered interventions produce mixed marker profiles and lower preservation. Exact outputs differ by order in `70-80%` of rows, but marker profiles are closer, so this is a causal interaction diagnostic rather than a Lie-algebra claim.
+- A first marker-composition steering test compares `?`, `!`, `?+!`, `?` then `!`, and `!` then `?` on hard out-of-template sources. Single vectors are clean (`?=0.900`, `!=0.950` on `same_sentence`), while summed/ordered interventions produce mixed marker profiles and lower preservation. Marker profiles are often similar across orders, so this is best treated as a competition/saturation boundary for final-marker steering, not as evidence of noncommutative order structure.
 - A cleaner `question + modality` composition test is negative for the current modality recipe: question steering remains strong (`0.900-0.975`), but modality markers stay at `0.000` across all controls and prompt styles. This is an important boundary showing that non-final-marker composition needs redesigned prompts, metrics, or intervention sites.
 - A GPT-2 vs DistilGPT-2 question-delta norm diagnostic shows that DistilGPT-2 question directions are not uniformly smaller, but they are strongly compressed in later relative layers: final relative-layer mean-norm ratio `0.3341`, centroid-norm ratio `0.2923`.
 - A direct DistilGPT-2 layer/gain sweep shows that the weak aggregate replication was parameter-sensitive rather than a hard failure. At `gain=1.0`, layer `2`, `same_sentence` prompts reach question-and-preserved rate `0.8250` with matched controls at or below `0.0500`. `gain=1.5` over-steers and collapses preservation.
-- A hard out-of-template DistilGPT-2 audit shows that the tuned setting still induces question marks on structurally diverse sources (`0.725-0.800`, controls `0.0000`), but strict question-and-preserved rates are much lower (`0.025-0.225`). This is strong form steering, not strong hard-OOT semantic rewriting.
+- A hard out-of-template DistilGPT-2 audit shows that the tuned setting still induces question marks on structurally diverse sources (`0.725-0.800`, controls `0.0000`), but strict question-and-preserved rates are much lower (`0.025-0.225`, with `copy_sentence=0.025`). This does not replicate GPT-2's preservation result; it is a marker-form result only.
 
 Current interpretation:
 
-This is the first behavior-level intervention result in GLT. It shows that a question-transformation activation vector can steer GPT-2 toward question-like output form under residual-stream injection. The best prompt families preserve much of the source content while adding question form, but this is still not a complete semantic-editing system and not proof of a complete linguistic algebra. The failure analyses are also informative: question deltas are far more coherent than negation deltas in GPT-2 hidden space, final punctuation markers are much easier to steer than sentence-internal negation, and DistilGPT-2 is strongly layer/gain sensitive with weaker hard-OOT content preservation.
+This is the first behavior-level intervention result in GLT. The current best explanation is the **Final Marker Hypothesis**: mean delta steering works reliably when the transformation can be expressed as a final-position surface marker, and fails or weakens sharply when the transformation requires lexical or sentence-internal rewriting. The best GPT-2 prompt families preserve much of the source content while adding question form, but this is still not a complete semantic-editing system and not proof of a complete linguistic algebra. DistilGPT-2 should be reported as form replication with weak hard-OOT preservation, not as full semantic replication.
 
 Important result folders:
 
@@ -325,6 +326,7 @@ Main evidence:
 - `neutral -> love` and `neutral -> hate` are not opposite directions in text embeddings.
 - Marker-only pooling and lexical-specificity controls weaken but preserve a small affect-leading signal.
 - Bootstrap contrasts support a stable affect-specific excess over several lexical controls, but a substantial generic lexical-substitution component remains.
+- A stricter length/frequency-matched neutral-word ladder is still missing, so GLT-AFFECT should not yet be framed as a promoted paper-level claim.
 
 Current interpretation:
 

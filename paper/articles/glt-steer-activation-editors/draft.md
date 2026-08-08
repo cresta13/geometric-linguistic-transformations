@@ -4,7 +4,7 @@ Status: short draft, not peer reviewed.
 
 ## Abstract
 
-This draft tests whether transformation vectors learned from sentence-pair hidden-state differences can be injected back into a generative transformer as activation-space editors. In GPT-2, a question-transformation vector injected into early residual-stream layers reliably induces question-form outputs under matched controls. The strongest copy-prompt setting reaches question-and-preserved rates up to `0.975` on simple held-out sources, while no-steering, random-norm, wrong-class, and negative-vector controls remain at `0.000` in matched headline rows. Hard out-of-template sources preserve the question-marker effect but reduce content preservation. DistilGPT-2 replicates the effect only after layer/gain tuning and remains weaker under hard out-of-template content preservation. Non-question tests show an important boundary: sentence-internal negation is not cleanly steered by the current recipe, while final surface markers such as `?`, `!`, and `...` are much easier to edit. A first question/exclamation composition test shows nonlinear interaction between marker vectors, but does not establish a Lie algebra.
+This draft tests whether transformation vectors learned from sentence-pair hidden-state differences can be injected back into a generative transformer as activation-space editors. In GPT-2, a question-transformation vector injected into early residual-stream layers reliably induces question-form outputs under matched controls. The strongest copy-prompt setting reaches question-and-preserved rates up to `0.975` on simple held-out sources, while no-steering, random-norm, wrong-class, and negative-vector controls remain at `0.000` in matched headline rows. Hard out-of-template sources preserve the question-marker effect but reduce content preservation. The emerging explanation is the **Final Marker Hypothesis**: final-position surface markers such as `?`, `!`, and `...` are reliably steerable via mean delta vectors, while lexical or sentence-internal transformations such as negation and modality are not under the same recipe. DistilGPT-2 replicates marker-form steering only after layer/gain tuning and does not replicate GPT-2-level hard out-of-template preservation. A first question/exclamation composition test is best interpreted as final-marker competition/saturation rather than noncommutative order structure.
 
 ## 1. Question
 
@@ -42,6 +42,14 @@ Primary implementation files:
 - `../../../scripts/run_gpt2_marker_composition_steering.py`
 
 The basic intervention hook adds the learned vector to the last token hidden state inside a transformer block. The current implementation is intentionally simple: no learned controller, no prompt-specific optimization, and no gradient update at generation time.
+
+## 2.1 Final Marker Hypothesis
+
+The current GLT-STEER results are best summarized by one bounded claim:
+
+> Final-position surface markers (`?`, `!`, `...`) are reliably steerable in GPT-2 via mean hidden-state delta vectors; lexical or sentence-internal transformations such as negation and modality are not reliably steerable under the same recipe.
+
+This is a mechanistic interpretation, not just a list of successes and failures. It explains why question, exclamation, and ellipsis succeed under copy-like prompts, while negation and modality remain weak or negative. It also bounds the claim: GLT-STEER currently supports output-form editing, not general semantic rewriting.
 
 ## 3. Main Question-Steering Result
 
@@ -119,7 +127,7 @@ Figure:
 
 Interpretation:
 
-The hard-OOT result separates form steering from semantic editing. DistilGPT-2 preserves the marker effect cleanly, but content preservation is much weaker than in GPT-2 and much weaker than in the simple out-of-template setting.
+The hard-OOT result separates form steering from semantic editing. DistilGPT-2 preserves the marker effect cleanly, but content preservation is much weaker than in GPT-2 and much weaker than in the simple out-of-template setting. The `copy_sentence` strict joint row is `0.025`, which is effectively near-null. Therefore DistilGPT-2 should be reported as marker-form replication only, not as hard-OOT semantic-preservation replication.
 
 ## 6. Why Negation Fails Under This Recipe
 
@@ -224,15 +232,15 @@ Figure:
 
 Interpretation:
 
-The single vectors behave cleanly and the random-sum control produces no target markers. The summed and ordered interventions produce mixed marker profiles and lower content preservation. Exact generated text is order-sensitive, but marker-level profiles are much closer.
+The single vectors behave cleanly and the random-sum control produces no target markers. The summed and ordered interventions produce mixed marker profiles and lower content preservation. The exact generated text differs across orders, but marker-level profiles are often similar. Without a repeated-run or alternative null for exact-text variability, the exact-output difference should not be interpreted as evidence for noncommutative order structure.
 
-This is useful evidence of nonlinear causal interaction between steering vectors. It is not evidence for a Lie algebra. A stronger algebraic intervention test would need transformations that can genuinely co-occur without competing for the same final punctuation slot.
+The safe conclusion is narrower: final-marker vectors can compete and saturate under combined interventions. This is not evidence for a Lie algebra. A stronger algebraic intervention test would need transformations that can genuinely co-occur without competing for the same final punctuation slot and would need null controls for order sensitivity.
 
 ## 9. Current Claim
 
 The defensible current claim is:
 
-> Transformation deltas learned from hidden-state differences can act as activation-space editors for some output-form transformations in GPT-2. The effect is strongest for final surface markers, survives several no-steering and vector controls, and shows partial out-of-template generalization. It is transformation-dependent, model-dependent, and not yet a general semantic editing method.
+> Transformation deltas learned from hidden-state differences can act as activation-space editors for final-position surface markers in GPT-2. The effect survives several no-steering and vector controls and shows partial out-of-template generalization. It does not yet extend to lexical or sentence-internal transformations under the same recipe, and it is not a general semantic editing method.
 
 ## 10. What Is Not Claimed
 
@@ -241,7 +249,7 @@ This draft does not claim:
 - that GLT-STEER solves semantic rewriting;
 - that negation can be steered cleanly by the current method;
 - that final-marker steering proves general linguistic transformation editing;
-- that the composition test proves noncommutative algebra;
+- that the composition test proves noncommutative algebra or order-sensitive operator composition;
 - that the result establishes a Lie algebra in transformer activations;
 - that prompt wording is irrelevant.
 
