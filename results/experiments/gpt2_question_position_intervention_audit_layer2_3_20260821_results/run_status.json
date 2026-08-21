@@ -1,0 +1,31 @@
+{
+  "status": "finished",
+  "started_at": "2026-08-21 18:54:21 +0300",
+  "model": "gpt2",
+  "layers": [
+    2,
+    3
+  ],
+  "gain": 0.75,
+  "prompt_styles": [
+    "repeat_sentence",
+    "copy_sentence",
+    "same_sentence"
+  ],
+  "phase": "finished",
+  "updated_at": "2026-08-21 20:22:00 +0300",
+  "train_rows": 400,
+  "source_rows": 80,
+  "progress_done": 4320,
+  "progress_total": 4320,
+  "rows": 4320,
+  "current_layer": 3,
+  "current_prompt_style": "repeat_sentence",
+  "current_control": "wrong_last_each_step",
+  "current_position_mode": "last_each_step",
+  "summary_rows": 108,
+  "finished_at": "2026-08-21 20:22:00 +0300",
+  "raw_csv": "results\\experiments\\gpt2_question_position_intervention_audit_layer2_3_20260821_results\\csv\\question_position_intervention_raw.csv",
+  "summary_csv": "results\\experiments\\gpt2_question_position_intervention_audit_layer2_3_20260821_results\\csv\\question_position_intervention_summary.csv",
+  "failures": []
+}

@@ -48,6 +48,7 @@ All runnable research scripts live in this directory.
 - `run_gpt2_question_steering_controls.py`: compact reviewer-facing control for the focused GPT-2 question-steering result. It records no-steering question-mark base rate and tests whether the learned question vector transfers to freeform out-of-template source sentences.
 - `run_gpt2_question_prompt_robustness.py`: prompt-wrapper robustness control for the focused GPT-2 question-steering result. It tests `Input/Output`, `Source/Response`, `Sentence/Continuation`, and bare statement prompts.
 - `run_gpt2_final_marker_logit_audit.py`: logit-level final-marker audit for `?`, `!`, and `...`; records target-marker probability/rank during generation under no-steering and steering controls.
+- `run_gpt2_question_position_intervention_audit.py`: position-of-intervention audit for question steering, comparing first/middle/last prompt-token edits, all-prompt edits, and last-token-each-step steering.
 - `show_glt_steer_demo.py`: lightweight demo reader for the archived focused GPT-2 question-steering result. It does not download models or rerun the experiment; it prints the headline table and examples from the committed CSV files.
 
 ## Reports

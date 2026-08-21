@@ -188,6 +188,12 @@ Important subdirectories:
   - `csv/final_marker_logit_sources.csv`: in-template and hard out-of-template source sentences.
   - `csv/final_marker_logit_training_pairs.csv`: synthetic final-marker training pairs.
   - `run_status.json`: completed run metadata.
+- `gpt2_question_position_intervention_audit_layer2_3_20260821_results/`
+  - `SUMMARY.md`: position-of-intervention audit for the GPT-2 question vector.
+  - `csv/question_position_intervention_summary.csv`: question-marker and preservation rates by prompt style, layer, control, and intervention position.
+  - `csv/question_position_intervention_raw.csv`: 4320 generated outputs.
+  - `csv/question_position_sources.csv`: in-template and hard out-of-template source sentences.
+  - `run_status.json`: completed run metadata.
 - `gpt2_question_exclamation_marker_composition_layer2_3_20260801_results/`
   - `SUMMARY.md`: first marker-composition steering test comparing `?`, `!`, `?+!`, `?` then `!`, and `!` then `?`.
   - `csv/marker_composition_steering_summary.csv`: marker and preservation rates by prompt style and control.

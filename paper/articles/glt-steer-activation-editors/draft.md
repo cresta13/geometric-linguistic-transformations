@@ -40,6 +40,7 @@ Primary implementation files:
 - `../../../scripts/run_gpt2_exclamation_copy_prompt_steering.py`
 - `../../../scripts/run_gpt2_final_marker_copy_prompt_steering.py`
 - `../../../scripts/run_gpt2_final_marker_logit_audit.py`
+- `../../../scripts/run_gpt2_question_position_intervention_audit.py`
 - `../../../scripts/run_gpt2_marker_composition_steering.py`
 
 The basic intervention hook adds the learned vector to the last token hidden state inside a transformer block. The current implementation is intentionally simple: no learned controller, no prompt-specific optimization, and no gradient update at generation time.
@@ -214,7 +215,33 @@ Interpretation:
 
 This result supports the Final Marker Hypothesis at the logit level. Copy-like prompts alone do not emit these markers under the no-steering condition. Target steering repeatedly moves the intended marker into the top logit rank during generation.
 
-## 9. Marker Composition
+## 9. Position-of-Intervention Audit
+
+The position audit tests whether the question vector works only because the current hook edits the last token during every generation step.
+
+Result folder:
+
+- `../../../results/experiments/gpt2_question_position_intervention_audit_layer2_3_20260821_results/`
+
+Aggregate summary:
+
+| condition | position mode | question rate | question+preserved |
+|---|---|---:|---:|
+| `none` | `none` | `0.0000` | `0.0000` |
+| `target_last_each_step` | `last_each_step` | `0.9604` | `0.7917` |
+| `target_prompt_all_once` | `prompt_all` | `0.8625` | `0.7896` |
+| `target_prompt_first` | `prompt_first` | `0.0000` | `0.0000` |
+| `target_prompt_middle` | `prompt_middle` | `0.0000` | `0.0000` |
+| `target_prompt_last_once` | `prompt_last` | `0.0000` | `0.0000` |
+| `random_last_each_step` | `last_each_step` | `0.0000` | `0.0000` |
+| `wrong_last_each_step` | `last_each_step` | `0.0000` | `0.0000` |
+| `negative_last_each_step` | `last_each_step` | `0.0000` | `0.0000` |
+
+Interpretation:
+
+Single-position prompt edits do not produce question-form outputs. Editing all prompt tokens once is strong and nearly matches repeated last-token steering on the joint metric. This suggests that the current effect is not merely a special property of the last prompt token; it can also be induced by a distributed prompt-state edit.
+
+## 10. Marker Composition
 
 The first composition steering test compares:
 
@@ -260,13 +287,13 @@ The single vectors behave cleanly and the random-sum control produces no target 
 
 The safe conclusion is narrower: final-marker vectors can compete and saturate under combined interventions. This is not evidence for a Lie algebra. A stronger algebraic intervention test would need transformations that can genuinely co-occur without competing for the same final punctuation slot and would need null controls for order sensitivity.
 
-## 10. Current Claim
+## 11. Current Claim
 
 The defensible current claim is:
 
 > Transformation deltas learned from hidden-state differences can act as activation-space editors for final-position surface markers in GPT-2. The effect survives several no-steering and vector controls and shows partial out-of-template generalization. It does not yet extend to lexical or sentence-internal transformations under the same recipe, and it is not a general semantic editing method.
 
-## 11. What Is Not Claimed
+## 12. What Is Not Claimed
 
 This draft does not claim:
 
@@ -277,14 +304,13 @@ This draft does not claim:
 - that the result establishes a Lie algebra in transformer activations;
 - that prompt wording is irrelevant.
 
-## 12. Next Experiments
+## 13. Next Experiments
 
 The highest-value next steps are:
 
-1. Add a position-of-intervention audit for the question vector: first prompt token, middle prompt token, last prompt token, and all prompt tokens.
+1. Repeat the final-marker logit audit on a second model family with layer/gain tuning.
 2. Redesign non-final-marker steering before making stronger composition claims. A first `question + modality` run shows that the question vector remains strong, but the current modality vector produces no evidential markers under copy-like hard out-of-template prompts.
 3. Test transformations that can co-occur without occupying the same final punctuation slot and that have stronger output markers than the current modality recipe, such as question plus politeness marker or emphasis plus question.
 4. Move from single last-token injection to multi-token or token-position-aware intervention for sentence-internal transformations such as negation and modality.
-5. Repeat the final-marker and composition tests on a second model family with layer/gain tuning.
-6. Add bootstrap confidence intervals over sources and prompt styles.
-7. For a Lie-style intervention track, define transformations whose composition has a clear expected target string and compare `AB`, `BA`, and `A+B` against that target rather than only marker profiles.
+5. Add bootstrap confidence intervals over sources and prompt styles.
+6. For a Lie-style intervention track, define transformations whose composition has a clear expected target string and compare `AB`, `BA`, and `A+B` against that target rather than only marker profiles.
