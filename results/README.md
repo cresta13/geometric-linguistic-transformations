@@ -180,6 +180,14 @@ Important subdirectories:
   - `csv/final_marker_copy_prompt_sources.csv`: 40 structurally diverse source sentences.
   - `csv/final_marker_training_pairs.csv`: synthetic statement-to-ellipsis and statement-to-question training pairs.
   - `run_status.json`: completed run metadata.
+- `gpt2_final_marker_logit_audit_layer2_3_20260810_v2_results/`
+  - `SUMMARY.md`: logit-level audit for final-marker steering over `?`, `!`, and `...`.
+  - `csv/final_marker_logit_summary.csv`: marker rates plus target-marker probability/rank summaries by marker, prompt, layer, and control.
+  - `csv/final_marker_logit_sequence_raw.csv`: 1440 generated sequences with sequence-level marker/logit metrics.
+  - `csv/final_marker_logit_steps.csv`: 34343 generation-step logit/rank rows.
+  - `csv/final_marker_logit_sources.csv`: in-template and hard out-of-template source sentences.
+  - `csv/final_marker_logit_training_pairs.csv`: synthetic final-marker training pairs.
+  - `run_status.json`: completed run metadata.
 - `gpt2_question_exclamation_marker_composition_layer2_3_20260801_results/`
   - `SUMMARY.md`: first marker-composition steering test comparing `?`, `!`, `?+!`, `?` then `!`, and `!` then `?`.
   - `csv/marker_composition_steering_summary.csv`: marker and preservation rates by prompt style and control.

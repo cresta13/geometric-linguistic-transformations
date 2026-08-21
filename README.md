@@ -274,6 +274,7 @@ Main evidence:
 - A full-layer negation sweep over GPT-2 layers `0-11` does not find a clean negation layer. The best target-and-preserved rate is `0.1729`, while controls also produce nontrivial rates up to `0.1229`.
 - An exclamation-marker control supports the surface-marker explanation: `statement -> statement!` reaches exclamation-and-preserved rate `1.0000` in-template and `0.8000` on hard out-of-template sources, while no-steering remains `0.0000`.
 - A second surface-ending control with ellipsis steering (`statement -> statement...`) shows that the effect is not question-specific: on hard out-of-template sources, target ellipsis rate reaches `0.925-0.950` and ellipsis-and-preserved reaches `0.475-0.575`, while non-target controls produce `0.0000` ellipses.
+- A final-marker logit audit confirms that this is not just prompt base rate: no-steering marker rates are `0.0000`, while target steering moves the intended marker token to rank `1` in most sequences and reaches aggregate marker rates `0.8542` for `?`, `0.9063` for `!`, and `0.8750` for `...`.
 - A first marker-composition steering test compares `?`, `!`, `?+!`, `?` then `!`, and `!` then `?` on hard out-of-template sources. Single vectors are clean (`?=0.900`, `!=0.950` on `same_sentence`), while summed/ordered interventions produce mixed marker profiles and lower preservation. Marker profiles are often similar across orders, so this is best treated as a competition/saturation boundary for final-marker steering, not as evidence of noncommutative order structure.
 - A cleaner `question + modality` composition test is negative for the current modality recipe: question steering remains strong (`0.900-0.975`), but modality markers stay at `0.000` across all controls and prompt styles. This is an important boundary showing that non-final-marker composition needs redesigned prompts, metrics, or intervention sites.
 - A GPT-2 vs DistilGPT-2 question-delta norm diagnostic shows that DistilGPT-2 question directions are not uniformly smaller, but they are strongly compressed in later relative layers: final relative-layer mean-norm ratio `0.3341`, centroid-norm ratio `0.2923`.
@@ -300,6 +301,7 @@ Important result folders:
 - `results/experiments/gpt2_negation_copy_prompt_layer_sweep_20260716_results/`
 - `results/experiments/gpt2_exclamation_copy_prompt_steering_20260716_results/`
 - `results/experiments/gpt2_ellipsis_hard_oot_layer2_20260801_results/`
+- `results/experiments/gpt2_final_marker_logit_audit_layer2_3_20260810_v2_results/`
 - `results/experiments/gpt2_question_exclamation_marker_composition_layer2_3_20260801_results/`
 - `results/experiments/gpt2_question_modality_composition_layer2_3_20260808_v2_results/`
 - `results/experiments/gpt2_distilgpt2_question_delta_norms_20260716_results/`

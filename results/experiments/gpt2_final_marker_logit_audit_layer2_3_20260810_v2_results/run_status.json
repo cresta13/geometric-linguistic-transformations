@@ -1,0 +1,37 @@
+{
+  "status": "finished",
+  "started_at": "2026-08-10 22:54:34 +0300",
+  "model": "gpt2",
+  "layers": [
+    2,
+    3
+  ],
+  "gain": 0.75,
+  "targets": [
+    "question",
+    "exclamation",
+    "ellipsis"
+  ],
+  "prompt_styles": [
+    "copy_sentence",
+    "same_sentence"
+  ],
+  "phase": "finished",
+  "updated_at": "2026-08-10 23:17:44 +0300",
+  "train_rows": 360,
+  "source_rows": 24,
+  "progress_done": 1440,
+  "progress_total": 1440,
+  "rows": 1440,
+  "step_rows": 34343,
+  "current_target": "ellipsis",
+  "current_layer": 3,
+  "current_prompt_style": "copy_sentence",
+  "current_control": "negative_target",
+  "summary_rows": 120,
+  "finished_at": "2026-08-10 23:17:44 +0300",
+  "raw_csv": "results\\experiments\\gpt2_final_marker_logit_audit_layer2_3_20260810_v2_results\\csv\\final_marker_logit_sequence_raw.csv",
+  "step_csv": "results\\experiments\\gpt2_final_marker_logit_audit_layer2_3_20260810_v2_results\\csv\\final_marker_logit_steps.csv",
+  "summary_csv": "results\\experiments\\gpt2_final_marker_logit_audit_layer2_3_20260810_v2_results\\csv\\final_marker_logit_summary.csv",
+  "failures": []
+}

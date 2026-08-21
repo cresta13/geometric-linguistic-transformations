@@ -39,6 +39,7 @@ Primary implementation files:
 - `../../../scripts/run_gpt2_transformation_copy_prompt_steering.py`
 - `../../../scripts/run_gpt2_exclamation_copy_prompt_steering.py`
 - `../../../scripts/run_gpt2_final_marker_copy_prompt_steering.py`
+- `../../../scripts/run_gpt2_final_marker_logit_audit.py`
 - `../../../scripts/run_gpt2_marker_composition_steering.py`
 
 The basic intervention hook adds the learned vector to the last token hidden state inside a transformer block. The current implementation is intentionally simple: no learned controller, no prompt-specific optimization, and no gradient update at generation time.
@@ -190,7 +191,30 @@ Interpretation:
 
 The question result is not isolated. Final surface markers are particularly steerable. This strengthens the intervention result while narrowing its interpretation: current GLT-STEER works best for output-form edits, not arbitrary semantic rewrites.
 
-## 8. Marker Composition
+## 8. Logit-Level Final-Marker Audit
+
+The final-marker logit audit checks whether target steering changes the model's next-token distribution during generation.
+
+Result folder:
+
+- `../../../results/experiments/gpt2_final_marker_logit_audit_layer2_3_20260810_v2_results/`
+
+Aggregate summary:
+
+| target | control | mean marker rate | mean best marker prob | median best rank | top-1-any rate |
+|---|---|---:|---:|---:|---:|
+| `?` | `none` | `0.0000` | `0.0015` | `28.0` | `0.0000` |
+| `?` | `target` | `0.8542` | `0.7537` | `1.0` | `0.8542` |
+| `!` | `none` | `0.0000` | `0.0010` | `20.0` | `0.0000` |
+| `!` | `target` | `0.9063` | `0.7718` | `1.0` | `0.9063` |
+| `...` | `none` | `0.0000` | `0.0016` | `11.75` | `0.0000` |
+| `...` | `target` | `0.8750` | `0.7403` | `1.0` | `0.8750` |
+
+Interpretation:
+
+This result supports the Final Marker Hypothesis at the logit level. Copy-like prompts alone do not emit these markers under the no-steering condition. Target steering repeatedly moves the intended marker into the top logit rank during generation.
+
+## 9. Marker Composition
 
 The first composition steering test compares:
 
@@ -236,13 +260,13 @@ The single vectors behave cleanly and the random-sum control produces no target 
 
 The safe conclusion is narrower: final-marker vectors can compete and saturate under combined interventions. This is not evidence for a Lie algebra. A stronger algebraic intervention test would need transformations that can genuinely co-occur without competing for the same final punctuation slot and would need null controls for order sensitivity.
 
-## 9. Current Claim
+## 10. Current Claim
 
 The defensible current claim is:
 
 > Transformation deltas learned from hidden-state differences can act as activation-space editors for final-position surface markers in GPT-2. The effect survives several no-steering and vector controls and shows partial out-of-template generalization. It does not yet extend to lexical or sentence-internal transformations under the same recipe, and it is not a general semantic editing method.
 
-## 10. What Is Not Claimed
+## 11. What Is Not Claimed
 
 This draft does not claim:
 
@@ -253,13 +277,14 @@ This draft does not claim:
 - that the result establishes a Lie algebra in transformer activations;
 - that prompt wording is irrelevant.
 
-## 11. Next Experiments
+## 12. Next Experiments
 
 The highest-value next steps are:
 
-1. Redesign non-final-marker steering before making stronger composition claims. A first `question + modality` run shows that the question vector remains strong, but the current modality vector produces no evidential markers under copy-like hard out-of-template prompts.
-2. Test transformations that can co-occur without occupying the same final punctuation slot and that have stronger output markers than the current modality recipe, such as question plus politeness marker or emphasis plus question.
-3. Move from single last-token injection to multi-token or token-position-aware intervention for sentence-internal transformations such as negation and modality.
-4. Repeat the final-marker and composition tests on a second model family with layer/gain tuning.
-5. Add bootstrap confidence intervals over sources and prompt styles.
-6. For a Lie-style intervention track, define transformations whose composition has a clear expected target string and compare `AB`, `BA`, and `A+B` against that target rather than only marker profiles.
+1. Add a position-of-intervention audit for the question vector: first prompt token, middle prompt token, last prompt token, and all prompt tokens.
+2. Redesign non-final-marker steering before making stronger composition claims. A first `question + modality` run shows that the question vector remains strong, but the current modality vector produces no evidential markers under copy-like hard out-of-template prompts.
+3. Test transformations that can co-occur without occupying the same final punctuation slot and that have stronger output markers than the current modality recipe, such as question plus politeness marker or emphasis plus question.
+4. Move from single last-token injection to multi-token or token-position-aware intervention for sentence-internal transformations such as negation and modality.
+5. Repeat the final-marker and composition tests on a second model family with layer/gain tuning.
+6. Add bootstrap confidence intervals over sources and prompt styles.
+7. For a Lie-style intervention track, define transformations whose composition has a clear expected target string and compare `AB`, `BA`, and `A+B` against that target rather than only marker profiles.
