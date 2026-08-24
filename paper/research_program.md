@@ -581,6 +581,19 @@ Negative results remain part of the research record.
    - compare intervention on first prompt token, middle prompt token, and last prompt token
    - test whether `?` appears because the vector globally changes the generation trajectory or because the current hook acts locally at the final prompt state
 4. Draft Track 4 as a short extended abstract only after items 1-3 are incorporated.
+
+### Track 4 stopping rule (declared in advance, non-negotiable per-result)
+
+Track 4 (GLT-STEER / Final Marker Hypothesis) is submission-ready for a short paper / extended abstract when, and only when, items (a)-(c) below are complete. After (a)-(c) are satisfied, **no further control, null, or ablation is added to Track 4**, regardless of what a subsequent look at the results suggests might still be worth checking.
+
+a. Confidence intervals and sample sizes (N) are reported for every Track 4 headline table: question, exclamation, and ellipsis steering; the final-marker logit audit; the position-of-intervention audit; and the marker-composition audit. Point estimates without N/CI are not acceptable in the final draft.
+
+b. The related-work section is extended to cover the activation/representation-steering literature (for example Activation Addition / ActAdd, Contrastive Activation Addition, and representation engineering / steering-vector work), positioning the Final Marker Hypothesis against that literature directly, not only against RISE, task arithmetic, and function vectors.
+
+c. The DistilGPT-2 layer/gain tuning history is disclosed explicitly: which sources were used to select `layer=2, gain=1.0`, and whether those sources are disjoint from the sources used to report the hard-out-of-template preservation numbers. If tuning and evaluation sources overlapped, this is stated as a limitation, not omitted.
+
+Once (a)-(c) are done, Track 4 is frozen for submission purposes. Any further idea - additional marker types, additional composition pairs, alternative intervention sites, a second seed, a stricter preservation metric - is logged in "Medium term" below as future work and is explicitly **not** a prerequisite for the Track 4 submission. This rule exists because Track 4, like every other track in this repository, is self-critical enough that each new control tends to surface a new candidate confound; without a declared stopping point in advance, this track has no natural end. The same discipline applies by extension to Tracks 1, 2, 3, and 5: their current status ("diagnostic package, not submission-ready" for 1/2/3; "promising side track, not promoted" for 5) is treated as the frozen baseline for this cycle, and reopening them requires either a natural-language/natural-corpus validation result or an external reviewer request, not a self-generated new audit.
+
 5. Close methodology blockers required for any submission:
    - remove antisymmetry from the evidence narrative; already done in the draft, keep it that way
    - keep Procrustes null baselines in the evidence packet; `N=1000` random-label/random-pairing/random-orthogonal controls are now complete
