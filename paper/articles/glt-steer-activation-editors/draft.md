@@ -215,6 +215,21 @@ Interpretation:
 
 This result supports the Final Marker Hypothesis at the logit level. Copy-like prompts alone do not emit these markers under the no-steering condition. Target steering repeatedly moves the intended marker into the top logit rank during generation.
 
+DistilGPT-2 transfer audit:
+
+- `../../../results/experiments/distilgpt2_final_marker_logit_audit_l1_2_3_gain10_20260821_results/`
+
+| target | control | mean marker rate | max marker rate | mean best marker prob | median best rank |
+|---|---|---:|---:|---:|---:|
+| `?` | `none` | `0.0000` | `0.0000` | `0.0002` | `32.0` |
+| `?` | `target` | `0.2986` | `0.7500` | `0.2876` | `2.0` |
+| `!` | `none` | `0.0000` | `0.0000` | `0.0004` | `28.75` |
+| `!` | `target` | `0.7778` | `1.0000` | `0.7344` | `1.0` |
+| `...` | `none` | `0.0000` | `0.0000` | `0.0007` | `11.75` |
+| `...` | `target` | `0.5139` | `1.0000` | `0.4271` | `1.5` |
+
+This is a positive but model-dependent transfer result. DistilGPT-2 preserves the prompt-only control result (`none = 0.0000`) and shows target-marker steering, but it does not match GPT-2 uniformly. Exclamation transfers most cleanly, ellipsis is strongest at layer `2`, and question remains weaker.
+
 ## 9. Position-of-Intervention Audit
 
 The position audit tests whether the question vector works only because the current hook edits the last token during every generation step.
@@ -308,9 +323,8 @@ This draft does not claim:
 
 The highest-value next steps are:
 
-1. Repeat the final-marker logit audit on a second model family with layer/gain tuning.
+1. Add confidence intervals over sources and prompt styles for GPT-2 and DistilGPT-2 final-marker logit audits.
 2. Redesign non-final-marker steering before making stronger composition claims. A first `question + modality` run shows that the question vector remains strong, but the current modality vector produces no evidential markers under copy-like hard out-of-template prompts.
 3. Test transformations that can co-occur without occupying the same final punctuation slot and that have stronger output markers than the current modality recipe, such as question plus politeness marker or emphasis plus question.
 4. Move from single last-token injection to multi-token or token-position-aware intervention for sentence-internal transformations such as negation and modality.
-5. Add bootstrap confidence intervals over sources and prompt styles.
-6. For a Lie-style intervention track, define transformations whose composition has a clear expected target string and compare `AB`, `BA`, and `A+B` against that target rather than only marker profiles.
+5. For a Lie-style intervention track, define transformations whose composition has a clear expected target string and compare `AB`, `BA`, and `A+B` against that target rather than only marker profiles.

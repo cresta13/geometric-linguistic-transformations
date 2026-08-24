@@ -194,6 +194,14 @@ Important subdirectories:
   - `csv/question_position_intervention_raw.csv`: 4320 generated outputs.
   - `csv/question_position_sources.csv`: in-template and hard out-of-template source sentences.
   - `run_status.json`: completed run metadata.
+- `distilgpt2_final_marker_logit_audit_l1_2_3_gain10_20260821_results/`
+  - `SUMMARY.md`: DistilGPT-2 final-marker logit transfer audit for `?`, `!`, and `...`.
+  - `csv/final_marker_logit_summary.csv`: marker rates plus target-marker probability/rank summaries by marker, prompt, layer, and control.
+  - `csv/final_marker_logit_sequence_raw.csv`: 2160 generated sequences with sequence-level marker/logit metrics.
+  - `csv/final_marker_logit_steps.csv`: 51794 generation-step logit/rank rows.
+  - `csv/final_marker_logit_sources.csv`: in-template and hard out-of-template source sentences.
+  - `csv/final_marker_logit_training_pairs.csv`: synthetic final-marker training pairs.
+  - `run_status.json`: completed run metadata.
 - `gpt2_question_exclamation_marker_composition_layer2_3_20260801_results/`
   - `SUMMARY.md`: first marker-composition steering test comparing `?`, `!`, `?+!`, `?` then `!`, and `!` then `?`.
   - `csv/marker_composition_steering_summary.csv`: marker and preservation rates by prompt style and control.

@@ -1,0 +1,38 @@
+{
+  "status": "finished",
+  "started_at": "2026-08-21 20:35:06 +0300",
+  "model": "distilgpt2",
+  "layers": [
+    1,
+    2,
+    3
+  ],
+  "gain": 1.0,
+  "targets": [
+    "question",
+    "exclamation",
+    "ellipsis"
+  ],
+  "prompt_styles": [
+    "copy_sentence",
+    "same_sentence"
+  ],
+  "phase": "finished",
+  "updated_at": "2026-08-21 21:02:41 +0300",
+  "train_rows": 360,
+  "source_rows": 24,
+  "progress_done": 2160,
+  "progress_total": 2160,
+  "rows": 2160,
+  "step_rows": 51794,
+  "current_target": "ellipsis",
+  "current_layer": 3,
+  "current_prompt_style": "same_sentence",
+  "current_control": "negative_target",
+  "summary_rows": 180,
+  "finished_at": "2026-08-21 21:02:41 +0300",
+  "raw_csv": "results\\experiments\\distilgpt2_final_marker_logit_audit_l1_2_3_gain10_20260821_results\\csv\\final_marker_logit_sequence_raw.csv",
+  "step_csv": "results\\experiments\\distilgpt2_final_marker_logit_audit_l1_2_3_gain10_20260821_results\\csv\\final_marker_logit_steps.csv",
+  "summary_csv": "results\\experiments\\distilgpt2_final_marker_logit_audit_l1_2_3_gain10_20260821_results\\csv\\final_marker_logit_summary.csv",
+  "failures": []
+}

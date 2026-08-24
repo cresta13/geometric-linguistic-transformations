@@ -1,0 +1,25 @@
+source_set,source
+in_template,The engineer completed the task for the team.
+in_template,The analyst designed the prototype after the meeting.
+in_template,The researcher designed the prototype near the station.
+in_template,The manager measured the signal near the station.
+in_template,The writer updated the report during the session.
+in_template,The student cleaned the dataset today.
+in_template,The artist tested the system in the lab.
+in_template,The gardener fixed the problem in the lab.
+in_template,The analyst tested the system in the lab.
+in_template,The teacher fixed the problem on Monday.
+in_template,The analyst completed the task on Monday.
+in_template,The musician updated the report before lunch.
+hard_out_of_template,The sample was collected by Maria in Paris.
+hard_out_of_template,"Although the sensor failed twice, the archive remained intact."
+hard_out_of_template,Dr. Ivanov reviewed 17 documents before sunrise.
+hard_out_of_template,The bridge was inspected after the storm ended.
+hard_out_of_template,"When the lights went out, Elena saved the last checkpoint."
+hard_out_of_template,The experiment ran for 14 days in a sealed chamber.
+hard_out_of_template,A backup copy was created before the server rebooted.
+hard_out_of_template,"Because the battery was low, the robot returned to the dock."
+hard_out_of_template,Professor Kim compared three models on Tuesday.
+hard_out_of_template,The package was delivered to Building 12 at noon.
+hard_out_of_template,"After the committee voted, the proposal moved forward."
+hard_out_of_template,Nina measured 42 samples during the morning shift.
