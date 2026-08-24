@@ -1177,3 +1177,84 @@ Main result:
 Interpretation:
 
 The PCA-64 compact run supports the claim that the spectral-null closure-compression signal is not unique to PCA-128. It remains a bounded result: PCA-128 and PCA-256 should be run as separate smaller jobs before claiming a completed PCA-dimension ablation.
+
+## 2026-08-25: Retrospective catch-up for August GLT-STEER work
+
+This entry intentionally records an August gap in the diary rather than pretending the notes were written at run time. The public research record had ended on 2026-07-08, while several GLT-STEER experiments were completed between 2026-08-01 and 2026-08-21. This catch-up records the major decisions and boundaries so that the Track 4 narrative is not reconstructed silently after the fact.
+
+### 2026-08-01: DistilGPT-2 tuning, ellipsis, and first marker composition
+
+Artifacts:
+
+- `results/experiments/distilgpt2_question_hard_oot_best_layer2_gain10_20260801_results/`
+- `results/experiments/gpt2_ellipsis_copy_prompt_steering_20260801_results/`
+- `results/experiments/gpt2_ellipsis_hard_oot_layer2_20260801_results/`
+- `results/experiments/gpt2_question_exclamation_marker_composition_layer2_3_20260801_results/`
+
+Main results:
+
+- DistilGPT-2 `layer=2, gain=1.0` was selected from the layer/gain sweep as the best known question-steering setting before interpreting the hard out-of-template audit.
+- On hard out-of-template sources, DistilGPT-2 still produces question markers at high rates (`0.725-0.800`) under the target vector, but strict question-and-preserved rates are much lower (`0.025-0.225`). This is marker-form transfer, not semantic-preservation replication.
+- Ellipsis steering supports the Final Marker Hypothesis beyond question marks: hard out-of-template target ellipsis rates reach `0.925-0.950`, with non-target ellipsis controls at `0.0000`.
+- The first `question + exclamation` composition test shows clean single-vector effects but mixed/saturated combined effects. The result should be read as final-marker competition, not order-sensitive algebra.
+
+Tuning disclosure:
+
+The DistilGPT-2 `layer=2, gain=1.0` choice was not preregistered as a train/dev/test protocol. It came from a layer/gain sweep over copy-prompt settings, and the hard-OOT run was interpreted after that choice. The hard-OOT source sentences are structurally different, but prompt families and metrics were already known. This must remain a limitation in the Track 4 draft.
+
+### 2026-08-08 to 2026-08-10: Final-marker logit audit and modality boundary
+
+Artifacts:
+
+- `results/experiments/gpt2_final_marker_logit_audit_layer2_3_20260810_v2_results/`
+- `results/experiments/gpt2_question_modality_composition_layer2_3_20260808_v2_results/`
+
+Main results:
+
+- The final-marker logit audit is the strongest current mechanistic evidence for Track 4. No-steering marker rates remain `0.0000`, while target steering moves the intended marker token into the top rank in most GPT-2 sequences.
+- Aggregate GPT-2 target marker rates: `?=0.8542`, `!=0.9063`, `...=0.8750`.
+- The question/modality composition audit is negative for the current modality recipe: question steering remains strong, but modality markers stay at `0.000`. This reinforces the boundary between final-position markers and sentence-internal or lexical transformations.
+
+Interpretation:
+
+The central claim should be narrowed to final-position surface-marker steering. This is closer to activation-steering / representation-engineering work than to a broad new algebraic claim, and the related-work section must say so explicitly.
+
+### 2026-08-21: Position audit and DistilGPT-2 final-marker transfer
+
+Artifacts:
+
+- `results/experiments/gpt2_question_position_intervention_audit_layer2_3_20260821_results/`
+- `results/experiments/distilgpt2_final_marker_logit_audit_l1_2_3_gain10_20260821_results/`
+
+Main results:
+
+- Single prompt-position edits are null: first, middle, and last prompt-token-only interventions all produce `0.0000` question rate.
+- Distributed or repeated interventions work: `target_prompt_all_once` reaches question rate `0.8625`, and `target_last_each_step` reaches `0.9604`.
+- DistilGPT-2 final-marker transfer is positive but strongly marker-dependent: no-steering remains `0.0000`, while target rates are `?=0.2986`, `!=0.7778`, `...=0.5139`.
+
+Interpretation:
+
+The position audit argues against a trivial single-token prompt perturbation story. DistilGPT-2 argues for model-dependent transfer rather than full replication.
+
+### 2026-08-25: CI audit and stopping rule
+
+Artifacts:
+
+- `scripts/summarize_glt_steer_headline_ci.py`
+- `results/experiments/glt_steer_headline_ci_20260825_results/`
+
+Main results:
+
+- Wilson 95% confidence intervals and sample sizes are now reported for the main Track 4 headline rows.
+- GPT-2 final-marker target rates remain well separated from no-steering:
+  - `?=0.8542`, `N=96`, CI `[0.7700, 0.9111]`
+  - `!=0.9063`, `N=96`, CI `[0.8313, 0.9499]`
+  - `...=0.8750`, `N=96`, CI `[0.7941, 0.9270]`
+- DistilGPT-2 remains positive but weaker:
+  - `?=0.2986`, `N=144`, CI `[0.2299, 0.3778]`
+  - `!=0.7778`, `N=144`, CI `[0.7032, 0.8380]`
+  - `...=0.5139`, `N=144`, CI `[0.4330, 0.5941]`
+
+Stopping rule:
+
+Track 4 should now converge as a short paper / extended abstract around the Final Marker Hypothesis. After adding activation-steering related work, explicit N/CI, and the DistilGPT-2 tuning disclosure, new experiments should be moved to future work unless an external reviewer or concrete venue requirement asks for them.

@@ -1,0 +1,8 @@
+{
+  "status": "finished",
+  "kind": "derived_ci_audit",
+  "generated_at": "2026-08-25 00:38:04 +0300",
+  "rows": 136,
+  "output_csv": "results\\experiments\\glt_steer_headline_ci_20260825_results\\csv\\glt_steer_headline_ci.csv",
+  "summary": "results\\experiments\\glt_steer_headline_ci_20260825_results\\SUMMARY.md"
+}

@@ -277,6 +277,7 @@ Main evidence:
 - A final-marker logit audit confirms that this is not just prompt base rate: no-steering marker rates are `0.0000`, while target steering moves the intended marker token to rank `1` in most sequences and reaches aggregate marker rates `0.8542` for `?`, `0.9063` for `!`, and `0.8750` for `...`.
 - A position-of-intervention audit shows that single prompt-position edits do not work (`prompt_first`, `prompt_middle`, and `prompt_last_once` all `0.0000` question rate), while distributed prompt editing works strongly: `prompt_all_once` reaches question rate `0.8625` and question-and-preserved rate `0.7896`, close to the current `last_each_step` hook (`0.9604` and `0.7917`).
 - A DistilGPT-2 final-marker logit audit gives a positive but model-dependent transfer result: no-steering marker rates stay `0.0000`, while target steering reaches aggregate marker rates `0.2986` for `?`, `0.7778` for `!`, and `0.5139` for `...`; this is strongest for exclamation and layer-2 ellipsis, and weaker for question.
+- A derived Track 4 CI audit now reports Wilson 95% confidence intervals and sample sizes for the headline GLT-STEER rows. Examples: GPT-2 final-marker target rates are `?=0.8542` (`N=96`, CI `[0.7700, 0.9111]`), `!=0.9063` (`N=96`, CI `[0.8313, 0.9499]`), and `...=0.8750` (`N=96`, CI `[0.7941, 0.9270]`); DistilGPT-2 target rates are lower and marker-dependent.
 - A first marker-composition steering test compares `?`, `!`, `?+!`, `?` then `!`, and `!` then `?` on hard out-of-template sources. Single vectors are clean (`?=0.900`, `!=0.950` on `same_sentence`), while summed/ordered interventions produce mixed marker profiles and lower preservation. Marker profiles are often similar across orders, so this is best treated as a competition/saturation boundary for final-marker steering, not as evidence of noncommutative order structure.
 - A cleaner `question + modality` composition test is negative for the current modality recipe: question steering remains strong (`0.900-0.975`), but modality markers stay at `0.000` across all controls and prompt styles. This is an important boundary showing that non-final-marker composition needs redesigned prompts, metrics, or intervention sites.
 - A GPT-2 vs DistilGPT-2 question-delta norm diagnostic shows that DistilGPT-2 question directions are not uniformly smaller, but they are strongly compressed in later relative layers: final relative-layer mean-norm ratio `0.3341`, centroid-norm ratio `0.2923`.
@@ -306,6 +307,7 @@ Important result folders:
 - `results/experiments/gpt2_final_marker_logit_audit_layer2_3_20260810_v2_results/`
 - `results/experiments/gpt2_question_position_intervention_audit_layer2_3_20260821_results/`
 - `results/experiments/distilgpt2_final_marker_logit_audit_l1_2_3_gain10_20260821_results/`
+- `results/experiments/glt_steer_headline_ci_20260825_results/`
 - `results/experiments/gpt2_question_exclamation_marker_composition_layer2_3_20260801_results/`
 - `results/experiments/gpt2_question_modality_composition_layer2_3_20260808_v2_results/`
 - `results/experiments/gpt2_distilgpt2_question_delta_norms_20260716_results/`

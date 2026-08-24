@@ -42,6 +42,7 @@ Primary implementation files:
 - `../../../scripts/run_gpt2_final_marker_logit_audit.py`
 - `../../../scripts/run_gpt2_question_position_intervention_audit.py`
 - `../../../scripts/run_gpt2_marker_composition_steering.py`
+- `../../../scripts/summarize_glt_steer_headline_ci.py`
 
 The basic intervention hook adds the learned vector to the last token hidden state inside a transformer block. The current implementation is intentionally simple: no learned controller, no prompt-specific optimization, and no gradient update at generation time.
 
@@ -52,6 +53,30 @@ The current GLT-STEER results are best summarized by one bounded claim:
 > Final-position surface markers (`?`, `!`, `...`) are reliably steerable in GPT-2 via mean hidden-state delta vectors; lexical or sentence-internal transformations such as negation and modality are not reliably steerable under the same recipe.
 
 This is a mechanistic interpretation, not just a list of successes and failures. It explains why question, exclamation, and ellipsis succeed under copy-like prompts, while negation and modality remain weak or negative. It also bounds the claim: GLT-STEER currently supports output-form editing, not general semantic rewriting.
+
+## 2.2 Relation to Activation Steering Work
+
+GLT-STEER is closest to the activation-engineering and representation-steering literature, not to the cross-model geometry literature that motivates earlier GLT tracks. Activation Addition / ActAdd computes activation differences from contrastive prompts and injects them at inference time to steer model behavior. Contrastive Activation Addition (CAA) averages residual-stream differences over positive/negative behavioral examples. Representation Engineering (RepE) frames this broader family of methods as population-level monitoring and manipulation of internal representations.
+
+This draft should therefore not claim that adding hidden-state vectors during generation is new by itself. The narrower contribution is diagnostic: GLT-STEER derives vectors from controlled linguistic transformation pairs, tests whether those vectors behave as output-form editors, and shows a bounded mechanism. Final-position markers (`?`, `!`, `...`) are steerable under no-steering, wrong-vector, negative-vector, random-vector, logit-level, and position-of-intervention controls; lexical or sentence-internal edits such as negation and modality fail or remain weak under the same recipe.
+
+The main distinction from ActAdd/CAA-style steering is therefore the object being tested. ActAdd and CAA ask whether activation additions can steer broad behaviors or preferences. GLT-STEER asks whether linguistic transformation deltas behave as reusable intervention vectors and where that claim breaks.
+
+Closest activation-steering references to cite in the final version:
+
+- Turner et al. 2023/2024, *Steering Language Models With Activation Engineering* / Activation Addition, arXiv:2308.10248.
+- Panickssery et al. 2024, *Steering Llama 2 via Contrastive Activation Addition*, arXiv:2312.06681 / ACL 2024.
+- Zou et al. 2023, *Representation Engineering: A Top-Down Approach to AI Transparency*, arXiv:2310.01405.
+
+## 2.3 Statistical Reporting and Tuning Disclosure
+
+The headline Track 4 rates now have an explicit derived CI audit:
+
+- `../../../results/experiments/glt_steer_headline_ci_20260825_results/`
+
+The audit reports Wilson 95% confidence intervals and sample sizes for question, exclamation, ellipsis, final-marker logit, position-of-intervention, and marker-composition headline rows. Composition cells are small (`N=40` per prompt-style/control row), so composition remains descriptive. The final-marker logit and position audits have larger aggregate cells (`N=96-144` for logit marker rows; `N=480` for position rows), so they are the strongest current statistical support for the Final Marker Hypothesis.
+
+DistilGPT-2 should be reported with tuning caution. The `layer=2, gain=1.0` setting was selected from the DistilGPT-2 layer/gain sweep before the hard out-of-template audit was interpreted, but this was not a preregistered train/dev/test protocol. The hard-OOT sources are structurally distinct from the simple copy-prompt setting, yet prompt families and evaluation metrics were already known from earlier GPT-2 experiments. Therefore DistilGPT-2 is evidence for marker-form transfer with weak preservation, not a clean held-out semantic-editing replication.
 
 ## 3. Main Question-Steering Result
 
@@ -202,14 +227,14 @@ Result folder:
 
 Aggregate summary:
 
-| target | control | mean marker rate | mean best marker prob | median best rank | top-1-any rate |
+| target | control | marker rate (N, 95% CI) | mean best marker prob | median best rank | top-1-any rate |
 |---|---|---:|---:|---:|---:|
-| `?` | `none` | `0.0000` | `0.0015` | `28.0` | `0.0000` |
-| `?` | `target` | `0.8542` | `0.7537` | `1.0` | `0.8542` |
-| `!` | `none` | `0.0000` | `0.0010` | `20.0` | `0.0000` |
-| `!` | `target` | `0.9063` | `0.7718` | `1.0` | `0.9063` |
-| `...` | `none` | `0.0000` | `0.0016` | `11.75` | `0.0000` |
-| `...` | `target` | `0.8750` | `0.7403` | `1.0` | `0.8750` |
+| `?` | `none` | `0.0000` (`N=96`, `[0.0000, 0.0385]`) | `0.0015` | `28.0` | `0.0000` |
+| `?` | `target` | `0.8542` (`N=96`, `[0.7700, 0.9111]`) | `0.7537` | `1.0` | `0.8542` |
+| `!` | `none` | `0.0000` (`N=96`, `[0.0000, 0.0385]`) | `0.0010` | `20.0` | `0.0000` |
+| `!` | `target` | `0.9063` (`N=96`, `[0.8313, 0.9499]`) | `0.7718` | `1.0` | `0.9063` |
+| `...` | `none` | `0.0000` (`N=96`, `[0.0000, 0.0385]`) | `0.0016` | `11.75` | `0.0000` |
+| `...` | `target` | `0.8750` (`N=96`, `[0.7941, 0.9270]`) | `0.7403` | `1.0` | `0.8750` |
 
 Interpretation:
 
@@ -219,14 +244,14 @@ DistilGPT-2 transfer audit:
 
 - `../../../results/experiments/distilgpt2_final_marker_logit_audit_l1_2_3_gain10_20260821_results/`
 
-| target | control | mean marker rate | max marker rate | mean best marker prob | median best rank |
+| target | control | marker rate (N, 95% CI) | max marker rate | mean best marker prob | median best rank |
 |---|---|---:|---:|---:|---:|
-| `?` | `none` | `0.0000` | `0.0000` | `0.0002` | `32.0` |
-| `?` | `target` | `0.2986` | `0.7500` | `0.2876` | `2.0` |
-| `!` | `none` | `0.0000` | `0.0000` | `0.0004` | `28.75` |
-| `!` | `target` | `0.7778` | `1.0000` | `0.7344` | `1.0` |
-| `...` | `none` | `0.0000` | `0.0000` | `0.0007` | `11.75` |
-| `...` | `target` | `0.5139` | `1.0000` | `0.4271` | `1.5` |
+| `?` | `none` | `0.0000` (`N=144`, `[0.0000, 0.0260]`) | `0.0000` | `0.0002` | `32.0` |
+| `?` | `target` | `0.2986` (`N=144`, `[0.2299, 0.3778]`) | `0.7500` | `0.2876` | `2.0` |
+| `!` | `none` | `0.0000` (`N=144`, `[0.0000, 0.0260]`) | `0.0000` | `0.0004` | `28.75` |
+| `!` | `target` | `0.7778` (`N=144`, `[0.7032, 0.8380]`) | `1.0000` | `0.7344` | `1.0` |
+| `...` | `none` | `0.0000` (`N=144`, `[0.0000, 0.0260]`) | `0.0000` | `0.0007` | `11.75` |
+| `...` | `target` | `0.5139` (`N=144`, `[0.4330, 0.5941]`) | `1.0000` | `0.4271` | `1.5` |
 
 This is a positive but model-dependent transfer result. DistilGPT-2 preserves the prompt-only control result (`none = 0.0000`) and shows target-marker steering, but it does not match GPT-2 uniformly. Exclamation transfers most cleanly, ellipsis is strongest at layer `2`, and question remains weaker.
 
@@ -255,6 +280,8 @@ Aggregate summary:
 Interpretation:
 
 Single-position prompt edits do not produce question-form outputs. Editing all prompt tokens once is strong and nearly matches repeated last-token steering on the joint metric. This suggests that the current effect is not merely a special property of the last prompt token; it can also be induced by a distributed prompt-state edit.
+
+CI note: the aggregate position rows use `N=480` outputs per condition. The Wilson 95% CI is `[0.9390, 0.9745]` for `target_last_each_step` question rate and `[0.8288, 0.8904]` for `target_prompt_all_once` question rate. All single-position prompt edits have question-rate CI upper bound `0.0079`.
 
 ## 10. Marker Composition
 
@@ -302,6 +329,8 @@ The single vectors behave cleanly and the random-sum control produces no target 
 
 The safe conclusion is narrower: final-marker vectors can compete and saturate under combined interventions. This is not evidence for a Lie algebra. A stronger algebraic intervention test would need transformations that can genuinely co-occur without competing for the same final punctuation slot and would need null controls for order sensitivity.
 
+CI note: composition rows use `N=40` sources per prompt-style/control row. For the same-sentence prompt, `A only` has question-rate CI `[0.7695, 0.9604]`, `B only` has exclamation-rate CI `[0.8350, 0.9862]`, and `A+B` has both-marker-rate CI `[0.0546, 0.2611]`. Exact `AB == BA` rows are also `N=40`; their CIs are wide enough that the order table should remain descriptive.
+
 ## 11. Current Claim
 
 The defensible current claim is:
@@ -323,8 +352,8 @@ This draft does not claim:
 
 The highest-value next steps are:
 
-1. Add confidence intervals over sources and prompt styles for GPT-2 and DistilGPT-2 final-marker logit audits.
-2. Redesign non-final-marker steering before making stronger composition claims. A first `question + modality` run shows that the question vector remains strong, but the current modality vector produces no evidential markers under copy-like hard out-of-template prompts.
-3. Test transformations that can co-occur without occupying the same final punctuation slot and that have stronger output markers than the current modality recipe, such as question plus politeness marker or emphasis plus question.
+1. Use the derived CI audit in the final draft and avoid headline point estimates without `N` and 95% CI.
+2. Freeze the current Final Marker Hypothesis scope after the related-work/tuning-disclosure/statistical-reporting checklist is incorporated.
+3. Redesign non-final-marker steering before making stronger composition claims. A first `question + modality` run shows that the question vector remains strong, but the current modality vector produces no evidential markers under copy-like hard out-of-template prompts.
 4. Move from single last-token injection to multi-token or token-position-aware intervention for sentence-internal transformations such as negation and modality.
-5. For a Lie-style intervention track, define transformations whose composition has a clear expected target string and compare `AB`, `BA`, and `A+B` against that target rather than only marker profiles.
+5. For a future Lie-style intervention track, define transformations whose composition has a clear expected target string and compare `AB`, `BA`, and `A+B` against that target rather than only marker profiles.
