@@ -6,14 +6,16 @@ Can linguistic transformations be represented not only as separable classes in t
 
 This repository develops **GLT** (**Geometric Linguistic Transformations**), a research program for probing whether linguistic transformations appear as reusable geometric objects in transformer embedding spaces.
 
-Current tracks:
+Current tracks, ordered by current publication priority:
 
-- **GLT-DV**: delta-vector diagnostics with endpoint controls.
-- **GLT-SPOT**: signed-permutation operator tests for ordered composition.
-- **GLT-XFER**: cross-model transformation-transfer stress tests.
-- **GLT-STEER**: activation-steering interventions that inject transformation vectors back into generative models.
-- **GLT-MOLT**: planned matrix/operator extension motivated by Linear Relational Decoding.
-- **GLT-AFFECT**: planned graded affective-transformation geometry, starting with text-only emotional polarity scales and reserving sensory grounding claims for independent perceptual data.
+1. **Track 1 / GLT-STEER**: activation-steering interventions and the current primary short-paper target.
+2. **Track 2 / GLT-SPOT + GLT-MOLT**: Lie-adjacent composition and learned-operator diagnostics.
+3. **Track 3 / GLT-DV**: endpoint-controlled delta-vector diagnostics and baseline representation paper.
+4. **Track 4 / GLT-XFER**: cross-model transformation-transfer stress tests.
+5. **Track 5 / GLT-AFFECT**: graded affective-transformation geometry.
+6. **Track 6 / GLT-DIM**: effective dimensionality of transformation subspaces.
+7. **Track 7 / GLT-XLING**: cross-lingual transformation geometry.
+
 
 ## Strategic narrative
 
@@ -28,40 +30,100 @@ Closest prior-work anchor:
 - Freenor and Alvarez 2026, RISE, already demonstrates rotor-based discourse-level semantic-syntactic transformation geometry across languages and embedding models. Our work must be positioned as endpoint-controlled delta diagnostics, Procrustes/null stress testing, and ordered-composition diagnostics rather than as the first evidence for geometric linguistic transformations.
 - Xia and Kalita 2025, Linear Relational Decoding of Morphology in Language Models, shows that some linguistic relations can be decoded by relation-specific Jacobian-derived matrix operators, with strong morphology results across GPT-J, Llama-7b, and multilingual morphology. This is a key motivation for an operator-valued version of Track 2: delta vectors are not the only plausible representation of linguistic transformations.
 
-## Track 1: Geometric transformation vectors
+## Track 1: GLT-STEER, transformation vectors as editors
 
 Working title:
 
-**Geometric Transformation Vectors in Transformer Embedding Spaces**
+**From Transformation Geometry to Controllable Linguistic Editing**
 
-Central claim:
+Central hypothesis:
 
-Transformer embedding spaces contain displacement directions that encode linguistic transformations. These directions are recoverable across multiple models and holdout regimes.
+If transformation directions are real, they should not only classify transformations; they should also steer generation or hidden states toward those transformations.
 
-Current evidence:
+Minimal experiment:
 
-- Delta vectors classify transformations well across BERT, RoBERTa, DistilRoBERTa, GPT-2, and DistilGPT-2.
-- The cleanest multiseed claim is probe-dependent: Linear SVC shows reproducible `delta > y_only` across all original models, with positive 95% seed-level intervals; logistic regression is mixed for GPT-2 and RoBERTa.
-- Syntax holdouts reach `1.0` accuracy across tested models, but the new representation ablation shows `y_only=1.0` as well. This is now interpreted as endpoint/surface leakage, not as deep generalization.
-- Full semantic holdouts remain above chance, with accuracies around `0.82-0.89`.
-- Entity and variant holdouts remain strong, especially for BERT-family models.
-- Modern/larger spot-checks now support the main delta advantage:
-  - BERT-large Linear SVC: `delta=0.903`, `concat=0.851`, `y_only=0.838`
-  - BERT-large logistic regression: `delta=0.854`, `concat=0.760`, `y_only=0.750`
-  - DeBERTa-v3-base Linear SVC: `delta=0.812`, `concat=0.776`, `y_only=0.747`
-  - DeBERTa-v3-base logistic regression: `delta=0.752`, `concat=0.694`, `y_only=0.726`
-- UPAT hard-holdout is a bounded-claim result: `delta` is worse than `y_only` for BERT, RoBERTa, and GPT-2, and no UPAT delta-vs-y McNemar test is significant. This suggests that the main delta advantage captures transformation type better than absolute transformation identity under hard sentence-pair splits.
-- Full-semantic pooling ablation now supports mean pooling as a defensible main choice, while showing that the decoder effect is partly pooling-dependent.
+1. Use GPT-2 as the first testbed.
+2. Compute a centroid delta for a transformation such as negation or question formation.
+3. Inject the vector into the residual stream during generation.
+4. Measure whether outputs systematically acquire the target transformation.
+5. Compare against random-vector, norm-matched, and wrong-class controls.
 
-Scientific status:
+Scientific payoff:
 
-This is the more mature paper. It can be written as a representation-geometry result with careful controls against template memorization.
+First result:
 
-Main risk:
+A focused GPT-2 question activation-steering run is complete.
 
-Some signal may come from target-sentence artifacts rather than pure transformation geometry. The concrete high-risk case is now confirmed: `syntax=1.0` reproduces under `y_only`, so it must be interpreted as a target/surface artifact unless future controls overturn that. UPAT bounds the positive claim rather than merely weakening it: `delta > y_only` is not universal under small hard-holdout regimes, which suggests that delta vectors are more reliable for transformation-type geometry than for absolute sentence-pair identity. The logistic-regression rows show the same caution from a different angle: the Track 1 result is currently strongest as a Linear SVC/margin-based probe result, not as a classifier-invariant law. The paper needs strong source-only, target-only, delta-only, and paraphrase controls.
+- Experiment script: `scripts/run_gpt2_activation_steering_pilot.py`
+- Result directory: `results/experiments/gpt2_question_activation_steering_focused_20260714_results/`
+- Model: `gpt2`
+- Transformation evaluated: `question`
+- Residual layers: `2, 3, 4, 5, 6`
+- Controls: `none`, `target`, `wrong_class`, `random_norm`, `negative_target`
+- Raw generations: `6800`
+- Failures: none
 
-## Track 2: Signed permutation coherence for linguistic operators
+Main finding:
+
+- At layer `2`, gain `0.75`, target question steering produced question marks in `93.75%` of generations.
+- Across all tested layers at gain `0.75`, target question steering produced question marks in `93.50%` of generations.
+- Random-norm, wrong-class, and negative-target controls produced `0.00%` question marks in the aggregate control summary.
+
+Reviewer-facing follow-up controls:
+
+- Experiment script: `scripts/run_gpt2_question_steering_controls.py`
+- Result directory: `results/experiments/gpt2_question_steering_controls_20260714_results/`
+- No-steering question-mark base rate is `0.0000` for both in-template prompts (`160` rows) and out-of-template freeform prompts (`80` rows).
+- Under the same compact setting family (`layers 2,3`, gain `0.75`), in-template target steering reaches question-mark rate `0.9625`, while random-norm, wrong-class, and negative-target controls remain at `0.0000`.
+- On `40` freeform out-of-template declarative sentences, target steering still reaches question-mark rate `0.8375`, while no-steering and all compact controls remain at `0.0000`.
+- A prompt-robustness control then tests four prompt wrappers (`Input/Output`, `Source/Response`, `Sentence/Continuation`, and bare statement prompts). Target steering remains strong across all wrappers:
+  - in-template target question-mark rate range: `0.7750-0.9875`
+  - out-of-template target question-mark rate range: `0.8125-0.9250`
+  - no-steering and wrong-vector controls remain at `0.0000` except one random-norm in-template plain-statement row at `0.0250`
+- A content-preservation audit shows that prompt wording determines whether the question marker is added while preserving the source sentence:
+  - first-pass target preserved-with-question rates are strong for structured prompts (`0.7500-0.8500` in-template for `Input/Output` and sentence-continuation prompts), but weak for plain out-of-template prompts (`0.0875`) and source-response out-of-template prompts (`0.2125`)
+  - copy-oriented prompts improve the result substantially: `repeat_sentence`, `same_sentence`, and `copy_sentence` reach target question-and-preserved rates of `0.9625-0.9750` in-template and `0.8250-0.9000` out-of-template
+  - `quoted_echo` remains weak for content preservation despite question-mark generation, so prompt format is a real boundary condition rather than cosmetic wording
+- A copy-prompt none-baseline audit directly tests the prompt-only alternative. Across GPT-2 and DistilGPT-2, copy-like prompts without steering produce `0.0000` question-mark rate across `960` no-steering rows.
+- A DistilGPT-2 replication is qualitatively positive but the first aggregate run is much weaker than GPT-2: the best target question-and-preserved rate is `0.4625`, while controls remain at `0.0000` on the joint metric.
+- A first non-question extension to negation is weak/negative. Under the same copy-prompt design, negation target rows do not clearly beat matched controls; the best target-and-preserved row is `0.1125`, while the matched control maximum is `0.1375`.
+- A harder out-of-template question audit tests structurally diverse sentences with passive constructions, subordinate clauses, proper names, and numeric/time expressions. The question effect survives: target question-mark rate is `0.7125-0.7500` across copy-like prompts, while matched controls peak at `0.0375`. The stricter question-and-preserved rate is lower than in the simpler out-of-template set, reaching `0.5125` for `same_sentence`.
+- A GPT-2 hidden-delta coherence diagnostic explains part of the question/negation boundary. Question deltas are much more internally coherent than negation deltas across all layers. At the steering layers, mean pairwise cosine is `0.9693` vs `0.5621` on layer `2`, and `0.9365` vs `0.5665` on layer `3`. This supports the interpretation that the question centroid is a cleaner intervention direction, while negation is geometrically more heterogeneous.
+- A full GPT-2 layer sweep for negation does not find a clean negation intervention site. The best target-and-preserved row reaches `0.1729`, but matched controls remain nontrivial, with maxima up to `0.1229`.
+- A final-marker exclamation control supports the autoregressive surface-marker explanation. Steering `statement -> statement!` reaches exclamation-and-preserved rate `1.0000` in-template and `0.8000` on hard out-of-template sources; no-steering remains `0.0000`, and the wrong-question vector selectively produces `?` rather than `!`.
+- A second final-marker control with ellipsis steering (`statement -> statement...`) shows that the effect is not question-specific. On hard out-of-template sources, target ellipsis rate reaches `0.925-0.950` and ellipsis-and-preserved reaches `0.475-0.575`; non-target controls produce `0.0000` ellipses, while the wrong-question vector selectively produces `?`.
+- A final-marker logit audit confirms the mechanism at the next-token level. Across question, exclamation, and ellipsis targets, no-steering marker rates are `0.0000`. Target steering moves the intended marker token to median best rank `1.0`, with aggregate target marker rates `0.8542` for `?`, `0.9063` for `!`, and `0.8750` for `...`. This supports the Final Marker Hypothesis as an activation-space intervention effect, not merely a copy-prompt base-rate artifact.
+- A question-vector position-of-intervention audit separates single-position prompt edits from distributed prompt-state edits. Editing only the first, middle, or last prompt token once produces `0.0000` question rate. Editing all prompt tokens once is strong (`0.8625` question rate, `0.7896` question-and-preserved), close to the current last-token-at-each-generation-step hook (`0.9604` and `0.7917`). This suggests that the effect requires either distributed prompt-state editing or repeated generation-step editing, not a single local prompt-token perturbation.
+- A DistilGPT-2 final-marker logit audit gives a positive but model-dependent transfer result. No-steering marker rates remain `0.0000`, while target steering reaches aggregate marker rates `0.2986` for `?`, `0.7778` for `!`, and `0.5139` for `...`. Exclamation transfers most cleanly; ellipsis is strong mainly at layer `2`; question is weaker and more layer/prompt sensitive. This should be reported as final-marker steering with strong model/layer/marker dependence, not as a full GPT-2 replication.
+- A derived GLT-STEER headline CI audit now reports Wilson 95% confidence intervals and sample sizes for the key Track 1 / GLT-STEER tables. GPT-2 final-marker target rates remain well separated from no-steering (`?=0.8542`, `N=96`, CI `[0.7700, 0.9111]`; `!=0.9063`, `N=96`, CI `[0.8313, 0.9499]`; `...=0.8750`, `N=96`, CI `[0.7941, 0.9270]`). DistilGPT-2 is positive but model-dependent (`?=0.2986`, `N=144`, CI `[0.2299, 0.3778]`; `!=0.7778`, `N=144`, CI `[0.7032, 0.8380]`; `...=0.5139`, `N=144`, CI `[0.4330, 0.5941]`).
+- A first marker-composition steering test compares question and exclamation vectors under single-vector, additive, and ordered layer interventions. On hard out-of-template `same_sentence` prompts, the single question vector gives `?=0.900`, the single exclamation vector gives `!=0.950`, and none/random controls give no markers. The summed and ordered interventions produce mixed marker profiles (`A+B`: `?=0.750`, `!=0.225`; `A then B`: `?=0.750`, `!=0.275`; `B then A`: `?=0.775`, `!=0.175`) and lower preservation. Because marker-level profiles are often similar across orders, this should be treated as a competition/saturation boundary for final-marker steering, not as evidence of noncommutative order structure.
+- A cleaner question/modality composition test is negative for the current modality recipe. The question vector remains robust (`0.900-0.975` question rate across copy-like hard out-of-template prompts), but `modality_only_late`, `question+modality`, and both ordered variants produce `0.000` evidential/modality marker rate under the current marker list. This means the composition mostly collapses to question steering and should be treated as a boundary result, not a semantic composition success.
+- A GPT-2 vs DistilGPT-2 question-delta norm diagnostic partly explains the weaker DistilGPT-2 replication. Question deltas are not uniformly smaller in DistilGPT-2, but later relative layers are strongly compressed: final relative-layer mean-norm ratio is `0.3341`, and final centroid-norm ratio is `0.2923`.
+- A direct DistilGPT-2 layer/gain sweep revises the model-dependence story. The weak aggregate replication is parameter-sensitive rather than a hard model failure. At `gain=1.0`, layer `2`, and `same_sentence` prompts, DistilGPT-2 reaches question-and-preserved rate `0.8250`, with matched controls at or below `0.0500`. `gain=0.5` is usable but weaker (`0.6250` best joint), while `gain=1.5` over-steers and collapses preservation (`0.0750` best target joint, with negative-target control reaching `0.2250`).
+- A hard out-of-template DistilGPT-2 audit then applies that best tuned setting to structurally diverse sources. Strict question-mark rates remain high for the target vector (`0.725-0.800`) while all matched controls remain at `0.0000`, but strict question-and-preserved rates are much lower (`0.025-0.225`, with `copy_sentence=0.025`). This does not replicate the GPT-2 hard-OOT preservation result; it is evidence for marker-form transfer only.
+
+Interpretation:
+
+This is the first behavior-level intervention result in GLT. The current best explanation is the **Final Marker Hypothesis**: final-position surface markers such as `?`, `!`, and `...` are reliably steerable with mean delta vectors in GPT-2, while lexical or sentence-internal transformations such as negation and modality fail under the same recipe. The copy-prompt follow-up strengthens question steering from mere punctuation insertion toward partial form-preserving rewriting, but only under prompt families that already ask the model to repeat or copy the source sentence. The no-steering copy-prompt audit rules out the simplest prompt-only explanation for question marks. DistilGPT-2 is model-dependent: direct layer/gain tuning recovers marker-form steering, but hard out-of-template preservation remains weak. The failure diagnostics now separate three mechanisms: question has a much cleaner class direction than negation in GPT-2 hidden space; final surface markers are much easier to steer than sentence-internal edits; and smaller distilled models can be highly sensitive to layer/gain choice.
+
+Caveats:
+
+- This is currently a GPT-2-only, question-only result.
+- It shows output-form steering plus prompt-dependent content preservation, not robust general-purpose semantic rewriting.
+- The out-of-template control is promising but modest: `40` hand-written freeform declarative sentences.
+- The prompt-robustness result reduces concern about one prompt wrapper, but it still uses simple declarative prompts and should be extended to more natural contexts.
+- The content-preservation result depends strongly on prompt wording; copy-like prompts are much cleaner than quoted or bare prompts.
+- DistilGPT-2 is strongly layer/gain sensitive, and its hard out-of-template content preservation remains weak even after choosing the best known layer/gain setting.
+- Negation steering fails under the current copy-prompt design, so transformation-class dependence is now explicit.
+- Question/negation delta coherence differs strongly, but this does not yet separate geometric heterogeneity from autoregressive surface-marker difficulty.
+- The exclamation control shows that final-marker steering can be very strong, so question-steering results should not be overinterpreted as general semantic editing.
+- The ellipsis control reinforces that boundary: GLT-STEER currently works best for final surface markers, not arbitrary sentence-internal transformations.
+- The DistilGPT-2 layer/gain sweep recovers a strong in-template setting, but hard out-of-template preservation remains weaker than GPT-2.
+- The hard out-of-template result preserves question form but lowers content-preservation rates relative to the simpler freeform set.
+- The broad pilot showed weak or noisy results for negation, modality, and tense shift, so other transformations need redesigned prompts, metrics, or steering sites.
+- The result connects GLT to representation steering, but it is not evidence for a complete linguistic algebra.
+
+## Track 2: GLT-SPOT + GLT-MOLT, Lie-adjacent composition/operator diagnostics
 
 Working title:
 
@@ -215,7 +277,40 @@ Current interpretation:
 
 Simple additive displacement vectors outperform learned linear/affine operators at target prediction, while matrix operators are worse predictors but produce cleaner algebraic diagnostics. This split is useful: endpoint differences appear better suited to target movement, while learned operators are useful for asking algebraic closure questions.
 
-## Track 3: Cross-model transformation transfer
+## Track 3: GLT-DV, geometric transformation vectors
+
+Working title:
+
+**Geometric Transformation Vectors in Transformer Embedding Spaces**
+
+Central claim:
+
+Transformer embedding spaces contain displacement directions that encode linguistic transformations. These directions are recoverable across multiple models and holdout regimes.
+
+Current evidence:
+
+- Delta vectors classify transformations well across BERT, RoBERTa, DistilRoBERTa, GPT-2, and DistilGPT-2.
+- The cleanest multiseed claim is probe-dependent: Linear SVC shows reproducible `delta > y_only` across all original models, with positive 95% seed-level intervals; logistic regression is mixed for GPT-2 and RoBERTa.
+- Syntax holdouts reach `1.0` accuracy across tested models, but the new representation ablation shows `y_only=1.0` as well. This is now interpreted as endpoint/surface leakage, not as deep generalization.
+- Full semantic holdouts remain above chance, with accuracies around `0.82-0.89`.
+- Entity and variant holdouts remain strong, especially for BERT-family models.
+- Modern/larger spot-checks now support the main delta advantage:
+  - BERT-large Linear SVC: `delta=0.903`, `concat=0.851`, `y_only=0.838`
+  - BERT-large logistic regression: `delta=0.854`, `concat=0.760`, `y_only=0.750`
+  - DeBERTa-v3-base Linear SVC: `delta=0.812`, `concat=0.776`, `y_only=0.747`
+  - DeBERTa-v3-base logistic regression: `delta=0.752`, `concat=0.694`, `y_only=0.726`
+- UPAT hard-holdout is a bounded-claim result: `delta` is worse than `y_only` for BERT, RoBERTa, and GPT-2, and no UPAT delta-vs-y McNemar test is significant. This suggests that the main delta advantage captures transformation type better than absolute transformation identity under hard sentence-pair splits.
+- Full-semantic pooling ablation now supports mean pooling as a defensible main choice, while showing that the decoder effect is partly pooling-dependent.
+
+Scientific status:
+
+This is the more mature paper. It can be written as a representation-geometry result with careful controls against template memorization.
+
+Main risk:
+
+Some signal may come from target-sentence artifacts rather than pure transformation geometry. The concrete high-risk case is now confirmed: `syntax=1.0` reproduces under `y_only`, so it must be interpreted as a target/surface artifact unless future controls overturn that. UPAT bounds the positive claim rather than merely weakening it: `delta > y_only` is not universal under small hard-holdout regimes, which suggests that delta vectors are more reliable for transformation-type geometry than for absolute sentence-pair identity. The logistic-regression rows show the same caution from a different angle: the GLT-DV result is currently strongest as a Linear SVC/margin-based probe result, not as a classifier-invariant law. The paper needs strong source-only, target-only, delta-only, and paraphrase controls.
+
+## Track 4: GLT-XFER, cross-model transformation transfer
 
 Working title:
 
@@ -259,149 +354,9 @@ Required gates before promotion:
    - compare residual orderings against a more faithful published RISE implementation if feasible
 5. Reverse-direction transfer summary by model family, e.g. small model to large model and large model to small model.
 6. Stronger architectures if feasible, such as Llama/Mistral-class embedding spaces or high-quality sentence encoders.
-7. Package the result as a standalone Track 3 draft only after the RISE/MDV comparison and confidence-interval checks.
+7. Package the result as a standalone GLT-XFER draft only after the RISE/MDV comparison and confidence-interval checks.
 
-## Track 4: GLT-STEER, transformation vectors as editors
-
-Working title:
-
-**From Transformation Geometry to Controllable Linguistic Editing**
-
-Central hypothesis:
-
-If transformation directions are real, they should not only classify transformations; they should also steer generation or hidden states toward those transformations.
-
-Minimal experiment:
-
-1. Use GPT-2 as the first testbed.
-2. Compute a centroid delta for a transformation such as negation or question formation.
-3. Inject the vector into the residual stream during generation.
-4. Measure whether outputs systematically acquire the target transformation.
-5. Compare against random-vector, norm-matched, and wrong-class controls.
-
-Scientific payoff:
-
-First result:
-
-A focused GPT-2 question activation-steering run is complete.
-
-- Experiment script: `scripts/run_gpt2_activation_steering_pilot.py`
-- Result directory: `results/experiments/gpt2_question_activation_steering_focused_20260714_results/`
-- Model: `gpt2`
-- Transformation evaluated: `question`
-- Residual layers: `2, 3, 4, 5, 6`
-- Controls: `none`, `target`, `wrong_class`, `random_norm`, `negative_target`
-- Raw generations: `6800`
-- Failures: none
-
-Main finding:
-
-- At layer `2`, gain `0.75`, target question steering produced question marks in `93.75%` of generations.
-- Across all tested layers at gain `0.75`, target question steering produced question marks in `93.50%` of generations.
-- Random-norm, wrong-class, and negative-target controls produced `0.00%` question marks in the aggregate control summary.
-
-Reviewer-facing follow-up controls:
-
-- Experiment script: `scripts/run_gpt2_question_steering_controls.py`
-- Result directory: `results/experiments/gpt2_question_steering_controls_20260714_results/`
-- No-steering question-mark base rate is `0.0000` for both in-template prompts (`160` rows) and out-of-template freeform prompts (`80` rows).
-- Under the same compact setting family (`layers 2,3`, gain `0.75`), in-template target steering reaches question-mark rate `0.9625`, while random-norm, wrong-class, and negative-target controls remain at `0.0000`.
-- On `40` freeform out-of-template declarative sentences, target steering still reaches question-mark rate `0.8375`, while no-steering and all compact controls remain at `0.0000`.
-- A prompt-robustness control then tests four prompt wrappers (`Input/Output`, `Source/Response`, `Sentence/Continuation`, and bare statement prompts). Target steering remains strong across all wrappers:
-  - in-template target question-mark rate range: `0.7750-0.9875`
-  - out-of-template target question-mark rate range: `0.8125-0.9250`
-  - no-steering and wrong-vector controls remain at `0.0000` except one random-norm in-template plain-statement row at `0.0250`
-- A content-preservation audit shows that prompt wording determines whether the question marker is added while preserving the source sentence:
-  - first-pass target preserved-with-question rates are strong for structured prompts (`0.7500-0.8500` in-template for `Input/Output` and sentence-continuation prompts), but weak for plain out-of-template prompts (`0.0875`) and source-response out-of-template prompts (`0.2125`)
-  - copy-oriented prompts improve the result substantially: `repeat_sentence`, `same_sentence`, and `copy_sentence` reach target question-and-preserved rates of `0.9625-0.9750` in-template and `0.8250-0.9000` out-of-template
-  - `quoted_echo` remains weak for content preservation despite question-mark generation, so prompt format is a real boundary condition rather than cosmetic wording
-- A copy-prompt none-baseline audit directly tests the prompt-only alternative. Across GPT-2 and DistilGPT-2, copy-like prompts without steering produce `0.0000` question-mark rate across `960` no-steering rows.
-- A DistilGPT-2 replication is qualitatively positive but the first aggregate run is much weaker than GPT-2: the best target question-and-preserved rate is `0.4625`, while controls remain at `0.0000` on the joint metric.
-- A first non-question extension to negation is weak/negative. Under the same copy-prompt design, negation target rows do not clearly beat matched controls; the best target-and-preserved row is `0.1125`, while the matched control maximum is `0.1375`.
-- A harder out-of-template question audit tests structurally diverse sentences with passive constructions, subordinate clauses, proper names, and numeric/time expressions. The question effect survives: target question-mark rate is `0.7125-0.7500` across copy-like prompts, while matched controls peak at `0.0375`. The stricter question-and-preserved rate is lower than in the simpler out-of-template set, reaching `0.5125` for `same_sentence`.
-- A GPT-2 hidden-delta coherence diagnostic explains part of the question/negation boundary. Question deltas are much more internally coherent than negation deltas across all layers. At the steering layers, mean pairwise cosine is `0.9693` vs `0.5621` on layer `2`, and `0.9365` vs `0.5665` on layer `3`. This supports the interpretation that the question centroid is a cleaner intervention direction, while negation is geometrically more heterogeneous.
-- A full GPT-2 layer sweep for negation does not find a clean negation intervention site. The best target-and-preserved row reaches `0.1729`, but matched controls remain nontrivial, with maxima up to `0.1229`.
-- A final-marker exclamation control supports the autoregressive surface-marker explanation. Steering `statement -> statement!` reaches exclamation-and-preserved rate `1.0000` in-template and `0.8000` on hard out-of-template sources; no-steering remains `0.0000`, and the wrong-question vector selectively produces `?` rather than `!`.
-- A second final-marker control with ellipsis steering (`statement -> statement...`) shows that the effect is not question-specific. On hard out-of-template sources, target ellipsis rate reaches `0.925-0.950` and ellipsis-and-preserved reaches `0.475-0.575`; non-target controls produce `0.0000` ellipses, while the wrong-question vector selectively produces `?`.
-- A final-marker logit audit confirms the mechanism at the next-token level. Across question, exclamation, and ellipsis targets, no-steering marker rates are `0.0000`. Target steering moves the intended marker token to median best rank `1.0`, with aggregate target marker rates `0.8542` for `?`, `0.9063` for `!`, and `0.8750` for `...`. This supports the Final Marker Hypothesis as an activation-space intervention effect, not merely a copy-prompt base-rate artifact.
-- A question-vector position-of-intervention audit separates single-position prompt edits from distributed prompt-state edits. Editing only the first, middle, or last prompt token once produces `0.0000` question rate. Editing all prompt tokens once is strong (`0.8625` question rate, `0.7896` question-and-preserved), close to the current last-token-at-each-generation-step hook (`0.9604` and `0.7917`). This suggests that the effect requires either distributed prompt-state editing or repeated generation-step editing, not a single local prompt-token perturbation.
-- A DistilGPT-2 final-marker logit audit gives a positive but model-dependent transfer result. No-steering marker rates remain `0.0000`, while target steering reaches aggregate marker rates `0.2986` for `?`, `0.7778` for `!`, and `0.5139` for `...`. Exclamation transfers most cleanly; ellipsis is strong mainly at layer `2`; question is weaker and more layer/prompt sensitive. This should be reported as final-marker steering with strong model/layer/marker dependence, not as a full GPT-2 replication.
-- A derived GLT-STEER headline CI audit now reports Wilson 95% confidence intervals and sample sizes for the key Track 4 tables. GPT-2 final-marker target rates remain well separated from no-steering (`?=0.8542`, `N=96`, CI `[0.7700, 0.9111]`; `!=0.9063`, `N=96`, CI `[0.8313, 0.9499]`; `...=0.8750`, `N=96`, CI `[0.7941, 0.9270]`). DistilGPT-2 is positive but model-dependent (`?=0.2986`, `N=144`, CI `[0.2299, 0.3778]`; `!=0.7778`, `N=144`, CI `[0.7032, 0.8380]`; `...=0.5139`, `N=144`, CI `[0.4330, 0.5941]`).
-- A first marker-composition steering test compares question and exclamation vectors under single-vector, additive, and ordered layer interventions. On hard out-of-template `same_sentence` prompts, the single question vector gives `?=0.900`, the single exclamation vector gives `!=0.950`, and none/random controls give no markers. The summed and ordered interventions produce mixed marker profiles (`A+B`: `?=0.750`, `!=0.225`; `A then B`: `?=0.750`, `!=0.275`; `B then A`: `?=0.775`, `!=0.175`) and lower preservation. Because marker-level profiles are often similar across orders, this should be treated as a competition/saturation boundary for final-marker steering, not as evidence of noncommutative order structure.
-- A cleaner question/modality composition test is negative for the current modality recipe. The question vector remains robust (`0.900-0.975` question rate across copy-like hard out-of-template prompts), but `modality_only_late`, `question+modality`, and both ordered variants produce `0.000` evidential/modality marker rate under the current marker list. This means the composition mostly collapses to question steering and should be treated as a boundary result, not a semantic composition success.
-- A GPT-2 vs DistilGPT-2 question-delta norm diagnostic partly explains the weaker DistilGPT-2 replication. Question deltas are not uniformly smaller in DistilGPT-2, but later relative layers are strongly compressed: final relative-layer mean-norm ratio is `0.3341`, and final centroid-norm ratio is `0.2923`.
-- A direct DistilGPT-2 layer/gain sweep revises the model-dependence story. The weak aggregate replication is parameter-sensitive rather than a hard model failure. At `gain=1.0`, layer `2`, and `same_sentence` prompts, DistilGPT-2 reaches question-and-preserved rate `0.8250`, with matched controls at or below `0.0500`. `gain=0.5` is usable but weaker (`0.6250` best joint), while `gain=1.5` over-steers and collapses preservation (`0.0750` best target joint, with negative-target control reaching `0.2250`).
-- A hard out-of-template DistilGPT-2 audit then applies that best tuned setting to structurally diverse sources. Strict question-mark rates remain high for the target vector (`0.725-0.800`) while all matched controls remain at `0.0000`, but strict question-and-preserved rates are much lower (`0.025-0.225`, with `copy_sentence=0.025`). This does not replicate the GPT-2 hard-OOT preservation result; it is evidence for marker-form transfer only.
-
-Interpretation:
-
-This is the first behavior-level intervention result in GLT. The current best explanation is the **Final Marker Hypothesis**: final-position surface markers such as `?`, `!`, and `...` are reliably steerable with mean delta vectors in GPT-2, while lexical or sentence-internal transformations such as negation and modality fail under the same recipe. The copy-prompt follow-up strengthens question steering from mere punctuation insertion toward partial form-preserving rewriting, but only under prompt families that already ask the model to repeat or copy the source sentence. The no-steering copy-prompt audit rules out the simplest prompt-only explanation for question marks. DistilGPT-2 is model-dependent: direct layer/gain tuning recovers marker-form steering, but hard out-of-template preservation remains weak. The failure diagnostics now separate three mechanisms: question has a much cleaner class direction than negation in GPT-2 hidden space; final surface markers are much easier to steer than sentence-internal edits; and smaller distilled models can be highly sensitive to layer/gain choice.
-
-Caveats:
-
-- This is currently a GPT-2-only, question-only result.
-- It shows output-form steering plus prompt-dependent content preservation, not robust general-purpose semantic rewriting.
-- The out-of-template control is promising but modest: `40` hand-written freeform declarative sentences.
-- The prompt-robustness result reduces concern about one prompt wrapper, but it still uses simple declarative prompts and should be extended to more natural contexts.
-- The content-preservation result depends strongly on prompt wording; copy-like prompts are much cleaner than quoted or bare prompts.
-- DistilGPT-2 is strongly layer/gain sensitive, and its hard out-of-template content preservation remains weak even after choosing the best known layer/gain setting.
-- Negation steering fails under the current copy-prompt design, so transformation-class dependence is now explicit.
-- Question/negation delta coherence differs strongly, but this does not yet separate geometric heterogeneity from autoregressive surface-marker difficulty.
-- The exclamation control shows that final-marker steering can be very strong, so question-steering results should not be overinterpreted as general semantic editing.
-- The ellipsis control reinforces that boundary: GLT-STEER currently works best for final surface markers, not arbitrary sentence-internal transformations.
-- The DistilGPT-2 layer/gain sweep recovers a strong in-template setting, but hard out-of-template preservation remains weaker than GPT-2.
-- The hard out-of-template result preserves question form but lowers content-preservation rates relative to the simpler freeform set.
-- The broad pilot showed weak or noisy results for negation, modality, and tense shift, so other transformations need redesigned prompts, metrics, or steering sites.
-- The result connects GLT to representation steering, but it is not evidence for a complete linguistic algebra.
-
-## Track 5: Cross-lingual transformation geometry
-
-Working title:
-
-**Language-Invariant Geometry of Linguistic Transformations**
-
-Central hypothesis:
-
-If transformation geometry is universal rather than English-template-specific, aligned multilingual models should show comparable transformation subspaces across languages.
-
-Minimal experiment:
-
-1. Use mBERT or XLM-R.
-2. Build parallel transformation pairs in English and one or more non-English languages.
-3. Compare delta geometry within each language.
-4. Align language-specific transformation spaces with Procrustes.
-5. Test whether classifiers or centroids transfer across languages.
-
-2026-06-23 status:
-
-The first large multilingual Track 2 audit is complete for 7 languages and 5 multilingual encoders. It is not yet a clean cross-lingual universality result, because the templates are synthetic and endpoint controls remain strong. Still, it is the strongest current evidence that the signed-permutation diagnostic is not purely an English-only artifact.
-
-Scientific payoff:
-
-This is the cleanest answer to the criticism that the current effects may be English grammar or template artifacts.
-
-## Track 6: Dimensionality of transformation manifolds
-
-Working title:
-
-**Effective Dimensionality of Linguistic Transformation Subspaces**
-
-Central hypothesis:
-
-Each transformation may occupy a low-dimensional subspace rather than a single direction or the full embedding space.
-
-Measurements:
-
-- PCA spectra of per-class delta matrices.
-- Participation ratio of singular values.
-- Classification accuracy as a function of retained dimensions.
-- Sample-complexity curves for learning each transformation.
-
-Scientific payoff:
-
-This would quantify the complexity of each linguistic operator and explain why capacity curves keep improving with more examples.
-
-## Track 7: GLT-AFFECT, graded affective transformation geometry
+## Track 5: GLT-AFFECT, graded affective transformation geometry
 
 Working title:
 
@@ -540,6 +495,53 @@ Scientific payoff:
 
 GLT-AFFECT introduces the first graded semantic axis in the project. If it works, it gives a natural way to study deformation, curvature, and saturation in embedding space without immediately relying on binary operator composition.
 
+## Track 6: GLT-DIM, dimensionality of transformation manifolds
+
+Working title:
+
+**Effective Dimensionality of Linguistic Transformation Subspaces**
+
+Central hypothesis:
+
+Each transformation may occupy a low-dimensional subspace rather than a single direction or the full embedding space.
+
+Measurements:
+
+- PCA spectra of per-class delta matrices.
+- Participation ratio of singular values.
+- Classification accuracy as a function of retained dimensions.
+- Sample-complexity curves for learning each transformation.
+
+Scientific payoff:
+
+This would quantify the complexity of each linguistic operator and explain why capacity curves keep improving with more examples.
+
+## Track 7: GLT-XLING, cross-lingual transformation geometry
+
+Working title:
+
+**Language-Invariant Geometry of Linguistic Transformations**
+
+Central hypothesis:
+
+If transformation geometry is universal rather than English-template-specific, aligned multilingual models should show comparable transformation subspaces across languages.
+
+Minimal experiment:
+
+1. Use mBERT or XLM-R.
+2. Build parallel transformation pairs in English and one or more non-English languages.
+3. Compare delta geometry within each language.
+4. Align language-specific transformation spaces with Procrustes.
+5. Test whether classifiers or centroids transfer across languages.
+
+2026-06-23 status:
+
+The first large multilingual Track 2 audit is complete for 7 languages and 5 multilingual encoders. It is not yet a clean cross-lingual universality result, because the templates are synthetic and endpoint controls remain strong. Still, it is the strongest current evidence that the signed-permutation diagnostic is not purely an English-only artifact.
+
+Scientific payoff:
+
+This is the cleanest answer to the criticism that the current effects may be English grammar or template artifacts.
+
 ## Iterative logic
 
 The research direction is:
@@ -569,7 +571,7 @@ Negative results remain part of the research record.
 
 ### Short term
 
-1. Make the Final Marker Hypothesis the central Track 4 narrative:
+1. Make the Final Marker Hypothesis the central Track 1 / GLT-STEER narrative:
    - state explicitly that final-position markers (`?`, `!`, `...`) are steerable under the current recipe
    - state explicitly that lexical/sentence-internal transformations (`negation`, `modality`) are not steerable under the same recipe
    - keep DistilGPT-2 hard-OOT as marker-form replication only, not semantic-preservation replication
@@ -581,19 +583,19 @@ Negative results remain part of the research record.
 3. Treat the position-of-intervention audit for the question vector as complete for GPT-2:
    - compare intervention on first prompt token, middle prompt token, and last prompt token
    - test whether `?` appears because the vector globally changes the generation trajectory or because the current hook acts locally at the final prompt state
-4. Draft Track 4 as a short extended abstract only after items 1-3 are incorporated.
+4. Draft Track 1 / GLT-STEER as a short extended abstract only after items 1-3 are incorporated.
 
-### Track 4 stopping rule (declared in advance, non-negotiable per-result)
+### Track 1 / GLT-STEER stopping rule (declared in advance, non-negotiable per-result)
 
-Track 4 (GLT-STEER / Final Marker Hypothesis) is submission-ready for a short paper / extended abstract when, and only when, items (a)-(c) below are complete. After (a)-(c) are satisfied, **no further control, null, or ablation is added to Track 4**, regardless of what a subsequent look at the results suggests might still be worth checking.
+Track 1 (GLT-STEER / Final Marker Hypothesis) is submission-ready for a short paper / extended abstract when, and only when, items (a)-(c) below are complete. After (a)-(c) are satisfied, **no further control, null, or ablation is added to Track 1 / GLT-STEER**, regardless of what a subsequent look at the results suggests might still be worth checking.
 
-a. Confidence intervals and sample sizes (N) are reported for every Track 4 headline table: question, exclamation, and ellipsis steering; the final-marker logit audit; the position-of-intervention audit; and the marker-composition audit. Point estimates without N/CI are not acceptable in the final draft.
+a. Confidence intervals and sample sizes (N) are reported for every Track 1 / GLT-STEER headline table: question, exclamation, and ellipsis steering; the final-marker logit audit; the position-of-intervention audit; and the marker-composition audit. Point estimates without N/CI are not acceptable in the final draft.
 
 b. The related-work section is extended to cover the activation/representation-steering literature (for example Activation Addition / ActAdd, Contrastive Activation Addition, and representation engineering / steering-vector work), positioning the Final Marker Hypothesis against that literature directly, not only against RISE, task arithmetic, and function vectors.
 
 c. The DistilGPT-2 layer/gain tuning history is disclosed explicitly: which sources were used to select `layer=2, gain=1.0`, and whether those sources are disjoint from the sources used to report the hard-out-of-template preservation numbers. If tuning and evaluation sources overlapped, this is stated as a limitation, not omitted.
 
-Once (a)-(c) are done, Track 4 is frozen for submission purposes. Any further idea - additional marker types, additional composition pairs, alternative intervention sites, a second seed, a stricter preservation metric - is logged in "Medium term" below as future work and is explicitly **not** a prerequisite for the Track 4 submission. This rule exists because Track 4, like every other track in this repository, is self-critical enough that each new control tends to surface a new candidate confound; without a declared stopping point in advance, this track has no natural end. The same discipline applies by extension to Tracks 1, 2, 3, and 5: their current status ("diagnostic package, not submission-ready" for 1/2/3; "promising side track, not promoted" for 5) is treated as the frozen baseline for this cycle, and reopening them requires either a natural-language/natural-corpus validation result or an external reviewer request, not a self-generated new audit.
+Once (a)-(c) are done, Track 1 / GLT-STEER is frozen for submission purposes. Any further idea - additional marker types, additional composition pairs, alternative intervention sites, a second seed, a stricter preservation metric - is logged in "Medium term" below as future work and is explicitly **not** a prerequisite for the Track 1 submission. This rule exists because GLT-STEER, like every other track in this repository, is self-critical enough that each new control tends to surface a new candidate confound; without a declared stopping point in advance, this track has no natural end. The same discipline applies by extension to GLT-MOLT/GLT-SPOT, GLT-DV, GLT-XFER, and GLT-AFFECT: their current statuses are treated as the frozen baseline for this cycle, and reopening them requires either a natural-language/natural-corpus validation result, a targeted operator-control result, or an external reviewer request, not a self-generated new audit.
 
 5. Close methodology blockers required for any submission:
    - remove antisymmetry from the evidence narrative; already done in the draft, keep it that way
@@ -602,7 +604,7 @@ Once (a)-(c) are done, Track 4 is frozen for submission purposes. Any further id
    - add commutator norm null baselines
 6. Keep UPAT as a bounded hard-holdout result unless future matched-capacity tests change it:
    - either expand UPAT and match train sizes against the main dataset
-   - or keep it explicitly as a bounded hard-holdout result and narrow Track 1 claims
+   - or keep it explicitly as a bounded hard-holdout result and narrow GLT-DV claims
 7. Extend UPAT alignment controls beyond the completed `N=1000` null audit and held-out alignment curve:
    - bootstrap confidence intervals
    - direction-family summary
@@ -613,7 +615,7 @@ Once (a)-(c) are done, Track 4 is frozen for submission purposes. Any further id
    - random-label/null alignment controls
    - RISE/MDV-style prototype baseline
 9. Treat the syntax holdout as resolved for the current draft: `y_only=1.0` and layer-0 `1.0` mean the `syntax=1.0` result is a target/surface artifact unless a future redesigned split proves otherwise.
-10. Convert large/modern Track 1 spot-checks into multiseed runs if Track 1 is promoted to submission.
+10. Convert large/modern GLT-DV spot-checks into multiseed runs if GLT-DV is promoted to submission.
 11. Build a grammar-driven template generator for `N,Q,M,T` that produces many paraphrases without duplicate endpoints.
 12. Add automated dataset validation:
    - no duplicate endpoint strings within a composition tuple
@@ -664,16 +666,21 @@ Once (a)-(c) are done, Track 4 is frozen for submission purposes. Any further id
 
 ### Paper milestones
 
-1. Track 1 is arXiv-ready only when this checklist is complete:
+1. Track 1 / GLT-STEER is short-paper-ready when this checklist is complete:
+   - Final Marker Hypothesis is the central claim
+   - activation/representation-steering related work is incorporated
+   - headline tables report `N` and 95% CI
+   - DistilGPT-2 layer/gain tuning history is disclosed
+   - marker-composition is framed as competition/saturation, not algebraic order structure
+2. Track 3 / GLT-DV is arXiv-ready only when this checklist is complete:
    - syntax holdout breakdown is in the draft and interpreted as endpoint leakage
    - McNemar tests are reported in the text
    - multiseed standard deviations and seed-level effect intervals are reported
    - at least one prior-work baseline or comparison is written up, such as task vectors or function vectors
    - at least one model outside the original five is included as a spot-check; currently satisfied by BERT-large and DeBERTa-v3-base
    - UPAT hard-holdout is either resolved experimentally or explicitly reported as a bounded hard-holdout result
-2. Keep Track 2 as a diagnostics paper until grammar-generated templates and endpoint-only controls succeed.
-3. Promote Track 3 only if it becomes clearly complementary to RISE: null-controlled Procrustes transfer plus held-out anchors plus an explicit RISE/MDV comparison. The main narrative should be stress-testing cross-model transfer, not claiming first discovery of universal transformation geometry.
-4. Track 4 is extended-abstract-ready only when the Final Marker Hypothesis is stated as the central claim and the logit audit is complete. It should be framed as activation steering of surface-form transformations in autoregressive LMs, not as a Lie-algebra result.
-5. If cross-lingual transfer works, it becomes the strongest version of the universality claim.
-6. If Track 2 survives grammar-generated controls, write it as a separate diagnostics paper rather than merging it into Track 1.
-7. If Track 2 weakens under controls, keep it as a negative/diagnostic section in a broader research note.
+3. Keep Track 2 / GLT-SPOT + GLT-MOLT as a diagnostics paper until grammar-generated templates, endpoint-only controls, and operator-level nulls are strong enough for a separate claim.
+4. Promote Track 4 / GLT-XFER only if it becomes clearly complementary to RISE: null-controlled Procrustes transfer plus held-out anchors plus an explicit RISE/MDV comparison. The main narrative should be stress-testing cross-model transfer, not claiming first discovery of universal transformation geometry.
+5. Keep Track 5 / GLT-AFFECT as a side track until the missing neutral-word control is complete.
+6. If cross-lingual transfer works, it becomes the strongest version of the universality claim.
+7. If GLT-SPOT weakens under controls, keep it as a negative/diagnostic section in a broader research note.

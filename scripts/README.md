@@ -2,7 +2,7 @@
 
 All runnable research scripts live in this directory.
 
-## Track 1
+## Track 3 / GLT-DV
 
 - `lie_llm_full_semantic_holdout_experiment.py`: full-semantic holdout.
 - `lie_llm_syntax_holdout_experiment.py`: syntax holdout.
@@ -10,14 +10,14 @@ All runnable research scripts live in this directory.
 - `lie_llm_entity_holdout_experiment.py`: entity holdout.
 - `lie_llm_variant_holdout_experiment.py`: variant holdout.
 - `lie_llm_y_only_ablation_multiseed.py`: multiseed endpoint/delta ablation.
-- `build_track1_effect_intervals.py`: 95% seed-level effect intervals for Track 1 `delta-y_only` and `delta-concat`.
+- `build_track1_effect_intervals.py`: 95% seed-level effect intervals for GLT-DV `delta-y_only` and `delta-concat`.
 - `run_syntax_representation_ablation.py`: syntax x/y/concat/delta ablation.
 - `run_layerwise_pooling_ablation.py`: syntax layerwise/pooling ablation.
 - `run_full_semantic_pooling_ablation.py`: full-semantic pooling ablation.
 - `run_track1_spotcheck.py`: modern/larger model spot-checks.
-- `make_paper_figures.py`: curated Track 1 figures.
+- `make_paper_figures.py`: curated GLT-DV figures.
 
-## Track 2
+## Track 2 / GLT-SPOT + GLT-MOLT
 
 - `lie_composition_dataset.py`: composition dataset utilities.
 - `run_lie_composition_audit.py`: pairwise composition/noncommutativity audit.
@@ -34,7 +34,7 @@ All runnable research scripts live in this directory.
 - `run_glt_molt_spectral_pca_sweep.py`: sequential PCA-dimension sweep wrapper for the spectral-null GLT-MOLT control.
 - `build_signed_permutation_multiple_testing.py`: table-level multiple-testing correction.
 
-## UPAT / Cross-Model
+## Track 4 / GLT-XFER
 
 - `upat_dataset.py`: UPAT dataset construction.
 - `upat_audit_results.py`: original UPAT audit.
@@ -44,6 +44,9 @@ All runnable research scripts live in this directory.
 - `run_upat_rise_aware_comparison.py`: first-pass MDV and simplified RISE-style prototype comparison for UPAT target-embedding prediction versus delta-classifier transfer.
 - `run_upat_hybrid_rise_procrustes.py`: non-leaky hybrid transfer test. It scores each UPAT pair against all MDV/RISE-style class prototypes and tests whether prototype-score features improve cross-model transformation-label F1 beyond aligned `delta_only`.
 - `run_upat_spherical_delta_steering.py`: movement-level steering test comparing linear centroid deltas, spherical/tangent delta movement, RISE-style prediction, residual orderings, and hybrid averaging on target cosine and retrieval metrics.
+
+## Track 1 / GLT-STEER
+
 - `run_gpt2_activation_steering_pilot.py`: generation-time GPT-2/distilGPT-2 residual-stream steering pilot using UPAT-derived transformation delta centroids with target, wrong-class, random-norm, and negative-vector controls. Use `scripts/launch_gpt2_activation_steering_pilot.ps1` for the overnight background run.
 - `run_gpt2_question_steering_controls.py`: compact reviewer-facing control for the focused GPT-2 question-steering result. It records no-steering question-mark base rate and tests whether the learned question vector transfers to freeform out-of-template source sentences.
 - `run_gpt2_question_prompt_robustness.py`: prompt-wrapper robustness control for the focused GPT-2 question-steering result. It tests `Input/Output`, `Source/Response`, `Sentence/Continuation`, and bare statement prompts.

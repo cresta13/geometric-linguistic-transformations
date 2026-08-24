@@ -225,11 +225,11 @@ def main():
                     "Fix the research state for external verification. This version incorporates methodological concerns: endpoint leakage, syntax-holdout overclaiming, McNemar tests, semantic-control statistics, and the terminology change to a third-order signed permutation coherence test.",
                 ),
                 (
-                    "Track 1 fixed result",
+                    "GLT-DV fixed result",
                     "Delta vectors add reproducible information beyond target-only endpoints in the multiseed full-semantic setting under Linear SVC. New seed-level effect intervals make the classifier dependence explicit: Linear SVC is positive for every original model, while logistic regression is mixed for GPT-2 and RoBERTa. The syntax=1.0 result has now been directly ablated: y_only also reaches 1.0, so the syntax split is interpreted as endpoint/surface leakage rather than as geometry. BERT-large and DeBERTa-v3-base spot-checks both rank delta best under Linear SVC and logistic regression. UPAT is now reported as a hard-holdout boundary where delta is not reliably better than y_only.",
                 ),
                 (
-                    "Track 2 fixed result",
+                    "GLT-SPOT fixed result",
                     "Composition order matters. Semantic equivalence shifts noncommutativity distributions with strong statistical tests. The third-order result is now framed as signed permutation coherence, not a formal Jacobi identity. Decoder pairwise composition is now included. The 2026-06-23 multilingual max audit extends the signed-permutation probe to 7 languages and 5 multilingual encoders. All four tested triples are below signed-null in every model-language cell; therefore the older 'QMT-only' story must be narrowed to the earlier English/decoder table, not promoted as a universal claim.",
                 ),
                 (
@@ -240,7 +240,7 @@ def main():
         )
 
         add_table_page(pdf, "Delta vs endpoint ablation with McNemar evidence", format_float_columns(ablation), max_rows=10)
-        add_table_page(pdf, "Track 1 seed-level effect intervals", format_float_columns(track1_intervals), max_rows=20)
+        add_table_page(pdf, "GLT-DV seed-level effect intervals", format_float_columns(track1_intervals), max_rows=20)
         add_table_page(pdf, "Syntax representation ablation: y_only solves the split", format_float_columns(syntax_ablation), max_rows=12)
         add_table_page(pdf, "Layerwise/pooling syntax sanity check: top rows", format_float_columns(layerwise), max_rows=20)
         add_table_page(pdf, "DeBERTa-v3-small modern spot-check", format_float_columns(spotcheck), max_rows=5)
@@ -348,20 +348,20 @@ def main():
                 "Antisymmetry is not reported as evidence because the implementation defines [B,A] as the negative order of [A,B]. It is a tautological implementation check only.",
                 "A literal nested-commutator Jacobi expression over the same six endpoint vectors cancels algebraically. The reported third-order diagnostic is the non-tautological signed permutation composition sum ABC+BCA+CAB-ACB-CBA-BAC.",
                 "Duplicate endpoint templates were detected and removed before finalizing today's result. The final dataset has 400 Jacobi rows and zero duplicate endpoint sets.",
-                "New Track 1 result: syntax y_only=1.0 confirms target/surface leakage for the syntax split. New Track 1 spot-check: DeBERTa-v3-small supports delta superiority for Linear SVC but not for logistic regression. New Track 2 result: GPT-2 and DistilGPT-2 both keep QMT below permutation null, while negation triples remain mixed.",
+                "New GLT-DV result: syntax y_only=1.0 confirms target/surface leakage for the syntax split. New GLT-DV spot-check: DeBERTa-v3-small supports delta superiority for Linear SVC but not for logistic regression. New GLT-SPOT result: GPT-2 and DistilGPT-2 both keep QMT below permutation null, while negation triples remain mixed.",
                 "2026-06-13 update: after cache cleanup, BERT-large and DeBERTa-v3-base were both run successfully. Delta is best for both Linear SVC and logistic regression on both models.",
                 "Second 2026-06-13 update: UPAT is now explicitly reported as a hard-holdout boundary condition. Full-semantic pooling ablation, confusion/negation analysis, decoder pairwise composition, and signed-permutation multiple-testing correction are included.",
                 "2026-06-14 update: UPAT-large Procrustes null controls are scaled to N=1000 and now include random-label, random-pairing, and random-orthogonal baselines. The observed aligned F1 exceeds every null repeat across all non-identity directions.",
                 "Second 2026-06-14 update: held-out alignment-size controls are now added. Procrustes maps fitted on auxiliary anchor texts disjoint from classifier train/test texts recover most of the full-anchor transfer effect.",
-                "Third 2026-06-14 update: RISE is now the central related-work anchor. Track 3 is reframed as RISE-aware stress testing rather than first-discovery cross-model geometry. A RISE/MDV-style UPAT comparison is now a required gate.",
+                "Third 2026-06-14 update: RISE is now the central related-work anchor. GLT-XFER is reframed as RISE-aware stress testing rather than first-discovery cross-model geometry. A RISE/MDV-style UPAT comparison is now a required gate.",
                 "Fourth 2026-06-14 update: first-pass RISE-aware UPAT comparison is now added. MDV and simplified RISE-style prototype methods predict targets well within-model, but cross-model target prediction remains harder than aligned delta-classifier transfer on the class-discrimination metric.",
                 "Fifth 2026-06-14 update: a non-leaky Hybrid RISE-Procrustes transfer test is now added. It scores every pair against all class prototypes, then tests prototype-score and delta+prototype-score features for cross-model transformation-label F1. The hybrid does not improve over aligned delta_only, suggesting that target-reconstructive prototype geometry and class-discriminative delta geometry are not automatically complementary under this metric.",
                 "Sixth 2026-06-14 update: movement-level spherical delta steering is now added. Linear centroid steering is best for cross-model target cosine, while RISE-style prediction is best for nearest-target label F1. Uncalibrated spherical delta movement slightly improves label F1 over linear deltas but lowers target cosine.",
-                "Seventh 2026-06-14 update: grammar-generated pairwise composition controls are now added for Track 2. Observed relative commutator norms remain below shuffled/norm-matched nulls, but endpoint-only and delta-only controls classify pair labels almost perfectly, so this is not yet endpoint-independent algebraic evidence.",
+                "Seventh 2026-06-14 update: grammar-generated pairwise composition controls are now added for GLT-SPOT. Observed relative commutator norms remain below shuffled/norm-matched nulls, but endpoint-only and delta-only controls classify pair labels almost perfectly, so this is not yet endpoint-independent algebraic evidence.",
                 "2026-06-23 update: the multilingual max audit completed successfully on seven languages and five multilingual encoders: paraphrase-multilingual-mpnet-base-v2, LaBSE, multilingual-e5-large, BGE-M3, and mBERT. All four third-order triples are below signed-null in every model-language cell; the global mean ratios are NQM=0.5798, QMT=0.6203, NQT=0.7014, and NMT=0.7716. This strengthens the existence of a controlled signed-permutation signal while weakening any universal claim that QMT is uniquely special.",
-                "2026-06-23 caution: source-only held-out-language controls are chance-like, but endpoint/delta/commutator controls remain high. Cross-language centroid cosine is moderate and high-variance. The next Track 2 gate is endpoint-balanced multilingual generation plus third-order target-only controls, not another unqualified scale-up.",
-                "2026-06-23 Track 1 cleanup: seed-level effect intervals are now added for delta-y_only and delta-concat. The Track 1 claim is narrowed to a robust Linear SVC/margin-probe result, because logistic regression is mixed for GPT-2 and RoBERTa.",
-                "Remaining blockers: confidence intervals and anchor-domain diversity for Track 3, stronger/faithful RISE comparison if feasible, resolve or expand UPAT hard-holdout, representation-ablation tables for every non-syntax holdout split, endpoint-balanced grammar generation and third-order target-only controls for Track 2, composition layer/pooling ablations, and final bibliography formatting.",
+                "2026-06-23 caution: source-only held-out-language controls are chance-like, but endpoint/delta/commutator controls remain high. Cross-language centroid cosine is moderate and high-variance. The next GLT-SPOT gate is endpoint-balanced multilingual generation plus third-order target-only controls, not another unqualified scale-up.",
+                "2026-06-23 GLT-DV cleanup: seed-level effect intervals are now added for delta-y_only and delta-concat. The GLT-DV claim is narrowed to a robust Linear SVC/margin-probe result, because logistic regression is mixed for GPT-2 and RoBERTa.",
+                "Remaining blockers: confidence intervals and anchor-domain diversity for GLT-XFER, stronger/faithful RISE comparison if feasible, resolve or expand UPAT hard-holdout, representation-ablation tables for every non-syntax holdout split, endpoint-balanced grammar generation and third-order target-only controls for GLT-SPOT, composition layer/pooling ablations, and final bibliography formatting.",
             ],
         )
 

@@ -2,179 +2,153 @@
 
 This file tracks completed research-driven changes and future work needed before any submission-grade paper. These items are not blockers for the Zenodo software/research-artifact snapshot.
 
-## Track 1: Geometric Transformation Vectors
+Current public numbering follows publication priority, not chronology:
 
-### Already addressed in the draft
+1. **Track 1 / GLT-STEER**: activation-space final-marker steering; current primary short-paper target.
+2. **Track 2 / GLT-SPOT + GLT-MOLT**: Lie-adjacent signed-composition and learned-operator diagnostics.
+3. **Track 3 / GLT-DV**: endpoint-controlled delta-vector diagnostics.
+4. **Track 4 / GLT-XFER**: cross-model transformation-transfer stress tests.
+5. **Track 5 / GLT-AFFECT**: graded affective geometry.
+6. **Track 6 / GLT-DIM**: effective dimensionality of transformation subspaces.
+7. **Track 7 / GLT-XLING**: cross-lingual transformation geometry.
 
-- Reframed `syntax=1.0` as a red flag for surface-form leakage, not a headline achievement.
+Historical notes before 2026-08 used a different numbering scheme: old Track 1 = GLT-DV, old Track 2 = GLT-SPOT, old Track 3 = GLT-XFER, old Track 4 = GLT-STEER. Current active docs should use the numbering above.
+
+## Track 1 / GLT-STEER: Activation-Space Final-Marker Steering
+
+### Why this is the current primary paper
+
+GLT-STEER is the clearest current short-paper candidate because it has a behavior-level intervention, explicit no-steering/wrong-vector controls, logit-level evidence, intervention-position controls, and clear negative boundaries.
+
+The central claim is intentionally narrow:
+
+> Final-position surface markers (`?`, `!`, `...`) are steerable in GPT-2-style residual streams via mean transformation-delta injection, while the same recipe does not yet support robust lexical or sentence-internal rewriting.
+
+### Already addressed
+
+- Focused GPT-2 question steering: target question-mark rate around `0.935`, controls at `0.0000`.
+- Copy-prompt preservation audit: question-and-preserved rate up to `0.9750`, matched no-steering/wrong-vector controls at `0.0000`.
+- Copy-prompt no-steering baseline: GPT-2 and DistilGPT-2 produce `0.0000` question marks across `960` no-steering rows.
+- Hard out-of-template GPT-2 question audit: marker effect survives on structurally diverse sources.
+- DistilGPT-2 replication: marker-form effect survives, but content preservation is weaker and layer/gain sensitive.
+- Negation layer sweep: negative/boundary result under the current recipe.
+- Exclamation and ellipsis controls: support the Final Marker Hypothesis beyond question marks.
+- Final-marker logit audit: no-steering marker rates are `0.0000`, while target steering moves intended marker tokens into top ranks.
+- Position-of-intervention audit: single prompt-position edits do not work; distributed or repeated interventions do.
+- Marker-composition audit: combined final-marker vectors show competition/saturation, not clean algebraic order structure.
+- Question/modality composition audit: negative for the current modality recipe.
+- Wilson CI audit: headline Track 1 rows now include `N` and 95% confidence intervals.
+- DistilGPT-2 layer/gain tuning disclosure is now recorded in the diary and Track 1 draft.
+
+### Stopping rule for submission
+
+Track 1 is short-paper-ready when:
+
+1. The Final Marker Hypothesis is the central claim.
+2. Activation/representation-steering related work is incorporated.
+3. Headline tables include `N` and 95% CI.
+4. DistilGPT-2 layer/gain tuning history is disclosed.
+5. Marker composition is framed as competition/saturation, not as Lie-algebra evidence.
+
+After those are satisfied, new controls go to future work unless requested by an external reviewer or a concrete venue requirement.
+
+## Track 2 / GLT-SPOT + GLT-MOLT: Lie-Adjacent Diagnostics
+
+### Already addressed
+
+- Renamed the third-order endpoint diagnostic away from "Jacobi-like" to "third-order signed permutation coherence".
+- Added semantic-equivalence controls, dataset duplicate-endpoint audit, decoder replication, and multiple-testing correction.
+- Added multilingual signed-permutation audits across 7 languages and multilingual encoders.
+- Added endpoint-subspace residualization: the signed-permutation signal survives removal of simple linear endpoint-derived probe subspaces.
+- Added GLT-MOLT learned linear/affine operator audits.
+- Added ridge sweep, matched operator nulls, spectral nulls, and compact PCA-64/PCA-128 sensitivity checks.
+- Central MOLT split is now explicit: additive deltas predict endpoints better, while learned operators expose weak closure-like compression under nulls.
+
+### Future submission work
+
+1. Rename code/CSV columns away from `jacobi_*`.
+2. Add endpoint-balanced multilingual grammar templates.
+3. Add target-only and endpoint-only controls for the six third-order composition endpoints.
+4. Explain the `NQM` versus `QMT` regime shift before expanding operators.
+5. Add optional PCA-256 and layerwise sensitivity only if this track becomes a submission target.
+
+## Track 3 / GLT-DV: Endpoint-Controlled Delta-Vector Diagnostics
+
+### Already addressed
+
+- Reframed `syntax=1.0` as target/surface leakage, not a headline result.
 - Added delta/y_only/concat/x_only multiseed ablation table.
-- Added McNemar evidence from existing results.
-- Added seed-level 95% effect intervals for `delta-y_only` and `delta-concat`.
-- Narrowed the Track 1 claim to the robust Linear SVC result because logistic regression is mixed for GPT-2 and RoBERTa.
-- Highlighted `concat < delta`, especially for decoder models.
-- Added pooling and modern-model limitations.
-- Ran syntax representation ablation: `y_only=1.0` confirms syntax endpoint leakage.
-- Ran a BERT syntax layerwise/pooling sanity check: layer `0` already reaches `1.0`, so syntax is not a last-layer geometry result.
-- Ran a DeBERTa-v3-small spot-check: Linear SVC supports `delta > concat > y_only`, while logistic regression remains mixed.
-- Ran larger/modern spot-checks on `bert-large-uncased` and `microsoft/deberta-v3-base`; `delta` is best for both Linear SVC and logistic regression on both models.
-- Added UPAT hard-holdout as an explicit bounded-claim result instead of leaving it hidden in CSV files.
-- Ran full-semantic pooling ablation for BERT, RoBERTa, and GPT-2.
-- Added confusion-matrix analysis with negation-vs-non-negation recall.
-- Reframed layer-0 syntax accuracy as a surface-cue failure, not as evidence of semantic geometry.
-- Marked UPAT Procrustes alignment and 100-permutation shuffle p-values as exploratory only.
+- Added McNemar evidence and seed-level 95% effect intervals.
+- Narrowed the claim to the robust Linear SVC result because logistic regression is mixed.
+- Added syntax representation ablation and layer-0 syntax sanity check.
+- Added DeBERTa-v3-small, BERT-large, and DeBERTa-v3-base spot-checks.
+- Added UPAT as a bounded hard-holdout result.
+- Added full-semantic pooling ablation and confusion/negation analysis.
 
 ### Future submission work
 
-1. Keep UPAT as a bounded hard-holdout result unless expansion or matched-capacity comparison changes the conclusion.
-2. `x_only/y_only/concat/delta` for every non-syntax holdout split that is still missing this breakdown.
-3. Convert large/modern spot-checks into multiseed runs if Track 1 is promoted to submission.
-4. Proper related-work table and bibliography in final citation format.
+1. Keep UPAT as a bounded hard-holdout unless expansion or matched-capacity comparison changes the conclusion.
+2. Add remaining non-syntax holdout representation ablations if GLT-DV becomes a submission target.
+3. Convert large/modern spot-checks into multiseed runs only if this track is promoted.
+4. Tighten final bibliography and comparison table.
 
-## Track 3: Cross-Model Transformation Transfer
+## Track 4 / GLT-XFER: Cross-Model Transfer Stress Tests
 
-### Why this may become the main paper
+### Already addressed
 
-The UPAT-large Procrustes results suggest that transformation geometry may transfer across architectures after low-dimensional alignment. However, RISE (Freenor and Alvarez, ICLR 2026) is now the closest and strongest neighboring paper for cross-lingual/cross-model semantic-syntactic geometry. Track 3 can only become a main paper if it is framed as a stress-test and comparison study rather than as the first broad geometry result.
-
-### Newly addressed
-
-- Added a pilot Procrustes null audit with `N=30` repeats for every non-identity cross-model direction.
-- Random-pairing null: target anchor correspondences are shuffled before Procrustes fitting.
-- Random-label null: correct alignment is retained, but source training labels are shuffled.
-- Observed aligned F1 remains above both null baselines in every tested non-identity direction. This supports the cross-model transfer hypothesis, but the run is still a pilot because `N=30` limits empirical p-values to `0.0323`.
-- Scaled the Procrustes null audit to `N=1000` repeats for every non-identity cross-model direction.
-- Added a random-orthogonal control: matched centering and dimensionality are preserved, but the learned Procrustes map is replaced by a random orthogonal matrix.
-- Observed aligned F1 remains above random-label, random-pairing, and random-orthogonal null baselines in every direction. No null repeat reaches observed aligned F1, so all empirical p-values are at the `N=1000` resolution floor: `0.000999`.
-- Added a held-out alignment-size curve using `1200` auxiliary anchor texts disjoint from the classifier train/test texts.
-- Held-out anchor mean F1 increases from `0.452046` at `25` anchors to `0.661928` at `1000` anchors, compared with raw cross-model mean F1 `0.241524` and full-anchor Procrustes mean F1 `0.684651`.
-- At `1000` held-out anchors, every direction remains above its raw cross-model baseline.
-- Added a first-pass RISE-aware comparison on UPAT:
-  - `mdv_raw`, `mdv_unit`, and simplified spherical `rise_style` prototype baselines
-  - within-model target cosine is high (`rise_style=0.923008`)
-  - cross-model target prediction is harder (`rise_style` mean cosine `0.578347`, nearest-target label F1 `0.445518`)
-  - aligned delta-classifier transfer remains higher on its own metric (`0.684651` mean F1)
-- Added a non-leaky Hybrid RISE-Procrustes transfer test:
-  - every pair is scored against all class prototypes, so the test label is never used to choose the prototype
-  - cross-model `delta_only` remains strongest (`0.684651` mean F1)
-  - the best hybrid/prototype feature set is `mdv_raw_hybrid_delta_scores` (`0.430839` mean F1)
-  - current conclusion: prototype target-reconstruction scores do not preserve transformation identity better than aligned deltas under the classifier-transfer metric
-- Added a movement-level spherical delta steering test:
-  - `linear_delta` is best for cross-model target cosine (`0.613559`)
-  - uncalibrated `spherical_delta` lowers target cosine (`0.604795`) but slightly improves retrieval label F1 over `linear_delta` (`0.412695` vs `0.407674`)
-  - `rise_only` remains best for retrieval label F1 (`0.445518`) while lower on target cosine (`0.578347`)
-  - current conclusion: target closeness and transformation-neighborhood retrieval are separable metrics
+- Scaled UPAT-large Procrustes nulls to `N=1000`.
+- Added random-label, random-pairing, and random-orthogonal controls.
+- Added held-out alignment-size curve with auxiliary anchor texts disjoint from classifier train/test endpoints.
+- Added first-pass RISE/MDV-style prototype comparison.
+- Added non-leaky hybrid RISE-Procrustes feature transfer.
+- Added movement-level spherical delta steering comparison.
 
 ### Future submission work
 
-1. Add confidence intervals and direction-family summaries for the held-out alignment curve:
-   - bootstrap over directions
-   - summarize encoder-to-encoder, encoder-to-sentence-encoder, and sentence-encoder-to-encoder families
-   - report whether any direction-family remains weak
-2. Reverse-direction transfer:
-   - small to large model
-   - large to small model
-   - sentence encoder to masked LM and back
-3. Stress-test anchor-domain diversity:
-   - anchors from a different template family
-   - paraphrased anchor pools
-   - natural sentence anchors if available
-4. Strengthen the first-pass RISE/MDV comparison:
-   - add confidence intervals
-   - compare against the published RISE implementation if feasible
-   - state clearly that target-embedding prediction and class-discriminative transfer are different metrics
-5. Extend movement-level composition tests:
-   - train-only per-class step-size calibration for spherical delta steering
-   - bootstrap confidence intervals for target cosine and retrieval metrics
-   - compare against a more faithful RISE implementation if feasible
-6. Report the completed null and held-out alignment audits in the draft:
-   - null mean/std/max
-   - empirical p-value resolution
-   - effect sizes versus each null
-   - held-out alignment-size curve
-7. Optional architecture expansion:
-   - Llama/Mistral-style embedding spaces if local resources allow
-   - otherwise stronger sentence encoders as a lower-cost proxy
+1. Add confidence intervals and direction-family summaries for the held-out alignment curve.
+2. Stress-test anchor-domain diversity.
+3. Compare against a more faithful RISE implementation if feasible.
+4. Keep GLT-XFER framed as stress testing, not as first-discovery cross-model geometry.
 
-## Track 4: Transformation Vectors as Editors
+## Track 5 / GLT-AFFECT: Graded Affective Geometry
 
-### Goal
+### Already addressed
 
-Move from descriptive geometry to causal intervention.
+- Added text-only affective polarity MVP over `hate -> dislike -> indifferent -> like -> love`.
+- Added marker-pooling control.
+- Added lexical-specificity control against size, attention, and random-label ladders.
+- Added paired bootstrap contrasts showing a small but stable affect-specific excess over generic lexical replacement.
 
-### Minimal experiment
+### Future submission work
 
-1. Use GPT-2.
-2. Compute centroid deltas for one transformation, probably negation or question formation.
-3. Inject the centroid into the residual stream during generation.
-4. Compare against random-vector, norm-matched, and wrong-class controls.
-5. Score generated text with transformation classifiers and manual examples.
+1. Add length/frequency-matched neutral-word ladder.
+2. Keep affect claims text-representation-only until non-textual grounding exists.
+3. Treat psychophysical grounding as a separate future subtrack.
 
-## Track 5: Cross-Lingual Transformation Geometry
+## Track 6 / GLT-DIM: Effective Dimensionality
 
-### Goal
-
-Test whether transformation geometry is language-invariant rather than English-template-specific.
-
-### Minimal experiment
-
-1. Use mBERT or XLM-R.
-2. Build matched transformation pairs in English and at least one non-English language.
-3. Compare within-language delta separability.
-4. Align transformation spaces across languages.
-5. Test classifier or centroid transfer across languages.
-
-## Track 6: Effective Dimensionality
-
-### Goal
-
-Measure whether transformations live in low-dimensional subspaces.
-
-### Minimal measurements
+Future measurements:
 
 1. PCA spectrum per transformation class.
 2. Participation ratio of delta singular values.
 3. Accuracy versus retained PCA dimensions.
-4. Capacity curves per transformation class.
+4. Sample-complexity curves per transformation class.
 
-## Track 2: Signed Permutation Coherence
+## Track 7 / GLT-XLING: Cross-Lingual Transformation Geometry
 
-### Already addressed in the draft
+Future measurements:
 
-- Renamed the conceptual result away from "Jacobi-like" to "third-order signed permutation coherence".
-- Explicitly distinguishes the diagnostic from the formal Lie-algebra Jacobi identity.
-- Added Welch/Mann-Whitney p-values and Cohen's d for semantic equivalence control.
-- Added dataset audit showing zero duplicate endpoint rows.
-- Reframed negation failures as a substantive result.
-- Added GPT-2/DistilGPT-2 signed-permutation replication. `QMT` remains below null for both decoders, while negation-containing triples are model-dependent.
-- Added GPT-2/DistilGPT-2 pairwise composition summaries.
-- Added multiple-testing correction over the 20 model/triple signed-permutation tests.
-- Added a working hypothesis for why `QMT` is cross-architecture coherent.
-- Rewrote antisymmetry as a tautological implementation check rather than evidence.
-- Added explicit caveat that current Lie-style templates contain stable lexical markers and remain synthetic.
-- Added the 2026-06-23 multilingual max audit: 7 languages, 5 multilingual encoders, 2000 signed-null samples per row. All four tested triples are below signed-null in every model-language cell, with `NQM` and `QMT` strongest. This strengthens the signed-permutation signal but revises the earlier `QMT`-only narrative.
-- Added the 2026-06-29/30 GLT-MOLT 9-model affine/operator audit with 1000 random-subspace nulls. Simple additive deltas remain better endpoint predictors, while learned linear/affine maps show weak matrix-commutator closure below random-subspace nulls.
-- Added the 2026-07-01 GLT-MOLT ridge sweep. Closure-like residuals improve under stronger ridge regularization, which makes norm-matched and shrinkage-matched operator nulls the next required control.
-- Added the 2026-07-02 GLT-MOLT matched-null audit. Learned-operator closure remains below random-subspace, Gaussian norm-matched, and signed-permutation matched operator nulls for `alpha=10` and `alpha=100`.
-- Added the 2026-07-03 GLT-MOLT spectral-null audit. At `alpha=100`, learned-operator closure remains below singular-spectrum matched Givens-rotation nulls, weakening the explanation that the effect is only shrinkage or spectrum matching.
-- Added the 2026-07-08 compact PCA-64 and PCA-128 GLT-MOLT sensitivity checks. On five stable multilingual encoders, the spectral-null closure signal remains below singular-spectrum matched nulls at both tested PCA dimensions.
+1. Matched transformation pairs in English and non-English languages.
+2. Within-language delta separability.
+3. Alignment of transformation spaces across languages.
+4. Classifier or centroid transfer across languages.
 
-### Future submission work
+## Frozen Scope for This Cycle
 
-1. Rename code and CSV columns away from `jacobi_*`.
-2. Add endpoint-balanced multilingual grammar templates.
-3. Add target-only and endpoint-only controls for the six third-order composition endpoints.
-4. Add layerwise and pooling ablations for composition diagnostics.
-5. Explain the `NQM` versus `QMT` regime shift before expanding the operator set.
-6. Add focused negation analysis before expanding the operator set.
-7. Extend GLT-MOLT beyond the completed matched-null, spectral-null, and compact PCA-64/PCA-128 controls with an optional separate PCA-256 job, layer ablations, and, if needed, a multi-alpha spectral-null pass.
+The current cycle should converge on Track 1 / GLT-STEER. Tracks 2-7 remain valuable research records and future-paper candidates, but they should not receive new ad hoc controls until one of the following happens:
 
-## Future submission priorities
+- a natural-corpus or natural-language validation experiment becomes available;
+- an external reviewer asks for a specific additional control;
+- a track is explicitly promoted to the next submission target.
 
-- Related work positioning is now explicitly RISE-aware, but final citation formatting and a comparison table remain future submission work.
-- Current model set now has draft-level larger/modern spot-checks, but not multiseed larger-model confirmation.
-- Mean pooling needs empirical justification for the full-semantic and composition experiments.
-- The central narrative should be selected before submission. Current candidates are:
-  - Track 1: endpoint-controlled transformation vectors
-  - Track 3: RISE-aware cross-model transfer stress tests
-  - Track 4: transformation vectors as causal editors
-  - Track 5: cross-lingual transformation geometry
+This avoids a research-debt spiral where every new control creates a new uncontrolled side question before the strongest current paper is written.

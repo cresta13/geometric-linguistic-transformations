@@ -32,9 +32,29 @@ We should not write any of the following as novelty claims:
 
 Our current repository still has several distinct contributions if framed narrowly.
 
-### Track 1: Endpoint-Controlled Delta Diagnostics
+### Track 1 / GLT-STEER: Activation-Space Final-Marker Steering
 
-RISE focuses on predicting transformed embeddings via rotor/MDV-style operations. Track 1 asks a different diagnostic question:
+Track 1 is now the current primary short-paper target. It is closest to activation/representation-steering work rather than to RISE alone:
+
+> Can mean transformation-delta directions be injected into a generative model's hidden states to cause a specific output-form change?
+
+Distinct value:
+
+- behavior-level causal intervention rather than only embedding-space classification
+- explicit no-steering and wrong-vector controls
+- logit-level evidence that final marker tokens are moved into top ranks
+- position-of-intervention audit showing that single prompt-token edits are not sufficient
+- bounded negative results for lexical/sentence-internal transformations such as negation and modality
+
+Current narrow claim:
+
+> Final-position surface markers (`?`, `!`, `...`) are steerable via mean hidden-state delta injection in GPT-2-style residual streams, while this recipe does not yet support general semantic rewriting.
+
+This track must be positioned directly against activation addition, contrastive activation addition, and representation-engineering / steering-vector literature.
+
+### Track 3 / GLT-DV: Endpoint-Controlled Delta Diagnostics
+
+RISE focuses on predicting transformed embeddings via rotor/MDV-style operations. GLT-DV asks a different diagnostic question:
 
 > Does `embedding(y) - embedding(x)` add class-discriminative transformation information beyond `x_only`, `y_only`, and `concat` baselines?
 
@@ -46,11 +66,11 @@ Distinct value:
 - bounded hard-holdout reporting via UPAT
 - syntax `1.0` reinterpreted as endpoint/surface leakage rather than a success
 
-This makes Track 1 a conservative control paper, not a stronger version of RISE.
+This makes GLT-DV a conservative control paper, not a stronger version of RISE.
 
-### Track 2: Ordered Composition Diagnostics
+### Track 2 / GLT-SPOT + GLT-MOLT: Ordered Composition and Operator Diagnostics
 
-RISE reports that its transformations behave commutatively in the tangent-space framing. Track 2 asks almost the opposite question:
+RISE reports that its transformations behave commutatively in the tangent-space framing. GLT-SPOT asks almost the opposite question:
 
 > Do ordered linguistic transformations show noncommutative or signed-permutation composition structure in embedding endpoints?
 
@@ -63,7 +83,7 @@ Distinct value:
 
 This is the cleanest conceptual separation from RISE. It should be framed as a diagnostic of local composition/order effects, not as a steering method.
 
-Xia and Kalita add a second important boundary around this track. Their work shows that some linguistic relations, especially morphology, may be better modeled as relation-specific matrix operators derived from Jacobians than as additive displacement vectors. That matters for Track 2 because a matrix-valued operator formulation gives a more direct route to Lie-style tests:
+Xia and Kalita add a second important boundary around this track. Their work shows that some linguistic relations, especially morphology, may be better modeled as relation-specific matrix operators derived from Jacobians than as additive displacement vectors. That matters for GLT-MOLT because a matrix-valued operator formulation gives a more direct route to Lie-style tests:
 
 ```text
 [W_A, W_B] = W_A W_B - W_B W_A
@@ -71,9 +91,9 @@ Xia and Kalita add a second important boundary around this track. Their work sho
 
 and to a true matrix Jacobi residual. Our endpoint signed-permutation diagnostic is therefore a weaker, endpoint-level proxy. The current GLT-MOLT operator-valued audit now learns linear and affine maps for `N,Q,M,T`; it finds weak matrix-commutator closure below random-subspace, Gaussian norm-matched, and signed-permutation matched operator nulls, while the ridge sweep shows that algebraic cleanliness is regularization-sensitive.
 
-### Track 3: Cross-Model Transfer Stress Tests
+### Track 4 / GLT-XFER: Cross-Model Transfer Stress Tests
 
-Track 3 is closest to RISE and therefore needs the most careful positioning.
+GLT-XFER is closest to RISE and therefore needs the most careful positioning.
 
 Current distinct value:
 
@@ -84,7 +104,7 @@ Current distinct value:
 
 Now addressed as a first-pass comparison:
 
-Track 3 now includes a first-pass RISE-inspired comparison on UPAT:
+GLT-XFER now includes a first-pass RISE-inspired comparison on UPAT:
 
 - MDV/prototype prediction baseline on UPAT
 - spherical normalization / tangent-space variant if feasible
@@ -100,7 +120,7 @@ Current interpretation:
 - A non-leaky hybrid test that combines aligned `delta_only` features with all-class MDV/RISE-style prototype scores does not improve cross-model transformation-label F1. The current interpretation is that target-reconstructive geometry and class-discriminative geometry are not automatically complementary under this classifier-transfer metric.
 - A movement-level spherical delta steering test gives a more nuanced split: linear centroid steering is best for cross-model target cosine, while RISE-style prediction is best for nearest-target label F1. Spherical/tangent steering does not improve target cosine in the current uncalibrated form, but it slightly improves label F1 over linear deltas.
 
-Track 3 remains a useful stress-test package, but it still should not be promoted as a main novelty paper against RISE until confidence intervals, anchor-domain robustness, and a more faithful RISE implementation are added.
+GLT-XFER remains a useful stress-test package, but it still should not be promoted as a main novelty paper against RISE until confidence intervals, anchor-domain robustness, and a more faithful RISE implementation are added.
 
 ## Recommended Framing
 
@@ -115,9 +135,9 @@ Also use this operator-valued caveat:
 ## Immediate Backlog Changes
 
 1. Add RISE to every related-work section as the closest prior work.
-2. Stop using "universal transformation subspaces" as an unqualified Track 3 title.
-3. Rename Track 3 working title toward "stress-testing cross-model transformation transfer".
-4. Extend the first RISE/MDV comparison with confidence intervals and, if feasible, a more faithful RISE implementation before promoting Track 3.
+2. Stop using "universal transformation subspaces" as an unqualified GLT-XFER title.
+3. Keep GLT-XFER framed as "stress-testing cross-model transformation transfer".
+4. Extend the first RISE/MDV comparison with confidence intervals and, if feasible, a more faithful RISE implementation before promoting GLT-XFER.
 5. Extend movement-level composition with train-only step-size calibration and confidence intervals before making any complementarity claim.
-6. Emphasize Track 2 composition/order diagnostics as the most distinct paper-level contribution.
+6. Keep GLT-SPOT/GLT-MOLT as the Lie-adjacent diagnostics track, but do not treat it as the current primary short-paper target while GLT-STEER is active.
 7. Extend GLT-MOLT controls inspired by Linear Relational Decoding: compare learned operator closure against singular-spectrum/shrinkage-matched nulls before promoting matrix commutator results.

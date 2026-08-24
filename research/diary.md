@@ -1,5 +1,9 @@
 # Research Diary
 
+Numbering note as of 2026-08-25:
+
+Current public numbering is Track 1 / GLT-STEER, Track 2 / GLT-SPOT + GLT-MOLT, Track 3 / GLT-DV, Track 4 / GLT-XFER, Track 5 / GLT-AFFECT, Track 6 / GLT-DIM, and Track 7 / GLT-XLING. Older diary entries before this note use the chronology-local numbering from the time they were written and should be read historically.
+
 ## 2026-06-10: Linear transformation vectors in transformer embeddings
 
 Starting point: the GitHub project `cresta13/geometric-linguistic-transformations` established an exploratory baseline: linguistic transformations can often be recovered from embedding displacement vectors, especially with `delta = embedding(target) - embedding(source)`.
@@ -1180,7 +1184,7 @@ The PCA-64 compact run supports the claim that the spectral-null closure-compres
 
 ## 2026-08-25: Retrospective catch-up for August GLT-STEER work
 
-This entry intentionally records an August gap in the diary rather than pretending the notes were written at run time. The public research record had ended on 2026-07-08, while several GLT-STEER experiments were completed between 2026-08-01 and 2026-08-21. This catch-up records the major decisions and boundaries so that the Track 4 narrative is not reconstructed silently after the fact.
+This entry intentionally records an August gap in the diary rather than pretending the notes were written at run time. The public research record had ended on 2026-07-08, while several GLT-STEER experiments were completed between 2026-08-01 and 2026-08-21. This catch-up records the major decisions and boundaries so that the Track 1 / GLT-STEER narrative is not reconstructed silently after the fact.
 
 ### 2026-08-01: DistilGPT-2 tuning, ellipsis, and first marker composition
 
@@ -1200,7 +1204,7 @@ Main results:
 
 Tuning disclosure:
 
-The DistilGPT-2 `layer=2, gain=1.0` choice was not preregistered as a train/dev/test protocol. It came from a layer/gain sweep over copy-prompt settings, and the hard-OOT run was interpreted after that choice. The hard-OOT source sentences are structurally different, but prompt families and metrics were already known. This must remain a limitation in the Track 4 draft.
+The DistilGPT-2 `layer=2, gain=1.0` choice was not preregistered as a train/dev/test protocol. It came from a layer/gain sweep over copy-prompt settings, and the hard-OOT run was interpreted after that choice. The hard-OOT source sentences are structurally different, but prompt families and metrics were already known. This must remain a limitation in the Track 1 / GLT-STEER draft.
 
 ### 2026-08-08 to 2026-08-10: Final-marker logit audit and modality boundary
 
@@ -1211,7 +1215,7 @@ Artifacts:
 
 Main results:
 
-- The final-marker logit audit is the strongest current mechanistic evidence for Track 4. No-steering marker rates remain `0.0000`, while target steering moves the intended marker token into the top rank in most GPT-2 sequences.
+- The final-marker logit audit is the strongest current mechanistic evidence for Track 1 / GLT-STEER. No-steering marker rates remain `0.0000`, while target steering moves the intended marker token into the top rank in most GPT-2 sequences.
 - Aggregate GPT-2 target marker rates: `?=0.8542`, `!=0.9063`, `...=0.8750`.
 - The question/modality composition audit is negative for the current modality recipe: question steering remains strong, but modality markers stay at `0.000`. This reinforces the boundary between final-position markers and sentence-internal or lexical transformations.
 
@@ -1245,7 +1249,7 @@ Artifacts:
 
 Main results:
 
-- Wilson 95% confidence intervals and sample sizes are now reported for the main Track 4 headline rows.
+- Wilson 95% confidence intervals and sample sizes are now reported for the main Track 1 / GLT-STEER headline rows.
 - GPT-2 final-marker target rates remain well separated from no-steering:
   - `?=0.8542`, `N=96`, CI `[0.7700, 0.9111]`
   - `!=0.9063`, `N=96`, CI `[0.8313, 0.9499]`
@@ -1257,4 +1261,4 @@ Main results:
 
 Stopping rule:
 
-Track 4 should now converge as a short paper / extended abstract around the Final Marker Hypothesis. After adding activation-steering related work, explicit N/CI, and the DistilGPT-2 tuning disclosure, new experiments should be moved to future work unless an external reviewer or concrete venue requirement asks for them.
+Track 1 / GLT-STEER should now converge as a short paper / extended abstract around the Final Marker Hypothesis. After adding activation-steering related work, explicit N/CI, and the DistilGPT-2 tuning disclosure, new experiments should be moved to future work unless an external reviewer or concrete venue requirement asks for them.

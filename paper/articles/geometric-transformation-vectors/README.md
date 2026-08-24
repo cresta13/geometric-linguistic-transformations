@@ -19,7 +19,7 @@ Sentence-pair displacement vectors can add transformation information beyond end
 - The main positive result is strongest for Linear SVC; logistic regression does not support `delta > y_only` for every model.
 - The main multiseed table still uses mean pooling.
 - UPAT boundary results block any universal operator claim, but make the paper's bounded claim sharper.
-- Cross-model/Rise-aware steering results belong in Track 3, not as the headline of this Track 1 paper.
+- Cross-model/RISE-aware transfer results belong in GLT-XFER, not as the headline of this GLT-DV paper.
 
 ## Next experiments
 

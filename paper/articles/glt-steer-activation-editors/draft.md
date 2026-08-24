@@ -70,7 +70,7 @@ Closest activation-steering references to cite in the final version:
 
 ## 2.3 Statistical Reporting and Tuning Disclosure
 
-The headline Track 4 rates now have an explicit derived CI audit:
+The headline Track 1 / GLT-STEER rates now have an explicit derived CI audit:
 
 - `../../../results/experiments/glt_steer_headline_ci_20260825_results/`
 

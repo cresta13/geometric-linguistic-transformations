@@ -2,6 +2,10 @@
 
 Date: 2026-06-13
 
+Historical numbering note:
+
+This file predates the 2026-08 public track renumbering. In this note, "Track 1" means the current GLT-DV delta-vector diagnostics, and "Track 2" means the current GLT-SPOT signed-permutation diagnostics. The current primary paper target is now Track 1 / GLT-STEER.
+
 Postscript, 2026-06-23:
 
 The later multilingual max audit revised the Track 2 narrative. The `QMT`-only claim below is historical and scoped to the original English encoder/decoder table. In the 7-language, 5-multilingual-encoder audit, all four tested triples are below signed-null in every model-language cell, with `NQM` and `QMT` strongest. Current drafts should use the multilingual framing rather than promote `QMT` as globally unique.

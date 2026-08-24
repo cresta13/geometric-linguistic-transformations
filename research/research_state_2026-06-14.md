@@ -2,6 +2,10 @@
 
 Date: 2026-06-14
 
+Historical numbering note:
+
+This file predates the 2026-08 public track renumbering. In this note, Track 1 means the current GLT-DV delta-vector diagnostics, Track 2 means the current GLT-SPOT signed-permutation diagnostics, and Track 3 means the current GLT-XFER transfer stress tests. The current primary paper target is now Track 1 / GLT-STEER.
+
 This note is a skeptical assessment of the repository after the RISE-aware UPAT work, hybrid transfer test, and spherical delta steering experiment.
 
 ## Executive Verdict

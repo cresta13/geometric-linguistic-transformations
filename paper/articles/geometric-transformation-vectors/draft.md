@@ -64,7 +64,7 @@ Function vectors study compact internal activation directions that encode in-con
 
 Attribute and entity-representation benchmarks such as RAVEL emphasize disentangling entity attributes in language-model representations. Our experiments share the concern with disentanglement, but focus on transformations between sentence pairs rather than static attributes of one entity mention.
 
-Negation probing is directly relevant because negation is both an easy surface marker in Track 1 and a failure mode in Track 2. Kassner and Schuetze show that pretrained language models can fail to distinguish negated from non-negated cloze probes. This motivates treating negation results carefully: high negation classification accuracy does not imply robust semantic handling of negation.
+Negation probing is directly relevant because negation is both an easy surface marker in GLT-DV and a failure mode in GLT-SPOT. Kassner and Schuetze show that pretrained language models can fail to distinguish negated from non-negated cloze probes. This motivates treating negation results carefully: high negation classification accuracy does not imply robust semantic handling of negation.
 
 Working references:
 
@@ -80,7 +80,7 @@ Closest-work distinction:
 
 RISE is the closest and strongest neighbor because it already treats discourse-level semantic-syntactic transformations as geometric structure in sentence-embedding space, using spherical/Riemannian rotor operations and evaluating across languages and embedding models. This draft must therefore not claim novelty for the broad idea that linguistic transformations have cross-model geometric structure. The methodological distinction is narrower: RISE predicts transformed embeddings with rotor/prototype operations, while this track tests direct sentence-pair displacement vectors with endpoint-only, source-only, concat, multiseed, and McNemar controls. The practical contribution here is therefore not "we discovered geometric transformations before RISE"; it is a conservative ablation package showing when simple delta vectors add information beyond endpoints, when they fail, and which artifacts must be controlled before stronger claims.
 
-The RISE/MDV comparison has now been run as part of the broader Track 3 package. On UPAT, MDV/RISE-style prototype prediction is strong within-model, but cross-model target prediction remains harder than Procrustes-aligned delta-classifier transfer. A non-leaky hybrid feature-transfer test does not improve over aligned `delta_only`, and a movement-level spherical delta steering test separates exact target cosine from transformation-neighborhood retrieval. Therefore this Track 1 draft should remain a controlled endpoint/delta ablation study. Cross-model steering and RISE-aware comparisons belong in a separate Track 3 paper rather than being folded into this baseline paper.
+The RISE/MDV comparison has now been run as part of the broader GLT-XFER package. On UPAT, MDV/RISE-style prototype prediction is strong within-model, but cross-model target prediction remains harder than Procrustes-aligned delta-classifier transfer. A non-leaky hybrid feature-transfer test does not improve over aligned `delta_only`, and a movement-level spherical delta steering test separates exact target cosine from transformation-neighborhood retrieval. Therefore this GLT-DV draft should remain a controlled endpoint/delta ablation study. Cross-model steering and RISE-aware comparisons belong in a separate GLT-XFER paper rather than being folded into this baseline paper.
 
 Compared with the Linear Representation Hypothesis literature, this draft is not a formal theory of linear representation. It is an empirical stress test of whether a simple linear object, `embedding(y) - embedding(x)`, survives endpoint leakage controls in controlled linguistic transformations.
 
@@ -142,7 +142,7 @@ The full-semantic holdout remains more informative, but it is still vulnerable t
 
 ## 5. Delta Adds Reproducible Information Beyond Target-Only
 
-The multiseed ablation is currently the strongest Track 1 evidence, with an important qualifier: the cleanest positive result is for Linear SVC. Logistic regression is included as a stress test and is more mixed.
+The multiseed ablation is currently the strongest GLT-DV evidence, with an important qualifier: the cleanest positive result is for Linear SVC. Logistic regression is included as a stress test and is more mixed.
 
 Source files:
 
@@ -293,7 +293,7 @@ The correct interpretation is therefore not "`delta` is always the transformatio
 
 RISE-aware UPAT notes:
 
-The UPAT package now includes a much stronger Track 3 stress-test suite than the original exploratory notes:
+The UPAT package now includes a much stronger GLT-XFER stress-test suite than the original exploratory notes:
 
 - cross-model Procrustes transfer with `N=1000` random-label, random-pairing, and random-orthogonal nulls
 - held-out anchor alignment-size curves with auxiliary anchor texts disjoint from classifier train/test endpoints
@@ -301,11 +301,11 @@ The UPAT package now includes a much stronger Track 3 stress-test suite than the
 - non-leaky hybrid prototype-score transfer
 - movement-level spherical delta steering
 
-These results should not be promoted inside this Track 1 draft as evidence that delta vectors are universal operators. The cleaner interpretation is separation of questions: Track 1 asks whether `delta` adds information beyond endpoints; Track 3 asks how cross-model alignment, target reconstruction, and spherical movement interact. That separation keeps the baseline paper honest and prevents the UPAT stress tests from overloading the Track 1 narrative.
+These results should not be promoted inside this GLT-DV draft as evidence that delta vectors are universal operators. The cleaner interpretation is separation of questions: GLT-DV asks whether `delta` adds information beyond endpoints; GLT-XFER asks how cross-model alignment, target reconstruction, and spherical movement interact. That separation keeps the baseline paper honest and prevents the UPAT stress tests from overloading the GLT-DV narrative.
 
 ## 11. Confusion and Negation Analysis
 
-The working hypothesis was that negation might be the bridge between Track 1 and Track 2. The full-semantic confusion matrices do not support that simple story.
+The working hypothesis was that negation might be the bridge between GLT-DV and GLT-SPOT. The full-semantic confusion matrices do not support that simple story.
 
 ![Negation recall Linear SVC](../../figures/confusion_negation_linear_svc.png)
 
@@ -315,7 +315,7 @@ The working hypothesis was that negation might be the bridge between Track 1 and
 
 **Figure 11.** Negation versus non-negation recall for logistic regression.
 
-Across full-semantic classifiers, negation is usually one of the easiest classes, often near perfect recall. The hardest class is typically `uncertainty`, not negation. This means the Track 2 negation failure is not explained by Track 1 being unable to classify single-step negation deltas. The more precise bridge is:
+Across full-semantic classifiers, negation is usually one of the easiest classes, often near perfect recall. The hardest class is typically `uncertainty`, not negation. This means the GLT-SPOT negation failure is not explained by GLT-DV being unable to classify single-step negation deltas. The more precise bridge is:
 
 > Negation is easy as a surface-labeled one-step transformation, but unstable as a component of ordered third-order composition.
 
@@ -334,7 +334,7 @@ The first compact modern-architecture substitute was `microsoft/deberta-v3-small
 | Linear SVC | `0.167` | `0.804` | `0.823` | `0.871` |
 | Logistic regression | `0.167` | `0.770` | `0.828` | `0.796` |
 
-The Linear SVC result supports the main Track 1 claim on a model outside the original five: `delta` exceeds both `y_only` and `concat`. Logistic regression is mixed, with `concat` above `delta`, so the spot-check should be reported as supportive but not definitive.
+The Linear SVC result supports the main GLT-DV claim on a model outside the original five: `delta` exceeds both `y_only` and `concat`. Logistic regression is mixed, with `concat` above `delta`, so the spot-check should be reported as supportive but not definitive.
 
 After cleaning local caches, two stronger spot-checks were run: `bert-large-uncased` and `microsoft/deberta-v3-base`.
 
@@ -353,7 +353,7 @@ After cleaning local caches, two stronger spot-checks were run: `bert-large-unca
 | DeBERTa-v3-base | Linear SVC | `0.167` | `0.747` | `0.776` | `0.812` |
 | DeBERTa-v3-base | Logistic regression | `0.167` | `0.726` | `0.694` | `0.752` |
 
-These two spot-checks are stronger than the initial DeBERTa-v3-small run: `delta` is the best representation for both classifiers on both models. This does not replace full multiseed evaluation, but it removes the previous large-model blocker for the draft-level Track 1 claim.
+These two spot-checks are stronger than the initial DeBERTa-v3-small run: `delta` is the best representation for both classifiers on both models. This does not replace full multiseed evaluation, but it removes the previous large-model blocker for the draft-level GLT-DV claim.
 
 ## 13. Claim Supported by Current Evidence
 
@@ -380,7 +380,7 @@ The revised paper should center the first claim.
 
 1. Produce `x_only/y_only/concat/delta` tables for every remaining holdout beyond syntax and full semantic.
 2. Reconcile UPAT with the main full-semantic result by either expanding UPAT, matching train sizes, or clearly treating it as a bounded hard-holdout result.
-3. Convert the large/modern spot-check into a multiseed run if Track 1 becomes the submission priority.
+3. Convert the large/modern spot-check into a multiseed run if GLT-DV becomes the submission priority.
 4. Add classifier-robustness checks beyond Linear SVC and logistic regression if the paper claims more than a margin-probe result.
 5. Add a final related-work section and bibliography in submission format.
 

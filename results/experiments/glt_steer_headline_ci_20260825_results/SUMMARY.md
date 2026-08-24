@@ -1,6 +1,6 @@
 # GLT-STEER Headline Confidence Intervals
 
-Derived CI audit for the Track 4 headline tables. The script uses Wilson 95% confidence intervals for binary rates, computed from raw rows when available and from summary rate + row counts for strict summary-only metrics.
+Derived CI audit for the Track 1 / GLT-STEER headline tables. The script uses Wilson 95% confidence intervals for binary rates, computed from raw rows when available and from summary rate + row counts for strict summary-only metrics.
 
 Script:
 

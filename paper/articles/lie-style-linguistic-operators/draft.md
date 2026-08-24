@@ -51,7 +51,7 @@ This track is related to task arithmetic and function-vector work, but it asks a
 
 The closest conceptual overlap is relation-vector probing and representation steering: we also ask whether semantic or linguistic transformations produce reusable directions. The difference is that this paper tests ordered composition explicitly (`AB` versus `BA`) and then tests a null-controlled signed third-order endpoint sum.
 
-Negation literature is also central. Prior negation probes show that pretrained language models can fail to robustly distinguish negated from non-negated factual prompts. In our setting, Track 1 shows that negation can be easy as a one-step surface-labeled class, while Track 2 shows that negation is unstable inside ordered third-order composition. That distinction is one of the main reasons to keep the two paper tracks separate.
+Negation literature is also central. Prior negation probes show that pretrained language models can fail to robustly distinguish negated from non-negated factual prompts. In our setting, GLT-DV shows that negation can be easy as a one-step surface-labeled class, while GLT-SPOT shows that negation is unstable inside ordered third-order composition. That distinction is one of the main reasons to keep the diagnostic tracks separate.
 
 Working references:
 
@@ -68,7 +68,7 @@ Closest-work distinction:
 
 RISE is the closest methodological neighbor, but this track asks a different question. RISE estimates spherical/geodesic rotations that map semantic-syntactic transformations across languages and models, and it frames its learned transformations as commutative in tangent-space composition. This draft does not propose a steering or target-embedding prediction method. It asks whether ordered transformation endpoints show local composition structure, especially via pairwise noncommutativity and third-order signed-permutation cancellation. The strongest current result is deliberately narrow: `QMT` is coherent under this diagnostic, while negation-containing triples are unstable.
 
-This distinction is now central rather than cosmetic. RISE strengthens the case that some transformations can be treated as reusable geometric operations; our Track 2 asks where ordered linguistic composition deviates from simple commutative addition. If this result survives grammar-generated templates and endpoint-only controls, it becomes a complementary diagnostics paper: RISE-style methods describe transferable one-step operations, while this track probes order sensitivity and local composition failures.
+This distinction is now central rather than cosmetic. RISE strengthens the case that some transformations can be treated as reusable geometric operations; GLT-SPOT asks where ordered linguistic composition deviates from simple commutative addition. If this result survives grammar-generated templates and endpoint-only controls, it becomes a complementary diagnostics paper: RISE-style methods describe transferable one-step operations, while this track probes order sensitivity and local composition failures.
 
 Compared with LRH work, the signed-permutation diagnostic should not be read as a formal proof of a linear representation theorem. Compared with De Raedt et al. 2021, this is not a multilingual autoencoder property-transfer method; it is a controlled transformer-embedding diagnostic over ordered English sentence transformations.
 
@@ -321,7 +321,7 @@ Controls:
 
 Interpretation:
 
-The multilingual audit moves Track 2 closer to the algebraic-composition goal because the third-order signal survives a much broader model/language grid. It is still not endpoint-independent algebraic evidence. Endpoint and delta controls remain strong, and cross-language centroid alignment is only moderate (`mean cosine ~= 0.32`). The next necessary experiment is endpoint-balanced multilingual generation plus target-only controls over the six third-order endpoints.
+The multilingual audit moves GLT-SPOT closer to the algebraic-composition goal because the third-order signal survives a much broader model/language grid. It is still not endpoint-independent algebraic evidence. Endpoint and delta controls remain strong, and cross-language centroid alignment is only moderate (`mean cosine ~= 0.32`). The next necessary experiment is endpoint-balanced multilingual generation plus target-only controls over the six third-order endpoints.
 
 ## 8.2 Endpoint-Subspace Residualization Audit
 
@@ -536,7 +536,7 @@ This is still a hypothesis, not a proven linguistic theory. After the multilingu
 
 Critical template caveat:
 
-The original Lie-style dataset is synthetic and hand-written. Several operations have stable lexical markers: negation often introduces "failed to", questions often begin with a fixed auxiliary pattern, and tense can introduce explicit temporal markers. Variant transfer partially reduces this concern in Track 1, but the Lie-style composition experiments still need endpoint-balanced grammar generation before submission. Until then, the Track 2 claim is a diagnostic result about controlled probe sets, not a general claim about natural-language operator algebra.
+The original Lie-style dataset is synthetic and hand-written. Several operations have stable lexical markers: negation often introduces "failed to", questions often begin with a fixed auxiliary pattern, and tense can introduce explicit temporal markers. Variant transfer partially reduces this concern in GLT-DV, but the Lie-style composition experiments still need endpoint-balanced grammar generation before submission. Until then, the GLT-SPOT claim is a diagnostic result about controlled probe sets, not a general claim about natural-language operator algebra.
 
 Update after the first grammar-generated pairwise control:
 
@@ -556,7 +556,7 @@ Negation may not behave like a smooth linear direction in these embedding spaces
 
 Immediate follow-up:
 
-- isolate negation-only transformations in Track 1 confusion analysis
+- isolate negation-only transformations in GLT-DV confusion analysis
 - compare `N` pairwise commutators against non-`N` pairwise commutators
 - generate paraphrases where negation markers are less lexically obvious
 - test whether middle layers represent negation more coherently than final layers
