@@ -590,6 +590,8 @@ Negative results remain part of the research record.
 
 Track 1 (GLT-STEER / Final Marker Hypothesis) is submission-ready for a short paper / extended abstract when, and only when, items (a)-(c) below are complete. After (a)-(c) are satisfied, **no further control, null, or ablation is added to Track 1 / GLT-STEER**, regardless of what a subsequent look at the results suggests might still be worth checking.
 
+2026-08-25 status: satisfied for the current short-paper scope. The CI/N audit is complete, activation/representation-steering related work is incorporated in the Track 1 draft, the DistilGPT-2 layer/gain tuning history is disclosed, and a fixed-parameter confirmatory audit has been added without new tuning. The next Track 1 work is writing and packaging, not another experiment.
+
 a. Confidence intervals and sample sizes (N) are reported for every Track 1 / GLT-STEER headline table: question, exclamation, and ellipsis steering; the final-marker logit audit; the position-of-intervention audit; and the marker-composition audit. Point estimates without N/CI are not acceptable in the final draft.
 
 b. The related-work section is extended to cover the activation/representation-steering literature (for example Activation Addition / ActAdd, Contrastive Activation Addition, and representation engineering / steering-vector work), positioning the Final Marker Hypothesis against that literature directly, not only against RISE, task arithmetic, and function vectors.
@@ -668,11 +670,12 @@ Once (a)-(c) are done, Track 1 / GLT-STEER is frozen for submission purposes. An
 ### Paper milestones
 
 1. Track 1 / GLT-STEER is short-paper-ready when this checklist is complete:
-   - Final Marker Hypothesis is the central claim
-   - activation/representation-steering related work is incorporated
-   - headline tables report `N` and 95% CI
-   - DistilGPT-2 layer/gain tuning history is disclosed
-   - marker-composition is framed as competition/saturation, not algebraic order structure
+   - Final Marker Hypothesis is the central claim: complete
+   - activation/representation-steering related work is incorporated: complete
+   - headline tables report `N` and 95% CI: complete
+   - DistilGPT-2 layer/gain tuning history is disclosed: complete
+   - marker-composition is framed as competition/saturation, not algebraic order structure: complete
+   - fixed-parameter confirmation is archived and summarized: complete
 2. Track 3 / GLT-DV is arXiv-ready only when this checklist is complete:
    - syntax holdout breakdown is in the draft and interpreted as endpoint leakage
    - McNemar tests are reported in the text

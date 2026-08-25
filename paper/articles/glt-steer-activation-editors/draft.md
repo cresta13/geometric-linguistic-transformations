@@ -367,7 +367,7 @@ CI note: composition rows use `N=40` sources per prompt-style/control row. For t
 
 The defensible current claim is:
 
-> Transformation deltas learned from hidden-state differences can act as activation-space editors for final-position surface markers in GPT-2. The effect survives several no-steering and vector controls and shows partial out-of-template generalization. It does not yet extend to lexical or sentence-internal transformations under the same recipe, and it is not a general semantic editing method.
+> Transformation deltas learned from hidden-state differences can act as activation-space editors for final-position surface markers in GPT-style residual streams, with the cleanest evidence in GPT-2 and marker-dependent transfer to DistilGPT-2. The effect survives no-steering, wrong-vector, negative-vector, random-vector, logit-level, position-of-intervention, and fixed-parameter confirmatory controls. It does not yet extend to lexical or sentence-internal transformations under the same recipe, and it is not a general semantic editing method.
 
 ## 12. What Is Not Claimed
 
@@ -380,12 +380,24 @@ This draft does not claim:
 - that the result establishes a Lie algebra in transformer activations;
 - that prompt wording is irrelevant.
 
-## 13. Next Experiments
+## 13. Submission Scope
 
-The highest-value next steps are:
+This draft should now converge as a short paper / extended abstract around the Final Marker Hypothesis rather than adding more controls before submission. The declared stopping-rule items are satisfied for the current scope:
 
-1. Use the derived CI audit in the final draft and avoid headline point estimates without `N` and 95% CI.
-2. Freeze the current Final Marker Hypothesis scope after the related-work/tuning-disclosure/statistical-reporting checklist is incorporated.
-3. Redesign non-final-marker steering before making stronger composition claims. A first `question + modality` run shows that the question vector remains strong, but the current modality vector produces no evidential markers under copy-like hard out-of-template prompts.
-4. Move from single last-token injection to multi-token or token-position-aware intervention for sentence-internal transformations such as negation and modality.
-5. For a future Lie-style intervention track, define transformations whose composition has a clear expected target string and compare `AB`, `BA`, and `A+B` against that target rather than only marker profiles.
+1. The central claim is the bounded Final Marker Hypothesis.
+2. Activation/representation-steering related work is incorporated.
+3. Headline tables report `N` and Wilson 95% confidence intervals.
+4. The DistilGPT-2 layer/gain tuning history is disclosed.
+5. Marker composition is framed as competition/saturation, not algebraic order structure.
+6. A fixed-parameter confirmatory audit has been added without new layer/gain search.
+
+For submission purposes, no additional experiment is required unless an external reviewer or venue requirement asks for a specific control.
+
+## 14. Future Work
+
+Future work should be separated from the current short-paper scope:
+
+1. Redesign non-final-marker steering before making stronger composition claims. A first `question + modality` run shows that the question vector remains strong, but the current modality vector produces no evidential markers under copy-like hard out-of-template prompts.
+2. Move from single last-token injection to multi-token or token-position-aware intervention for sentence-internal transformations such as negation and modality.
+3. For a future Lie-style intervention track, define transformations whose composition has a clear expected target string and compare `AB`, `BA`, and `A+B` against that target rather than only marker profiles.
+4. Add a second seed or additional prompt family only as robustness evidence for a later version, not as a blocker for the current Track 1 submission.

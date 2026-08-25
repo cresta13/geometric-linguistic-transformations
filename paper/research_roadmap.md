@@ -51,7 +51,7 @@ Track 1 is short-paper-ready when:
 4. DistilGPT-2 layer/gain tuning history is disclosed.
 5. Marker composition is framed as competition/saturation, not as Lie-algebra evidence.
 
-After those are satisfied, new controls go to future work unless requested by an external reviewer or a concrete venue requirement.
+Current status: these items are complete for the current short-paper scope, and the fixed-parameter confirmatory audit has also been archived. The next work is writing, figure/table selection, and package cleanup. New controls go to future work unless requested by an external reviewer or a concrete venue requirement.
 
 ## Track 2 / GLT-SPOT + GLT-MOLT: Lie-Adjacent Diagnostics
 
