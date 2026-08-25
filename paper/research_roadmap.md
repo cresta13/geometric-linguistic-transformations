@@ -39,6 +39,7 @@ The central claim is intentionally narrow:
 - Question/modality composition audit: negative for the current modality recipe.
 - Wilson CI audit: headline Track 1 rows now include `N` and 95% confidence intervals.
 - DistilGPT-2 layer/gain tuning disclosure is now recorded in the diary and Track 1 draft.
+- Fixed-parameter confirmatory audit: question, exclamation, and ellipsis steering remain separated from controls on fresh hard-heldout sources without any layer/gain search inside the run.
 
 ### Stopping rule for submission
 

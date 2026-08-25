@@ -10,6 +10,7 @@ This article candidate collects the behavior-level GLT-STEER results:
 - Position-of-intervention audit showing that single prompt-token edits fail, while all-prompt-token editing nearly matches repeated last-token steering.
 - DistilGPT-2 final-marker logit transfer audit showing positive but layer- and marker-dependent transfer.
 - Derived headline CI audit with sample sizes for the main Track 1 / GLT-STEER tables.
+- Fixed-parameter confirmatory audit for question, exclamation, and ellipsis steering on fresh hard-heldout sources.
 - Copy-prompt content-preservation follow-ups.
 - Hard out-of-template generalization.
 - DistilGPT-2 layer/gain sensitivity and hard-OOT boundary.
@@ -29,6 +30,7 @@ Primary scripts:
 - `scripts/run_gpt2_exclamation_copy_prompt_steering.py`
 - `scripts/run_gpt2_final_marker_copy_prompt_steering.py`
 - `scripts/run_gpt2_marker_composition_steering.py`
+- `scripts/run_glt_steer_confirmatory_fixed_params.py`
 - `scripts/summarize_glt_steer_headline_ci.py`
 
 Primary figures:

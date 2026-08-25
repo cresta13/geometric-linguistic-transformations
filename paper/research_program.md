@@ -101,6 +101,7 @@ Reviewer-facing follow-up controls:
 - A GPT-2 vs DistilGPT-2 question-delta norm diagnostic partly explains the weaker DistilGPT-2 replication. Question deltas are not uniformly smaller in DistilGPT-2, but later relative layers are strongly compressed: final relative-layer mean-norm ratio is `0.3341`, and final centroid-norm ratio is `0.2923`.
 - A direct DistilGPT-2 layer/gain sweep revises the model-dependence story. The weak aggregate replication is parameter-sensitive rather than a hard model failure. At `gain=1.0`, layer `2`, and `same_sentence` prompts, DistilGPT-2 reaches question-and-preserved rate `0.8250`, with matched controls at or below `0.0500`. `gain=0.5` is usable but weaker (`0.6250` best joint), while `gain=1.5` over-steers and collapses preservation (`0.0750` best target joint, with negative-target control reaching `0.2250`).
 - A hard out-of-template DistilGPT-2 audit then applies that best tuned setting to structurally diverse sources. Strict question-mark rates remain high for the target vector (`0.725-0.800`) while all matched controls remain at `0.0000`, but strict question-and-preserved rates are much lower (`0.025-0.225`, with `copy_sentence=0.025`). This does not replicate the GPT-2 hard-OOT preservation result; it is evidence for marker-form transfer only.
+- A fixed-parameter confirmatory audit then reruns question, exclamation, and ellipsis steering on fresh hard-heldout sources with no layer/gain search inside the run. GPT-2 target marker rates remain separated from controls across final markers (`0.6562-0.8438`, max matched control `0.0000`), and DistilGPT-2 also remains separated (`0.6319-0.8958`, max matched control `0.0139`). Strict marker-plus-content preservation is positive but modest, so this supports final-marker form steering rather than semantic editing.
 
 Interpretation:
 
@@ -108,7 +109,7 @@ This is the first behavior-level intervention result in GLT. The current best ex
 
 Caveats:
 
-- This is currently a GPT-2-only, question-only result.
+- The promoted result is final-marker steering rather than general transformation steering; DistilGPT-2 transfer is positive but model/marker dependent.
 - It shows output-form steering plus prompt-dependent content preservation, not robust general-purpose semantic rewriting.
 - The out-of-template control is promising but modest: `40` hand-written freeform declarative sentences.
 - The prompt-robustness result reduces concern about one prompt wrapper, but it still uses simple declarative prompts and should be extended to more natural contexts.

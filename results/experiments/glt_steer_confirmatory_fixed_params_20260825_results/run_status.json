@@ -1,0 +1,65 @@
+{
+  "status": "finished",
+  "started_at": "2026-08-25 00:56:25 +0300",
+  "phase": "finished",
+  "seed": 20260825,
+  "train_rows": 360,
+  "heldout_rows": 48,
+  "target_classes": [
+    "question",
+    "exclamation",
+    "ellipsis"
+  ],
+  "prompt_styles": [
+    "repeat_sentence",
+    "copy_sentence",
+    "same_sentence"
+  ],
+  "controls": [
+    "none",
+    "target",
+    "wrong_marker",
+    "random_norm",
+    "negative_target"
+  ],
+  "model_configs": [
+    {
+      "model": "gpt2",
+      "layers": [
+        2,
+        3
+      ],
+      "gain": 0.75,
+      "setting_source": "fixed from prior GPT-2 question/final-marker audits; no tuning in this run"
+    },
+    {
+      "model": "distilgpt2",
+      "layers": [
+        2
+      ],
+      "gain": 1.0,
+      "setting_source": "fixed from prior DistilGPT-2 layer/gain sweep; no tuning in this run"
+    }
+  ],
+  "progress_done": 6480,
+  "progress_total": 6480,
+  "rows": 6480,
+  "updated_at": "2026-08-25 02:48:47 +0300",
+  "current_model": "distilgpt2",
+  "layers": [
+    2
+  ],
+  "gain": 1.0,
+  "current_target": "ellipsis",
+  "current_layer": 2,
+  "current_prompt_style": "same_sentence",
+  "current_control": "negative_target",
+  "summary_rows": 135,
+  "finished_at": "2026-08-25 02:48:47 +0300",
+  "raw_csv": "results\\experiments\\glt_steer_confirmatory_fixed_params_20260825_results\\csv\\glt_steer_confirmatory_raw.csv",
+  "summary_csv": "results\\experiments\\glt_steer_confirmatory_fixed_params_20260825_results\\csv\\glt_steer_confirmatory_summary.csv",
+  "source_csv": "results\\experiments\\glt_steer_confirmatory_fixed_params_20260825_results\\csv\\glt_steer_confirmatory_sources.csv",
+  "training_csv": "results\\experiments\\glt_steer_confirmatory_fixed_params_20260825_results\\csv\\glt_steer_confirmatory_training_pairs.csv",
+  "token_ids_json": "results\\experiments\\glt_steer_confirmatory_fixed_params_20260825_results\\csv\\glt_steer_confirmatory_marker_token_ids.json",
+  "failures": []
+}

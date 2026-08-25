@@ -1262,3 +1262,29 @@ Main results:
 Stopping rule:
 
 Track 1 / GLT-STEER should now converge as a short paper / extended abstract around the Final Marker Hypothesis. After adding activation-steering related work, explicit N/CI, and the DistilGPT-2 tuning disclosure, new experiments should be moved to future work unless an external reviewer or concrete venue requirement asks for them.
+
+## 2026-08-25: GLT-STEER fixed-parameter confirmation
+
+Artifacts:
+
+- `scripts/run_glt_steer_confirmatory_fixed_params.py`
+- `results/experiments/glt_steer_confirmatory_fixed_params_20260825_results/`
+
+Purpose:
+
+This run tests the current Track 1 / GLT-STEER settings without doing another layer/gain search. GPT-2 uses layers `2,3` at gain `0.75`; DistilGPT-2 uses layer `2` at gain `1.0`. The source set is a fresh hard-heldout set of `48` sentences, and the targets are the three final-marker classes: question, exclamation, and ellipsis.
+
+Main result:
+
+| model | target | target marker rate | max control marker | target marker+preserved | max control marker+preserved |
+|---|---|---:|---:|---:|---:|
+| `gpt2` | `question` | `0.6562` | `0.0000` | `0.2396` | `0.0000` |
+| `gpt2` | `exclamation` | `0.6875` | `0.0000` | `0.3958` | `0.0000` |
+| `gpt2` | `ellipsis` | `0.8438` | `0.0000` | `0.3854` | `0.0000` |
+| `distilgpt2` | `question` | `0.6319` | `0.0069` | `0.0556` | `0.0000` |
+| `distilgpt2` | `exclamation` | `0.8958` | `0.0139` | `0.3472` | `0.0000` |
+| `distilgpt2` | `ellipsis` | `0.8333` | `0.0000` | `0.1597` | `0.0000` |
+
+Interpretation:
+
+The confirmatory run supports the bounded Final Marker Hypothesis under fixed settings. Target final-marker rates remain clearly separated from matched controls. The preservation rates are not strong enough to promote this as general semantic editing, especially for DistilGPT-2 question steering, so the Track 1 claim remains form steering with partial and model-dependent preservation.

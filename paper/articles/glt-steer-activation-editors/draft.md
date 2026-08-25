@@ -42,6 +42,7 @@ Primary implementation files:
 - `../../../scripts/run_gpt2_final_marker_logit_audit.py`
 - `../../../scripts/run_gpt2_question_position_intervention_audit.py`
 - `../../../scripts/run_gpt2_marker_composition_steering.py`
+- `../../../scripts/run_glt_steer_confirmatory_fixed_params.py`
 - `../../../scripts/summarize_glt_steer_headline_ci.py`
 
 The basic intervention hook adds the learned vector to the last token hidden state inside a transformer block. The current implementation is intentionally simple: no learned controller, no prompt-specific optimization, and no gradient update at generation time.
@@ -77,6 +78,37 @@ The headline Track 1 / GLT-STEER rates now have an explicit derived CI audit:
 The audit reports Wilson 95% confidence intervals and sample sizes for question, exclamation, ellipsis, final-marker logit, position-of-intervention, and marker-composition headline rows. Composition cells are small (`N=40` per prompt-style/control row), so composition remains descriptive. The final-marker logit and position audits have larger aggregate cells (`N=96-144` for logit marker rows; `N=480` for position rows), so they are the strongest current statistical support for the Final Marker Hypothesis.
 
 DistilGPT-2 should be reported with tuning caution. The `layer=2, gain=1.0` setting was selected from the DistilGPT-2 layer/gain sweep before the hard out-of-template audit was interpreted, but this was not a preregistered train/dev/test protocol. The hard-OOT sources are structurally distinct from the simple copy-prompt setting, yet prompt families and evaluation metrics were already known from earlier GPT-2 experiments. Therefore DistilGPT-2 is evidence for marker-form transfer with weak preservation, not a clean held-out semantic-editing replication.
+
+## 2.4 Confirmatory Fixed-Parameter Audit
+
+A fixed-parameter confirmatory audit reruns question, exclamation, and ellipsis steering on fresh hard-heldout sources without any layer or gain search inside the run.
+
+Result folder:
+
+- `../../../results/experiments/glt_steer_confirmatory_fixed_params_20260825_results/`
+
+Configuration:
+
+- GPT-2: layers `2,3`, gain `0.75`
+- DistilGPT-2: layer `2`, gain `1.0`
+- Heldout sources: `48`
+- Raw generations: `6480`
+- Controls: `none`, `wrong_marker`, `random_norm`, `negative_target`
+
+Headline aggregate:
+
+| model | target | target marker rate | max control marker | target marker+preserved | max control marker+preserved |
+|---|---|---:|---:|---:|---:|
+| `gpt2` | `question` | `0.6562` (`N=288`, CI `[0.600, 0.709]`) | `0.0000` | `0.2396` (`N=288`, CI `[0.194, 0.292]`) | `0.0000` |
+| `gpt2` | `exclamation` | `0.6875` (`N=288`, CI `[0.632, 0.738]`) | `0.0000` | `0.3958` (`N=288`, CI `[0.341, 0.453]`) | `0.0000` |
+| `gpt2` | `ellipsis` | `0.8438` (`N=288`, CI `[0.797, 0.881]`) | `0.0000` | `0.3854` (`N=288`, CI `[0.331, 0.443]`) | `0.0000` |
+| `distilgpt2` | `question` | `0.6319` (`N=144`, CI `[0.551, 0.706]`) | `0.0069` | `0.0556` (`N=144`, CI `[0.028, 0.106]`) | `0.0000` |
+| `distilgpt2` | `exclamation` | `0.8958` (`N=144`, CI `[0.835, 0.936]`) | `0.0139` | `0.3472` (`N=144`, CI `[0.274, 0.428]`) | `0.0000` |
+| `distilgpt2` | `ellipsis` | `0.8333` (`N=144`, CI `[0.764, 0.885]`) | `0.0000` | `0.1597` (`N=144`, CI `[0.109, 0.228]`) | `0.0000` |
+
+Interpretation:
+
+The fixed-parameter audit supports the no-new-tuning version of the Final Marker Hypothesis. Target steering remains well separated from matched controls across all three final markers and both tested models. Strict marker-plus-content preservation is positive but modest, especially for DistilGPT-2 question steering, so this strengthens the form-steering claim rather than a semantic-editing claim.
 
 ## 3. Main Question-Steering Result
 

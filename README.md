@@ -165,6 +165,7 @@ Main evidence:
 - A GPT-2 vs DistilGPT-2 question-delta norm diagnostic shows that DistilGPT-2 question directions are not uniformly smaller, but they are strongly compressed in later relative layers: final relative-layer mean-norm ratio `0.3341`, centroid-norm ratio `0.2923`.
 - A direct DistilGPT-2 layer/gain sweep shows that the weak aggregate replication was parameter-sensitive rather than a hard failure. At `gain=1.0`, layer `2`, `same_sentence` prompts reach question-and-preserved rate `0.8250` with matched controls at or below `0.0500`. `gain=1.5` over-steers and collapses preservation.
 - A hard out-of-template DistilGPT-2 audit shows that the tuned setting still induces question marks on structurally diverse sources (`0.725-0.800`, controls `0.0000`), but strict question-and-preserved rates are much lower (`0.025-0.225`, with `copy_sentence=0.025`). This does not replicate GPT-2's preservation result; it is a marker-form result only.
+- A fixed-parameter confirmatory audit reruns question, exclamation, and ellipsis steering on fresh hard-heldout sources without any layer/gain search. Target final-marker rates remain separated from controls: GPT-2 reaches `0.6562-0.8438` across markers with max matched controls at `0.0000`; DistilGPT-2 reaches `0.6319-0.8958` with max matched controls at `0.0139`. Strict marker-plus-content preservation is positive but modest, so this confirms form steering rather than semantic editing.
 
 Current interpretation:
 
@@ -197,6 +198,7 @@ Important result folders:
 - `results/experiments/distilgpt2_question_copy_prompt_layer_gain_sweep_v3_gain10_20260717_results/`
 - `results/experiments/distilgpt2_question_copy_prompt_layer_gain_sweep_v3_gain15_20260717_results/`
 - `results/experiments/distilgpt2_question_hard_oot_best_layer2_gain10_20260801_results/`
+- `results/experiments/glt_steer_confirmatory_fixed_params_20260825_results/`
 
 ### Track 2A / GLT-MOLT: Matrix/Operator Diagnostics
 
