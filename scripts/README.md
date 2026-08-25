@@ -53,6 +53,7 @@ All runnable research scripts live in this directory.
 - `run_gpt2_final_marker_logit_audit.py`: logit-level final-marker audit for `?`, `!`, and `...`; records target-marker probability/rank during generation under no-steering and steering controls.
 - `run_gpt2_question_position_intervention_audit.py`: position-of-intervention audit for question steering, comparing first/middle/last prompt-token edits, all-prompt edits, and last-token-each-step steering.
 - `run_glt_steer_confirmatory_fixed_params.py`: fixed-parameter confirmatory GLT-STEER audit on fresh hard-heldout sources; runs GPT-2 and DistilGPT-2 without any new layer/gain search.
+- `build_glt_steer_submission_pdf.py`: builds the short GLT-STEER submission draft PDF from archived CSVs, figures, and fixed text; does not run model inference.
 - `show_glt_steer_demo.py`: lightweight demo reader for the archived focused GPT-2 question-steering result. It does not download models or rerun the experiment; it prints the headline table and examples from the committed CSV files.
 
 ## Reports

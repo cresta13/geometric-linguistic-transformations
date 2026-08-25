@@ -376,6 +376,7 @@ This repository's distinct angle is not "geometric transformations exist" in the
 
 - Research program: `paper/research_program.md`
 - Current Track 1 draft: `paper/articles/glt-steer-activation-editors/draft.md`
+- Current Track 1 submission PDF: `reports/2026-08-25_glt_steer_submission_draft.pdf`
 - Track 2 / GLT-SPOT + GLT-MOLT draft: `paper/articles/lie-style-linguistic-operators/draft.md`
 - Track 3 / GLT-DV draft: `paper/articles/geometric-transformation-vectors/draft.md`
 - Results index: `results/README.md`

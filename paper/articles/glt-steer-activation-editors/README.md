@@ -18,9 +18,14 @@ This article candidate collects the behavior-level GLT-STEER results:
 - Final-marker controls for exclamation and ellipsis.
 - First marker-composition steering diagnostic.
 
-Main draft:
+Drafts:
 
 - `draft.md`
+- `submission_draft.md`
+
+Generated submission PDF:
+
+- `../../../reports/2026-08-25_glt_steer_submission_draft.pdf`
 
 Primary scripts:
 
@@ -32,6 +37,7 @@ Primary scripts:
 - `scripts/run_gpt2_marker_composition_steering.py`
 - `scripts/run_glt_steer_confirmatory_fixed_params.py`
 - `scripts/summarize_glt_steer_headline_ci.py`
+- `scripts/build_glt_steer_submission_pdf.py`
 
 Primary figures:
 
