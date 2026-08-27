@@ -1,0 +1,68 @@
+{
+  "status": "finished",
+  "started_at": "2026-08-25 16:56:01 +0300",
+  "phase": "finished",
+  "seed": 20260825,
+  "source_rows": 80,
+  "train_rows": 360,
+  "target_classes": [
+    "question",
+    "exclamation",
+    "ellipsis"
+  ],
+  "prompt_styles": [
+    "neutral_restate",
+    "neutral_same"
+  ],
+  "controls": [
+    "none",
+    "strong_prompt",
+    "string_append_source",
+    "target",
+    "wrong_marker",
+    "random_norm",
+    "negative_target"
+  ],
+  "model_configs": [
+    {
+      "model": "gpt2",
+      "layers": [
+        2,
+        3
+      ],
+      "gain": 0.75,
+      "setting_source": "fixed from prior GPT-2 question/final-marker audits; no tuning in this run"
+    },
+    {
+      "model": "distilgpt2",
+      "layers": [
+        2
+      ],
+      "gain": 1.0,
+      "setting_source": "fixed from prior DistilGPT-2 layer/gain sweep; no tuning in this run"
+    }
+  ],
+  "progress_done": 8640,
+  "progress_total": 8640,
+  "rows": 8640,
+  "note": "Applicability audit for runtime final-marker form control. Includes strong_prompt and string_append_source baselines; practical claims must be interpreted against them.",
+  "updated_at": "2026-08-25 18:53:54 +0300",
+  "current_model": "distilgpt2",
+  "layers": [
+    2
+  ],
+  "gain": 1.0,
+  "current_target": "ellipsis",
+  "current_prompt_style": "neutral_restate",
+  "current_control": "strong_prompt",
+  "current_layer": 2,
+  "summary_rows": 108,
+  "global_summary_rows": 42,
+  "finished_at": "2026-08-25 18:53:54 +0300",
+  "raw_csv": "results\\experiments\\glt_steer_apply_runtime_form_control_20260825_results\\csv\\glt_steer_apply_raw.csv",
+  "summary_csv": "results\\experiments\\glt_steer_apply_runtime_form_control_20260825_results\\csv\\glt_steer_apply_summary.csv",
+  "global_csv": "results\\experiments\\glt_steer_apply_runtime_form_control_20260825_results\\csv\\glt_steer_apply_global_summary.csv",
+  "source_csv": "results\\experiments\\glt_steer_apply_runtime_form_control_20260825_results\\csv\\glt_steer_apply_sources.csv",
+  "training_csv": "results\\experiments\\glt_steer_apply_runtime_form_control_20260825_results\\csv\\glt_steer_apply_training_pairs.csv",
+  "failures": []
+}

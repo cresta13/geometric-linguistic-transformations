@@ -40,6 +40,7 @@ The central claim is intentionally narrow:
 - Wilson CI audit: headline Track 1 rows now include `N` and 95% confidence intervals.
 - DistilGPT-2 layer/gain tuning disclosure is now recorded in the diary and Track 1 draft.
 - Fixed-parameter confirmatory audit: question, exclamation, and ellipsis steering remain separated from controls on fresh hard-heldout sources without any layer/gain search inside the run.
+- Runtime form-control applicability audit: steering beats prompt-only and matched vector controls for final-marker induction under the tested protocol, but deterministic `string_append_source` is perfect. This bounds GLT-STEER as a diagnostic/intervention result rather than a replacement for ordinary text postprocessing.
 
 ### Stopping rule for submission
 
@@ -51,7 +52,7 @@ Track 1 is short-paper-ready when:
 4. DistilGPT-2 layer/gain tuning history is disclosed.
 5. Marker composition is framed as competition/saturation, not as Lie-algebra evidence.
 
-Current status: these items are complete for the current short-paper scope, and the fixed-parameter confirmatory audit has also been archived. The next work is writing, figure/table selection, and package cleanup. New controls go to future work unless requested by an external reviewer or a concrete venue requirement.
+Current status: these items are complete for the current short-paper scope, and the fixed-parameter confirmatory audit plus runtime applicability audit have also been archived. The next work is writing, figure/table selection, and package cleanup. New controls go to future work unless requested by an external reviewer or a concrete venue requirement.
 
 ## Track 2 / GLT-SPOT + GLT-MOLT: Lie-Adjacent Diagnostics
 

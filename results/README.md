@@ -213,6 +213,14 @@ Important subdirectories:
   - `csv/glt_steer_confirmatory_summary.csv`: aggregate rates by model, target, prompt style, layer, and control.
   - `csv/glt_steer_confirmatory_sources.csv`: `48` fresh hard-heldout source sentences.
   - `run_status.json`: completed run metadata.
+- `glt_steer_apply_runtime_form_control_20260825_results/`
+  - `SUMMARY.md`: runtime form-control applicability audit for question, exclamation, and ellipsis steering against prompt-only and deterministic string-append baselines.
+  - `csv/glt_steer_apply_raw.csv`: `8640` generated outputs with marker/content flags and final-marker logit ranks.
+  - `csv/glt_steer_apply_summary.csv`: prompt/layer/control summary table.
+  - `csv/glt_steer_apply_global_summary.csv`: aggregate target/control summary across models and target markers.
+  - `csv/glt_steer_apply_sources.csv`: `80` held-out source sentences.
+  - `csv/glt_steer_apply_training_pairs.csv`: synthetic final-marker training pairs used to build steering vectors.
+  - `run_status.json`: completed run metadata.
 - `gpt2_question_exclamation_marker_composition_layer2_3_20260801_results/`
   - `SUMMARY.md`: first marker-composition steering test comparing `?`, `!`, `?+!`, `?` then `!`, and `!` then `?`.
   - `csv/marker_composition_steering_summary.csv`: marker and preservation rates by prompt style and control.

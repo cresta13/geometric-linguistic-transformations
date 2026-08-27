@@ -4,7 +4,7 @@ Status: short draft, not peer reviewed.
 
 ## Abstract
 
-This draft tests whether transformation vectors learned from sentence-pair hidden-state differences can be injected back into a generative transformer as activation-space editors. In GPT-2, a question-transformation vector injected into early residual-stream layers reliably induces question-form outputs under matched controls. The strongest copy-prompt setting reaches question-and-preserved rates up to `0.975` on simple held-out sources, while no-steering, random-norm, wrong-class, and negative-vector controls remain at `0.000` in matched headline rows. Hard out-of-template sources preserve the question-marker effect but reduce content preservation. The emerging explanation is the **Final Marker Hypothesis**: final-position surface markers such as `?`, `!`, and `...` are reliably steerable via mean delta vectors, while lexical or sentence-internal transformations such as negation and modality are not under the same recipe. DistilGPT-2 replicates marker-form steering only after layer/gain tuning and does not replicate GPT-2-level hard out-of-template preservation. A first question/exclamation composition test is best interpreted as final-marker competition/saturation rather than noncommutative order structure.
+This draft tests whether transformation vectors learned from sentence-pair hidden-state differences can be injected back into a generative transformer as activation-space editors. In GPT-2, a question-transformation vector injected into early residual-stream layers reliably induces question-form outputs under matched controls. The strongest copy-prompt setting reaches question-and-preserved rates up to `0.975` on simple held-out sources, while no-steering, random-norm, wrong-class, and negative-vector controls remain at `0.000` in matched headline rows. Hard out-of-template sources preserve the question-marker effect but reduce content preservation. The emerging explanation is the **Final Marker Hypothesis**: final-position surface markers such as `?`, `!`, and `...` are reliably steerable via mean delta vectors, while lexical or sentence-internal transformations such as negation and modality are not under the same recipe. DistilGPT-2 replicates marker-form steering only after layer/gain tuning and does not replicate GPT-2-level hard out-of-template preservation. A first question/exclamation composition test is best interpreted as final-marker competition/saturation rather than noncommutative order structure. A runtime form-control applicability audit further narrows the practical interpretation: steering beats prompt-only and vector controls under the tested protocol, but deterministic string append dominates when the desired final marker is already known.
 
 ## 1. Question
 
@@ -109,6 +109,40 @@ Headline aggregate:
 Interpretation:
 
 The fixed-parameter audit supports the no-new-tuning version of the Final Marker Hypothesis. Target steering remains well separated from matched controls across all three final markers and both tested models. Strict marker-plus-content preservation is positive but modest, especially for DistilGPT-2 question steering, so this strengthens the form-steering claim rather than a semantic-editing claim.
+
+## 2.5 Runtime Form-Control Applicability Audit
+
+A post-scope applicability audit compares activation steering with prompt-only and deterministic baselines for the same final-marker form-control task.
+
+Result folder:
+
+- `../../../results/experiments/glt_steer_apply_runtime_form_control_20260825_results/`
+
+Configuration:
+
+- GPT-2: layers `2,3`, gain `0.75`
+- DistilGPT-2: layer `2`, gain `1.0`
+- Heldout sources: `80`
+- Raw generations: `8640`
+- Targets: `question`, `exclamation`, `ellipsis`
+- Controls: `none`, `strong_prompt`, `string_append_source`, `target`, `wrong_marker`, `random_norm`, `negative_target`
+
+Headline aggregate:
+
+| model | target | N | target marker | target marker+content | malformed/repetitive |
+|---|---|---:|---:|---:|---:|
+| `gpt2` | `question` | `320` | `0.6281` CI `[0.574, 0.679]` | `0.3469` CI `[0.297, 0.401]` | `0.3469` |
+| `gpt2` | `exclamation` | `320` | `0.6031` CI `[0.549, 0.655]` | `0.3844` CI `[0.333, 0.439]` | `0.2344` |
+| `gpt2` | `ellipsis` | `320` | `0.6937` CI `[0.641, 0.742]` | `0.3219` CI `[0.273, 0.375]` | `0.3000` |
+| `distilgpt2` | `question` | `160` | `0.4938` CI `[0.417, 0.570]` | `0.1688` CI `[0.119, 0.234]` | `0.6125` |
+| `distilgpt2` | `exclamation` | `160` | `0.8438` CI `[0.780, 0.892]` | `0.4250` CI `[0.351, 0.502]` | `0.1938` |
+| `distilgpt2` | `ellipsis` | `160` | `0.7250` CI `[0.651, 0.788]` | `0.2562` CI `[0.195, 0.329]` | `0.5687` |
+
+Matched vector controls (`none`, `wrong_marker`, `random_norm`, `negative_target`) have `0.0000` marker-plus-content rate in every model/target aggregate cell. The `strong_prompt` baseline also has `0.0000` target-marker rate in every model/target cell under this protocol. However, `string_append_source` is trivially perfect: marker, content, and marker-plus-content rates are all `1.0000`, with malformed/repetitive rate `0.0000`.
+
+Interpretation:
+
+This audit sharpens the application claim. GLT-STEER is useful as an activation-space diagnostic and form-bias intervention because it changes the model distribution where prompt-only and matched vector controls do not. It is not a better production method for known deterministic final-marker edits, where ordinary string postprocessing is simpler and stronger.
 
 ## 3. Main Question-Steering Result
 
@@ -369,6 +403,8 @@ The defensible current claim is:
 
 > Transformation deltas learned from hidden-state differences can act as activation-space editors for final-position surface markers in GPT-style residual streams, with the cleanest evidence in GPT-2 and marker-dependent transfer to DistilGPT-2. The effect survives no-steering, wrong-vector, negative-vector, random-vector, logit-level, position-of-intervention, and fixed-parameter confirmatory controls. It does not yet extend to lexical or sentence-internal transformations under the same recipe, and it is not a general semantic editing method.
 
+The practical application claim is narrower: for known final-marker edits, deterministic postprocessing beats steering. The value of GLT-STEER is therefore strongest as a causal representation diagnostic and as a possible form-bias intervention when direct string editing is not the object of study.
+
 ## 12. What Is Not Claimed
 
 This draft does not claim:
@@ -390,6 +426,7 @@ This draft should now converge as a short paper / extended abstract around the F
 4. The DistilGPT-2 layer/gain tuning history is disclosed.
 5. Marker composition is framed as competition/saturation, not algebraic order structure.
 6. A fixed-parameter confirmatory audit has been added without new layer/gain search.
+7. A post-scope runtime applicability audit has been added and explicitly bounds the practical editing claim against deterministic string append.
 
 For submission purposes, no additional experiment is required unless an external reviewer or venue requirement asks for a specific control.
 

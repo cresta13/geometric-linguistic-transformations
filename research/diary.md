@@ -1288,3 +1288,40 @@ Main result:
 Interpretation:
 
 The confirmatory run supports the bounded Final Marker Hypothesis under fixed settings. Target final-marker rates remain clearly separated from matched controls. The preservation rates are not strong enough to promote this as general semantic editing, especially for DistilGPT-2 question steering, so the Track 1 claim remains form steering with partial and model-dependent preservation.
+
+## 2026-08-27: GLT-STEER runtime form-control applicability audit reviewed
+
+Artifacts:
+
+- `scripts/run_glt_steer_apply_runtime_form_control.py`
+- `results/experiments/glt_steer_apply_runtime_form_control_20260825_results/`
+
+Purpose:
+
+This run tests whether final-marker steering is practically useful as runtime form control, not only mechanistically interesting. The audit compares target steering against no-steering, strong prompt instructions, deterministic string append, wrong-marker vectors, random-norm vectors, and negative-target vectors.
+
+Configuration:
+
+- GPT-2: layers `2,3`, gain `0.75`
+- DistilGPT-2: layer `2`, gain `1.0`
+- Targets: question, exclamation, ellipsis
+- Held-out sources: `80`
+- Raw generations: `8640`
+- Failures: none
+
+Main result:
+
+| model | target | N | target marker | target marker+content | malformed/repetitive |
+|---|---|---:|---:|---:|---:|
+| `gpt2` | `question` | `320` | `0.6281` | `0.3469` | `0.3469` |
+| `gpt2` | `exclamation` | `320` | `0.6031` | `0.3844` | `0.2344` |
+| `gpt2` | `ellipsis` | `320` | `0.6937` | `0.3219` | `0.3000` |
+| `distilgpt2` | `question` | `160` | `0.4938` | `0.1688` | `0.6125` |
+| `distilgpt2` | `exclamation` | `160` | `0.8438` | `0.4250` | `0.1938` |
+| `distilgpt2` | `ellipsis` | `160` | `0.7250` | `0.2562` | `0.5687` |
+
+Matched vector controls (`none`, `wrong_marker`, `random_norm`, `negative_target`) have `0.0000` marker-plus-content rate in every aggregate model/target cell. The strong-prompt baseline also has `0.0000` target-marker rate under this protocol. However, deterministic `string_append_source` is perfect (`1.0000` marker, content, and joint rates).
+
+Interpretation:
+
+This is a useful boundary result. It strengthens the causal intervention story because target steering changes model behavior where prompt-only and matched vector controls do not. It weakens any broad practical-editing claim because deterministic postprocessing is strictly better when the requested operation is only a known final marker. The correct application framing is therefore: GLT-STEER is an activation-space diagnostic and form-bias intervention, not a production replacement for ordinary string editing.

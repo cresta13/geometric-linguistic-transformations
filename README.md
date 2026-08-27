@@ -166,10 +166,11 @@ Main evidence:
 - A direct DistilGPT-2 layer/gain sweep shows that the weak aggregate replication was parameter-sensitive rather than a hard failure. At `gain=1.0`, layer `2`, `same_sentence` prompts reach question-and-preserved rate `0.8250` with matched controls at or below `0.0500`. `gain=1.5` over-steers and collapses preservation.
 - A hard out-of-template DistilGPT-2 audit shows that the tuned setting still induces question marks on structurally diverse sources (`0.725-0.800`, controls `0.0000`), but strict question-and-preserved rates are much lower (`0.025-0.225`, with `copy_sentence=0.025`). This does not replicate GPT-2's preservation result; it is a marker-form result only.
 - A fixed-parameter confirmatory audit reruns question, exclamation, and ellipsis steering on fresh hard-heldout sources without any layer/gain search. Target final-marker rates remain separated from controls: GPT-2 reaches `0.6562-0.8438` across markers with max matched controls at `0.0000`; DistilGPT-2 reaches `0.6319-0.8958` with max matched controls at `0.0139`. Strict marker-plus-content preservation is positive but modest, so this confirms form steering rather than semantic editing.
+- A runtime form-control applicability audit tests the obvious production baseline. Target steering still creates final markers when no-steering, strong-prompt, wrong-marker, random-norm, and negative-vector controls do not, but deterministic `string_append_source` is perfect. This narrows the practical claim: GLT-STEER is an activation-space diagnostic and form-bias intervention, not a better replacement for ordinary string postprocessing when the desired final marker is already known.
 
 Current interpretation:
 
-This is the first behavior-level intervention result in GLT. The current best explanation is the **Final Marker Hypothesis**: mean delta steering works reliably when the transformation can be expressed as a final-position surface marker, and fails or weakens sharply when the transformation requires lexical or sentence-internal rewriting. The best GPT-2 prompt families preserve much of the source content while adding question form, but this is still not a complete semantic-editing system and not proof of a complete linguistic algebra. DistilGPT-2 should be reported as form replication with weak hard-OOT preservation, not as full semantic replication.
+This is the first behavior-level intervention result in GLT. The current best explanation is the **Final Marker Hypothesis**: mean delta steering works reliably when the transformation can be expressed as a final-position surface marker, and fails or weakens sharply when the transformation requires lexical or sentence-internal rewriting. The best GPT-2 prompt families preserve much of the source content while adding question form, but this is still not a complete semantic-editing system and not proof of a complete linguistic algebra. DistilGPT-2 should be reported as form replication with weak hard-OOT preservation, not as full semantic replication. The runtime applicability audit adds an important boundary: for a known final-marker edit, deterministic postprocessing is stronger than steering, so the current application value is diagnostic and intervention-scientific rather than production text editing.
 
 Important result folders:
 
@@ -199,6 +200,7 @@ Important result folders:
 - `results/experiments/distilgpt2_question_copy_prompt_layer_gain_sweep_v3_gain15_20260717_results/`
 - `results/experiments/distilgpt2_question_hard_oot_best_layer2_gain10_20260801_results/`
 - `results/experiments/glt_steer_confirmatory_fixed_params_20260825_results/`
+- `results/experiments/glt_steer_apply_runtime_form_control_20260825_results/`
 
 ### Track 2A / GLT-MOLT: Matrix/Operator Diagnostics
 
