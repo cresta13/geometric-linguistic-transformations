@@ -18,7 +18,7 @@ This project is an attempt to take at least one more step from observing the beh
 
 # Geometric Linguistic Transformations
 
-Research code, result tables, figures, and draft papers for **GLT** (**Geometric Linguistic Transformations**): an independent research program for testing whether linguistic transformations appear as reusable geometric objects in transformer embedding spaces.
+Research code, result tables, figures, and draft papers for **GLT** (**Geometric Linguistic Transformations**): an independent research program testing whether linguistic transformations appear as reusable geometric objects in transformer embedding and activation spaces, and whether those objects can causally influence model behavior.
 
 This is an active and reproducible research repository. It is not presented as a finished theorem or a final paper, but as a working experimental pipeline, an evidence package, and an open scientific question.
 
@@ -46,10 +46,21 @@ delta = embedding(transformed sentence) - embedding(source sentence)
 
 Then we test whether these deltas behave like meaningful transformation objects rather than arbitrary differences between two sentences.
 
+GLT-STEER goes one step further. Instead of only measuring these differences, it injects transformation vectors into the hidden activations of a generative model and tests whether they causally change the model's output.
+
+So the project asks two separate questions:
+
+1. Do linguistic transformations leave reusable geometric traces inside a model?
+2. Can those traces be used as interventions that change model behavior?
+
+The current answer to the second question is positive but narrow: hidden-state steering can control final surface markers such as `?`, `!`, and `...`, but it has not yet produced reliable semantic or sentence-internal rewriting.
+
 ### What We Have Found So Far
 
 The current evidence supports a cautious version of the idea:
 
+- GLT-STEER provides the project's first causal behavior-level result: mean hidden-state delta vectors can reliably steer GPT-2 and, more variably, DistilGPT-2 toward final surface markers such as `?`, `!`, and `...`. The effect remains separated from no-steering, wrong-marker, random-norm, negative-vector, and strong-prompt controls.
+- This result is narrow: it supports activation-space control of final output form, not semantic editing. When the desired marker is already known, deterministic string appending remains perfect and practically superior.
 - Sentence-pair deltas often contain information about the **type of transformation**.
 - In the main full-semantic experiments, deltas beat target-only baselines across several models under Linear SVC probes.
 - In harder sentence-pair holdouts such as UPAT, endpoint features can dominate. This suggests that delta geometry captures transformation type better than absolute transformation identity.
@@ -62,6 +73,8 @@ The current evidence supports a cautious version of the idea:
 This repository does not claim:
 
 - that transformer embeddings contain a complete linguistic algebra;
+- that GLT-STEER performs reliable semantic sentence transformation;
+- that activation steering is a practical replacement for deterministic text editing when the desired surface marker is already known;
 - that the reported effects are independent of endpoint wording;
 - that syntax-holdout `1.0` results prove deep generalization;
 - that antisymmetry checks are scientific evidence;
@@ -96,6 +109,8 @@ results/experiments/gpt2_question_activation_steering_focused_20260714_results/
 
 Headline result:
 
+> **Scope note:** The following numbers come from the original tuned demonstration. Later fixed-parameter confirmatory and runtime-applicability audits provide more conservative estimates and define the current scope of the claim. The demonstrated effect is final-marker form steering, not semantic sentence editing.
+
 | condition | question mark rate |
 |---|---:|
 | target question vector | `0.9350` |
@@ -129,6 +144,10 @@ Full notes:
 Safe interpretation:
 
 > This is evidence that a question-transformation activation vector can steer GPT-2 toward question-like output form. It is not evidence that semantic editing is solved, and it is not proof of a complete linguistic algebra.
+
+Practical applicability boundary:
+
+> A later runtime audit compared target steering with no steering, explicit prompting, wrong-marker steering, random norm-matched vectors, negative-target steering, and deterministic string appending. Target steering remained causally effective against the activation and prompting controls, but `string_append_source` achieved a perfect strict score. Therefore, GLT-STEER is currently best understood as an activation-space diagnostic and controlled form-bias intervention, not as a practical replacement for ordinary string processing.
 
 ## 3. Technical Overview
 
