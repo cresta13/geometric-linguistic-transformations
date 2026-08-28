@@ -1,3 +1,21 @@
+# IF YOU DO NOT HAVE A BACKGROUND IN MATHEMATICS OR AI, START HERE
+
+Modern artificial intelligence systems are becoming increasingly capable. They write texts and computer programs, reason, make decisions, and play an ever-growing role in our lives.
+
+Yet their internal workings still remain, to a large extent, a black box.
+
+We know how to build neural networks and how to train them. But we still do not fully understand **what structures emerge inside them during training, how they represent knowledge, or which internal rules govern the transformation of information**.
+
+A biologist studies living organisms. A geologist studies the Earth and its rocks. I am trying to study neural models from the inside.
+
+I search for the geometry, algebra, and regularities of their internal representations — or perhaps for something that humanity does not yet have the mathematical language to describe.
+
+Until we understand the internal structure of the systems we create, we are like blind kittens trying to defuse a bomb: we already know how to make the device increasingly powerful, but we still do not understand its inner mechanism well enough.
+
+This project is an attempt to take at least one more step from observing the behaviour of artificial intelligence toward understanding **how it actually works on the inside**.
+
+---
+
 # Geometric Linguistic Transformations
 
 Research code, result tables, figures, and draft papers for **GLT** (**Geometric Linguistic Transformations**): a research program for testing whether linguistic transformations appear as reusable geometric objects in transformer embedding spaces.
