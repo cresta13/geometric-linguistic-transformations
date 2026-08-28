@@ -19,7 +19,7 @@ Configuration:
 
 Important scoring note:
 
-The generic `target_marker_rate` for `question` is intentionally broad and includes lexical markers such as `was`, `were`, and `did`. For this run, the reviewer-facing result should use the strict `question_mark_rate` and `strict_question_and_preserved_rate` in `csv/distilgpt2_hard_oot_question_preservation_summary.csv`.
+The generic `target_marker_rate` for `question` is intentionally broad and includes lexical markers such as `was`, `were`, and `did`. For this run, the interpretable result should use the strict `question_mark_rate` and `strict_question_and_preserved_rate` in `csv/distilgpt2_hard_oot_question_preservation_summary.csv`.
 
 Strict hard-OOT summary:
 

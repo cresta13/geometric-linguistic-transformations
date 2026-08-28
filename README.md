@@ -6,9 +6,9 @@ Yet their internal workings still remain, to a large extent, a black box.
 
 We know how to build neural networks and how to train them. But we still do not fully understand **what structures emerge inside them during training, how they represent knowledge, or which internal rules govern the transformation of information**.
 
-A biologist studies living organisms. A geologist studies the Earth and its rocks. I am trying to study neural models from the inside.
+A biologist studies living organisms. A geologist studies the Earth and its rocks. This project studies neural models from the inside.
 
-I search for the geometry, algebra, and regularities of their internal representations — or perhaps for something that humanity does not yet have the mathematical language to describe.
+It searches for the geometry, algebra, and regularities of their internal representations — or perhaps for something that humanity does not yet have the mathematical language to describe.
 
 Until we understand the internal structure of the systems we create, we are like blind kittens trying to defuse a bomb: we already know how to make the device increasingly powerful, but we still do not understand its inner mechanism well enough.
 
@@ -18,22 +18,9 @@ This project is an attempt to take at least one more step from observing the beh
 
 # Geometric Linguistic Transformations
 
-Research code, result tables, figures, and draft papers for **GLT** (**Geometric Linguistic Transformations**): a research program for testing whether linguistic transformations appear as reusable geometric objects in transformer embedding spaces.
+Research code, result tables, figures, and draft papers for **GLT** (**Geometric Linguistic Transformations**): an independent research program for testing whether linguistic transformations appear as reusable geometric objects in transformer embedding spaces.
 
-This is an active and reproducible research program. The Build Week submission is not presented as a finished theorem or a final paper, but as a working experimental pipeline, an evidence package, and an open scientific question.
-
-## OpenAI Build Week 2026 Note
-
-This repository is being used as a Build Week submission in the **Developer Tools** category: the working artifact is a reproducible research workflow rather than a separate web app.
-
-Codex was used as the primary implementation environment for recent scripts, controls, result summaries, documentation updates, and repository organization. GPT-5.6 was used as a reasoning partner for revisiting mathematical background, reading related work, challenging interpretations, and turning vague research questions into concrete controls.
-
-The human role remained to choose the research direction, decide which claims were honest enough to keep, interpret results, and stay responsible for remaining mistakes. The broader project message is that AI can make careful independent scientific work more accessible without removing the need for evidence, criticism, and humility.
-
-Work completed during Build Week is tracked in the public research record rather than in separate submission-only files. The main completed addition is **GLT-STEER**: GPT-2 question activation steering with base-rate controls, out-of-template controls, prompt-robustness checks, and the final content-preservation / copy-prompt follow-up. The latest preservation result is summarized under `GLT-STEER` below and archived in:
-
-- `results/experiments/gpt2_question_content_preservation_20260716_results/`
-- `results/experiments/gpt2_question_copy_prompt_preservation_20260716_results/`
+This is an active and reproducible research repository. It is not presented as a finished theorem or a final paper, but as a working experimental pipeline, an evidence package, and an open scientific question.
 
 ## 1. Plain-Language Overview
 
@@ -123,7 +110,7 @@ Stronger copy-prompt preservation result:
 | target question vector, copy-like prompts | up to `0.9750` |
 | wrong-vector / no-steering controls | `0.0000` in the matched headline rows |
 
-Reviewer-facing prompt-only control:
+Prompt-only control:
 
 | condition | question mark rate |
 |---|---:|

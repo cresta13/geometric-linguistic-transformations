@@ -11,7 +11,7 @@
       "name": "Simakova, Anna"
     }
   ],
-  "description": "Archival software and research-artifact snapshot for empirical experiments on linguistic transformation geometry in transformer embedding spaces. This release preserves code, result tables, figures, draft research notes, and reviewer-facing reports for endpoint controls, multiseed ablations, hard-holdout boundary analyses, signed-permutation diagnostics, endpoint-subspace residualization audits, semantic-equivalence controls, and cross-model transfer roadmaps. The main readable document is reports/2026-06-23_reviewer_revised_report.pdf; draft.md files and release notes are working research records. It is a reproducibility package and citable research snapshot, not a peer-reviewed publication or a claim of a complete linguistic-operator theory.",
+  "description": "Archival software and research-artifact snapshot for empirical experiments on linguistic transformation geometry in transformer embedding spaces. This release preserves code, result tables, figures, draft research notes, and research reports for endpoint controls, multiseed ablations, hard-holdout boundary analyses, signed-permutation diagnostics, endpoint-subspace residualization audits, semantic-equivalence controls, and cross-model transfer roadmaps. The main readable document is reports/2026-06-23_reviewer_revised_report.pdf; draft.md files and release notes are working research records. It is a reproducibility package and citable research snapshot, not a peer-reviewed publication or a claim of a complete linguistic-operator theory.",
   "keywords": [
     "transformer",
     "representation geometry",

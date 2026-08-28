@@ -18,7 +18,7 @@ Completed successfully.
 
 ## Questions
 
-This run closes two reviewer-facing controls for the first GLT-STEER result.
+This run closes two direct controls for the first GLT-STEER result.
 
 1. What is the base rate of question marks in GPT-2 without steering?
 2. Does the question-steering effect hold on source sentences outside the synthetic template family used to train the centroid?
@@ -126,4 +126,3 @@ Safe claim:
 - Base-rate table: `csv/question_mark_base_rate.csv`
 - Raw generations: `csv/question_steering_controls_raw.csv`
 - Summary table: `csv/question_steering_controls_summary.csv`
-

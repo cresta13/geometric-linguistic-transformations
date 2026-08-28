@@ -69,7 +69,7 @@ Main finding:
 - Across all tested layers at gain `0.75`, target question steering produced question marks in `93.50%` of generations.
 - Random-norm, wrong-class, and negative-target controls produced `0.00%` question marks in the aggregate control summary.
 
-Reviewer-facing follow-up controls:
+Follow-up controls:
 
 - Experiment script: `scripts/run_gpt2_question_steering_controls.py`
 - Result directory: `results/experiments/gpt2_question_steering_controls_20260714_results/`
