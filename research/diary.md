@@ -1325,3 +1325,38 @@ Matched vector controls (`none`, `wrong_marker`, `random_norm`, `negative_target
 Interpretation:
 
 This is a useful boundary result. It strengthens the causal intervention story because target steering changes model behavior where prompt-only and matched vector controls do not. It weakens any broad practical-editing claim because deterministic postprocessing is strictly better when the requested operation is only a known final marker. The correct application framing is therefore: GLT-STEER is an activation-space diagnostic and form-bias intervention, not a production replacement for ordinary string editing.
+
+## 2026-09-10: GLT-BUILD proposed as the next controlled-emergence line
+
+Motivation:
+
+The current GLT tracks mostly inspect already-trained models. This has produced bounded results: GLT-STEER supports final-marker activation steering, while GLT-DV, GLT-SPOT, GLT-MOLT, and GLT-XFER expose representation, composition, operator, and transfer diagnostics. The common limitation is that pretrained models are historically opaque: the training data, feature interactions, and optimization path that produced a representation are not controlled.
+
+New direction:
+
+GLT-BUILD, Building and Understanding Internal Latent Dynamics, shifts the question from post-hoc probing to training-time emergence:
+
+> Do not only search for transformation geometry in a finished model. Train a small controlled model and observe when the geometry appears.
+
+Initial research question:
+
+How do linguistic transformations form inside a neural network during training, and what is the minimal mathematical structure needed to describe them?
+
+Planned first experiment:
+
+- `paper/articles/glt-build-emergence/experiment_spec.md`
+- Tiny decoder-only Transformer trained from scratch.
+- Fully controlled synthetic language with known latent states.
+- Explicit operator-token regime first, implicit next-token regime later.
+- Operations: tense, negation, active/passive voice, question mood, and role swap.
+- Held-out lexemes, templates, and operation combinations.
+- Regular checkpoints and hidden-state extraction.
+- Multiple random seeds before promoted claims.
+
+Interpretation rule:
+
+GLT-BUILD should not start as a Lie-algebra claim. The first level is discrete and should be framed through groups, semigroups, monoids, group actions, and matrix/operator representations. Lie-algebra tests are reserved for continuous or quasi-continuous features such as intensity, formality, certainty, politeness, affective valence, and assertion strength.
+
+Stopping rule:
+
+The first promoted GLT-BUILD result must answer whether the model learns held-out operation combinations, when each operation becomes recoverable, what minimal representation model is sufficient, whether composition laws hold better than matched nulls, and whether the discovered object causally changes behavior.

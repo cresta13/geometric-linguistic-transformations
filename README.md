@@ -48,10 +48,13 @@ Then we test whether these deltas behave like meaningful transformation objects 
 
 GLT-STEER goes one step further. Instead of only measuring these differences, it injects transformation vectors into the hidden activations of a generative model and tests whether they causally change the model's output.
 
+The next research line, GLT-BUILD, changes the direction of the project again. Instead of only probing already-trained models, it trains small controlled transformers from scratch on a synthetic language and watches when transformation geometry appears during learning.
+
 So the project asks two separate questions:
 
 1. Do linguistic transformations leave reusable geometric traces inside a model?
 2. Can those traces be used as interventions that change model behavior?
+3. Can we observe how such traces emerge during training, rather than only after training is finished?
 
 The current answer to the second question is positive but narrow: hidden-state steering can control final surface markers such as `?`, `!`, and `...`, but it has not yet produced reliable semantic or sentence-internal rewriting.
 
@@ -225,6 +228,37 @@ Important result folders:
 - `results/experiments/distilgpt2_question_hard_oot_best_layer2_gain10_20260801_results/`
 - `results/experiments/glt_steer_confirmatory_fixed_params_20260825_results/`
 - `results/experiments/glt_steer_apply_runtime_form_control_20260825_results/`
+
+### Next Main Line / GLT-BUILD: Training-Time Emergence
+
+Question:
+
+> How do linguistic transformations form inside a neural network during training, and what is the minimal mathematical structure needed to describe them?
+
+GLT-BUILD moves from post-hoc archaeology of pretrained models to a controlled laboratory setting. The plan is to train a tiny decoder-only Transformer from scratch on a fully specified synthetic language where the latent state, grammar, operations, composition rules, held-out lexemes, held-out templates, and held-out operation combinations are all known.
+
+Initial scope:
+
+- train a 2-layer decoder-only Transformer with a small controlled vocabulary;
+- use multiple random seeds and regular checkpoints;
+- start with explicit operator tokens such as `<NEGATE>` and `<PAST>`;
+- compare additive vectors, linear maps, affine maps, low-rank/context-conditioned maps, and nonlinear predictors;
+- test composition laws such as involution, commutation, inverse consistency, and held-out combination generalization;
+- include causal interventions, not only passive representation probes.
+
+The first planned experiment is:
+
+```text
+GLT-BUILD-01:
+Emergence of a Known Transformation Algebra
+in a Tiny Synthetic-Language Transformer
+```
+
+This line does not claim a Lie algebra at the start. The first target is more basic and better specified: groups, semigroups, monoids, group actions, and matrix/operator representations for discrete transformations. Lie-algebra questions are reserved for later continuous or quasi-continuous features such as intensity, formality, certainty, politeness, affective valence, and assertion strength.
+
+Current artifact:
+
+- `paper/articles/glt-build-emergence/experiment_spec.md`
 
 ### Track 2A / GLT-MOLT: Matrix/Operator Diagnostics
 
@@ -403,6 +437,7 @@ This repository's distinct angle is not "geometric transformations exist" in the
 - Research program: `paper/research_program.md`
 - Current Track 1 draft: `paper/articles/glt-steer-activation-editors/draft.md`
 - Current Track 1 submission PDF: `reports/2026-08-25_glt_steer_submission_draft.pdf`
+- GLT-BUILD experiment spec: `paper/articles/glt-build-emergence/experiment_spec.md`
 - Track 2 / GLT-SPOT + GLT-MOLT draft: `paper/articles/lie-style-linguistic-operators/draft.md`
 - Track 3 / GLT-DV draft: `paper/articles/geometric-transformation-vectors/draft.md`
 - Results index: `results/README.md`

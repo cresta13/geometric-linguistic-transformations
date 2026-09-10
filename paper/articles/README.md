@@ -21,3 +21,8 @@ This folder stores separate paper candidates when results become coherent enough
 4. Future GLT-XFER candidate
    - Working title: "Stress-Testing Cross-Model Transformation Transfer in Transformer Embedding Spaces"
    - This should not be drafted as a novelty claim about discovering cross-model geometric transformations. RISE already occupies that space strongly. A GLT-XFER paper is viable only after the current RISE/MDV, hybrid-feature, and spherical-steering results are extended with confidence intervals, train-only movement calibration, and anchor-domain robustness checks.
+
+5. `glt-build-emergence`
+   - Working title: "GLT-BUILD: Building and Understanding Internal Latent Dynamics"
+   - Current status: planned research line, not a results paper yet.
+   - Based on training tiny controlled transformers from scratch on a synthetic language, then tracking when transformation structure, composition laws, and causal intervention effects emerge during learning.

@@ -4,17 +4,18 @@
 
 Can linguistic transformations be represented not only as separable classes in transformer embedding spaces, but as reusable geometric operations with meaningful composition structure?
 
-This repository develops **GLT** (**Geometric Linguistic Transformations**), a research program for probing whether linguistic transformations appear as reusable geometric objects in transformer embedding spaces.
+This repository develops **GLT** (**Geometric Linguistic Transformations**), a research program for probing whether linguistic transformations appear as reusable geometric objects in transformer embedding and activation spaces, and whether those objects emerge in observable ways during controlled training.
 
 Current tracks, ordered by current publication priority:
 
 1. **Track 1 / GLT-STEER**: activation-steering interventions and the current primary short-paper target.
-2. **Track 2 / GLT-SPOT + GLT-MOLT**: Lie-adjacent composition and learned-operator diagnostics.
-3. **Track 3 / GLT-DV**: endpoint-controlled delta-vector diagnostics and baseline representation paper.
-4. **Track 4 / GLT-XFER**: cross-model transformation-transfer stress tests.
-5. **Track 5 / GLT-AFFECT**: graded affective-transformation geometry.
-6. **Track 6 / GLT-DIM**: effective dimensionality of transformation subspaces.
-7. **Track 7 / GLT-XLING**: cross-lingual transformation geometry.
+2. **Next line / GLT-BUILD**: controlled training-time emergence of transformation structure in tiny synthetic-language transformers.
+3. **Track 2 / GLT-SPOT + GLT-MOLT**: Lie-adjacent composition and learned-operator diagnostics.
+4. **Track 3 / GLT-DV**: endpoint-controlled delta-vector diagnostics and baseline representation paper.
+5. **Track 4 / GLT-XFER**: cross-model transformation-transfer stress tests.
+6. **Track 5 / GLT-AFFECT**: graded affective-transformation geometry.
+7. **Track 6 / GLT-DIM**: effective dimensionality of transformation subspaces.
+8. **Track 7 / GLT-XLING**: cross-lingual transformation geometry.
 
 
 ## Strategic narrative
@@ -29,6 +30,89 @@ Closest prior-work anchor:
 
 - Freenor and Alvarez 2026, RISE, already demonstrates rotor-based discourse-level semantic-syntactic transformation geometry across languages and embedding models. Our work must be positioned as endpoint-controlled delta diagnostics, Procrustes/null stress testing, and ordered-composition diagnostics rather than as the first evidence for geometric linguistic transformations.
 - Xia and Kalita 2025, Linear Relational Decoding of Morphology in Language Models, shows that some linguistic relations can be decoded by relation-specific Jacobian-derived matrix operators, with strong morphology results across GPT-J, Llama-7b, and multilingual morphology. This is a key motivation for an operator-valued version of Track 2: delta vectors are not the only plausible representation of linguistic transformations.
+
+## Next line: GLT-BUILD, controlled emergence of transformation structure
+
+Working title:
+
+**Building and Understanding Internal Latent Dynamics**
+
+Central question:
+
+How do linguistic transformations form inside a neural network during training, and what is the minimal mathematical structure needed to describe them?
+
+Motivation:
+
+The current GLT evidence comes mostly from frozen pretrained models. GLT-STEER shows a real but narrow causal effect: mean hidden-state deltas can steer GPT-2-style models toward final surface markers such as `?`, `!`, and `...`. Other tracks show endpoint-controlled delta diagnostics, signed-composition diagnostics, operator-closure compression, and cross-model stress tests.
+
+The shared limitation is that pretrained models are historically opaque. Their representations were shaped by unknown corpora, unknown feature interactions, and many optimization steps. A simple transformation may have existed earlier in training and later become distributed, nonlinear, or context-dependent.
+
+GLT-BUILD changes the design:
+
+> Do not only search for geometry in finished models. Train a controlled model and observe how transformation geometry is born.
+
+First planned experiment:
+
+- Article/spec folder: `paper/articles/glt-build-emergence/`
+- Experiment spec: `paper/articles/glt-build-emergence/experiment_spec.md`
+- Working experiment name: **GLT-BUILD-01: Emergence of a Known Transformation Algebra in a Tiny Synthetic-Language Transformer**
+
+Initial setup:
+
+- train a tiny decoder-only Transformer from scratch;
+- use a fully specified synthetic language with known latent states;
+- begin with explicit operation tokens such as `<NEGATE>` and `<PAST>`;
+- later test implicit next-token training without operation labels;
+- store checkpoints and hidden states throughout training;
+- hold out lexemes, templates, and operation combinations;
+- run multiple random seeds before promoting any claim.
+
+Initial operations:
+
+| Symbol | Operation |
+|---|---|
+| `T` | tense change |
+| `N` | negation toggle |
+| `V` | active/passive voice toggle |
+| `Q` | statement/question mood toggle |
+| `S` | semantic role swap |
+
+Mathematical ladder:
+
+1. additive vector: `h(Tx) ~= h(x) + v_T`
+2. linear map: `h(Tx) ~= A_T h(x)`
+3. affine map: `h(Tx) ~= A_T h(x) + b_T`
+4. low-rank or context-conditioned map
+5. nonlinear map
+
+Composition diagnostics:
+
+```text
+N^2 ~= I
+V^2 ~= I
+A_(AB) ~= A_A A_B
+A_(A^-1) ~= A_A^-1
+A_A A_B ~= A_B A_A      for independent operations
+A_A A_B != A_B A_A      for order-sensitive operations
+```
+
+Interpretation rule:
+
+GLT-BUILD does not start by claiming a Lie algebra. The first level is discrete: groups, semigroups, monoids, group actions, and matrix/operator representations. Lie-algebra tests become appropriate only after continuous or quasi-continuous features are introduced, such as intensity, formality, certainty, politeness, affective valence, or assertion strength.
+
+First stopping rule:
+
+GLT-BUILD-01 is complete when it answers:
+
+1. whether the model learns held-out operation combinations;
+2. when and where each operation becomes recoverable;
+3. which minimal representation model is sufficient for each operation;
+4. whether composition laws hold better than matched nulls;
+5. whether applying the discovered object causally changes behavior.
+
+Scientific payoff:
+
+GLT-BUILD turns GLT from post-hoc archaeology of pretrained representation spaces into an experimental study of how internal geometry emerges during learning. A positive result would show a repeatable training-time route from examples to compact operation structure. A negative result would also be useful: it would show that even controlled synthetic learning can succeed without stable additive or operator-level transformation geometry.
 
 ## Track 1: GLT-STEER, transformation vectors as editors
 
@@ -645,7 +729,13 @@ Once (a)-(c) are done, Track 1 / GLT-STEER is frozen for submission purposes. An
    - no promoted GLT-AFFECT paper-level claim until this control is complete
 20. Build an endpoint-balanced multilingual generator and re-run the 7-language audit.
 21. Explain the `NQM` versus `QMT` reversal between the English/decoder table and the multilingual max audit.
-22. Regenerate a dated PDF packet after every major run.
+22. Start GLT-BUILD as the next main research line after Track 1 packaging:
+   - implement the synthetic-language generator
+   - implement the tiny decoder-only Transformer training loop
+   - save checkpoints and hidden-state probes
+   - run an explicit-operator smoke test before scaling seeds
+   - record interpretation in the diary before promoting any result
+23. Regenerate a dated PDF packet after every major run.
 
 ### Medium term
 
@@ -668,6 +758,7 @@ Once (a)-(c) are done, Track 1 / GLT-STEER is frozen for submission purposes. An
    - conditionality
    - quantifier changes
 6. Add paraphrase robustness with semantically equivalent endpoint variants.
+7. Expand GLT-BUILD from explicit operator tokens to implicit next-token prediction after GLT-BUILD-01A is working.
 
 ### Paper milestones
 
@@ -689,5 +780,6 @@ Once (a)-(c) are done, Track 1 / GLT-STEER is frozen for submission purposes. An
 3. Keep Track 2 / GLT-SPOT + GLT-MOLT as a diagnostics paper until grammar-generated templates, endpoint-only controls, and operator-level nulls are strong enough for a separate claim.
 4. Promote Track 4 / GLT-XFER only if it becomes clearly complementary to RISE: null-controlled Procrustes transfer plus held-out anchors plus an explicit RISE/MDV comparison. The main narrative should be stress-testing cross-model transfer, not claiming first discovery of universal transformation geometry.
 5. Keep Track 5 / GLT-AFFECT as a side track until the missing neutral-word control is complete.
-6. If cross-lingual transfer works, it becomes the strongest version of the universality claim.
-7. If GLT-SPOT weakens under controls, keep it as a negative/diagnostic section in a broader research note.
+6. GLT-BUILD becomes the next main research line when the initial smoke test can train a tiny model, save checkpoints, extract hidden states, and report behavioral plus representation diagnostics without manual intervention.
+7. If cross-lingual transfer works, it becomes the strongest version of the universality claim.
+8. If GLT-SPOT weakens under controls, keep it as a negative/diagnostic section in a broader research note.

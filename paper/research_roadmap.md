@@ -5,12 +5,13 @@ This file tracks completed research-driven changes and future work needed before
 Current public numbering follows publication priority, not chronology:
 
 1. **Track 1 / GLT-STEER**: activation-space final-marker steering; current primary short-paper target.
-2. **Track 2 / GLT-SPOT + GLT-MOLT**: Lie-adjacent signed-composition and learned-operator diagnostics.
-3. **Track 3 / GLT-DV**: endpoint-controlled delta-vector diagnostics.
-4. **Track 4 / GLT-XFER**: cross-model transformation-transfer stress tests.
-5. **Track 5 / GLT-AFFECT**: graded affective geometry.
-6. **Track 6 / GLT-DIM**: effective dimensionality of transformation subspaces.
-7. **Track 7 / GLT-XLING**: cross-lingual transformation geometry.
+2. **Next line / GLT-BUILD**: controlled training-time emergence of transformation structure in tiny synthetic-language transformers.
+3. **Track 2 / GLT-SPOT + GLT-MOLT**: Lie-adjacent signed-composition and learned-operator diagnostics.
+4. **Track 3 / GLT-DV**: endpoint-controlled delta-vector diagnostics.
+5. **Track 4 / GLT-XFER**: cross-model transformation-transfer stress tests.
+6. **Track 5 / GLT-AFFECT**: graded affective geometry.
+7. **Track 6 / GLT-DIM**: effective dimensionality of transformation subspaces.
+8. **Track 7 / GLT-XLING**: cross-lingual transformation geometry.
 
 Historical notes before 2026-08 used a different numbering scheme: old Track 1 = GLT-DV, old Track 2 = GLT-SPOT, old Track 3 = GLT-XFER, old Track 4 = GLT-STEER. Current active docs should use the numbering above.
 
@@ -53,6 +54,50 @@ Track 1 is short-paper-ready when:
 5. Marker composition is framed as competition/saturation, not as Lie-algebra evidence.
 
 Current status: these items are complete for the current short-paper scope, and the fixed-parameter confirmatory audit plus runtime applicability audit have also been archived. The next work is writing, figure/table selection, and package cleanup. New controls go to future work unless requested by an external reviewer or a concrete venue requirement.
+
+## Next Main Line / GLT-BUILD: Training-Time Emergence
+
+### Why this is the next research line
+
+The earlier GLT tracks inspect frozen models. That is useful, but it also means the observed structures were formed by unknown data, unknown optimization history, and many interacting learned features.
+
+GLT-BUILD turns the problem into a controlled laboratory setup:
+
+> Train a tiny decoder-only Transformer from scratch on a fully specified synthetic language, then observe when transformation geometry appears during training.
+
+### Core question
+
+How do linguistic transformations form inside a neural network during training, and what is the minimal mathematical structure needed to describe them?
+
+### Initial experiment
+
+First planned experiment:
+
+- `paper/articles/glt-build-emergence/experiment_spec.md`
+
+Initial target:
+
+- synthetic language with known latent states;
+- explicit operation tokens first, implicit emergence later;
+- transformations such as tense, negation, voice, question mood, and role swap;
+- held-out lexemes, templates, and compositions;
+- multiple checkpoints and random seeds;
+- additive, linear, affine, low-rank/contextual, and nonlinear representation models;
+- composition diagnostics and causal interventions.
+
+### Boundary
+
+GLT-BUILD should not start by claiming a Lie algebra. The first promoted objects are discrete operations and their group/monoid/action or matrix-representation structure. Lie-algebra tests belong only after continuous or quasi-continuous features are introduced and shown to admit meaningful parameterization.
+
+### First stopping rule
+
+GLT-BUILD-01 is complete when it can answer:
+
+1. whether the model learned held-out operation combinations;
+2. when and where each operation became recoverable in hidden states;
+3. which minimal representation model describes each operation;
+4. whether composition laws hold better than matched nulls;
+5. whether discovered objects causally affect behavior.
 
 ## Track 2 / GLT-SPOT + GLT-MOLT: Lie-Adjacent Diagnostics
 
@@ -153,4 +198,4 @@ The current cycle should converge on Track 1 / GLT-STEER. Tracks 2-7 remain valu
 - an external reviewer asks for a specific additional control;
 - a track is explicitly promoted to the next submission target.
 
-This avoids a research-debt spiral where every new control creates a new uncontrolled side question before the strongest current paper is written.
+This avoids a research-debt spiral where every new control creates a new uncontrolled side question before the strongest current paper is written. GLT-BUILD is the exception only because it is a new controlled-emergence program with its own stopping rule, not another ad hoc control added to GLT-STEER.
