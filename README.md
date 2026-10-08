@@ -246,7 +246,7 @@ Initial scope:
 - test composition laws such as involution, commutation, inverse consistency, and held-out combination generalization;
 - include causal interventions, not only passive representation probes.
 
-The first planned experiment is:
+Original experiment design:
 
 ```text
 GLT-BUILD-01:

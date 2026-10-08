@@ -51,7 +51,7 @@ GLT-BUILD changes the design:
 
 > Do not only search for geometry in finished models. Train a controlled model and observe how transformation geometry is born.
 
-First planned experiment:
+Original experiment design:
 
 - Article/spec folder: `paper/articles/glt-build-emergence/`
 - Experiment spec: `paper/articles/glt-build-emergence/experiment_spec.md`

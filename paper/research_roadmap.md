@@ -71,7 +71,7 @@ How do linguistic transformations form inside a neural network during training, 
 
 ### Initial experiment
 
-First planned experiment:
+Original experiment design:
 
 - `paper/articles/glt-build-emergence/experiment_spec.md`
 
