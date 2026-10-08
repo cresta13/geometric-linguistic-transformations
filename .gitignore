@@ -12,6 +12,10 @@ __pycache__/
 *.npy
 *.npz
 
+# Reconstructible GLT-BUILD training snapshots; compact manifests remain tracked.
+results/experiments/glt_build_*/checkpoints/
+results/experiments/glt_build_*/hidden/
+
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/

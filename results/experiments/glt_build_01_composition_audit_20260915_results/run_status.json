@@ -1,0 +1,13 @@
+{
+  "status": "finished",
+  "phase": "complete",
+  "pid": 11296,
+  "started_at": "2026-09-15 20:23:03 +0300",
+  "completed_seeds": 3,
+  "total_seeds": 3,
+  "updated_at": "2026-09-15 20:25:09 +0300",
+  "current_seed": 2,
+  "current_step": 800,
+  "latest_loss": 0.0004043707740493119,
+  "finished_at": "2026-09-15 20:25:09 +0300"
+}

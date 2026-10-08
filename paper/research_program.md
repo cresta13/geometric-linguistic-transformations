@@ -57,6 +57,40 @@ First planned experiment:
 - Experiment spec: `paper/articles/glt-build-emergence/experiment_spec.md`
 - Working experiment name: **GLT-BUILD-01: Emergence of a Known Transformation Algebra in a Tiny Synthetic-Language Transformer**
 
+Current execution record (2026-09-15): the initial three-seed pilot is complete.
+Known instructions transfer to its sampled new scenes, while unseen combinations
+score zero. High raw operator-fit cosine predates training; reference-endpoint
+commutativity is built into the generator. The immediate task is the bounded
+[corrected composition audit](articles/glt-build-emergence/composition_audit_protocol.md):
+full held-out scene coverage, persistent checkpoints/readouts, actual sequential
+generation, initialization/mean-target/shuffle controls, and source-aware intervals.
+Finish and interpret these same three seeds before changing training support or
+scaling the model. The broader ambitions below remain future work.
+
+Completion update: the corrected audit finished on 2026-09-15. Across all 88 test
+scenes, known commands remain at 100%, reversed seen pairs score 12.03%, and unseen
+pair commands score 0%. Sequential SQ succeeds (264/264), but QS and the other
+tested sequences fail; correct intermediate text does not rescue them. Strong
+linear predictability precedes learning, including in token-only content means.
+The bounded correction is complete. Before any further run, the next focused
+design question is whether teaching operations on transformed input states changes
+this composition boundary. No model/layer sweep or new research track is queued.
+See [the completed summary](../results/experiments/glt_build_01_composition_audit_20260915_results/SUMMARY.md).
+
+Completed follow-up, 2026-09-15: [paired input-support comparison](articles/glt-build-emergence/input_support_protocol.md).
+The expanded source-state arm reaches 1.0 on the primary both-order sequential
+metric, while base-only remains at 0.0; the declared decision is
+`input_support_rescue_under_fixed_protocol`. This establishes a training-input
+support boundary for the controlled grammar, not a learned algebra claim.
+
+Completed follow-up, 2026-10-08: [explicit pair-prefix holdout](articles/glt-build-emergence/pair_prefix_holdout_protocol.md).
+Sequential execution reaches 1.0 in both arms, but the single-operation-only arm
+reaches 0.0 on unseen direct pair prefixes. The declared interpretation is
+`prefix_composition_not_supported`: the model reuses primitive operations through
+text-mediated execution but does not construct a new explicit pair prefix from
+two known command tokens. The current GLT-BUILD-01 evidence remains bounded to
+commuting synthetic operations; it does not establish a Lie algebra.
+
 Initial setup:
 
 - train a tiny decoder-only Transformer from scratch;

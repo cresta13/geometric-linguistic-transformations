@@ -1,0 +1,122 @@
+[
+  {
+    "path": "checkpoints/expanded_pairs_seed_0_step_000000.pt",
+    "bytes": 465393,
+    "sha256": "8e9b9c502712cd6b0dd5b1bad120f03d49801e463ede9932d3cf9a6c77b70fd0"
+  },
+  {
+    "path": "checkpoints/expanded_pairs_seed_0_step_000400.pt",
+    "bytes": 1375571,
+    "sha256": "de6c6e581e8378ebbf8e9178c16bf497700f8e68db03ae0cd274f24f6bbe52fc"
+  },
+  {
+    "path": "checkpoints/expanded_pairs_seed_0_step_000800.pt",
+    "bytes": 1375507,
+    "sha256": "448b71544e312d7bfed3dca758e463f6aaf97070eca1a08b81e7f211adec0f4b"
+  },
+  {
+    "path": "checkpoints/expanded_pairs_seed_0_step_001600.pt",
+    "bytes": 1375507,
+    "sha256": "3bc4a97d1c4630d6d8c7c89b26fe712d3b12733d7f72e9d1f49d98e259ceafe5"
+  },
+  {
+    "path": "checkpoints/single_only_seed_0_step_000000.pt",
+    "bytes": 465221,
+    "sha256": "375699c6b3a3be015265356e6b4c1e604baefb976f3e250918fabfabcf5ffd3b"
+  },
+  {
+    "path": "checkpoints/single_only_seed_0_step_000400.pt",
+    "bytes": 1375138,
+    "sha256": "6fc2d7207ad0fc63e3fca436e5ff76570729d37be015e8a246b1690384af782d"
+  },
+  {
+    "path": "checkpoints/single_only_seed_0_step_000800.pt",
+    "bytes": 1375138,
+    "sha256": "116c7777453c36a0dbc90e515913f1ab9a81774727d799f8af4ebf548534b2c8"
+  },
+  {
+    "path": "checkpoints/single_only_seed_0_step_001600.pt",
+    "bytes": 1375138,
+    "sha256": "d0449378bea86f3882d49fac3971f6385981c97b6b39f10ed671f3a2523f7a6c"
+  },
+  {
+    "path": "checkpoints/expanded_pairs_seed_1_step_000000.pt",
+    "bytes": 465393,
+    "sha256": "6676402bd42d3d2444070fbc2a498f41fd5624a52cfe3531a8798f4ec405a6e9"
+  },
+  {
+    "path": "checkpoints/expanded_pairs_seed_1_step_000400.pt",
+    "bytes": 1375507,
+    "sha256": "cf945d7c5f3748673a62bdd7bbc137bf5d64233b55d30fd41b2f5e2c410d9103"
+  },
+  {
+    "path": "checkpoints/expanded_pairs_seed_1_step_000800.pt",
+    "bytes": 1375571,
+    "sha256": "6fa5ec159db45c9cdc3869f983a0f5e5b8a8ab41ffe4ffd1dba53d14347c3fee"
+  },
+  {
+    "path": "checkpoints/expanded_pairs_seed_1_step_001600.pt",
+    "bytes": 1375571,
+    "sha256": "0d5d0160480da23fe63afaff65846d8700a3f020804944319eb71b2a5012ae95"
+  },
+  {
+    "path": "checkpoints/single_only_seed_1_step_000000.pt",
+    "bytes": 465221,
+    "sha256": "f0e8a1d817d41f3cd50cc7cbc4a578462df4d24487773296931b2157505b26e8"
+  },
+  {
+    "path": "checkpoints/single_only_seed_1_step_000400.pt",
+    "bytes": 1375138,
+    "sha256": "05682cdca2cce34b3aabf995a1e7f5b90db108b5b7fa2f4e72e4db254e4a3490"
+  },
+  {
+    "path": "checkpoints/single_only_seed_1_step_000800.pt",
+    "bytes": 1375138,
+    "sha256": "94617e3baeb143cdc8cf6dd6ced551b6cbe3edcaf51ea6e98c06178ac318a0ce"
+  },
+  {
+    "path": "checkpoints/single_only_seed_1_step_001600.pt",
+    "bytes": 1375138,
+    "sha256": "aa13ee7e52e1581b3d5617633adabe98ec69622610c30aa598e516a9d18a5b15"
+  },
+  {
+    "path": "checkpoints/expanded_pairs_seed_2_step_000000.pt",
+    "bytes": 465393,
+    "sha256": "73be777828ba416c2d64108d6480105d611713394128463c43108e5c4329ca50"
+  },
+  {
+    "path": "checkpoints/expanded_pairs_seed_2_step_000400.pt",
+    "bytes": 1375507,
+    "sha256": "e2d35edd2424132177dc932867577a98691fe4d061eb23c797652b7bbd2df79f"
+  },
+  {
+    "path": "checkpoints/expanded_pairs_seed_2_step_000800.pt",
+    "bytes": 1375507,
+    "sha256": "a674fe8b52ff28fb7df32da087c6500c516700074f7dc568d8093de4bc556e6d"
+  },
+  {
+    "path": "checkpoints/expanded_pairs_seed_2_step_001600.pt",
+    "bytes": 1375507,
+    "sha256": "5b12a96d6161892d584f6a9e4f83b85f045b4e2a2fc818c38416825aba4cbeb4"
+  },
+  {
+    "path": "checkpoints/single_only_seed_2_step_000000.pt",
+    "bytes": 465285,
+    "sha256": "15feb183b89d29110251425cb951019a437f8ed8740f6a76f7468406018fa592"
+  },
+  {
+    "path": "checkpoints/single_only_seed_2_step_000400.pt",
+    "bytes": 1375202,
+    "sha256": "a1ce708fc16d5498ba2fd3e5325cf8ccd4d09015787d6cec51c6aa361c8818e1"
+  },
+  {
+    "path": "checkpoints/single_only_seed_2_step_000800.pt",
+    "bytes": 1375138,
+    "sha256": "7027092de72e8faf38488aa318fa6bf325727a9b63a523441e5343d1d96cd0e6"
+  },
+  {
+    "path": "checkpoints/single_only_seed_2_step_001600.pt",
+    "bytes": 1375138,
+    "sha256": "f1318c9f0a375c85e474122048f9a49c4b6efb887f07b0f7456496d587a45848"
+  }
+]

@@ -2,7 +2,7 @@
 
 ## Status
 
-Planned experiment. No results are claimed in this document.
+Broad research design. The 2026-09-11 explicit-operator pilot is complete; it does not establish learned algebraic structure. The bounded follow-up is specified in [composition_audit_protocol.md](composition_audit_protocol.md). Lexical/template holdouts and the full model ladder below remain broader plans, not completed pilot checks.
 
 ## Motivation
 
@@ -269,7 +269,7 @@ Every promoted result must include:
 6. Additive/linear/affine/operator-fit comparison over time.
 7. Composition-law diagnostics over time.
 8. Causal intervention audit.
-9. `RUN_SUMMARY.md` for the result folder.
+9. `SUMMARY.md` for the result folder.
 10. Research-diary entry before interpreting outcomes.
 
 ## Stopping Rule For GLT-BUILD-01

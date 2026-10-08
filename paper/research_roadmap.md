@@ -75,6 +75,33 @@ First planned experiment:
 
 - `paper/articles/glt-build-emergence/experiment_spec.md`
 
+Execution update, 2026-09-15: the first pilot finished; its raw operator-fit cosine
+was near-perfect before training, and sampled unseen combinations failed. The
+next bounded step is [the corrected composition audit](articles/glt-build-emergence/composition_audit_protocol.md),
+with exhaustive scene coverage, saved weights/readouts, and actual sequential
+generation. Keep the existing training setup and three seeds; interpret this audit
+before introducing a new curriculum or model family.
+
+This audit is now complete: known commands transfer, general composition fails,
+and sequential SQ succeeds only in the order that preserves the familiar input
+form before Q. Oracle intermediates expose a second-step support boundary, and
+initialization/embedding controls prevent a learned-geometry claim from high fit
+alone. The next design decision is a controlled training-support comparison;
+no further run is automatically queued.
+
+A subsequent user-authorized run implemented
+[the paired input-support comparison](articles/glt-build-emergence/input_support_protocol.md):
+two curricula, three paired seeds, one fixed budget and a role-swap-closed split.
+Its completed result is `input_support_rescue_under_fixed_protocol`: expanded
+source-state teaching restores sequential execution, while base-only does not.
+
+A second bounded audit implemented
+[the explicit pair-prefix holdout](articles/glt-build-emergence/pair_prefix_holdout_protocol.md).
+It found 1.0 sequential execution in both arms but 0.0 direct generalization to
+unseen pair prefixes in the single-operation-only arm. This separates text-mediated
+primitive reuse from explicit command-prefix composition. GLT-BUILD remains a
+controlled discrete-composition line, not evidence for a Lie algebra.
+
 Initial target:
 
 - synthetic language with known latent states;

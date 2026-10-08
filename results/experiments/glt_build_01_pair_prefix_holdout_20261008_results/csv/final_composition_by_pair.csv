@@ -1,0 +1,15 @@
+arm,pair,direct_ab_correct,direct_ba_correct,sequential_ab_correct,sequential_ba_correct,oracle_ab_correct,oracle_ba_correct,direct_both_correct,sequential_both_correct
+expanded_pairs,NQ,1.0,0.0,1.0,1.0,1.0,1.0,0.0,1.0
+expanded_pairs,NV,0.0,0.0,1.0,1.0,1.0,1.0,0.0,1.0
+expanded_pairs,SQ,0.7992424242424242,0.0,1.0,1.0,1.0,1.0,0.0,1.0
+expanded_pairs,TN,1.0,0.0,1.0,1.0,1.0,1.0,0.0,1.0
+expanded_pairs,TQ,1.0,0.06060606060606061,1.0,1.0,1.0,1.0,0.06060606060606061,1.0
+expanded_pairs,TV,0.0,0.0,1.0,1.0,1.0,1.0,0.0,1.0
+expanded_pairs,VQ,1.0,0.0,1.0,1.0,1.0,1.0,0.0,1.0
+single_only,NQ,0.0,0.0,1.0,1.0,1.0,1.0,0.0,1.0
+single_only,NV,0.0,0.0,1.0,1.0,1.0,1.0,0.0,1.0
+single_only,SQ,0.0,0.0,1.0,1.0,1.0,1.0,0.0,1.0
+single_only,TN,0.0,0.0,1.0,1.0,1.0,1.0,0.0,1.0
+single_only,TQ,0.03409090909090909,0.0,1.0,1.0,1.0,1.0,0.0,1.0
+single_only,TV,0.0,0.0,1.0,1.0,1.0,1.0,0.0,1.0
+single_only,VQ,0.0,0.0,1.0,1.0,1.0,1.0,0.0,1.0

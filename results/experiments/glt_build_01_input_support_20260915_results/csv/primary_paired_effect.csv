@@ -1,0 +1,5 @@
+checkpoint_step,metric,base_only,expanded_sources,difference,n_group_seed_pairs,n_scene_groups,n_seeds,seed_std,ci_low,ci_high
+0,sequential_both_correct,0.0,0.0,0.0,132,44,3,0.0,0.0,0.0
+400,sequential_both_correct,0.0,0.7468434343434343,0.7468434343434344,132,44,3,0.3055666424651916,0.4336174242424243,0.9886363636363636
+800,sequential_both_correct,0.0,1.0,1.0,132,44,3,0.0,1.0,1.0
+1600,sequential_both_correct,0.0,1.0,1.0,132,44,3,0.0,1.0,1.0

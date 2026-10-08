@@ -1,0 +1,10 @@
+{
+  "primary_checkpoint": 1600,
+  "both_order_gain": 1.0,
+  "ci_low": 1.0,
+  "ci_high": 1.0,
+  "primitive_competence_gate": true,
+  "rescue_criterion_met": true,
+  "interpretation": "input_support_rescue_under_fixed_protocol",
+  "no_claim": "No latent algebra or universal compositionality is established by this text-mediated task"
+}

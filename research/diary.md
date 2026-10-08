@@ -1360,3 +1360,133 @@ GLT-BUILD should not start as a Lie-algebra claim. The first level is discrete a
 Stopping rule:
 
 The first promoted GLT-BUILD result must answer whether the model learns held-out operation combinations, when each operation becomes recoverable, what minimal representation model is sufficient, whether composition laws hold better than matched nulls, and whether the discovered object causally changes behavior.
+
+## 2026-09-15: Pilot audit and bounded GLT-BUILD correction
+
+This entry is retrospective for the 2026-09-11 pilot, and prospective for the
+corrected composition audit. The pilot finished three seeds at 800 steps in 145
+seconds. Its final evaluations gave 100% for known single operations and known
+pairs on the sampled held-out sources, 37/288 for reversed pairs, 0/288 for unseen
+pairs, and 0/360 for target-vector interventions.
+
+Review of the implementation and checkpoint-zero tables identified three limits:
+evaluation was a prefix slice of each family; only measurements, not weights or
+hidden arrays, were saved; and reverse-order endpoint cosine was identically one
+because the reference generator commutes. Linear prediction cosine was already
+about 0.9999 before training. None of these geometric scores establishes learned
+operation structure.
+
+The next run is fixed in
+[composition_audit_protocol.md](../paper/articles/glt-build-emergence/composition_audit_protocol.md).
+It keeps the same training examples, model and three seeds, evaluates every
+held-out scene, saves weights/optimizer/RNG/readouts with hashes, and tests actual
+direct and text-mediated sequential execution. An oracle-intermediate condition
+separates propagated mistakes from the boundary where transformed sources were
+never training inputs. Geometry adds mean-target and shuffled-pair baselines,
+centered metrics, layer-zero embeddings and content pooling. There is no tuning
+or model-size expansion in this run.
+
+Eight protocol/inference regression tests passed, followed by a two-step end-to-end
+validation with matching artifact hashes and complete CSV row counts. The first
+corrected launch was interrupted at seed 0, step 575 by a Windows permission error
+replacing the status JSON. Its partial files and logs are retained locally in
+`dist/glt_build_01_composition_audit_20260915_interrupted/`; they are not merged into
+the research results. Bounded retries for temporary file locks were added, with
+two additional tests covering recovery and persistent failure (10 tests passed).
+The same protocol was relaunched from initialization. Its outcomes must be added
+only after all seeds and output checks finish.
+
+### Completed corrected audit
+
+The rerun finished at 20:25:09 +0300 in 126 seconds, with all 3 seeds and all 5
+observations. Verified 30 artifact hashes, both execution-source hashes, final
+checkpoint loading, unique evaluation keys, exact-match labels against saved
+strings, and row totals: behavior 23,520; composition 9,240; interventions 33,000;
+representation fits 4,050. Binary artifacts total about 67 MB and remain local.
+
+Final results use all 88 held-out scenes: single operations 1320/1320, known pairs
+1056/1056, reversed seen pairs 127/1056, unseen pairs 0/792. Sequential SQ succeeds
+264/264; sequential QS and all other tested sequential pairs score zero. Every
+first step is correct, and oracle intermediates reproduce the sequential scores.
+The successful S-first route preserves the source form used in training. This
+suggests input-distribution support as a boundary, but a controlled training change
+is required to establish it as the cause.
+
+Linear fit is better than shuffled/constant predictions at the final layer, but
+centered cosine is already 0.9811 before learning (0.9793 after); token-only content
+means give raw linear cosine about 0.999996 at initialization. These metrics do not
+establish learned operator emergence. The original final-layer mean-vector recipe
+still yields 0/1320 target transformations.
+
+The bounded correction is complete. No additional experiment was launched after
+it. Any next run should isolate training-input support rather than extend the
+current null/layer/model list. Tables, plots and limitations are in
+[the corrected summary](../results/experiments/glt_build_01_composition_audit_20260915_results/SUMMARY.md).
+
+## 2026-09-15: Paired input-support experiment declared and launched
+
+After reviewing the corrected composition boundary, the next authorized test is
+whether expanded source-state teaching rescues sequential execution. Its fixed
+[protocol](../paper/articles/glt-build-emergence/input_support_protocol.md) compares
+base-only versus 16 source-state variants for identity/single operations. Taught
+pair commands remain on base sources in both arms. Initial weights and the random
+scene/command schedule are paired by seed. The padded training shape and update
+counts match; supervised-token counts and unique-example support do not, and are
+reported explicitly.
+
+The previous directed-scene split is replaced by unordered participant-pair plus
+verb groups, preventing a role swap from moving an example into the other split.
+This retains 360 training / 88 test directed scenes, with 180/44 independent split
+groups. The new paired baseline, not the earlier run, is the comparator.
+
+Budget: two arms, seeds 0/1/2, 1600 steps, observations 0/400/800/1600, width 64,
+two layers/four heads, two CPU threads and inference batch 32. Primary endpoint:
+both sequential orders correct on TN/TQ/NQ/VQ/NV/TV, excluding the SQ control.
+The declared rescue rule requires at least a 0.20 paired gain with a positive
+bootstrap lower bound, at least 95% base primitive accuracy in both arms, and
+95% nonbase primitive accuracy in the treatment. No extension follows automatically.
+
+Seven new split/sampling/statistics tests passed. A two-step technical run of both
+arms also completed, including pairing checks, saved artifacts, validation, and
+automatic report generation. Those technical scores are not research outcomes.
+Research outputs go to `results/experiments/glt_build_01_input_support_20260915_results/`;
+the completed run is summarized in `SUMMARY.md` and `decision.json`. The declared
+decision is `input_support_rescue_under_fixed_protocol`: expanded source-state
+teaching reaches 1.0 on the primary sequential metric, while base-only remains
+at 0.0.
+
+## 2026-10-08: Explicit pair-prefix holdout declared
+
+The input-support result rescues sequential execution when varied source states
+are taught, but it does not identify whether composition is represented in text
+alone or in explicit operation prefixes. The next bounded audit therefore holds
+the model, seeds, update budget, split, and evaluation scenes fixed while
+comparing two training arms: one sees identity/single-operation prefixes plus
+base-source pair prefixes, and the other sees identity/single-operation prefixes
+only. The primary endpoint is direct held-out pair-prefix accuracy; sequential
+text composition is reported as a secondary contrast.
+
+This is a composition-support test, not a Lie-algebra test. A positive result
+would show that the model can reuse explicit pair-prefix structure under the
+controlled grammar. A negative direct-pair result with successful sequential
+execution would support the narrower interpretation that the current model
+reuses primitive operations without learning an explicit pair-prefix rule.
+
+## 2026-10-08: Pair-prefix holdout completed
+
+The six-model pair-prefix audit completed with all checkpoints, CSVs, and artifact
+hashes validated. Primitive competence is 1.0 in both arms. Sequential execution
+is also 1.0 in both arms across TN/TQ/NQ/VQ/NV/TV, including the arm that never
+saw a two-operation command prefix during training.
+
+The direct-prefix result is different: `expanded_pairs` reaches 1.0 on pair
+prefixes that were explicitly taught and 0.0 on unseen pair prefixes; the
+`single_only` arm reaches 0.0 on unseen pair prefixes as well. Thus sequential
+text-mediated execution does not imply that the model constructs a new explicit
+pair command from two known command tokens. The declared interpretation is
+`prefix_composition_not_supported`.
+
+This run still does not test noncommutativity because all operations in the
+synthetic generator commute. It is a bounded command-composition result, not a
+Lie-algebra result. Future GLT-BUILD work should move to a genuinely noncommuting
+or continuous parameterization only after a new protocol is written explicitly.

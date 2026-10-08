@@ -259,6 +259,30 @@ This line does not claim a Lie algebra at the start. The first target is more ba
 Current artifact:
 
 - `paper/articles/glt-build-emergence/experiment_spec.md`
+- [Pilot results and audit caveats](results/experiments/glt_build_01_explicit_operator_smoke_20260911_results/SUMMARY.md)
+- [Corrected composition-audit protocol](paper/articles/glt-build-emergence/composition_audit_protocol.md)
+- [Corrected audit results](results/experiments/glt_build_01_composition_audit_20260915_results/SUMMARY.md)
+
+The first pilot completed on 2026-09-11. Its high representation cosine was already
+present at initialization, so it does not establish learned algebraic structure.
+The corrected audit completed on 2026-09-15 with three seeds and all 88 held-out
+scenes. Known single/pair commands score 100%, reversed seen pairs 12.03%, and
+unseen pair commands 0%. Text-mediated role swap followed by question succeeds
+on all tested scenes; its reverse and the other sequential pairs fail. Oracle
+intermediates do not rescue them, suggesting a training-input support boundary.
+Weights/readouts are saved, and geometry controls show strong linear predictability
+even before learning. General learned algebra and mean-vector editing remain
+unsupported in this setup.
+
+[Paired training-input support](paper/articles/glt-build-emergence/input_support_protocol.md)
+is complete: varied source-state teaching restores sequential execution across the
+tested nonbase pairs, while the base-only arm remains at zero. The full six-model
+record is in `results/experiments/glt_build_01_input_support_20260915_results/`.
+
+The follow-up [explicit pair-prefix holdout](paper/articles/glt-build-emergence/pair_prefix_holdout_protocol.md)
+is also complete. Both arms execute sequential transformations, but the
+single-operation-only arm does not generalize to unseen two-operation command
+prefixes. See the [pair-prefix summary](results/experiments/glt_build_01_pair_prefix_holdout_20261008_results/SUMMARY.md).
 
 ### Track 2A / GLT-MOLT: Matrix/Operator Diagnostics
 

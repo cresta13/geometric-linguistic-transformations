@@ -2,6 +2,29 @@
 
 This directory contains compact CSV summaries and experiment artifacts.
 
+## GLT-BUILD
+
+- [2026-09-11 explicit-operator pilot](experiments/glt_build_01_explicit_operator_smoke_20260911_results/SUMMARY.md):
+  completed exploratory run; the audit note explains prefix-sampled evaluation,
+  high cosine at initialization, and tautological reference-endpoint equality.
+- [2026-09-15 corrected composition audit](experiments/glt_build_01_composition_audit_20260915_results/SUMMARY.md):
+  completed all three seeds and 88 held-out scenes. Known commands: 100%; reversed
+  seen pairs: 12.03%; unseen pair commands: 0%. Sequential SQ: 100%, its reverse
+  and other sequential pairs: 0%. Includes actual intermediate outputs, geometry
+  baselines, source-aware intervals and 30 verified checkpoint/readout artifacts.
+  Binary weights and readouts stay local; the SHA-256 manifest and
+  [reproduction protocol](../paper/articles/glt-build-emergence/composition_audit_protocol.md) are retained.
+- [2026-09-15 paired input-support protocol](../paper/articles/glt-build-emergence/input_support_protocol.md):
+  completed two-arm, three-seed run on a role-swap-closed split. The expanded
+  source-state arm reaches 1.0 on the primary sequential metric versus 0.0 for
+  base-only. Output folder: `experiments/glt_build_01_input_support_20260915_results/`.
+  See `SUMMARY.md` and `decision.json`.
+- [2026-10-08 explicit pair-prefix holdout](../paper/articles/glt-build-emergence/pair_prefix_holdout_protocol.md):
+  completed matched-arm audit of direct pair-prefix composition versus
+  single-operation-only training. Sequential composition is 1.0 in both arms,
+  but unseen direct pair prefixes are 0.0 in both. Output folder:
+  `experiments/glt_build_01_pair_prefix_holdout_20261008_results/`; see `SUMMARY.md`.
+
 ## Aggregate Tables
 
 - `ablation_control_table.csv`: main multiseed delta/y_only/concat summary.

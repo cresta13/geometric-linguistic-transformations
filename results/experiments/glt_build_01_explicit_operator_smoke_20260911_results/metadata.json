@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-09-11 11:20:52 +0300",
+  "out_dir": "results\\experiments\\glt_build_01_explicit_operator_smoke_20260911_results",
+  "seeds": "0,1,2",
+  "steps": 800,
+  "checkpoints": "0,100,250,500,800",
+  "batch_size": 64,
+  "eval_limit_per_group": 96,
+  "causal_limit_per_operation": 24,
+  "d_model": 64,
+  "layers": 2,
+  "heads": 4,
+  "dropout": 0.0,
+  "learning_rate": 0.003,
+  "ridge_alpha": 1.0,
+  "vocab_size": 50,
+  "train_examples": 3600,
+  "device": "cpu",
+  "torch_version": "2.12.0+cpu"
+}

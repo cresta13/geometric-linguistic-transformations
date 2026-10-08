@@ -1,0 +1,11 @@
+{
+  "primary_metric": "both sequential orders correct on TN/TQ/NQ/VQ/NV/TV",
+  "primary_rates": {
+    "expanded_pairs": 1.0,
+    "single_only": 1.0
+  },
+  "direct_unseen_single_only": 0.0,
+  "direct_unseen_expanded_pairs": 0.0,
+  "interpretation": "prefix_composition_not_supported",
+  "no_claim": "Sequential text transformation and explicit prefix composition are separate capabilities; no latent algebra is established"
+}

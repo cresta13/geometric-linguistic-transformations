@@ -1,0 +1,13 @@
+arm,family,exact_match
+expanded_pairs,base_single,1.0
+expanded_pairs,nonbase_identity,1.0
+expanded_pairs,nonbase_single,1.0
+expanded_pairs,reverse_seen_pair,0.015151515151515152
+expanded_pairs,seen_pair,1.0
+expanded_pairs,unseen_pair,0.26641414141414144
+single_only,base_single,1.0
+single_only,nonbase_identity,1.0
+single_only,nonbase_single,1.0
+single_only,reverse_seen_pair,0.0
+single_only,seen_pair,0.008522727272727272
+single_only,unseen_pair,0.0
