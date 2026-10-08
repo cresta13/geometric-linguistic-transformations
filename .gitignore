@@ -19,6 +19,8 @@ results/experiments/glt_build_*/hidden/
 # Invalid GLT-BUILD-02 technical reruns; retained locally only and never published.
 results/experiments/glt_build_02_order_sensitive_composition_20261008_results/
 results/experiments/glt_build_02_order_sensitive_composition_20261009_results/
+# GLT-BUILD-03 pre-fix run evaluated composition on the old canonical template.
+results/experiments/glt_build_03_template_lexical_generalization_20261009_results/
 
 .pytest_cache/
 .mypy_cache/

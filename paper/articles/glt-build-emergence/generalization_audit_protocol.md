@@ -59,4 +59,4 @@ language generalization.
 
 ## Reproduction
 
-    .\.venv\Scripts\python.exe scripts/run_glt_build_03_generalization_audit.py --out-dir results/experiments/glt_build_03_template_lexical_generalization_20261009_results --seeds 0,1,2 --steps 1600 --checkpoints 0,400,800,1600 --threads 2 --eval-batch-size 32
+    .\.venv\Scripts\python.exe scripts/run_glt_build_03_generalization_audit.py --out-dir results/experiments/glt_build_03_template_lexical_generalization_20261009b_results --seeds 0,1,2 --steps 1600 --checkpoints 0,400,800,1600 --threads 2 --eval-batch-size 32

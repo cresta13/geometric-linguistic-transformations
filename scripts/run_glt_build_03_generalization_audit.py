@@ -194,10 +194,59 @@ def prompt(seq, source, token_to_id):
     return [token_to_id[t] for t in ["<bos>"] + [f"<{op}>" for op in seq] + ["<sep>"] + list(source) + ["<sep>"]]
 
 
+def composition_audit(generator, test_scenes):
+    rows = []
+    base_states = [State(s.subject, s.verb_idx, s.object, template="suffix_only") for _, s in test_scenes]
+    sources = [render_state(state) for state in base_states]
+    for a, b in PAIRS:
+        first_a = generator([((a,), source) for source in sources])
+        first_b = generator([((b,), source) for source in sources])
+        direct_ab = generator([((a, b), source) for source in sources])
+        direct_ba = generator([((b, a), source) for source in sources])
+        seq_ab = generator([((b,), out) for out in first_a])
+        seq_ba = generator([((a,), out) for out in first_b])
+        oracle_a = [render_state(apply_op(state, a)) for state in base_states]
+        oracle_b = [render_state(apply_op(state, b)) for state in base_states]
+        oracle_ab = generator([((b,), out) for out in oracle_a])
+        oracle_ba = generator([((a,), out) for out in oracle_b])
+        for i, (scene_id, _) in enumerate(test_scenes):
+            target_ab = render_state(apply_ops(base_states[i], (a, b)))
+            target_ba = render_state(apply_ops(base_states[i], (b, a)))
+            row = dict(
+                scene_id=scene_id,
+                group_id=group_id(base_states[i]),
+                pair=a + b,
+                pair_seen_in_training=int((a, b) in PAIR_TRAIN),
+                order_distinct=int(target_ab != target_ba),
+                source_text=base.token_text(sources[i]),
+                target_ab_text=base.token_text(target_ab),
+                target_ba_text=base.token_text(target_ba),
+                first_a_text=base.token_text(first_a[i]),
+                first_b_text=base.token_text(first_b[i]),
+                first_a_correct=int(first_a[i] == oracle_a[i]),
+                first_b_correct=int(first_b[i] == oracle_b[i]),
+            )
+            for name, outputs, target in (
+                ("direct_ab", direct_ab, target_ab),
+                ("direct_ba", direct_ba, target_ba),
+                ("sequential_ab", seq_ab, target_ab),
+                ("sequential_ba", seq_ba, target_ba),
+                ("oracle_ab", oracle_ab, target_ab),
+                ("oracle_ba", oracle_ba, target_ba),
+            ):
+                row[name + "_text"] = base.token_text(outputs[i])
+                row[name + "_correct"] = int(outputs[i] == target)
+            row["direct_order_distinct_output"] = int(direct_ab[i] != direct_ba[i])
+            row["sequential_order_distinct_output"] = int(seq_ab[i] != seq_ba[i])
+            rows.append(row)
+    return __import__("pandas").DataFrame(rows)
+
+
 def summary(out_dir, config):
     ORIGINAL_SUMMARY(out_dir, config)
     path = out_dir / "SUMMARY.md"
     text = path.read_text(encoding="utf-8")
+    text = text.replace("# GLT-BUILD-02: Order-Sensitive Composition", "# GLT-BUILD-03: Template and Lexical Generalization Audit", 1)
     text += (
         "\n## Generalization Audit\n\n"
         "Training uses canonical and article-suffix templates for identity and "
@@ -255,6 +304,7 @@ def install_overrides():
     exp.sample_batch = sample_batch
     exp.fixed_vocab = fixed_vocab
     exp.prompt = prompt
+    exp.composition_audit = composition_audit
     exp.summary = summary
     exp.validate = validate
 
