@@ -1,0 +1,30 @@
+{
+  "primary_metric": "order-sensitive sequential correctness on RM/MR with TN/NT commuting control",
+  "noncommuting_sequential": {
+    "pair_exposed": {
+      "ab": 1.0,
+      "ba": 1.0,
+      "distinct_output": 1.0
+    },
+    "single_only": {
+      "ab": 1.0,
+      "ba": 1.0,
+      "distinct_output": 1.0
+    }
+  },
+  "commuting_sequential": {
+    "pair_exposed": {
+      "ab": 1.0,
+      "ba": 1.0,
+      "distinct_output": 0.0
+    },
+    "single_only": {
+      "ab": 1.0,
+      "ba": 1.0,
+      "distinct_output": 0.0
+    }
+  },
+  "single_only_direct_unseen_rate": 0.049873737373737376,
+  "interpretation": "order_sensitive_composition_supported",
+  "no_claim": "This is a finite discrete noncommuting-action test; it is not a Lie-algebra proof"
+}

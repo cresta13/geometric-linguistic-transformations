@@ -284,6 +284,13 @@ is also complete. Both arms execute sequential transformations, but the
 single-operation-only arm does not generalize to unseen two-operation command
 prefixes. See the [pair-prefix summary](results/experiments/glt_build_01_pair_prefix_holdout_20261008_results/SUMMARY.md).
 
+The next [GLT-BUILD-02 order-sensitive composition audit](paper/articles/glt-build-emergence/order_sensitive_composition_protocol.md)
+introduced a genuinely noncommuting `R/M` pair and a commuting `T/N` control.
+Both ordered `R/M` sequences were correct and distinct at 1.0 in the final
+checkpoint, while `T/N` remained correct and order-invariant at 1.0. This is a
+bounded discrete behavioral result, not evidence of a Lie algebra or a learned
+universal operator. See the [GLT-BUILD-02 summary](results/experiments/glt_build_02_order_sensitive_composition_20261009b_results/SUMMARY.md).
+
 ### Track 2A / GLT-MOLT: Matrix/Operator Diagnostics
 
 Question:

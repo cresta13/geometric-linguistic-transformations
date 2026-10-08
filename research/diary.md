@@ -1490,3 +1490,30 @@ This run still does not test noncommutativity because all operations in the
 synthetic generator commute. It is a bounded command-composition result, not a
 Lie-algebra result. Future GLT-BUILD work should move to a genuinely noncommuting
 or continuous parameterization only after a new protocol is written explicitly.
+
+## 2026-10-09: GLT-BUILD-02 order-sensitive composition completed
+
+The first two full technical runs were discarded before interpretation. One had
+an off-by-one training-label alignment; the next omitted EOS from the supervised
+labels, so the model learned to continue the target with repeated text. Both
+failures were diagnosed from generated outputs, covered by regression tests, and
+excluded from the public result package.
+
+The corrected six-model run uses the same tiny architecture and held-out scene
+split, but introduces a genuinely noncommuting pair. R swaps subject/object
+roles and M toggles a mark on the current subject. T and N are an independent
+commuting control. At the final checkpoint, identity and all single operations
+are 1.0 across both arms and all three seeds. Sequential RM and MR are both
+correct at 1.0 and produce distinct outputs at 1.0. Sequential TN and NT are
+both correct at 1.0 and produce identical outputs.
+
+The key negative control remains important: direct unseen pair-prefix accuracy in
+the single-operation-only arm is only about 0.05, while sequential execution is
+1.0. The model therefore appears able to reuse primitive operations through
+generated intermediate text without constructing a general explicit pair prefix.
+
+This is bounded behavioral evidence for order-sensitive discrete composition in
+GLT-BUILD. It is not evidence of a Lie algebra, a continuous generator, or a
+universal latent operator. The corrected public artifact is
+results/experiments/glt_build_02_order_sensitive_composition_20261009b_results/;
+the two invalid reruns remain local and are ignored by Git.

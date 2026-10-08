@@ -21,6 +21,8 @@ Primary artifact:
 - [Paired input-support results](../../../results/experiments/glt_build_01_input_support_20260915_results/SUMMARY.md)
 - [Explicit pair-prefix holdout protocol](pair_prefix_holdout_protocol.md)
 - [Explicit pair-prefix holdout results](../../../results/experiments/glt_build_01_pair_prefix_holdout_20261008_results/SUMMARY.md)
+- [GLT-BUILD-02 order-sensitive protocol](order_sensitive_composition_protocol.md)
+- [GLT-BUILD-02 order-sensitive results](../../../results/experiments/glt_build_02_order_sensitive_composition_20261009b_results/SUMMARY.md)
 
 The informative contrast is text-mediated SQ: swapping roles and then asking a
 question succeeds on 264/264 evaluations, but reversing those steps succeeds on
@@ -50,3 +52,10 @@ Relationship to existing GLT tracks:
 - GLT-BUILD asks when and how such structures emerge during controlled training.
 
 The initial goal is not to claim a Lie algebra. The first GLT-BUILD experiments should test simpler and better-specified structures first: discrete operations, involutions, commutation/noncommutation, group or monoid actions, and matrix/operator representations.
+
+GLT-BUILD-02 extends this line with an explicit noncommuting R/M pair. R swaps
+roles and M toggles a mark on the current subject; T and N provide
+an independent commuting control. The final audit supports order-sensitive
+sequential execution on held-out scene groups, but direct pair-prefix
+generalization remains weak. The result is behavioral and discrete, not a Lie
+algebra claim.

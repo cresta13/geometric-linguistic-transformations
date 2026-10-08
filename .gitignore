@@ -16,6 +16,10 @@ __pycache__/
 results/experiments/glt_build_*/checkpoints/
 results/experiments/glt_build_*/hidden/
 
+# Invalid GLT-BUILD-02 technical reruns; retained locally only and never published.
+results/experiments/glt_build_02_order_sensitive_composition_20261008_results/
+results/experiments/glt_build_02_order_sensitive_composition_20261009_results/
+
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/

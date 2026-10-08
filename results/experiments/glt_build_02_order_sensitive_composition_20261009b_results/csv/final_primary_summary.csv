@@ -1,0 +1,3 @@
+arm,direct_ab_correct,direct_ba_correct,sequential_ab_correct,sequential_ba_correct
+pair_exposed,0.3626893939393939,0.3626893939393939,1.0,1.0
+single_only,0.04498106060606061,0.04498106060606061,1.0,1.0

@@ -25,6 +25,16 @@ This directory contains compact CSV summaries and experiment artifacts.
   but unseen direct pair prefixes are 0.0 in both. Output folder:
   `experiments/glt_build_01_pair_prefix_holdout_20261008_results/`; see `SUMMARY.md`.
 
+## GLT-BUILD-02 order-sensitive composition
+
+The 2026-10-09 six-model audit uses noncommuting RM/MR and commuting TN/NT
+controls. Sequential ordered composition is 1.0 with distinct RM/MR outputs;
+TN/NT is 1.0 and order-invariant. Direct unseen pair-prefix accuracy remains
+low. See the protocol at
+../paper/articles/glt-build-emergence/order_sensitive_composition_protocol.md
+and the validated output folder
+experiments/glt_build_02_order_sensitive_composition_20261009b_results/.
+
 ## Aggregate Tables
 
 - `ablation_control_table.csv`: main multiseed delta/y_only/concat summary.

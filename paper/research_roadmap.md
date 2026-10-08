@@ -126,6 +126,12 @@ GLT-BUILD-01 is complete when it can answer:
 4. whether composition laws hold better than matched nulls;
 5. whether discovered objects causally affect behavior.
 
+GLT-BUILD-02 then introduced a genuinely noncommuting R/M pair and a commuting
+T/N control. The final audit supports order-sensitive sequential execution on
+held-out scene groups, with distinct correct outputs for RM/MR and order-invariant
+correct outputs for TN/NT. It remains a finite synthetic behavioral result;
+direct pair-prefix generalization is weak, and no Lie-algebra claim is promoted.
+
 ## Track 2 / GLT-SPOT + GLT-MOLT: Lie-Adjacent Diagnostics
 
 ### Already addressed

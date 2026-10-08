@@ -817,3 +817,16 @@ Once (a)-(c) are done, Track 1 / GLT-STEER is frozen for submission purposes. An
 6. GLT-BUILD becomes the next main research line when the initial smoke test can train a tiny model, save checkpoints, extract hidden states, and report behavioral plus representation diagnostics without manual intervention.
 7. If cross-lingual transfer works, it becomes the strongest version of the universality claim.
 8. If GLT-SPOT weakens under controls, keep it as a negative/diagnostic section in a broader research note.
+
+## Completed GLT-BUILD-02 result
+
+The order-sensitive composition audit introduced R (role swap) and M (toggle
+the current-subject mark), which do not commute, alongside T/N as a commuting
+control. Both RM and MR sequential routes are correct and distinct at 1.0 in
+the final checkpoint, while TN/NT is correct and order-invariant at 1.0. Direct
+unseen pair-prefix accuracy remains low. The bounded interpretation is
+order-sensitive discrete behavioral composition, not a latent Lie algebra or
+universal operator. See the protocol at
+articles/glt-build-emergence/order_sensitive_composition_protocol.md and the
+validated result summary at
+../results/experiments/glt_build_02_order_sensitive_composition_20261009b_results/SUMMARY.md.
