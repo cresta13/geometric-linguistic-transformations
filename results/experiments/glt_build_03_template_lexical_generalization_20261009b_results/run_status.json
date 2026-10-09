@@ -1,0 +1,14 @@
+{
+  "status": "finished",
+  "phase": "complete",
+  "pid": 17444,
+  "started_at": "2026-10-09 01:50:27 +0300",
+  "completed_models": 6,
+  "total_models": 6,
+  "updated_at": "2026-10-09 01:55:15 +0300",
+  "current_seed": 2,
+  "arm": "single_only",
+  "current_step": 1600,
+  "latest_loss": 0.00014318509784061462,
+  "finished_at": "2026-10-09 01:55:15 +0300"
+}

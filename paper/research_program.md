@@ -830,3 +830,14 @@ universal operator. See the protocol at
 articles/glt-build-emergence/order_sensitive_composition_protocol.md and the
 validated result summary at
 ../results/experiments/glt_build_02_order_sensitive_composition_20261009b_results/SUMMARY.md.
+
+## Completed GLT-BUILD-03 result
+
+The template/lexical generalization audit is complete. Final checkpoints reach
+1.0 on canonical and article-suffix templates seen during training, including
+the RM/MR noncommuting pair and TN/NT commuting control. On the held-out
+suffix-only combination, identity and single-operation accuracy are effectively
+zero and all tested sequential composition rates are zero. The post-hoc control
+therefore localizes the boundary to surface-template recombination rather than
+to a general failure of the operations on held-out scene groups. This is a
+negative generalization result, not evidence for or against a Lie algebra.

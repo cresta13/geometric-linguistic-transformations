@@ -1,0 +1,13 @@
+arm,template,family,exact_match
+pair_exposed,article_suffix,identity,1.0
+pair_exposed,article_suffix,single,1.0
+pair_exposed,canonical,identity,1.0
+pair_exposed,canonical,single,1.0
+pair_exposed,suffix_only,identity,0.0
+pair_exposed,suffix_only,single,0.0014993686868686868
+single_only,article_suffix,identity,1.0
+single_only,article_suffix,single,1.0
+single_only,canonical,identity,1.0
+single_only,canonical,single,1.0
+single_only,suffix_only,identity,0.0
+single_only,suffix_only,single,0.006549873737373737

@@ -23,6 +23,8 @@ Primary artifact:
 - [Explicit pair-prefix holdout results](../../../results/experiments/glt_build_01_pair_prefix_holdout_20261008_results/SUMMARY.md)
 - [GLT-BUILD-02 order-sensitive protocol](order_sensitive_composition_protocol.md)
 - [GLT-BUILD-02 order-sensitive results](../../../results/experiments/glt_build_02_order_sensitive_composition_20261009b_results/SUMMARY.md)
+- [GLT-BUILD-03 template/lexical generalization protocol](generalization_audit_protocol.md)
+- [GLT-BUILD-03 results](../../../results/experiments/glt_build_03_template_lexical_generalization_20261009b_results/SUMMARY.md)
 
 The informative contrast is text-mediated SQ: swapping roles and then asking a
 question succeeds on 264/264 evaluations, but reversing those steps succeeds on

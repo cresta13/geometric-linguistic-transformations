@@ -291,6 +291,13 @@ checkpoint, while `T/N` remained correct and order-invariant at 1.0. This is a
 bounded discrete behavioral result, not evidence of a Lie algebra or a learned
 universal operator. See the [GLT-BUILD-02 summary](results/experiments/glt_build_02_order_sensitive_composition_20261009b_results/SUMMARY.md).
 
+The follow-up [GLT-BUILD-03 template/lexical generalization audit](paper/articles/glt-build-emergence/generalization_audit_protocol.md)
+separates this result's boundary: the same final checkpoints remain at 1.0 on
+the canonical and article-suffix templates seen during training, but fall to
+near-zero on a held-out suffix-only template combination. The control localizes
+the failure to surface-template recombination; it does not support a claim of a
+template-independent operator.
+
 ### Track 2A / GLT-MOLT: Matrix/Operator Diagnostics
 
 Question:

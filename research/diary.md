@@ -1517,3 +1517,23 @@ GLT-BUILD. It is not evidence of a Lie algebra, a continuous generator, or a
 universal latent operator. The corrected public artifact is
 results/experiments/glt_build_02_order_sensitive_composition_20261009b_results/;
 the two invalid reruns remain local and are ignored by Git.
+
+## 2026-10-09: GLT-BUILD-03 template control completed
+
+The corrected generalization run was evaluated on a new suffix-only surface
+combination and held-out scene groups. Its raw result was near-null: identity
+was 0.0000, single operations were 0.0015 in the pair-exposed arm and 0.0065
+in the single-only arm, and RM/MR and TN/NT sequential correctness was zero.
+
+Before interpreting this as an operation failure, a post-hoc control evaluated
+the same final checkpoints on all three templates. Canonical and article-suffix
+templates, both seen during training, reached 1.0000 for identity, singles, and
+the tested sequential compositions in both arms. The suffix-only combination
+alone collapsed to zero. The bounded conclusion is therefore that the
+GLT-BUILD-02 behavior is robust across held-out scene groups only within the
+surface support represented during training; it does not recombine this new
+template without additional training support.
+
+This result is a useful negative boundary, not a Lie-algebra claim. The raw
+generalization package and the control summary are retained together under
+results/experiments/glt_build_03_template_lexical_generalization_20261009b_results/.

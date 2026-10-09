@@ -35,6 +35,17 @@ low. See the protocol at
 and the validated output folder
 experiments/glt_build_02_order_sensitive_composition_20261009b_results/.
 
+## GLT-BUILD-03 template and lexical generalization
+
+The same final checkpoints reach 1.0 on canonical and article-suffix templates
+seen during training, including RM/MR and TN/NT sequential composition. On the
+held-out suffix-only template combination, identity and single-operation
+accuracy collapse to approximately zero and all tested sequential composition
+rates are zero. The template control localizes the boundary to surface
+recombination. Output folder:
+experiments/glt_build_03_template_lexical_generalization_20261009b_results/;
+see SUMMARY.md and CONTROL_SUMMARY.md.
+
 ## Aggregate Tables
 
 - `ablation_control_table.csv`: main multiseed delta/y_only/concat summary.
