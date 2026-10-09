@@ -280,13 +280,13 @@ def footer(canvas, doc):
 
 def build_story():
     story = []
-    story.append(para("GLT-STEER: Transformation Deltas as Activation-Space Editors for Final Markers", "PaperTitle"))
-    story.append(para("Anna Simakova - submission draft - 2026-08-25 - not peer reviewed", "PaperSubtitle"))
+    story.append(para("GLT-STEER: Final-Marker Directions as Activation-Space Editors", "PaperTitle"))
+    story.append(para("Anna Simakova - submission draft - 2026-10-09 - not peer reviewed", "PaperSubtitle"))
 
     story.append(heading("Abstract"))
     story.append(
         para(
-            "This short draft studies whether linguistic transformation vectors learned from sentence-pair hidden-state differences can be injected back into a generative transformer as activation-space editors. In GPT-2, vectors derived from controlled transformation pairs reliably steer final-position surface markers such as ?, !, and ... under matched controls. The effect is visible in generated text, next-token marker logits, position-of-intervention audits, and a fixed-parameter confirmatory rerun on fresh hard-heldout sources. The claim is intentionally bounded: current GLT-STEER supports final-marker form steering, not general semantic rewriting and not a Lie-algebra claim."
+            "This short draft studies whether mean hidden-state directions learned from sentence-pair differences can be injected back into a generative transformer as activation-space editors. In GPT-2, directions derived from controlled final-marker pairs steer surface markers such as ?, !, and ... under matched controls. The claim is intentionally bounded: current GLT-STEER supports final-marker form steering, not general semantic rewriting, and a norm-matched ? token direction can reproduce the learned question-delta rate."
         )
     )
 
@@ -298,7 +298,7 @@ def build_story():
     )
     story.append(
         para(
-            "The current defensible claim is that transformation deltas can act as activation-space editors for final-position surface markers in GPT-style residual streams. The cleanest evidence is in GPT-2, with marker-dependent transfer to DistilGPT-2. This is not a claim of robust semantic rewriting."
+            "The current defensible claim is that activation-space directions can steer final-position surface markers in GPT-style residual streams. The cleanest evidence is in GPT-2, with marker-dependent transfer to DistilGPT-2. The current controls do not establish that a learned sentence-pair delta is unique or necessary for this effect. This is not a claim of robust semantic rewriting."
         )
     )
 
@@ -308,9 +308,9 @@ def build_story():
             [
                 "Build synthetic source/target pairs for a transformation class.",
                 "Extract hidden states at selected GPT-style residual blocks.",
-                "Compute a centroid transformation vector from training pairs.",
+                "Compute a centroid transformation direction from training pairs.",
                 "During generation, add the vector to the residual stream.",
-                "Compare target steering against no-steering, wrong-marker, random-norm, and negative-vector controls.",
+                "Compare target steering against no-steering, wrong-marker, random-norm, negative-vector, and token-direction controls.",
             ]
         )
     )
@@ -329,7 +329,7 @@ def build_story():
         make_table(
             [
                 ["condition", "question mark rate"],
-                ["target question vector", "0.9350"],
+                ["historical tuned final-marker direction", "0.9350"],
                 ["random-norm control", "0.0000"],
                 ["wrong-class control", "0.0000"],
                 ["negative-target control", "0.0000"],
@@ -424,6 +424,31 @@ def build_story():
             "This run uses fresh hard-heldout sources and fixed settings: GPT-2 layers 2,3 at gain 0.75; DistilGPT-2 layer 2 at gain 1.0. No layer/gain search is performed inside the run. Target marker rates remain separated from controls across all three final markers and both tested models."
         )
     )
+    story.append(
+        para(
+            "A source-cluster bootstrap treats the 48 sentence sources as the independent units rather than treating repeated prompt and layer rows as independent. The GPT-2 marker-rate estimates and percentile 95% cluster intervals are ?=0.6562 [0.5556, 0.7501], !=0.6875 [0.5764, 0.7882], and ...=0.8438 [0.7604, 0.9132]. These intervals are descriptive and do not remove the synthetic-template limitation."
+        )
+    )
+
+    story.append(subheading("5.1 Token-direction specificity control"))
+    story.append(
+        make_table(
+            [
+                ["control", "question rate", "marker+preserved"],
+                ["target delta", "0.3750", "0.0500"],
+                ["shuffled-pair delta", "0.0500", "0.0250"],
+                ["raw ? embedding", "0.0000", "0.0000"],
+                ["norm-matched ? embedding", "0.3750", "0.0750"],
+                ["other punctuation / random controls", "0.0000", "0.0000"],
+            ],
+            widths=[3.5, 1.5, 1.7],
+        )
+    )
+    story.append(
+        para(
+            "The learned target delta is stronger than shuffled-pair and unrelated controls, but a ? embedding rescaled to the learned delta norm reproduces the same question-marker rate. The current evidence therefore supports activation-space final-marker induction, not a uniquely linguistic question-transformation vector."
+        )
+    )
 
     story.append(PageBreak())
     story.append(heading("6. Boundary Results"))
@@ -486,6 +511,7 @@ def build_story():
                 "GLT-STEER does not solve semantic rewriting.",
                 "Negation and modality are not cleanly steered by the current method.",
                 "Final-marker steering does not prove general linguistic transformation editing.",
+                "The learned question delta is not unique relative to a norm-matched ? token direction.",
                 "Marker composition does not prove noncommutative algebra.",
                 "The result does not establish a Lie algebra in transformer activations.",
                 "Prompt wording remains a real boundary condition.",
@@ -508,6 +534,8 @@ def build_story():
                 ["generated PDF", "reports/2026-08-25_glt_steer_submission_draft.pdf"],
                 ["confirmatory result", "results/experiments/glt_steer_confirmatory_fixed_params_20260825_results/"],
                 ["CI audit", "results/experiments/glt_steer_headline_ci_20260825_results/"],
+                ["source-cluster bootstrap", "results/experiments/glt_steer_source_cluster_bootstrap_20261009_results/"],
+                ["token-direction controls", "results/experiments/glt_steer_token_direction_controls_20261009_results/"],
             ],
             widths=[1.8, 4.9],
         )

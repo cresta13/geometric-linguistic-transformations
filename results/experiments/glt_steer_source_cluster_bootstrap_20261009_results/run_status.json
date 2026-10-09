@@ -1,0 +1,8 @@
+{
+  "status": "finished",
+  "input": "results\\experiments\\glt_steer_confirmatory_fixed_params_20260825_results\\csv\\glt_steer_confirmatory_raw.csv",
+  "bootstrap_unit": "source_id",
+  "bootstrap_replicates": 5000,
+  "seed": 20261009,
+  "groups": 30
+}

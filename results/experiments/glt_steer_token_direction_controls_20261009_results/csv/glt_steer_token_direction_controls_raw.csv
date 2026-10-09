@@ -1,0 +1,979 @@
+"model","source_id","source","prompt_style","target_class","layer","control","gain","token_control","generated","target_marker_hit","content_preserved","target_and_preserved","target_step0_prob","target_step0_rank","target_best_prob","target_best_rank","target_top1_any","target_top5_any"
+"gpt2","0","The grant application was revised after the committee meeting.","same_sentence","question","2","none","0.75","","The committee also approved a motion to amend the bill to allow the state to use the money to pay for the construction","0.0","0.0","0.0","1.5306326304198592e-06","40.0","2.766970828815829e-05","40.0","0.0","0.0"
+"gpt2","0","The grant application was revised after the committee meeting.","same_sentence","question","2","target_delta","0.75","","The committee's decision to reject the grant application was a major blow to the committee's ability to conduct its own investigation","0.0","0.0","0.0","1.0699260428737034e-06","45.0","0.0015184649964794517","45.0","0.0","0.0"
+"gpt2","0","The grant application was revised after the committee meeting.","same_sentence","question","2","shuffled_pair_delta","0.75","","The committee was told that the grant application was not approved by the committee.
+
+The committee was told that the","0.0","0.0","0.0","1.356963593934779e-06","48.0","0.0011438867077231407","23.0","0.0","0.0"
+"gpt2","0","The grant application was revised after the committee meeting.","same_sentence","question","2","target_token_embedding_raw","0.75","question","The committee also heard that the government has been working on a plan to make the government's tax system more transparent.","0.0","0.0","0.0","1.5669912727389601e-06","41.0","4.296341649023816e-05","41.0","0.0","0.0"
+"gpt2","0","The grant application was revised after the committee meeting.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The committee meeting was a little bit of a little bit of a little bit of a little bit of a little bit","0.0","0.0","0.0","8.414252761212992e-07","1712.0","0.07601366192102432","2.0","0.0","1.0"
+"gpt2","0","The grant application was revised after the committee meeting.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first time:
+
+The first time:
+
+The first time:
+
+The first time:","0.0","0.0","0.0","2.7868170946021564e-05","3102.0","0.0035865060053765774","21.0","0.0","0.0"
+"gpt2","0","The grant application was revised after the committee meeting.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","8.224578778026626e-05","1717.0","8.873607293935493e-05","1559.0","0.0","0.0"
+"gpt2","0","The grant application was revised after the committee meeting.","same_sentence","question","2","random_norm","0.75","","The committee meeting was held on the same day as the meeting of the committee.
+
+The committee meeting was held","0.0","0.0","0.0","1.367453705825028e-06","46.0","5.56576342205517e-05","27.0","0.0","0.0"
+"gpt2","0","The grant application was revised after the committee meeting.","same_sentence","question","2","negative_target_delta","0.75","","""The committee will consider the proposal and the committee will consider it,"" said the committee chair.
+
+""We","0.0","0.0","0.0","1.5617127928635455e-06","46.0","2.685610161279328e-05","38.0","0.0","0.0"
+"gpt2","1","Although the prototype overheated, the backup controller stayed online.","same_sentence","question","2","none","0.75","","The prototype was tested in the lab at the University of California, Berkeley, and was approved for testing in the U","0.0","0.0","0.0","1.3817401622873149e-06","49.0","3.189553535776213e-05","49.0","0.0","0.0"
+"gpt2","1","Although the prototype overheated, the backup controller stayed online.","same_sentence","question","2","target_delta","0.75","","The problem was that the backup controller was not working.
+
+The problem was that the backup controller was not working","0.0","0.0","0.0","1.996808578041964e-06","96.0","0.018615148961544037","5.0","0.0","1.0"
+"gpt2","1","Although the prototype overheated, the backup controller stayed online.","same_sentence","question","2","shuffled_pair_delta","0.75","","The prototype was a bit of a mess.
+
+The prototype was a bit of a mess.
+
+The","0.0","0.0","0.0","1.5222929050651146e-06","123.0","0.014054086059331894","6.0","0.0","0.0"
+"gpt2","1","Although the prototype overheated, the backup controller stayed online.","same_sentence","question","2","target_token_embedding_raw","0.75","question","The prototype was tested in the United States and Canada, but the company was unable to get the prototype to the United","0.0","0.0","0.0","1.424977085662249e-06","49.0","3.7511032132897526e-05","49.0","0.0","0.0"
+"gpt2","1","Although the prototype overheated, the backup controller stayed online.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The prototype was a little bit more than a little bit of a little bit of a little bit of a little bit","0.0","0.0","0.0","3.8458770745819493e-07","1419.0","0.037694938480854034","4.0","0.0","1.0"
+"gpt2","1","Although the prototype overheated, the backup controller stayed online.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first time: The first time: The first time: The first time: The first time: The first time","0.0","0.0","0.0","3.699131411849521e-05","2818.0","0.006261108443140984","20.0","0.0","0.0"
+"gpt2","1","Although the prototype overheated, the backup controller stayed online.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","0.0001093820683308877","1223.0","0.00016254950605798513","651.0","0.0","0.0"
+"gpt2","1","Although the prototype overheated, the backup controller stayed online.","same_sentence","question","2","random_norm","0.75","","The team then used a special-purpose computer to create a new version of the device.
+
+The team then","0.0","0.0","0.0","1.3471573083734256e-06","52.0","1.8965190974995494e-05","28.0","0.0","0.0"
+"gpt2","1","Although the prototype overheated, the backup controller stayed online.","same_sentence","question","2","negative_target_delta","0.75","","The next day, the team was able to get the battery to the factory, but the battery was still too hot","0.0","0.0","0.0","1.119296257456881e-06","95.0","0.00012751902977470309","95.0","0.0","0.0"
+"gpt2","2","Marina counted 73 labeled samples before the freezer alarm sounded.","same_sentence","question","2","none","0.75","","""I was like, 'Oh my God, I'm so sorry,'"" she said. ""I was like,","0.0","0.0","0.0","1.6854625073392526e-06","84.0","0.0012032795930281281","28.0","0.0","0.0"
+"gpt2","2","Marina counted 73 labeled samples before the freezer alarm sounded.","same_sentence","question","2","target_delta","0.75","","""I was just so excited,"" she said.
+
+""I was so excited,"" she said?","1.0","0.0","0.0","9.916625458572526e-07","150.0","0.4500052034854889","1.0","1.0","1.0"
+"gpt2","2","Marina counted 73 labeled samples before the freezer alarm sounded.","same_sentence","question","2","shuffled_pair_delta","0.75","","""I was just so excited,"" she said.
+
+""I was so excited,"" she said.","0.0","0.0","0.0","7.668724606446631e-07","196.0","0.05013233795762062","3.0","0.0","1.0"
+"gpt2","2","Marina counted 73 labeled samples before the freezer alarm sounded.","same_sentence","question","2","target_token_embedding_raw","0.75","question","""I was like, 'Oh my God, I'm so sorry,'"" she said. ""I was like,","0.0","0.0","0.0","1.63158176746947e-06","90.0","0.001315273460932076","27.0","0.0","0.0"
+"gpt2","2","Marina counted 73 labeled samples before the freezer alarm sounded.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","""I'm not going to be able to do anything?""
+
+""I'm not going to be able to","1.0","0.0","0.0","5.307907713358873e-07","1113.0","0.10014569759368896","2.0","0.0","1.0"
+"gpt2","2","Marina counted 73 labeled samples before the freezer alarm sounded.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first time:
+
+The first time:
+
+The first time:
+
+The first time:","0.0","0.0","0.0","4.6082481276243925e-05","2452.0","0.005639194045215845","22.0","0.0","0.0"
+"gpt2","2","Marina counted 73 labeled samples before the freezer alarm sounded.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","0.0001543915132060647","884.0","0.0001941399823408574","567.0","0.0","0.0"
+"gpt2","2","Marina counted 73 labeled samples before the freezer alarm sounded.","same_sentence","question","2","random_norm","0.75","","""I was so excited,"" she said. ""I was so excited. I was so excited. I was so","0.0","0.0","0.0","1.6754695479903603e-06","88.0","0.00032201476278714836","87.0","0.0","0.0"
+"gpt2","2","Marina counted 73 labeled samples before the freezer alarm sounded.","same_sentence","question","2","negative_target_delta","0.75","","""I'm not sure what the cause is, but I'm sure it's a virus,"" she said.","0.0","0.0","0.0","1.4811959090366145e-06","90.0","0.00031413297983817756","66.0","0.0","0.0"
+"gpt2","3","The dataset was anonymized by the hospital team in Krakow.","same_sentence","question","2","none","0.75","","The data was collected from the hospital's website, which is available on the hospital's website.
+
+The data","0.0","0.0","0.0","1.8970355313285836e-06","86.0","5.57765961275436e-05","31.0","0.0","0.0"
+"gpt2","3","The dataset was anonymized by the hospital team in Krakow.","same_sentence","question","2","target_delta","0.75","","The data was collected from the hospital's website, the website of the hospital's website, the website of the hospital","0.0","0.0","0.0","9.57930865297385e-07","239.0","0.09277405589818954","2.0","0.0","1.0"
+"gpt2","3","The dataset was anonymized by the hospital team in Krakow.","same_sentence","question","2","shuffled_pair_delta","0.75","","The data was collected from the hospital's website, and the data was collected from the hospital's website.","0.0","0.0","0.0","1.510444803898281e-06","153.0","0.0029101911932229996","21.0","0.0","0.0"
+"gpt2","3","The dataset was anonymized by the hospital team in Krakow.","same_sentence","question","2","target_token_embedding_raw","0.75","question","The data was collected from the hospital's website, which is available on the hospital's website.
+
+The data","0.0","0.0","0.0","1.94042104340042e-06","87.0","6.628654227824882e-05","31.0","0.0","0.0"
+"gpt2","3","The dataset was anonymized by the hospital team in Krakow.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The data was collected by the hospital team in Krakow.
+
+The data was collected by the hospital team","0.0","1.0","0.0","7.083576178956719e-07","1766.0","0.10674084722995758","2.0","0.0","1.0"
+"gpt2","3","The dataset was anonymized by the hospital team in Krakow.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first time:
+The first time:
+The first time:
+The first time:
+The first time:","0.0","0.0","0.0","3.694403494591825e-05","2863.0","0.004819567780941725","19.0","0.0","0.0"
+"gpt2","3","The dataset was anonymized by the hospital team in Krakow.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","8.609360520495102e-05","1624.0","0.00012059407163178548","1003.0","0.0","0.0"
+"gpt2","3","The dataset was anonymized by the hospital team in Krakow.","same_sentence","question","2","random_norm","0.75","","The data were collected from the hospital's medical records and were used to analyse the data.
+
+The data were","0.0","0.0","0.0","2.24520908886916e-06","46.0","5.1238908781670034e-05","26.0","0.0","0.0"
+"gpt2","3","The dataset was anonymized by the hospital team in Krakow.","same_sentence","question","2","negative_target_delta","0.75","","The data was collected using the National Health and Medical Research Council's (NHMRC) Health Access Data System (","0.0","0.0","0.0","5.575141699409869e-07","250.0","3.10469840769656e-05","250.0","0.0","0.0"
+"gpt2","4","When the parser failed, the notebook saved a diagnostic snapshot.","same_sentence","question","2","none","0.75","","The notebook was then sent to the server.
+
+The server then sent the notebook to the client.","0.0","0.0","0.0","7.094590159795189e-07","134.0","0.00010335895058233291","28.0","0.0","0.0"
+"gpt2","4","When the parser failed, the notebook saved a diagnostic snapshot.","same_sentence","question","2","target_delta","0.75","","The notebook saved the diagnostic snapshot.
+
+The notebook saved the diagnostic snapshot?
+
+The notebook saved the diagnostic","1.0","0.0","0.0","2.440189518893021e-06","30.0","0.7435628175735474","1.0","1.0","1.0"
+"gpt2","4","When the parser failed, the notebook saved a diagnostic snapshot.","same_sentence","question","2","shuffled_pair_delta","0.75","","The notebook was not saved.
+
+The notebook was saved.
+
+The notebook was saved?
+
+The","1.0","0.0","0.0","1.2117315009163576e-06","47.0","0.38586392998695374","1.0","1.0","1.0"
+"gpt2","4","When the parser failed, the notebook saved a diagnostic snapshot.","same_sentence","question","2","target_token_embedding_raw","0.75","question","The notebook was then sent to the server.
+
+The server then sent the notebook to the client.","0.0","0.0","0.0","7.36641652565595e-07","139.0","0.00012168149260105565","28.0","0.0","0.0"
+"gpt2","4","When the parser failed, the notebook saved a diagnostic snapshot.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The first time you saw the first time you saw the first time you saw the first time you saw the first time","0.0","0.0","0.0","1.7055091348083806e-06","1083.0","0.07760866731405258","2.0","0.0","1.0"
+"gpt2","4","When the parser failed, the notebook saved a diagnostic snapshot.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first time:
+
+The first time:
+
+The first time:
+
+The first time:","0.0","0.0","0.0","5.323966615833342e-05","2013.0","0.004042035900056362","19.0","0.0","0.0"
+"gpt2","4","When the parser failed, the notebook saved a diagnostic snapshot.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","7.779886800562963e-05","1681.0","0.00015179970068857074","660.0","0.0","0.0"
+"gpt2","4","When the parser failed, the notebook saved a diagnostic snapshot.","same_sentence","question","2","random_norm","0.75","","The following example shows how to use the debugger to debug a program.
+
+The debugger is used to debug a","0.0","0.0","0.0","9.171262718155049e-07","49.0","0.00017978675896301866","22.0","0.0","0.0"
+"gpt2","4","When the parser failed, the notebook saved a diagnostic snapshot.","same_sentence","question","2","negative_target_delta","0.75","","The next step was to make sure that the notebook was running properly.
+
+The next step was to make sure","0.0","0.0","0.0","5.497812480825814e-07","170.0","0.0004307797644287348","41.0","0.0","0.0"
+"gpt2","5","A second telescope observed Saturn during the early morning window.","same_sentence","question","2","none","0.75","","The first telescope, the Cassini-Huygens mission, was launched in 2004 and has been orbiting Saturn","0.0","0.0","0.0","2.025353751378134e-06","73.0","0.000177354333573021","73.0","0.0","0.0"
+"gpt2","5","A second telescope observed Saturn during the early morning window.","same_sentence","question","2","target_delta","0.75","","The first telescope was a small one, but it was a very good one.
+
+The first telescope was a","0.0","0.0","0.0","5.943517180639901e-07","388.0","0.016726601868867874","8.0","0.0","0.0"
+"gpt2","5","A second telescope observed Saturn during the early morning window.","same_sentence","question","2","shuffled_pair_delta","0.75","","The first telescope was a small one, but it was a very good one.
+
+The second telescope was a","0.0","0.0","0.0","8.928251986617397e-07","257.0","0.002577540697529912","16.0","0.0","0.0"
+"gpt2","5","A second telescope observed Saturn during the early morning window.","same_sentence","question","2","target_token_embedding_raw","0.75","question","The first telescope, the Cassini-Huygens mission, was launched in 2004 and has been orbiting Saturn","0.0","0.0","0.0","2.0363447674753843e-06","77.0","0.00021569011732935905","77.0","0.0","0.0"
+"gpt2","5","A second telescope observed Saturn during the early morning window.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The first telescope was a little bit of a little bit of a little bit of a little bit of a little bit","0.0","0.0","0.0","2.7700177724909736e-06","1154.0","0.08398997783660889","2.0","0.0","1.0"
+"gpt2","5","A second telescope observed Saturn during the early morning window.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first telescope, the first one, the first one, the first one, the first, the first, the first","0.0","0.0","0.0","5.055689689470455e-05","2350.0","0.001898850896395743","47.0","0.0","0.0"
+"gpt2","5","A second telescope observed Saturn during the early morning window.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the ""The the "" the "" the "" the "" the "" the "" the "" the "" the "" the","0.0","0.0","0.0","0.00032174031366594136","336.0","0.0003412298974581063","274.0","0.0","0.0"
+"gpt2","5","A second telescope observed Saturn during the early morning window.","same_sentence","question","2","random_norm","0.75","","The first telescope was made by the Italian astronomer, Giovanni P. P. Piazzi, who was working on","0.0","0.0","0.0","1.6169756236195099e-06","97.0","0.00011918774544028565","97.0","0.0","0.0"
+"gpt2","5","A second telescope observed Saturn during the early morning window.","same_sentence","question","2","negative_target_delta","0.75","","The first telescope was launched in the early morning hours of December 18, 1883, and was operated by the National","0.0","0.0","0.0","1.8030364117294084e-06","98.0","0.00018698640633374453","98.0","0.0","0.0"
+"gpt2","6","Because the elevator stopped, the courier used the emergency stairs.","same_sentence","question","2","none","0.75","","""I'm sorry, but I'm not going to let you go,"" he said.
+
+""I'm","0.0","0.0","0.0","8.215722573368112e-07","1465.0","0.0023202106822282076","24.0","0.0","0.0"
+"gpt2","6","Because the elevator stopped, the courier used the emergency stairs.","same_sentence","question","2","target_delta","0.75","","""I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm","0.0","0.0","0.0","1.1589567066039308e-06","833.0","0.14931203424930573","3.0","0.0","1.0"
+"gpt2","6","Because the elevator stopped, the courier used the emergency stairs.","same_sentence","question","2","shuffled_pair_delta","0.75","","""I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm","0.0","0.0","0.0","3.648271558631677e-06","754.0","0.0064158011227846146","13.0","0.0","0.0"
+"gpt2","6","Because the elevator stopped, the courier used the emergency stairs.","same_sentence","question","2","target_token_embedding_raw","0.75","question","""I'm sorry, but I'm not going to let you go,"" he said.
+
+""I'm","0.0","0.0","0.0","9.325383416580735e-07","1438.0","0.002725034486502409","23.0","0.0","0.0"
+"gpt2","6","Because the elevator stopped, the courier used the emergency stairs.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The elevator was a little bit too far?
+
+The elevator was a little bit too far?
+
+The","1.0","0.0","0.0","2.8109241156926146e-06","1241.0","0.9915623068809509","1.0","1.0","1.0"
+"gpt2","6","Because the elevator stopped, the courier used the emergency stairs.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first time:
+
+The first time:
+
+The first time:
+
+The first time:","0.0","0.0","0.0","2.891464828280732e-05","1975.0","0.006833181716501713","16.0","0.0","0.0"
+"gpt2","6","Because the elevator stopped, the courier used the emergency stairs.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","0.00014545439626090229","821.0","0.0002385397965554148","440.0","0.0","0.0"
+"gpt2","6","Because the elevator stopped, the courier used the emergency stairs.","same_sentence","question","2","random_norm","0.75","","""I'm sorry, but I'm not going to go down.""
+
+""I'm sorry, but I","0.0","0.0","0.0","3.8308576222334523e-07","600.0","0.014266406185925007","6.0","0.0","0.0"
+"gpt2","6","Because the elevator stopped, the courier used the emergency stairs.","same_sentence","question","2","negative_target_delta","0.75","","""I'm going to get you to the elevator,"" he said.
+
+""I'm going to get you","0.0","0.0","0.0","5.149967705619929e-07","372.0","0.0003210041322745383","39.0","0.0","0.0"
+"gpt2","7","The calibration report was signed by Victor at 18:40.","same_sentence","question","2","none","0.75","","The report was signed by Victor at 18:40. The report was signed by Victor at 18:40. The","0.0","1.0","0.0","1.824467176447797e-06","2371.0","6.123053753981367e-05","19.0","0.0","0.0"
+"gpt2","7","The calibration report was signed by Victor at 18:40.","same_sentence","question","2","target_delta","0.75","","The report was signed by Victor at 18:40.
+
+Victor:
+
+Victor:","0.0","1.0","0.0","5.710571258532582e-06","1379.0","0.18320703506469727","2.0","0.0","1.0"
+"gpt2","7","The calibration report was signed by Victor at 18:40.","same_sentence","question","2","shuffled_pair_delta","0.75","","The report was signed by Victor at 18:40.
+
+The report was signed by Victor at 18:40","0.0","1.0","0.0","4.813095983990934e-06","2008.0","0.0005028890445828438","4.0","0.0","1.0"
+"gpt2","7","The calibration report was signed by Victor at 18:40.","same_sentence","question","2","target_token_embedding_raw","0.75","question","The report was signed by Victor at 18:40. The report was signed by Victor at 18:40. The","0.0","1.0","0.0","2.2251272184803383e-06","2307.0","6.438486889237538e-05","18.0","0.0","0.0"
+"gpt2","7","The calibration report was signed by Victor at 18:40.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The first thing I did was was was was was was is is is is is is is is is is is is","0.0","0.0","0.0","2.2144919057609513e-05","1675.0","0.07479698956012726","2.0","0.0","1.0"
+"gpt2","7","The calibration report was signed by Victor at 18:40.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first time:
+
+The first time:
+
+The first time:
+
+The first time:","0.0","0.0","0.0","3.989504693890922e-05","2998.0","0.0034619951620697975","19.0","0.0","0.0"
+"gpt2","7","The calibration report was signed by Victor at 18:40.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","0.00010935555474134162","1377.0","0.0001315190311288461","842.0","0.0","0.0"
+"gpt2","7","The calibration report was signed by Victor at 18:40.","same_sentence","question","2","random_norm","0.75","","""I'm going to be a little bit more careful with my hair, and I'm going to be a little","0.0","0.0","0.0","1.8728351847130398e-07","1734.0","0.0005745852831751108","109.0","0.0","0.0"
+"gpt2","7","The calibration report was signed by Victor at 18:40.","same_sentence","question","2","negative_target_delta","0.75","","The following day, Victor was in the middle of the room, and he was looking at the computer screen. He","0.0","0.0","0.0","3.153548107093229e-07","1628.0","0.00024104725162032992","128.0","0.0","0.0"
+"gpt2","8","After the river level dropped, the engineers inspected the dam.","same_sentence","question","2","none","0.75","","""We were able to get the water out of the dam and we were able to get the water out of the","0.0","0.0","0.0","6.678129693682422e-07","264.0","2.6629129934008233e-05","264.0","0.0","0.0"
+"gpt2","8","After the river level dropped, the engineers inspected the dam.","same_sentence","question","2","target_delta","0.75","","The dam was built in the middle of the night.
+
+The dam was built in the middle of the night","0.0","0.0","0.0","2.0671065215083217e-07","611.0","0.010743099264800549","2.0","0.0","1.0"
+"gpt2","8","After the river level dropped, the engineers inspected the dam.","same_sentence","question","2","shuffled_pair_delta","0.75","","""We were able to get the water out of the dam,"" said one of the engineers.
+
+""We","0.0","0.0","0.0","2.6038495093416714e-07","931.0","0.0001991801109397784","23.0","0.0","0.0"
+"gpt2","8","After the river level dropped, the engineers inspected the dam.","same_sentence","question","2","target_token_embedding_raw","0.75","question","""We were able to get the water out of the dam and we were able to get the water out of the","0.0","0.0","0.0","5.839825121256581e-07","318.0","3.199269121978432e-05","318.0","0.0","0.0"
+"gpt2","8","After the river level dropped, the engineers inspected the dam.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The river level was not a problem?
+
+The river level was not a problem?
+
+The river level","1.0","0.0","0.0","1.9104596503893845e-05","2065.0","0.9583415389060974","1.0","1.0","1.0"
+"gpt2","8","After the river level dropped, the engineers inspected the dam.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first time:
+
+The first time:
+
+The first time:
+
+The first time:","0.0","0.0","0.0","3.2712450774852186e-05","2837.0","0.004294134676456451","17.0","0.0","0.0"
+"gpt2","8","After the river level dropped, the engineers inspected the dam.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","0.00011226481001358479","1155.0","0.00016383762704208493","684.0","0.0","0.0"
+"gpt2","8","After the river level dropped, the engineers inspected the dam.","same_sentence","question","2","random_norm","0.75","","""We were able to see that the water level was very low,"" said Dr. R. S. K.","0.0","0.0","0.0","1.057291683537187e-06","171.0","7.344504410866648e-05","147.0","0.0","0.0"
+"gpt2","8","After the river level dropped, the engineers inspected the dam.","same_sentence","question","2","negative_target_delta","0.75","","""We were able to get the water out of the river,"" said Dr. John H. Houghton,","0.0","0.0","0.0","6.150461331344559e-07","283.0","1.5464258467545733e-05","283.0","0.0","0.0"
+"gpt2","9","The microscope recorded 512 frames before the lamp dimmed.","same_sentence","question","2","none","0.75","","The light was then turned on and the light was turned off.
+
+The light was then turned on again and","0.0","0.0","0.0","8.630991032987367e-07","246.0","9.944851626642048e-05","31.0","0.0","0.0"
+"gpt2","9","The microscope recorded 512 frames before the lamp dimmed.","same_sentence","question","2","target_delta","0.75","","The light was so bright that it was almost invisible.
+
+The light was so bright that it was almost invisible","0.0","0.0","0.0","5.451322522276314e-07","384.0","0.0421808585524559","2.0","0.0","1.0"
+"gpt2","9","The microscope recorded 512 frames before the lamp dimmed.","same_sentence","question","2","shuffled_pair_delta","0.75","","The light was so bright that it was almost blinding.
+
+The light was so bright that it was almost blinding","0.0","0.0","0.0","4.3700362084564404e-07","640.0","0.006885234732180834","5.0","0.0","1.0"
+"gpt2","9","The microscope recorded 512 frames before the lamp dimmed.","same_sentence","question","2","target_token_embedding_raw","0.75","question","The light was so bright that the light source was not visible.
+
+The light source was not visible.","0.0","0.0","0.0","8.779472864262061e-07","253.0","0.0006273739272728562","32.0","0.0","0.0"
+"gpt2","9","The microscope recorded 512 frames before the lamp dimmed.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The first time you see the first time you see the first time you see the first time you see the first time","0.0","0.0","0.0","2.1251239559205715e-06","1500.0","0.07499410212039948","2.0","0.0","1.0"
+"gpt2","9","The microscope recorded 512 frames before the lamp dimmed.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first time:
+
+The first time:
+
+The first time:
+
+The first time:","0.0","0.0","0.0","3.428522541071288e-05","2976.0","0.005047518294304609","20.0","0.0","0.0"
+"gpt2","9","The microscope recorded 512 frames before the lamp dimmed.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","7.679314876440912e-05","1710.0","0.0001321363524766639","859.0","0.0","0.0"
+"gpt2","9","The microscope recorded 512 frames before the lamp dimmed.","same_sentence","question","2","random_norm","0.75","","The researchers found that the light emitted by the lamp was not the same as the light emitted by the light source.","0.0","0.0","0.0","1.4399166730072466e-06","131.0","6.466050399467349e-05","131.0","0.0","0.0"
+"gpt2","9","The microscope recorded 512 frames before the lamp dimmed.","same_sentence","question","2","negative_target_delta","0.75","","The next day, the team used a laser to measure the light, and the team used a laser to measure the","0.0","0.0","0.0","6.527865252792253e-07","281.0","0.0001526579144410789","116.0","0.0","0.0"
+"gpt2","10","If the validator rejects the file, the pipeline opens a review ticket.","same_sentence","question","2","none","0.75","","The pipeline is closed when the validator rejects the file.
+
+The pipeline closes when the validator rejects the","0.0","0.0","0.0","9.380212873111304e-07","80.0","0.00019398628501221538","29.0","0.0","0.0"
+"gpt2","10","If the validator rejects the file, the pipeline opens a review ticket.","same_sentence","question","2","target_delta","0.75","","The pipeline is closed.
+
+The pipeline is closed?
+
+The pipeline is closed?
+
+The pipeline","1.0","0.0","0.0","2.1954763269604882e-06","46.0","0.7942361831665039","1.0","1.0","1.0"
+"gpt2","10","If the validator rejects the file, the pipeline opens a review ticket.","same_sentence","question","2","shuffled_pair_delta","0.75","","The pipeline is closed when the validator rejects the file.
+
+The pipeline closes when the validator rejects the","0.0","0.0","0.0","1.1987706329819048e-06","42.0","0.0014412254095077515","15.0","0.0","0.0"
+"gpt2","10","If the validator rejects the file, the pipeline opens a review ticket.","same_sentence","question","2","target_token_embedding_raw","0.75","question","The pipeline then closes the review ticket.
+
+The pipeline closes the review ticket.
+
+The pipeline closes the","0.0","0.0","0.0","9.847234423432383e-07","80.0","8.99700025911443e-05","28.0","0.0","0.0"
+"gpt2","10","If the validator rejects the file, the pipeline opens a review ticket.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The first time you see the file?
+
+The first time you see the file?
+
+The first time","1.0","0.0","0.0","1.1097186870756559e-05","679.0","0.9466321468353271","1.0","1.0","1.0"
+"gpt2","10","If the validator rejects the file, the pipeline opens a review ticket.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first time:
+
+The first time:
+
+The first time:
+
+The first time:","0.0","0.0","0.0","6.743837002431974e-05","1783.0","0.00421768706291914","18.0","0.0","0.0"
+"gpt2","10","If the validator rejects the file, the pipeline opens a review ticket.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","0.00010749242937890813","1270.0","0.00016654621867928654","603.0","0.0","0.0"
+"gpt2","10","If the validator rejects the file, the pipeline opens a review ticket.","same_sentence","question","2","random_norm","0.75","","The pipeline will then open a new ticket.
+
+The pipeline will then open a new ticket.
+
+The","0.0","0.0","0.0","9.854334166448098e-07","42.0","9.78610260062851e-05","27.0","0.0","0.0"
+"gpt2","10","If the validator rejects the file, the pipeline opens a review ticket.","same_sentence","question","2","negative_target_delta","0.75","","The pipeline will then be closed.
+
+The pipeline will be closed.
+
+The pipeline will be closed.","0.0","0.0","0.0","9.207962534674152e-07","82.0","4.06503131671343e-05","32.0","0.0","0.0"
+"gpt2","11","The old turbine was replaced during the overnight maintenance shift.","same_sentence","question","2","none","0.75","","The new turbine was installed on the roof of the building on the morning of the first day of the new year.","0.0","0.0","0.0","1.1900139043063973e-06","140.0","7.786643982399255e-05","140.0","0.0","0.0"
+"gpt2","11","The old turbine was replaced during the overnight maintenance shift.","same_sentence","question","2","target_delta","0.75","","The new turbine was replaced during the maintenance shift.
+
+The old turbine was replaced during the maintenance shift?","1.0","1.0","1.0","7.221169653348625e-07","228.0","0.9773784875869751","1.0","1.0","1.0"
+"gpt2","11","The old turbine was replaced during the overnight maintenance shift.","same_sentence","question","2","shuffled_pair_delta","0.75","","The new turbine was replaced during the overnight maintenance shift.
+
+The old turbine was replaced during the overnight maintenance shift","0.0","1.0","0.0","3.873885248140141e-07","720.0","0.000479540933156386","21.0","0.0","0.0"
+"gpt2","11","The old turbine was replaced during the overnight maintenance shift.","same_sentence","question","2","target_token_embedding_raw","0.75","question","The new turbine was installed on the roof of the building on the morning of the first day of the new year.","0.0","0.0","0.0","1.1696394039972802e-06","149.0","9.370887710247189e-05","149.0","0.0","0.0"
+"gpt2","11","The old turbine was replaced during the overnight maintenance shift.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The new turbine is not going to be going to to to to to to to to to to to to to to","0.0","0.0","0.0","8.24563903734088e-06","1801.0","0.07708406448364258","2.0","0.0","1.0"
+"gpt2","11","The old turbine was replaced during the overnight maintenance shift.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The new turbine is not to be:
+
+The new:
+
+The new:
+
+The new:","0.0","0.0","0.0","3.923094118363224e-05","2835.0","0.0017461462412029505","18.0","0.0","0.0"
+"gpt2","11","The old turbine was replaced during the overnight maintenance shift.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","0.00012459754361771047","1149.0","0.00016987028357107192","663.0","0.0","0.0"
+"gpt2","11","The old turbine was replaced during the overnight maintenance shift.","same_sentence","question","2","random_norm","0.75","","The new turbine was installed in the new building.
+
+The new turbine was installed in the new building.","0.0","0.0","0.0","1.1476844292701571e-06","185.0","8.410845475737005e-05","29.0","0.0","0.0"
+"gpt2","11","The old turbine was replaced during the overnight maintenance shift.","same_sentence","question","2","negative_target_delta","0.75","","The new turbine was installed on the turbine's roof and was installed in the turbine's basement.
+
+The turbine","0.0","0.0","0.0","9.243098588740395e-07","174.0","5.497850725078024e-05","52.0","0.0","0.0"
+"gpt2","12","Professor Novak compared four baselines on the university cluster.","same_sentence","question","2","none","0.75","","""We have a lot of data on the number of students who are in the university cluster, and we have a","0.0","0.0","0.0","1.4728562973687076e-06","42.0","8.221717143896967e-05","42.0","0.0","0.0"
+"gpt2","12","Professor Novak compared four baselines on the university cluster.","same_sentence","question","2","target_delta","0.75","","""The first two are the ones that are not in the cluster,"" he said.
+
+""The second one","0.0","0.0","0.0","1.4090317108639283e-06","48.0","0.013006258755922318","7.0","0.0","0.0"
+"gpt2","12","Professor Novak compared four baselines on the university cluster.","same_sentence","question","2","shuffled_pair_delta","0.75","","""We have a lot of different types of data, and we have different types of data that are different from each","0.0","0.0","0.0","1.5069120991029195e-06","44.0","0.0003788126341532916","44.0","0.0","0.0"
+"gpt2","12","Professor Novak compared four baselines on the university cluster.","same_sentence","question","2","target_token_embedding_raw","0.75","question","""We have a lot of data on the number of students who are in the university cluster, and we have a","0.0","0.0","0.0","1.484483959757199e-06","43.0","0.00011316651944071054","43.0","0.0","0.0"
+"gpt2","12","Professor Novak compared four baselines on the university cluster.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","""I don't think it's a good idea to be a good idea to be a good idea to be a","0.0","0.0","0.0","1.4695406207465567e-06","1747.0","0.08442683517932892","4.0","0.0","1.0"
+"gpt2","12","Professor Novak compared four baselines on the university cluster.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","""The first thing is not to be a lot of the first thing is to be a lot of the first thing to","0.0","0.0","0.0","3.380118869245052e-05","2848.0","0.0016164284897968173","46.0","0.0","0.0"
+"gpt2","12","Professor Novak compared four baselines on the university cluster.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","0.00014728291716892272","940.0","0.00014728291716892272","811.0","0.0","0.0"
+"gpt2","12","Professor Novak compared four baselines on the university cluster.","same_sentence","question","2","random_norm","0.75","","""The first two are the same as the second two, and the third is the same as the third,"" he","0.0","0.0","0.0","1.3313128874870017e-06","47.0","0.00026736088329926133","47.0","0.0","0.0"
+"gpt2","12","Professor Novak compared four baselines on the university cluster.","same_sentence","question","2","negative_target_delta","0.75","","""The first is the most important, the second is the most important, and the third is the most important,""","0.0","0.0","0.0","1.6675817278155591e-06","84.0","0.00017384008970111609","84.0","0.0","0.0"
+"gpt2","13","While the train waited outside Lyon, the server finished indexing.","same_sentence","question","2","none","0.75","","The server then started indexing.
+
+The server then started indexing.
+
+The server then started index","0.0","0.0","0.0","1.3087576462567085e-06","183.0","0.0001169690367532894","24.0","0.0","0.0"
+"gpt2","13","While the train waited outside Lyon, the server finished indexing.","same_sentence","question","2","target_delta","0.75","","The server was not able to find the server's IP address.
+
+The server was not able to find the","0.0","0.0","0.0","3.850220309686847e-06","102.0","0.0016521913930773735","3.0","0.0","1.0"
+"gpt2","13","While the train waited outside Lyon, the server finished indexing.","same_sentence","question","2","shuffled_pair_delta","0.75","","The server was not able to find the server that was running the server.
+
+The server was not able to","0.0","0.0","0.0","9.309350161856855e-07","235.0","0.0014465950662270188","27.0","0.0","0.0"
+"gpt2","13","While the train waited outside Lyon, the server finished indexing.","same_sentence","question","2","target_token_embedding_raw","0.75","question","The server then started indexing.
+
+The server then started indexing.
+
+The server then started index","0.0","0.0","0.0","1.2928749129059725e-06","188.0","0.00016031955601647496","23.0","0.0","0.0"
+"gpt2","13","While the train waited outside Lyon, the server finished indexing.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The train was a lot of things.
+
+The train was a lot of things.
+
+The train was","0.0","0.0","0.0","2.7265859898761846e-06","917.0","0.1143706664443016","2.0","0.0","1.0"
+"gpt2","13","While the train waited outside Lyon, the server finished indexing.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first time:
+
+The first time:
+
+The first time:
+
+The first time:","0.0","0.0","0.0","5.488125316333026e-05","2150.0","0.005106395110487938","22.0","0.0","0.0"
+"gpt2","13","While the train waited outside Lyon, the server finished indexing.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","0.0001200356418848969","1191.0","0.00018615825683809817","567.0","0.0","0.0"
+"gpt2","13","While the train waited outside Lyon, the server finished indexing.","same_sentence","question","2","random_norm","0.75","","""I'm not sure what the problem is,"" said the server.
+
+The server then asked the server to","0.0","0.0","0.0","1.4976541251598974e-06","132.0","0.0010577791836112738","29.0","0.0","0.0"
+"gpt2","13","While the train waited outside Lyon, the server finished indexing.","same_sentence","question","2","negative_target_delta","0.75","","The server then started to index the index.
+
+The server then started to index the index.
+
+The","0.0","0.0","0.0","9.726574035084923e-07","194.0","4.258507760823704e-05","44.0","0.0","0.0"
+"gpt2","14","The survey invitation was translated into Portuguese on Friday.","same_sentence","question","2","none","0.75","","The survey was conducted by the University of California, Berkeley, and the University of California, Berkeley's Center for Social","0.0","0.0","0.0","1.4402760371012846e-06","45.0","0.00018174073193222284","45.0","0.0","0.0"
+"gpt2","14","The survey invitation was translated into Portuguese on Friday.","same_sentence","question","2","target_delta","0.75","","The survey was sent to the Spanish-speaking Spanish-speaking Spanish-speaking Spanish-speaking Spanish-speaking Spanish-","0.0","0.0","0.0","1.7961566527446848e-06","42.0","0.010338690131902695","2.0","0.0","1.0"
+"gpt2","14","The survey invitation was translated into Portuguese on Friday.","same_sentence","question","2","shuffled_pair_delta","0.75","","The survey was conducted by a team of volunteers from the University of California, San Diego, and the University of California","0.0","0.0","0.0","1.658743599364243e-06","45.0","0.00026396146859042346","45.0","0.0","0.0"
+"gpt2","14","The survey invitation was translated into Portuguese on Friday.","same_sentence","question","2","target_token_embedding_raw","0.75","question","The survey was conducted by the University of California, Berkeley, and the University of California, San Diego.","0.0","0.0","0.0","1.4919285149517236e-06","45.0","0.00021604941866826266","31.0","0.0","0.0"
+"gpt2","14","The survey invitation was translated into Portuguese on Friday.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The survey was translated into Portuguese on Friday.
+
+The survey was translated into Portuguese on Friday.
+
+The","0.0","1.0","0.0","7.516336495427822e-07","552.0","0.17362923920154572","2.0","0.0","1.0"
+"gpt2","14","The survey invitation was translated into Portuguese on Friday.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first time:
+
+The first time:
+
+The first time:
+
+The first time:","0.0","0.0","0.0","3.502950494294055e-05","2823.0","0.004112303722649813","19.0","0.0","0.0"
+"gpt2","14","The survey invitation was translated into Portuguese on Friday.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the ""The the "" the "" the "" the "" the "" the "" the "" the "" the "" the ""","0.0","0.0","0.0","9.67160303844139e-05","1424.0","0.00020685371418949217","478.0","0.0","0.0"
+"gpt2","14","The survey invitation was translated into Portuguese on Friday.","same_sentence","question","2","random_norm","0.75","","The survey was conducted by the University of Sao Paulo's Social Science and Humanities Research Department.
+
+The survey","0.0","0.0","0.0","1.240856249751232e-06","42.0","0.0001985587296076119","32.0","0.0","0.0"
+"gpt2","14","The survey invitation was translated into Portuguese on Friday.","same_sentence","question","2","negative_target_delta","0.75","","The survey was conducted by the University of Sao Paulo, Brazil.
+
+The survey was conducted by the University of","0.0","0.0","0.0","1.4478694083663868e-06","42.0","0.0001808395463740453","39.0","0.0","0.0"
+"gpt2","15","Because the route was blocked, Alina updated the delivery schedule.","same_sentence","question","2","none","0.75","","""We're going to be able to deliver the goods to the customers in the next few days,"" she said.","0.0","0.0","0.0","1.0469034350535367e-06","127.0","8.312340651173145e-05","56.0","0.0","0.0"
+"gpt2","15","Because the route was blocked, Alina updated the delivery schedule.","same_sentence","question","2","target_delta","0.75","","""I'm not sure if it's a good idea to have a delivery in the middle of the night,"" she","0.0","0.0","0.0","8.491483072248229e-07","177.0","0.030296210199594498","7.0","0.0","0.0"
+"gpt2","15","Because the route was blocked, Alina updated the delivery schedule.","same_sentence","question","2","shuffled_pair_delta","0.75","","""We're going to be in the city of the city of the city of the city of the city of the","0.0","0.0","0.0","7.443828167197353e-07","178.0","0.001394512946717441","33.0","0.0","0.0"
+"gpt2","15","Because the route was blocked, Alina updated the delivery schedule.","same_sentence","question","2","target_token_embedding_raw","0.75","question","""We're going to be able to deliver the goods to the customers in the next few days,"" she said.","0.0","0.0","0.0","9.995156915465486e-07","140.0","0.0001177012236439623","41.0","0.0","0.0"
+"gpt2","15","Because the route was blocked, Alina updated the delivery schedule.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","""I'm not going to be able to do anything?""
+
+""I'm not going to be able to","1.0","0.0","0.0","4.015428658021847e-06","1328.0","0.11688137799501419","2.0","0.0","1.0"
+"gpt2","15","Because the route was blocked, Alina updated the delivery schedule.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first time:
+
+The first time:
+
+The first time:
+
+The first time:","0.0","0.0","0.0","4.7898414777591825e-05","2383.0","0.0067970529198646545","16.0","0.0","0.0"
+"gpt2","15","Because the route was blocked, Alina updated the delivery schedule.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","0.00010643867426551878","1317.0","0.0001594873028807342","709.0","0.0","0.0"
+"gpt2","15","Because the route was blocked, Alina updated the delivery schedule.","same_sentence","question","2","random_norm","0.75","","""I was told that the route was to be taken by the train, but I was told that the route was","0.0","0.0","0.0","9.075773732547532e-07","159.0","9.750514436746016e-05","159.0","0.0","0.0"
+"gpt2","15","Because the route was blocked, Alina updated the delivery schedule.","same_sentence","question","2","negative_target_delta","0.75","","""We're going to be able to deliver the next day,"" she said.
+
+""We're going to","0.0","0.0","0.0","1.1875067684741225e-06","107.0","6.556328298756853e-05","44.0","0.0","0.0"
+"gpt2","16","The archive stored 24 encrypted drives in a locked cabinet.","same_sentence","question","2","none","0.75","","The archive was found in a storage locker in the basement of the house.
+
+The archive was found in a","0.0","0.0","0.0","1.0582587037788471e-06","127.0","6.35770193184726e-05","33.0","0.0","0.0"
+"gpt2","16","The archive stored 24 encrypted drives in a locked cabinet.","same_sentence","question","2","target_delta","0.75","","The files were encrypted by the same encryption algorithm that was used by the original files.
+
+The files were encrypted","0.0","0.0","0.0","1.2540045872810879e-06","195.0","0.007274368312209845","14.0","0.0","0.0"
+"gpt2","16","The archive stored 24 encrypted drives in a locked cabinet.","same_sentence","question","2","shuffled_pair_delta","0.75","","The archive was found in a storage unit in the basement of a house in the city of the same name.","0.0","0.0","0.0","7.355656634899788e-07","314.0","0.003944922238588333","20.0","0.0","0.0"
+"gpt2","16","The archive stored 24 encrypted drives in a locked cabinet.","same_sentence","question","2","target_token_embedding_raw","0.75","question","The archive was found in a storage locker in the basement of the house.
+
+The archive was found in a","0.0","0.0","0.0","1.0813530479936162e-06","133.0","7.438554894179106e-05","32.0","0.0","0.0"
+"gpt2","16","The archive stored 24 encrypted drives in a locked cabinet.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The archive stored 24 encrypted drives in a locked cabinet. The archive stored in a locked cabinet. The archive in a","0.0","1.0","0.0","1.4441719713431667e-06","1437.0","0.14221036434173584","2.0","0.0","1.0"
+"gpt2","16","The archive stored 24 encrypted drives in a locked cabinet.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first time: The first time: The first time: The first time: The first time: The first: The","0.0","0.0","0.0","4.570409873849712e-05","2673.0","0.004413289483636618","27.0","0.0","0.0"
+"gpt2","16","The archive stored 24 encrypted drives in a locked cabinet.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","0.00011747069947887212","1227.0","0.0001640537375351414","636.0","0.0","0.0"
+"gpt2","16","The archive stored 24 encrypted drives in a locked cabinet.","same_sentence","question","2","random_norm","0.75","","The archive was found in a room of the house of the late Dr. J. R. R. R.","0.0","0.0","0.0","1.0564720014372142e-06","125.0","8.193132816813886e-05","125.0","0.0","0.0"
+"gpt2","16","The archive stored 24 encrypted drives in a locked cabinet.","same_sentence","question","2","negative_target_delta","0.75","","The archive was encrypted with a password.
+
+The archive was stored on a hard drive.
+
+The archive","0.0","0.0","0.0","1.077925958270498e-06","128.0","5.934882574365474e-05","48.0","0.0","0.0"
+"gpt2","17","After the model converged, the researcher exported the confusion matrix.","same_sentence","question","2","none","0.75","","The model converged on the model's model.
+
+The model converged on the model's model.","0.0","0.0","0.0","3.123639658042521e-07","825.0","0.000565165828447789","28.0","0.0","0.0"
+"gpt2","17","After the model converged, the researcher exported the confusion matrix.","same_sentence","question","2","target_delta","0.75","","The model was a simple one.
+
+The model was a simple one?
+
+The model was a simple","1.0","0.0","0.0","1.2291689017729368e-06","209.0","0.7479249835014343","1.0","1.0","1.0"
+"gpt2","17","After the model converged, the researcher exported the confusion matrix.","same_sentence","question","2","shuffled_pair_delta","0.75","","The model converged.
+
+The model converged!
+
+The model converged!
+
+The model","0.0","0.0","0.0","4.058922797867126e-07","537.0","0.0629769042134285","2.0","0.0","1.0"
+"gpt2","17","After the model converged, the researcher exported the confusion matrix.","same_sentence","question","2","target_token_embedding_raw","0.75","question","The model converged on the model, and the model converged on the model.
+
+The model converged","0.0","0.0","0.0","2.944870232113317e-07","970.0","0.0006791941123083234","24.0","0.0","0.0"
+"gpt2","17","After the model converged, the researcher exported the confusion matrix.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The model converged?
+
+The model converged?
+
+The model converged?
+
+The model","1.0","0.0","0.0","2.0340312403277494e-05","1478.0","0.9456328749656677","1.0","1.0","1.0"
+"gpt2","17","After the model converged, the researcher exported the confusion matrix.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The model:
+
+The model:
+
+The model:
+
+The model:
+
+The model:","0.0","0.0","0.0","4.709631684818305e-05","2396.0","0.0015088535146787763","18.0","0.0","0.0"
+"gpt2","17","After the model converged, the researcher exported the confusion matrix.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","8.581475412938744e-05","1657.0","0.00018998299492523074","536.0","0.0","0.0"
+"gpt2","17","After the model converged, the researcher exported the confusion matrix.","same_sentence","question","2","random_norm","0.75","","The model converged.
+
+The model converged.
+
+The model converged.
+
+The model","0.0","0.0","0.0","7.729335607109533e-07","211.0","0.0017102352576330304","17.0","0.0","0.0"
+"gpt2","17","After the model converged, the researcher exported the confusion matrix.","same_sentence","question","2","negative_target_delta","0.75","","The model was then used to calculate the number of points in the model.
+
+The model was then used to","0.0","0.0","0.0","2.4754152150308073e-07","854.0","5.063871867605485e-05","40.0","0.0","0.0"
+"gpt2","18","The chemical sample was sealed by two technicians in Room 7.","same_sentence","question","2","none","0.75","","The chemical sample was sealed by two technicians in Room 7. The chemical sample was sealed by two technicians in Room 7","0.0","1.0","0.0","8.910203632694902e-07","241.0","0.0001642654387978837","77.0","0.0","0.0"
+"gpt2","18","The chemical sample was sealed by two technicians in Room 7.","same_sentence","question","2","target_delta","0.75","","The chemical sample was sealed by two technicians in Room 7.
+
+The chemical sample was sealed by two technicians in","0.0","1.0","0.0","4.362905201560352e-07","597.0","0.04516118764877319","2.0","0.0","1.0"
+"gpt2","18","The chemical sample was sealed by two technicians in Room 7.","same_sentence","question","2","shuffled_pair_delta","0.75","","The chemical sample was sealed by two technicians in Room 7.
+
+The chemical sample was sealed by two technicians in","0.0","1.0","0.0","7.100675247784238e-07","329.0","0.0024700206704437733","2.0","0.0","1.0"
+"gpt2","18","The chemical sample was sealed by two technicians in Room 7.","same_sentence","question","2","target_token_embedding_raw","0.75","question","The chemical sample was sealed by two technicians in Room 7. The chemical sample was sealed by two technicians in Room 7","0.0","1.0","0.0","8.691935704518983e-07","273.0","0.00020930837490595877","60.0","0.0","0.0"
+"gpt2","18","The chemical sample was sealed by two technicians in Room 7.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The first thing you do is to do to to to to to to to to to to to to to to to","0.0","0.0","0.0","4.263891241862439e-06","1644.0","0.0982024297118187","3.0","0.0","1.0"
+"gpt2","18","The chemical sample was sealed by two technicians in Room 7.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first time:
+
+The first time:
+
+The first time:
+
+The first time:","0.0","0.0","0.0","4.105431798961945e-05","2747.0","0.004528143908828497","20.0","0.0","0.0"
+"gpt2","18","The chemical sample was sealed by two technicians in Room 7.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","8.96137862582691e-05","1552.0","0.00015567625814583153","705.0","0.0","0.0"
+"gpt2","18","The chemical sample was sealed by two technicians in Room 7.","same_sentence","question","2","random_norm","0.75","","The chemical sample was taken from the room and sent to the laboratory.
+
+The chemical sample was sent to the","0.0","0.0","0.0","1.054839344760694e-06","241.0","0.00017302871856372803","30.0","0.0","0.0"
+"gpt2","18","The chemical sample was sealed by two technicians in Room 7.","same_sentence","question","2","negative_target_delta","0.75","","The team was able to extract the sample, but the team was unable to extract the sample because of the lack of","0.0","0.0","0.0","8.518925369571662e-07","276.0","3.0484037779388018e-05","276.0","0.0","0.0"
+"gpt2","19","When the satellite passed overhead, the antenna logged a weak signal.","same_sentence","question","2","none","0.75","","The satellite's signal was then sent to the ground, where it was picked up by the ground-based satellite.","0.0","0.0","0.0","1.678615035416442e-06","74.0","7.328677747864276e-05","74.0","0.0","0.0"
+"gpt2","19","When the satellite passed overhead, the antenna logged a weak signal.","same_sentence","question","2","target_delta","0.75","","The satellite was not a satellite.
+
+The satellite was a satellite.
+
+The satellite was a satellite?","1.0","0.0","0.0","2.8565898446686333e-06","72.0","0.63623046875","1.0","1.0","1.0"
+"gpt2","19","When the satellite passed overhead, the antenna logged a weak signal.","same_sentence","question","2","shuffled_pair_delta","0.75","","The satellite was then sent back to Earth.
+
+The satellite was then sent back to Earth.
+
+The","0.0","0.0","0.0","1.4052835695110844e-06","134.0","0.07064048200845718","5.0","0.0","1.0"
+"gpt2","19","When the satellite passed overhead, the antenna logged a weak signal.","same_sentence","question","2","target_token_embedding_raw","0.75","question","The satellite's signal was then sent to the ground, where it was picked up by the ground-based radio station","0.0","0.0","0.0","1.7056729575415375e-06","80.0","9.249693539459258e-05","80.0","0.0","0.0"
+"gpt2","19","When the satellite passed overhead, the antenna logged a weak signal.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The satellite was not transmitting the signal?
+
+The satellite was not transmitting the signal?
+
+The satellite was","1.0","0.0","0.0","5.986618702991109e-07","1420.0","0.950020968914032","1.0","1.0","1.0"
+"gpt2","19","When the satellite passed overhead, the antenna logged a weak signal.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first time:
+
+The first time:
+
+The first time:
+
+The first time:","0.0","0.0","0.0","3.8397647585952654e-05","2754.0","0.004906209651380777","21.0","0.0","0.0"
+"gpt2","19","When the satellite passed overhead, the antenna logged a weak signal.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","9.44679050007835e-05","1393.0","0.00016049950500018895","666.0","0.0","0.0"
+"gpt2","19","When the satellite passed overhead, the antenna logged a weak signal.","same_sentence","question","2","random_norm","0.75","","""We were able to detect the signal from the satellite,"" said Dr. Michael J. Schoenfeld, a","0.0","0.0","0.0","1.5126511243579444e-06","64.0","2.962742291856557e-05","64.0","0.0","0.0"
+"gpt2","19","When the satellite passed overhead, the antenna logged a weak signal.","same_sentence","question","2","negative_target_delta","0.75","","The satellite's signal was then sent back to Earth, where it was picked up by the National Oceanic and Atmospheric","0.0","0.0","0.0","1.240053393303242e-06","112.0","3.960123285651207e-05","112.0","0.0","0.0"
+"gpt2","20","The migration script copied 19 tables before the database restarted.","same_sentence","question","2","none","0.75","","The migration script copied 19 tables before the database restarted. The migration script copied 19 tables before the database restarted","0.0","1.0","0.0","2.079292755752249e-07","959.0","7.119604561012238e-05","34.0","0.0","0.0"
+"gpt2","20","The migration script copied 19 tables before the database restarted.","same_sentence","question","2","target_delta","0.75","","The migration script copied 19 tables before the database restarted.
+
+The migration script copied 19 tables before the database","0.0","1.0","0.0","1.1430213362473296e-06","131.0","0.024331122636795044","3.0","0.0","1.0"
+"gpt2","20","The migration script copied 19 tables before the database restarted.","same_sentence","question","2","shuffled_pair_delta","0.75","","The migration script copied 19 tables before the database restarted.
+
+The migration script copied 19 tables before the database","0.0","1.0","0.0","3.9930046114022844e-07","314.0","0.0005161210428923368","18.0","0.0","0.0"
+"gpt2","20","The migration script copied 19 tables before the database restarted.","same_sentence","question","2","target_token_embedding_raw","0.75","question","The migration script copied 19 tables before the database restarted. The migration script copied 19 tables before the database restarted","0.0","1.0","0.0","2.1244134984499397e-07","1017.0","7.948370330268517e-05","28.0","0.0","0.0"
+"gpt2","20","The migration script copied 19 tables before the database restarted.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The migration script copied 19 tables before the database restarted. The migration script copied 19 tables before the migration script?","1.0","1.0","1.0","3.3329915822832845e-06","1208.0","0.2129075974225998","1.0","1.0","1.0"
+"gpt2","20","The migration script copied 19 tables before the database restarted.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The migration script copied 19 tables before the database restarted.
+
+The migration script copied 19 tables before the database","0.0","1.0","0.0","5.326169775798917e-05","1982.0","0.0014824153622612357","26.0","0.0","0.0"
+"gpt2","20","The migration script copied 19 tables before the database restarted.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","6.183199730003253e-05","2184.0","0.00014288270904216915","741.0","0.0","0.0"
+"gpt2","20","The migration script copied 19 tables before the database restarted.","same_sentence","question","2","random_norm","0.75","","The migration script copied 19 tables before the database restarted. The migration script copied 19 tables before the database restarted","0.0","1.0","0.0","4.2590559701238817e-07","317.0","0.00013146373385097831","56.0","0.0","0.0"
+"gpt2","20","The migration script copied 19 tables before the database restarted.","same_sentence","question","2","negative_target_delta","0.75","","The migration script copied 19 tables before the database restarted.
+
+The migration script copied 19 tables before the database","0.0","1.0","0.0","3.1085235718819604e-07","398.0","0.00011117484973510727","36.0","0.0","0.0"
+"gpt2","21","Although the lecture began late, the recording captured every slide.","same_sentence","question","2","none","0.75","","""I think it's a great way to get people to think about the world,"" said the professor. ""It","0.0","0.0","0.0","1.6383128240704536e-06","90.0","0.00010748514614533633","90.0","0.0","0.0"
+"gpt2","21","Although the lecture began late, the recording captured every slide.","same_sentence","question","2","target_delta","0.75","","""I was just trying to get my head around the situation,"" he said.
+
+""I was just trying","0.0","0.0","0.0","9.71318058873294e-07","195.0","0.0005740579799748957","20.0","0.0","0.0"
+"gpt2","21","Although the lecture began late, the recording captured every slide.","same_sentence","question","2","shuffled_pair_delta","0.75","","""I was just so excited to be there,"" said the teacher.
+
+""I was so excited to be","0.0","0.0","0.0","6.802291636631708e-07","328.0","0.0006645466201007366","25.0","0.0","0.0"
+"gpt2","21","Although the lecture began late, the recording captured every slide.","same_sentence","question","2","target_token_embedding_raw","0.75","question","""I'm not sure if I'm going to be able to do it,"" he said. ""I'm not","0.0","0.0","0.0","1.6519511518708896e-06","98.0","0.000617378274910152","98.0","0.0","0.0"
+"gpt2","21","Although the lecture began late, the recording captured every slide.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","""I'm not going to be able to do anything?""
+
+""I'm not going to be able to","1.0","0.0","0.0","5.898587460251292e-06","1435.0","0.11355108767747879","2.0","0.0","1.0"
+"gpt2","21","Although the lecture began late, the recording captured every slide.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first time:
+
+The first time:
+
+The first time:
+
+The first time:","0.0","0.0","0.0","3.556143201421946e-05","2896.0","0.003063788404688239","19.0","0.0","0.0"
+"gpt2","21","Although the lecture began late, the recording captured every slide.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","0.00015366263687610626","805.0","0.0001595210051164031","713.0","0.0","0.0"
+"gpt2","21","Although the lecture began late, the recording captured every slide.","same_sentence","question","2","random_norm","0.75","","""I'm not going to be a little girl,"" he said.
+
+""I'm not going to be","0.0","0.0","0.0","1.1827899015770527e-06","74.0","0.0009778537787497044","29.0","0.0","0.0"
+"gpt2","21","Although the lecture began late, the recording captured every slide.","same_sentence","question","2","negative_target_delta","0.75","","""I was just trying to get the audience to come to me and say, 'I'm going to go to","0.0","0.0","0.0","1.2451529300960829e-06","101.0","5.417864667833783e-05","101.0","0.0","0.0"
+"gpt2","22","The legal memo was reviewed by Nadia before noon.","same_sentence","question","2","none","0.75","","The memo, which was obtained by The Associated Press, was obtained by The Associated Press by The Associated Press.","0.0","0.0","0.0","1.755606376718788e-06","36.0","4.936509867548011e-05","36.0","0.0","0.0"
+"gpt2","22","The legal memo was reviewed by Nadia before noon.","same_sentence","question","2","target_delta","0.75","","The memo was written by the attorney general's office, the attorney general's office, the attorney general's office,","0.0","0.0","0.0","2.167771071981406e-06","35.0","0.28485655784606934","2.0","0.0","1.0"
+"gpt2","22","The legal memo was reviewed by Nadia before noon.","same_sentence","question","2","shuffled_pair_delta","0.75","","""The court has not yet determined whether the defendant's conduct was in violation of the law or whether the defendant's","0.0","0.0","0.0","1.9474164218991064e-06","34.0","0.0004770713858306408","34.0","0.0","0.0"
+"gpt2","22","The legal memo was reviewed by Nadia before noon.","same_sentence","question","2","target_token_embedding_raw","0.75","question","The memo, which was obtained by The Associated Press, was obtained by The Associated Press by The Associated Press on Wednesday","0.0","0.0","0.0","1.8345573380429414e-06","36.0","5.25186987943016e-05","36.0","0.0","0.0"
+"gpt2","22","The legal memo was reviewed by Nadia before noon.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The memo was reviewed by Nadia before noon.
+
+The legal memo was reviewed by the legal memo?","1.0","1.0","1.0","9.187739351546043e-07","674.0","0.32476624846458435","1.0","1.0","1.0"
+"gpt2","22","The legal memo was reviewed by Nadia before noon.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first thing is a lot of the first thing is a lot of the first thing is a lot of the first thing","0.0","0.0","0.0","4.101339800399728e-05","2687.0","0.0034418506547808647","29.0","0.0","0.0"
+"gpt2","22","The legal memo was reviewed by Nadia before noon.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","0.000128843734273687","1085.0","0.00021207364625297487","525.0","0.0","0.0"
+"gpt2","22","The legal memo was reviewed by Nadia before noon.","same_sentence","question","2","random_norm","0.75","","The memo, which was sent to the Senate Judiciary Committee, was sent to the Senate Judiciary Committee, and was sent","0.0","0.0","0.0","1.718003431960824e-06","37.0","6.706984277116135e-05","37.0","0.0","0.0"
+"gpt2","22","The legal memo was reviewed by Nadia before noon.","same_sentence","question","2","negative_target_delta","0.75","","""The court has decided to allow the court to hear the case,"" she said.
+
+""The court has","0.0","0.0","0.0","2.0509692149062175e-06","40.0","4.170028114458546e-05","36.0","0.0","0.0"
+"gpt2","23","Because the sensor drifted, the robot recalibrated its camera.","same_sentence","question","2","none","0.75","","""We're not sure what happened,"" said the robot's operator, who asked not to be named. ""We","0.0","0.0","0.0","1.7745740024111e-06","76.0","0.00014611384540330619","76.0","0.0","0.0"
+"gpt2","23","Because the sensor drifted, the robot recalibrated its camera.","same_sentence","question","2","target_delta","0.75","","The robot's camera was still on, but it was still on.
+
+The robot's camera was still on","0.0","0.0","0.0","2.3632078409718815e-06","105.0","0.05680013820528984","3.0","0.0","1.0"
+"gpt2","23","Because the sensor drifted, the robot recalibrated its camera.","same_sentence","question","2","shuffled_pair_delta","0.75","","The robot's head was still in the air.
+
+The robot's head was still in the air!","0.0","0.0","0.0","1.7070957483156235e-06","127.0","0.16772031784057617","4.0","0.0","1.0"
+"gpt2","23","Because the sensor drifted, the robot recalibrated its camera.","same_sentence","question","2","target_token_embedding_raw","0.75","question","""We're not going to be able to do that,"" said the robot's operator, who asked not to be","0.0","0.0","0.0","1.8083868553731008e-06","80.0","0.0001003881188808009","80.0","0.0","0.0"
+"gpt2","23","Because the sensor drifted, the robot recalibrated its camera.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The robot's sensors are not calibrated to the environment?
+
+The robot's sensors are not calibrated to the environment","1.0","0.0","0.0","5.368097504288016e-07","1273.0","0.18458719551563263","1.0","1.0","1.0"
+"gpt2","23","Because the sensor drifted, the robot recalibrated its camera.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first time: The first time: The first time: The first time: The first time: The first time:","0.0","0.0","0.0","3.485212801024318e-05","2873.0","0.006083553656935692","22.0","0.0","0.0"
+"gpt2","23","Because the sensor drifted, the robot recalibrated its camera.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","9.334207425126806e-05","1490.0","0.00020047492580488324","532.0","0.0","0.0"
+"gpt2","23","Because the sensor drifted, the robot recalibrated its camera.","same_sentence","question","2","random_norm","0.75","","""We're going to have to do a lot of things to make it more accurate,"" said Dr. Michael J","0.0","0.0","0.0","1.78456957655726e-06","57.0","0.00011127726611448452","57.0","0.0","0.0"
+"gpt2","23","Because the sensor drifted, the robot recalibrated its camera.","same_sentence","question","2","negative_target_delta","0.75","","""We're going to be able to see the robot's movements and see if it's moving,"" said Dr.","0.0","0.0","0.0","1.6009524870241876e-06","82.0","5.181245069252327e-05","82.0","0.0","0.0"
+"gpt2","24","The container was inspected at Gate 6 after midnight.","same_sentence","question","2","none","0.75","","The container was inspected at Gate 6 after midnight.
+
+The container was inspected at Gate 6 after midnight.","0.0","1.0","0.0","1.8045260503640748e-06","52.0","5.2686351409647614e-05","29.0","0.0","0.0"
+"gpt2","24","The container was inspected at Gate 6 after midnight.","same_sentence","question","2","target_delta","0.75","","The container was inspected at Gate 6 at 11:30 p.m. on the day of the inspection.","0.0","1.0","0.0","1.2688723245446454e-06","140.0","0.08934320509433746","3.0","0.0","1.0"
+"gpt2","24","The container was inspected at Gate 6 after midnight.","same_sentence","question","2","shuffled_pair_delta","0.75","","The container was inspected at Gate 6 after midnight.
+
+The container was inspected at Gate 6 after midnight.","0.0","1.0","0.0","1.294912522098457e-06","129.0","0.1745884269475937","4.0","0.0","1.0"
+"gpt2","24","The container was inspected at Gate 6 after midnight.","same_sentence","question","2","target_token_embedding_raw","0.75","question","The container was inspected at Gate 6 after midnight. The container was inspected at Gate 6 after midnight. The container was","0.0","1.0","0.0","1.8641554788700887e-06","53.0","4.843768329010345e-05","53.0","0.0","0.0"
+"gpt2","24","The container was inspected at Gate 6 after midnight.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The container was inspected at Gate 6 after midnight.
+
+The container was inspected at Gate 6 after midnight?","1.0","1.0","1.0","1.0333557156627649e-06","1256.0","0.5142362117767334","1.0","1.0","1.0"
+"gpt2","24","The container was inspected at Gate 6 after midnight.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first time:
+
+The first time:
+
+The first time:
+
+The first time:","0.0","0.0","0.0","3.906562415068038e-05","2589.0","0.004649200011044741","17.0","0.0","0.0"
+"gpt2","24","The container was inspected at Gate 6 after midnight.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","9.93657304206863e-05","1473.0","0.00015421121497638524","762.0","0.0","0.0"
+"gpt2","24","The container was inspected at Gate 6 after midnight.","same_sentence","question","2","random_norm","0.75","","The container was inspected at Gate 6 after midnight.
+
+The container was inspected at Gate 6 after midnight.","0.0","1.0","0.0","1.709306502561958e-06","78.0","6.38104320387356e-05","26.0","0.0","0.0"
+"gpt2","24","The container was inspected at Gate 6 after midnight.","same_sentence","question","2","negative_target_delta","0.75","","The container was inspected at Gate 6 after midnight.
+
+The container was inspected at Gate 6 after midnight.","0.0","1.0","0.0","1.9225594769523013e-06","49.0","3.61107595381327e-05","40.0","0.0","0.0"
+"gpt2","25","When the timer expired, the incubator locked the control panel.","same_sentence","question","2","none","0.75","","The incubator was then removed from the control panel and the incubator was removed from the control panel.","0.0","0.0","0.0","4.7201606889757386e-07","429.0","4.853372956858948e-05","30.0","0.0","0.0"
+"gpt2","25","When the timer expired, the incubator locked the control panel.","same_sentence","question","2","target_delta","0.75","","The control panel was closed.
+
+The control panel was closed?
+
+The control panel was closed?","1.0","0.0","0.0","1.3451750646709115e-06","154.0","0.8022294044494629","1.0","1.0","1.0"
+"gpt2","25","When the timer expired, the incubator locked the control panel.","same_sentence","question","2","shuffled_pair_delta","0.75","","The incubator was not locked.
+
+The incubator was not locked!
+
+The incubator was not","0.0","0.0","0.0","6.792242288611305e-07","256.0","0.060393087565898895","4.0","0.0","1.0"
+"gpt2","25","When the timer expired, the incubator locked the control panel.","same_sentence","question","2","target_token_embedding_raw","0.75","question","The incubator was then removed from the control panel and the incubator was removed from the control panel.","0.0","0.0","0.0","4.6985013568701106e-07","448.0","5.484044595505111e-05","28.0","0.0","0.0"
+"gpt2","25","When the timer expired, the incubator locked the control panel.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The first time you saw the first time you saw the first time you saw the first time you saw the first time","0.0","0.0","0.0","9.611594578018412e-07","1383.0","0.07934647798538208","2.0","0.0","1.0"
+"gpt2","25","When the timer expired, the incubator locked the control panel.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first time:
+
+The first time:
+
+The first time:
+
+The first time:","0.0","0.0","0.0","4.421827907208353e-05","2421.0","0.005896632093936205","18.0","0.0","0.0"
+"gpt2","25","When the timer expired, the incubator locked the control panel.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","6.58620338072069e-05","2052.0","0.0001532523601781577","687.0","0.0","0.0"
+"gpt2","25","When the timer expired, the incubator locked the control panel.","same_sentence","question","2","random_norm","0.75","","The incubator was not locked.
+
+The incubator was not locked.
+
+The incubator was not","0.0","0.0","0.0","9.885445706458995e-07","97.0","0.0002490435726940632","24.0","0.0","0.0"
+"gpt2","25","When the timer expired, the incubator locked the control panel.","same_sentence","question","2","negative_target_delta","0.75","","The next step was to remove the incubator.
+
+The next step was to remove the control panel.","0.0","0.0","0.0","5.957182906968228e-07","256.0","0.000611509196460247","37.0","0.0","0.0"
+"gpt2","26","The museum catalog listed 38 restored photographs from 1921.","same_sentence","question","2","none","0.75","","The museum catalog listed 38 restored photographs from 1921. The museum catalog listed 38 restored photographs from 1921. The museum catalog","0.0","1.0","0.0","1.2751495432894444e-06","231.0","7.121625094441697e-05","58.0","0.0","0.0"
+"gpt2","26","The museum catalog listed 38 restored photographs from 1921.","same_sentence","question","2","target_delta","0.75","","The museum's website says that the photos were taken in the early 1920s.
+
+The museum's website says","0.0","0.0","0.0","5.188109071241342e-07","753.0","0.006309292744845152","16.0","0.0","0.0"
+"gpt2","26","The museum catalog listed 38 restored photographs from 1921.","same_sentence","question","2","shuffled_pair_delta","0.75","","The museum also lists the following:
+
+The museum also lists the following:
+
+The museum also lists the","0.0","0.0","0.0","6.596452521989704e-07","986.0","0.0004014935693703592","30.0","0.0","0.0"
+"gpt2","26","The museum catalog listed 38 restored photographs from 1921.","same_sentence","question","2","target_token_embedding_raw","0.75","question","The museum catalog listed 38 restored photographs from 1921. The museum catalog listed 38 restored photographs from 1921. The museum catalog","0.0","1.0","0.0","1.2802358924091095e-06","235.0","0.00012504265760071576","54.0","0.0","0.0"
+"gpt2","26","The museum catalog listed 38 restored photographs from 1921.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The museum catalog listed 38 restored photographs from 1921. The museum catalog listed 38 restored photographs from 1921. The museum catalog","0.0","1.0","0.0","1.8032249045063509e-06","972.0","0.15961343050003052","2.0","0.0","1.0"
+"gpt2","26","The museum catalog listed 38 restored photographs from 1921.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first time:
+
+The first time:
+
+The first time:
+
+The first:","0.0","0.0","0.0","5.604799298453145e-05","2063.0","0.0044844914227724075","18.0","0.0","0.0"
+"gpt2","26","The museum catalog listed 38 restored photographs from 1921.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the ""The the "" the "" the "" the "" the "" the "" the "" the "" the "" the","0.0","0.0","0.0","0.00018765352433547378","666.0","0.00038703871541656554","245.0","0.0","0.0"
+"gpt2","26","The museum catalog listed 38 restored photographs from 1921.","same_sentence","question","2","random_norm","0.75","","The museum catalog listed 38 restored photographs from 1921.
+
+The museum catalog listed 38 restored photographs from 1921.","0.0","1.0","0.0","1.199374537463882e-06","171.0","8.715970034245402e-05","27.0","0.0","0.0"
+"gpt2","26","The museum catalog listed 38 restored photographs from 1921.","same_sentence","question","2","negative_target_delta","0.75","","The museum catalog listed 38 restored photographs from 1921.
+
+The museum catalog listed 38 restored photographs from 1921.","0.0","1.0","0.0","6.320428838080261e-07","381.0","4.0706796426093206e-05","40.0","0.0","0.0"
+"gpt2","27","After the password reset, the dashboard requested a fresh token.","same_sentence","question","2","none","0.75","","The dashboard then asked for a new password.
+
+The dashboard then asked for a new password.
+
+The","0.0","0.0","0.0","5.729577310376044e-07","161.0","0.00015136525325942785","27.0","0.0","0.0"
+"gpt2","27","After the password reset, the dashboard requested a fresh token.","same_sentence","question","2","target_delta","0.75","","The dashboard will be updated with the new token.
+
+The dashboard will be updated with the new token?","1.0","0.0","0.0","1.5034618172649061e-06","48.0","0.8283290266990662","1.0","1.0","1.0"
+"gpt2","27","After the password reset, the dashboard requested a fresh token.","same_sentence","question","2","shuffled_pair_delta","0.75","","The dashboard will then ask you to enter your password.
+
+The dashboard will then ask you to enter your password","0.0","0.0","0.0","9.023597726809385e-07","54.0","0.0007099977810867131","14.0","0.0","0.0"
+"gpt2","27","After the password reset, the dashboard requested a fresh token.","same_sentence","question","2","target_token_embedding_raw","0.75","question","The dashboard then asked for a new password.
+
+The dashboard then asked for a new password.
+
+The","0.0","0.0","0.0","5.905984039600298e-07","162.0","0.00019532456644810736","27.0","0.0","0.0"
+"gpt2","27","After the password reset, the dashboard requested a fresh token.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The first time you've been a little bit of a little bit of a little bit of a little bit of a","0.0","0.0","0.0","6.597864512514207e-07","1138.0","0.06068945676088333","3.0","0.0","1.0"
+"gpt2","27","After the password reset, the dashboard requested a fresh token.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first time:
+
+The first time:
+
+The first time:
+
+The first time:","0.0","0.0","0.0","3.8243586459429935e-05","2009.0","0.005994880571961403","16.0","0.0","0.0"
+"gpt2","27","After the password reset, the dashboard requested a fresh token.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","7.449246913893148e-05","1787.0","0.0001914486929308623","497.0","0.0","0.0"
+"gpt2","27","After the password reset, the dashboard requested a fresh token.","same_sentence","question","2","random_norm","0.75","","The dashboard then asked for the password.
+
+The dashboard then asked for the password.
+
+The dashboard then","0.0","0.0","0.0","7.457957735823584e-07","56.0","0.00029996581724844873","23.0","0.0","0.0"
+"gpt2","27","After the password reset, the dashboard requested a fresh token.","same_sentence","question","2","negative_target_delta","0.75","","The dashboard then asked the user to enter the password.
+
+The user then entered the password and the dashboard was","0.0","0.0","0.0","6.193238277774071e-07","146.0","3.440718137426302e-05","31.0","0.0","0.0"
+"gpt2","28","The clinical team processed 64 consent forms during the audit.","same_sentence","question","2","none","0.75","","The audit found that the company had failed to provide adequate information to the public about the company's compliance with the Health","0.0","0.0","0.0","1.428261725777702e-06","45.0","2.346222936466802e-05","45.0","0.0","0.0"
+"gpt2","28","The clinical team processed 64 consent forms during the audit.","same_sentence","question","2","target_delta","0.75","","The study was conducted by the National Institute of Mental Health (NIMH) and the National Institute of Health and","0.0","0.0","0.0","1.159422140517563e-06","111.0","0.0007339944131672382","80.0","0.0","0.0"
+"gpt2","28","The clinical team processed 64 consent forms during the audit.","same_sentence","question","2","shuffled_pair_delta","0.75","","The audit found that the company's financial statements were not accurate.
+
+The audit also found that the company's","0.0","0.0","0.0","1.5867682350290124e-06","60.0","0.00024239056801889092","22.0","0.0","0.0"
+"gpt2","28","The clinical team processed 64 consent forms during the audit.","same_sentence","question","2","target_token_embedding_raw","0.75","question","The audit found that the company had failed to provide adequate information to the public about the use of its products.","0.0","0.0","0.0","1.4422213325815392e-06","46.0","4.6290282625705004e-05","46.0","0.0","0.0"
+"gpt2","28","The clinical team processed 64 consent forms during the audit.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The study
+
+The study
+
+The study
+
+The study
+
+The study
+
+The study","0.0","0.0","0.0","4.7351960574815166e-07","1239.0","0.06250771135091782","3.0","0.0","1.0"
+"gpt2","28","The clinical team processed 64 consent forms during the audit.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first time:
+
+The first time:
+
+The first time:
+
+The first time:","0.0","0.0","0.0","3.081493196077645e-05","2930.0","0.005787226837128401","21.0","0.0","0.0"
+"gpt2","28","The clinical team processed 64 consent forms during the audit.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","7.679515692871064e-05","1848.0","0.00015462342707905918","787.0","0.0","0.0"
+"gpt2","28","The clinical team processed 64 consent forms during the audit.","same_sentence","question","2","random_norm","0.75","","The study was conducted by the University of California, San Francisco, and the results were published in the journal PLOS","0.0","0.0","0.0","1.2757407148455968e-06","48.0","5.9208410675637424e-05","48.0","0.0","0.0"
+"gpt2","28","The clinical team processed 64 consent forms during the audit.","same_sentence","question","2","negative_target_delta","0.75","","The results of the audit were published in the Journal of the American College of Obstetricians and Gynecologists.","0.0","0.0","0.0","1.5898722267593257e-06","61.0","0.00013719646085519344","61.0","0.0","0.0"
+"gpt2","29","Although the storm damaged the pier, the lighthouse remained powered.","same_sentence","question","2","none","0.75","","The lighthouse was built in 1885 and was the first lighthouse in the world to be built in the United States.","0.0","0.0","0.0","1.855279606388649e-06","68.0","4.5763663365505636e-05","68.0","0.0","0.0"
+"gpt2","29","Although the storm damaged the pier, the lighthouse remained powered.","same_sentence","question","2","target_delta","0.75","","The lighthouse was not damaged.
+
+The lighthouse was not damaged?
+
+The lighthouse was not damaged?","1.0","0.0","0.0","8.719343895791098e-07","277.0","0.9133954048156738","1.0","1.0","1.0"
+"gpt2","29","Although the storm damaged the pier, the lighthouse remained powered.","same_sentence","question","2","shuffled_pair_delta","0.75","","""We were able to get the lighthouse back on the pier,"" said the lighthouse keeper.
+
+""We were","0.0","0.0","0.0","5.888676923859748e-07","494.0","0.00021183938952162862","28.0","0.0","0.0"
+"gpt2","29","Although the storm damaged the pier, the lighthouse remained powered.","same_sentence","question","2","target_token_embedding_raw","0.75","question","The lighthouse was built in 1885 and was the first lighthouse in the world to be built in the United States.","0.0","0.0","0.0","1.8587109025247628e-06","78.0","5.636614514514804e-05","78.0","0.0","0.0"
+"gpt2","29","Although the storm damaged the pier, the lighthouse remained powered.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The lighthouse was a very important thing was a very important thing was a very important thing was a very important thing was","0.0","0.0","0.0","2.150426553271245e-06","2020.0","0.03868056833744049","5.0","0.0","1.0"
+"gpt2","29","Although the storm damaged the pier, the lighthouse remained powered.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first time:
+
+The first time:
+
+The first time:
+
+The first time:","0.0","0.0","0.0","2.994531678268686e-05","2868.0","0.0042321933433413506","19.0","0.0","0.0"
+"gpt2","29","Although the storm damaged the pier, the lighthouse remained powered.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","8.80892330314964e-05","1529.0","0.00016080704517662525","684.0","0.0","0.0"
+"gpt2","29","Although the storm damaged the pier, the lighthouse remained powered.","same_sentence","question","2","random_norm","0.75","","The lighthouse was built in 1859, and was named for the first of the year of the year of the year","0.0","0.0","0.0","1.5494649687752826e-06","54.0","5.303192665451206e-05","54.0","0.0","0.0"
+"gpt2","29","Although the storm damaged the pier, the lighthouse remained powered.","same_sentence","question","2","negative_target_delta","0.75","","The lighthouse was rebuilt in 1894.
+
+The lighthouse was named after the lighthouse keeper, who was a member","0.0","0.0","0.0","1.4178652918417356e-06","96.0","6.345497240545228e-05","34.0","0.0","0.0"
+"gpt2","30","The finance report was delivered to Building 4 by courier.","same_sentence","question","2","none","0.75","","The report was delivered to Building 4 by courier. The report was delivered to Building 4 by courier. The report was","0.0","1.0","0.0","1.1070659411416273e-06","151.0","7.017153984634206e-05","142.0","0.0","0.0"
+"gpt2","30","The finance report was delivered to Building 4 by courier.","same_sentence","question","2","target_delta","0.75","","The report was delivered to the building by courier.
+
+The building by courier?
+
+The answer is no","1.0","1.0","1.0","7.309812417588546e-07","223.0","0.6652445197105408","1.0","1.0","1.0"
+"gpt2","30","The finance report was delivered to Building 4 by courier.","same_sentence","question","2","shuffled_pair_delta","0.75","","The report was delivered to Building 4 by courier.
+
+The report was delivered to Building 4 by courier?","1.0","1.0","1.0","1.1448469194874633e-06","142.0","0.32677018642425537","1.0","1.0","1.0"
+"gpt2","30","The finance report was delivered to Building 4 by courier.","same_sentence","question","2","target_token_embedding_raw","0.75","question","The report was delivered to Building 4 by courier. The report was delivered to Building 4 by courier. The report was","0.0","1.0","0.0","9.651953405409586e-07","189.0","8.345669630216435e-05","120.0","0.0","0.0"
+"gpt2","30","The finance report was delivered to Building 4 by courier.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The report was delivered to the building by the building by the building by the building by the building by the building by","0.0","0.0","0.0","5.7325235047756e-07","2127.0","0.10775241255760193","2.0","0.0","1.0"
+"gpt2","30","The finance report was delivered to Building 4 by courier.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first time:
+
+The first time:
+
+The first time:
+
+The first time:","0.0","0.0","0.0","3.279214433860034e-05","2780.0","0.004233853425830603","20.0","0.0","0.0"
+"gpt2","30","The finance report was delivered to Building 4 by courier.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","0.00011011204333044589","1269.0","0.0001672912621870637","678.0","0.0","0.0"
+"gpt2","30","The finance report was delivered to Building 4 by courier.","same_sentence","question","2","random_norm","0.75","","The report was delivered to Building 4 by courier.
+
+The report was delivered to Building 4 by courier.","0.0","1.0","0.0","1.0945929034278379e-06","211.0","0.0001329620135948062","27.0","0.0","0.0"
+"gpt2","30","The finance report was delivered to Building 4 by courier.","same_sentence","question","2","negative_target_delta","0.75","","The report was delivered to the Department of Finance and the Department of the Treasury.
+
+The report was delivered to","0.0","0.0","0.0","9.838848882282036e-07","220.0","3.340321927680634e-05","37.0","0.0","0.0"
+"gpt2","31","When the compressor restarted, the pressure gauge returned to baseline.","same_sentence","question","2","none","0.75","","The compressor was then restarted again.
+
+The compressor was then restarted again.
+
+The compressor was","0.0","0.0","0.0","6.854787102383852e-07","296.0","8.895653445506468e-05","24.0","0.0","0.0"
+"gpt2","31","When the compressor restarted, the pressure gauge returned to baseline.","same_sentence","question","2","target_delta","0.75","","The compressor was still working.
+
+The compressor was still working?
+
+The compressor was still working?","1.0","0.0","0.0","1.5979803720256314e-06","75.0","0.8561941981315613","1.0","1.0","1.0"
+"gpt2","31","When the compressor restarted, the pressure gauge returned to baseline.","same_sentence","question","2","shuffled_pair_delta","0.75","","The compressor was not working.
+
+The compressor was not working!
+
+The compressor was not working!","0.0","0.0","0.0","9.616089755581925e-07","166.0","0.028555192053318024","3.0","0.0","1.0"
+"gpt2","31","When the compressor restarted, the pressure gauge returned to baseline.","same_sentence","question","2","target_token_embedding_raw","0.75","question","The compressor was then restarted again.
+
+The compressor was then restarted again.
+
+The compressor was","0.0","0.0","0.0","6.746591907358379e-07","316.0","0.00014058391388971359","24.0","0.0","0.0"
+"gpt2","31","When the compressor restarted, the pressure gauge returned to baseline.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The first time you saw the first time you saw the first time you saw the first time you saw the first time","0.0","0.0","0.0","6.376524765983049e-07","1517.0","0.0798056498169899","2.0","0.0","1.0"
+"gpt2","31","When the compressor restarted, the pressure gauge returned to baseline.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first time:
+
+The first time:
+
+The first time:
+
+The first time:","0.0","0.0","0.0","3.86858700949233e-05","2563.0","0.0042915986850857735","20.0","0.0","0.0"
+"gpt2","31","When the compressor restarted, the pressure gauge returned to baseline.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","7.076105248415843e-05","1853.0","0.00013957325427327305","739.0","0.0","0.0"
+"gpt2","31","When the compressor restarted, the pressure gauge returned to baseline.","same_sentence","question","2","random_norm","0.75","","The compressor was not working properly.
+
+The compressor was not working properly.
+
+The compressor was not working","0.0","0.0","0.0","1.0711763707149657e-06","77.0","0.0018731659511104226","23.0","0.0","0.0"
+"gpt2","31","When the compressor restarted, the pressure gauge returned to baseline.","same_sentence","question","2","negative_target_delta","0.75","","The compressor was then removed from the compressor and the compressor was replaced with a new compressor.
+
+The compressor was","0.0","0.0","0.0","5.765155606241024e-07","293.0","2.2031917978893034e-05","34.0","0.0","0.0"
+"gpt2","32","The research assistant labeled nine folders before lunch.","same_sentence","question","2","none","0.75","","""I'm not sure if it's because I'm a little bit of a nerd or if I'm just a","0.0","0.0","0.0","1.4442158544625272e-06","138.0","0.000759152986574918","51.0","0.0","0.0"
+"gpt2","32","The research assistant labeled nine folders before lunch.","same_sentence","question","2","target_delta","0.75","","""I'm not sure if I should be able to say 'yes' to the question,"" she said.","0.0","0.0","0.0","1.5121329397516092e-06","118.0","0.012350307777523994","13.0","0.0","0.0"
+"gpt2","32","The research assistant labeled nine folders before lunch.","same_sentence","question","2","shuffled_pair_delta","0.75","","""I'm not sure if it's a folder or a folder,"" she said.
+
+""I'm not","0.0","0.0","0.0","1.0927876701316563e-06","158.0","0.019437119364738464","11.0","0.0","0.0"
+"gpt2","32","The research assistant labeled nine folders before lunch.","same_sentence","question","2","target_token_embedding_raw","0.75","question","""I'm not sure if it's a coincidence or not,"" she said. ""I'm not sure if it","0.0","0.0","0.0","1.4069423741602805e-06","142.0","0.0008934659999795258","38.0","0.0","0.0"
+"gpt2","32","The research assistant labeled nine folders before lunch.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","""I'm not going to be able to do anything?""
+
+""I'm not going to be able to","1.0","0.0","0.0","8.10219717095606e-07","944.0","0.0993155986070633","2.0","0.0","1.0"
+"gpt2","32","The research assistant labeled nine folders before lunch.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","""I don't know what I do. I don't know what I do. I don't know what I do","0.0","0.0","0.0","5.319017873262055e-05","2390.0","0.004653834272176027","30.0","0.0","0.0"
+"gpt2","32","The research assistant labeled nine folders before lunch.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the ""The the "" the "" the "" the "" the "" the "" the "" the "" the "" the","0.0","0.0","0.0","0.0002089041081489995","623.0","0.0003815767413470894","242.0","0.0","0.0"
+"gpt2","32","The research assistant labeled nine folders before lunch.","same_sentence","question","2","random_norm","0.75","","""I'm going to have a dinner with you,"" she said.
+
+""I'm going to have a","0.0","0.0","0.0","1.7684244539850624e-06","120.0","0.0025065471418201923","30.0","0.0","0.0"
+"gpt2","32","The research assistant labeled nine folders before lunch.","same_sentence","question","2","negative_target_delta","0.75","","""I'm not sure what the name of the folder is, but I'm sure it's a folder on the","0.0","0.0","0.0","1.326106712440378e-06","113.0","0.0006446460029110312","61.0","0.0","0.0"
+"gpt2","33","Because the network queue filled, the batch job paused automatically.","same_sentence","question","2","none","0.75","","The next time you run the batch job, you'll see the following message:
+
+The batch job is now","0.0","0.0","0.0","6.586413405784697e-07","262.0","8.010382589418441e-05","23.0","0.0","0.0"
+"gpt2","33","Because the network queue filled, the batch job paused automatically.","same_sentence","question","2","target_delta","0.75","","The problem is that the queue was not created by the client.
+
+The client was not created by the queue","0.0","0.0","0.0","2.640590537339449e-06","58.0","0.03938494250178337","3.0","0.0","1.0"
+"gpt2","33","Because the network queue filled, the batch job paused automatically.","same_sentence","question","2","shuffled_pair_delta","0.75","","The problem is that the queue was not created.
+
+The queue was created by the client.
+
+The","0.0","0.0","0.0","9.411681389792648e-07","164.0","0.01639796979725361","7.0","0.0","0.0"
+"gpt2","33","Because the network queue filled, the batch job paused automatically.","same_sentence","question","2","target_token_embedding_raw","0.75","question","The next time you run the batch job, you'll see the following message:
+
+The batch job is now","0.0","0.0","0.0","6.54860400572943e-07","278.0","0.00010089096758747473","23.0","0.0","0.0"
+"gpt2","33","Because the network queue filled, the batch job paused automatically.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The next time you're not going to be a little bit of a little bit of a little bit of a little","0.0","0.0","0.0","1.1057285291826702e-06","1177.0","0.11881144344806671","2.0","0.0","1.0"
+"gpt2","33","Because the network queue filled, the batch job paused automatically.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first time:
+
+The first time:
+
+The first time:
+
+The first time:","0.0","0.0","0.0","4.804536365554668e-05","1785.0","0.005038994364440441","22.0","0.0","0.0"
+"gpt2","33","Because the network queue filled, the batch job paused automatically.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","8.671788964420557e-05","1623.0","0.00017321071936748922","585.0","0.0","0.0"
+"gpt2","33","Because the network queue filled, the batch job paused automatically.","same_sentence","question","2","random_norm","0.75","","The following example shows how to use the queue to queue to queue to queue to queue to queue to queue to queue","0.0","0.0","0.0","8.981613746072981e-07","109.0","0.00015056037227623165","109.0","0.0","0.0"
+"gpt2","33","Because the network queue filled, the batch job paused automatically.","same_sentence","question","2","negative_target_delta","0.75","","The next step was to create a new batch job.
+
+The next step was to create a new batch job","0.0","0.0","0.0","7.833592121642141e-07","159.0","0.000590984825976193","42.0","0.0","0.0"
+"gpt2","34","The manuscript was scanned by a volunteer in Tallinn.","same_sentence","question","2","none","0.75","","The manuscript was also scanned by a volunteer in Tallinn.
+
+The manuscript was scanned by a volunteer in Tall","0.0","1.0","0.0","1.7784723240765743e-06","110.0","2.6403824449516833e-05","27.0","0.0","0.0"
+"gpt2","34","The manuscript was scanned by a volunteer in Tallinn.","same_sentence","question","2","target_delta","0.75","","The manuscript was scanned by a volunteer in Tallinn.
+
+The manuscript was scanned by a volunteer in Tallinn","0.0","1.0","0.0","6.566915544681251e-07","443.0","0.043033938854932785","2.0","0.0","1.0"
+"gpt2","34","The manuscript was scanned by a volunteer in Tallinn.","same_sentence","question","2","shuffled_pair_delta","0.75","","The manuscript was scanned by a volunteer in Tallinn.
+
+The manuscript was scanned by a volunteer in Tallinn","0.0","1.0","0.0","1.3042488262726692e-06","221.0","0.001278373645618558","4.0","0.0","1.0"
+"gpt2","34","The manuscript was scanned by a volunteer in Tallinn.","same_sentence","question","2","target_token_embedding_raw","0.75","question","The manuscript was also scanned by a volunteer in Tallinn.
+
+The manuscript was scanned by a volunteer in Tall","0.0","1.0","0.0","1.7994692598222173e-06","115.0","3.109963654424064e-05","27.0","0.0","0.0"
+"gpt2","34","The manuscript was scanned by a volunteer in Tallinn.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The first time you see the first time you see the first time you see the first time you see the first time","0.0","0.0","0.0","1.9343676740390947e-06","1378.0","0.05707627162337303","2.0","0.0","1.0"
+"gpt2","34","The manuscript was scanned by a volunteer in Tallinn.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first time:
+
+The first time:
+
+The first time:
+
+The first time:","0.0","0.0","0.0","3.666246993816458e-05","3016.0","0.0043908762745559216","18.0","0.0","0.0"
+"gpt2","34","The manuscript was scanned by a volunteer in Tallinn.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","7.213273056549951e-05","1796.0","0.0001301358570344746","866.0","0.0","0.0"
+"gpt2","34","The manuscript was scanned by a volunteer in Tallinn.","same_sentence","question","2","random_norm","0.75","","The authors have published their findings in the journal Science.
+
+The authors say that the study is important for the","0.0","0.0","0.0","2.044767370534828e-06","64.0","4.155857095611282e-05","31.0","0.0","0.0"
+"gpt2","34","The manuscript was scanned by a volunteer in Tallinn.","same_sentence","question","2","negative_target_delta","0.75","","The manuscript was accepted for publication in the journal Nature.
+
+This work was supported by the National Science Foundation,","0.0","0.0","0.0","8.003995048966317e-07","185.0","3.504986671032384e-05","30.0","0.0","0.0"
+"gpt2","35","After the rehearsal, Sofia checked the metronome settings.","same_sentence","question","2","none","0.75","","""I'm not sure if I'm going to be able to do it,"" she said. ""I'm not","0.0","0.0","0.0","2.8278731178943417e-07","776.0","0.0007890859851613641","82.0","0.0","0.0"
+"gpt2","35","After the rehearsal, Sofia checked the metronome settings.","same_sentence","question","2","target_delta","0.75","","""I'm not sure,"" she said.
+
+""I'm not sure,"" she said?
+
+""","1.0","0.0","0.0","2.5676746417957474e-07","503.0","0.46092402935028076","1.0","1.0","1.0"
+"gpt2","35","After the rehearsal, Sofia checked the metronome settings.","same_sentence","question","2","shuffled_pair_delta","0.75","","""I'm not sure if I should be able to do this,"" she said.
+
+""I'm not","0.0","0.0","0.0","2.649384214237216e-07","1081.0","0.008464978076517582","21.0","0.0","0.0"
+"gpt2","35","After the rehearsal, Sofia checked the metronome settings.","same_sentence","question","2","target_token_embedding_raw","0.75","question","""I'm not sure if I'm going to be able to do it,"" she said. ""I'm not","0.0","0.0","0.0","2.724678722643148e-07","805.0","0.0011923796264454722","75.0","0.0","0.0"
+"gpt2","35","After the rehearsal, Sofia checked the metronome settings.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","""I was so excited,"" she said. ""I was so excited.""
+
+""I was so excited?""","1.0","0.0","0.0","5.172355486138258e-06","1124.0","0.07208488136529922","5.0","0.0","1.0"
+"gpt2","35","After the rehearsal, Sofia checked the metronome settings.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first time:
+
+The first time:
+
+The first time:
+
+The first time:","0.0","0.0","0.0","4.7560344683006406e-05","2440.0","0.008238174021244049","16.0","0.0","0.0"
+"gpt2","35","After the rehearsal, Sofia checked the metronome settings.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","9.758467058418319e-05","1410.0","0.00018153116980101913","609.0","0.0","0.0"
+"gpt2","35","After the rehearsal, Sofia checked the metronome settings.","same_sentence","question","2","random_norm","0.75","","""I'm not sure what I'm doing,"" she said.
+
+""I'm not sure what I'm","0.0","0.0","0.0","8.558477020415012e-07","188.0","0.002126133069396019","29.0","0.0","0.0"
+"gpt2","35","After the rehearsal, Sofia checked the metronome settings.","same_sentence","question","2","negative_target_delta","0.75","","""I'm not sure what I'm doing, but I'm sure I'm going to do it,"" she said","0.0","0.0","0.0","7.965293775669124e-07","274.0","0.0003539938770700246","96.0","0.0","0.0"
+"gpt2","36","The warehouse shipped 31 replacement batteries to Lisbon.","same_sentence","question","2","none","0.75","","The company said it had received a total of 1,000 orders for the batteries.
+
+The company said it","0.0","0.0","0.0","1.2890973266621586e-06","179.0","3.3639669709373266e-05","33.0","0.0","0.0"
+"gpt2","36","The warehouse shipped 31 replacement batteries to Lisbon.","same_sentence","question","2","target_delta","0.75","","The company is not the only one.
+
+The company is not the only one?
+
+The company is","1.0","0.0","0.0","7.498134664274403e-07","350.0","0.9704058170318604","1.0","1.0","1.0"
+"gpt2","36","The warehouse shipped 31 replacement batteries to Lisbon.","same_sentence","question","2","shuffled_pair_delta","0.75","","The company said it had received a total of 1,000 orders.
+
+The company said it had received a","0.0","0.0","0.0","6.148828219920688e-07","564.0","0.0005582920275628567","24.0","0.0","0.0"
+"gpt2","36","The warehouse shipped 31 replacement batteries to Lisbon.","same_sentence","question","2","target_token_embedding_raw","0.75","question","The company said it had received a shipment of batteries from the Netherlands.
+
+The batteries were shipped to the Netherlands","0.0","0.0","0.0","1.2626671832549619e-06","209.0","7.606119470437989e-05","33.0","0.0","0.0"
+"gpt2","36","The warehouse shipped 31 replacement batteries to Lisbon.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The first thing you do is is is is is is is is is is is is is is is is is is","0.0","0.0","0.0","4.92699837195687e-06","1472.0","0.0608460009098053","3.0","0.0","1.0"
+"gpt2","36","The warehouse shipped 31 replacement batteries to Lisbon.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first time:
+
+The first time:
+
+The first time:
+
+The first time:","0.0","0.0","0.0","4.7274264943553135e-05","2548.0","0.004996044561266899","17.0","0.0","0.0"
+"gpt2","36","The warehouse shipped 31 replacement batteries to Lisbon.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","0.00010738285345723853","1334.0","0.00013008323730900884","898.0","0.0","0.0"
+"gpt2","36","The warehouse shipped 31 replacement batteries to Lisbon.","same_sentence","question","2","random_norm","0.75","","The company said it will be able to sell the batteries to the European Union.
+
+The company said it will","0.0","0.0","0.0","1.1369276080586133e-06","244.0","4.384656131151132e-05","33.0","0.0","0.0"
+"gpt2","36","The warehouse shipped 31 replacement batteries to Lisbon.","same_sentence","question","2","negative_target_delta","0.75","","The company said it had received more than 100,000 orders for the batteries.
+
+The company said it had","0.0","0.0","0.0","1.0033136277343147e-06","272.0","2.4946901248767972e-05","48.0","0.0","0.0"
+"gpt2","37","When the freezer door opened, the sample tags stayed readable.","same_sentence","question","2","none","0.75","","The freezer door was closed, but the sample tags were still readable.
+
+The freezer door was closed, but","0.0","1.0","0.0","6.932620522093202e-07","324.0","0.0005727126845158637","29.0","0.0","0.0"
+"gpt2","37","When the freezer door opened, the sample tags stayed readable.","same_sentence","question","2","target_delta","0.75","","The freezer door was not closed.
+
+The freezer door was closed?
+
+The freezer door was closed?","1.0","0.0","0.0","1.0813777180374018e-06","216.0","0.6484331488609314","1.0","1.0","1.0"
+"gpt2","37","When the freezer door opened, the sample tags stayed readable.","same_sentence","question","2","shuffled_pair_delta","0.75","","The freezer door was opened by the same person who opened it.
+
+The freezer door was opened by the same","0.0","0.0","0.0","2.786463539905526e-07","827.0","0.020134862512350082","6.0","0.0","0.0"
+"gpt2","37","When the freezer door opened, the sample tags stayed readable.","same_sentence","question","2","target_token_embedding_raw","0.75","question","The freezer door was closed, but the sample tags were still readable.
+
+The freezer door was closed, but","0.0","1.0","0.0","6.312056370916252e-07","362.0","0.0009255042532458901","27.0","0.0","0.0"
+"gpt2","37","When the freezer door opened, the sample tags stayed readable.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The first time I was going to be a little bit of a little bit of a little bit of a little bit","0.0","0.0","0.0","5.519345904758666e-07","1417.0","0.05552675947546959","2.0","0.0","1.0"
+"gpt2","37","When the freezer door opened, the sample tags stayed readable.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first time:
+
+The first time:
+
+The first time:
+
+The first time:","0.0","0.0","0.0","4.822601840714924e-05","2080.0","0.005624808371067047","17.0","0.0","0.0"
+"gpt2","37","When the freezer door opened, the sample tags stayed readable.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","0.00016052075079642236","772.0","0.00020209539798088372","497.0","0.0","0.0"
+"gpt2","37","When the freezer door opened, the sample tags stayed readable.","same_sentence","question","2","random_norm","0.75","","""I was surprised to find that the sample tags were not present in the freezer,"" said Dr. Michael J.","0.0","0.0","0.0","1.2285738648643019e-06","135.0","0.00015045690815895796","106.0","0.0","0.0"
+"gpt2","37","When the freezer door opened, the sample tags stayed readable.","same_sentence","question","2","negative_target_delta","0.75","","The next day, the lab technician took a sample of the sample and sent it to the lab for analysis.","0.0","0.0","0.0","5.646672889270121e-07","272.0","0.00022257449745666236","66.0","0.0","0.0"
+"gpt2","38","The council approved the transport plan in July 2026.","same_sentence","question","2","none","0.75","","The council also approved a new plan for the city's new rail network, which will include a new station at the","0.0","0.0","0.0","9.51297522533423e-07","127.0","1.922674709931016e-05","127.0","0.0","0.0"
+"gpt2","38","The council approved the transport plan in July 2026.","same_sentence","question","2","target_delta","0.75","","The council also approved the plan for the first time in the 1990s.
+
+The council has not yet approved","0.0","0.0","0.0","8.758920557738747e-07","157.0","0.0040757739916443825","24.0","0.0","0.0"
+"gpt2","38","The council approved the transport plan in July 2026.","same_sentence","question","2","shuffled_pair_delta","0.75","","The council also approved the plan for the next three years.
+
+The council also approved the plan for the next","0.0","0.0","0.0","1.090066348297114e-06","125.0","0.0003619480994530022","25.0","0.0","0.0"
+"gpt2","38","The council approved the transport plan in July 2026.","same_sentence","question","2","target_token_embedding_raw","0.75","question","The council also approved a new plan for the city's new rail network, which will include a new station at the","0.0","0.0","0.0","9.704084504846833e-07","131.0","2.259923712699674e-05","131.0","0.0","0.0"
+"gpt2","38","The council approved the transport plan in July 2026.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The council approved the plan in July 2026.
+
+The council approved the plan in July 2026.","0.0","1.0","0.0","2.73474654477468e-07","1512.0","0.11790893971920013","2.0","0.0","1.0"
+"gpt2","38","The council approved the transport plan in July 2026.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The city of the city of the city of the city of the city of the city of the city of the city of","0.0","0.0","0.0","1.807812623155769e-05","3293.0","0.0013145856792107224","28.0","0.0","0.0"
+"gpt2","38","The council approved the transport plan in July 2026.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","6.699843652313575e-05","1838.0","0.00012686295667663217","1003.0","0.0","0.0"
+"gpt2","38","The council approved the transport plan in July 2026.","same_sentence","question","2","random_norm","0.75","","The council also approved the construction of the new railway line, which will be completed by the end of the year 2020","0.0","0.0","0.0","1.1807647979367175e-06","99.0","3.215044489479624e-05","99.0","0.0","0.0"
+"gpt2","38","The council approved the transport plan in July 2026.","same_sentence","question","2","negative_target_delta","0.75","","The council also approved the plan in November of that year.
+
+The council also approved the plan in December of","0.0","0.0","0.0","9.50913261021924e-07","102.0","1.643048926780466e-05","39.0","0.0","0.0"
+"gpt2","39","Although the browser crashed, the form preserved the draft.","same_sentence","question","2","none","0.75","","The browser also crashed when the user clicked on a link.
+
+The browser also crashed when the user clicked on","0.0","0.0","0.0","8.161075584212085e-07","81.0","0.000100877667136956","28.0","0.0","0.0"
+"gpt2","39","Although the browser crashed, the form preserved the draft.","same_sentence","question","2","target_delta","0.75","","The browser was not the only one that crashed.
+
+The browser was not the only one that crashed?","1.0","0.0","0.0","1.7549509720993228e-06","61.0","0.9537745118141174","1.0","1.0","1.0"
+"gpt2","39","Although the browser crashed, the form preserved the draft.","same_sentence","question","2","shuffled_pair_delta","0.75","","The browser did not crash.
+
+The browser did not crash!
+
+The browser did not crash!","0.0","0.0","0.0","7.61119224534923e-07","125.0","0.08580489456653595","2.0","0.0","1.0"
+"gpt2","39","Although the browser crashed, the form preserved the draft.","same_sentence","question","2","target_token_embedding_raw","0.75","question","The browser also crashed when the user clicked on a link.
+
+The browser also crashed when the user clicked on","0.0","0.0","0.0","8.394765131924942e-07","83.0","0.00013711524661630392","28.0","0.0","0.0"
+"gpt2","39","Although the browser crashed, the form preserved the draft.","same_sentence","question","2","target_token_embedding_normmatched","0.75","question","The browser crashed?
+
+The browser crashed?
+
+The browser crashed?
+
+The browser crashed?","1.0","0.0","0.0","7.762891414131445e-07","1024.0","0.9323738813400269","1.0","1.0","1.0"
+"gpt2","39","Although the browser crashed, the form preserved the draft.","same_sentence","question","2","other_punctuation_normmatched","0.75","semicolon","The first time:
+
+The first time:
+
+The first time:
+
+The first time:","0.0","0.0","0.0","4.827268639928661e-05","2407.0","0.0037906120996922255","21.0","0.0","0.0"
+"gpt2","39","Although the browser crashed, the form preserved the draft.","same_sentence","question","2","random_word_normmatched","0.75","random_word","The the the the the the the the the the the the the the the the the the the the the the the the","0.0","0.0","0.0","0.0001049414713634178","1305.0","0.0001330137311015278","801.0","0.0","0.0"
+"gpt2","39","Although the browser crashed, the form preserved the draft.","same_sentence","question","2","random_norm","0.75","","The browser was able to recover the draft, but the document was not saved.
+
+The document was not saved","0.0","0.0","0.0","7.776977213325154e-07","56.0","0.0002380292135057971","31.0","0.0","0.0"
+"gpt2","39","Although the browser crashed, the form preserved the draft.","same_sentence","question","2","negative_target_delta","0.75","","The browser then re-enabled the draft, and the browser returned to the browser.
+
+The browser then re","0.0","0.0","0.0","7.442790206368954e-07","103.0","5.4730222473153844e-05","33.0","0.0","0.0"

@@ -46,23 +46,23 @@ delta = embedding(transformed sentence) - embedding(source sentence)
 
 Then we test whether these deltas behave like meaningful transformation objects rather than arbitrary differences between two sentences.
 
-GLT-STEER goes one step further. Instead of only measuring these differences, it injects transformation vectors into the hidden activations of a generative model and tests whether they causally change the model's output.
+GLT-STEER goes one step further. Instead of only measuring these differences, it injects mean hidden-state directions into the hidden activations of a generative model and tests whether they causally change the model's output.
 
 The next research line, GLT-BUILD, changes the direction of the project again. Instead of only probing already-trained models, it trains small controlled transformers from scratch on a synthetic language and watches when transformation geometry appears during learning.
 
-So the project asks two separate questions:
+So the project asks three connected questions:
 
 1. Do linguistic transformations leave reusable geometric traces inside a model?
 2. Can those traces be used as interventions that change model behavior?
 3. Can we observe how such traces emerge during training, rather than only after training is finished?
 
-The current answer to the second question is positive but narrow: hidden-state steering can control final surface markers such as `?`, `!`, and `...`, but it has not yet produced reliable semantic or sentence-internal rewriting.
+The current answer to the second question is positive but narrow: activation-space steering can control final surface markers such as `?`, `!`, and `...`, but it has not yet produced reliable semantic or sentence-internal rewriting. A token-direction control also shows that the learned sentence-pair delta is not yet demonstrated to be unique or necessary for question-marker induction.
 
 ### What We Have Found So Far
 
 The current evidence supports a cautious version of the idea:
 
-- GLT-STEER provides the project's first causal behavior-level result: mean hidden-state delta vectors can reliably steer GPT-2 and, more variably, DistilGPT-2 toward final surface markers such as `?`, `!`, and `...`. The effect remains separated from no-steering, wrong-marker, random-norm, negative-vector, and strong-prompt controls.
+- GLT-STEER provides the project's first causal behavior-level result: activation-space directions can steer GPT-2 and, more variably, DistilGPT-2 toward final surface markers such as `?`, `!`, and `...`. The effect remains separated from no-steering, wrong-marker, random-norm, negative-vector, and strong-prompt controls, but a norm-matched embedding of `?` reproduces the learned question-delta rate in a direct specificity audit.
 - This result is narrow: it supports activation-space control of final output form, not semantic editing. When the desired marker is already known, deterministic string appending remains perfect and practically superior.
 - Sentence-pair deltas often contain information about the **type of transformation**.
 - In the main full-semantic experiments, deltas beat target-only baselines across several models under Linear SVC probes.
@@ -78,6 +78,7 @@ This repository does not claim:
 - that transformer embeddings contain a complete linguistic algebra;
 - that GLT-STEER performs reliable semantic sentence transformation;
 - that activation steering is a practical replacement for deterministic text editing when the desired surface marker is already known;
+- that a learned sentence-pair delta is uniquely responsible for final-marker induction, or that it outperforms a norm-matched target-token embedding;
 - that the reported effects are independent of endpoint wording;
 - that syntax-holdout `1.0` results prove deep generalization;
 - that antisymmetry checks are scientific evidence;
@@ -94,7 +95,7 @@ It shows a simple behavior-level result:
 
 ```text
 Without steering: GPT-2 repeats a statement.
-With a question-transformation vector: GPT-2 starts producing question marks.
+With a final-marker steering direction: GPT-2 starts producing question marks.
 With random or wrong-class vectors: the question-mark effect does not appear.
 ```
 
@@ -110,13 +111,13 @@ This command does not download models or rerun the experiment. It reads the arch
 results/experiments/gpt2_question_activation_steering_focused_20260714_results/
 ```
 
-Headline result:
+Historical tuned demonstration:
 
 > **Scope note:** The following numbers come from the original tuned demonstration. Later fixed-parameter confirmatory and runtime-applicability audits provide more conservative estimates and define the current scope of the claim. The demonstrated effect is final-marker form steering, not semantic sentence editing.
 
 | condition | question mark rate |
 |---|---:|
-| target question vector | `0.9350` |
+| target final-marker direction | `0.9350` |
 | random-norm control | `0.0000` |
 | wrong-class control | `0.0000` |
 | negative-target control | `0.0000` |
@@ -125,7 +126,7 @@ Stronger copy-prompt preservation result:
 
 | condition | question-and-preserved rate |
 |---|---:|
-| target question vector, copy-like prompts | up to `0.9750` |
+| target final-marker direction, copy-like prompts | up to `0.9750` |
 | wrong-vector / no-steering controls | `0.0000` in the matched headline rows |
 
 Prompt-only control:
@@ -133,6 +134,16 @@ Prompt-only control:
 | condition | question mark rate |
 |---|---:|
 | copy-like prompts without steering, GPT-2 + DistilGPT-2 | `0.0000` across `960` no-steering rows |
+
+Current fixed-parameter confirmatory headline:
+
+| model | marker | target marker rate | target marker+preserved | source-cluster 95% CI for target marker |
+|---|---|---:|---:|---:|
+| GPT-2 | `?` | `0.6562` | `0.2396` | `[0.5556, 0.7501]` |
+| GPT-2 | `!` | `0.6875` | `0.3958` | `[0.5764, 0.7882]` |
+| GPT-2 | `...` | `0.8438` | `0.3854` | `[0.7604, 0.9132]` |
+
+The confirmatory rows contain repeated prompt-style and layer measurements for each of `48` sentence sources. The source-cluster bootstrap therefore treats `source_id`, not every generated row, as the independent resampling unit. The intervals are descriptive and do not remove the synthetic-template limitation.
 
 Full notes:
 
@@ -146,7 +157,7 @@ Full notes:
 
 Safe interpretation:
 
-> This is evidence that a question-transformation activation vector can steer GPT-2 toward question-like output form. It is not evidence that semantic editing is solved, and it is not proof of a complete linguistic algebra.
+> This is evidence that an activation-space direction can steer GPT-2 toward question-like output form. The token-direction audit shows that the learned delta is not yet unique to this behavior. It is not evidence that semantic editing is solved, and it is not proof of a complete linguistic algebra.
 
 Practical applicability boundary:
 
@@ -160,18 +171,18 @@ GLT is organized by current publication priority. Track 1 / GLT-STEER is the act
 
 Question:
 
-> Can transformation vectors do behavior-level work inside a generative model?
+> Can activation-space directions do behavior-level work inside a generative model?
 
 Main evidence:
 
-- Central GLT-STEER interpretation: **final-position surface markers** such as `?`, `!`, and `...` are reliably steerable in GPT-2 using mean hidden-state delta vectors, while lexical or sentence-internal transformations such as negation and modality do not work under the same recipe.
+- Central GLT-STEER interpretation: **final-position surface markers** such as `?`, `!`, and `...` are steerable in GPT-2 using activation-space directions, while lexical or sentence-internal transformations such as negation and modality do not work under the same recipe. A norm-matched target-token embedding can reproduce the question-delta rate, so the current evidence does not establish that the learned delta is uniquely linguistic.
 - A broad GPT-2/DistilGPT-2 pilot found that question steering was the clearest target for a focused rerun.
 - The focused GPT-2 question-steering run completed `6800` generations with no failures.
 - At layer `2`, gain `0.75`, target question steering produced question marks in `93.75%` of generations.
 - Across all tested layers at gain `0.75`, target question steering produced question marks in `93.50%` of generations.
 - Random-norm, wrong-class, and negative-target controls produced `0.00%` question marks in the aggregate control summary.
 - A follow-up control found no-steering question-mark base rate `0.0000` for both in-template and out-of-template prompts.
-- The same question vector transferred to 40 freeform out-of-template declarative sentences, producing question marks at rate `0.8375` while all compact controls stayed at `0.0000`.
+- The same question-marker direction transferred to 40 freeform out-of-template declarative sentences, producing question marks at rate `0.8375` while all compact controls stayed at `0.0000`.
 - Prompt robustness controls show that the effect survives four prompt styles, with target question-mark rate `0.7750-0.9875` in-template and `0.8125-0.9250` out-of-template.
 - Content-preservation audits show that prompt wording matters: copy-like prompts preserve source content while adding question form much better than bare or quoted prompts.
 - Under copy-like prompts, target question steering reaches high question-and-preserved rates: `0.9625-0.9750` in-template and `0.8250-0.9000` out-of-template for `repeat_sentence`, `same_sentence`, and `copy_sentence`.
@@ -193,11 +204,12 @@ Main evidence:
 - A direct DistilGPT-2 layer/gain sweep shows that the weak aggregate replication was parameter-sensitive rather than a hard failure. At `gain=1.0`, layer `2`, `same_sentence` prompts reach question-and-preserved rate `0.8250` with matched controls at or below `0.0500`. `gain=1.5` over-steers and collapses preservation.
 - A hard out-of-template DistilGPT-2 audit shows that the tuned setting still induces question marks on structurally diverse sources (`0.725-0.800`, controls `0.0000`), but strict question-and-preserved rates are much lower (`0.025-0.225`, with `copy_sentence=0.025`). This does not replicate GPT-2's preservation result; it is a marker-form result only.
 - A fixed-parameter confirmatory audit reruns question, exclamation, and ellipsis steering on fresh hard-heldout sources without any layer/gain search. Target final-marker rates remain separated from controls: GPT-2 reaches `0.6562-0.8438` across markers with max matched controls at `0.0000`; DistilGPT-2 reaches `0.6319-0.8958` with max matched controls at `0.0139`. Strict marker-plus-content preservation is positive but modest, so this confirms form steering rather than semantic editing.
+- A token-direction specificity audit on `40` held-out sources finds GPT-2 question-marker rates of `0.3750` for the learned target delta and `0.3750` for a norm-matched `?` token embedding, versus `0.0500` for a shuffled-pair delta and `0.0000` for other punctuation, random-word, and random-norm controls. This narrows the mechanism to activation-space output-form steering and prevents a stronger claim that the learned delta is unique.
 - A runtime form-control applicability audit tests the obvious production baseline. Target steering still creates final markers when no-steering, strong-prompt, wrong-marker, random-norm, and negative-vector controls do not, but deterministic `string_append_source` is perfect. This narrows the practical claim: GLT-STEER is an activation-space diagnostic and form-bias intervention, not a better replacement for ordinary string postprocessing when the desired final marker is already known.
 
 Current interpretation:
 
-This is the first behavior-level intervention result in GLT. The current best explanation is the **Final Marker Hypothesis**: mean delta steering works reliably when the transformation can be expressed as a final-position surface marker, and fails or weakens sharply when the transformation requires lexical or sentence-internal rewriting. The best GPT-2 prompt families preserve much of the source content while adding question form, but this is still not a complete semantic-editing system and not proof of a complete linguistic algebra. DistilGPT-2 should be reported as form replication with weak hard-OOT preservation, not as full semantic replication. The runtime applicability audit adds an important boundary: for a known final-marker edit, deterministic postprocessing is stronger than steering, so the current application value is diagnostic and intervention-scientific rather than production text editing.
+This is the first behavior-level intervention result in GLT. The current best explanation is the **Final Marker Hypothesis**: activation-space directions can bias generation toward final-position surface markers, and the effect weakens sharply when the transformation requires lexical or sentence-internal rewriting. The token-direction audit shows that a norm-matched embedding of `?` can reproduce the learned question-delta rate, so the current evidence does not establish a uniquely linguistic transformation vector. The best GPT-2 prompt families preserve some source content while adding question form, but this is still not a complete semantic-editing system and not proof of a complete linguistic algebra. DistilGPT-2 should be reported as form replication with weak hard-OOT preservation, not as full semantic replication. The runtime applicability audit adds an important boundary: for a known final-marker edit, deterministic postprocessing is stronger than steering, so the current application value is diagnostic and intervention-scientific rather than production text editing.
 
 Important result folders:
 
@@ -514,13 +526,17 @@ The repository includes:
 - `CITATION.cff` for GitHub's citation widget.
 - `.zenodo.json` for Zenodo/GitHub release archiving.
 
-Latest Zenodo version DOI:
+Published Zenodo snapshot (`2026.06.24`) DOI:
 
 - [10.5281/zenodo.20829303](https://doi.org/10.5281/zenodo.20829303)
 
 Previous Zenodo version DOI:
 
 - [10.5281/zenodo.20680414](https://doi.org/10.5281/zenodo.20680414)
+
+The current Git revision is prepared as `2026.10.09`. Its Zenodo DOI will be
+added here after the corresponding GitHub release is archived; the June DOI
+above intentionally remains a link to the older snapshot.
 
 Please cite this as a software/research-artifact snapshot, not as a peer-reviewed publication.
 

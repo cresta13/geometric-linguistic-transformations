@@ -1,15 +1,16 @@
-# GLT-STEER: Transformation Vectors as Activation-Space Editors
+# GLT-STEER: Final-Marker Directions as Activation-Space Editors
 
 Status: short draft / intervention paper candidate.
 
 This article candidate collects the behavior-level GLT-STEER results:
 
-- Central claim: final-position surface markers (`?`, `!`, `...`) are reliably steerable via mean hidden-state delta vectors in GPT-2; lexical/sentence-internal transformations are not reliable under the same recipe.
+- Central claim: final-position surface markers (`?`, `!`, `...`) are reliably steerable via mean hidden-state delta directions in GPT-2; lexical/sentence-internal transformations are not reliable under the same recipe.
 - GPT-2 question activation steering with base-rate and prompt controls.
 - Logit-level final-marker audit showing that target steering moves `?`, `!`, and `...` to rank `1` during generation while no-steering marker rates remain `0.0000`.
 - Position-of-intervention audit showing that single prompt-token edits fail, while all-prompt-token editing nearly matches repeated last-token steering.
 - DistilGPT-2 final-marker logit transfer audit showing positive but layer- and marker-dependent transfer.
 - Derived headline CI audit with sample sizes for the main Track 1 / GLT-STEER tables.
+- Source-cluster bootstrap audit treating the sentence source, rather than repeated prompt/layer rows, as the independent unit.
 - Fixed-parameter confirmatory audit for question, exclamation, and ellipsis steering on fresh hard-heldout sources.
 - Copy-prompt content-preservation follow-ups.
 - Hard out-of-template generalization.
@@ -17,6 +18,7 @@ This article candidate collects the behavior-level GLT-STEER results:
 - Non-question boundary results for negation.
 - Final-marker controls for exclamation and ellipsis.
 - First marker-composition steering diagnostic.
+- Token-direction specificity audit showing that a norm-matched `?` embedding reproduces the learned question-delta marker rate.
 
 Drafts:
 
@@ -37,6 +39,8 @@ Primary scripts:
 - `scripts/run_gpt2_marker_composition_steering.py`
 - `scripts/run_glt_steer_confirmatory_fixed_params.py`
 - `scripts/summarize_glt_steer_headline_ci.py`
+- `scripts/run_glt_steer_source_cluster_bootstrap.py`
+- `scripts/run_glt_steer_token_direction_controls.py`
 - `scripts/build_glt_steer_submission_pdf.py`
 
 Primary figures:

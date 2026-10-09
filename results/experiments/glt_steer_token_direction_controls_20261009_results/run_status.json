@@ -1,0 +1,24 @@
+{
+  "status": "finished",
+  "phase": "generating",
+  "model": "gpt2",
+  "layers": [
+    2
+  ],
+  "gain": 0.75,
+  "updated_at": "2026-10-09T15:13:38.521763+03:00",
+  "train_rows": 360,
+  "heldout_sources": 40,
+  "target_class": "question",
+  "layer": 2,
+  "control": "negative_target_delta",
+  "progress_done": 360,
+  "progress_total": 360,
+  "rows": 360,
+  "finished_at": "2026-10-09T15:13:38.505643+03:00",
+  "summary_rows": 9,
+  "raw_csv": "C:\\Users\\Max\\PycharmProjects\\LiVectorsInTransformers\\results\\experiments\\glt_steer_token_direction_controls_20261009_results\\csv\\glt_steer_token_direction_controls_raw.csv",
+  "summary_csv": "C:\\Users\\Max\\PycharmProjects\\LiVectorsInTransformers\\results\\experiments\\glt_steer_token_direction_controls_20261009_results\\csv\\glt_steer_token_direction_controls_summary.csv",
+  "summary_md": "C:\\Users\\Max\\PycharmProjects\\LiVectorsInTransformers\\results\\experiments\\glt_steer_token_direction_controls_20261009_results\\SUMMARY.md",
+  "failures": []
+}

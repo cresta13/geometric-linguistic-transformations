@@ -1,10 +1,10 @@
-# GLT-STEER: Transformation Vectors as Activation-Space Editors
+# GLT-STEER: Final-Marker Directions as Activation-Space Editors
 
 Status: short draft, not peer reviewed.
 
 ## Abstract
 
-This draft tests whether transformation vectors learned from sentence-pair hidden-state differences can be injected back into a generative transformer as activation-space editors. In GPT-2, a question-transformation vector injected into early residual-stream layers reliably induces question-form outputs under matched controls. The strongest copy-prompt setting reaches question-and-preserved rates up to `0.975` on simple held-out sources, while no-steering, random-norm, wrong-class, and negative-vector controls remain at `0.000` in matched headline rows. Hard out-of-template sources preserve the question-marker effect but reduce content preservation. The emerging explanation is the **Final Marker Hypothesis**: final-position surface markers such as `?`, `!`, and `...` are reliably steerable via mean delta vectors, while lexical or sentence-internal transformations such as negation and modality are not under the same recipe. DistilGPT-2 replicates marker-form steering only after layer/gain tuning and does not replicate GPT-2-level hard out-of-template preservation. A first question/exclamation composition test is best interpreted as final-marker competition/saturation rather than noncommutative order structure. A runtime form-control applicability audit further narrows the practical interpretation: steering beats prompt-only and vector controls under the tested protocol, but deterministic string append dominates when the desired final marker is already known.
+This draft tests whether mean hidden-state directions learned from sentence-pair differences can be injected back into a generative transformer as activation-space editors. In GPT-2, a final-marker direction injected into early residual-stream layers reliably induces question-form outputs under matched controls. The strongest copy-prompt setting reaches question-and-preserved rates up to `0.975` on simple held-out sources, while no-steering, random-norm, wrong-class, and negative-vector controls remain at `0.000` in matched headline rows. Hard out-of-template sources preserve the question-marker effect but reduce content preservation. The emerging explanation is the **Final Marker Hypothesis**: final-position surface markers such as `?`, `!`, and `...` are reliably steerable via mean delta directions, while lexical or sentence-internal transformations such as negation and modality are not under the same recipe. DistilGPT-2 replicates marker-form steering only after layer/gain tuning and does not replicate GPT-2-level hard out-of-template preservation. A first question/exclamation composition test is best interpreted as final-marker competition/saturation rather than noncommutative order structure. A runtime form-control applicability audit further narrows the practical interpretation: steering beats prompt-only and vector controls under the tested protocol, but deterministic string append dominates when the desired final marker is already known.
 
 ## 1. Question
 
@@ -51,7 +51,7 @@ The basic intervention hook adds the learned vector to the last token hidden sta
 
 The current GLT-STEER results are best summarized by one bounded claim:
 
-> Final-position surface markers (`?`, `!`, `...`) are reliably steerable in GPT-2 via mean hidden-state delta vectors; lexical or sentence-internal transformations such as negation and modality are not reliably steerable under the same recipe.
+> Final-position surface markers (`?`, `!`, `...`) are steerable in GPT-2 via activation-space directions; lexical or sentence-internal transformations such as negation and modality are not reliably steerable under the same recipe. The learned question delta is not yet shown to be unique relative to a norm-matched `?` token direction.
 
 This is a mechanistic interpretation, not just a list of successes and failures. It explains why question, exclamation, and ellipsis succeed under copy-like prompts, while negation and modality remain weak or negative. It also bounds the claim: GLT-STEER currently supports output-form editing, not general semantic rewriting.
 
@@ -144,6 +144,14 @@ Interpretation:
 
 This audit sharpens the application claim. GLT-STEER is useful as an activation-space diagnostic and form-bias intervention because it changes the model distribution where prompt-only and matched vector controls do not. It is not a better production method for known deterministic final-marker edits, where ordinary string postprocessing is simpler and stronger.
 
+## 2.6 Token-Direction Specificity Control
+
+The new GPT-2 specificity audit tests whether the learned question delta is necessary for the marker effect. On `40` held-out sources at layer `2`, gain `0.75`, and the `same_sentence` prompt, the learned target delta reaches question-marker rate `0.3750`. A shuffled-pair delta reaches `0.0500`; raw `?` embedding, other punctuation, random-word, and random-norm controls reach `0.0000`. A `?` embedding rescaled to the learned delta norm also reaches `0.3750`.
+
+The result narrows the interpretation: the learned delta is more effective than unrelated directions, but it is not distinguishable from a capacity-matched target-token direction in this protocol. GLT-STEER therefore supports activation-space final-marker induction, not a uniquely linguistic question-transformation vector.
+
+Result folder: `results/experiments/glt_steer_token_direction_controls_20261009_results/`.
+
 ## 3. Main Question-Steering Result
 
 The focused GPT-2 question run completed `6800` generations with no failures.
@@ -152,7 +160,7 @@ Key result:
 
 | condition | question mark rate |
 |---|---:|
-| target question vector | `0.9350` |
+| historical tuned target final-marker direction | `0.9350` |
 | random-norm control | `0.0000` |
 | wrong-class control | `0.0000` |
 | negative-target control | `0.0000` |
@@ -401,7 +409,7 @@ CI note: composition rows use `N=40` sources per prompt-style/control row. For t
 
 The defensible current claim is:
 
-> Transformation deltas learned from hidden-state differences can act as activation-space editors for final-position surface markers in GPT-style residual streams, with the cleanest evidence in GPT-2 and marker-dependent transfer to DistilGPT-2. The effect survives no-steering, wrong-vector, negative-vector, random-vector, logit-level, position-of-intervention, and fixed-parameter confirmatory controls. It does not yet extend to lexical or sentence-internal transformations under the same recipe, and it is not a general semantic editing method.
+> Activation-space directions can steer final-position surface markers in GPT-style residual streams, with the cleanest evidence in GPT-2 and marker-dependent transfer to DistilGPT-2. The effect survives no-steering, wrong-vector, negative-vector, random-vector, logit-level, position-of-intervention, and fixed-parameter confirmatory controls. A norm-matched target-token embedding can reproduce the learned question-delta rate, so the current evidence does not establish a uniquely linguistic transformation vector. The effect does not yet extend to lexical or sentence-internal transformations under the same recipe, and it is not a general semantic editing method.
 
 The practical application claim is narrower: for known final-marker edits, deterministic postprocessing beats steering. The value of GLT-STEER is therefore strongest as a causal representation diagnostic and as a possible form-bias intervention when direct string editing is not the object of study.
 

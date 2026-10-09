@@ -23,12 +23,12 @@ GLT-STEER is the clearest current short-paper candidate because it has a behavio
 
 The central claim is intentionally narrow:
 
-> Final-position surface markers (`?`, `!`, `...`) are steerable in GPT-2-style residual streams via mean transformation-delta injection, while the same recipe does not yet support robust lexical or sentence-internal rewriting.
+> Final-position surface markers (`?`, `!`, `...`) are steerable in GPT-2-style residual streams via activation-space direction injection, while the same recipe does not yet support robust lexical or sentence-internal rewriting. The learned question delta is not distinguishable from a norm-matched `?` token direction in the current specificity control.
 
 ### Already addressed
 
 - Focused GPT-2 question steering: target question-mark rate around `0.935`, controls at `0.0000`.
-- Copy-prompt preservation audit: question-and-preserved rate up to `0.9750`, matched no-steering/wrong-vector controls at `0.0000`.
+- Historical tuned copy-prompt demonstration: question-and-preserved rate up to `0.9750`, matched no-steering/wrong-vector controls at `0.0000`; this is not the primary confirmatory headline.
 - Copy-prompt no-steering baseline: GPT-2 and DistilGPT-2 produce `0.0000` question marks across `960` no-steering rows.
 - Hard out-of-template GPT-2 question audit: marker effect survives on structurally diverse sources.
 - DistilGPT-2 replication: marker-form effect survives, but content preservation is weaker and layer/gain sensitive.
@@ -39,9 +39,15 @@ The central claim is intentionally narrow:
 - Marker-composition audit: combined final-marker vectors show competition/saturation, not clean algebraic order structure.
 - Question/modality composition audit: negative for the current modality recipe.
 - Wilson CI audit: headline Track 1 rows now include `N` and 95% confidence intervals.
+- Source-cluster bootstrap audit: fixed-parameter confirmatory uncertainty is now reported over `48` sentence sources rather than treating repeated prompt/layer rows as independent.
+- Token-direction specificity audit: a norm-matched `?` embedding reproduces the learned question-delta marker rate, so the current evidence is final-marker activation steering rather than a uniquely linguistic transformation vector.
 - DistilGPT-2 layer/gain tuning disclosure is now recorded in the diary and Track 1 draft.
 - Fixed-parameter confirmatory audit: question, exclamation, and ellipsis steering remain separated from controls on fresh hard-heldout sources without any layer/gain search inside the run.
 - Runtime form-control applicability audit: steering beats prompt-only and matched vector controls for final-marker induction under the tested protocol, but deterministic `string_append_source` is perfect. This bounds GLT-STEER as a diagnostic/intervention result rather than a replacement for ordinary text postprocessing.
+
+The current short-paper scope is now frozen with this token-direction boundary explicit. A stronger claim about uniquely linguistic transformation vectors requires a future task in which target-token directions are not sufficient.
+
+Deferred follow-ups include a second model family, independent source-level repeats, and a natural-language corpus. These are future generalization studies, not prerequisites for the current bounded artifact.
 
 ### Stopping rule for submission
 

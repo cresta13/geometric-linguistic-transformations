@@ -1,4 +1,4 @@
-# GLT-STEER: Transformation Deltas as Activation-Space Editors for Final Markers
+# GLT-STEER: Final-Marker Directions as Activation-Space Editors
 
 Anna Simakova
 
@@ -6,7 +6,7 @@ Submission draft, 2026-08-25. Not peer reviewed.
 
 ## Abstract
 
-This short draft studies whether linguistic transformation vectors learned from sentence-pair hidden-state differences can be injected back into a generative transformer as activation-space editors. In GPT-2, vectors derived from controlled transformation pairs reliably steer final-position surface markers such as `?`, `!`, and `...` under matched controls. The effect is visible in generated text, next-token marker logits, position-of-intervention audits, and a fixed-parameter confirmatory rerun on fresh hard-heldout sources. The claim is intentionally bounded: current GLT-STEER supports final-marker form steering, not general semantic rewriting and not a Lie-algebra claim.
+This short draft studies whether mean hidden-state directions learned from sentence-pair differences can be injected back into a generative transformer as activation-space editors. In GPT-2, directions derived from controlled final-marker pairs reliably steer surface markers such as `?`, `!`, and `...` under matched controls. The effect is visible in generated text, next-token marker logits, position-of-intervention audits, and a fixed-parameter confirmatory rerun on fresh hard-heldout sources. The claim is intentionally bounded: current GLT-STEER supports final-marker form steering, not general semantic rewriting and not a Lie-algebra claim.
 
 ## 1. Question
 
@@ -28,7 +28,7 @@ This is a causal behavior-level test. It is still a narrow test: adding a final 
 
 The current defensible claim is:
 
-> Transformation deltas learned from hidden-state differences can act as activation-space editors for final-position surface markers in GPT-style residual streams, with the cleanest evidence in GPT-2 and marker-dependent transfer to DistilGPT-2.
+> Activation-space directions can steer final-position surface markers in GPT-style residual streams, with the cleanest evidence in GPT-2 and marker-dependent transfer to DistilGPT-2. The current controls do not establish that a learned sentence-pair delta is unique or necessary for this effect.
 
 The claim is bounded by negative results:
 
@@ -43,7 +43,7 @@ The core recipe is:
 
 1. Build synthetic source/target pairs for a transformation class.
 2. Extract hidden states at selected GPT-style residual blocks.
-3. Compute a centroid transformation vector from training pairs.
+3. Compute a centroid transformation direction from training pairs.
 4. During generation, add the vector to the residual stream.
 5. Compare target steering against no-steering, wrong-marker, random-norm, and negative-vector controls.
 
@@ -59,6 +59,8 @@ Primary scripts:
 - `scripts/run_gpt2_marker_composition_steering.py`
 - `scripts/run_glt_steer_confirmatory_fixed_params.py`
 - `scripts/summarize_glt_steer_headline_ci.py`
+- `scripts/run_glt_steer_source_cluster_bootstrap.py`
+- `scripts/run_glt_steer_token_direction_controls.py`
 
 ## 4. Main Evidence
 
@@ -68,7 +70,7 @@ The focused GPT-2 question run completed `6800` generations with no failures.
 
 | condition | question mark rate |
 |---|---:|
-| target question vector | `0.9350` |
+| historical tuned target final-marker direction | `0.9350` |
 | random-norm control | `0.0000` |
 | wrong-class control | `0.0000` |
 | negative-target control | `0.0000` |
@@ -160,6 +162,22 @@ The confirmatory audit reruns question, exclamation, and ellipsis steering on fr
 Result folder:
 
 - `results/experiments/glt_steer_confirmatory_fixed_params_20260825_results/`
+
+The confirmatory table contains repeated prompt-style and layer measurements for each source. A derived source-cluster bootstrap therefore treats the `48` sentence sources as the independent units rather than treating every generated row as independent. For GPT-2, the marker-rate estimates and percentile 95% cluster intervals are `?=0.6562 [0.5556, 0.7501]`, `!=0.6875 [0.5764, 0.7882]`, and `...=0.8438 [0.7604, 0.9132]`. These intervals are descriptive and do not remove the synthetic-template limitation.
+
+Result folder:
+
+- `results/experiments/glt_steer_source_cluster_bootstrap_20261009_results/`
+
+### 4.7 Token-direction specificity control
+
+A direct GPT-2 control tests whether the question result is specific to the learned sentence-pair delta. On `40` held-out sources at layer `2`, gain `0.75`, and the `same_sentence` prompt, the learned target delta produces a question marker in `0.3750` of rows. A shuffled-pair delta reaches `0.0500`; raw `?` token embedding, other punctuation, random-word, and random-norm controls reach `0.0000`. However, a `?` token embedding rescaled to the norm of the learned delta also reaches `0.3750`.
+
+This is a decisive boundary for interpretation. The learned delta has a stronger effect than the shuffled-pair and unrelated controls, but it is not distinguishable from a capacity-matched target-token direction in this protocol. The result therefore supports activation-space final-marker induction, not a uniquely linguistic question-transformation vector.
+
+Result folder:
+
+- `results/experiments/glt_steer_token_direction_controls_20261009_results/`
 
 ## 5. Boundary Results
 

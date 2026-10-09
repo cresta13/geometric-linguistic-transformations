@@ -1537,3 +1537,41 @@ template without additional training support.
 This result is a useful negative boundary, not a Lie-algebra claim. The raw
 generalization package and the control summary are retained together under
 results/experiments/glt_build_03_template_lexical_generalization_20261009b_results/.
+
+## 2026-10-09: GLT-STEER token-direction specificity audit
+
+The reviewer requested a cheap control for the strongest remaining alternative
+explanation of GLT-STEER: perhaps the learned question delta is only acting as
+an arbitrary output-form direction, or is interchangeable with the embedding
+of the target punctuation token.
+
+The audit fixed GPT-2 at layer 2 and gain 0.75, used the `same_sentence`
+prompt on 40 held-out sources, and compared the learned target delta with a
+shuffled-pair delta, raw and norm-matched token embeddings, other punctuation,
+a random word, a norm-matched random vector, and the negative target delta.
+
+The learned target delta produced a question marker in 0.3750 of rows. The
+shuffled-pair delta produced 0.0500; raw `?` embedding, other punctuation,
+random-word, random-norm, and negative-delta controls produced 0.0000. The
+norm-matched `?` embedding also produced 0.3750 and marker-plus-preserved rate
+0.0750 versus 0.0500 for the learned delta.
+
+This changes the interpretation in an important but bounded way. The effect is
+not reproduced by arbitrary directions, but the learned delta is not
+distinguishable from a capacity-matched target-token direction under this
+protocol. GLT-STEER therefore supports activation-space final-marker
+induction, not a uniquely linguistic question-transformation vector. The
+result is retained as a boundary rather than hidden or converted into a
+stronger claim.
+
+The same review also motivated a source-cluster bootstrap of the fixed-
+parameter confirmatory run. Resampling the 48 sentence sources, while keeping
+prompt styles and layers within each source cluster, gives GPT-2 marker-rate
+intervals of `?=0.6562 [0.5556, 0.7501]`, `!=0.6875 [0.5764, 0.7882]`, and
+`...=0.8438 [0.7604, 0.9132]`. These intervals are more conservative than
+row-level Wilson intervals and do not remove the synthetic-template limitation.
+
+Artifacts:
+
+- `scripts/run_glt_steer_token_direction_controls.py`
+- `results/experiments/glt_steer_token_direction_controls_20261009_results/`

@@ -148,15 +148,15 @@ Scientific payoff:
 
 GLT-BUILD turns GLT from post-hoc archaeology of pretrained representation spaces into an experimental study of how internal geometry emerges during learning. A positive result would show a repeatable training-time route from examples to compact operation structure. A negative result would also be useful: it would show that even controlled synthetic learning can succeed without stable additive or operator-level transformation geometry.
 
-## Track 1: GLT-STEER, transformation vectors as editors
+## Track 1: GLT-STEER, final-marker directions as activation editors
 
 Working title:
 
-**From Transformation Geometry to Controllable Linguistic Editing**
+**From Transformation Geometry to Final-Marker Activation Steering**
 
 Central hypothesis:
 
-If transformation directions are real, they should not only classify transformations; they should also steer generation or hidden states toward those transformations.
+If transformation directions are real, they should not only classify transformations; they should also steer generation or hidden states toward those transformations. The current token-direction control requires a stricter version of this hypothesis: a learned transformation delta must outperform capacity-matched target-token directions before it can be called uniquely linguistic.
 
 Minimal experiment:
 
@@ -220,11 +220,13 @@ Follow-up controls:
 - A direct DistilGPT-2 layer/gain sweep revises the model-dependence story. The weak aggregate replication is parameter-sensitive rather than a hard model failure. At `gain=1.0`, layer `2`, and `same_sentence` prompts, DistilGPT-2 reaches question-and-preserved rate `0.8250`, with matched controls at or below `0.0500`. `gain=0.5` is usable but weaker (`0.6250` best joint), while `gain=1.5` over-steers and collapses preservation (`0.0750` best target joint, with negative-target control reaching `0.2250`).
 - A hard out-of-template DistilGPT-2 audit then applies that best tuned setting to structurally diverse sources. Strict question-mark rates remain high for the target vector (`0.725-0.800`) while all matched controls remain at `0.0000`, but strict question-and-preserved rates are much lower (`0.025-0.225`, with `copy_sentence=0.025`). This does not replicate the GPT-2 hard-OOT preservation result; it is evidence for marker-form transfer only.
 - A fixed-parameter confirmatory audit then reruns question, exclamation, and ellipsis steering on fresh hard-heldout sources with no layer/gain search inside the run. GPT-2 target marker rates remain separated from controls across final markers (`0.6562-0.8438`, max matched control `0.0000`), and DistilGPT-2 also remains separated (`0.6319-0.8958`, max matched control `0.0139`). Strict marker-plus-content preservation is positive but modest, so this supports final-marker form steering rather than semantic editing.
+- A source-cluster bootstrap reanalysis treats the `48` sentence sources in the fixed-parameter confirmatory run as the independent units. Prompt styles and layers are repeated measurements within each source. The resulting GPT-2 marker-rate intervals are `?=0.6562 [0.5556, 0.7501]`, `!=0.6875 [0.5764, 0.7882]`, and `...=0.8438 [0.7604, 0.9132]`. These are descriptive intervals and do not remove the synthetic-template limitation.
+- A token-direction specificity audit tests whether the learned question delta is distinct from a target-token direction. On `40` held-out sources at layer `2`, the target delta reaches question-marker rate `0.3750`, the shuffled-pair delta `0.0500`, and unrelated token/random controls `0.0000`. A `?` token embedding rescaled to the learned delta norm also reaches `0.3750`. This is a decisive interpretive boundary: the current evidence supports activation-space final-marker induction, but not a uniquely linguistic question-transformation vector.
 - A runtime form-control applicability audit then compares steering with prompt-only and deterministic baselines. Target steering still induces final markers where no-steering, strong-prompt, wrong-marker, random-norm, and negative-vector controls produce `0.0000` marker-plus-content rates, but deterministic `string_append_source` is perfect (`1.0000`). This is a useful boundary: GLT-STEER is an activation-space diagnostic and form-bias intervention, not a superior production method for adding a known final marker.
 
 Interpretation:
 
-This is the first behavior-level intervention result in GLT. The current best explanation is the **Final Marker Hypothesis**: final-position surface markers such as `?`, `!`, and `...` are reliably steerable with mean delta vectors in GPT-2, while lexical or sentence-internal transformations such as negation and modality fail under the same recipe. The copy-prompt follow-up strengthens question steering from mere punctuation insertion toward partial form-preserving rewriting, but only under prompt families that already ask the model to repeat or copy the source sentence. The no-steering copy-prompt audit rules out the simplest prompt-only explanation for question marks. DistilGPT-2 is model-dependent: direct layer/gain tuning recovers marker-form steering, but hard out-of-template preservation remains weak. The runtime applicability audit separates mechanistic usefulness from production usefulness: activation steering changes model behavior in a way matched controls do not, but if the requested operation is just a known final marker, deterministic postprocessing is stronger. The failure diagnostics now separate three mechanisms: question has a much cleaner class direction than negation in GPT-2 hidden space; final surface markers are much easier to steer than sentence-internal edits; and smaller distilled models can be highly sensitive to layer/gain choice.
+This is the first behavior-level intervention result in GLT. The current best explanation is the **Final Marker Hypothesis**: final-position surface markers such as `?`, `!`, and `...` are steerable with activation-space directions in GPT-2, while lexical or sentence-internal transformations such as negation and modality fail under the same recipe. The token-direction audit shows that a norm-matched embedding of `?` can reproduce the learned question-delta rate, so the current evidence does not establish a uniquely linguistic transformation vector. The no-steering copy-prompt audit rules out the simplest prompt-only explanation for question marks, but not a token-direction explanation. DistilGPT-2 is model-dependent: direct layer/gain tuning recovers marker-form steering, but hard out-of-template preservation remains weak. The runtime applicability audit separates mechanistic usefulness from production usefulness: activation steering changes model behavior in a way matched controls do not, but if the requested operation is just a known final marker, deterministic postprocessing is stronger.
 
 Caveats:
 
@@ -804,6 +806,7 @@ Once (a)-(c) are done, Track 1 / GLT-STEER is frozen for submission purposes. An
    - marker-composition is framed as competition/saturation, not algebraic order structure: complete
    - fixed-parameter confirmation is archived and summarized: complete
    - runtime form-control applicability boundary is archived and summarized: complete
+   - token-direction specificity control is archived and its non-uniqueness boundary is explicit: complete
 2. Track 3 / GLT-DV is arXiv-ready only when this checklist is complete:
    - syntax holdout breakdown is in the draft and interpreted as endpoint leakage
    - McNemar tests are reported in the text

@@ -2,22 +2,21 @@ cff-version: "1.2.0"
 message: "If you use this software or research artifacts, please cite them using the metadata below."
 title: "Geometric Linguistic Transformations in Transformer Latent Spaces"
 type: software
-version: "2026.06.24"
-date-released: "2026-06-24"
-doi: "10.5281/zenodo.20829303"
+version: "2026.10.09"
+date-released: "2026-10-09"
 authors:
   - family-names: Simakova
     given-names: Anna
 repository-code: "https://github.com/cresta13/geometric-linguistic-transformations"
-repository-artifact: "https://doi.org/10.5281/zenodo.20829303"
 url: "https://github.com/cresta13/geometric-linguistic-transformations"
 license: "MIT"
 abstract: >-
   Research code, result tables, figures, and draft papers for experiments on
   linguistic transformation geometry in transformer embedding spaces, including
   endpoint controls, hard-holdout boundary analyses, signed permutation
-  diagnostics, endpoint-subspace residualization audits, and cross-model
-  transformation-transfer roadmaps.
+  diagnostics, activation-space final-marker steering, token-direction
+  specificity controls, controlled training-time composition audits, and
+  cross-model transformation-transfer roadmaps.
 keywords:
   - transformer
   - representation geometry
