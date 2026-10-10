@@ -1538,7 +1538,7 @@ This result is a useful negative boundary, not a Lie-algebra claim. The raw
 generalization package and the control summary are retained together under
 results/experiments/glt_build_03_template_lexical_generalization_20261009b_results/.
 
-## 2026-10-09: GLT-STEER token-direction specificity audit
+## 2026-10-09: GLT-STEER token-direction specificity audit (invalidated)
 
 The reviewer requested a cheap control for the strongest remaining alternative
 explanation of GLT-STEER: perhaps the learned question delta is only acting as
@@ -1556,13 +1556,10 @@ random-word, random-norm, and negative-delta controls produced 0.0000. The
 norm-matched `?` embedding also produced 0.3750 and marker-plus-preserved rate
 0.0750 versus 0.0500 for the learned delta.
 
-This changes the interpretation in an important but bounded way. The effect is
-not reproduced by arbitrary directions, but the learned delta is not
-distinguishable from a capacity-matched target-token direction under this
-protocol. GLT-STEER therefore supports activation-space final-marker
-induction, not a uniquely linguistic question-transformation vector. The
-result is retained as a boundary rather than hidden or converted into a
-stronger claim.
+This run was later invalidated: its training pool was the first unshuffled
+slice of the Cartesian product and did not match the confirmatory protocol.
+The values above are retained only to explain the audit history and must not
+be used as the current specificity estimate.
 
 The same review also motivated a source-cluster bootstrap of the fixed-
 parameter confirmatory run. Resampling the 48 sentence sources, while keeping
@@ -1573,5 +1570,36 @@ row-level Wilson intervals and do not remove the synthetic-template limitation.
 
 Artifacts:
 
+- `results/experiments/glt_steer_token_direction_controls_20261009_results/INVALID.md`
+
+## 2026-10-10: corrected token-direction audit
+
+The previous token-direction audit was invalidated after review. It selected
+the first 120 rows of the synthetic Cartesian product before shuffling, so its
+training pool contained only one subject and was not the same pool used by the
+fixed-parameter confirmatory run. The old folder is retained with an
+`INVALID.md` marker for provenance and is not used in the paper.
+
+The audit was rewritten to call the confirmatory protocol's
+`build_training_pairs()` directly. The corrected run therefore uses the same
+shuffled 120-source pool, all 12 subjects, GPT-2 layer 2, gain 0.75, the
+`same_sentence` prompt, and 40 held-out sources. It completed 360 rows with no
+failures. The target delta produced a question marker in 0.3000 of rows;
+shuffled-pair delta produced 0.0750; the norm-matched `?` token embedding
+produced 0.3250; unrelated token, punctuation, random, and negative controls
+were 0.0000.
+
+A source-paired bootstrap gives delta minus norm-matched token-direction
+difference `-0.0250` with 95% interval `[-0.2250, 0.1750]` for marker rate.
+This is not a formal equivalence test. It rules out presenting the delta as
+better than the token direction, while the sample is too small to certify
+equivalence. The bounded conclusion remains activation-space final-marker
+induction, not a uniquely linguistic question-transformation vector.
+
+Artifacts:
+
 - `scripts/run_glt_steer_token_direction_controls.py`
-- `results/experiments/glt_steer_token_direction_controls_20261009_results/`
+- `scripts/run_glt_steer_token_direction_paired_bootstrap.py`
+- `scripts/test_glt_steer_token_direction_controls.py`
+- `results/experiments/glt_steer_token_direction_controls_20261010_results/`
+- `results/experiments/glt_steer_token_direction_paired_bootstrap_20261010_results/`

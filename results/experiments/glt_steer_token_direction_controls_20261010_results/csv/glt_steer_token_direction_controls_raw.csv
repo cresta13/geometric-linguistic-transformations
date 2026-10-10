@@ -1,0 +1,975 @@
+model,source_id,source,prompt_style,target_class,layer,control,gain,token_control,generated,target_marker_hit,content_preserved,target_and_preserved,target_step0_prob,target_step0_rank,target_best_prob,target_best_rank,target_top1_any,target_top5_any
+gpt2,0,The grant application was revised after the committee meeting.,same_sentence,question,2,none,0.75,,The committee also approved a motion to amend the bill to allow the state to use the money to pay for the construction,0.0,0.0,0.0,1.5306326304198592e-06,40.0,2.766970828815829e-05,40.0,0.0,0.0
+gpt2,0,The grant application was revised after the committee meeting.,same_sentence,question,2,target_delta,0.75,,The committee's decision to reject the grant application was a major blow to the committee's ability to conduct its own investigation,0.0,0.0,0.0,1.0915392749666353e-06,45.0,0.001405035611242056,45.0,0.0,0.0
+gpt2,0,The grant application was revised after the committee meeting.,same_sentence,question,2,shuffled_pair_delta,0.75,,The committee meeting was held on the same day as the meeting of the committee on the same day as the meeting of,0.0,0.0,0.0,1.401826807523321e-06,48.0,0.02562432736158371,6.0,0.0,0.0
+gpt2,0,The grant application was revised after the committee meeting.,same_sentence,question,2,target_token_embedding_raw,0.75,,The committee also heard that the government has been working on a plan to make the government's tax system more transparent.,0.0,0.0,0.0,1.5669912727389601e-06,41.0,4.296341649023816e-05,41.0,0.0,0.0
+gpt2,0,The grant application was revised after the committee meeting.,same_sentence,question,2,target_token_embedding_normmatched,0.75,,The committee meeting was a little bit of a little bit of a little bit of a little bit of a little bit,0.0,0.0,0.0,6.671443202321825e-07,1566.0,0.0699940100312233,2.0,0.0,1.0
+gpt2,0,The grant application was revised after the committee meeting.,same_sentence,question,2,other_punctuation_normmatched,0.75,,"The first time:
+
+The first time:
+
+The first time:
+
+The first time:",0.0,0.0,0.0,2.7265679818810895e-05,3107.0,0.0036510673817247152,20.0,0.0,0.0
+gpt2,0,The grant application was revised after the committee meeting.,same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,7.988012657733634e-05,1769.0,9.097540169022977e-05,1504.0,0.0,0.0
+gpt2,0,The grant application was revised after the committee meeting.,same_sentence,question,2,random_norm,0.75,,"The committee meeting was held on the same day as the meeting of the committee.
+
+The committee meeting was held",0.0,0.0,0.0,1.3694148037757259e-06,47.0,5.527770917979069e-05,27.0,0.0,0.0
+gpt2,0,The grant application was revised after the committee meeting.,same_sentence,question,2,negative_target_delta,0.75,,"""The committee has decided to make the grant application for the first time,"" said the committee chair, ""We are",0.0,0.0,0.0,1.5923427554298542e-06,45.0,2.4904571546358056e-05,45.0,0.0,0.0
+gpt2,1,"Although the prototype overheated, the backup controller stayed online.",same_sentence,question,2,none,0.75,,"The prototype was tested in the lab at the University of California, Berkeley, and was approved for testing in the U",0.0,0.0,0.0,1.3817401622873149e-06,49.0,3.189553535776213e-05,49.0,0.0,0.0
+gpt2,1,"Although the prototype overheated, the backup controller stayed online.",same_sentence,question,2,target_delta,0.75,,"The problem was that the backup controller was not working.
+
+The problem was that the backup controller was not working",0.0,0.0,0.0,1.936415173986461e-06,88.0,0.01955004222691059,5.0,0.0,1.0
+gpt2,1,"Although the prototype overheated, the backup controller stayed online.",same_sentence,question,2,shuffled_pair_delta,0.75,,"The prototype was a bit of a mess.
+
+The prototype was a bit of a mess.
+
+The",0.0,0.0,0.0,1.6023079751903424e-06,115.0,0.013380032032728195,6.0,0.0,0.0
+gpt2,1,"Although the prototype overheated, the backup controller stayed online.",same_sentence,question,2,target_token_embedding_raw,0.75,,"The prototype was tested in the United States and Canada, but the company was unable to get the prototype to the United",0.0,0.0,0.0,1.424977085662249e-06,49.0,3.7511032132897526e-05,49.0,0.0,0.0
+gpt2,1,"Although the prototype overheated, the backup controller stayed online.",same_sentence,question,2,target_token_embedding_normmatched,0.75,,"The prototype was a little bit too hot?
+
+The prototype was a little bit too hot?
+
+The",1.0,0.0,0.0,3.9474292634622543e-07,1250.0,0.8937649726867676,1.0,1.0,1.0
+gpt2,1,"Although the prototype overheated, the backup controller stayed online.",same_sentence,question,2,other_punctuation_normmatched,0.75,,The first time: The first time: The first time: The first time: The first time: The first time,0.0,0.0,0.0,3.620582720031962e-05,2806.0,0.006383730098605156,20.0,0.0,0.0
+gpt2,1,"Although the prototype overheated, the backup controller stayed online.",same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,0.00010547799320193008,1275.0,0.0001658800756558776,640.0,0.0,0.0
+gpt2,1,"Although the prototype overheated, the backup controller stayed online.",same_sentence,question,2,random_norm,0.75,,"The team then used a special-purpose computer to create a new version of the device.
+
+The team then",0.0,0.0,0.0,1.350058255411568e-06,51.0,1.8888566046371125e-05,28.0,0.0,0.0
+gpt2,1,"Although the prototype overheated, the backup controller stayed online.",same_sentence,question,2,negative_target_delta,0.75,,"The next day, the team was able to get the battery to the point of charging.
+
+The next day",0.0,0.0,0.0,1.1080766171289724e-06,99.0,0.00012093211262254044,61.0,0.0,0.0
+gpt2,2,Marina counted 73 labeled samples before the freezer alarm sounded.,same_sentence,question,2,none,0.75,,"""I was like, 'Oh my God, I'm so sorry,'"" she said. ""I was like,",0.0,0.0,0.0,1.6854625073392526e-06,84.0,0.0012032795930281281,28.0,0.0,0.0
+gpt2,2,Marina counted 73 labeled samples before the freezer alarm sounded.,same_sentence,question,2,target_delta,0.75,,"""I was just so excited,"" she said.
+
+""I was so excited,"" she said?",1.0,0.0,0.0,1.1599723848121357e-06,135.0,0.43905124068260193,1.0,1.0,1.0
+gpt2,2,Marina counted 73 labeled samples before the freezer alarm sounded.,same_sentence,question,2,shuffled_pair_delta,0.75,,"""I was just so excited,"" she said.
+
+""I was so excited,"" she said.",0.0,0.0,0.0,8.572089882363798e-07,181.0,0.035579197108745575,3.0,0.0,1.0
+gpt2,2,Marina counted 73 labeled samples before the freezer alarm sounded.,same_sentence,question,2,target_token_embedding_raw,0.75,,"""I was like, 'Oh my God, I'm so sorry,'"" she said. ""I was like,",0.0,0.0,0.0,1.63158176746947e-06,90.0,0.001315273460932076,27.0,0.0,0.0
+gpt2,2,Marina counted 73 labeled samples before the freezer alarm sounded.,same_sentence,question,2,target_token_embedding_normmatched,0.75,,"""I'm not going to be able to do anything?""
+
+""I'm not going to be able to",1.0,0.0,0.0,4.918245508633845e-07,1036.0,0.10027189552783966,2.0,0.0,1.0
+gpt2,2,Marina counted 73 labeled samples before the freezer alarm sounded.,same_sentence,question,2,other_punctuation_normmatched,0.75,,"The first time:
+
+The first time:
+
+The first time:
+
+The first time:",0.0,0.0,0.0,4.4778716983273625e-05,2439.0,0.005762810818850994,20.0,0.0,0.0
+gpt2,2,Marina counted 73 labeled samples before the freezer alarm sounded.,same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,0.00014884390111546963,929.0,0.000197525616385974,555.0,0.0,0.0
+gpt2,2,Marina counted 73 labeled samples before the freezer alarm sounded.,same_sentence,question,2,random_norm,0.75,,"""I was so excited,"" she said. ""I was so excited. I was so excited. I was so",0.0,0.0,0.0,1.6760759535827674e-06,88.0,0.00030931559740565717,88.0,0.0,0.0
+gpt2,2,Marina counted 73 labeled samples before the freezer alarm sounded.,same_sentence,question,2,negative_target_delta,0.75,,"""I'm not sure what happened, but I'm sure it was a lot of fun,"" she said.",0.0,0.0,0.0,1.3616770502267173e-06,96.0,0.00026677787536755204,96.0,0.0,0.0
+gpt2,3,The dataset was anonymized by the hospital team in Krakow.,same_sentence,question,2,none,0.75,,"The data was collected from the hospital's website, which is available on the hospital's website.
+
+The data",0.0,0.0,0.0,1.8970355313285836e-06,86.0,5.57765961275436e-05,31.0,0.0,0.0
+gpt2,3,The dataset was anonymized by the hospital team in Krakow.,same_sentence,question,2,target_delta,0.75,,"The data was collected from the hospital's website, the website of the hospital's website, the website of the hospital",0.0,0.0,0.0,9.977003401218099e-07,227.0,0.09175041317939758,2.0,0.0,1.0
+gpt2,3,The dataset was anonymized by the hospital team in Krakow.,same_sentence,question,2,shuffled_pair_delta,0.75,,"The data was collected from the hospital's website, and the data was collected from the hospital's website.",0.0,0.0,0.0,1.6400000504290801e-06,146.0,0.00268536782823503,21.0,0.0,0.0
+gpt2,3,The dataset was anonymized by the hospital team in Krakow.,same_sentence,question,2,target_token_embedding_raw,0.75,,"The data was collected from the hospital's website, which is available on the hospital's website.
+
+The data",0.0,0.0,0.0,1.94042104340042e-06,87.0,6.628654227824882e-05,31.0,0.0,0.0
+gpt2,3,The dataset was anonymized by the hospital team in Krakow.,same_sentence,question,2,target_token_embedding_normmatched,0.75,,"The data was collected by the hospital team in Krakow.
+
+The data was collected by the hospital team",0.0,1.0,0.0,5.692716626981564e-07,1765.0,0.09621158242225647,2.0,0.0,1.0
+gpt2,3,The dataset was anonymized by the hospital team in Krakow.,same_sentence,question,2,other_punctuation_normmatched,0.75,,"The first time:
+The first time:
+The first time:
+The first time:
+The first time:",0.0,0.0,0.0,3.6518318665912375e-05,2852.0,0.004899431485682726,19.0,0.0,0.0
+gpt2,3,The dataset was anonymized by the hospital team in Krakow.,same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,8.352651639143005e-05,1670.0,0.00012340000830590725,972.0,0.0,0.0
+gpt2,3,The dataset was anonymized by the hospital team in Krakow.,same_sentence,question,2,random_norm,0.75,,"The data were collected from the hospital's medical records and were used to analyse the data.
+
+The data were",0.0,0.0,0.0,2.247020347567741e-06,46.0,5.041855911258608e-05,26.0,0.0,0.0
+gpt2,3,The dataset was anonymized by the hospital team in Krakow.,same_sentence,question,2,negative_target_delta,0.75,,The data was collected using the National Health and Medical Research Council's (NHMRC) Health Access Data System (,0.0,0.0,0.0,4.809698452845623e-07,294.0,3.0646900995634496e-05,294.0,0.0,0.0
+gpt2,4,"When the parser failed, the notebook saved a diagnostic snapshot.",same_sentence,question,2,none,0.75,,"The notebook was then sent to the server.
+
+The server then sent the notebook to the client.",0.0,0.0,0.0,7.094590159795189e-07,134.0,0.00010335895058233291,28.0,0.0,0.0
+gpt2,4,"When the parser failed, the notebook saved a diagnostic snapshot.",same_sentence,question,2,target_delta,0.75,,"The notebook saved the diagnostic snapshot.
+
+The notebook saved the diagnostic snapshot?
+
+The notebook saved the diagnostic",1.0,0.0,0.0,2.3882967070676386e-06,33.0,0.7481343746185303,1.0,1.0,1.0
+gpt2,4,"When the parser failed, the notebook saved a diagnostic snapshot.",same_sentence,question,2,shuffled_pair_delta,0.75,,"The notebook was not saved.
+
+The notebook was saved.
+
+The notebook was saved?
+
+The",1.0,0.0,0.0,1.1816521237051347e-06,49.0,0.36140161752700806,1.0,1.0,1.0
+gpt2,4,"When the parser failed, the notebook saved a diagnostic snapshot.",same_sentence,question,2,target_token_embedding_raw,0.75,,"The notebook was then sent to the server.
+
+The server then sent the notebook to the client.",0.0,0.0,0.0,7.36641652565595e-07,139.0,0.00012168149260105565,28.0,0.0,0.0
+gpt2,4,"When the parser failed, the notebook saved a diagnostic snapshot.",same_sentence,question,2,target_token_embedding_normmatched,0.75,,"The first time I was not a good?
+
+The first time I was not a good? The first time",1.0,0.0,0.0,1.3977970638734405e-06,1094.0,0.85205078125,1.0,1.0,1.0
+gpt2,4,"When the parser failed, the notebook saved a diagnostic snapshot.",same_sentence,question,2,other_punctuation_normmatched,0.75,,"The first time:
+
+The first time:
+
+The first time:
+
+The first time:",0.0,0.0,0.0,5.222652180236764e-05,1928.0,0.004057000856846571,19.0,0.0,0.0
+gpt2,4,"When the parser failed, the notebook saved a diagnostic snapshot.",same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,7.597391231684014e-05,1708.0,0.0001543830003356561,643.0,0.0,0.0
+gpt2,4,"When the parser failed, the notebook saved a diagnostic snapshot.",same_sentence,question,2,random_norm,0.75,,"The following example shows how to use the debugger to debug a program.
+
+The debugger is used to debug a",0.0,0.0,0.0,9.125326414505253e-07,49.0,0.0001785605272743851,22.0,0.0,0.0
+gpt2,4,"When the parser failed, the notebook saved a diagnostic snapshot.",same_sentence,question,2,negative_target_delta,0.75,,"The next step was to make sure that the notebook was running properly.
+
+The next step was to make sure",0.0,0.0,0.0,5.392469120124588e-07,179.0,0.0003913329856004566,42.0,0.0,0.0
+gpt2,5,A second telescope observed Saturn during the early morning window.,same_sentence,question,2,none,0.75,,"The first telescope, the Cassini-Huygens mission, was launched in 2004 and has been orbiting Saturn",0.0,0.0,0.0,2.025353751378134e-06,73.0,0.000177354333573021,73.0,0.0,0.0
+gpt2,5,A second telescope observed Saturn during the early morning window.,same_sentence,question,2,target_delta,0.75,,"The first telescope was a small one, but it was a very good one.
+
+The first telescope was a",0.0,0.0,0.0,6.531329859171819e-07,353.0,0.01679297722876072,7.0,0.0,0.0
+gpt2,5,A second telescope observed Saturn during the early morning window.,same_sentence,question,2,shuffled_pair_delta,0.75,,"The first telescope was a small one, but it was a very good one.
+
+The second telescope was a",0.0,0.0,0.0,9.927878181770211e-07,240.0,0.0024022602010518312,17.0,0.0,0.0
+gpt2,5,A second telescope observed Saturn during the early morning window.,same_sentence,question,2,target_token_embedding_raw,0.75,,"The first telescope, the Cassini-Huygens mission, was launched in 2004 and has been orbiting Saturn",0.0,0.0,0.0,2.0363447674753843e-06,77.0,0.00021569011732935905,77.0,0.0,0.0
+gpt2,5,A second telescope observed Saturn during the early morning window.,same_sentence,question,2,target_token_embedding_normmatched,0.75,,The first telescope was a little bit of a little bit of a little bit of a little bit of a little bit,0.0,0.0,0.0,2.2427088879339863e-06,1193.0,0.07690965384244919,2.0,0.0,1.0
+gpt2,5,A second telescope observed Saturn during the early morning window.,same_sentence,question,2,other_punctuation_normmatched,0.75,,"The first telescope, the first one, the first one, the first one, the first, the first, the",0.0,0.0,0.0,4.974556577508338e-05,2332.0,0.002276427112519741,36.0,0.0,0.0
+gpt2,5,A second telescope observed Saturn during the early morning window.,same_sentence,question,2,random_word_normmatched,0.75,,"The the ""The the "" the "" the "" the "" the "" the "" the "" the "" the "" the",0.0,0.0,0.0,0.0003047454229090363,370.0,0.00034463644260540605,271.0,0.0,0.0
+gpt2,5,A second telescope observed Saturn during the early morning window.,same_sentence,question,2,random_norm,0.75,,"The first telescope was made by the Italian astronomer, Giovanni P. P. Piazzi, who was working on",0.0,0.0,0.0,1.621121441530704e-06,97.0,0.00011975414963671938,97.0,0.0,0.0
+gpt2,5,A second telescope observed Saturn during the early morning window.,same_sentence,question,2,negative_target_delta,0.75,,"The first telescope was launched in the early morning of December 18, 1883, and was used to study the Saturn",0.0,0.0,0.0,1.7893814856506651e-06,105.0,0.00018246241961605847,105.0,0.0,0.0
+gpt2,6,"Because the elevator stopped, the courier used the emergency stairs.",same_sentence,question,2,none,0.75,,"""I'm sorry, but I'm not going to let you go,"" he said.
+
+""I'm",0.0,0.0,0.0,8.215722573368112e-07,1465.0,0.0023202106822282076,24.0,0.0,0.0
+gpt2,6,"Because the elevator stopped, the courier used the emergency stairs.",same_sentence,question,2,target_delta,0.75,,"""I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm",0.0,0.0,0.0,1.0037388165073935e-06,874.0,0.14613258838653564,3.0,0.0,1.0
+gpt2,6,"Because the elevator stopped, the courier used the emergency stairs.",same_sentence,question,2,shuffled_pair_delta,0.75,,"""I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm",0.0,0.0,0.0,3.8648536246910226e-06,765.0,0.006156759336590767,13.0,0.0,0.0
+gpt2,6,"Because the elevator stopped, the courier used the emergency stairs.",same_sentence,question,2,target_token_embedding_raw,0.75,,"""I'm sorry, but I'm not going to let you go,"" he said.
+
+""I'm",0.0,0.0,0.0,9.325383416580735e-07,1438.0,0.002725034486502409,23.0,0.0,0.0
+gpt2,6,"Because the elevator stopped, the courier used the emergency stairs.",same_sentence,question,2,target_token_embedding_normmatched,0.75,,"The elevator was a bit too far?
+
+The elevator was a bit too far?
+
+The elevator was",1.0,0.0,0.0,2.531102609282243e-06,1264.0,0.9934388995170593,1.0,1.0,1.0
+gpt2,6,"Because the elevator stopped, the courier used the emergency stairs.",same_sentence,question,2,other_punctuation_normmatched,0.75,,"The first time:
+
+The first time:
+
+The first time:
+
+The first time:",0.0,0.0,0.0,2.441791548335459e-05,1928.0,0.006912148091942072,16.0,0.0,0.0
+gpt2,6,"Because the elevator stopped, the courier used the emergency stairs.",same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,0.00014079078391660005,855.0,0.00024334293266292661,436.0,0.0,0.0
+gpt2,6,"Because the elevator stopped, the courier used the emergency stairs.",same_sentence,question,2,random_norm,0.75,,"""I'm sorry, but I'm not going to go down.""
+
+""I'm sorry, but I",0.0,0.0,0.0,3.778253301334189e-07,630.0,0.01430535688996315,6.0,0.0,0.0
+gpt2,6,"Because the elevator stopped, the courier used the emergency stairs.",same_sentence,question,2,negative_target_delta,0.75,,"""I'm going to get you to the elevator,"" he said.
+
+""I'm going to get you",0.0,0.0,0.0,4.756286671181442e-07,411.0,0.0003517337318044156,40.0,0.0,0.0
+gpt2,7,The calibration report was signed by Victor at 18:40.,same_sentence,question,2,none,0.75,,The report was signed by Victor at 18:40. The report was signed by Victor at 18:40. The,0.0,1.0,0.0,1.824467176447797e-06,2371.0,6.123053753981367e-05,19.0,0.0,0.0
+gpt2,7,The calibration report was signed by Victor at 18:40.,same_sentence,question,2,target_delta,0.75,,"The report was signed by Victor at 18:40.
+
+Victor:
+
+Victor:",0.0,1.0,0.0,6.487709924840601e-06,1388.0,0.17787812650203705,2.0,0.0,1.0
+gpt2,7,The calibration report was signed by Victor at 18:40.,same_sentence,question,2,shuffled_pair_delta,0.75,,"The report was signed by Victor at 18:40.
+
+The report was signed by Victor at 18:40",0.0,1.0,0.0,5.2877635425829794e-06,2011.0,0.0004264542367309332,4.0,0.0,1.0
+gpt2,7,The calibration report was signed by Victor at 18:40.,same_sentence,question,2,target_token_embedding_raw,0.75,,The report was signed by Victor at 18:40. The report was signed by Victor at 18:40. The,0.0,1.0,0.0,2.2251272184803383e-06,2307.0,6.438486889237538e-05,18.0,0.0,0.0
+gpt2,7,The calibration report was signed by Victor at 18:40.,same_sentence,question,2,target_token_embedding_normmatched,0.75,,The first thing I did was was was was was was is is is is is is is is is is is is,0.0,0.0,0.0,2.1260242647258565e-05,1703.0,0.06966459006071091,2.0,0.0,1.0
+gpt2,7,The calibration report was signed by Victor at 18:40.,same_sentence,question,2,other_punctuation_normmatched,0.75,,"The first time:
+
+The first time:
+
+The first time:
+
+The first time:",0.0,0.0,0.0,3.981785266660154e-05,2986.0,0.0035331484396010637,19.0,0.0,0.0
+gpt2,7,The calibration report was signed by Victor at 18:40.,same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,0.00010603745613479987,1433.0,0.0001338798610959202,824.0,0.0,0.0
+gpt2,7,The calibration report was signed by Victor at 18:40.,same_sentence,question,2,random_norm,0.75,,"""I'm going to be a little bit more careful with my hair, and I'm going to be a little",0.0,0.0,0.0,1.846201911348544e-07,1788.0,0.0005567367770709097,113.0,0.0,0.0
+gpt2,7,The calibration report was signed by Victor at 18:40.,same_sentence,question,2,negative_target_delta,0.75,,"The following day, Victor was in the middle of the room, and he was sitting on the floor of the room",0.0,0.0,0.0,3.180135763614089e-07,1712.0,0.00022697671374771744,130.0,0.0,0.0
+gpt2,8,"After the river level dropped, the engineers inspected the dam.",same_sentence,question,2,none,0.75,,"""We were able to get the water out of the dam and we were able to get the water out of the",0.0,0.0,0.0,6.678129693682422e-07,264.0,2.6629129934008233e-05,264.0,0.0,0.0
+gpt2,8,"After the river level dropped, the engineers inspected the dam.",same_sentence,question,2,target_delta,0.75,,"The dam was built in the middle of the night.
+
+The dam was built in the middle of the night",0.0,0.0,0.0,2.457180698911543e-07,533.0,0.009908273816108704,2.0,0.0,1.0
+gpt2,8,"After the river level dropped, the engineers inspected the dam.",same_sentence,question,2,shuffled_pair_delta,0.75,,"""We were able to get the water out of the dam,"" said one of the engineers.
+
+""We",0.0,0.0,0.0,2.796330420551385e-07,839.0,0.00018240480858366936,23.0,0.0,0.0
+gpt2,8,"After the river level dropped, the engineers inspected the dam.",same_sentence,question,2,target_token_embedding_raw,0.75,,"""We were able to get the water out of the dam and we were able to get the water out of the",0.0,0.0,0.0,5.839825121256581e-07,318.0,3.199269121978432e-05,318.0,0.0,0.0
+gpt2,8,"After the river level dropped, the engineers inspected the dam.",same_sentence,question,2,target_token_embedding_normmatched,0.75,,"The river level was not a problem?
+
+The river level was not a problem?
+
+The river level",1.0,0.0,0.0,1.784244341251906e-05,2044.0,0.9602283835411072,1.0,1.0,1.0
+gpt2,8,"After the river level dropped, the engineers inspected the dam.",same_sentence,question,2,other_punctuation_normmatched,0.75,,"The first time:
+
+The first time:
+
+The first time:
+
+The first time:",0.0,0.0,0.0,3.172615106450394e-05,2842.0,0.005201692692935467,16.0,0.0,0.0
+gpt2,8,"After the river level dropped, the engineers inspected the dam.",same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,0.00010815646965056658,1190.0,0.00016745127504691482,672.0,0.0,0.0
+gpt2,8,"After the river level dropped, the engineers inspected the dam.",same_sentence,question,2,random_norm,0.75,,"""We were able to see that the water level was very low,"" said Dr. R. S. K.",0.0,0.0,0.0,1.0459617669766885e-06,174.0,7.24151759641245e-05,149.0,0.0,0.0
+gpt2,8,"After the river level dropped, the engineers inspected the dam.",same_sentence,question,2,negative_target_delta,0.75,,"""We were able to get the water out of the river,"" said Dr. John H. Houghton,",0.0,0.0,0.0,5.42441171091923e-07,334.0,1.520032856205944e-05,323.0,0.0,0.0
+gpt2,9,The microscope recorded 512 frames before the lamp dimmed.,same_sentence,question,2,none,0.75,,"The light was then turned on and the light was turned off.
+
+The light was then turned on again and",0.0,0.0,0.0,8.630991032987367e-07,246.0,9.944851626642048e-05,31.0,0.0,0.0
+gpt2,9,The microscope recorded 512 frames before the lamp dimmed.,same_sentence,question,2,target_delta,0.75,,"The light was so bright that it was almost invisible.
+
+The light was so bright that it was almost invisible",0.0,0.0,0.0,5.985210691505927e-07,344.0,0.049349866807460785,2.0,0.0,1.0
+gpt2,9,The microscope recorded 512 frames before the lamp dimmed.,same_sentence,question,2,shuffled_pair_delta,0.75,,"The light was so bright that it was almost blinding.
+
+The light was so bright that it was almost blinding",0.0,0.0,0.0,4.6023438926567906e-07,597.0,0.0068242307752370834,5.0,0.0,1.0
+gpt2,9,The microscope recorded 512 frames before the lamp dimmed.,same_sentence,question,2,target_token_embedding_raw,0.75,,"The light was so bright that the light source was not visible.
+
+The light source was not visible.",0.0,0.0,0.0,8.779472864262061e-07,253.0,0.0006273739272728562,32.0,0.0,0.0
+gpt2,9,The microscope recorded 512 frames before the lamp dimmed.,same_sentence,question,2,target_token_embedding_normmatched,0.75,,The first time you see the first time you see the first time you see the first time you see the first time,0.0,0.0,0.0,1.6816254628793104e-06,1530.0,0.07093857228755951,2.0,0.0,1.0
+gpt2,9,The microscope recorded 512 frames before the lamp dimmed.,same_sentence,question,2,other_punctuation_normmatched,0.75,,"The first time:
+
+The first time:
+
+The first time:
+
+The first time:",0.0,0.0,0.0,3.402848233236e-05,2962.0,0.005232787691056728,19.0,0.0,0.0
+gpt2,9,The microscope recorded 512 frames before the lamp dimmed.,same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,7.47859085095115e-05,1755.0,0.00013478951586876065,839.0,0.0,0.0
+gpt2,9,The microscope recorded 512 frames before the lamp dimmed.,same_sentence,question,2,random_norm,0.75,,The researchers found that the light emitted by the lamp was not the same as the light emitted by the light source.,0.0,0.0,0.0,1.4371593124451465e-06,131.0,6.259419023990631e-05,131.0,0.0,0.0
+gpt2,9,The microscope recorded 512 frames before the lamp dimmed.,same_sentence,question,2,negative_target_delta,0.75,,"The next day, the team used a laser to measure the light, and the team used a laser to measure the",0.0,0.0,0.0,6.094669515732676e-07,317.0,0.0001398072054143995,125.0,0.0,0.0
+gpt2,10,"If the validator rejects the file, the pipeline opens a review ticket.",same_sentence,question,2,none,0.75,,"The pipeline is closed when the validator rejects the file.
+
+The pipeline closes when the validator rejects the",0.0,0.0,0.0,9.380212873111304e-07,80.0,0.00019398628501221538,29.0,0.0,0.0
+gpt2,10,"If the validator rejects the file, the pipeline opens a review ticket.",same_sentence,question,2,target_delta,0.75,,"The pipeline is closed.
+
+The pipeline is closed?
+
+The pipeline is closed?
+
+The pipeline",1.0,0.0,0.0,2.1414114144135965e-06,46.0,0.8170723915100098,1.0,1.0,1.0
+gpt2,10,"If the validator rejects the file, the pipeline opens a review ticket.",same_sentence,question,2,shuffled_pair_delta,0.75,,"The pipeline is closed when the validator rejects the file.
+
+The pipeline closes when the validator rejects the",0.0,0.0,0.0,1.1771408026106656e-06,43.0,0.0015059325378388166,15.0,0.0,0.0
+gpt2,10,"If the validator rejects the file, the pipeline opens a review ticket.",same_sentence,question,2,target_token_embedding_raw,0.75,,"The pipeline then closes the review ticket.
+
+The pipeline closes the review ticket.
+
+The pipeline closes the",0.0,0.0,0.0,9.847234423432383e-07,80.0,8.99700025911443e-05,28.0,0.0,0.0
+gpt2,10,"If the validator rejects the file, the pipeline opens a review ticket.",same_sentence,question,2,target_token_embedding_normmatched,0.75,,The following is a bit of a bit of a bit of a bit of a bit of a bit of a bit,0.0,0.0,0.0,9.003138984553516e-06,690.0,0.09550938755273819,2.0,0.0,1.0
+gpt2,10,"If the validator rejects the file, the pipeline opens a review ticket.",same_sentence,question,2,other_punctuation_normmatched,0.75,,"The first time:
+
+The first time:
+
+The first time:
+
+The first time:",0.0,0.0,0.0,6.6514709033072e-05,1748.0,0.004282154608517885,18.0,0.0,0.0
+gpt2,10,"If the validator rejects the file, the pipeline opens a review ticket.",same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,0.00010534635657677427,1302.0,0.0001694162783678621,586.0,0.0,0.0
+gpt2,10,"If the validator rejects the file, the pipeline opens a review ticket.",same_sentence,question,2,random_norm,0.75,,"The pipeline will then open a new ticket.
+
+The pipeline will then open a new ticket.
+
+The",0.0,0.0,0.0,9.824900644161971e-07,42.0,9.573999705025926e-05,27.0,0.0,0.0
+gpt2,10,"If the validator rejects the file, the pipeline opens a review ticket.",same_sentence,question,2,negative_target_delta,0.75,,"The pipeline will then be closed.
+
+The pipeline will be closed for the next 24 hours.
+
+The",0.0,0.0,0.0,9.050067433236109e-07,85.0,3.7359786801971495e-05,32.0,0.0,0.0
+gpt2,11,The old turbine was replaced during the overnight maintenance shift.,same_sentence,question,2,none,0.75,,The new turbine was installed on the roof of the building on the morning of the first day of the new year.,0.0,0.0,0.0,1.1900139043063973e-06,140.0,7.786643982399255e-05,140.0,0.0,0.0
+gpt2,11,The old turbine was replaced during the overnight maintenance shift.,same_sentence,question,2,target_delta,0.75,,"The new turbine was replaced during the maintenance shift.
+
+The old turbine was replaced during the maintenance shift?",1.0,1.0,1.0,8.187808475668135e-07,200.0,0.9792183041572571,1.0,1.0,1.0
+gpt2,11,The old turbine was replaced during the overnight maintenance shift.,same_sentence,question,2,shuffled_pair_delta,0.75,,"The new turbine was replaced during the overnight maintenance shift.
+
+The old turbine was replaced during the overnight maintenance shift",0.0,1.0,0.0,4.3302708263581735e-07,621.0,0.0004879393381997943,21.0,0.0,0.0
+gpt2,11,The old turbine was replaced during the overnight maintenance shift.,same_sentence,question,2,target_token_embedding_raw,0.75,,The new turbine was installed on the roof of the building on the morning of the first day of the new year.,0.0,0.0,0.0,1.1696394039972802e-06,149.0,9.370887710247189e-05,149.0,0.0,0.0
+gpt2,11,The old turbine was replaced during the overnight maintenance shift.,same_sentence,question,2,target_token_embedding_normmatched,0.75,,The new turbine is not going to be going to be going to be to be to be to be to be to,0.0,0.0,0.0,6.899183517816709e-06,1812.0,0.06920517981052399,2.0,0.0,1.0
+gpt2,11,The old turbine was replaced during the overnight maintenance shift.,same_sentence,question,2,other_punctuation_normmatched,0.75,,"The new turbine is not to be:
+
+The new:
+
+The new:
+
+The new:",0.0,0.0,0.0,3.851066867355257e-05,2830.0,0.0018414066871628165,18.0,0.0,0.0
+gpt2,11,The old turbine was replaced during the overnight maintenance shift.,same_sentence,question,2,random_word_normmatched,0.75,,The the new the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,0.00012005815369775519,1204.0,0.0003021692100446671,463.0,0.0,0.0
+gpt2,11,The old turbine was replaced during the overnight maintenance shift.,same_sentence,question,2,random_norm,0.75,,"The new turbine was installed in the new building.
+
+The new turbine was installed in the new building.",0.0,0.0,0.0,1.1441402421041857e-06,185.0,8.409101428696886e-05,29.0,0.0,0.0
+gpt2,11,The old turbine was replaced during the overnight maintenance shift.,same_sentence,question,2,negative_target_delta,0.75,,"The new turbine was installed on the turbine's side and was installed in the turbine's side.
+
+The turbine",0.0,0.0,0.0,8.276859375655476e-07,193.0,5.3146432037465274e-05,58.0,0.0,0.0
+gpt2,12,Professor Novak compared four baselines on the university cluster.,same_sentence,question,2,none,0.75,,"""We have a lot of data on the number of students who are in the university cluster, and we have a",0.0,0.0,0.0,1.4728562973687076e-06,42.0,8.221717143896967e-05,42.0,0.0,0.0
+gpt2,12,Professor Novak compared four baselines on the university cluster.,same_sentence,question,2,target_delta,0.75,,"""The first two are the ones that are not in the same range of the two different types of the same time",0.0,0.0,0.0,1.4274146451498382e-06,48.0,0.01446196436882019,10.0,0.0,0.0
+gpt2,12,Professor Novak compared four baselines on the university cluster.,same_sentence,question,2,shuffled_pair_delta,0.75,,"""We have a lot of different types of data, and we have different types of data that are different from each",0.0,0.0,0.0,1.5345963220170233e-06,44.0,0.00031576844048686326,44.0,0.0,0.0
+gpt2,12,Professor Novak compared four baselines on the university cluster.,same_sentence,question,2,target_token_embedding_raw,0.75,,"""We have a lot of data on the number of students who are in the university cluster, and we have a",0.0,0.0,0.0,1.484483959757199e-06,43.0,0.00011316651944071054,43.0,0.0,0.0
+gpt2,12,Professor Novak compared four baselines on the university cluster.,same_sentence,question,2,target_token_embedding_normmatched,0.75,,"""I don't think it's a good idea to be a good idea to be a good idea to be a",0.0,0.0,0.0,1.16161231744627e-06,1721.0,0.08011607080698013,4.0,0.0,1.0
+gpt2,12,Professor Novak compared four baselines on the university cluster.,same_sentence,question,2,other_punctuation_normmatched,0.75,,"""The first thing is not to be a lot of the first thing is to be a lot of the first thing to",0.0,0.0,0.0,3.29096510540694e-05,2846.0,0.001539556891657412,46.0,0.0,0.0
+gpt2,12,Professor Novak compared four baselines on the university cluster.,same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,0.00014085574366617948,992.0,0.00014579448907170445,794.0,0.0,0.0
+gpt2,12,Professor Novak compared four baselines on the university cluster.,same_sentence,question,2,random_norm,0.75,,"""The first two are the same as the second one, and the third one is the same as the third one",0.0,0.0,0.0,1.330317559222749e-06,47.0,0.0003220613580197096,47.0,0.0,0.0
+gpt2,12,Professor Novak compared four baselines on the university cluster.,same_sentence,question,2,negative_target_delta,0.75,,"""The first is the most important, the second is the most important, and the third is the most important,""",0.0,0.0,0.0,1.5895285514488933e-06,92.0,0.0001681472931522876,92.0,0.0,0.0
+gpt2,13,"While the train waited outside Lyon, the server finished indexing.",same_sentence,question,2,none,0.75,,"The server then started indexing.
+
+The server then started indexing.
+
+The server then started index",0.0,0.0,0.0,1.3087576462567085e-06,183.0,0.0001169690367532894,24.0,0.0,0.0
+gpt2,13,"While the train waited outside Lyon, the server finished indexing.",same_sentence,question,2,target_delta,0.75,,"The server was not able to find the server's IP address.
+
+The server was not able to find the",0.0,0.0,0.0,3.692567133839475e-06,105.0,0.0017316731391474605,3.0,0.0,1.0
+gpt2,13,"While the train waited outside Lyon, the server finished indexing.",same_sentence,question,2,shuffled_pair_delta,0.75,,"The server was not able to find the server that was running the server.
+
+The server was not able to",0.0,0.0,0.0,9.078557923203334e-07,250.0,0.0013707192847505212,26.0,0.0,0.0
+gpt2,13,"While the train waited outside Lyon, the server finished indexing.",same_sentence,question,2,target_token_embedding_raw,0.75,,"The server then started indexing.
+
+The server then started indexing.
+
+The server then started index",0.0,0.0,0.0,1.2928749129059725e-06,188.0,0.00016031955601647496,23.0,0.0,0.0
+gpt2,13,"While the train waited outside Lyon, the server finished indexing.",same_sentence,question,2,target_token_embedding_normmatched,0.75,,"The train was a lot of things.
+
+The train was a lot of things.
+
+The train was",0.0,0.0,0.0,2.277220119140111e-06,943.0,0.11008789390325546,2.0,0.0,1.0
+gpt2,13,"While the train waited outside Lyon, the server finished indexing.",same_sentence,question,2,other_punctuation_normmatched,0.75,,"The first time:
+
+The first time:
+
+The first time:
+
+The first time:",0.0,0.0,0.0,5.3306921472540125e-05,2116.0,0.005200203508138657,21.0,0.0,0.0
+gpt2,13,"While the train waited outside Lyon, the server finished indexing.",same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,0.00011676257418002933,1225.0,0.00018984402413479984,556.0,0.0,0.0
+gpt2,13,"While the train waited outside Lyon, the server finished indexing.",same_sentence,question,2,random_norm,0.75,,"""I'm not sure what the problem is,"" said the server.
+
+The server then asked the server to",0.0,0.0,0.0,1.496691311331233e-06,132.0,0.0010521233780309558,29.0,0.0,0.0
+gpt2,13,"While the train waited outside Lyon, the server finished indexing.",same_sentence,question,2,negative_target_delta,0.75,,"The server then started to load the data.
+
+The server then started to load the data.
+
+The",0.0,0.0,0.0,8.407484983763425e-07,231.0,3.6582801840268075e-05,38.0,0.0,0.0
+gpt2,14,The survey invitation was translated into Portuguese on Friday.,same_sentence,question,2,none,0.75,,"The survey was conducted by the University of California, Berkeley, and the University of California, Berkeley's Center for Social",0.0,0.0,0.0,1.4402760371012846e-06,45.0,0.00018174073193222284,45.0,0.0,0.0
+gpt2,14,The survey invitation was translated into Portuguese on Friday.,same_sentence,question,2,target_delta,0.75,,The survey was conducted by a group of people who were asked to answer a question about the question about the question about,0.0,0.0,0.0,1.793816977624374e-06,42.0,0.020670663565397263,7.0,0.0,0.0
+gpt2,14,The survey invitation was translated into Portuguese on Friday.,same_sentence,question,2,shuffled_pair_delta,0.75,,"The survey was conducted by the University of California, San Diego, and the University of California, San Francisco.",0.0,0.0,0.0,1.6805774976091925e-06,44.0,0.0008896597428247333,44.0,0.0,0.0
+gpt2,14,The survey invitation was translated into Portuguese on Friday.,same_sentence,question,2,target_token_embedding_raw,0.75,,"The survey was conducted by the University of California, Berkeley, and the University of California, San Diego.",0.0,0.0,0.0,1.4919285149517236e-06,45.0,0.00021604941866826266,31.0,0.0,0.0
+gpt2,14,The survey invitation was translated into Portuguese on Friday.,same_sentence,question,2,target_token_embedding_normmatched,0.75,,"The survey was translated into Portuguese on Friday.
+
+The survey was translated into Portuguese on Friday.
+
+The",0.0,1.0,0.0,7.342964636336546e-07,473.0,0.1640852391719818,2.0,0.0,1.0
+gpt2,14,The survey invitation was translated into Portuguese on Friday.,same_sentence,question,2,other_punctuation_normmatched,0.75,,"The first time you are not to be a ""I don't want to be a ""I don't want to be",0.0,0.0,0.0,3.3989246730925515e-05,2831.0,0.004173398949205875,30.0,0.0,0.0
+gpt2,14,The survey invitation was translated into Portuguese on Friday.,same_sentence,question,2,random_word_normmatched,0.75,,"The the ""The the "" the "" the "" the "" the "" the "" the "" the "" the "" the """,0.0,0.0,0.0,9.392665378982201e-05,1461.0,0.00020863115787506104,478.0,0.0,0.0
+gpt2,14,The survey invitation was translated into Portuguese on Friday.,same_sentence,question,2,random_norm,0.75,,"The survey was conducted by the University of Sao Paulo's Social Science and Humanities Research Department.
+
+The survey",0.0,0.0,0.0,1.2432035418896703e-06,42.0,0.00019788334611803293,32.0,0.0,0.0
+gpt2,14,The survey invitation was translated into Portuguese on Friday.,same_sentence,question,2,negative_target_delta,0.75,,"The survey was conducted by the University of Sao Paulo, Brazil.
+
+The survey was conducted by the University of",0.0,0.0,0.0,1.465520767851558e-06,42.0,0.00017684382328297943,40.0,0.0,0.0
+gpt2,15,"Because the route was blocked, Alina updated the delivery schedule.",same_sentence,question,2,none,0.75,,"""We're going to be able to deliver the goods to the customers in the next few days,"" she said.",0.0,0.0,0.0,1.0469034350535367e-06,127.0,8.312340651173145e-05,56.0,0.0,0.0
+gpt2,15,"Because the route was blocked, Alina updated the delivery schedule.",same_sentence,question,2,target_delta,0.75,,"""I'm not sure if it's a good idea to have a delivery in the middle of the night,"" she",0.0,0.0,0.0,8.712214594197576e-07,174.0,0.029187504202127457,7.0,0.0,0.0
+gpt2,15,"Because the route was blocked, Alina updated the delivery schedule.",same_sentence,question,2,shuffled_pair_delta,0.75,,"""We're going to be in the city of the city of the city of the city of the city of the",0.0,0.0,0.0,7.694204100516799e-07,179.0,0.0011940628755837679,34.0,0.0,0.0
+gpt2,15,"Because the route was blocked, Alina updated the delivery schedule.",same_sentence,question,2,target_token_embedding_raw,0.75,,"""We're going to be able to deliver the goods to the customers in the next few days,"" she said.",0.0,0.0,0.0,9.995156915465486e-07,140.0,0.0001177012236439623,41.0,0.0,0.0
+gpt2,15,"Because the route was blocked, Alina updated the delivery schedule.",same_sentence,question,2,target_token_embedding_normmatched,0.75,,"""I'm not going to be able to do anything?""
+
+""I'm not going to be able to",1.0,0.0,0.0,3.2828595522005344e-06,1334.0,0.11698787659406662,2.0,0.0,1.0
+gpt2,15,"Because the route was blocked, Alina updated the delivery schedule.",same_sentence,question,2,other_punctuation_normmatched,0.75,,"The first time:
+
+The first time:
+
+The first time:
+
+The first time:",0.0,0.0,0.0,4.695991083281115e-05,2358.0,0.0069339582696557045,15.0,0.0,0.0
+gpt2,15,"Because the route was blocked, Alina updated the delivery schedule.",same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,0.00010357027349527925,1357.0,0.00016313866944983602,698.0,0.0,0.0
+gpt2,15,"Because the route was blocked, Alina updated the delivery schedule.",same_sentence,question,2,random_norm,0.75,,"""I was told that the route was to be taken by the train, but I was told that the route was",0.0,0.0,0.0,9.068937174561142e-07,159.0,9.650811261963099e-05,159.0,0.0,0.0
+gpt2,15,"Because the route was blocked, Alina updated the delivery schedule.",same_sentence,question,2,negative_target_delta,0.75,,"""We're going to be able to deliver the next day,"" she said.
+
+""We're going to",0.0,0.0,0.0,1.1090049838458071e-06,117.0,6.196100730448961e-05,45.0,0.0,0.0
+gpt2,16,The archive stored 24 encrypted drives in a locked cabinet.,same_sentence,question,2,none,0.75,,"The archive was found in a storage locker in the basement of the house.
+
+The archive was found in a",0.0,0.0,0.0,1.0582587037788471e-06,127.0,6.35770193184726e-05,33.0,0.0,0.0
+gpt2,16,The archive stored 24 encrypted drives in a locked cabinet.,same_sentence,question,2,target_delta,0.75,,"The files were encrypted by the same encryption algorithm used by the original files.
+
+The files were encrypted by the",0.0,0.0,0.0,1.3604388868770911e-06,176.0,0.03129098191857338,2.0,0.0,1.0
+gpt2,16,The archive stored 24 encrypted drives in a locked cabinet.,same_sentence,question,2,shuffled_pair_delta,0.75,,The archive was found in a storage unit in the basement of a house in the city of San Francisco.,0.0,0.0,0.0,7.685156901970913e-07,305.0,0.0010365344351157546,27.0,0.0,0.0
+gpt2,16,The archive stored 24 encrypted drives in a locked cabinet.,same_sentence,question,2,target_token_embedding_raw,0.75,,"The archive was found in a storage locker in the basement of the house.
+
+The archive was found in a",0.0,0.0,0.0,1.0813530479936162e-06,133.0,7.438554894179106e-05,32.0,0.0,0.0
+gpt2,16,The archive stored 24 encrypted drives in a locked cabinet.,same_sentence,question,2,target_token_embedding_normmatched,0.75,,The archive stored 24 encrypted drives in a locked cabinet. The archive stored in a locked cabinet. The archive in a,0.0,1.0,0.0,1.223325739374559e-06,1480.0,0.14151324331760406,2.0,0.0,1.0
+gpt2,16,The archive stored 24 encrypted drives in a locked cabinet.,same_sentence,question,2,other_punctuation_normmatched,0.75,,The first time: The first time: The first time: The first time: The first time: The first time:,0.0,0.0,0.0,4.524387986748479e-05,2658.0,0.004482610616832972,24.0,0.0,0.0
+gpt2,16,The archive stored 24 encrypted drives in a locked cabinet.,same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,0.00011404215911170468,1262.0,0.00016661884728819132,626.0,0.0,0.0
+gpt2,16,The archive stored 24 encrypted drives in a locked cabinet.,same_sentence,question,2,random_norm,0.75,,The archive was found in a room of the house of the late Dr. J. R. R. R.,0.0,0.0,0.0,1.0558062513155164e-06,125.0,8.124422311084345e-05,125.0,0.0,0.0
+gpt2,16,The archive stored 24 encrypted drives in a locked cabinet.,same_sentence,question,2,negative_target_delta,0.75,,"The archive was encrypted with a password.
+
+The archive was stored on a hard drive.
+
+The archive",0.0,0.0,0.0,1.0454062930875807e-06,147.0,5.673147097695619e-05,51.0,0.0,0.0
+gpt2,17,"After the model converged, the researcher exported the confusion matrix.",same_sentence,question,2,none,0.75,,"The model converged on the model's model.
+
+The model converged on the model's model.",0.0,0.0,0.0,3.123639658042521e-07,825.0,0.000565165828447789,28.0,0.0,0.0
+gpt2,17,"After the model converged, the researcher exported the confusion matrix.",same_sentence,question,2,target_delta,0.75,,"The model was a simple one.
+
+The answer is a simple one.
+
+The answer is a simple",0.0,0.0,0.0,1.138996594818309e-06,222.0,0.031410593539476395,3.0,0.0,1.0
+gpt2,17,"After the model converged, the researcher exported the confusion matrix.",same_sentence,question,2,shuffled_pair_delta,0.75,,"The model converged.
+
+The model converged.
+
+The model converged!
+
+The model",0.0,0.0,0.0,3.920716835636995e-07,587.0,0.15585580468177795,3.0,0.0,1.0
+gpt2,17,"After the model converged, the researcher exported the confusion matrix.",same_sentence,question,2,target_token_embedding_raw,0.75,,"The model converged on the model, and the model converged on the model.
+
+The model converged",0.0,0.0,0.0,2.944870232113317e-07,970.0,0.0006791941123083234,24.0,0.0,0.0
+gpt2,17,"After the model converged, the researcher exported the confusion matrix.",same_sentence,question,2,target_token_embedding_normmatched,0.75,,"The model converged?
+
+The model converged?
+
+The model converged?
+
+The model",1.0,0.0,0.0,1.9367160348338075e-05,1475.0,0.9550732374191284,1.0,1.0,1.0
+gpt2,17,"After the model converged, the researcher exported the confusion matrix.",same_sentence,question,2,other_punctuation_normmatched,0.75,,"The model:
+
+The model:
+
+The model:
+
+The model:
+
+The model:",0.0,0.0,0.0,4.690809510066174e-05,2344.0,0.0014125030720606446,18.0,0.0,0.0
+gpt2,17,"After the model converged, the researcher exported the confusion matrix.",same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,8.360274659935385e-05,1712.0,0.00019385771884117275,519.0,0.0,0.0
+gpt2,17,"After the model converged, the researcher exported the confusion matrix.",same_sentence,question,2,random_norm,0.75,,"The model converged.
+
+The model converged.
+
+The model converged.
+
+The model",0.0,0.0,0.0,7.660665914954734e-07,216.0,0.0016916183521971107,17.0,0.0,0.0
+gpt2,17,"After the model converged, the researcher exported the confusion matrix.",same_sentence,question,2,negative_target_delta,0.75,,"The model was then used to calculate the number of points in the model.
+
+The model was then used to",0.0,0.0,0.0,2.4269141363220115e-07,922.0,4.867069947067648e-05,40.0,0.0,0.0
+gpt2,18,The chemical sample was sealed by two technicians in Room 7.,same_sentence,question,2,none,0.75,,The chemical sample was sealed by two technicians in Room 7. The chemical sample was sealed by two technicians in Room 7,0.0,1.0,0.0,8.910203632694902e-07,241.0,0.0001642654387978837,77.0,0.0,0.0
+gpt2,18,The chemical sample was sealed by two technicians in Room 7.,same_sentence,question,2,target_delta,0.75,,"The chemical sample was sealed by two technicians in Room 7.
+
+The chemical sample was sealed by two technicians in",0.0,1.0,0.0,5.067824986326741e-07,509.0,0.04820401594042778,2.0,0.0,1.0
+gpt2,18,The chemical sample was sealed by two technicians in Room 7.,same_sentence,question,2,shuffled_pair_delta,0.75,,"The chemical sample was sealed by two technicians in Room 7.
+
+The chemical sample was sealed by two technicians in",0.0,1.0,0.0,7.666273518225353e-07,312.0,0.002566687995567918,2.0,0.0,1.0
+gpt2,18,The chemical sample was sealed by two technicians in Room 7.,same_sentence,question,2,target_token_embedding_raw,0.75,,The chemical sample was sealed by two technicians in Room 7. The chemical sample was sealed by two technicians in Room 7,0.0,1.0,0.0,8.691935704518983e-07,273.0,0.00020930837490595877,60.0,0.0,0.0
+gpt2,18,The chemical sample was sealed by two technicians in Room 7.,same_sentence,question,2,target_token_embedding_normmatched,0.75,,The first thing you do when you're going to do when you're going to do when you're going to do,0.0,0.0,0.0,3.337117732371553e-06,1662.0,0.1021653562784195,2.0,0.0,1.0
+gpt2,18,The chemical sample was sealed by two technicians in Room 7.,same_sentence,question,2,other_punctuation_normmatched,0.75,,"The first time:
+
+The first time:
+
+The first time:
+
+The first time:",0.0,0.0,0.0,4.043447916046716e-05,2743.0,0.004608353599905968,19.0,0.0,0.0
+gpt2,18,The chemical sample was sealed by two technicians in Room 7.,same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,8.669887756695971e-05,1595.0,0.00015872262883931398,697.0,0.0,0.0
+gpt2,18,The chemical sample was sealed by two technicians in Room 7.,same_sentence,question,2,random_norm,0.75,,"The chemical sample was taken from the room and sent to the laboratory.
+
+The chemical sample was sent to the",0.0,0.0,0.0,1.049255160978646e-06,242.0,0.00017379599739797413,30.0,0.0,0.0
+gpt2,18,The chemical sample was sealed by two technicians in Room 7.,same_sentence,question,2,negative_target_delta,0.75,,"The team was able to extract the sample, but the team was unable to extract the sample because of the lack of",0.0,0.0,0.0,7.404290727208718e-07,333.0,2.9380778869381174e-05,333.0,0.0,0.0
+gpt2,19,"When the satellite passed overhead, the antenna logged a weak signal.",same_sentence,question,2,none,0.75,,"The satellite's signal was then sent to the ground, where it was picked up by the ground-based satellite.",0.0,0.0,0.0,1.678615035416442e-06,74.0,7.328677747864276e-05,74.0,0.0,0.0
+gpt2,19,"When the satellite passed overhead, the antenna logged a weak signal.",same_sentence,question,2,target_delta,0.75,,"The satellite was not a satellite.
+
+No, it was a satellite.
+
+No, it was a",0.0,0.0,0.0,2.7723799576051533e-06,70.0,0.17250947654247284,2.0,0.0,1.0
+gpt2,19,"When the satellite passed overhead, the antenna logged a weak signal.",same_sentence,question,2,shuffled_pair_delta,0.75,,"The satellite was then sent back to Earth.
+
+The satellite was then sent back to Earth.
+
+The",0.0,0.0,0.0,1.4679684454677044e-06,132.0,0.0736277773976326,4.0,0.0,1.0
+gpt2,19,"When the satellite passed overhead, the antenna logged a weak signal.",same_sentence,question,2,target_token_embedding_raw,0.75,,"The satellite's signal was then sent to the ground, where it was picked up by the ground-based radio station",0.0,0.0,0.0,1.7056729575415375e-06,80.0,9.249693539459258e-05,80.0,0.0,0.0
+gpt2,19,"When the satellite passed overhead, the antenna logged a weak signal.",same_sentence,question,2,target_token_embedding_normmatched,0.75,,"The satellite was not transmitting the signal?
+
+The satellite was not transmitting the signal?
+
+The satellite was",1.0,0.0,0.0,4.6216138116506045e-07,1403.0,0.9588981866836548,1.0,1.0,1.0
+gpt2,19,"When the satellite passed overhead, the antenna logged a weak signal.",same_sentence,question,2,other_punctuation_normmatched,0.75,,"The first time:
+
+The first time:
+
+The first time:
+
+The first time:",0.0,0.0,0.0,3.7607565900543705e-05,2744.0,0.0049764676950871944,20.0,0.0,0.0
+gpt2,19,"When the satellite passed overhead, the antenna logged a weak signal.",same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,9.147392847808078e-05,1446.0,0.00016350358782801777,649.0,0.0,0.0
+gpt2,19,"When the satellite passed overhead, the antenna logged a weak signal.",same_sentence,question,2,random_norm,0.75,,"""We were able to detect the signal from the satellite,"" said Dr. Michael J. Schoenfeld, a",0.0,0.0,0.0,1.5175450016613468e-06,64.0,2.91528704110533e-05,64.0,0.0,0.0
+gpt2,19,"When the satellite passed overhead, the antenna logged a weak signal.",same_sentence,question,2,negative_target_delta,0.75,,"The satellite then turned on and the signal was transmitted to the ground.
+
+The satellite then turned on and the",0.0,0.0,0.0,1.178208549390547e-06,129.0,3.100689718849026e-05,42.0,0.0,0.0
+gpt2,20,The migration script copied 19 tables before the database restarted.,same_sentence,question,2,none,0.75,,The migration script copied 19 tables before the database restarted. The migration script copied 19 tables before the database restarted,0.0,1.0,0.0,2.079292755752249e-07,959.0,7.119604561012238e-05,34.0,0.0,0.0
+gpt2,20,The migration script copied 19 tables before the database restarted.,same_sentence,question,2,target_delta,0.75,,"The migration script copied 19 tables before the database restarted.
+
+The migration script copied 19 tables before the database",0.0,1.0,0.0,1.1167427373948158e-06,134.0,0.024703901261091232,3.0,0.0,1.0
+gpt2,20,The migration script copied 19 tables before the database restarted.,same_sentence,question,2,shuffled_pair_delta,0.75,,"The migration script copied 19 tables before the database restarted.
+
+The migration script copied 19 tables before the database",0.0,1.0,0.0,3.77972924070491e-07,339.0,0.00044874162995256484,18.0,0.0,0.0
+gpt2,20,The migration script copied 19 tables before the database restarted.,same_sentence,question,2,target_token_embedding_raw,0.75,,The migration script copied 19 tables before the database restarted. The migration script copied 19 tables before the database restarted,0.0,1.0,0.0,2.1244134984499397e-07,1017.0,7.948370330268517e-05,28.0,0.0,0.0
+gpt2,20,The migration script copied 19 tables before the database restarted.,same_sentence,question,2,target_token_embedding_normmatched,0.75,,The migration script copied 19 tables before the database restarted. The migration script copied 19 tables before the database restarted,0.0,1.0,0.0,2.9357283892750274e-06,1232.0,0.05968988686800003,2.0,0.0,1.0
+gpt2,20,The migration script copied 19 tables before the database restarted.,same_sentence,question,2,other_punctuation_normmatched,0.75,,"The migration script copied 19 tables before the database restarted.
+
+The migration script copied 19 tables before the database",0.0,1.0,0.0,5.177307684789412e-05,1907.0,0.0013832927215844393,26.0,0.0,0.0
+gpt2,20,The migration script copied 19 tables before the database restarted.,same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,6.060562009224668e-05,2223.0,0.00014515705697704107,720.0,0.0,0.0
+gpt2,20,The migration script copied 19 tables before the database restarted.,same_sentence,question,2,random_norm,0.75,,The migration script copied 19 tables before the database restarted. The migration script copied 19 tables before the database restarted,0.0,1.0,0.0,4.206949313356745e-07,320.0,0.0001295705878874287,55.0,0.0,0.0
+gpt2,20,The migration script copied 19 tables before the database restarted.,same_sentence,question,2,negative_target_delta,0.75,,"The migration script copied 19 tables before the database restarted.
+
+The migration script copied 19 tables before the database",0.0,1.0,0.0,2.8648105399042834e-07,423.0,0.00010379889135947451,37.0,0.0,0.0
+gpt2,21,"Although the lecture began late, the recording captured every slide.",same_sentence,question,2,none,0.75,,"""I think it's a great way to get people to think about the world,"" said the professor. ""It",0.0,0.0,0.0,1.6383128240704536e-06,90.0,0.00010748514614533633,90.0,0.0,0.0
+gpt2,21,"Although the lecture began late, the recording captured every slide.",same_sentence,question,2,target_delta,0.75,,"""I was just trying to get the audience to think about the question,"" he said.
+
+""I was",0.0,0.0,0.0,1.004944124360918e-06,184.0,0.0010485438397154212,21.0,0.0,0.0
+gpt2,21,"Although the lecture began late, the recording captured every slide.",same_sentence,question,2,shuffled_pair_delta,0.75,,"""I was just so excited to be there,"" said the teacher.
+
+""I was so excited to be",0.0,0.0,0.0,7.133403414627537e-07,322.0,0.0005655289860442281,24.0,0.0,0.0
+gpt2,21,"Although the lecture began late, the recording captured every slide.",same_sentence,question,2,target_token_embedding_raw,0.75,,"""I'm not sure if I'm going to be able to do it,"" he said. ""I'm not",0.0,0.0,0.0,1.6519511518708896e-06,98.0,0.000617378274910152,98.0,0.0,0.0
+gpt2,21,"Although the lecture began late, the recording captured every slide.",same_sentence,question,2,target_token_embedding_normmatched,0.75,,"""I'm not going to be able to do anything?""
+
+""I'm not going to be able to",1.0,0.0,0.0,4.761902346217539e-06,1431.0,0.11254491657018661,2.0,0.0,1.0
+gpt2,21,"Although the lecture began late, the recording captured every slide.",same_sentence,question,2,other_punctuation_normmatched,0.75,,"The first time:
+
+The first time:
+
+The first time:
+
+The first time:",0.0,0.0,0.0,3.4885379136539996e-05,2900.0,0.0030937909614294767,18.0,0.0,0.0
+gpt2,21,"Although the lecture began late, the recording captured every slide.",same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,0.00014772862778045237,846.0,0.00016260465781670064,700.0,0.0,0.0
+gpt2,21,"Although the lecture began late, the recording captured every slide.",same_sentence,question,2,random_norm,0.75,,"""I'm not going to be here for the next lecture,"" he said.
+
+""I'm not going",0.0,0.0,0.0,1.1890830364791327e-06,74.0,0.0013447615783661604,29.0,0.0,0.0
+gpt2,21,"Although the lecture began late, the recording captured every slide.",same_sentence,question,2,negative_target_delta,0.75,,"""I was just trying to get the audience to come to me and say, 'I'm going to go to",0.0,0.0,0.0,1.1961232075918815e-06,108.0,5.6552784371888265e-05,108.0,0.0,0.0
+gpt2,22,The legal memo was reviewed by Nadia before noon.,same_sentence,question,2,none,0.75,,"The memo, which was obtained by The Associated Press, was obtained by The Associated Press by The Associated Press.",0.0,0.0,0.0,1.755606376718788e-06,36.0,4.936509867548011e-05,36.0,0.0,0.0
+gpt2,22,The legal memo was reviewed by Nadia before noon.,same_sentence,question,2,target_delta,0.75,,"The memo was written by the attorney general's office, the attorney general's office, the attorney general's office,",0.0,0.0,0.0,2.193731006627786e-06,34.0,0.2873338758945465,2.0,0.0,1.0
+gpt2,22,The legal memo was reviewed by Nadia before noon.,same_sentence,question,2,shuffled_pair_delta,0.75,,"""The court has not yet determined whether the defendant's motion to dismiss the case is a valid one,"" the memo",0.0,0.0,0.0,1.9833976239169715e-06,34.0,0.00015566877846140414,34.0,0.0,0.0
+gpt2,22,The legal memo was reviewed by Nadia before noon.,same_sentence,question,2,target_token_embedding_raw,0.75,,"The memo, which was obtained by The Associated Press, was obtained by The Associated Press by The Associated Press on Wednesday",0.0,0.0,0.0,1.8345573380429414e-06,36.0,5.25186987943016e-05,36.0,0.0,0.0
+gpt2,22,The legal memo was reviewed by Nadia before noon.,same_sentence,question,2,target_token_embedding_normmatched,0.75,,"The memo was reviewed by Nadia before noon.
+
+The legal memo was reviewed by Nadia before noon.",0.0,1.0,0.0,8.257947001766297e-07,593.0,0.3246419131755829,2.0,0.0,1.0
+gpt2,22,The legal memo was reviewed by Nadia before noon.,same_sentence,question,2,other_punctuation_normmatched,0.75,,The first thing is a lot of the first thing is a lot of the first thing is a lot of the first thing,0.0,0.0,0.0,4.0155373426387087e-05,2695.0,0.0033052212093025446,28.0,0.0,0.0
+gpt2,22,The legal memo was reviewed by Nadia before noon.,same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,0.00012483284808695316,1123.0,0.00021547279902733862,512.0,0.0,0.0
+gpt2,22,The legal memo was reviewed by Nadia before noon.,same_sentence,question,2,random_norm,0.75,,"The memo, which was sent to the Senate Judiciary Committee, was sent to the Senate Judiciary Committee, and was sent",0.0,0.0,0.0,1.720048203424085e-06,37.0,6.665567343588918e-05,37.0,0.0,0.0
+gpt2,22,The legal memo was reviewed by Nadia before noon.,same_sentence,question,2,negative_target_delta,0.75,,"""The court has decided to allow the court to hear the case,"" she said.
+
+""The court has",0.0,0.0,0.0,2.0900949948554626e-06,38.0,4.079838618054055e-05,36.0,0.0,0.0
+gpt2,23,"Because the sensor drifted, the robot recalibrated its camera.",same_sentence,question,2,none,0.75,,"""We're not sure what happened,"" said the robot's operator, who asked not to be named. ""We",0.0,0.0,0.0,1.7745740024111e-06,76.0,0.00014611384540330619,76.0,0.0,0.0
+gpt2,23,"Because the sensor drifted, the robot recalibrated its camera.",same_sentence,question,2,target_delta,0.75,,"The robot's camera was a little too small, but it was still a good deal.
+
+The robot's",0.0,0.0,0.0,2.349790747757652e-06,98.0,0.002961886115372181,18.0,0.0,0.0
+gpt2,23,"Because the sensor drifted, the robot recalibrated its camera.",same_sentence,question,2,shuffled_pair_delta,0.75,,"The robot's sensors were not working.
+
+The robot's sensors were not working!
+
+The robot's",0.0,0.0,0.0,1.7660343019088032e-06,127.0,0.11644158512353897,3.0,0.0,1.0
+gpt2,23,"Because the sensor drifted, the robot recalibrated its camera.",same_sentence,question,2,target_token_embedding_raw,0.75,,"""We're not going to be able to do that,"" said the robot's operator, who asked not to be",0.0,0.0,0.0,1.8083868553731008e-06,80.0,0.0001003881188808009,80.0,0.0,0.0
+gpt2,23,"Because the sensor drifted, the robot recalibrated its camera.",same_sentence,question,2,target_token_embedding_normmatched,0.75,,"The robot's sensors are not calibrated to the environment.
+
+The robot's sensors are not calibrated to the environment",0.0,0.0,0.0,4.5370964585345064e-07,1210.0,0.1758737415075302,2.0,0.0,1.0
+gpt2,23,"Because the sensor drifted, the robot recalibrated its camera.",same_sentence,question,2,other_punctuation_normmatched,0.75,,The first time: The first time: The first time: The first time: The first time: The first time:,0.0,0.0,0.0,3.402954098419286e-05,2861.0,0.006165982689708471,22.0,0.0,0.0
+gpt2,23,"Because the sensor drifted, the robot recalibrated its camera.",same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,9.047575440490618e-05,1524.0,0.00020371121354401112,522.0,0.0,0.0
+gpt2,23,"Because the sensor drifted, the robot recalibrated its camera.",same_sentence,question,2,random_norm,0.75,,"""We're going to have to do a lot of things to make it more accurate,"" said Dr. Michael J",0.0,0.0,0.0,1.7872906710181269e-06,57.0,0.00010763218597276136,57.0,0.0,0.0
+gpt2,23,"Because the sensor drifted, the robot recalibrated its camera.",same_sentence,question,2,negative_target_delta,0.75,,"""We're going to be able to see the robot's movements and see if it's moving,"" said Dr.",0.0,0.0,0.0,1.5963823898346163e-06,92.0,5.732381032430567e-05,92.0,0.0,0.0
+gpt2,24,The container was inspected at Gate 6 after midnight.,same_sentence,question,2,none,0.75,,"The container was inspected at Gate 6 after midnight.
+
+The container was inspected at Gate 6 after midnight.",0.0,1.0,0.0,1.8045260503640748e-06,52.0,5.2686351409647614e-05,29.0,0.0,0.0
+gpt2,24,The container was inspected at Gate 6 after midnight.,same_sentence,question,2,target_delta,0.75,,The container was inspected at Gate 6 at 11:30 p.m. on the day of the inspection.,0.0,1.0,0.0,1.3553229791796184e-06,130.0,0.08752375096082687,3.0,0.0,1.0
+gpt2,24,The container was inspected at Gate 6 after midnight.,same_sentence,question,2,shuffled_pair_delta,0.75,,"The container was inspected at Gate 6 after midnight.
+
+The container was inspected at Gate 6 after midnight.",0.0,1.0,0.0,1.3688869557881844e-06,124.0,0.15355214476585388,4.0,0.0,1.0
+gpt2,24,The container was inspected at Gate 6 after midnight.,same_sentence,question,2,target_token_embedding_raw,0.75,,The container was inspected at Gate 6 after midnight. The container was inspected at Gate 6 after midnight. The container was,0.0,1.0,0.0,1.8641554788700887e-06,53.0,4.843768329010345e-05,53.0,0.0,0.0
+gpt2,24,The container was inspected at Gate 6 after midnight.,same_sentence,question,2,target_token_embedding_normmatched,0.75,,"The container was inspected at Gate 6 after midnight.
+
+The container was inspected at Gate 6 after midnight?",1.0,1.0,1.0,8.79565732248011e-07,1193.0,0.4849281907081604,1.0,1.0,1.0
+gpt2,24,The container was inspected at Gate 6 after midnight.,same_sentence,question,2,other_punctuation_normmatched,0.75,,"The first time:
+
+The first time:
+
+The first time:
+
+The first time:",0.0,0.0,0.0,3.7002602766733617e-05,2576.0,0.004692366812378168,17.0,0.0,0.0
+gpt2,24,The container was inspected at Gate 6 after midnight.,same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,9.64575374382548e-05,1524.0,0.00015775897190906107,749.0,0.0,0.0
+gpt2,24,The container was inspected at Gate 6 after midnight.,same_sentence,question,2,random_norm,0.75,,"The container was inspected at Gate 6 after midnight.
+
+The container was inspected at Gate 6 after midnight.",0.0,1.0,0.0,1.7091452946260688e-06,78.0,6.228792335605249e-05,25.0,0.0,0.0
+gpt2,24,The container was inspected at Gate 6 after midnight.,same_sentence,question,2,negative_target_delta,0.75,,"The container was inspected at Gate 6 after midnight.
+
+The container was inspected at Gate 6 after midnight.",0.0,1.0,0.0,1.922090405059862e-06,48.0,3.071382161579095e-05,40.0,0.0,0.0
+gpt2,25,"When the timer expired, the incubator locked the control panel.",same_sentence,question,2,none,0.75,,The incubator was then removed from the control panel and the incubator was removed from the control panel.,0.0,0.0,0.0,4.7201606889757386e-07,429.0,4.853372956858948e-05,30.0,0.0,0.0
+gpt2,25,"When the timer expired, the incubator locked the control panel.",same_sentence,question,2,target_delta,0.75,,"The control panel was closed.
+
+The control panel was closed?
+
+The control panel was closed?",1.0,0.0,0.0,1.3095162785248249e-06,153.0,0.8271092176437378,1.0,1.0,1.0
+gpt2,25,"When the timer expired, the incubator locked the control panel.",same_sentence,question,2,shuffled_pair_delta,0.75,,"The incubator was not locked.
+
+The incubator was not locked!
+
+The incubator was not",0.0,0.0,0.0,6.364627438415482e-07,284.0,0.05226372927427292,4.0,0.0,1.0
+gpt2,25,"When the timer expired, the incubator locked the control panel.",same_sentence,question,2,target_token_embedding_raw,0.75,,The incubator was then removed from the control panel and the incubator was removed from the control panel.,0.0,0.0,0.0,4.6985013568701106e-07,448.0,5.484044595505111e-05,28.0,0.0,0.0
+gpt2,25,"When the timer expired, the incubator locked the control panel.",same_sentence,question,2,target_token_embedding_normmatched,0.75,,The first time you saw the first time you saw the first time you saw the first time you saw the first time,0.0,0.0,0.0,7.936128554320021e-07,1406.0,0.0880621075630188,2.0,0.0,1.0
+gpt2,25,"When the timer expired, the incubator locked the control panel.",same_sentence,question,2,other_punctuation_normmatched,0.75,,"The first time:
+
+The first time:
+
+The first time:
+
+The first time:",0.0,0.0,0.0,4.276074469089508e-05,2360.0,0.0059830197133123875,17.0,0.0,0.0
+gpt2,25,"When the timer expired, the incubator locked the control panel.",same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,6.435135583160445e-05,2093.0,0.00015642124344594777,670.0,0.0,0.0
+gpt2,25,"When the timer expired, the incubator locked the control panel.",same_sentence,question,2,random_norm,0.75,,"The incubator was not locked.
+
+The incubator was not locked.
+
+The incubator was not",0.0,0.0,0.0,9.8350983535056e-07,99.0,0.0002462280390318483,24.0,0.0,0.0
+gpt2,25,"When the timer expired, the incubator locked the control panel.",same_sentence,question,2,negative_target_delta,0.75,,"The next step was to remove the incubator.
+
+The next step was to remove the control panel.",0.0,0.0,0.0,5.61186311642814e-07,275.0,0.0005522920982912183,38.0,0.0,0.0
+gpt2,26,The museum catalog listed 38 restored photographs from 1921.,same_sentence,question,2,none,0.75,,The museum catalog listed 38 restored photographs from 1921. The museum catalog listed 38 restored photographs from 1921. The museum catalog,0.0,1.0,0.0,1.2751495432894444e-06,231.0,7.121625094441697e-05,58.0,0.0,0.0
+gpt2,26,The museum catalog listed 38 restored photographs from 1921.,same_sentence,question,2,target_delta,0.75,,"The museum's website says that the photos were taken in the early 1920s.
+
+The museum's website says",0.0,0.0,0.0,5.450440312415594e-07,727.0,0.0053237434476614,16.0,0.0,0.0
+gpt2,26,The museum catalog listed 38 restored photographs from 1921.,same_sentence,question,2,shuffled_pair_delta,0.75,,"The museum also has a collection of photographs of the original paintings.
+
+The museum also has a collection of photographs",0.0,0.0,0.0,6.842676043561369e-07,908.0,0.00011777136387536302,27.0,0.0,0.0
+gpt2,26,The museum catalog listed 38 restored photographs from 1921.,same_sentence,question,2,target_token_embedding_raw,0.75,,The museum catalog listed 38 restored photographs from 1921. The museum catalog listed 38 restored photographs from 1921. The museum catalog,0.0,1.0,0.0,1.2802358924091095e-06,235.0,0.00012504265760071576,54.0,0.0,0.0
+gpt2,26,The museum catalog listed 38 restored photographs from 1921.,same_sentence,question,2,target_token_embedding_normmatched,0.75,,The museum catalog listed 38 restored photographs from 1921. The museum catalog listed 38 restored photographs from 1921. The museum catalog,0.0,1.0,0.0,1.492139517722535e-06,982.0,0.14704875648021698,2.0,0.0,1.0
+gpt2,26,The museum catalog listed 38 restored photographs from 1921.,same_sentence,question,2,other_punctuation_normmatched,0.75,,"The first time:
+
+The first time:
+
+The first time:
+
+The first time:",0.0,0.0,0.0,5.4462441767100245e-05,2053.0,0.0045371935702860355,18.0,0.0,0.0
+gpt2,26,The museum catalog listed 38 restored photographs from 1921.,same_sentence,question,2,random_word_normmatched,0.75,,"The the ""The the "" the "" the "" the "" the "" the "" the "" the "" the "" the",0.0,0.0,0.0,0.00018198236648458987,700.0,0.00038964347913861275,243.0,0.0,0.0
+gpt2,26,The museum catalog listed 38 restored photographs from 1921.,same_sentence,question,2,random_norm,0.75,,"The museum catalog listed 38 restored photographs from 1921.
+
+The museum catalog listed 38 restored photographs from 1921.",0.0,1.0,0.0,1.2028860965074273e-06,171.0,8.685221837367862e-05,27.0,0.0,0.0
+gpt2,26,The museum catalog listed 38 restored photographs from 1921.,same_sentence,question,2,negative_target_delta,0.75,,"The museum catalog listed the following:
+
+""The first time I saw a photograph of a man who was so",0.0,0.0,0.0,5.897704795643222e-07,419.0,8.639578300062567e-05,41.0,0.0,0.0
+gpt2,27,"After the password reset, the dashboard requested a fresh token.",same_sentence,question,2,none,0.75,,"The dashboard then asked for a new password.
+
+The dashboard then asked for a new password.
+
+The",0.0,0.0,0.0,5.729577310376044e-07,161.0,0.00015136525325942785,27.0,0.0,0.0
+gpt2,27,"After the password reset, the dashboard requested a fresh token.",same_sentence,question,2,target_delta,0.75,,"The dashboard will be updated with the new token.
+
+The dashboard will be updated with the new token?",1.0,0.0,0.0,1.454378093512787e-06,47.0,0.8458278179168701,1.0,1.0,1.0
+gpt2,27,"After the password reset, the dashboard requested a fresh token.",same_sentence,question,2,shuffled_pair_delta,0.75,,"The dashboard will then ask you to enter your password.
+
+The dashboard will then ask you to enter your password",0.0,0.0,0.0,8.592551239416935e-07,57.0,0.0007570880115963519,15.0,0.0,0.0
+gpt2,27,"After the password reset, the dashboard requested a fresh token.",same_sentence,question,2,target_token_embedding_raw,0.75,,"The dashboard then asked for a new password.
+
+The dashboard then asked for a new password.
+
+The",0.0,0.0,0.0,5.905984039600298e-07,162.0,0.00019532456644810736,27.0,0.0,0.0
+gpt2,27,"After the password reset, the dashboard requested a fresh token.",same_sentence,question,2,target_token_embedding_normmatched,0.75,,The first time you see the first time you see the first time you see the first time you see the first time,0.0,0.0,0.0,5.651626224789652e-07,1125.0,0.04446270316839218,2.0,0.0,1.0
+gpt2,27,"After the password reset, the dashboard requested a fresh token.",same_sentence,question,2,other_punctuation_normmatched,0.75,,"The first time:
+
+The first time:
+
+The first time:
+
+The first time:",0.0,0.0,0.0,3.427849514991976e-05,1940.0,0.006056654267013073,15.0,0.0,0.0
+gpt2,27,"After the password reset, the dashboard requested a fresh token.",same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,7.284730963874608e-05,1831.0,0.00019443484779912978,486.0,0.0,0.0
+gpt2,27,"After the password reset, the dashboard requested a fresh token.",same_sentence,question,2,random_norm,0.75,,"The dashboard then asked for the password.
+
+The dashboard then asked for the password.
+
+The dashboard then",0.0,0.0,0.0,7.428305934809032e-07,56.0,0.0002962329308502376,23.0,0.0,0.0
+gpt2,27,"After the password reset, the dashboard requested a fresh token.",same_sentence,question,2,negative_target_delta,0.75,,"The dashboard then asked the user to enter the password.
+
+The user then entered the password and the dashboard was",0.0,0.0,0.0,5.995710239403707e-07,160.0,3.404966264497489e-05,31.0,0.0,0.0
+gpt2,28,The clinical team processed 64 consent forms during the audit.,same_sentence,question,2,none,0.75,,The audit found that the company had failed to provide adequate information to the public about the company's compliance with the Health,0.0,0.0,0.0,1.428261725777702e-06,45.0,2.346222936466802e-05,45.0,0.0,0.0
+gpt2,28,The clinical team processed 64 consent forms during the audit.,same_sentence,question,2,target_delta,0.75,,The study was conducted by the National Institute of Mental Health (NIMH) and the National Institute of Health and,0.0,0.0,0.0,1.1381523563613882e-06,101.0,0.0007937909103929996,79.0,0.0,0.0
+gpt2,28,The clinical team processed 64 consent forms during the audit.,same_sentence,question,2,shuffled_pair_delta,0.75,,"The audit found that the company's financial statements were not accurate.
+
+The audit also found that the company's",0.0,0.0,0.0,1.6269314073724672e-06,58.0,0.0002233928389614448,22.0,0.0,0.0
+gpt2,28,The clinical team processed 64 consent forms during the audit.,same_sentence,question,2,target_token_embedding_raw,0.75,,The audit found that the company had failed to provide adequate information to the public about the use of its products.,0.0,0.0,0.0,1.4422213325815392e-06,46.0,4.6290282625705004e-05,46.0,0.0,0.0
+gpt2,28,The clinical team processed 64 consent forms during the audit.,same_sentence,question,2,target_token_embedding_normmatched,0.75,,"The study
+
+The study
+
+The study
+
+The study
+
+The study
+
+The study",0.0,0.0,0.0,4.6398341169151536e-07,1144.0,0.05392782390117645,3.0,0.0,1.0
+gpt2,28,The clinical team processed 64 consent forms during the audit.,same_sentence,question,2,other_punctuation_normmatched,0.75,,"The first time:
+
+The first time:
+
+The first time:
+
+The first time:",0.0,0.0,0.0,2.9554037610068917e-05,2924.0,0.005917768459767103,20.0,0.0,0.0
+gpt2,28,The clinical team processed 64 consent forms during the audit.,same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,7.422955241054296e-05,1891.0,0.00015856880054343492,768.0,0.0,0.0
+gpt2,28,The clinical team processed 64 consent forms during the audit.,same_sentence,question,2,random_norm,0.75,,"The study was conducted by the University of California, San Francisco, and the results were published in the journal PLOS",0.0,0.0,0.0,1.2752910834024078e-06,48.0,5.971132850390859e-05,48.0,0.0,0.0
+gpt2,28,The clinical team processed 64 consent forms during the audit.,same_sentence,question,2,negative_target_delta,0.75,,The results of the audit were published in the Journal of the American College of Obstetricians and Gynecologists.,0.0,0.0,0.0,1.5675839222240029e-06,70.0,0.00013684856821782887,70.0,0.0,0.0
+gpt2,29,"Although the storm damaged the pier, the lighthouse remained powered.",same_sentence,question,2,none,0.75,,The lighthouse was built in 1885 and was the first lighthouse in the world to be built in the United States.,0.0,0.0,0.0,1.855279606388649e-06,68.0,4.5763663365505636e-05,68.0,0.0,0.0
+gpt2,29,"Although the storm damaged the pier, the lighthouse remained powered.",same_sentence,question,2,target_delta,0.75,,"The lighthouse was not damaged.
+
+No.
+
+No.
+
+No?
+
+No?",1.0,0.0,0.0,1.0610515346343163e-06,234.0,0.5927981734275818,1.0,1.0,1.0
+gpt2,29,"Although the storm damaged the pier, the lighthouse remained powered.",same_sentence,question,2,shuffled_pair_delta,0.75,,"""We were able to get the lighthouse back on the pier,"" said the lighthouse keeper.
+
+""We were",0.0,0.0,0.0,7.137425654946128e-07,387.0,0.00020512739138212055,28.0,0.0,0.0
+gpt2,29,"Although the storm damaged the pier, the lighthouse remained powered.",same_sentence,question,2,target_token_embedding_raw,0.75,,The lighthouse was built in 1885 and was the first lighthouse in the world to be built in the United States.,0.0,0.0,0.0,1.8587109025247628e-06,78.0,5.636614514514804e-05,78.0,0.0,0.0
+gpt2,29,"Although the storm damaged the pier, the lighthouse remained powered.",same_sentence,question,2,target_token_embedding_normmatched,0.75,,"The lighthouse was a very important thing.
+
+The lighthouse was a very important thing. The first thing was a",0.0,0.0,0.0,1.6704763083907892e-06,2014.0,0.043894052505493164,2.0,0.0,1.0
+gpt2,29,"Although the storm damaged the pier, the lighthouse remained powered.",same_sentence,question,2,other_punctuation_normmatched,0.75,,"The first time:
+
+The first time:
+
+The first time:
+
+The first time:",0.0,0.0,0.0,2.8436013963073492e-05,2848.0,0.004271527752280235,19.0,0.0,0.0
+gpt2,29,"Although the storm damaged the pier, the lighthouse remained powered.",same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,8.523385622538626e-05,1587.0,0.0001632353087188676,672.0,0.0,0.0
+gpt2,29,"Although the storm damaged the pier, the lighthouse remained powered.",same_sentence,question,2,random_norm,0.75,,"The lighthouse was built in 1859, and was named for the first of the year of the year of the year",0.0,0.0,0.0,1.5579457794956397e-06,54.0,5.2417170081753284e-05,54.0,0.0,0.0
+gpt2,29,"Although the storm damaged the pier, the lighthouse remained powered.",same_sentence,question,2,negative_target_delta,0.75,,"The lighthouse was closed for the day, but the lighthouse was reopened on Monday.
+
+The lighthouse was closed for",0.0,0.0,0.0,1.3655734392159502e-06,108.0,3.535059659043327e-05,41.0,0.0,0.0
+gpt2,30,The finance report was delivered to Building 4 by courier.,same_sentence,question,2,none,0.75,,The report was delivered to Building 4 by courier. The report was delivered to Building 4 by courier. The report was,0.0,1.0,0.0,1.1070659411416273e-06,151.0,7.017153984634206e-05,142.0,0.0,0.0
+gpt2,30,The finance report was delivered to Building 4 by courier.,same_sentence,question,2,target_delta,0.75,,"The report was delivered to the building by courier.
+
+The building by courier?
+
+The answer is no",1.0,1.0,1.0,7.833266408852069e-07,206.0,0.6755504012107849,1.0,1.0,1.0
+gpt2,30,The finance report was delivered to Building 4 by courier.,same_sentence,question,2,shuffled_pair_delta,0.75,,"The report was delivered to Building 4 by courier.
+
+The report was delivered to Building 4 by courier?",1.0,1.0,1.0,1.1299139259790536e-06,148.0,0.32232198119163513,1.0,1.0,1.0
+gpt2,30,The finance report was delivered to Building 4 by courier.,same_sentence,question,2,target_token_embedding_raw,0.75,,The report was delivered to Building 4 by courier. The report was delivered to Building 4 by courier. The report was,0.0,1.0,0.0,9.651953405409586e-07,189.0,8.345669630216435e-05,120.0,0.0,0.0
+gpt2,30,The finance report was delivered to Building 4 by courier.,same_sentence,question,2,target_token_embedding_normmatched,0.75,,"The report was delivered to Building 4 by courier.
+
+The report was delivered to Building 4 by courier.",0.0,1.0,0.0,4.817281364921655e-07,2152.0,0.18974128365516663,2.0,0.0,1.0
+gpt2,30,The finance report was delivered to Building 4 by courier.,same_sentence,question,2,other_punctuation_normmatched,0.75,,"The first time:
+
+The first time:
+
+The first time:
+
+The first time:",0.0,0.0,0.0,3.157417449983768e-05,2782.0,0.004279466345906258,20.0,0.0,0.0
+gpt2,30,The finance report was delivered to Building 4 by courier.,same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,0.00010630370525177568,1318.0,0.00017070145986508578,664.0,0.0,0.0
+gpt2,30,The finance report was delivered to Building 4 by courier.,same_sentence,question,2,random_norm,0.75,,"The report was delivered to Building 4 by courier.
+
+The report was delivered to Building 4 by courier.",0.0,1.0,0.0,1.0883612731049652e-06,213.0,0.00013362437312025577,27.0,0.0,0.0
+gpt2,30,The finance report was delivered to Building 4 by courier.,same_sentence,question,2,negative_target_delta,0.75,,The report was delivered to the Department of Finance and the Department of the Department of the Department of the Department of the,0.0,0.0,0.0,8.543566991647822e-07,255.0,2.472833512001671e-05,255.0,0.0,0.0
+gpt2,31,"When the compressor restarted, the pressure gauge returned to baseline.",same_sentence,question,2,none,0.75,,"The compressor was then restarted again.
+
+The compressor was then restarted again.
+
+The compressor was",0.0,0.0,0.0,6.854787102383852e-07,296.0,8.895653445506468e-05,24.0,0.0,0.0
+gpt2,31,"When the compressor restarted, the pressure gauge returned to baseline.",same_sentence,question,2,target_delta,0.75,,"The compressor was still working.
+
+The compressor was still working?
+
+The compressor was still working?",1.0,0.0,0.0,1.5299893902920303e-06,74.0,0.8820198774337769,1.0,1.0,1.0
+gpt2,31,"When the compressor restarted, the pressure gauge returned to baseline.",same_sentence,question,2,shuffled_pair_delta,0.75,,"The compressor was not working.
+
+The compressor was not working.
+
+The compressor was not working!",0.0,0.0,0.0,9.045306228472327e-07,190.0,0.07833419740200043,3.0,0.0,1.0
+gpt2,31,"When the compressor restarted, the pressure gauge returned to baseline.",same_sentence,question,2,target_token_embedding_raw,0.75,,"The compressor was then restarted again.
+
+The compressor was then restarted again.
+
+The compressor was",0.0,0.0,0.0,6.746591907358379e-07,316.0,0.00014058391388971359,24.0,0.0,0.0
+gpt2,31,"When the compressor restarted, the pressure gauge returned to baseline.",same_sentence,question,2,target_token_embedding_normmatched,0.75,,"The first time I was getting the first time I was getting the first time I was getting
+
+The first time",0.0,0.0,0.0,5.185523832551553e-07,1551.0,0.044335879385471344,2.0,0.0,1.0
+gpt2,31,"When the compressor restarted, the pressure gauge returned to baseline.",same_sentence,question,2,other_punctuation_normmatched,0.75,,"The first time:
+
+The first time:
+
+The first time:
+
+The first time:",0.0,0.0,0.0,3.693847611430101e-05,2520.0,0.004323380533605814,19.0,0.0,0.0
+gpt2,31,"When the compressor restarted, the pressure gauge returned to baseline.",same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,6.864059832878411e-05,1896.0,0.00014230087981559336,724.0,0.0,0.0
+gpt2,31,"When the compressor restarted, the pressure gauge returned to baseline.",same_sentence,question,2,random_norm,0.75,,"The compressor was not working properly.
+
+The compressor was not working properly.
+
+The compressor was not working",0.0,0.0,0.0,1.0677081263565924e-06,79.0,0.0018301656236872077,23.0,0.0,0.0
+gpt2,31,"When the compressor restarted, the pressure gauge returned to baseline.",same_sentence,question,2,negative_target_delta,0.75,,"The compressor was then removed from the compressor and the compressor was replaced with a new compressor.
+
+The compressor was",0.0,0.0,0.0,5.550662649511651e-07,313.0,2.112641050189268e-05,35.0,0.0,0.0
+gpt2,32,The research assistant labeled nine folders before lunch.,same_sentence,question,2,none,0.75,,"""I'm not sure if it's because I'm a little bit of a nerd or if I'm just a",0.0,0.0,0.0,1.4442158544625272e-06,138.0,0.000759152986574918,51.0,0.0,0.0
+gpt2,32,The research assistant labeled nine folders before lunch.,same_sentence,question,2,target_delta,0.75,,"""I'm not sure if I should be able to say 'yes' to the question,"" she said.",0.0,0.0,0.0,1.6054817706390168e-06,116.0,0.010877429507672787,15.0,0.0,0.0
+gpt2,32,The research assistant labeled nine folders before lunch.,same_sentence,question,2,shuffled_pair_delta,0.75,,"""I'm not sure if it's a good idea to have a folder that's just a little bit bigger,""",0.0,0.0,0.0,1.1625181741692359e-06,157.0,0.007358596660196781,15.0,0.0,0.0
+gpt2,32,The research assistant labeled nine folders before lunch.,same_sentence,question,2,target_token_embedding_raw,0.75,,"""I'm not sure if it's a coincidence or not,"" she said. ""I'm not sure if it",0.0,0.0,0.0,1.4069423741602805e-06,142.0,0.0008934659999795258,38.0,0.0,0.0
+gpt2,32,The research assistant labeled nine folders before lunch.,same_sentence,question,2,target_token_embedding_normmatched,0.75,,"""I'm not going to be able to do anything?""
+
+""I'm not going to be able to",1.0,0.0,0.0,7.562991299892019e-07,882.0,0.09942937642335892,2.0,0.0,1.0
+gpt2,32,The research assistant labeled nine folders before lunch.,same_sentence,question,2,other_punctuation_normmatched,0.75,,"The first time:
+
+The first time:
+
+The first time:
+
+The first time:",0.0,0.0,0.0,5.2353498176671565e-05,2372.0,0.006362545304000378,17.0,0.0,0.0
+gpt2,32,The research assistant labeled nine folders before lunch.,same_sentence,question,2,random_word_normmatched,0.75,,"The the ""The the "" the "" the "" the "" the "" the "" the "" the "" the "" the",0.0,0.0,0.0,0.0002011138276429847,645.0,0.0003855740651488304,241.0,0.0,0.0
+gpt2,32,The research assistant labeled nine folders before lunch.,same_sentence,question,2,random_norm,0.75,,"""I'm going to have a dinner with you,"" she said.
+
+""I'm going to have a",0.0,0.0,0.0,1.7671701471044798e-06,121.0,0.002450085012242198,30.0,0.0,0.0
+gpt2,32,The research assistant labeled nine folders before lunch.,same_sentence,question,2,negative_target_delta,0.75,,"""I'm not sure what the name of the folder is, but I'm sure it's a folder on the",0.0,0.0,0.0,1.2561434914459824e-06,122.0,0.0007016178569756448,58.0,0.0,0.0
+gpt2,33,"Because the network queue filled, the batch job paused automatically.",same_sentence,question,2,none,0.75,,"The next time you run the batch job, you'll see the following message:
+
+The batch job is now",0.0,0.0,0.0,6.586413405784697e-07,262.0,8.010382589418441e-05,23.0,0.0,0.0
+gpt2,33,"Because the network queue filled, the batch job paused automatically.",same_sentence,question,2,target_delta,0.75,,"The problem is that the queue was not created by the client.
+
+The client was not created by the queue",0.0,0.0,0.0,2.526258413126925e-06,61.0,0.04025334492325783,3.0,0.0,1.0
+gpt2,33,"Because the network queue filled, the batch job paused automatically.",same_sentence,question,2,shuffled_pair_delta,0.75,,"The next time you run the job, you'll see the following message:
+
+The job is not running.",0.0,0.0,0.0,8.8039109868987e-07,176.0,0.0008235189598053694,25.0,0.0,0.0
+gpt2,33,"Because the network queue filled, the batch job paused automatically.",same_sentence,question,2,target_token_embedding_raw,0.75,,"The next time you run the batch job, you'll see the following message:
+
+The batch job is now",0.0,0.0,0.0,6.54860400572943e-07,278.0,0.00010089096758747473,23.0,0.0,0.0
+gpt2,33,"Because the network queue filled, the batch job paused automatically.",same_sentence,question,2,target_token_embedding_normmatched,0.75,,The next time you're not going to be a little bit of a little bit of a little bit of a little,0.0,0.0,0.0,9.46777163335355e-07,1189.0,0.115667425096035,2.0,0.0,1.0
+gpt2,33,"Because the network queue filled, the batch job paused automatically.",same_sentence,question,2,other_punctuation_normmatched,0.75,,"The first time:
+
+The first time:
+
+The first time:
+
+The first time:",0.0,0.0,0.0,4.360439197625965e-05,1724.0,0.005061265546828508,20.0,0.0,0.0
+gpt2,33,"Because the network queue filled, the batch job paused automatically.",same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,8.481928671244532e-05,1667.0,0.00017668138025328517,576.0,0.0,0.0
+gpt2,33,"Because the network queue filled, the batch job paused automatically.",same_sentence,question,2,random_norm,0.75,,The following example shows how to use the queue to queue to queue to queue to queue to queue to queue to queue,0.0,0.0,0.0,8.955698831414338e-07,112.0,0.00014752944116480649,112.0,0.0,0.0
+gpt2,33,"Because the network queue filled, the batch job paused automatically.",same_sentence,question,2,negative_target_delta,0.75,,"The next step was to create a new batch job.
+
+The next step was to create a new batch job",0.0,0.0,0.0,7.562861128462828e-07,177.0,0.0005399123183451593,44.0,0.0,0.0
+gpt2,34,The manuscript was scanned by a volunteer in Tallinn.,same_sentence,question,2,none,0.75,,"The manuscript was also scanned by a volunteer in Tallinn.
+
+The manuscript was scanned by a volunteer in Tall",0.0,1.0,0.0,1.7784723240765743e-06,110.0,2.6403824449516833e-05,27.0,0.0,0.0
+gpt2,34,The manuscript was scanned by a volunteer in Tallinn.,same_sentence,question,2,target_delta,0.75,,"The manuscript was scanned by a volunteer in Tallinn.
+
+The manuscript was scanned by a volunteer in Tallinn",0.0,1.0,0.0,7.372432833108178e-07,409.0,0.04663299396634102,2.0,0.0,1.0
+gpt2,34,The manuscript was scanned by a volunteer in Tallinn.,same_sentence,question,2,shuffled_pair_delta,0.75,,"The manuscript was scanned by a volunteer in Tallinn.
+
+The manuscript was scanned by a volunteer in Tallinn",0.0,1.0,0.0,1.3950199218015769e-06,212.0,0.0010595103958621621,6.0,0.0,0.0
+gpt2,34,The manuscript was scanned by a volunteer in Tallinn.,same_sentence,question,2,target_token_embedding_raw,0.75,,"The manuscript was also scanned by a volunteer in Tallinn.
+
+The manuscript was scanned by a volunteer in Tall",0.0,1.0,0.0,1.7994692598222173e-06,115.0,3.109963654424064e-05,27.0,0.0,0.0
+gpt2,34,The manuscript was scanned by a volunteer in Tallinn.,same_sentence,question,2,target_token_embedding_normmatched,0.75,,The first time you see the first time you see the first time you see the first time you see the first time,0.0,0.0,0.0,1.5460230997632607e-06,1381.0,0.052346114069223404,2.0,0.0,1.0
+gpt2,34,The manuscript was scanned by a volunteer in Tallinn.,same_sentence,question,2,other_punctuation_normmatched,0.75,,"The first time:
+
+The first time:
+
+The first time:
+
+The first time:",0.0,0.0,0.0,3.625977478804998e-05,3018.0,0.004472192842513323,16.0,0.0,0.0
+gpt2,34,The manuscript was scanned by a volunteer in Tallinn.,same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,7.055980677250773e-05,1843.0,0.00013317741104401648,849.0,0.0,0.0
+gpt2,34,The manuscript was scanned by a volunteer in Tallinn.,same_sentence,question,2,random_norm,0.75,,"The authors have published their findings in the journal Science.
+
+The authors say that the study is important for the",0.0,0.0,0.0,2.047691396001028e-06,64.0,4.0235881897388026e-05,31.0,0.0,0.0
+gpt2,34,The manuscript was scanned by a volunteer in Tallinn.,same_sentence,question,2,negative_target_delta,0.75,,"The manuscript was reviewed by the authors and published in the journal Nature.
+
+This work was supported by the National",0.0,0.0,0.0,7.105217036951217e-07,204.0,2.61446966760559e-05,30.0,0.0,0.0
+gpt2,35,"After the rehearsal, Sofia checked the metronome settings.",same_sentence,question,2,none,0.75,,"""I'm not sure if I'm going to be able to do it,"" she said. ""I'm not",0.0,0.0,0.0,2.8278731178943417e-07,776.0,0.0007890859851613641,82.0,0.0,0.0
+gpt2,35,"After the rehearsal, Sofia checked the metronome settings.",same_sentence,question,2,target_delta,0.75,,"""I was really surprised,"" she said.
+
+""I was really surprised,"" she said?
+
+""",1.0,0.0,0.0,2.3582371966313076e-07,533.0,0.6837635040283203,1.0,1.0,1.0
+gpt2,35,"After the rehearsal, Sofia checked the metronome settings.",same_sentence,question,2,shuffled_pair_delta,0.75,,"""I'm not sure if I should be doing this,"" she said.
+
+""I'm not sure if",0.0,0.0,0.0,2.5468153808105853e-07,1185.0,0.004846631549298763,24.0,0.0,0.0
+gpt2,35,"After the rehearsal, Sofia checked the metronome settings.",same_sentence,question,2,target_token_embedding_raw,0.75,,"""I'm not sure if I'm going to be able to do it,"" she said. ""I'm not",0.0,0.0,0.0,2.724678722643148e-07,805.0,0.0011923796264454722,75.0,0.0,0.0
+gpt2,35,"After the rehearsal, Sofia checked the metronome settings.",same_sentence,question,2,target_token_embedding_normmatched,0.75,,"""I was so excited,"" she said. ""I was so excited.""
+
+""I was so excited?""",1.0,0.0,0.0,4.4004927985952236e-06,1139.0,0.06577260047197342,5.0,0.0,1.0
+gpt2,35,"After the rehearsal, Sofia checked the metronome settings.",same_sentence,question,2,other_punctuation_normmatched,0.75,,"The first time:
+
+The first time:
+
+The first time:
+
+The first time:",0.0,0.0,0.0,4.684009400079958e-05,2419.0,0.0085385637357831,16.0,0.0,0.0
+gpt2,35,"After the rehearsal, Sofia checked the metronome settings.",same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,9.498329745838419e-05,1447.0,0.00018496041593607515,600.0,0.0,0.0
+gpt2,35,"After the rehearsal, Sofia checked the metronome settings.",same_sentence,question,2,random_norm,0.75,,"""I'm not sure what I'm doing,"" she said.
+
+""I'm not sure what I'm",0.0,0.0,0.0,8.454473459096334e-07,189.0,0.0020837346091866493,30.0,0.0,0.0
+gpt2,35,"After the rehearsal, Sofia checked the metronome settings.",same_sentence,question,2,negative_target_delta,0.75,,"""I'm not sure what I'm doing, but I'm sure I'm going to do it,"" she said",0.0,0.0,0.0,7.434900339831074e-07,291.0,0.00037150896969251335,92.0,0.0,0.0
+gpt2,36,The warehouse shipped 31 replacement batteries to Lisbon.,same_sentence,question,2,none,0.75,,"The company said it had received a total of 1,000 orders for the batteries.
+
+The company said it",0.0,0.0,0.0,1.2890973266621586e-06,179.0,3.3639669709373266e-05,33.0,0.0,0.0
+gpt2,36,The warehouse shipped 31 replacement batteries to Lisbon.,same_sentence,question,2,target_delta,0.75,,"The company has been in the news for a while.
+
+The company has been in the news for a while",0.0,0.0,0.0,8.354082297046261e-07,310.0,0.015752431005239487,2.0,0.0,1.0
+gpt2,36,The warehouse shipped 31 replacement batteries to Lisbon.,same_sentence,question,2,shuffled_pair_delta,0.75,,"The company said it had received a total of 1,000 orders from the UK.
+
+The company said it",0.0,0.0,0.0,6.903840130689787e-07,495.0,0.0001457966136513278,27.0,0.0,0.0
+gpt2,36,The warehouse shipped 31 replacement batteries to Lisbon.,same_sentence,question,2,target_token_embedding_raw,0.75,,"The company said it had received a shipment of batteries from the Netherlands.
+
+The batteries were shipped to the Netherlands",0.0,0.0,0.0,1.2626671832549619e-06,209.0,7.606119470437989e-05,33.0,0.0,0.0
+gpt2,36,The warehouse shipped 31 replacement batteries to Lisbon.,same_sentence,question,2,target_token_embedding_normmatched,0.75,,The company that was doing the company that was doing the company that was doing the company that was doing the company that,0.0,0.0,0.0,4.16254579249653e-06,1499.0,0.055005837231874466,2.0,0.0,1.0
+gpt2,36,The warehouse shipped 31 replacement batteries to Lisbon.,same_sentence,question,2,other_punctuation_normmatched,0.75,,"The first time:
+
+The first time:
+
+The first time:
+
+The first time:",0.0,0.0,0.0,4.656941382563673e-05,2536.0,0.005081679206341505,17.0,0.0,0.0
+gpt2,36,The warehouse shipped 31 replacement batteries to Lisbon.,same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,0.00010406853107269853,1379.0,0.0001329190854448825,871.0,0.0,0.0
+gpt2,36,The warehouse shipped 31 replacement batteries to Lisbon.,same_sentence,question,2,random_norm,0.75,,"The company said it will be able to sell the batteries to the European Union.
+
+The company said it will",0.0,0.0,0.0,1.137098024628358e-06,244.0,4.375496064312756e-05,34.0,0.0,0.0
+gpt2,36,The warehouse shipped 31 replacement batteries to Lisbon.,same_sentence,question,2,negative_target_delta,0.75,,"The company said it was ""very pleased"" with the results of the test.
+
+""We are very pleased",0.0,0.0,0.0,8.957103432294389e-07,326.0,2.5160890800179914e-05,38.0,0.0,0.0
+gpt2,37,"When the freezer door opened, the sample tags stayed readable.",same_sentence,question,2,none,0.75,,"The freezer door was closed, but the sample tags were still readable.
+
+The freezer door was closed, but",0.0,1.0,0.0,6.932620522093202e-07,324.0,0.0005727126845158637,29.0,0.0,0.0
+gpt2,37,"When the freezer door opened, the sample tags stayed readable.",same_sentence,question,2,target_delta,0.75,,"The freezer door was not closed.
+
+The freezer door was closed?
+
+The freezer door was closed?",1.0,0.0,0.0,1.0191591854891158e-06,232.0,0.6719924211502075,1.0,1.0,1.0
+gpt2,37,"When the freezer door opened, the sample tags stayed readable.",same_sentence,question,2,shuffled_pair_delta,0.75,,"The freezer door was opened by the same person who opened it.
+
+The freezer door was opened by the same",0.0,0.0,0.0,2.484700303284626e-07,934.0,0.01895316317677498,6.0,0.0,0.0
+gpt2,37,"When the freezer door opened, the sample tags stayed readable.",same_sentence,question,2,target_token_embedding_raw,0.75,,"The freezer door was closed, but the sample tags were still readable.
+
+The freezer door was closed, but",0.0,1.0,0.0,6.312056370916252e-07,362.0,0.0009255042532458901,27.0,0.0,0.0
+gpt2,37,"When the freezer door opened, the sample tags stayed readable.",same_sentence,question,2,target_token_embedding_normmatched,0.75,,The first time I got the first time I got the first time I got the first time I got the first time,0.0,0.0,0.0,4.4309138047538e-07,1457.0,0.05503090098500252,2.0,0.0,1.0
+gpt2,37,"When the freezer door opened, the sample tags stayed readable.",same_sentence,question,2,other_punctuation_normmatched,0.75,,"The first time:
+
+The first time:
+
+The first time:
+
+The first time:",0.0,0.0,0.0,4.498453199630603e-05,2055.0,0.005673517938703299,17.0,0.0,0.0
+gpt2,37,"When the freezer door opened, the sample tags stayed readable.",same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,0.0001550817978568375,803.0,0.00020614801906049252,485.0,0.0,0.0
+gpt2,37,"When the freezer door opened, the sample tags stayed readable.",same_sentence,question,2,random_norm,0.75,,"""I was surprised to find that the sample tags were not present in the freezer,"" said Dr. Michael J.",0.0,0.0,0.0,1.2270171509953798e-06,137.0,0.0001480226928833872,107.0,0.0,0.0
+gpt2,37,"When the freezer door opened, the sample tags stayed readable.",same_sentence,question,2,negative_target_delta,0.75,,"The next day, the lab technician took a sample of the sample and sent it to the lab for analysis.",0.0,0.0,0.0,5.262918989501486e-07,296.0,0.00021605004440061748,66.0,0.0,0.0
+gpt2,38,The council approved the transport plan in July 2026.,same_sentence,question,2,none,0.75,,"The council also approved a new plan for the city's new rail network, which will include a new station at the",0.0,0.0,0.0,9.51297522533423e-07,127.0,1.922674709931016e-05,127.0,0.0,0.0
+gpt2,38,The council approved the transport plan in July 2026.,same_sentence,question,2,target_delta,0.75,,"The council also approved the plan for the first time in the 1990s.
+
+The council's decision to approve",0.0,0.0,0.0,9.013118074108206e-07,155.0,0.030938316136598587,6.0,0.0,0.0
+gpt2,38,The council approved the transport plan in July 2026.,same_sentence,question,2,shuffled_pair_delta,0.75,,"The council also approved the plan for the next three years.
+
+The council also approved the plan for the next",0.0,0.0,0.0,1.0961854286506423e-06,132.0,0.00029441414517350495,25.0,0.0,0.0
+gpt2,38,The council approved the transport plan in July 2026.,same_sentence,question,2,target_token_embedding_raw,0.75,,"The council also approved a new plan for the city's new rail network, which will include a new station at the",0.0,0.0,0.0,9.704084504846833e-07,131.0,2.259923712699674e-05,131.0,0.0,0.0
+gpt2,38,The council approved the transport plan in July 2026.,same_sentence,question,2,target_token_embedding_normmatched,0.75,,The council approved the transport plan in July 2026. The council approved the council approved the council approved the council approved,0.0,1.0,0.0,2.8980250021959364e-07,1366.0,0.02250528708100319,2.0,0.0,1.0
+gpt2,38,The council approved the transport plan in July 2026.,same_sentence,question,2,other_punctuation_normmatched,0.75,,The city of the city of the city of the city of the city of the city of the city of the city of,0.0,0.0,0.0,1.732427699607797e-05,3300.0,0.001298357266932726,28.0,0.0,0.0
+gpt2,38,The council approved the transport plan in July 2026.,same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,6.469087384175509e-05,1884.0,0.00012974809214938432,975.0,0.0,0.0
+gpt2,38,The council approved the transport plan in July 2026.,same_sentence,question,2,random_norm,0.75,,"The council also approved the construction of the new railway line, which will be completed by the end of the year 2020",0.0,0.0,0.0,1.1801449772974593e-06,100.0,3.179392297170125e-05,100.0,0.0,0.0
+gpt2,38,The council approved the transport plan in July 2026.,same_sentence,question,2,negative_target_delta,0.75,,"The council also approved the plan in November of that year.
+
+The council also approved the plan in December of",0.0,0.0,0.0,9.542177394905593e-07,120.0,1.60073959705187e-05,40.0,0.0,0.0
+gpt2,39,"Although the browser crashed, the form preserved the draft.",same_sentence,question,2,none,0.75,,"The browser also crashed when the user clicked on a link.
+
+The browser also crashed when the user clicked on",0.0,0.0,0.0,8.161075584212085e-07,81.0,0.000100877667136956,28.0,0.0,0.0
+gpt2,39,"Although the browser crashed, the form preserved the draft.",same_sentence,question,2,target_delta,0.75,,"The browser was not the only one that crashed.
+
+The browser was not the only one that crashed?",1.0,0.0,0.0,1.5878429167059949e-06,63.0,0.9682618379592896,1.0,1.0,1.0
+gpt2,39,"Although the browser crashed, the form preserved the draft.",same_sentence,question,2,shuffled_pair_delta,0.75,,"The browser also crashed when the form was clicked.
+
+The browser also crashed when the form was clicked?",1.0,0.0,0.0,7.483609465452901e-07,132.0,0.3349951505661011,1.0,1.0,1.0
+gpt2,39,"Although the browser crashed, the form preserved the draft.",same_sentence,question,2,target_token_embedding_raw,0.75,,"The browser also crashed when the user clicked on a link.
+
+The browser also crashed when the user clicked on",0.0,0.0,0.0,8.394765131924942e-07,83.0,0.00013711524661630392,28.0,0.0,0.0
+gpt2,39,"Although the browser crashed, the form preserved the draft.",same_sentence,question,2,target_token_embedding_normmatched,0.75,,"The browser crashed?
+
+The browser crashed?
+
+The browser crashed?
+
+The browser crashed?",1.0,0.0,0.0,6.085122663535003e-07,1011.0,0.9448695778846741,1.0,1.0,1.0
+gpt2,39,"Although the browser crashed, the form preserved the draft.",same_sentence,question,2,other_punctuation_normmatched,0.75,,"The first time:
+
+The first time:
+
+The first time:
+
+The first time:",0.0,0.0,0.0,4.775900742970407e-05,2373.0,0.0038439733907580376,20.0,0.0,0.0
+gpt2,39,"Although the browser crashed, the form preserved the draft.",same_sentence,question,2,random_word_normmatched,0.75,,The the the the the the the the the the the the the the the the the the the the the the the the,0.0,0.0,0.0,0.00010167294385610148,1347.0,0.00013545203546527773,785.0,0.0,0.0
+gpt2,39,"Although the browser crashed, the form preserved the draft.",same_sentence,question,2,random_norm,0.75,,"The browser was able to recover the draft, but the document was not saved.
+
+The document was not saved",0.0,0.0,0.0,7.770563570375089e-07,56.0,0.00023069599410519004,31.0,0.0,0.0
+gpt2,39,"Although the browser crashed, the form preserved the draft.",same_sentence,question,2,negative_target_delta,0.75,,"The next day, the team sent a copy of the draft to the editor, who sent it to the editor.",0.0,0.0,0.0,7.452939030372363e-07,112.0,0.00016865981160663068,112.0,0.0,0.0

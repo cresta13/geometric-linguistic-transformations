@@ -281,7 +281,7 @@ def footer(canvas, doc):
 def build_story():
     story = []
     story.append(para("GLT-STEER: Final-Marker Directions as Activation-Space Editors", "PaperTitle"))
-    story.append(para("Anna Simakova - submission draft - 2026-10-09 - not peer reviewed", "PaperSubtitle"))
+    story.append(para("Anna Simakova - submission draft - updated 2026-10-10 - not peer reviewed", "PaperSubtitle"))
 
     story.append(heading("Abstract"))
     story.append(
@@ -435,10 +435,10 @@ def build_story():
         make_table(
             [
                 ["control", "question rate", "marker+preserved"],
-                ["target delta", "0.3750", "0.0500"],
-                ["shuffled-pair delta", "0.0500", "0.0250"],
+                ["target delta", "0.3000", "0.0500"],
+                ["shuffled-pair delta", "0.0750", "0.0250"],
                 ["raw ? embedding", "0.0000", "0.0000"],
-                ["norm-matched ? embedding", "0.3750", "0.0750"],
+                ["norm-matched ? embedding", "0.3250", "0.0250"],
                 ["other punctuation / random controls", "0.0000", "0.0000"],
             ],
             widths=[3.5, 1.5, 1.7],
@@ -446,7 +446,7 @@ def build_story():
     )
     story.append(
         para(
-            "The learned target delta is stronger than shuffled-pair and unrelated controls, but a ? embedding rescaled to the learned delta norm reproduces the same question-marker rate. The current evidence therefore supports activation-space final-marker induction, not a uniquely linguistic question-transformation vector."
+            "The corrected audit uses the exact shuffled 120-source training pool from the confirmatory protocol. The learned target delta is stronger than unrelated controls, but not than the norm-matched ? direction. A source-paired bootstrap estimates delta minus token-direction as -0.0250 with 95% interval [-0.2250, 0.1750]; this rules out a delta-advantage claim but is too wide for formal equivalence. The current evidence therefore supports activation-space final-marker induction, not a uniquely linguistic question-transformation vector."
         )
     )
 
@@ -535,7 +535,8 @@ def build_story():
                 ["confirmatory result", "results/experiments/glt_steer_confirmatory_fixed_params_20260825_results/"],
                 ["CI audit", "results/experiments/glt_steer_headline_ci_20260825_results/"],
                 ["source-cluster bootstrap", "results/experiments/glt_steer_source_cluster_bootstrap_20261009_results/"],
-                ["token-direction controls", "results/experiments/glt_steer_token_direction_controls_20261009_results/"],
+                ["token-direction controls", "results/experiments/glt_steer_token_direction_controls_20261010_results/"],
+                ["paired token bootstrap", "results/experiments/glt_steer_token_direction_paired_bootstrap_20261010_results/"],
             ],
             widths=[1.8, 4.9],
         )

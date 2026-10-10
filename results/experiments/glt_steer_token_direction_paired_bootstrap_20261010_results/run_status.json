@@ -1,0 +1,10 @@
+{
+  "status": "finished",
+  "input": "results/experiments/glt_steer_token_direction_controls_20261010_results/csv/glt_steer_token_direction_controls_raw.csv",
+  "output_csv": "results/experiments/glt_steer_token_direction_paired_bootstrap_20261010_results/csv/glt_steer_token_direction_paired_bootstrap.csv",
+  "summary_md": "results/experiments/glt_steer_token_direction_paired_bootstrap_20261010_results/SUMMARY.md",
+  "sources": 40,
+  "bootstrap_replicates": 5000,
+  "equivalence_margin": 0.1,
+  "failures": []
+}

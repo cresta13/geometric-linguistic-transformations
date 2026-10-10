@@ -1,0 +1,10 @@
+target_class,control,layer,target_marker_rate,target_and_preserved_rate,content_preserved_rate,rows
+question,negative_target_delta,2,0.0,0.0,0.05,40
+question,none,2,0.0,0.0,0.2,40
+question,other_punctuation_normmatched,2,0.0,0.0,0.025,40
+question,random_norm,2,0.0,0.0,0.1,40
+question,random_word_normmatched,2,0.0,0.0,0.0,40
+question,shuffled_pair_delta,2,0.075,0.025,0.175,40
+question,target_delta,2,0.3,0.05,0.175,40
+question,target_token_embedding_normmatched,2,0.325,0.025,0.225,40
+question,target_token_embedding_raw,2,0.0,0.0,0.2,40

@@ -4,7 +4,7 @@ Status: short draft / intervention paper candidate.
 
 This article candidate collects the behavior-level GLT-STEER results:
 
-- Central claim: final-position surface markers (`?`, `!`, `...`) are reliably steerable via mean hidden-state delta directions in GPT-2; lexical/sentence-internal transformations are not reliable under the same recipe.
+- Central claim: final-position surface markers (`?`, `!`, `...`) can be steered via mean hidden-state delta directions in GPT-2; lexical/sentence-internal transformations are not reliable under the same recipe. The corrected token-direction audit does not show that the learned delta is better than a capacity-matched target-token direction.
 - GPT-2 question activation steering with base-rate and prompt controls.
 - Logit-level final-marker audit showing that target steering moves `?`, `!`, and `...` to rank `1` during generation while no-steering marker rates remain `0.0000`.
 - Position-of-intervention audit showing that single prompt-token edits fail, while all-prompt-token editing nearly matches repeated last-token steering.

@@ -1,0 +1,3 @@
+metric,sources,target_delta_rate,target_token_embedding_normmatched_rate,paired_difference,bootstrap_ci_low,bootstrap_ci_high,equivalence_margin,ci_inside_margin
+target_marker_hit,40,0.3,0.325,-0.025,-0.225,0.175,0.1,False
+target_and_preserved,40,0.05,0.025,0.025,-0.05,0.125,0.1,False

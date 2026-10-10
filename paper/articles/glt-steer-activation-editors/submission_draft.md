@@ -2,11 +2,11 @@
 
 Anna Simakova
 
-Submission draft, 2026-08-25. Not peer reviewed.
+Submission draft, initial 2026-08-25; updated 2026-10-10. Not peer reviewed.
 
 ## Abstract
 
-This short draft studies whether mean hidden-state directions learned from sentence-pair differences can be injected back into a generative transformer as activation-space editors. In GPT-2, directions derived from controlled final-marker pairs reliably steer surface markers such as `?`, `!`, and `...` under matched controls. The effect is visible in generated text, next-token marker logits, position-of-intervention audits, and a fixed-parameter confirmatory rerun on fresh hard-heldout sources. The claim is intentionally bounded: current GLT-STEER supports final-marker form steering, not general semantic rewriting and not a Lie-algebra claim.
+This short draft studies whether mean hidden-state directions learned from sentence-pair differences can be injected back into a generative transformer as activation-space editors. In GPT-2, directions derived from controlled final-marker pairs can steer surface markers such as `?`, `!`, and `...` under matched controls. The effect is visible in generated text, next-token marker logits, position-of-intervention audits, and a fixed-parameter confirmatory rerun on fresh hard-heldout sources. The claim is intentionally bounded: current GLT-STEER supports final-marker form steering, not general semantic rewriting and not a Lie-algebra claim.
 
 ## 1. Question
 
@@ -171,13 +171,14 @@ Result folder:
 
 ### 4.7 Token-direction specificity control
 
-A direct GPT-2 control tests whether the question result is specific to the learned sentence-pair delta. On `40` held-out sources at layer `2`, gain `0.75`, and the `same_sentence` prompt, the learned target delta produces a question marker in `0.3750` of rows. A shuffled-pair delta reaches `0.0500`; raw `?` token embedding, other punctuation, random-word, and random-norm controls reach `0.0000`. However, a `?` token embedding rescaled to the norm of the learned delta also reaches `0.3750`.
+A corrected GPT-2 control uses the exact shuffled `120`-source training pool from the fixed-parameter confirmatory protocol. On `40` paired held-out sources at layer `2`, gain `0.75`, and the `same_sentence` prompt, the learned target delta produces a question marker in `0.3000` of rows. A shuffled-pair delta reaches `0.0750`; unrelated punctuation, random-word, and random-norm controls reach `0.0000`. A `?` token embedding rescaled to the learned delta norm reaches `0.3250`.
 
-This is a decisive boundary for interpretation. The learned delta has a stronger effect than the shuffled-pair and unrelated controls, but it is not distinguishable from a capacity-matched target-token direction in this protocol. The result therefore supports activation-space final-marker induction, not a uniquely linguistic question-transformation vector.
+This is a boundary for interpretation. The learned delta has a stronger effect than the unrelated controls, but not than the capacity-matched target-token direction. A source-paired bootstrap estimates the marker-rate difference as `-0.0250` with 95% interval `[-0.2250, 0.1750]`; this rules out a claim that the delta is better, but the interval is too wide for formal equivalence. The result therefore supports activation-space final-marker induction, not a uniquely linguistic question-transformation vector.
 
 Result folder:
 
-- `results/experiments/glt_steer_token_direction_controls_20261009_results/`
+- `results/experiments/glt_steer_token_direction_controls_20261010_results/`
+- `results/experiments/glt_steer_token_direction_paired_bootstrap_20261010_results/`
 
 ## 5. Boundary Results
 

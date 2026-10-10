@@ -20,15 +20,15 @@ from run_glt_steer_confirmatory_fixed_params import (  # noqa: E402
     TARGET_CLASSES,
     content_preserved,
     generate_with_trace,
+    build_training_pairs,
     learn_centroids,
-    make_training_sources,
     marker_token_ids,
     with_suffix,
 )
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT_DIR = ROOT / "results" / "experiments" / "glt_steer_token_direction_controls_20261009_results"
+OUT_DIR = ROOT / "results" / "experiments" / "glt_steer_token_direction_controls_20261010_results"
 CSV_DIR = OUT_DIR / "csv"
 RAW_PATH = CSV_DIR / "glt_steer_token_direction_controls_raw.csv"
 SUMMARY_PATH = CSV_DIR / "glt_steer_token_direction_controls_summary.csv"
@@ -45,6 +45,10 @@ AUDIT_PROMPT_STYLES = ["same_sentence"]
 
 def now() -> str:
     return pd.Timestamp.now(tz="Europe/Moscow").isoformat()
+
+
+def relative_path(path: Path) -> str:
+    return path.relative_to(ROOT).as_posix()
 
 
 def write_status(**updates: object) -> None:
@@ -88,6 +92,18 @@ def normalize_source(source: str) -> str:
     return source.strip()
 
 
+def build_token_audit_training_pairs() -> pd.DataFrame:
+    """Use the exact shuffled training pool from the confirmatory protocol."""
+    train_df = build_training_pairs().copy()
+    expected_rows = TRAIN_ROWS * len(MARKERS)
+    if len(train_df) != expected_rows:
+        raise AssertionError(f"unexpected training row count: {len(train_df)} != {expected_rows}")
+    source_count = train_df["source"].nunique()
+    if source_count != TRAIN_ROWS:
+        raise AssertionError(f"unexpected training source count: {source_count} != {TRAIN_ROWS}")
+    return train_df
+
+
 def make_prompt(source: str, style: str) -> str:
     if style == "repeat_sentence":
         return f"Repeat the following sentence exactly, but make it a question:\n{source}\n"
@@ -124,12 +140,7 @@ def main() -> None:
     model.eval()
     model.to("cpu")
 
-    train_sources = make_training_sources()[:TRAIN_ROWS]
-    train_rows = []
-    for source in train_sources:
-        for cls, config in MARKERS.items():
-            train_rows.append({"source": source, "target": with_suffix(source, config["suffix"]), "class": cls})
-    train_df = pd.DataFrame(train_rows)
+    train_df = build_token_audit_training_pairs()
     sources = [normalize_source(x) for x in CONFIRMATORY_HELDOUT_SOURCES[:HELDOUT_ROWS]]
     prompt_styles = AUDIT_PROMPT_STYLES
     target_ids = marker_token_ids(tokenizer)
@@ -150,6 +161,9 @@ def main() -> None:
     if any(value is None for value in token_ids.values()):
         raise RuntimeError(f"Could not find single-token controls: {token_ids}")
     (CSV_DIR / "token_control_ids.json").write_text(json.dumps(token_ids, indent=2), encoding="utf-8")
+    train_df[["source"]].drop_duplicates().reset_index(drop=True).to_csv(
+        CSV_DIR / "training_source_manifest.csv", index_label="source_rank"
+    )
 
     rows: list[dict[str, object]] = []
     controls = [
@@ -233,6 +247,7 @@ def main() -> None:
         "- Target: question marker `?`",
         "- Layer: `2`",
         "- Gain: `0.75`",
+        "- Training pool: the exact shuffled `120`-source pool used by the confirmatory protocol (`12` subjects)",
         "- Sources: `40` structurally varied held-out sentences",
         "- Prompt: `same_sentence`",
         "- Controls: learned target delta, shuffled-pair delta, target-token embedding, other punctuation, random word, random norm, and negative target delta.",
@@ -249,13 +264,23 @@ def main() -> None:
             "",
             "## Interpretation",
             "",
-            "The target delta is the prespecified positive direction. The token and shuffled-pair controls are tests of the alternative explanation that any direction with a related norm, or a direction associated with a punctuation token, is sufficient. This audit is limited to one model, one layer, one marker, and one prompt protocol; it is a specificity control, not a general semantic-editing test.",
+            "The target delta is the prespecified positive direction. The token and shuffled-pair controls are tests of the alternative explanation that any direction with a related norm, or a direction associated with a punctuation token, is sufficient. The training pool is identical to the fixed-parameter confirmatory protocol rather than the first unshuffled slice of the Cartesian product. This audit remains limited to one model, one layer, one marker, and one prompt protocol; it is a specificity control, not a general semantic-editing test.",
             "",
             "The raw generations and aggregate table are retained so that the control can be inspected without rerunning inference.",
         ]
     )
     SUMMARY_MD.write_text("\n".join(lines) + "\n", encoding="utf-8")
-    write_status(status="finished", finished_at=now(), rows=len(raw), summary_rows=len(summary), raw_csv=str(RAW_PATH), summary_csv=str(SUMMARY_PATH), summary_md=str(SUMMARY_MD), failures=[])
+    write_status(
+        status="finished",
+        finished_at=now(),
+        rows=len(raw),
+        summary_rows=len(summary),
+        raw_csv=relative_path(RAW_PATH),
+        summary_csv=relative_path(SUMMARY_PATH),
+        summary_md=relative_path(SUMMARY_MD),
+        training_source_manifest=relative_path(CSV_DIR / "training_source_manifest.csv"),
+        failures=[],
+    )
     print(f"Saved {RAW_PATH}")
 
 

@@ -23,7 +23,7 @@ GLT-STEER is the clearest current short-paper candidate because it has a behavio
 
 The central claim is intentionally narrow:
 
-> Final-position surface markers (`?`, `!`, `...`) are steerable in GPT-2-style residual streams via activation-space direction injection, while the same recipe does not yet support robust lexical or sentence-internal rewriting. The learned question delta is not distinguishable from a norm-matched `?` token direction in the current specificity control.
+> Final-position surface markers (`?`, `!`, `...`) are steerable in GPT-2-style residual streams via activation-space direction injection, while the same recipe does not yet support robust lexical or sentence-internal rewriting. In the corrected specificity control, the learned question delta is not better than a norm-matched `?` token direction; the source-paired interval is too wide for formal equivalence.
 
 ### Already addressed
 
@@ -45,7 +45,7 @@ The central claim is intentionally narrow:
 - Fixed-parameter confirmatory audit: question, exclamation, and ellipsis steering remain separated from controls on fresh hard-heldout sources without any layer/gain search inside the run.
 - Runtime form-control applicability audit: steering beats prompt-only and matched vector controls for final-marker induction under the tested protocol, but deterministic `string_append_source` is perfect. This bounds GLT-STEER as a diagnostic/intervention result rather than a replacement for ordinary text postprocessing.
 
-The current short-paper scope is now frozen with this token-direction boundary explicit. A stronger claim about uniquely linguistic transformation vectors requires a future task in which target-token directions are not sufficient.
+The current short-paper scope is now frozen with this token-direction boundary explicit. A stronger claim about uniquely linguistic transformation vectors requires a future task in which target-token directions are not sufficient. The superseded unshuffled audit is retained only as invalid provenance, while the corrected control and paired bootstrap are the citable versions.
 
 Deferred follow-ups include a second model family, independent source-level repeats, and a natural-language corpus. These are future generalization studies, not prerequisites for the current bounded artifact.
 

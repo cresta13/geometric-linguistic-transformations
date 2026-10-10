@@ -1,6 +1,6 @@
 {
   "title": "Geometric Linguistic Transformations in Transformer Latent Spaces: Research Artifact and Reproducibility Package",
-  "version": "2026.10.09",
+  "version": "2026.10.10",
   "upload_type": "software",
   "access_right": "open",
   "license": "mit",
@@ -10,7 +10,7 @@
       "name": "Simakova, Anna"
     }
   ],
-  "description": "Archival software and research-artifact snapshot for empirical experiments on linguistic transformation geometry, activation-space final-marker steering, and controlled training-time composition in transformer models. This release preserves code, result tables, figures, draft papers, GLT-STEER source-cluster and token-direction controls, and GLT-BUILD-02/03 boundary audits. The main readable document is reports/2026-08-25_glt_steer_submission_draft.pdf; draft.md files and the research diary are working research records. It is a reproducibility package and citable research snapshot, not a peer-reviewed publication or a claim of a complete linguistic-operator theory.",
+  "description": "Archival software and research-artifact snapshot for empirical experiments on linguistic transformation geometry, activation-space final-marker steering, and controlled training-time composition in transformer models. This release preserves code, result tables, figures, draft papers, GLT-STEER source-cluster and corrected token-direction controls, a source-paired bootstrap boundary audit, and GLT-BUILD-02/03 boundary audits. The main readable document is reports/2026-08-25_glt_steer_submission_draft.pdf; draft.md files and the research diary are working research records. It is a reproducibility package and citable research snapshot, not a peer-reviewed publication or a claim of a complete linguistic-operator theory.",
   "keywords": [
     "transformer",
     "representation geometry",

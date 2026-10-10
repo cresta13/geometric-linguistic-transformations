@@ -2,8 +2,8 @@ cff-version: "1.2.0"
 message: "If you use this software or research artifacts, please cite them using the metadata below."
 title: "Geometric Linguistic Transformations in Transformer Latent Spaces"
 type: software
-version: "2026.10.09"
-date-released: "2026-10-09"
+version: "2026.10.10"
+date-released: "2026-10-10"
 authors:
   - family-names: Simakova
     given-names: Anna
@@ -15,7 +15,8 @@ abstract: >-
   linguistic transformation geometry in transformer embedding spaces, including
   endpoint controls, hard-holdout boundary analyses, signed permutation
   diagnostics, activation-space final-marker steering, token-direction
-  specificity controls, controlled training-time composition audits, and
+  specificity controls with a corrected matched training pool and paired
+  bootstrap, controlled training-time composition audits, and
   cross-model transformation-transfer roadmaps.
 keywords:
   - transformer
